@@ -1,0 +1,31 @@
+[project]
+name = "knowledge-extractor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Luciano Teixeira", email = "luciano.teixeiras@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "av>=15.0.0",
+    "click>=8.5.0",
+    "faster-whisper>=1.2.1",
+    "google-genai>=2.32.0",
+    "numpy>=2.0.0",
+    "pypdf>=6.17.0",
+    "python-dotenv>=1.2.4",
+    "rich>=15.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+knowledge-extractor = "knowledge_extractor.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"

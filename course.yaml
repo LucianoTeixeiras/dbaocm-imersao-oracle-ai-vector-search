@@ -1,0 +1,58 @@
+# ==============================================================================
+# Declaração Canônica do Curso / Programa de Treinamento
+# ==============================================================================
+# Este arquivo é a Fonte Única de Verdade (SSOT) pedagógica e estrutural do curso.
+# Todas as ferramentas do knowledge-extractor (síntese, catalog_sync, file_normalizer,
+# scaffolds e prompts) leem este arquivo dinamicamente.
+# ==============================================================================
+
+version: "1.0"
+
+# Informações Gerais da Formação
+course:
+  id: "curso-exemplo"
+  title: "Nome do Curso ou Especialização"
+  institution: "Nome da Instituição de Ensino ou Treinamento"
+  platform: "Plataforma AVA / Portal (Ex: Hotmart, Platos, Canvas, Moodle)"
+  degree_level: "Pós-Graduação / MBA / Especialização / Extensão"
+  workload: "360h"
+  track_role: "Perfil de Saída / Foco de Formação (Ex: Engenharia de IA, Dados, Cloud)"
+  status: "Em Andamento"
+  language: "pt-BR"
+  
+  # Referência documental da ementa detalhada
+  syllabus_ref: "docs/ementa-disciplinas.md"
+  
+  description: >
+    Descrição detalhada dos objetivos do curso, público-alvo e competências
+    gerais que serão construídas ao longo dos módulos teóricos e práticos.
+
+# Declaração dos Módulos da Formação
+# Cada chave corresponde ao slug da pasta em `modules/<slug>/`
+# O loader aceita tanto este formato (mapa) quanto uma lista `- id: ...`.
+modules:
+  01-fundamentos-e-introducao:
+    id: "01"
+    name: "Fundamentos e Introdução à Área"
+    summary: "Conceitos fundamentais, contextualização e primeiros passos práticos."
+    # Posição do card no AVA/portal (quando a numeração local difere da ordem do portal)
+    portal_order: 1
+    # Slugs antigos deste módulo, resolvidos por get_module() para não quebrar links/notas
+    previous_slugs: []
+    # Subdisciplinas opcionais: pastas dentro do módulo que mantêm o scaffold canônico
+    # submodules:
+    #   - slug: "01a-topico-especifico"
+    #     name: "Tópico Específico"
+    competencies:
+      - "Compreender os conceitos essenciais e histórico da área"
+      - "Configurar o ambiente de desenvolvimento e ferramentas básicas"
+      - "Construir os primeiros scripts e validações de fluxo"
+
+  02-arquitetura-e-padroes:
+    id: "02"
+    name: "Arquitetura e Padrões Avançados"
+    summary: "Padrões de design, arquiteturas de referência e boas práticas de engenharia."
+    competencies:
+      - "Dominar arquiteturas modernas e padrões de desacoplamento"
+      - "Projetar sistemas resilientes e escaláveis"
+      - "Aplicar testes automatizados e validações de qualidade"
