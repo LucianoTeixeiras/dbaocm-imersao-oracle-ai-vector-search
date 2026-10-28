@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": "2026-10-27T23:26:40.354413+00:00",
+    "module": "01-instalacao-e-fundamentos",
+    "category": "raw",
+    "old_name": "DBAOCM Hotmart Club.mp4",
+    "new_name": "midia-dbaocm-hotmart-club.mp4",
+    "type": "video",
+    "size_bytes": 80221962,
+    "sha256": "bff408dcb44dd2294373019aab5423808399760b7c8fa7c6b181a7babe50e60a"
+  },
+  {
+    "timestamp": "2026-10-27T23:47:18.489591+00:00",
+    "module": "02-gravacoes-e-praticas-avancadas",
+    "category": "raw",
+    "old_name": "DBAOCM Hotmart Club - Dia 1.mp4",
+    "new_name": "midia-dbaocm-hotmart-club-dia-1.mp4",
+    "type": "video",
+    "size_bytes": 3045814037,
+    "sha256": "515024290a68552b5a3ff217baae246041d9f56027f0999e703904d472f36079"
+  },
+  {
+    "timestamp": "2026-10-27T23:48:07.832350+00:00",
+    "module": "02-gravacoes-e-praticas-avancadas",
+    "category": "raw",
+    "old_name": "DBAOCM Hotmart Club - Dia 2.mp4",
+    "new_name": "midia-dbaocm-hotmart-club-dia-2.mp4",
+    "type": "video",
+    "size_bytes": 4090422465,
+    "sha256": "8208889670c1f3b95fbc38fec543c62bd45c06887685d59008c6e4e4ee917578"
+  }
+]

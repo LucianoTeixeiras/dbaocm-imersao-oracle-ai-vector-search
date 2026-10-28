@@ -10,49 +10,46 @@ version: "1.0"
 
 # Informações Gerais da Formação
 course:
-  id: "curso-exemplo"
-  title: "Nome do Curso ou Especialização"
-  institution: "Nome da Instituição de Ensino ou Treinamento"
-  platform: "Plataforma AVA / Portal (Ex: Hotmart, Platos, Canvas, Moodle)"
-  degree_level: "Pós-Graduação / MBA / Especialização / Extensão"
-  workload: "360h"
-  track_role: "Perfil de Saída / Foco de Formação (Ex: Engenharia de IA, Dados, Cloud)"
+  id: "imersao-oracle-database-ia"
+  title: "Imersão Oracle Database com IA"
+  institution: "G. A. R de Brito Educacao"
+  platform: "Hotmart"
+  degree_level: "Imersão / Especialização"
+  workload: "40h"
+  track_role: "DBA / Engenharia de Banco de Dados e Inteligência Artificial"
   status: "Em Andamento"
   language: "pt-BR"
-  
+
   # Referência documental da ementa detalhada
   syllabus_ref: "docs/ementa-disciplinas.md"
-  
+
   description: >
-    Descrição detalhada dos objetivos do curso, público-alvo e competências
-    gerais que serão construídas ao longo dos módulos teóricos e práticos.
+    Imersão prática focada na administração de Oracle Database integrada a conceitos
+    e recursos de Inteligência Artificial, abrangendo desde a instalação, configuração
+    de ambiente e solução de erros comuns de deploy até padrões avançados de DBA.
 
 # Declaração dos Módulos da Formação
 # Cada chave corresponde ao slug da pasta em `modules/<slug>/`
 # O loader aceita tanto este formato (mapa) quanto uma lista `- id: ...`.
 modules:
-  01-fundamentos-e-introducao:
+  01-instalacao-e-fundamentos:
     id: "01"
-    name: "Fundamentos e Introdução à Área"
-    summary: "Conceitos fundamentais, contextualização e primeiros passos práticos."
-    # Posição do card no AVA/portal (quando a numeração local difere da ordem do portal)
+    name: "Instalação e Fundamentos do Oracle Database"
+    summary: "Configuração de ambiente, pré-requisitos de instalação e resolução de falhas de deploy."
     portal_order: 1
-    # Slugs antigos deste módulo, resolvidos por get_module() para não quebrar links/notas
     previous_slugs: []
-    # Subdisciplinas opcionais: pastas dentro do módulo que mantêm o scaffold canônico
-    # submodules:
-    #   - slug: "01a-topico-especifico"
-    #     name: "Tópico Específico"
     competencies:
-      - "Compreender os conceitos essenciais e histórico da área"
-      - "Configurar o ambiente de desenvolvimento e ferramentas básicas"
-      - "Construir os primeiros scripts e validações de fluxo"
+      - "Executar a instalação correta do Oracle Database contornando erros de plug-ins e logs"
+      - "Compreender os componentes essenciais de infraestrutura de um DBA"
+      - "Validar os logs de instalação e dependências do sistema operacional"
 
-  02-arquitetura-e-padroes:
+  02-gravacoes-e-praticas-avancadas:
     id: "02"
-    name: "Arquitetura e Padrões Avançados"
-    summary: "Padrões de design, arquiteturas de referência e boas práticas de engenharia."
+    name: "Imersão Oracle Database com IA - Gravações e Práticas"
+    summary: "Acompanhamento das aulas gravadas, resolução de dúvidas da comunidade e integração com IA."
+    portal_order: 2
+    previous_slugs: []
     competencies:
-      - "Dominar arquiteturas modernas e padrões de desacoplamento"
-      - "Projetar sistemas resilientes e escaláveis"
-      - "Aplicar testes automatizados e validações de qualidade"
+      - "Aplicar conceitos práticos demonstrados nas aulas ao vivo e gravações"
+      - "Integrar fluxos de banco de dados com recursos de IA"
+      - "Diagnosticar e solucionar problemas comuns reportados na comunidade"

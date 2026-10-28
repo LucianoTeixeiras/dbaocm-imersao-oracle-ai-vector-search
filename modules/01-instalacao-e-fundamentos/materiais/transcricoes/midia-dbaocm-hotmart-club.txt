@@ -1,0 +1,310 @@
+Sejam muito bem-vindos a nossa live de pré-requisitos da nossa inmersão
+Oracle, Database e CUNYAR. Eu sou Guilherme Brito, sou fundador da DBOSM
+e durante o próximo final de semana, eu vou estar junto com vocês para a gente poder trazer
+muita prática, muita mão na massa, sobre Oracle, Database e Inteligência Artificial.
+A gente vai trazer vários conceitos, várias visões para quem realmente quer acelerar
+com Inteligência Artificial e o Oracle Database, beleza?
+Pessoal, que tive a meu vindo aí, digita a cidade onde você está falando, só para
+eu poder saber se o áudio está chegando legal, a gente já vai começar aqui a nossa live
+de tiraduda, separe suas principais dúvidas, aqui no Zoom, tem uma área de que o
+venê de perguntas e respostas, que você pode estar selecionando ali as suas principais dúvidas
+sobre a inmersão, sobre Oracle, sobre a que eu vou estar respondendo aqui, quem quiser falar,
+no final, vou dar a oportunidade de ter a opção de levantar a mão aqui no Zoom e a gente pode
+também te dar essa oportunidade da gente poder fazer um bate-papo, tá bom? E conversar e entender
+melhor aquilo que você tá buscando, beleza? Vamos lá, pessoal, para a gente começar aqui o nosso
+bate-papo de hoje, eu quero que seja um bate-papo bem leve, uma conversa realmente, tá?
+Para que a gente consiga te ajudar o máximo, tá? O que é essa inmersão da DBOCM, tá?
+A inmersão, gente, ela é muito diferente de um curso, com o objetivo da inmersão. Eu não
+quero trazer aquele formato de faculdade, aquele formato de curso tradicional, na inmersão,
+a gente tem como objetivo trazer simulação do mundo real. Então, eu fiz uma prova em 2010,
+que eu fui o segundo ao CM do Brasil, que é o Oracle Certified Master e essa inmersão foi muito
+inspirada nessa certificação. Essa certificação foi uma prova que você paga 2 mil dólares e faz
+durante dois dias o dia todo, lá nos Estados Unidos eu fiz em Atlanta em 2010 e aqui que a gente faz, a gente faz uma
+simulação realmente. Dois dias abordando oito desafios práticos, simulando o mundo real, tá?
+E dentro desses 8 desafios, pessoal, a gente vai trazer pra vocês cenários práticos, a nota
+é isso aqui, tá? De como que o profissional de tecnologia que trabalha com o Oracle pode utilizar
+a inteligência artificial, tá? E além disso, também a gente já está trazendo exemplos práticos de como
+que a gente pode utilizar essa metodologia, essa tecnologia, criação de agentes para você poder
+atender outras áreas das empresas, áreas de negócio, como que você pode fazer colocar um
+selecto com o linguagem natural, como que você pode utilizar os recursos de criação ou de agentes
+dentro do Oracle da Tabese, tá? Então hoje você pode criar um agente dentro do banco de Adazorco na última
+versão do 26AI e como que você pode resolver problemas da área de vendas, problema da área jurídica, análise de
+contratos, área financeira, área de marketing, área de suporte, RH. Então a gente começa a trazer
+tudo de caso de como que você pode aplicar, não só pro profissional de tecnologia, fazer seu trabalho
+mais rápido, mas também como que as outras áreas da empresa podem ser impactadas com a inteligência
+artificial, inclusive trazendo essa parte de Ad, de aplicações de Ad, até num conceito mais interprase de
+você ter, por exemplo, maia que vai atender centenas e milhares de pessoas, tá? Hoje você pode rodar
+agentes nesse tipo de arquitetura que suporta realmente esse tipo de carga, tá? Então basicamente essa é a nossa proposta
+para esse final de semana, trazer prática, monamassa, simulação do mundo real, para quem realmente quer fazer
+o seu trabalho muito mais eficiente e muito mais rápido. Só para você ter uma ideia pessoal, logo no sábado
+do período da manhã, a gente vai estar mostrando como que você pode fazer diversas tarefas 10
+vezes mais rápido. E vocês vão começar a perceber que qualquer profissional que trabalha atrás
+de um computador, ele vai ser impactado diretamente com a área. E por que que eu tô trazendo esse ponto, tá,
+pessoal? Tem gente que tá trabalhando ainda do mesmo jeito que trabalhava em 2016.
+Cara, eu vou falar, a gente já tá vendo uma série de demissões, layoffs, a Oracle demitiu quase 30 mil
+pessoas, porque o jeito de trabalhar mudou totalmente. Qualquer profissional que trabalha atrás de um
+computador, ele vai ser muito afetado. E a área de tecnologia foi uma das mais impactadas pela área de
+tem, pela pela a inteligência artificial. E vocês vão ver isso na prática. Como que as pessoas que
+vão ser contratadas de novo, qual que é o novo jogo, como que o profissional de tecnologia vai trabalhar
+em 2017? Como que o desenvolvimento de software mudou, tá? E a verdade, gente, que se você consegue
+hoje fazer algo 10 vezes mais rápido, cara, é inevitável, só mudança não tem como voltar mais.
+E dependente se você acha que é uma bolha, que não é, cara, hoje você pode rodar no seu notebook,
+como ele é me local, e dá pra você fazer coisas 10 vezes mais rápidas, tá? Então, a nossa proposta é
+durante dois dias trazer oito estudos de caso do mundo real em formatos de desafios. Então, se o seu
+objetivo, cara, é simplesmente ter aquela ideia de curso de faculdade que você vai só assistir, eu
+vou te falar, você vai ficar extremamente incomodado com essa emersão. Por quê? Eu acredito,
+é uma criança que eu tenho, tá? Que você não aprende só a ver no Slidinger. Você pode até ter uma
+introdução, uma noção do que quer, mas aprender de verdade vai ser praticando, vai se colocando a
+mão na massa. E durante esses dois dias pra quem tiver o vivo, a gente vai fornecer todos os
+scripts, os comandos, as esquíros, os agentes, pra você poder executar, tá? Agora, se você quer ter uma
+experiência melhor, eu já vou trazer uma visa importante pra vocês. Adquiram o ingresso VIP, tá?
+Porque com o ingresso VIP, você vai ter a gravação durante 30 dias. E já vou falar o que que vai acontecer.
+Cara, não vai dar tempo de vocês executar tudo ao vivo. Vai ter coisa, cara, que você vai querer
+ver o replay, vai ter coisa que você vai estar por acaso, vai ter alguma dúvida. Então, inevitavamente,
+a gente vai passar tanto conteúdo de valor que, cara, pra você processar tudo, você vai precisar da
+gravação, tá? Então, eu vou estar liberando aqui pra vocês, pessoal, um link exclusivo, que é o
+seguinte, se você entrar aqui na página agora da nossa impressão, você vai ver que você vai
+estar com um colote 3 disponível, tá? Então, esse é o slot 3, basicamente o essencial tá 97, e o VIP tá 3,
+4, 7. O que que eu vou fazer aqui pra vocês, tá, pessoal? Que estão aqui? Eu vou trazer um link de
+desconto pra você fazer uma pígrade pro VIP, porque eu não há vt7, você vai ter acessão lá em
+uns dois dias do evento, a comunidade de alunos, um grupo do WhatsApp durante o período do evento,
+e os própidos e inscritos pra você que tá ao vivo. Aqui você vai ter um certificado que você pode
+emitir depois, tá? Acesa a gravação durante 30 dias, há postila, os PDFs organizados, os downloads,
+a sala VIP do Zoom, perguntas técnicas com os estrutores e uma seção de mentoria de carreira, tá? Então,
+o que a gente vai conseguir trazer aqui pra vocês, com relação ao VIP, tá? Você vai ter uma
+condição ultra especial, ao invés de você pagar 3, 347, eu vou fazer algo exclusivo aqui, que é um
+desconto que você vai conseguir ter acesso ao VIP por apenas 197, tá? Se você comprar hoje aqui
+nessa live, eu vou trazer pra você um desconto exclusivo onde você vai conseguir o VIP por apenas
+1,97, ao invés de pagar 3, 4, 7, você vai pagar 1,97, tá? Então, esse é o primeiro aviso,
+não vou nem ficar insistindo muito o objetivo dessa live, não é vender VIP, cara, eu tô dando
+simplesmente uma ajuda, porque essa opção apareceu no check out na hora que você comprou ali o
+ingresso, talvez algumas pessoas não comprar, então, eu tô trazendo aqui pra vocês essa condição
+exclusiva pra você que tá aqui nessa live, tá? E aí, pessoal, deixa eu só liberar aqui o link pra quem
+tem interesse, e aí eu quero trazer pra vocês como que vai ser a dinâmica desses dois dias, tá? As
+pessoas vão começar, deixa eu só mandar aqui o link, 197, eu vou colocar esse link agora aqui
+disponível pra vocês, então, pessoal, vai acontecer que a gente vai estar ao vivo das 9h18, sábado e
+domingo, tá? Então, vai acontecer nos dias 17h18, sábado domingo das 9h, às 18h, vão ser 8h por dia, tá?
+Por que, Guilherme? Por que, quando a gente faz uma imersão, a gente tem muito resultado, tem
+muitas pessoas que relatam pra gente, que depois da imersão, nestes dois dias, o que ele viu sobre
+óroco com o iai não tinha visto no último ano, cara, tá? Então, pessoal, tô liberando aqui pra
+vocês, exatamente esse link aqui, tá? 197, a vista, ou 6 vezes de 38 reais pra você ter a gravação
+durante 30 dias, tá? Já tá disponível aqui o link no chat, tá? Cabei de mandar aí no chat pra
+vocês, só clicar pra adquirir o seu engraço VIP. E aí, pessoal, muitas pessoas relatam que no
+último ano não viu sobre óroco e sobre alco e viu nos últimos nos dois dias, tá? Por que?
+Cara, com essa questão da inteligência artificial, você vai ver que é uma revolução, cara. Você vai
+ver que muitas coisas de DSKL, você não vai mais buscar construir Query manualmente, você vai conseguir
+fazer muito mais rápido. Talvez dificuldades que você tinha ali, na parte do SKR, de John, de
+subqueres, de questões mais avançadas, você agora, comia, vai conseguir fazer coisas que você
+não sabia, porque você tem um estagiário que domina a documentação da óroco toda e que consegue
+corrigir toda a syntaxa pra você se você souber direcionar e trazer uma boa estratégia. A parte de
+PLSKL, cara, a gente vai falar sobre desovimento, utilizando IA, como você pode fazer vibe code
+com PLSKL, no banco de dados óroco, como você pode utilizar SDD spec drive development com IA
+de você criar especificação e aí construir o código pra você. A gente vai falar um pouquinho sobre
+agent, que é indignio, como você pode criar uma série de agentes pra fazer todas as
+sequências necessárias dentro do fluxo de desorimento do software, inclusive com revisão, correções de
+bugs e muito mais, cara, vai mudar totalmente sua cabeça. Então, tanta parte do back end de PLSKL,
+tanta parte do front end, com a questão do Apex, o Apex Lange, pra quem não sabe as eleições
+aí, o resultado das eleições foi no, em cima do óroco ex-adata utilizando Apex, então a gente vai
+mostrar um pouquinho desses bachidores de como que você pode desenvolver de um jeito diferente,
+além disso, a gente vai estar aprofundando sobre muita questão que provavelmente você nunca viu,
+então é um evento muito prático, muita monamassa pra quem realmente quer ir para um outro nível,
+pra quem quer o evento, pra quem quer trabalhar no empresa que utiliza o óroco. Guilherme, eu não
+tenho interesse em trabalhar com o óroco, entrei aí só por conta da A, cara, vai ser a A aplicada
+com o óroco, e por que eu falaria pra você estudar a A com o óroco? Porque é o banco de dados mais
+utilizado no mundo, então você vai ver que grandes empresas aí utilizam o óroco, você que atrapara
+numa empresa grande, uma empresa que utiliza o óroco, uma empresa relevante, cara, vale muita pena.
+E você que já trabalha com o óroco da tabese? Pô, Guilherme, eu já trabalho no empresa que
+utiliza óroco, cara, vale muita pena, você vai ver que vai explodir sua cabeça. Só pra você
+estere uma ideia, pessoal, essa é a lista das empresas que vão estar com a gente nesse final de semana,
+tá? Algumas empresas. Então a gente tem centenas de pessoas, empresas participando nesse evento
+do próximo final de semana, vocês vão ter uma oportunidade de ter uma troca incrível, tá?
+O evento, ele foi feito de uma forma muito customizada, porque vocês fazem um chequinho, a gente analisa o
+que vocês estão querendo sair de lá resolvidos e a gente constrói as práticas, os cenários, baseados
+naquilo que você tá buscando, tá? Então a gente vai trazer, cara, algo de empresas de fora do Brasil,
+multinacionais, empresas grandes do Brasil e muito mais trazendo prática, mão na massa de como que
+vocês podem implementar a A, tanta parte de criações de agentes, tanto acelerando suas tarefas ali
+dentro do dia a dia. No dia 1, pessoal, a gente vai começar falando sobre AI first, você vai trabalhar de um
+jeito diferente, a cultura é diferente, a forma de pensar diferente, se você não entender que o
+mod desafio da A não é a parte técnica, é muito mais a parte de definição de processos de estratégia,
+de forma de pensar e como resolveu os problemas, como que ao invés de fazer isso de forma manual,
+consigo botar uma A pra fazer grande parte desse trabalho pra mim ou até o trabalho todo, tá? Então
+a gente vai falar um pouquinho sobre essa mentalidade do AI first, a cultura de uma empresa que time
+de tecnologia trabalha com a A como copiloto ou até mesmo pilotando muitas etapas, a gente vai falar
+sobre MCP, muitas pessoas chego no nosso canal do YouTube falando, mas nunca conecte a AI no banco
+de dados diretamente, cara, não é bem assim, tá? Então a hora que eu tenho o MCP oficial, clara,
+existe metodologia, a gente vai falar muito sobre segurança, tá? Mas existe metodologia pra você conectar
+a VMCP no Oracle da Tabese, em desenvolvimento, em divulgação, em produção, cenários, como que
+você pode mitigar riscos e erros, a gente vai falar um pouquinho sobre harness também, não tem como
+a gente não falar sobre harness, sobre como você pode criar um harness que vai ser muito acertivo ali
+pra aquilo que você quer fazer, dando contexto, o que que é harness, vocês vão ver na prática, tá? A gente
+vai ter uma hora e meia de almoço, de meia e dia e meia de 30, na parte da tarde a gente vai falar um
+pouco sobre SELECT AI, como que você pode fazer isso, o SELECT linguagem natural, tanto na versão 19 ou
+na versão nova, quais são as possibilidades de você configurar isso no Oracle da Tabese, a gente já vai
+depois trazer algumas skills que são instruções ali de trabalho, de como você pode treinar uma ia pra
+fazer um trabalho muito específico, com o estudo de caso, de como que a gente teria ali cenários de
+resolver problemas de SQL, de modelar de dados e muito mais, a gente vai mostrar também algumas skills ali
+de pele SQL, aprofundando sobre metodologia de desenvolvimento de código, utilizando skills e agentes,
+tá, vocês vão ver muita coisa prática e muita monamassa, então no primeiro dia, pessoal, já vai explodir a
+cabeça de vocês, vocês vão ver que tem coisas que provavelmente vocês não estão fazendo e que vocês
+poderiam fazer, tá, e no segundo dia, a gente já vai subir muito a barra, que a gente vai mostrar uma
+funcionalidade nova do Oracle 26 AI, que você pode fazer um SELECT AI RAG, tá, a gente vai falar o
+que é o RAG, a gente vai configurar um RAG juntos, a gente vai fazer tudo isso na prática, já no segundo dia,
+que a gente vai subir muito a barra, tá, a gente fala de RAG e a busca semântica, é utilizar os recursos de
+Vector Search, e você pode fazer isso através do SELECT, tá, a gente vai mostrar isso na prática,
+depois a gente vai mostrar muita coisa no período da tarde sobre performance, cara, que é uma dor muito forte,
+inclusive, você pode botar um usuário somente leitura para conectar em produção, tá, para fazer análise de
+performance bem rápido e bem profundas como um cara senior de 20 anos, tá, a gente vai mostrar muito
+cenário de performance que vai explodir sua cabeça de possibilidades, a gente vai mostrar o comando novo
+chamado SELECT AI Agent, o SELECT AI Agent é você criar agentes dentro do banco de dados, vocês vão ver
+como isso é possível, tá, além disso se dá tempo, eu vou mostrar até algumas ferramentas novas que a
+hora que está fornecendo, como o Agent Factor, que é uma ferramenta no code que vocês conseguem criar agentes
+dentro do Oracle 26 AI, cara, vocês vão ver que essa ferramenta vai explodir algo muito novo pessoal,
+até o pessoal dá para a hora que eu conversei recentemente da Oracle Brasil, tão testando ainda, é o que foi
+lançado esse ano, que a gente já está colocando a monamassa, a gente já tem vários estudos de caso aqui, de como
+pode utilizar o Agent Factor para, pô, não quero entrar na linha do desenvolvimento de código que ele é, cara, dá para
+fazer isso através de ferramentas no code, tá, sem precisar criar código, e os que os de segurança sobre
+SELECT AI, sobre mais caramento de dados, cara, vocês vão explodir a cabeça sobre possibilidades, tá, e a última
+gente vai ter, eu falei 8, mas eu vou entregar 9, tá, vai ser sobre APEX con AI, como você pode desenvolver
+aplicações em APEX, o APEX é uma ferramenta no code que você já consegue desenvolver 20 vezes mais rápido do que com
+o desenvolvimento tradicional, e quando você coloca APEX con AI, cara, criação de agentes, mas cara, você vai ver que
+vai explodir as possibilidades do que pode ser feito, tá, então vocês podem ter certeza que com que a gente vai
+fundar aqui, cara, você consegue utilizar o seu trabalho com o profissional de tecnologia, pô, galera, toda a semana
+atendo o chamado tal, todo o semana atendo o incidente tal, você pode utilizar os que os agentes e automações para fazer isso,
+a gente vai mostrar como que você pode fazer isso na prática, pô, galera, eu queria utilizar para apoiar a
+de negócio, para criar uma gente ali para áreas de vendas, para área de marketing, para criar propostas, para
+criar anúncios, cara, dá para você fazer isso também, e você vai ver como que isso é possível na prática,
+como que você pode realmente utilizar toda essa arquitetura do órgão, para poder realmente trazer soluções de
+inteligência artificial com os dados que vão fazer coisas em crise, agora o grande ponto pessoal, pessoal tem falado muito sobre
+isso, mas aí há senhos dados, ela é burra, então entenda que você juntar o órgão da tabéis, com uma inteligência artificial,
+você vai fazer o que tem de mais poderoso correlação aí, você vai aumentar muitas suas possibilidades de conseguir fazer coisas
+incríveis, porque se você está olhando só para ir há só para a ferramenta, senhos dados, cara aí a vai arrafei, agora se seus dados
+estruturados, bem organizados, com as ferramentas que você pode utilizar dentro do órgão da tabéis, como a parte de
+Vector Search, a parte de grafo, a parte de todos os recursos, que é o órgão que eu tenho disponível, cara, você vai
+conseguir fazer coisas incríveis, então a órgão que eu tenho muitos recursos ali, bem interessantes, que vão fazer com que
+você consiga trazer resultados incríveis, beleza, pessoal, esse é um resumo do que a gente vai tá fazendo aí durante esse final de semana, eu tô vendo aqui que tem
+várias pessoas que já estão adquirindo aqui o VIP, que legal, pessoal, sejam muito bem-vindos, vai ser legal demais ter vocês aqui com a gente, eu vi
+com o alano, o José Ricardo, o Luis Flávio, show de bola, pessoal, vai ser um prazer aí, trazer esse experiência um pouco mais aprofundada aí para vocês, até para vocês conseguirem ter essa
+gravação durante o bom tempo, é o melhor cenário, cara, com certeza você tendo a gravação ali, você vai ter uma experiência muito melhor, tá, e vai conseguir absorver esse conteúdo com uma
+profunda idade muito maior do que quem só ative assistindo ao vivo, tá, então você tá comprometido o cara de queiro VIP, que vai valer bastante a pena, pessoal, certificado, o VIP tá garantido o certificado, porque vocês têm acesso durante a plataforma
+durante 30 dias, com as aulas, então você pode emitir o certificado depois, assim que você concluir as práticas, tá, mas a gente não vai for necessitado para quem não faz, tá, então é muito importante que você faça os desafios, publica lá no seu link edim, tá,
+realmente as pessoas que não vão comprar o VIP pra você ter o certificado, e eu quero dar uma visa importante pra vocês, tá,
+é, não adianta você assistir durante dois dias e não saber aplicar, e você mostrar pra sua rede profissional, o que você sabe fazer, o que você
+tá estudando, é tão importante quanto estudar, tá, porque muitas vezes você tá estudando pra caramba só que ninguém sabe que você tá estudando, tá,
+e eu já queria trazer aqui um desafio pra vocês, pessoal, pra vocês realmente já saírem daqui, mostrando pra sua rede profissional, quanto que você tá comprometido em aplicar a IA com o Oracle Database,
+nós fizemos uma página aqui que é lá no seguinte, você vai colocar o seu nome, e ler brito, você vai colocar o seu cargo,
+vou botar aqui, db a Oracle, empresa, db LCM, e aqui que você vai fazer, você vai entrar no seu link edim, vai pegar sua foto, e você vai salvar sua foto como imagem,
+e aqui eu vou botar Guilherme, deixa eu salvar aqui, e aí eu vou selecionar aqui minha foto, e vou criar exatamente essa imagem,
+mostrando que eu vou tá participando, recomendo que vocês façam isso, mostrem pra sua rede profissional, que você tá participando de um evento sobre Oracle Database com IA, com certeza as pessoas que trabalham com você, já vão de chegar de uma forma diferente,
+seus gestores, seus clientes que você atende, e baixa aqui essa imagem, e aí publique lá no seu link edim, marca db LCM, até pra gente poder te ajudar a divulgar o quanto que você tá estudando,
+publique lá também no seu Instagram, marca o Instagram a roupa db LCM, porque com certeza você tá comprometido, tá estudando, tá praticando, executando os desafios práticos,
+e mostrando pra sua rede profissional, você vai ver o quanto que isso vai gerar de impacto positivo de você crescendo em presa atual, receber propostas patafantes de projetos mais relevantes,
+que sabe ser promovido, receber propostas de outras empresas, então você vai ver o quanto que muda o jogo, você realmente avisar pra sua rede profissional, o quanto que você testa o dano, beleza?
+Pessoal, basicamente isso que eu queria trazer pra vocês, agora eu queria trazer pra vocês uma seção aqui de perguntas e respostas,
+alguém tem uma dúvida relacionada à imensão, estou vendo aqui no chat, ninguém colocou nada, se você tem uma dúvida também, pode levantar a mãozinha aqui nos zoom, tá?
+Que eu consigo liberar o seu áudio aí, caso você queira perguntar alguma coisa, sobre como que vai acontecer o evento e muito mais,
+e eu vou colocar uma enquete, que é o seguinte, vai aparecer na tela de vocês, tá pessoal, você já participou de alguma imensão da DBOCM com IA,
+por que, pessoal, se você já participou, essa vai ser inédita, eu vou te falar que vai ter coisa nova,
+se você não participou, você pode ter certeza que vai ser uma virada de chave da forma como você trabalha com Oraco e com IA,
+aqui legal, 80% das pessoas não participaram de uma imensão da DBOCM com IA, cara que legal,
+a velha de maioria realmente está chegando agora, e vocês podem ter certeza que vocês vão ver muitas novidades,
+e quem já participou, cara, se prepara e que vai ver práticas diferentes, muita monamassa, pra você realmente conseguir se destacar com o da Suntéórico e Inteligência Artificial,
+beleza?
+Pessoal, não tendo dúvidas, a gente vai fechando por aqui a nossa live de hoje, tá a forma live simplesmente pra poder ali as expectativas,
+quem tá animado aí, pra nossa imensão, coloca eu aí no chat, pra eu poder entender que você tá animado, que tá fazendo sentido,
+que cara, que você quer ir pra cima dessa parte de Oraco com IA, e se prepara e porque realmente vão ser dois dias,
+muitos transformadores, que a gente vai trazer muita prática, muita monamassa, trago suas principais perguntas,
+esse evento foi construído exatamente pra de forma customizada, de acordo com que as pessoas colocaram lá no chequinho,
+então a gente vai ajudar bastante e vocês vão tá num evento com grandes empresas, com grandes personais trocando informações,
+então quanto mais você perguntar, quanto mais você colocar dúvidas, quanto mais você for participativo no chat,
+levantando a mão, fazendo perguntas, trazendo até mesmo questões de segurança, dúvidas, contando seu momento atual,
+isso vai ser melhor e essa imensão com certeza vai ajudar bastante, quem tiver lá, inclusive você com uma experiência diferente de um curso tradicional, tá?
+então não sou objetivo realmente trazer muita prática e muita monamassa, ou aleçando, tem alguma configuração pra eu baixar,
+e vamos lá aleçando, excelente pergunta, o que que acontece, cara, pra gente poder fazer essa imensão,
+a gente vai utilizar o cloud code, tá? Então hoje, cara, se você quer utilizar IA,
+você vai ter que pagar toda a mesma assinatura mínima de inteligência artificial, tá?
+aqui a gente vai utilizar o cloud code, você vai poder utilizar ali um plano básico, tá?
+aquele plano inicial de 20 dólares, tá? Então eu vou até abrir aqui, ó, o plano free, você não vai ter acesso ao cloud code,
+o cloud code é uma das principais ferramentas de integração, geração de code e muito mais, então você vai ter que ter o cloud code,
+aqui ó, tá acelho pra apenas 92 reais, tá? Com esse plano pro, você pode fazer um mês depois de cancelar,
+você já consegue fazer tudo que a gente vai mostrar, ah Guilherme, pô, eu vou ter que pagar 92 reais pra poder fazer as práticas,
+então eu vou te falar, pra você fazer um trabalho 10 vezes mais rápido, então vai valer muita pena, cara,
+e vou te falar, quem não investir até hoje, num plano mínimo de inteligência artificial de 100 reais, cara,
+vai estar fora do jogo, não tem como, você vai ficar obsoleto, seu colega de trabalho vai fazer 10 vezes mais rápido,
+trabalho que você, e se você não tiver estudando e testando, cara, você vai ficar pra trás, tá?
+vou adquirir esse pro show de bola, aqui eu vou liberar pra vocês também lá no grupo, a estalação aqui do cloud code, tá?
+então é tutorial de como que você pode fazer, ó, se você tá em lino, se você tá no Windows do PowerShell ou no CMD, tá?
+então como que você inicia sua primeira seção e muito mais, então aqui você vai ter exatamente o passo a passo,
+a gente vai fazer, pessoal, também, a gente vai utilizar uma conta na Oracle Cloud, tá?
+então é importante que você tenha uma conta gratuita na Oracle Cloud, tá?
+se você não tiver, você pode fazer local também, a gente vai te dar essa alternativa, não tem desculpa pra você ficar pra lá,
+a galera não faz a prática, porque não tem um cartão de crédito pra criar uma conta na Oracle Cloud, cara,
+fica bem tranquilo quanto é isso, tá? Então você vem aqui, ó, Oracle, Oracle Cloud Free, então aqui nesse site,
+você vai conseguir criar uma conta gratuita na Oracle Cloud, pra alguns cenários a gente vai utilizar Oracle Cloud Free tier,
+você precisa ter um cartão de crédito, fazer um cadastro pra poder criar os ambientes,
+e vai utilizar alguns cenários de autónomos da tabéis e te vai mostrar algumas coisas aqui bem legais, tá?
+podemos utilizar com codex, Bruno, você pode sim, mas eu não vou conseguir te dar um suporte, tá?
+sua tela vai estar diferente da minha, a gente vai fazer padronizado no Cloud Code, tá?
+mas aí é por sua conta, eu não colocaria essa variável se você realmente quer aprender com profundidade, eu faria exatamente com o Cloud Code, tá?
+Show de bola e além disso, pessoal, a gente vai fazer uma configuração do VS Code também, tá?
+Então lá, a gente vai mostrar ali pra vocês como que a gente consegue configurar o MCPC, eu te desalo a VS Code,
+mas vocês podem ficar tranquilos, que é uma instalação bem simples, a gente vai fazer toda essa configuração,
+logo no sábado de manhã, no período da manhã, a gente vai fazer a configuração inicial do ambiente,
+e a gente vai fazer o passo a passo juntos, como eu falei gente, a inversão é um tempo que você vai ver ou fazendo,
+e você vai ter o seu tempo pra você executar, tá? Então não tem desculpa, a gente vai executar juntos,
+e a gente vai evoluir junto com a turma, executando e fazendo as práticas, tá?
+SQL Develop, já tenho na hora com o Cloud, vamos lá, a gente não vou utilizar o SQL Develop,
+eu vou utilizar o VS Code, e lá dentro a gente vai fazer sua configuração da extensão do SQL Develop, tá?
+Tem um banco rodando na Cloud, exclude, inici o outro, pode excluí-ca, pode excluí-la, mas lá você pode criar dois, tá?
+Dá outra vez não usar Cloud e não deu pra acompanhar, cara, vai dar assim, tá?
+Você pode fazer algo bem similar que a gente vai fazer na Cloud, também não o PMC, a gente vai mostrar isso aí na prática, tá?
+E aí, pessoal, eu vou passar aqui também pra vocês uma estalação do Oracle 19C, tá?
+Então eu vou liberar pra vocês um tutorial de como que você baixa o Linux, como que você baixa o Oracle 19C,
+e vou liberar pra vocês esse tutorial aqui de estalação, pra você instalar o Oracle 19C dos 0.
+Então, se você não tiver conta no OCI, você vai ter um Oracle instalado que você vai conseguir fazer exatamente as mesmas coisas,
+utilizando um ambiente e um prêmis também, nesse tutorial tem exatamente os sites, os links pra você baixar,
+e como que você pode fazer a estalação do Oracle 2.0, beleza?
+Então, pessoal, basicamente isso que eu queria trazer pra vocês, tá?
+Eu vou liberar pra vocês a gravação dessa live, vou liberar pra vocês os links da assinatura do Cloud,
+da estalação do Cloud, da criação da conta no OCI e da estalação do Oracle 19C, um virtual box, tá?
+Então, é muito importante que, entre hoje e amanhã, você faça a estalação do Oracle database
+e cria sua conta na Oracle Cloud, instale o Cloud Code, tá?
+Pra que no sábado de manhã, você esteja preparado, porque a gente vai mostrar de prática, monamassa e simulação do mundo real.
+Beleza? Alguma dúvida, pessoal!
+Usando o banco na Cloud, não necessidade de estalar o local, eu estalaria os dois, estaleçando,
+eu acho que é algo complementar você ter esses duas possibilidades, se alguma coisa é problema,
+se a Cloud estiver disponível, se demorar lá, você pode fazer o local também.
+Então, faça os dois que você vai estar realmente mais preparado, tá?
+Show de bola!
+Então, pessoal, muito importante acompanhar do notebook e não acompanhar a imersão do celular,
+se prepara pra colocar monamassa, se prepara pra fazer perguntas, se prepara pra executar,
+porque essa é a melhor forma de você aprender algo,
+para colocar monamassa aplicando, tirando dúvidas e fazendo junto com pessoas que já fizeram,
+e se vão estar com pessoas de grandes empresas testando, colocar monamassa e executando essa parte de A no Oracle Database.
+Beleza?
+Sem dúvidas, então, pessoal, não tendo dúvidas, a gente vai estar fechando aí,
+nossa live pra requisitos, estou muito animada por nosso final de semana,
+se preparem por final de semana de muita prática, muita monamassa,
+no sábado, a gente vai estar ao vivo as 9 horas da manhã em ponto,
+normalmente, uma hora antes, a gente já coloca os links no grupo, então esteja preparado,
+já combina ali com a família, caramba, está no evento muito importante,
+que vai mudar o meu jogo, a gente vai produzir muito mais o meu trabalho,
+vai melhorar muito com esse evento, a gente vai mostrar vários cenários aí,
+de atendendo chamados, de atendendo incidentes,
+de como você pode automatizar o seu trabalho e conseguir fazer um trabalho de uma qualidade muito maior.
+Beleza?
+Se preparem que vem muita monamassa.
+Pessoal, fechamos por hoje, queria agradecer a participação de vocês,
+qualquer dúvida que tiver pode colocar também nos grupos,
+lá do WhatsApp, tá bom?
+Os grupos estão disponíveis, inclusive, para a interação,
+então, o objetivo ali é realmente de já começar ali,
+quem está com dúvida, quem está com dificuldade,
+quem tem alguma questão aí que queira perguntar,
+se preparem que vem muita prática, monamassa,
+e que vai ser um final de semana incrível,
+para quem realmente está querendo jogar esse jogo,
+daí há junto com a hora que eu lá está vez.
+Beleza?
+Fechamos por hoje, então, pessoal, um grande abraço com a dúvida,
+a gente conversa no grupo Whatsapp, um abraço e te vejo na ilhação.
+Valeu, pessoal, tchau, tchau.

@@ -1,0 +1,68 @@
+conecte no servidor baixo e execute o prompt
+
+ssh root@192.168.18.220
+Senha welcome1
+
+Você é um engenheiro DBA especialista em Oracle. Sua tarefa é automatizar completamente a preparação de um Oracle Linux 8.10 ARM64 rodando em VMware Fusion no MacOS com chip Apple Silicon, e em seguida instalar o Oracle Database 19c.
+Contexto do ambiente:
+
+Host: MacOS com arquitetura ARM (Apple Silicon)
+Hypervisor: VMware Fusion
+Guest OS: Oracle Linux 8.10 (já instalado e acessível via SSH)
+Arquitetura da VM: ARM64
+IP da VM: 192.168.18.220
+Arquivo do instalador Oracle está na pasta Downloads da minha maquina local
+
+O que você deve fazer:
+
+Conectar na VM via SSH como root
+Configurar o /etc/hosts com hostname lab-imersao-19c.localdomain
+Instalar o pacote oracle-database-preinstall-19c via yum
+Definir senha do usuário oracle
+Configurar IP estático na interface ens160
+Desabilitar SELinux
+Parar e desabilitar o firewalld
+Criar os diretórios /u01/app/oracle/product/19.0.0/dbhome_1 e /u02/oradata com as permissões corretas para o usuário oracle:oinstall
+Descompactar o instalador do Oracle no ORACLE_HOME
+Executar a instalação silenciosa do Oracle Database 19c Enterprise Edition com as seguintes definições:
+
+ORACLE_BASE: /u01/app/oracle
+ORACLE_HOME: /u01/app/oracle/product/19.0.0/dbhome_1
+Global database name: orcl.localdomain
+SID: orcl
+PDB: orclpdb
+Character set: AL32UTF8
+Data location: /u02/oradata
+
+
+Executar os scripts root.sh e orainstRoot.sh automaticamente após a instalação
+Configurar as variáveis de ambiente do Oracle no .bash_profile do usuário oracle
+Habilitar o início automático do banco no /etc/oratab
+Criar e habilitar um serviço systemd para o Oracle Database
+Validar a instalação conectando via sqlplus e consultando a v$instance
+
+Requisitos:
+
+Use os tools de bash do Claude Code para executar cada etapa via SSH na VM
+Valide o sucesso de cada etapa antes de prosseguir para a próxima
+Em caso de erro em qualquer etapa, pare e informe o problema com detalhes
+Ao final, exiba um resumo com o status da instalação, versão do banco, nome da instância e a URL do Oracle EM Express
+
+Documentação final:
+Após concluir toda a instalação com sucesso, gere um arquivo chamado oracle19c_install_guide.md com uma documentação completa e profissional contendo:
+
+Título e descrição do ambiente documentado
+Pré-requisitos de hardware e software com versões exatas utilizadas
+Lista de todos os downloads necessários com URLs
+Passo a passo completo da criação e configuração da VM no VMware Fusion com prints das telas descritas em texto
+Passo a passo completo da instalação do Oracle Linux 8.8 com todas as opções escolhidas
+Todos os comandos executados na preparação do Linux, na ordem exata em que foram rodados, com explicação do que cada um faz
+Parâmetros completos utilizados na instalação silenciosa do Oracle com explicação de cada um
+Estrutura de diretórios criada com descrição da finalidade de cada um
+Variáveis de ambiente configuradas e seus valores
+Configuração do serviço systemd com o conteúdo completo do arquivo
+Comandos de validação e saída esperada de cada um
+Seção de troubleshooting com os erros mais comuns nesse tipo de instalação e como resolvê-los
+Referências e links úteis para documentação oficial Oracle
+
+O arquivo deve ser salvo no diretório atual do Mac de onde o Claude Code está sendo executado e deve estar formatado em Markdown de forma clara e organizada, pronto para ser publicado ou compartilhado com outros DBAs.

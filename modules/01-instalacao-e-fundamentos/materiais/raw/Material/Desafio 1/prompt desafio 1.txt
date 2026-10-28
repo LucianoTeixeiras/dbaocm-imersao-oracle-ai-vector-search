@@ -1,0 +1,86 @@
+-- Oracle Cloud Free
+https://www.oracle.com/cloud/free/
+
+-- SQLcl
+https://www.oracle.com/database/sqldeveloper/technologies/sqlcl/download/
+
+instale o SQLcl que esta na pasta /Downloads com o arquivo sqlcl-26.3.0.260.1620.zip
+
+-- VsCode
+https://code.visualstudio.com/Download?_exp_download=d53503e735
+
+-- Github schema HR
+https://github.com/oracle-samples/db-sample-schemas/releases/tag/v19.2
+
+
+-- 
+Conecte no banco imersao-out-26ai e faca a criação do usuário HR conforme scripts abaixo
+
+CREATE USER hr IDENTIFIED BY "Welcome13489!#26";
+
+ALTER USER hr DEFAULT TABLESPACE DATA QUOTA UNLIMITED ON DATA;
+
+ALTER USER hr TEMPORARY TABLESPACE TEMP;
+
+GRANT CREATE SESSION, CREATE VIEW, ALTER SESSION, CREATE SEQUENCE TO hr;
+GRANT CREATE SYNONYM, CREATE DATABASE LINK, RESOURCE , UNLIMITED TABLESPACE TO hr;
+
+GRANT execute ON sys.dbms_stats TO hr;
+
+-- default tablespace DATA
+-- temporary tablespace TEMP
+
+
+ALTER SESSION SET CURRENT_SCHEMA = HR;
+
+
+-- 
+Conecte no banco imersao-out-26ai (conexão salva do SQLcl, usuário admin) e crie
+os objetos do schema de exemplo HR. O usuário HR já existe e está vazio.
+
+Origem: ~/Downloads/db-sample-schemas-19.2 (3).zip
+Extraia só a pasta db-sample-schemas-19.2/human_resources/ para o scratchpad.
+
+Execute nesta ordem:
+1. hr_cre.sql    (objetos)
+2. hr_popul.sql  (carga)
+3. hr_idx.sql    (índices)
+4. hr_code.sql   (procedures e triggers)
+5. hr_comnt.sql  (comentários)
+6. hr_analz.sql  (estatísticas)
+
+Regras de execução:
+- Os objetos têm que nascer no schema HR, não no ADMIN. Para cada script, crie um
+  wrapper que tenha na primeira linha ALTER SESSION SET CURRENT_SCHEMA = HR; e na
+  segunda @<caminho do script original>. Execute sempre o wrapper com @, nunca o
+  script original direto. Uma execução assíncrona abre outra sessão e perde o
+  ALTER SESSION.
+- Antes de começar, confira que o HR existe e não tem tabelas.
+- Depois de cada script, procure ORA- e SP2- na saída. Se houver erro, pare e me
+  mostre o erro antes de seguir para o próximo.
+
+Validação no final:
+- Contagem de linhas: REGIONS 4, COUNTRIES 25, LOCATIONS 23, DEPARTMENTS 27,
+  JOBS 19, EMPLOYEES 107, JOB_HISTORY 10
+- Nenhum objeto INVALID e nenhuma constraint desabilitada em HR
+- Nenhuma tabela do HR criada por engano no schema ADMIN
+
+
+
+-- 
+Considere um laboratório de estudos com o schema HR e me de as respostas das questões abaixo.
+
+Coloque as consultas com o nome das tabelas em maiusculo e prefixando o schema HR
+
+1. Listar Funcionários e Seus Departamentos
+Escreva uma consulta que retorne o nome do funcionário (first_name, last_name), o nome do departamento onde ele trabalha e o nome do gerente do departamento.
+
+2. Encontrar Funcionários com Salário Acima da Média
+Escreva uma consulta para listar os funcionários cujo salário seja maior do que a média de salários de todos os funcionários.
+
+3. Mostrar o Histórico de Trabalhos dos Funcionários
+Liste o histórico de trabalhos (table JOB_HISTORY) dos funcionários, mostrando para cada um: nome completo, job_id, data de início e fim das funções anteriores.
+
+4. Contar Quantos Funcionários Existem por Região
+Escreva uma consulta que informe o número de funcionários por região (REGIONS), atravessando as tabelas até associar os funcionários às regiões.
+
