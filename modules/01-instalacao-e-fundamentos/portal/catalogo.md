@@ -4,5 +4,4 @@ Registro oficial de acompanhamento do consumo de aulas no portal do curso e stat
 
 | # Aula | Título da Aula no Portal | Status | Notas no Repo | Insumos |
 | :---: | :--- | :---: | :--- | :--- |
-| **midia-dbaocm-hotmart-club** | midia-dbaocm-hotmart-club | 🟡 Transcrito (Pendente Síntese) | *Pendente* | Vídeo/PDF, Transcrição (.txt) |
-| **aula-midia-dbaocm-hotmart-club** | aula-midia-dbaocm-hotmart-club | ✅ Concluído | [`aula-midia-dbaocm-hotmart-club.md`](../aulas/aula-midia-dbaocm-hotmart-club.md) | - |
+| **dbaocm-hotmart-club** | Dbaocm Hotmart Club | ✅ Concluído | [`aula-midia-dbaocm-hotmart-club.md`](../aulas/aula-midia-dbaocm-hotmart-club.md) | Vídeo/PDF, Transcrição (.txt) |

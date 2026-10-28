@@ -58,14 +58,21 @@ class CatalogSynchronizer:
                 lessons_data[key_num]["title"] = name_stem
 
         def extract_num_and_title(stem: str) -> tuple[str, str]:
+            # Remove prefixos comuns de tipos de arquivos para parear simetricamente
+            # ex: midia-aula-01-intro, aula-01-intro, doc-01-intro -> 01-intro
+            clean = re.sub(r"^(?:aula-|midia-|doc-|video-)+", "", stem, flags=re.IGNORECASE)
+
             # Padrão: "aula-01-titulo" ou "01-titulo" ou "mod01-aula-01-titulo"
-            m = re.match(r"^(?:mod\d+-)?(?:aula-)?(\d+)[-_ ]*(.*)$", stem, re.IGNORECASE)
+            m = re.match(r"^(?:mod\d+[-_])?(?:aula[-_])?(\d+)[-_ ]*(.*)$", clean, re.IGNORECASE)
             if m:
                 num_str = f"{int(m.group(1)):02d}"
                 raw_title = m.group(2).replace("-", " ").strip()
                 title = raw_title.title() if raw_title else f"Aula {num_str}"
                 return num_str, title
-            return stem, stem
+
+            # Sem numeração inicial: usa o slug limpo como chave unificada
+            clean_title = clean.replace("-", " ").strip().title() or "Aula"
+            return clean.lower(), clean_title
 
         # 1. Varre materiais/raw
         if raw_dir.exists():

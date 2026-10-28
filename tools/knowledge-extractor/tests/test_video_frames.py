@@ -133,3 +133,27 @@ def test_figures_block_and_attach_idempotent(tmp_path: Path) -> None:
     # Segunda chamada não duplica o bloco (idempotência)
     attach_figures(note, "aula-01", figs)
     assert note.read_text(encoding="utf-8").count(MARKER_START) == 1
+
+
+def test_catalog_sync_normalization_pairs_correctly(tmp_path: Path) -> None:
+    """Garante que midia-X e aula-midia-X resolvam para a mesma chave única no catálogo."""
+    from knowledge_extractor.catalog_sync import CatalogSynchronizer
+    syncer = CatalogSynchronizer()
+    mod_dir = tmp_path / "01-teste"
+    (mod_dir / "materiais" / "raw").mkdir(parents=True)
+    (mod_dir / "materiais" / "transcricoes").mkdir(parents=True)
+    (mod_dir / "aulas").mkdir(parents=True)
+
+    (mod_dir / "materiais" / "raw" / "midia-aula-pratica.mp4").write_bytes(b"video")
+    (mod_dir / "materiais" / "transcricoes" / "midia-aula-pratica.txt").write_text("transcricao", encoding="utf-8")
+    (mod_dir / "aulas" / "aula-midia-aula-pratica.md").write_text("# Aula", encoding="utf-8")
+
+    cat = syncer.sync_module_catalog(mod_dir)
+    assert cat is not None and cat.exists()
+    content = cat.read_text(encoding="utf-8")
+    # Deve haver apenas UMA linha de dados (além do cabeçalho) com status Concluído
+    linhas_tabela = [l for l in content.splitlines() if l.startswith("| **")]
+    assert len(linhas_tabela) == 1
+    assert "✅ Concluído" in linhas_tabela[0]
+    assert "midia-aula-pratica" in linhas_tabela[0]
+
