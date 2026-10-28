@@ -150,6 +150,14 @@ def test_discover_modules_ordering(tmp_path: Path) -> None:
     assert found[1].name == "02-arquitetura"
 
 
+def test_pipeline_imports_confirm() -> None:
+    """Garante que Confirm esteja importado em pipeline.py (evita NameError na opção 8/menu)."""
+    import knowledge_extractor.pipeline as p
+    assert hasattr(p, "Confirm")
+    from rich.prompt import Confirm
+    assert p.Confirm is Confirm
+
+
 
 def test_catalog_sync_normalization_pairs_correctly(tmp_path: Path) -> None:
     """Garante que midia-X e aula-midia-X resolvam para a mesma chave única no catálogo."""
