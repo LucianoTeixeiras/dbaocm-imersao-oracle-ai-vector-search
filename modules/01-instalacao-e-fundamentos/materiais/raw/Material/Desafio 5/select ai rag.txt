@@ -1,0 +1,246 @@
+https://www.oracle.com/artificial-intelligence/generative-ai/retrieval-augmented-generation-rag/
+
+https://blogs.oracle.com/database/announcing-select-ai-with-rag-on-adb
+
+https://blogs.oracle.com/machinelearning/manage-your-models-with-oracle-machine-learning-on-autonomous-database
+
+
+
+-- 
+me ajude a validar o lab abaixo de select ai RAG no banco imersao-out-26ai
+
+--Grants EXECUTE privilege to ADB_USER
+-- GRANT EXECUTE on DBMS_CLOUD_AI to ADB_USER; 
+
+--Grants EXECUTE privilege DBMS_CLOUD_PIPELINE to ADB_USER
+-- GRANT EXECUTE on DBMS_CLOUD_PIPELINE to ADB_USER;
+
+-- Create the OpenAI credential
+BEGIN
+      DBMS_CLOUD.CREATE_CREDENTIAL(
+        credential_name => 'OPENAI_CRED',
+        username => 'OPENAI_CRED',
+        password => '<OPENAI_API_KEY_REDACTED>'
+      );
+END;
+/
+
+PL/SQL procedure successfully completed.
+
+-- Append the OpenAI endpoint
+BEGIN
+        DBMS_NETWORK_ACL_ADMIN.APPEND_HOST_ACE(
+             host => 'api.openai.com',
+             ace  => xs$ace_type(privilege_list => xs$name_list('http'),
+                     principal_name => 'ADMIN',
+                     principal_type => xs_acl.ptype_db)
+       );
+END;
+/
+
+PL/SQL procedure successfully completed.
+
+
+BEGIN DBMS_CLOUD.DROP_CREDENTIAL('OCI_CRED'); END;
+/
+
+
+ 
+-- Create the object store credential
+BEGIN
+  DBMS_CLOUD.CREATE_CREDENTIAL(
+    credential_name => 'OCI_CRED',
+    username => 'OracleIdentityCloudService/guilhermeabrito@gmail.com',
+    password => ':K4lpJX6Os<kG;ggoTL6'
+  );
+END;
+/
+
+-- valida o acesso ao bucket
+SELECT object_name, bytes
+  FROM DBMS_CLOUD.LIST_OBJECTS('OCI_CRED',
+       'https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/gr9zg6q9oeem/b/RAG/o/');
+
+
+
+PL/SQL procedure successfully completed.
+
+ -- Create the profile with the vector index.
+
+BEGIN
+      DBMS_CLOUD_AI.CREATE_PROFILE(
+          profile_name =>'OPENAI_ORACLE',
+          attributes   =>'{"provider": "openai",
+            "credential_name": "OPENAI_CRED",
+            "vector_index_name": "MY_INDEX",
+            "temperature": 1,
+            "max_tokens": 4096
+          }');
+END;
+/
+
+PL/SQL procedure successfully completed.
+
+-- Set profile
+EXEC DBMS_CLOUD_AI.SET_PROFILE('OPENAI_ORACLE');
+
+PL/SQL procedure successfully completed.                                            
+
+
+
+-- create a vector index with the vector store name, object store location and
+-- object store credential
+BEGIN
+       DBMS_CLOUD_AI.CREATE_VECTOR_INDEX(
+         index_name  => 'MY_INDEX',
+         wait_for_completion => false,
+         attributes  => '{"vector_db_provider": "oracle",
+                          "location": "https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/gr9zg6q9oeem/b/RAG/o/",
+                          "object_storage_credential_name": "OCI_CRED",
+                          "profile_name": "OPENAI_ORACLE",
+                          "vector_dimension": 1536,
+                          "vector_distance_metric": "cosine",
+                          "chunk_overlap":128,
+                          "chunk_size":1024
+      }');
+END;
+/
+
+PL/SQL procedure successfully completed.  
+                                                                                
+-- After the vector index is populated, we can now query the index.
+
+PDF no bucket OCI
+      ↓
+ADB lê o arquivo
+      ↓
+Divide em chunks (pedaços de texto)
+      ↓
+Gera vetores (embeddings) de cada chunk
+      ↓
+Armazena os VETORES + TEXTO no banco
+
+
+
+
+SELECT index_name, status 
+FROM user_cloud_vector_indexes;
+
+
+
+
+-- SQLcl
+sql /nolog
+
+conn -name imersao-out-26ai
+
+
+
+-- Set profile
+EXEC DBMS_CLOUD_AI.SET_PROFILE('OPENAI_ORACLE');
+
+PL/SQL procedure successfully completed.
+
+
+
+
+-- Select AI answers the question with the knowledge available in the vector database.
+
+set pages 1000
+set linesize 150
+SELECT AI narrate how can I deploy an oracle machine learning model;
+
+
+RESPONSE                                                  
+To deploy an Oracle Machine Learning model, you can utilize in-database machine learning capabilities provided by Oracle. After building your model, it is immediately available for deployment within the database itself. This means you can access and use the model through SQL queries that incorporate predictive functions built into the SQL language. The model and its algorithm operate directly within the database, eliminating the need for a separate environment. Additionally, you have the flexibility to use models from different schemas (user accounts) if appropriate permissions are in place.
+
+Sources:
+  - Manage your models with Oracle Machine Learning on Autonomous Database _ machinelearning.pdf (https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/gr9zg6q9oeem/b/RAG/o/Manage your models with Oracle Machine Learning on Autonomous Database _ machinelearning.pdf)
+
+
+
+
+SELECT AI narrate what is Oracle Machine Learning;
+
+SELECT AI narrate how to manage models in Oracle Autonomous Database;
+
+SELECT AI narrate what are the benefits of OML model management;
+
+
+
+
+SELECT AI narrate 'what is Oracle Machine Learning?'
+SELECT AI narrate 'how to manage models in Oracle Autonomous Database?'
+SELECT AI narrate 'what are the benefits of OML model management?'
+
+
+
+SELECT AI narrate 'Como posso implantar um modelo de aprendizado de máquina da Oracle?';
+SELECT AI narrate 'O que é o Oracle Machine Learning?'
+SELECT AI narrate 'Como gerenciar modelos no Oracle Autonomous Database?'
+SELECT AI narrate 'Quais são os benefícios do gerenciamento de modelos OML?'
+
+
+
+
+-- vector search
+11:23 AM
+Dá para fazer a busca vetorial direto no SQL, sem RAG. A diferença é que o RAG manda os trechos encontrados para o LLM escrever uma resposta; a busca vetorial pura só traz os trechos do PDF mais parecidos com a sua pergunta. Rodei a consulta abaixo no banco e ela funcionou:
+
+
+SELECT ROUND(VECTOR_DISTANCE(v.embedding, q.vec, COSINE), 4) AS distancia,
+       JSON_VALUE(v.attributes, '$.object_name')              AS arquivo,
+       v.content                                              AS trecho
+  FROM my_index$vectab v,
+       (SELECT DBMS_VECTOR.UTL_TO_EMBEDDING(
+                 'Como posso implantar um modelo de aprendizado de máquina da Oracle?',
+                 JSON('{"provider":"openai",
+                        "credential_name":"OPENAI_CRED",
+                        "url":"https://api.openai.com/v1/embeddings",
+                        "model":"text-embedding-ada-002"}')) AS vec
+          FROM dual) q
+ ORDER BY distancia
+ FETCH FIRST 5 ROWS ONLY;
+
+Como ela funciona:
+
+MY_INDEX$VECTAB é a tabela que o CREATE_VECTOR_INDEX criou. Ela tem os 48 chunks, com o texto em CONTENT, o vetor em EMBEDDING e a origem em ATTRIBUTES.
+
+DBMS_VECTOR.UTL_TO_EMBEDDING transforma a pergunta em vetor. É a única chamada à OpenAI, e é bem barata.
+
+O modelo precisa ser o mesmo que gerou o índice, o text-embedding-ada-002, com 1536 dimensões.
+
+Pergunta e documento em vetores de modelos diferentes não se comparam.
+VECTOR_DISTANCE(..., COSINE) mede a distância entre a pergunta e cada chunk.
+
+Quanto menor, mais parecido. Os 5 primeiros vieram entre 0,19 e 0,21.
+
+O primeiro trecho tem "Deploy from the same database", ou seja, o banco achou o trecho sobre implantar o modelo.
+
+
+
+
+-- 
+SELECT ROUND(VECTOR_DISTANCE(v.embedding, q.vec, COSINE), 4)              AS distancia,
+       ROUND((1 - VECTOR_DISTANCE(v.embedding, q.vec, COSINE)) * 100, 1)  AS similaridade_pct,
+       JSON_VALUE(v.attributes, '$.object_name')                          AS arquivo,
+       JSON_VALUE(v.attributes, '$.location_uri')
+         || JSON_VALUE(v.attributes, '$.object_name')                     AS url,
+       JSON_VALUE(v.attributes, '$.start_offset' RETURNING NUMBER)        AS inicio,
+       JSON_VALUE(v.attributes, '$.end_offset'   RETURNING NUMBER)        AS fim,
+       JSON_VALUE(v.attributes, '$.last_modified')                        AS modificado_em,
+       DBMS_LOB.SUBSTR(
+         REGEXP_REPLACE(REGEXP_REPLACE(v.content, ' +(\s*\n)+\s*', ''), '\s+', ' '),
+         1500, 1)                                                         AS texto
+  FROM my_index$vectab v,
+       (SELECT DBMS_VECTOR.UTL_TO_EMBEDDING(
+                 'Como posso implantar um modelo de aprendizado de máquina da Oracle?',
+                 JSON('{"provider":"openai",
+                        "credential_name":"OPENAI_CRED",
+                        "url":"https://api.openai.com/v1/embeddings",
+                        "model":"text-embedding-ada-002"}')) AS vec
+          FROM dual) q
+ ORDER BY distancia
+ FETCH FIRST 5 ROWS ONLY;
+
+

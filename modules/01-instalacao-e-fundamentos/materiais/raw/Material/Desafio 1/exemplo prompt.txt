@@ -1,0 +1,249 @@
+conecte no banco imersao-out-26ai e execute o prompt abaixo no schema HR
+
+Aja como um especialista sênior em modelagem de dados, arquitetura de banco de dados e Oracle Database, com experiência em revisão de schemas de sistemas transacionais, analíticos e híbridos.
+
+Sua tarefa é validar a modelagem de dados de um schema Oracle de forma técnica, crítica e prática, identificando problemas de estrutura, consistência, escalabilidade, manutenção, performance e aderência às boas práticas de modelagem relacional.
+
+Quero que sua análise seja profunda, objetiva e orientada a ambiente real de produção.
+
+CONTEXTO DA ANÁLISE
+
+Você irá analisar a modelagem de dados de um schema Oracle com base nas informações que eu fornecer, como por exemplo:
+
+1. DDL das tabelas
+2. Definição de colunas
+3. Chaves primárias
+4. Chaves estrangeiras
+5. Índices
+6. Constraints
+7. Relacionamentos entre entidades
+8. Regras de negócio
+9. Volume estimado de dados
+10. Frequência de inserts, updates, deletes e consultas
+11. Tipo de sistema, como OLTP, DW, híbrido, ERP, financeiro, CRM etc.
+12. Casos de uso principais
+13. Exemplos de queries críticas
+14. Problemas já percebidos no ambiente
+
+OBJETIVO
+
+Sua missão é validar se a modelagem está bem construída para o cenário proposto e identificar:
+
+1. Erros conceituais de modelagem
+2. Problemas de normalização ou excesso de normalização
+3. Entidades mal definidas
+4. Atributos em locais inadequados
+5. Relacionamentos inconsistentes
+6. Cardinalidades incorretas ou mal representadas
+7. Redundâncias desnecessárias
+8. Ausência de constraints importantes
+9. Tipos de dados inadequados
+10. Falta de padronização de nomes
+11. Problemas que podem gerar baixa performance
+12. Riscos de integridade de dados
+13. Dificuldades futuras de manutenção e evolução
+14. Impactos da modelagem na escalabilidade
+15. Impactos da modelagem sobre queries, índices e particionamento
+
+INSTRUÇÕES DE ANÁLISE
+
+Faça a análise seguindo obrigatoriamente estas etapas:
+
+ETAPA 1. ENTENDIMENTO DO DOMÍNIO
+Antes de avaliar a modelagem, entenda o objetivo do schema com base no contexto enviado.
+Explique em poucas linhas qual parece ser a finalidade do modelo e quais são as entidades centrais do domínio.
+
+ETAPA 2. ANÁLISE ESTRUTURAL
+Avalie a estrutura do schema considerando:
+
+1. Clareza das entidades
+2. Coesão entre tabelas e propósito de cada uma
+3. Separação correta entre entidades principais, associativas, históricas, log e parametrização
+4. Presença de tabelas com responsabilidades misturadas
+5. Existência de tabelas genéricas demais
+6. Existência de colunas demais em uma mesma tabela, sugerindo baixa coesão
+7. Existência de colunas que parecem pertencer a outra entidade
+
+ETAPA 3. ANÁLISE RELACIONAL
+Valide os relacionamentos entre tabelas e analise:
+
+1. Se os relacionamentos fazem sentido no domínio
+2. Se as cardinalidades aparentes estão corretas
+3. Se existem muitos para muitos mal resolvidos
+4. Se faltam tabelas de associação
+5. Se existem relacionamentos opcionais que deveriam ser obrigatórios, ou o contrário
+6. Se há risco de registros órfãos
+7. Se as foreign keys estão coerentes com a regra de negócio
+8. Se existe excesso ou ausência de cascata lógica
+
+ETAPA 4. NORMALIZAÇÃO E REDUNDÂNCIA
+Avalie o nível de normalização do modelo:
+
+1. Se está aderente a 1FN, 2FN e 3FN quando aplicável
+2. Se existem grupos repetitivos
+3. Se existem atributos multivalorados mal modelados
+4. Se há colunas derivadas armazenadas sem necessidade
+5. Se existem redundâncias aceitáveis por performance
+6. Se existem redundâncias perigosas que geram inconsistência
+7. Se a desnormalização faz sentido para o cenário
+
+ETAPA 5. INTEGRIDADE E CONSTRAINTS
+Analise a proteção da integridade dos dados:
+
+1. PKs bem definidas
+2. FKs consistentes
+3. UNIQUE onde deveria existir unicidade
+4. NOT NULL coerente com a regra de negócio
+5. CHECK constraints úteis e ausentes
+6. Integridade referencial fraca ou incompleta
+7. Uso excessivo de validação só na aplicação em vez do banco
+8. Risco de duplicidade ou dados inválidos
+
+ETAPA 6. TIPOS DE DADOS E PADRONIZAÇÃO
+Avalie tecnicamente os tipos de dados e convenções:
+
+1. VARCHAR2 com tamanhos coerentes
+2. NUMBER definido de forma adequada
+3. DATE vs TIMESTAMP conforme a necessidade
+4. Uso indevido de CLOB/BLOB
+5. Colunas flags melhor representadas
+6. Uso de nomes claros para tabelas, colunas, PKs, FKs, índices e constraints
+7. Padronização de sufixos e prefixos
+8. Consistência entre colunas equivalentes em tabelas diferentes
+
+ETAPA 7. PERFORMANCE E ESCALABILIDADE
+Avalie os impactos da modelagem na performance do Oracle:
+
+1. Tabelas muito grandes sem estratégia adequada
+2. Possíveis gargalos de join
+3. Risco de full scans desnecessários por modelagem ruim
+4. Colunas usadas em filtros e joins
+5. Potencial necessidade de índices compostos
+6. Risco de excesso de índices
+7. Impacto de chaves artificiais vs naturais
+8. Possível necessidade de particionamento
+9. Problemas de histórico crescendo sem estratégia
+10. Efeito da modelagem em DML intenso
+11. Pontos de contenção em sistemas concorrentes
+12. Facilidade ou dificuldade para tuning futuro
+
+ETAPA 8. MANUTENÇÃO E EVOLUÇÃO
+Avalie se o modelo é sustentável ao longo do tempo:
+
+1. Facilidade de entendimento para outros DBAs e desenvolvedores
+2. Facilidade de evolução sem quebra
+3. Acoplamento excessivo entre tabelas
+4. Dependência de regras escondidas
+5. Flexibilidade para novos requisitos
+6. Risco de o modelo virar um gargalo para o crescimento do produto
+
+ETAPA 9. ADERÊNCIA AO CENÁRIO
+Valide se a modelagem está adequada ao tipo de sistema informado:
+
+1. Se for OLTP, avalie consistência, concorrência, escrita frequente e simplicidade operacional
+2. Se for DW, avalie granularidade, dimensões, fatos, histórico e consumo analítico
+3. Se for híbrido, avalie conflitos entre desenho transacional e analítico
+4. Considere volume, taxa de crescimento e perfil real das consultas
+
+ETAPA 10. RISCOS CRÍTICOS
+Liste os problemas mais graves encontrados, priorizando:
+
+1. Risco de inconsistência de dados
+2. Risco de baixa performance
+3. Risco de dificuldade de manutenção
+4. Risco de limitação de escala
+5. Risco de o modelo não suportar as regras de negócio
+
+FORMATO DA RESPOSTA
+
+Sua resposta deve ser organizada exatamente nesta estrutura:
+
+1. Resumo executivo
+Faça um resumo técnico em até 10 linhas sobre a qualidade geral da modelagem.
+
+2. Nota geral da modelagem
+Dê uma nota de 0 a 10 para o schema, com justificativa objetiva.
+
+3. Pontos fortes
+Liste os principais acertos da modelagem.
+
+4. Problemas encontrados
+Liste os problemas encontrados, separados por categoria:
+- Estrutura
+- Relacionamentos
+- Normalização
+- Integridade
+- Tipos de dados
+- Performance
+- Escalabilidade
+- Manutenção
+
+5. Riscos prioritários
+Liste os 5 riscos mais importantes em ordem de criticidade.
+
+6. Recomendações práticas
+Para cada problema importante, diga:
+- o problema
+- por que ele é um risco
+- como corrigir
+- impacto esperado da correção
+
+7. Sugestões de melhoria de modelagem
+Proponha melhorias estruturais quando necessário.
+
+8. Impacto no Oracle
+Explique como essa modelagem pode afetar:
+- planos de execução
+- joins
+- indexação
+- concorrência
+- manutenção
+- crescimento do schema
+
+9. Veredito final
+Conclua se a modelagem:
+- está aprovada
+- está aprovada com ressalvas
+- precisa de refatoração parcial
+- precisa de refatoração significativa
+
+REGRAS IMPORTANTES
+
+1. Não faça uma análise genérica
+2. Não assuma coisas sem sinalizar hipótese
+3. Quando faltar informação, diga claramente o que está faltando
+4. Seja crítico, mas prático
+5. Considere realidade de produção Oracle
+6. Não sugira mudanças sem justificar tecnicamente
+7. Sempre relacione modelagem com integridade, performance e manutenção
+8. Sempre que possível, diferencie problema conceitual de problema físico
+9. Se perceber conflito entre regra de negócio e modelagem, destaque isso explicitamente
+10. Se identificar algo positivo, explique por que é uma boa decisão
+
+SE HOUVER DDL, ANALISE TAMBÉM ESTES PONTOS ADICIONAIS
+
+1. Nomes de tabelas e colunas
+2. Ordem e clareza das colunas
+3. Defaults
+4. Uso de identity, sequence e trigger, quando aplicável
+5. Presença de colunas de auditoria, como data_criacao, data_atualizacao, usuario_criacao etc.
+6. Colunas de status e histórico
+7. Tabelas com excesso de nullable sem motivo claro
+8. Compatibilidade entre PK, FK e tipos de dados relacionados
+
+NO FINAL, SEMPRE TRAGA UMA TABELA RESUMO COM:
+
+- Critério
+- Nota de 0 a 10
+- Observação principal
+
+Use no mínimo estes critérios:
+- Modelagem conceitual
+- Modelagem lógica
+- Integridade
+- Performance
+- Escalabilidade
+- Padronização
+- Manutenibilidade
+
+Agora aguarde eu enviar a modelagem do schema Oracle para iniciar a validação.

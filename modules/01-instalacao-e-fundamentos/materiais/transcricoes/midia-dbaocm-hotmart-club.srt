@@ -1,0 +1,1239 @@
+1
+00:01:56,109 --> 00:02:02,230
+Sejam muito bem-vindos a nossa live de pré-requisitos da nossa inmersão
+
+2
+00:02:02,230 --> 00:02:07,969
+Oracle, Database e CUNYAR. Eu sou Guilherme Brito, sou fundador da DBOSM
+
+3
+00:02:07,969 --> 00:02:13,430
+e durante o próximo final de semana, eu vou estar junto com vocês para a gente poder trazer
+
+4
+00:02:13,430 --> 00:02:20,409
+muita prática, muita mão na massa, sobre Oracle, Database e Inteligência Artificial.
+
+5
+00:02:20,810 --> 00:02:27,250
+A gente vai trazer vários conceitos, várias visões para quem realmente quer acelerar
+
+6
+00:02:27,250 --> 00:02:31,610
+com Inteligência Artificial e o Oracle Database, beleza?
+
+7
+00:02:31,610 --> 00:02:34,810
+Pessoal, que tive a meu vindo aí, digita a cidade onde você está falando, só para
+
+8
+00:02:34,810 --> 00:02:40,409
+eu poder saber se o áudio está chegando legal, a gente já vai começar aqui a nossa live
+
+9
+00:02:40,409 --> 00:02:45,969
+de tiraduda, separe suas principais dúvidas, aqui no Zoom, tem uma área de que o
+
+10
+00:02:45,969 --> 00:02:51,810
+venê de perguntas e respostas, que você pode estar selecionando ali as suas principais dúvidas
+
+11
+00:02:51,810 --> 00:02:56,689
+sobre a inmersão, sobre Oracle, sobre a que eu vou estar respondendo aqui, quem quiser falar,
+
+12
+00:02:56,689 --> 00:03:01,409
+no final, vou dar a oportunidade de ter a opção de levantar a mão aqui no Zoom e a gente pode
+
+13
+00:03:01,409 --> 00:03:06,849
+também te dar essa oportunidade da gente poder fazer um bate-papo, tá bom? E conversar e entender
+
+14
+00:03:06,849 --> 00:03:12,610
+melhor aquilo que você tá buscando, beleza? Vamos lá, pessoal, para a gente começar aqui o nosso
+
+15
+00:03:12,610 --> 00:03:19,009
+bate-papo de hoje, eu quero que seja um bate-papo bem leve, uma conversa realmente, tá?
+
+16
+00:03:19,009 --> 00:03:27,009
+Para que a gente consiga te ajudar o máximo, tá? O que é essa inmersão da DBOCM, tá?
+
+17
+00:03:27,009 --> 00:03:35,009
+A inmersão, gente, ela é muito diferente de um curso, com o objetivo da inmersão. Eu não
+
+18
+00:03:35,009 --> 00:03:41,849
+quero trazer aquele formato de faculdade, aquele formato de curso tradicional, na inmersão,
+
+19
+00:03:41,849 --> 00:03:49,530
+a gente tem como objetivo trazer simulação do mundo real. Então, eu fiz uma prova em 2010,
+
+20
+00:03:49,530 --> 00:03:54,569
+que eu fui o segundo ao CM do Brasil, que é o Oracle Certified Master e essa inmersão foi muito
+
+21
+00:03:54,569 --> 00:04:00,689
+inspirada nessa certificação. Essa certificação foi uma prova que você paga 2 mil dólares e faz
+
+22
+00:04:00,689 --> 00:04:08,330
+durante dois dias o dia todo, lá nos Estados Unidos eu fiz em Atlanta em 2010 e aqui que a gente faz, a gente faz uma
+
+23
+00:04:08,330 --> 00:04:16,329
+simulação realmente. Dois dias abordando oito desafios práticos, simulando o mundo real, tá?
+
+24
+00:04:16,329 --> 00:04:22,689
+E dentro desses 8 desafios, pessoal, a gente vai trazer pra vocês cenários práticos, a nota
+
+25
+00:04:22,689 --> 00:04:30,850
+é isso aqui, tá? De como que o profissional de tecnologia que trabalha com o Oracle pode utilizar
+
+26
+00:04:30,850 --> 00:04:40,930
+a inteligência artificial, tá? E além disso, também a gente já está trazendo exemplos práticos de como
+
+27
+00:04:40,930 --> 00:04:48,449
+que a gente pode utilizar essa metodologia, essa tecnologia, criação de agentes para você poder
+
+28
+00:04:48,449 --> 00:04:55,569
+atender outras áreas das empresas, áreas de negócio, como que você pode fazer colocar um
+
+29
+00:04:55,569 --> 00:05:02,209
+selecto com o linguagem natural, como que você pode utilizar os recursos de criação ou de agentes
+
+30
+00:05:02,209 --> 00:05:07,889
+dentro do Oracle da Tabese, tá? Então hoje você pode criar um agente dentro do banco de Adazorco na última
+
+31
+00:05:07,889 --> 00:05:14,889
+versão do 26AI e como que você pode resolver problemas da área de vendas, problema da área jurídica, análise de
+
+32
+00:05:14,889 --> 00:05:23,089
+contratos, área financeira, área de marketing, área de suporte, RH. Então a gente começa a trazer
+
+33
+00:05:23,089 --> 00:05:29,730
+tudo de caso de como que você pode aplicar, não só pro profissional de tecnologia, fazer seu trabalho
+
+34
+00:05:29,730 --> 00:05:36,529
+mais rápido, mas também como que as outras áreas da empresa podem ser impactadas com a inteligência
+
+35
+00:05:36,529 --> 00:05:43,689
+artificial, inclusive trazendo essa parte de Ad, de aplicações de Ad, até num conceito mais interprase de
+
+36
+00:05:43,689 --> 00:05:51,730
+você ter, por exemplo, maia que vai atender centenas e milhares de pessoas, tá? Hoje você pode rodar
+
+37
+00:05:51,850 --> 00:06:00,449
+agentes nesse tipo de arquitetura que suporta realmente esse tipo de carga, tá? Então basicamente essa é a nossa proposta
+
+38
+00:06:00,449 --> 00:06:09,050
+para esse final de semana, trazer prática, monamassa, simulação do mundo real, para quem realmente quer fazer
+
+39
+00:06:09,050 --> 00:06:16,290
+o seu trabalho muito mais eficiente e muito mais rápido. Só para você ter uma ideia pessoal, logo no sábado
+
+40
+00:06:16,290 --> 00:06:23,170
+do período da manhã, a gente vai estar mostrando como que você pode fazer diversas tarefas 10
+
+41
+00:06:23,170 --> 00:06:31,129
+vezes mais rápido. E vocês vão começar a perceber que qualquer profissional que trabalha atrás
+
+42
+00:06:31,129 --> 00:06:39,329
+de um computador, ele vai ser impactado diretamente com a área. E por que que eu tô trazendo esse ponto, tá,
+
+43
+00:06:39,329 --> 00:06:47,089
+pessoal? Tem gente que tá trabalhando ainda do mesmo jeito que trabalhava em 2016.
+
+44
+00:06:48,689 --> 00:06:55,129
+Cara, eu vou falar, a gente já tá vendo uma série de demissões, layoffs, a Oracle demitiu quase 30 mil
+
+45
+00:06:55,129 --> 00:07:04,290
+pessoas, porque o jeito de trabalhar mudou totalmente. Qualquer profissional que trabalha atrás de um
+
+46
+00:07:04,290 --> 00:07:10,610
+computador, ele vai ser muito afetado. E a área de tecnologia foi uma das mais impactadas pela área de
+
+47
+00:07:10,610 --> 00:07:17,209
+tem, pela pela a inteligência artificial. E vocês vão ver isso na prática. Como que as pessoas que
+
+48
+00:07:17,209 --> 00:07:22,329
+vão ser contratadas de novo, qual que é o novo jogo, como que o profissional de tecnologia vai trabalhar
+
+49
+00:07:22,329 --> 00:07:31,050
+em 2017? Como que o desenvolvimento de software mudou, tá? E a verdade, gente, que se você consegue
+
+50
+00:07:31,050 --> 00:07:36,009
+hoje fazer algo 10 vezes mais rápido, cara, é inevitável, só mudança não tem como voltar mais.
+
+51
+00:07:36,009 --> 00:07:41,850
+E dependente se você acha que é uma bolha, que não é, cara, hoje você pode rodar no seu notebook,
+
+52
+00:07:41,850 --> 00:07:50,449
+como ele é me local, e dá pra você fazer coisas 10 vezes mais rápidas, tá? Então, a nossa proposta é
+
+53
+00:07:50,449 --> 00:07:59,529
+durante dois dias trazer oito estudos de caso do mundo real em formatos de desafios. Então, se o seu
+
+54
+00:07:59,529 --> 00:08:05,490
+objetivo, cara, é simplesmente ter aquela ideia de curso de faculdade que você vai só assistir, eu
+
+55
+00:08:05,490 --> 00:08:12,930
+vou te falar, você vai ficar extremamente incomodado com essa emersão. Por quê? Eu acredito,
+
+56
+00:08:12,930 --> 00:08:21,970
+é uma criança que eu tenho, tá? Que você não aprende só a ver no Slidinger. Você pode até ter uma
+
+57
+00:08:21,970 --> 00:08:28,610
+introdução, uma noção do que quer, mas aprender de verdade vai ser praticando, vai se colocando a
+
+58
+00:08:28,610 --> 00:08:34,809
+mão na massa. E durante esses dois dias pra quem tiver o vivo, a gente vai fornecer todos os
+
+59
+00:08:34,809 --> 00:08:44,049
+scripts, os comandos, as esquíros, os agentes, pra você poder executar, tá? Agora, se você quer ter uma
+
+60
+00:08:44,049 --> 00:08:52,009
+experiência melhor, eu já vou trazer uma visa importante pra vocês. Adquiram o ingresso VIP, tá?
+
+61
+00:08:52,009 --> 00:08:58,049
+Porque com o ingresso VIP, você vai ter a gravação durante 30 dias. E já vou falar o que que vai acontecer.
+
+62
+00:08:58,049 --> 00:09:04,850
+Cara, não vai dar tempo de vocês executar tudo ao vivo. Vai ter coisa, cara, que você vai querer
+
+63
+00:09:04,850 --> 00:09:13,970
+ver o replay, vai ter coisa que você vai estar por acaso, vai ter alguma dúvida. Então, inevitavamente,
+
+64
+00:09:13,970 --> 00:09:20,090
+a gente vai passar tanto conteúdo de valor que, cara, pra você processar tudo, você vai precisar da
+
+65
+00:09:20,090 --> 00:09:26,929
+gravação, tá? Então, eu vou estar liberando aqui pra vocês, pessoal, um link exclusivo, que é o
+
+66
+00:09:26,929 --> 00:09:36,179
+seguinte, se você entrar aqui na página agora da nossa impressão, você vai ver que você vai
+
+67
+00:09:36,179 --> 00:09:46,379
+estar com um colote 3 disponível, tá? Então, esse é o slot 3, basicamente o essencial tá 97, e o VIP tá 3,
+
+68
+00:09:46,379 --> 00:09:53,179
+4, 7. O que que eu vou fazer aqui pra vocês, tá, pessoal? Que estão aqui? Eu vou trazer um link de
+
+69
+00:09:53,179 --> 00:09:58,100
+desconto pra você fazer uma pígrade pro VIP, porque eu não há vt7, você vai ter acessão lá em
+
+70
+00:09:58,100 --> 00:10:03,139
+uns dois dias do evento, a comunidade de alunos, um grupo do WhatsApp durante o período do evento,
+
+71
+00:10:03,139 --> 00:10:08,460
+e os própidos e inscritos pra você que tá ao vivo. Aqui você vai ter um certificado que você pode
+
+72
+00:10:08,460 --> 00:10:15,379
+emitir depois, tá? Acesa a gravação durante 30 dias, há postila, os PDFs organizados, os downloads,
+
+73
+00:10:15,779 --> 00:10:23,659
+a sala VIP do Zoom, perguntas técnicas com os estrutores e uma seção de mentoria de carreira, tá? Então,
+
+74
+00:10:23,659 --> 00:10:29,700
+o que a gente vai conseguir trazer aqui pra vocês, com relação ao VIP, tá? Você vai ter uma
+
+75
+00:10:29,700 --> 00:10:40,580
+condição ultra especial, ao invés de você pagar 3, 347, eu vou fazer algo exclusivo aqui, que é um
+
+76
+00:10:40,580 --> 00:10:50,500
+desconto que você vai conseguir ter acesso ao VIP por apenas 197, tá? Se você comprar hoje aqui
+
+77
+00:10:50,500 --> 00:10:56,580
+nessa live, eu vou trazer pra você um desconto exclusivo onde você vai conseguir o VIP por apenas
+
+78
+00:10:56,580 --> 00:11:03,139
+1,97, ao invés de pagar 3, 4, 7, você vai pagar 1,97, tá? Então, esse é o primeiro aviso,
+
+79
+00:11:03,139 --> 00:11:06,500
+não vou nem ficar insistindo muito o objetivo dessa live, não é vender VIP, cara, eu tô dando
+
+80
+00:11:06,500 --> 00:11:11,059
+simplesmente uma ajuda, porque essa opção apareceu no check out na hora que você comprou ali o
+
+81
+00:11:11,059 --> 00:11:17,460
+ingresso, talvez algumas pessoas não comprar, então, eu tô trazendo aqui pra vocês essa condição
+
+82
+00:11:17,460 --> 00:11:25,860
+exclusiva pra você que tá aqui nessa live, tá? E aí, pessoal, deixa eu só liberar aqui o link pra quem
+
+83
+00:11:25,860 --> 00:11:35,220
+tem interesse, e aí eu quero trazer pra vocês como que vai ser a dinâmica desses dois dias, tá? As
+
+84
+00:11:35,220 --> 00:11:48,440
+pessoas vão começar, deixa eu só mandar aqui o link, 197, eu vou colocar esse link agora aqui
+
+85
+00:11:48,440 --> 00:12:02,929
+disponível pra vocês, então, pessoal, vai acontecer que a gente vai estar ao vivo das 9h18, sábado e
+
+86
+00:12:02,929 --> 00:12:12,210
+domingo, tá? Então, vai acontecer nos dias 17h18, sábado domingo das 9h, às 18h, vão ser 8h por dia, tá?
+
+87
+00:12:12,289 --> 00:12:17,490
+Por que, Guilherme? Por que, quando a gente faz uma imersão, a gente tem muito resultado, tem
+
+88
+00:12:17,490 --> 00:12:26,769
+muitas pessoas que relatam pra gente, que depois da imersão, nestes dois dias, o que ele viu sobre
+
+89
+00:12:26,769 --> 00:12:32,289
+óroco com o iai não tinha visto no último ano, cara, tá? Então, pessoal, tô liberando aqui pra
+
+90
+00:12:32,289 --> 00:12:39,809
+vocês, exatamente esse link aqui, tá? 197, a vista, ou 6 vezes de 38 reais pra você ter a gravação
+
+91
+00:12:39,809 --> 00:12:45,570
+durante 30 dias, tá? Já tá disponível aqui o link no chat, tá? Cabei de mandar aí no chat pra
+
+92
+00:12:45,570 --> 00:12:53,730
+vocês, só clicar pra adquirir o seu engraço VIP. E aí, pessoal, muitas pessoas relatam que no
+
+93
+00:12:53,730 --> 00:12:59,090
+último ano não viu sobre óroco e sobre alco e viu nos últimos nos dois dias, tá? Por que?
+
+94
+00:13:00,289 --> 00:13:06,049
+Cara, com essa questão da inteligência artificial, você vai ver que é uma revolução, cara. Você vai
+
+95
+00:13:06,049 --> 00:13:12,610
+ver que muitas coisas de DSKL, você não vai mais buscar construir Query manualmente, você vai conseguir
+
+96
+00:13:12,610 --> 00:13:18,809
+fazer muito mais rápido. Talvez dificuldades que você tinha ali, na parte do SKR, de John, de
+
+97
+00:13:18,809 --> 00:13:25,009
+subqueres, de questões mais avançadas, você agora, comia, vai conseguir fazer coisas que você
+
+98
+00:13:25,009 --> 00:13:30,370
+não sabia, porque você tem um estagiário que domina a documentação da óroco toda e que consegue
+
+99
+00:13:30,850 --> 00:13:37,009
+corrigir toda a syntaxa pra você se você souber direcionar e trazer uma boa estratégia. A parte de
+
+100
+00:13:37,009 --> 00:13:43,330
+PLSKL, cara, a gente vai falar sobre desovimento, utilizando IA, como você pode fazer vibe code
+
+101
+00:13:43,330 --> 00:13:50,129
+com PLSKL, no banco de dados óroco, como você pode utilizar SDD spec drive development com IA
+
+102
+00:13:50,129 --> 00:13:55,809
+de você criar especificação e aí construir o código pra você. A gente vai falar um pouquinho sobre
+
+103
+00:13:55,889 --> 00:14:02,210
+agent, que é indignio, como você pode criar uma série de agentes pra fazer todas as
+
+104
+00:14:02,210 --> 00:14:07,889
+sequências necessárias dentro do fluxo de desorimento do software, inclusive com revisão, correções de
+
+105
+00:14:07,889 --> 00:14:14,049
+bugs e muito mais, cara, vai mudar totalmente sua cabeça. Então, tanta parte do back end de PLSKL,
+
+106
+00:14:14,049 --> 00:14:21,570
+tanta parte do front end, com a questão do Apex, o Apex Lange, pra quem não sabe as eleições
+
+107
+00:14:21,649 --> 00:14:28,529
+aí, o resultado das eleições foi no, em cima do óroco ex-adata utilizando Apex, então a gente vai
+
+108
+00:14:28,529 --> 00:14:33,330
+mostrar um pouquinho desses bachidores de como que você pode desenvolver de um jeito diferente,
+
+109
+00:14:33,330 --> 00:14:40,289
+além disso, a gente vai estar aprofundando sobre muita questão que provavelmente você nunca viu,
+
+110
+00:14:40,289 --> 00:14:47,330
+então é um evento muito prático, muita monamassa pra quem realmente quer ir para um outro nível,
+
+111
+00:14:47,330 --> 00:14:53,009
+pra quem quer o evento, pra quem quer trabalhar no empresa que utiliza o óroco. Guilherme, eu não
+
+112
+00:14:53,009 --> 00:14:57,809
+tenho interesse em trabalhar com o óroco, entrei aí só por conta da A, cara, vai ser a A aplicada
+
+113
+00:14:57,809 --> 00:15:02,850
+com o óroco, e por que eu falaria pra você estudar a A com o óroco? Porque é o banco de dados mais
+
+114
+00:15:02,850 --> 00:15:07,649
+utilizado no mundo, então você vai ver que grandes empresas aí utilizam o óroco, você que atrapara
+
+115
+00:15:07,649 --> 00:15:12,210
+numa empresa grande, uma empresa que utiliza o óroco, uma empresa relevante, cara, vale muita pena.
+
+116
+00:15:12,210 --> 00:15:16,529
+E você que já trabalha com o óroco da tabese? Pô, Guilherme, eu já trabalho no empresa que
+
+117
+00:15:16,529 --> 00:15:21,490
+utiliza óroco, cara, vale muita pena, você vai ver que vai explodir sua cabeça. Só pra você
+
+118
+00:15:21,490 --> 00:15:27,330
+estere uma ideia, pessoal, essa é a lista das empresas que vão estar com a gente nesse final de semana,
+
+119
+00:15:27,330 --> 00:15:34,289
+tá? Algumas empresas. Então a gente tem centenas de pessoas, empresas participando nesse evento
+
+120
+00:15:34,289 --> 00:15:39,730
+do próximo final de semana, vocês vão ter uma oportunidade de ter uma troca incrível, tá?
+
+121
+00:15:40,129 --> 00:15:47,090
+O evento, ele foi feito de uma forma muito customizada, porque vocês fazem um chequinho, a gente analisa o
+
+122
+00:15:47,090 --> 00:15:52,450
+que vocês estão querendo sair de lá resolvidos e a gente constrói as práticas, os cenários, baseados
+
+123
+00:15:52,450 --> 00:15:58,450
+naquilo que você tá buscando, tá? Então a gente vai trazer, cara, algo de empresas de fora do Brasil,
+
+124
+00:15:58,450 --> 00:16:05,649
+multinacionais, empresas grandes do Brasil e muito mais trazendo prática, mão na massa de como que
+
+125
+00:16:05,649 --> 00:16:12,210
+vocês podem implementar a A, tanta parte de criações de agentes, tanto acelerando suas tarefas ali
+
+126
+00:16:12,210 --> 00:16:20,929
+dentro do dia a dia. No dia 1, pessoal, a gente vai começar falando sobre AI first, você vai trabalhar de um
+
+127
+00:16:20,929 --> 00:16:28,610
+jeito diferente, a cultura é diferente, a forma de pensar diferente, se você não entender que o
+
+128
+00:16:28,610 --> 00:16:35,330
+mod desafio da A não é a parte técnica, é muito mais a parte de definição de processos de estratégia,
+
+129
+00:16:35,330 --> 00:16:41,250
+de forma de pensar e como resolveu os problemas, como que ao invés de fazer isso de forma manual,
+
+130
+00:16:41,250 --> 00:16:47,330
+consigo botar uma A pra fazer grande parte desse trabalho pra mim ou até o trabalho todo, tá? Então
+
+131
+00:16:47,330 --> 00:16:52,370
+a gente vai falar um pouquinho sobre essa mentalidade do AI first, a cultura de uma empresa que time
+
+132
+00:16:52,370 --> 00:16:59,169
+de tecnologia trabalha com a A como copiloto ou até mesmo pilotando muitas etapas, a gente vai falar
+
+133
+00:16:59,169 --> 00:17:05,250
+sobre MCP, muitas pessoas chego no nosso canal do YouTube falando, mas nunca conecte a AI no banco
+
+134
+00:17:05,250 --> 00:17:11,170
+de dados diretamente, cara, não é bem assim, tá? Então a hora que eu tenho o MCP oficial, clara,
+
+135
+00:17:11,170 --> 00:17:16,930
+existe metodologia, a gente vai falar muito sobre segurança, tá? Mas existe metodologia pra você conectar
+
+136
+00:17:16,930 --> 00:17:23,490
+a VMCP no Oracle da Tabese, em desenvolvimento, em divulgação, em produção, cenários, como que
+
+137
+00:17:23,490 --> 00:17:29,009
+você pode mitigar riscos e erros, a gente vai falar um pouquinho sobre harness também, não tem como
+
+138
+00:17:29,009 --> 00:17:35,250
+a gente não falar sobre harness, sobre como você pode criar um harness que vai ser muito acertivo ali
+
+139
+00:17:35,250 --> 00:17:41,049
+pra aquilo que você quer fazer, dando contexto, o que que é harness, vocês vão ver na prática, tá? A gente
+
+140
+00:17:41,049 --> 00:17:46,289
+vai ter uma hora e meia de almoço, de meia e dia e meia de 30, na parte da tarde a gente vai falar um
+
+141
+00:17:46,289 --> 00:17:53,009
+pouco sobre SELECT AI, como que você pode fazer isso, o SELECT linguagem natural, tanto na versão 19 ou
+
+142
+00:17:53,009 --> 00:17:58,609
+na versão nova, quais são as possibilidades de você configurar isso no Oracle da Tabese, a gente já vai
+
+143
+00:17:58,609 --> 00:18:04,690
+depois trazer algumas skills que são instruções ali de trabalho, de como você pode treinar uma ia pra
+
+144
+00:18:04,690 --> 00:18:11,089
+fazer um trabalho muito específico, com o estudo de caso, de como que a gente teria ali cenários de
+
+145
+00:18:11,089 --> 00:18:16,529
+resolver problemas de SQL, de modelar de dados e muito mais, a gente vai mostrar também algumas skills ali
+
+146
+00:18:16,529 --> 00:18:23,170
+de pele SQL, aprofundando sobre metodologia de desenvolvimento de código, utilizando skills e agentes,
+
+147
+00:18:23,170 --> 00:18:28,650
+tá, vocês vão ver muita coisa prática e muita monamassa, então no primeiro dia, pessoal, já vai explodir a
+
+148
+00:18:28,650 --> 00:18:34,289
+cabeça de vocês, vocês vão ver que tem coisas que provavelmente vocês não estão fazendo e que vocês
+
+149
+00:18:34,289 --> 00:18:44,369
+poderiam fazer, tá, e no segundo dia, a gente já vai subir muito a barra, que a gente vai mostrar uma
+
+150
+00:18:44,369 --> 00:18:53,210
+funcionalidade nova do Oracle 26 AI, que você pode fazer um SELECT AI RAG, tá, a gente vai falar o
+
+151
+00:18:53,210 --> 00:19:00,410
+que é o RAG, a gente vai configurar um RAG juntos, a gente vai fazer tudo isso na prática, já no segundo dia,
+
+152
+00:19:00,410 --> 00:19:05,930
+que a gente vai subir muito a barra, tá, a gente fala de RAG e a busca semântica, é utilizar os recursos de
+
+153
+00:19:05,930 --> 00:19:11,529
+Vector Search, e você pode fazer isso através do SELECT, tá, a gente vai mostrar isso na prática,
+
+154
+00:19:11,529 --> 00:19:16,369
+depois a gente vai mostrar muita coisa no período da tarde sobre performance, cara, que é uma dor muito forte,
+
+155
+00:19:16,369 --> 00:19:24,289
+inclusive, você pode botar um usuário somente leitura para conectar em produção, tá, para fazer análise de
+
+156
+00:19:24,289 --> 00:19:30,609
+performance bem rápido e bem profundas como um cara senior de 20 anos, tá, a gente vai mostrar muito
+
+157
+00:19:30,609 --> 00:19:36,130
+cenário de performance que vai explodir sua cabeça de possibilidades, a gente vai mostrar o comando novo
+
+158
+00:19:36,130 --> 00:19:43,609
+chamado SELECT AI Agent, o SELECT AI Agent é você criar agentes dentro do banco de dados, vocês vão ver
+
+159
+00:19:43,609 --> 00:19:49,009
+como isso é possível, tá, além disso se dá tempo, eu vou mostrar até algumas ferramentas novas que a
+
+160
+00:19:49,009 --> 00:19:57,289
+hora que está fornecendo, como o Agent Factor, que é uma ferramenta no code que vocês conseguem criar agentes
+
+161
+00:19:57,289 --> 00:20:03,490
+dentro do Oracle 26 AI, cara, vocês vão ver que essa ferramenta vai explodir algo muito novo pessoal,
+
+162
+00:20:03,490 --> 00:20:08,930
+até o pessoal dá para a hora que eu conversei recentemente da Oracle Brasil, tão testando ainda, é o que foi
+
+163
+00:20:08,930 --> 00:20:15,329
+lançado esse ano, que a gente já está colocando a monamassa, a gente já tem vários estudos de caso aqui, de como
+
+164
+00:20:15,410 --> 00:20:23,289
+pode utilizar o Agent Factor para, pô, não quero entrar na linha do desenvolvimento de código que ele é, cara, dá para
+
+165
+00:20:23,289 --> 00:20:29,490
+fazer isso através de ferramentas no code, tá, sem precisar criar código, e os que os de segurança sobre
+
+166
+00:20:29,490 --> 00:20:38,130
+SELECT AI, sobre mais caramento de dados, cara, vocês vão explodir a cabeça sobre possibilidades, tá, e a última
+
+167
+00:20:38,130 --> 00:20:45,210
+gente vai ter, eu falei 8, mas eu vou entregar 9, tá, vai ser sobre APEX con AI, como você pode desenvolver
+
+168
+00:20:45,210 --> 00:20:52,769
+aplicações em APEX, o APEX é uma ferramenta no code que você já consegue desenvolver 20 vezes mais rápido do que com
+
+169
+00:20:52,769 --> 00:21:00,049
+o desenvolvimento tradicional, e quando você coloca APEX con AI, cara, criação de agentes, mas cara, você vai ver que
+
+170
+00:21:00,049 --> 00:21:08,049
+vai explodir as possibilidades do que pode ser feito, tá, então vocês podem ter certeza que com que a gente vai
+
+171
+00:21:08,049 --> 00:21:14,450
+fundar aqui, cara, você consegue utilizar o seu trabalho com o profissional de tecnologia, pô, galera, toda a semana
+
+172
+00:21:14,450 --> 00:21:20,410
+atendo o chamado tal, todo o semana atendo o incidente tal, você pode utilizar os que os agentes e automações para fazer isso,
+
+173
+00:21:20,410 --> 00:21:26,890
+a gente vai mostrar como que você pode fazer isso na prática, pô, galera, eu queria utilizar para apoiar a
+
+174
+00:21:26,890 --> 00:21:33,529
+de negócio, para criar uma gente ali para áreas de vendas, para área de marketing, para criar propostas, para
+
+175
+00:21:33,529 --> 00:21:40,569
+criar anúncios, cara, dá para você fazer isso também, e você vai ver como que isso é possível na prática,
+
+176
+00:21:40,569 --> 00:21:50,369
+como que você pode realmente utilizar toda essa arquitetura do órgão, para poder realmente trazer soluções de
+
+177
+00:21:50,369 --> 00:21:57,210
+inteligência artificial com os dados que vão fazer coisas em crise, agora o grande ponto pessoal, pessoal tem falado muito sobre
+
+178
+00:21:57,210 --> 00:22:07,130
+isso, mas aí há senhos dados, ela é burra, então entenda que você juntar o órgão da tabéis, com uma inteligência artificial,
+
+179
+00:22:07,130 --> 00:22:15,130
+você vai fazer o que tem de mais poderoso correlação aí, você vai aumentar muitas suas possibilidades de conseguir fazer coisas
+
+180
+00:22:15,130 --> 00:22:22,650
+incríveis, porque se você está olhando só para ir há só para a ferramenta, senhos dados, cara aí a vai arrafei, agora se seus dados
+
+181
+00:22:22,650 --> 00:22:31,809
+estruturados, bem organizados, com as ferramentas que você pode utilizar dentro do órgão da tabéis, como a parte de
+
+182
+00:22:31,809 --> 00:22:41,970
+Vector Search, a parte de grafo, a parte de todos os recursos, que é o órgão que eu tenho disponível, cara, você vai
+
+183
+00:22:41,970 --> 00:22:50,690
+conseguir fazer coisas incríveis, então a órgão que eu tenho muitos recursos ali, bem interessantes, que vão fazer com que
+
+184
+00:22:50,690 --> 00:23:01,970
+você consiga trazer resultados incríveis, beleza, pessoal, esse é um resumo do que a gente vai tá fazendo aí durante esse final de semana, eu tô vendo aqui que tem
+
+185
+00:23:01,970 --> 00:23:10,450
+várias pessoas que já estão adquirindo aqui o VIP, que legal, pessoal, sejam muito bem-vindos, vai ser legal demais ter vocês aqui com a gente, eu vi
+
+186
+00:23:10,450 --> 00:23:24,970
+com o alano, o José Ricardo, o Luis Flávio, show de bola, pessoal, vai ser um prazer aí, trazer esse experiência um pouco mais aprofundada aí para vocês, até para vocês conseguirem ter essa
+
+187
+00:23:24,970 --> 00:23:37,609
+gravação durante o bom tempo, é o melhor cenário, cara, com certeza você tendo a gravação ali, você vai ter uma experiência muito melhor, tá, e vai conseguir absorver esse conteúdo com uma
+
+188
+00:23:37,609 --> 00:23:51,289
+profunda idade muito maior do que quem só ative assistindo ao vivo, tá, então você tá comprometido o cara de queiro VIP, que vai valer bastante a pena, pessoal, certificado, o VIP tá garantido o certificado, porque vocês têm acesso durante a plataforma
+
+189
+00:23:51,289 --> 00:24:05,690
+durante 30 dias, com as aulas, então você pode emitir o certificado depois, assim que você concluir as práticas, tá, mas a gente não vai for necessitado para quem não faz, tá, então é muito importante que você faça os desafios, publica lá no seu link edim, tá,
+
+190
+00:24:05,690 --> 00:24:12,690
+realmente as pessoas que não vão comprar o VIP pra você ter o certificado, e eu quero dar uma visa importante pra vocês, tá,
+
+191
+00:24:12,690 --> 00:24:23,250
+é, não adianta você assistir durante dois dias e não saber aplicar, e você mostrar pra sua rede profissional, o que você sabe fazer, o que você
+
+192
+00:24:23,250 --> 00:24:29,690
+tá estudando, é tão importante quanto estudar, tá, porque muitas vezes você tá estudando pra caramba só que ninguém sabe que você tá estudando, tá,
+
+193
+00:24:29,690 --> 00:24:45,690
+e eu já queria trazer aqui um desafio pra vocês, pessoal, pra vocês realmente já saírem daqui, mostrando pra sua rede profissional, quanto que você tá comprometido em aplicar a IA com o Oracle Database,
+
+194
+00:24:45,690 --> 00:24:56,690
+nós fizemos uma página aqui que é lá no seguinte, você vai colocar o seu nome, e ler brito, você vai colocar o seu cargo,
+
+195
+00:24:56,690 --> 00:25:15,660
+vou botar aqui, db a Oracle, empresa, db LCM, e aqui que você vai fazer, você vai entrar no seu link edim, vai pegar sua foto, e você vai salvar sua foto como imagem,
+
+196
+00:25:15,660 --> 00:25:41,799
+e aqui eu vou botar Guilherme, deixa eu salvar aqui, e aí eu vou selecionar aqui minha foto, e vou criar exatamente essa imagem,
+
+197
+00:25:41,799 --> 00:25:55,799
+mostrando que eu vou tá participando, recomendo que vocês façam isso, mostrem pra sua rede profissional, que você tá participando de um evento sobre Oracle Database com IA, com certeza as pessoas que trabalham com você, já vão de chegar de uma forma diferente,
+
+198
+00:25:55,799 --> 00:26:07,799
+seus gestores, seus clientes que você atende, e baixa aqui essa imagem, e aí publique lá no seu link edim, marca db LCM, até pra gente poder te ajudar a divulgar o quanto que você tá estudando,
+
+199
+00:26:07,799 --> 00:26:18,799
+publique lá também no seu Instagram, marca o Instagram a roupa db LCM, porque com certeza você tá comprometido, tá estudando, tá praticando, executando os desafios práticos,
+
+200
+00:26:18,799 --> 00:26:30,799
+e mostrando pra sua rede profissional, você vai ver o quanto que isso vai gerar de impacto positivo de você crescendo em presa atual, receber propostas patafantes de projetos mais relevantes,
+
+201
+00:26:30,799 --> 00:26:41,799
+que sabe ser promovido, receber propostas de outras empresas, então você vai ver o quanto que muda o jogo, você realmente avisar pra sua rede profissional, o quanto que você testa o dano, beleza?
+
+202
+00:26:41,799 --> 00:26:49,799
+Pessoal, basicamente isso que eu queria trazer pra vocês, agora eu queria trazer pra vocês uma seção aqui de perguntas e respostas,
+
+203
+00:26:49,799 --> 00:26:59,799
+alguém tem uma dúvida relacionada à imensão, estou vendo aqui no chat, ninguém colocou nada, se você tem uma dúvida também, pode levantar a mãozinha aqui nos zoom, tá?
+
+204
+00:26:59,799 --> 00:27:08,799
+Que eu consigo liberar o seu áudio aí, caso você queira perguntar alguma coisa, sobre como que vai acontecer o evento e muito mais,
+
+205
+00:27:08,799 --> 00:27:29,480
+e eu vou colocar uma enquete, que é o seguinte, vai aparecer na tela de vocês, tá pessoal, você já participou de alguma imensão da DBOCM com IA,
+
+206
+00:27:29,480 --> 00:27:35,480
+por que, pessoal, se você já participou, essa vai ser inédita, eu vou te falar que vai ter coisa nova,
+
+207
+00:27:35,480 --> 00:27:46,480
+se você não participou, você pode ter certeza que vai ser uma virada de chave da forma como você trabalha com Oraco e com IA,
+
+208
+00:27:46,480 --> 00:27:54,480
+aqui legal, 80% das pessoas não participaram de uma imensão da DBOCM com IA, cara que legal,
+
+209
+00:27:54,480 --> 00:28:00,480
+a velha de maioria realmente está chegando agora, e vocês podem ter certeza que vocês vão ver muitas novidades,
+
+210
+00:28:00,480 --> 00:28:12,480
+e quem já participou, cara, se prepara e que vai ver práticas diferentes, muita monamassa, pra você realmente conseguir se destacar com o da Suntéórico e Inteligência Artificial,
+
+211
+00:28:12,480 --> 00:28:14,480
+beleza?
+
+212
+00:28:15,480 --> 00:28:23,480
+Pessoal, não tendo dúvidas, a gente vai fechando por aqui a nossa live de hoje, tá a forma live simplesmente pra poder ali as expectativas,
+
+213
+00:28:23,480 --> 00:28:33,480
+quem tá animado aí, pra nossa imensão, coloca eu aí no chat, pra eu poder entender que você tá animado, que tá fazendo sentido,
+
+214
+00:28:33,480 --> 00:28:41,480
+que cara, que você quer ir pra cima dessa parte de Oraco com IA, e se prepara e porque realmente vão ser dois dias,
+
+215
+00:28:41,480 --> 00:28:48,480
+muitos transformadores, que a gente vai trazer muita prática, muita monamassa, trago suas principais perguntas,
+
+216
+00:28:48,480 --> 00:28:55,480
+esse evento foi construído exatamente pra de forma customizada, de acordo com que as pessoas colocaram lá no chequinho,
+
+217
+00:28:55,480 --> 00:29:04,480
+então a gente vai ajudar bastante e vocês vão tá num evento com grandes empresas, com grandes personais trocando informações,
+
+218
+00:29:04,480 --> 00:29:11,480
+então quanto mais você perguntar, quanto mais você colocar dúvidas, quanto mais você for participativo no chat,
+
+219
+00:29:11,480 --> 00:29:19,480
+levantando a mão, fazendo perguntas, trazendo até mesmo questões de segurança, dúvidas, contando seu momento atual,
+
+220
+00:29:19,480 --> 00:29:29,480
+isso vai ser melhor e essa imensão com certeza vai ajudar bastante, quem tiver lá, inclusive você com uma experiência diferente de um curso tradicional, tá?
+
+221
+00:29:29,480 --> 00:29:36,480
+então não sou objetivo realmente trazer muita prática e muita monamassa, ou aleçando, tem alguma configuração pra eu baixar,
+
+222
+00:29:36,480 --> 00:29:45,480
+e vamos lá aleçando, excelente pergunta, o que que acontece, cara, pra gente poder fazer essa imensão,
+
+223
+00:29:45,480 --> 00:29:52,480
+a gente vai utilizar o cloud code, tá? Então hoje, cara, se você quer utilizar IA,
+
+224
+00:29:52,480 --> 00:29:57,480
+você vai ter que pagar toda a mesma assinatura mínima de inteligência artificial, tá?
+
+225
+00:29:57,480 --> 00:30:04,480
+aqui a gente vai utilizar o cloud code, você vai poder utilizar ali um plano básico, tá?
+
+226
+00:30:04,480 --> 00:30:14,480
+aquele plano inicial de 20 dólares, tá? Então eu vou até abrir aqui, ó, o plano free, você não vai ter acesso ao cloud code,
+
+227
+00:30:14,480 --> 00:30:21,480
+o cloud code é uma das principais ferramentas de integração, geração de code e muito mais, então você vai ter que ter o cloud code,
+
+228
+00:30:21,480 --> 00:30:28,480
+aqui ó, tá acelho pra apenas 92 reais, tá? Com esse plano pro, você pode fazer um mês depois de cancelar,
+
+229
+00:30:28,480 --> 00:30:35,480
+você já consegue fazer tudo que a gente vai mostrar, ah Guilherme, pô, eu vou ter que pagar 92 reais pra poder fazer as práticas,
+
+230
+00:30:35,480 --> 00:30:42,480
+então eu vou te falar, pra você fazer um trabalho 10 vezes mais rápido, então vai valer muita pena, cara,
+
+231
+00:30:42,480 --> 00:30:48,480
+e vou te falar, quem não investir até hoje, num plano mínimo de inteligência artificial de 100 reais, cara,
+
+232
+00:30:48,480 --> 00:30:54,480
+vai estar fora do jogo, não tem como, você vai ficar obsoleto, seu colega de trabalho vai fazer 10 vezes mais rápido,
+
+233
+00:30:54,480 --> 00:30:59,480
+trabalho que você, e se você não tiver estudando e testando, cara, você vai ficar pra trás, tá?
+
+234
+00:30:59,480 --> 00:31:07,480
+vou adquirir esse pro show de bola, aqui eu vou liberar pra vocês também lá no grupo, a estalação aqui do cloud code, tá?
+
+235
+00:31:07,480 --> 00:31:16,480
+então é tutorial de como que você pode fazer, ó, se você tá em lino, se você tá no Windows do PowerShell ou no CMD, tá?
+
+236
+00:31:16,480 --> 00:31:25,480
+então como que você inicia sua primeira seção e muito mais, então aqui você vai ter exatamente o passo a passo,
+
+237
+00:31:25,480 --> 00:31:34,480
+a gente vai fazer, pessoal, também, a gente vai utilizar uma conta na Oracle Cloud, tá?
+
+238
+00:31:34,480 --> 00:31:40,480
+então é importante que você tenha uma conta gratuita na Oracle Cloud, tá?
+
+239
+00:31:40,480 --> 00:31:47,480
+se você não tiver, você pode fazer local também, a gente vai te dar essa alternativa, não tem desculpa pra você ficar pra lá,
+
+240
+00:31:47,480 --> 00:31:53,480
+a galera não faz a prática, porque não tem um cartão de crédito pra criar uma conta na Oracle Cloud, cara,
+
+241
+00:31:53,480 --> 00:32:07,480
+fica bem tranquilo quanto é isso, tá? Então você vem aqui, ó, Oracle, Oracle Cloud Free, então aqui nesse site,
+
+242
+00:32:07,480 --> 00:32:17,480
+você vai conseguir criar uma conta gratuita na Oracle Cloud, pra alguns cenários a gente vai utilizar Oracle Cloud Free tier,
+
+243
+00:32:17,480 --> 00:32:22,480
+você precisa ter um cartão de crédito, fazer um cadastro pra poder criar os ambientes,
+
+244
+00:32:22,480 --> 00:32:28,480
+e vai utilizar alguns cenários de autónomos da tabéis e te vai mostrar algumas coisas aqui bem legais, tá?
+
+245
+00:32:28,480 --> 00:32:34,480
+podemos utilizar com codex, Bruno, você pode sim, mas eu não vou conseguir te dar um suporte, tá?
+
+246
+00:32:34,480 --> 00:32:39,480
+sua tela vai estar diferente da minha, a gente vai fazer padronizado no Cloud Code, tá?
+
+247
+00:32:39,480 --> 00:32:48,480
+mas aí é por sua conta, eu não colocaria essa variável se você realmente quer aprender com profundidade, eu faria exatamente com o Cloud Code, tá?
+
+248
+00:32:48,480 --> 00:33:00,480
+Show de bola e além disso, pessoal, a gente vai fazer uma configuração do VS Code também, tá?
+
+249
+00:33:00,480 --> 00:33:07,480
+Então lá, a gente vai mostrar ali pra vocês como que a gente consegue configurar o MCPC, eu te desalo a VS Code,
+
+250
+00:33:07,480 --> 00:33:11,480
+mas vocês podem ficar tranquilos, que é uma instalação bem simples, a gente vai fazer toda essa configuração,
+
+251
+00:33:11,480 --> 00:33:16,480
+logo no sábado de manhã, no período da manhã, a gente vai fazer a configuração inicial do ambiente,
+
+252
+00:33:16,480 --> 00:33:22,480
+e a gente vai fazer o passo a passo juntos, como eu falei gente, a inversão é um tempo que você vai ver ou fazendo,
+
+253
+00:33:22,480 --> 00:33:27,480
+e você vai ter o seu tempo pra você executar, tá? Então não tem desculpa, a gente vai executar juntos,
+
+254
+00:33:27,480 --> 00:33:33,480
+e a gente vai evoluir junto com a turma, executando e fazendo as práticas, tá?
+
+255
+00:33:33,480 --> 00:33:38,480
+SQL Develop, já tenho na hora com o Cloud, vamos lá, a gente não vou utilizar o SQL Develop,
+
+256
+00:33:38,480 --> 00:33:44,480
+eu vou utilizar o VS Code, e lá dentro a gente vai fazer sua configuração da extensão do SQL Develop, tá?
+
+257
+00:33:44,480 --> 00:33:50,480
+Tem um banco rodando na Cloud, exclude, inici o outro, pode excluí-ca, pode excluí-la, mas lá você pode criar dois, tá?
+
+258
+00:33:50,480 --> 00:33:56,480
+Dá outra vez não usar Cloud e não deu pra acompanhar, cara, vai dar assim, tá?
+
+259
+00:33:56,480 --> 00:34:02,480
+Você pode fazer algo bem similar que a gente vai fazer na Cloud, também não o PMC, a gente vai mostrar isso aí na prática, tá?
+
+260
+00:34:02,480 --> 00:34:11,480
+E aí, pessoal, eu vou passar aqui também pra vocês uma estalação do Oracle 19C, tá?
+
+261
+00:34:11,480 --> 00:34:17,480
+Então eu vou liberar pra vocês um tutorial de como que você baixa o Linux, como que você baixa o Oracle 19C,
+
+262
+00:34:17,480 --> 00:34:24,480
+e vou liberar pra vocês esse tutorial aqui de estalação, pra você instalar o Oracle 19C dos 0.
+
+263
+00:34:24,480 --> 00:34:30,480
+Então, se você não tiver conta no OCI, você vai ter um Oracle instalado que você vai conseguir fazer exatamente as mesmas coisas,
+
+264
+00:34:30,480 --> 00:34:37,480
+utilizando um ambiente e um prêmis também, nesse tutorial tem exatamente os sites, os links pra você baixar,
+
+265
+00:34:37,480 --> 00:34:43,480
+e como que você pode fazer a estalação do Oracle 2.0, beleza?
+
+266
+00:34:44,480 --> 00:34:47,480
+Então, pessoal, basicamente isso que eu queria trazer pra vocês, tá?
+
+267
+00:34:47,480 --> 00:34:53,480
+Eu vou liberar pra vocês a gravação dessa live, vou liberar pra vocês os links da assinatura do Cloud,
+
+268
+00:34:53,480 --> 00:35:02,480
+da estalação do Cloud, da criação da conta no OCI e da estalação do Oracle 19C, um virtual box, tá?
+
+269
+00:35:02,480 --> 00:35:07,480
+Então, é muito importante que, entre hoje e amanhã, você faça a estalação do Oracle database
+
+270
+00:35:07,480 --> 00:35:11,480
+e cria sua conta na Oracle Cloud, instale o Cloud Code, tá?
+
+271
+00:35:11,480 --> 00:35:20,480
+Pra que no sábado de manhã, você esteja preparado, porque a gente vai mostrar de prática, monamassa e simulação do mundo real.
+
+272
+00:35:20,480 --> 00:35:25,329
+Beleza? Alguma dúvida, pessoal!
+
+273
+00:35:25,329 --> 00:35:33,400
+Usando o banco na Cloud, não necessidade de estalar o local, eu estalaria os dois, estaleçando,
+
+274
+00:35:33,400 --> 00:35:38,400
+eu acho que é algo complementar você ter esses duas possibilidades, se alguma coisa é problema,
+
+275
+00:35:38,400 --> 00:35:42,400
+se a Cloud estiver disponível, se demorar lá, você pode fazer o local também.
+
+276
+00:35:42,400 --> 00:35:46,400
+Então, faça os dois que você vai estar realmente mais preparado, tá?
+
+277
+00:35:46,400 --> 00:35:51,119
+Show de bola!
+
+278
+00:35:51,119 --> 00:35:57,119
+Então, pessoal, muito importante acompanhar do notebook e não acompanhar a imersão do celular,
+
+279
+00:35:57,119 --> 00:36:01,119
+se prepara pra colocar monamassa, se prepara pra fazer perguntas, se prepara pra executar,
+
+280
+00:36:01,119 --> 00:36:05,119
+porque essa é a melhor forma de você aprender algo,
+
+281
+00:36:05,119 --> 00:36:12,119
+para colocar monamassa aplicando, tirando dúvidas e fazendo junto com pessoas que já fizeram,
+
+282
+00:36:12,119 --> 00:36:19,119
+e se vão estar com pessoas de grandes empresas testando, colocar monamassa e executando essa parte de A no Oracle Database.
+
+283
+00:36:19,119 --> 00:36:20,119
+Beleza?
+
+284
+00:36:20,119 --> 00:36:28,159
+Sem dúvidas, então, pessoal, não tendo dúvidas, a gente vai estar fechando aí,
+
+285
+00:36:28,159 --> 00:36:33,159
+nossa live pra requisitos, estou muito animada por nosso final de semana,
+
+286
+00:36:33,159 --> 00:36:37,159
+se preparem por final de semana de muita prática, muita monamassa,
+
+287
+00:36:37,159 --> 00:36:42,159
+no sábado, a gente vai estar ao vivo as 9 horas da manhã em ponto,
+
+288
+00:36:42,159 --> 00:36:46,159
+normalmente, uma hora antes, a gente já coloca os links no grupo, então esteja preparado,
+
+289
+00:36:46,159 --> 00:36:50,159
+já combina ali com a família, caramba, está no evento muito importante,
+
+290
+00:36:50,159 --> 00:36:54,159
+que vai mudar o meu jogo, a gente vai produzir muito mais o meu trabalho,
+
+291
+00:36:54,159 --> 00:36:58,159
+vai melhorar muito com esse evento, a gente vai mostrar vários cenários aí,
+
+292
+00:36:58,159 --> 00:37:03,159
+de atendendo chamados, de atendendo incidentes,
+
+293
+00:37:03,159 --> 00:37:09,159
+de como você pode automatizar o seu trabalho e conseguir fazer um trabalho de uma qualidade muito maior.
+
+294
+00:37:09,159 --> 00:37:10,159
+Beleza?
+
+295
+00:37:10,159 --> 00:37:12,159
+Se preparem que vem muita monamassa.
+
+296
+00:37:12,159 --> 00:37:15,159
+Pessoal, fechamos por hoje, queria agradecer a participação de vocês,
+
+297
+00:37:15,159 --> 00:37:18,159
+qualquer dúvida que tiver pode colocar também nos grupos,
+
+298
+00:37:18,159 --> 00:37:20,159
+lá do WhatsApp, tá bom?
+
+299
+00:37:20,159 --> 00:37:23,159
+Os grupos estão disponíveis, inclusive, para a interação,
+
+300
+00:37:23,159 --> 00:37:26,159
+então, o objetivo ali é realmente de já começar ali,
+
+301
+00:37:26,159 --> 00:37:28,159
+quem está com dúvida, quem está com dificuldade,
+
+302
+00:37:28,159 --> 00:37:31,159
+quem tem alguma questão aí que queira perguntar,
+
+303
+00:37:31,159 --> 00:37:34,159
+se preparem que vem muita prática, monamassa,
+
+304
+00:37:34,159 --> 00:37:37,159
+e que vai ser um final de semana incrível,
+
+305
+00:37:37,159 --> 00:37:41,159
+para quem realmente está querendo jogar esse jogo,
+
+306
+00:37:41,159 --> 00:37:43,159
+daí há junto com a hora que eu lá está vez.
+
+307
+00:37:43,159 --> 00:37:44,159
+Beleza?
+
+308
+00:37:44,159 --> 00:37:46,159
+Fechamos por hoje, então, pessoal, um grande abraço com a dúvida,
+
+309
+00:37:46,159 --> 00:37:50,159
+a gente conversa no grupo Whatsapp, um abraço e te vejo na ilhação.
+
+310
+00:37:50,159 --> 00:37:52,159
+Valeu, pessoal, tchau, tchau.

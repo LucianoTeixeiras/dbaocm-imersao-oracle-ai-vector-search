@@ -29,7 +29,7 @@ console = Console(highlight=False)
 
 VIDEO_EXTENSIONS = {".mp4", ".mkv", ".mov", ".avi", ".webm"}
 _PTS_TIME_RE = re.compile(r"pts_time:([0-9.]+)")
-_TIMESTAMP_NAME_RE = re.compile(r"_(\d{2,3})m(\d{2})s")
+_TIMESTAMP_NAME_RE = re.compile(r"_(\d{2,4})m(\d{2})s")
 
 
 def is_ffmpeg_available() -> bool:
@@ -37,18 +37,42 @@ def is_ffmpeg_available() -> bool:
     return shutil.which("ffmpeg") is not None
 
 
+def get_media_duration(file_path: Path) -> float:
+    """Obtém a duração total da mídia em segundos via ffprobe."""
+    cmd = [
+        "ffprobe",
+        "-v",
+        "error",
+        "-show_entries",
+        "format=duration",
+        "-of",
+        "default=noprint_wrappers=1:nokey=1",
+        str(file_path),
+    ]
+    try:
+        res = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        return float(res.stdout.strip())
+    except Exception:
+        return 0.0
+
+
 def format_frame_timestamp(seconds: float) -> str:
-    """Formata segundos como MMmSSs (ex: 332.2 -> '05m32s')."""
+    """Formata segundos como MMmSSs (ex: 332.2 -> '05m32s' | 32951.0 -> '549m11s')."""
     total = max(0, int(round(seconds)))
     mins, secs = divmod(total, 60)
     return f"{mins:02d}m{secs:02d}s"
 
 
 def extract_timestamp_label(frame_path: Path) -> str | None:
-    """Extrai 'MM:SS' do nome do frame (ex: frame_0001_05m32s.jpg -> '05:32')."""
+    """Extrai 'MM:SS' ou 'HH:MM:SS' do nome do frame."""
     m = _TIMESTAMP_NAME_RE.search(frame_path.stem)
     if m:
-        return f"{int(m.group(1)):02d}:{m.group(2)}"
+        mins = int(m.group(1))
+        secs = m.group(2)
+        if mins >= 60:
+            h, rem_m = divmod(mins, 60)
+            return f"{h:02d}:{rem_m:02d}:{secs}"
+        return f"{mins:02d}:{secs}"
     return None
 
 
@@ -147,12 +171,23 @@ def extract_video_keyframes(
         except Exception:
             pass
 
+    # Ajusta o piso temporal proporcionalmente para vídeos longos (> 1h),
+    # garantindo que os frames cubram a íntegra da gravação (sem esgotar o cap nas primeiras horas).
+    duration = get_media_duration(video_path)
+    if duration > 3600.0:
+        proportional_interval = int(duration / (max_frames * 1.5))
+        if proportional_interval > min_interval_sec:
+            console.print(
+                f"[dim]ℹ Vídeo longo ({format_frame_timestamp(duration)}): ajustando piso temporal de {min_interval_sec}s para {proportional_interval}s (~{proportional_interval//60} min).[/dim]"
+            )
+            min_interval_sec = proportional_interval
+
     console.print(
         f"[cyan]🎬 Extraindo keyframes híbridos (cena>{scene_threshold} + piso {min_interval_sec}s):[/cyan] {video_path.name}"
     )
 
     raw_pattern = str(output_dir / "_raw_%04d.jpg")
-    raw_cap = max_frames * 2
+    raw_cap = max_frames * 3 if duration > 3600.0 else max_frames * 2
 
     select_expr = (
         f"gt(t,2)*(isnan(prev_selected_t)"

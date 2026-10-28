@@ -1,0 +1,359 @@
+CREATE OR REPLACE PACKAGE BODY HR.PKG_FOLHA_RH AS
+  ----------------------------------------------------------------------------
+  -- Rotinas de folha e reajuste                              RH / Sistemas
+  -- 2009-04 - versao inicial                             (Marcos)
+  -- 2011-08 - importacao do sistema antigo desativada     (Marcos)
+  -- 2014-02 - teto salarial por cargo                     (Juliana)
+  -- 2015-01 - corte de migracao: nao processar antes disso (?)
+  -- 2019-11 - integracao com o portal de beneficios       (terceiro)
+  ----------------------------------------------------------------------------
+
+  -- acumuladores usados pelo fechamento do mes
+  g_total_folha    NUMBER := 0;
+  g_qtd_processada NUMBER := 0;
+  g_mes_ref        VARCHAR2(7);
+
+  -- declaracoes adiantadas
+  PROCEDURE gravar_log(p_msg IN VARCHAR2);
+  FUNCTION  obter_percentual_reajuste(p_job_id IN VARCHAR2, p_dept_id IN NUMBER) RETURN NUMBER;
+  FUNCTION  validar_teto_salarial(p_job_id IN VARCHAR2, p_valor IN NUMBER) RETURN NUMBER;
+
+  ----------------------------------------------------------------------------
+  PROCEDURE gravar_log(p_msg IN VARCHAR2) IS
+    PRAGMA AUTONOMOUS_TRANSACTION;
+  BEGIN
+    INSERT INTO hr.hr_log_processo (dt_log, rotina, mensagem, usuario)
+    VALUES (SYSDATE, 'PKG_FOLHA_RH', SUBSTR(p_msg, 1, 400), USER);
+    COMMIT;
+    DBMS_OUTPUT.PUT_LINE(TO_CHAR(SYSDATE, 'HH24:MI:SS') || ' ' || p_msg);
+  END gravar_log;
+
+  ----------------------------------------------------------------------------
+  FUNCTION tempo_de_casa(p_employee_id IN NUMBER) RETURN NUMBER IS
+    v_meses NUMBER;
+  BEGIN
+    SELECT MONTHS_BETWEEN(SYSDATE, hire_date)
+      INTO v_meses
+      FROM hr.employees
+     WHERE employee_id = p_employee_id;
+
+    RETURN TRUNC(v_meses / 12);
+  EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+      RETURN 0;
+  END tempo_de_casa;
+
+  ----------------------------------------------------------------------------
+  FUNCTION obter_percentual_reajuste(p_job_id IN VARCHAR2, p_dept_id IN NUMBER)
+    RETURN NUMBER IS
+    v_perc NUMBER;
+  BEGIN
+    -- TODO: tirar esses percentuais do codigo, RH pediu em 2016
+    IF p_job_id LIKE 'IT_%' THEN
+      v_perc := 0.08;
+    ELSIF p_job_id LIKE 'SA_%' THEN
+      v_perc := 0.05;
+    ELSIF p_dept_id = 90 THEN
+      v_perc := 0.03;
+    ELSE
+      SELECT percentual
+        INTO v_perc
+        FROM hr.hr_param_reajuste
+       WHERE job_id = p_job_id
+         AND dt_vigencia <= SYSDATE;
+    END IF;
+
+    RETURN v_perc;
+  EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+      RETURN 0;
+    WHEN TOO_MANY_ROWS THEN
+      RETURN 0.04;
+  END obter_percentual_reajuste;
+
+  ----------------------------------------------------------------------------
+  FUNCTION tem_direito_bonus(p_employee_id IN NUMBER) RETURN BOOLEAN IS
+    v_hire   DATE;
+    v_trocas NUMBER;
+  BEGIN
+    SELECT hire_date INTO v_hire FROM hr.employees WHERE employee_id = p_employee_id;
+
+    SELECT COUNT(*) INTO v_trocas
+      FROM hr.job_history
+     WHERE employee_id = p_employee_id;
+
+    -- quem entrou antes da mudanca de sistema mantem a regra antiga
+    IF v_hire < TO_DATE('01/01/2005', 'DD/MM/YYYY') THEN
+      RETURN TRUE;
+    END IF;
+
+    RETURN (tempo_de_casa(p_employee_id) >= 10 AND v_trocas < 3);
+  END tem_direito_bonus;
+
+  ----------------------------------------------------------------------------
+  FUNCTION calcular_comissao(p_employee_id IN NUMBER) RETURN NUMBER IS
+    v_sal  NUMBER;
+    v_pct  NUMBER;
+    v_job  VARCHAR2(10);
+  BEGIN
+    SELECT salary, NVL(commission_pct, 0), job_id
+      INTO v_sal, v_pct, v_job
+      FROM hr.employees
+     WHERE employee_id = p_employee_id;
+
+    IF v_job NOT LIKE 'SA_%' THEN
+      RETURN 0;
+    END IF;
+
+    IF v_pct = 0 THEN
+      v_pct := 0.10;
+    END IF;
+
+    RETURN ROUND(v_sal * v_pct, 2);
+  EXCEPTION
+    WHEN OTHERS THEN
+      RETURN 0;
+  END calcular_comissao;
+
+  ----------------------------------------------------------------------------
+  FUNCTION validar_teto_salarial(p_job_id IN VARCHAR2, p_valor IN NUMBER)
+    RETURN NUMBER IS
+    v_max NUMBER;
+  BEGIN
+    SELECT max_salary INTO v_max FROM hr.jobs WHERE job_id = p_job_id;
+
+    IF p_valor > v_max THEN
+      RETURN v_max;
+    END IF;
+
+    RETURN p_valor;
+  EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+      RETURN p_valor;
+  END validar_teto_salarial;
+
+  ----------------------------------------------------------------------------
+  PROCEDURE calcular_salario(p_employee_id IN NUMBER) IS
+    v_nome      VARCHAR2(20);
+    v_sal       NUMBER;
+    v_job       VARCHAR2(10);
+    v_dept      NUMBER;
+    v_perc      NUMBER;
+    v_novo      NUMBER;
+    v_comissao  NUMBER;
+  BEGIN
+    SELECT last_name, salary, job_id, department_id
+      INTO v_nome, v_sal, v_job, v_dept
+      FROM hr.employees
+     WHERE employee_id = p_employee_id;
+
+    v_perc     := obter_percentual_reajuste(v_job, v_dept);
+    v_comissao := calcular_comissao(p_employee_id);
+    v_novo     := v_sal * (1 + v_perc) + v_comissao;
+
+    IF tem_direito_bonus(p_employee_id) THEN
+      v_novo := v_novo * 1.05;
+    END IF;
+
+    v_novo := validar_teto_salarial(v_job, v_novo);
+
+    UPDATE hr.employees
+       SET salary = v_novo
+     WHERE employee_id = p_employee_id;
+
+    INSERT INTO hr.hr_folha_mensal (mes_ref, employee_id, salario_base, comissao,
+                                    salario_final, dt_calculo, status)
+    VALUES (g_mes_ref, p_employee_id, v_sal, v_comissao, v_novo, SYSDATE, 'C');
+
+    g_total_folha    := g_total_folha + v_novo;
+    g_qtd_processada := g_qtd_processada + 1;
+  EXCEPTION
+    WHEN OTHERS THEN
+      NULL;
+  END calcular_salario;
+
+  ----------------------------------------------------------------------------
+  PROCEDURE registrar_historico(p_employee_id IN NUMBER) IS
+    v_job  VARCHAR2(10);
+    v_dept NUMBER;
+    v_ini  DATE;
+  BEGIN
+    SELECT job_id, department_id, hire_date
+      INTO v_job, v_dept, v_ini
+      FROM hr.employees
+     WHERE employee_id = p_employee_id;
+
+    INSERT INTO hr.job_history (employee_id, start_date, end_date, job_id, department_id)
+    VALUES (p_employee_id, v_ini, SYSDATE, v_job, v_dept);
+  EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN
+      UPDATE hr.job_history
+         SET end_date = SYSDATE
+       WHERE employee_id = p_employee_id
+         AND start_date = v_ini;
+  END registrar_historico;
+
+  ----------------------------------------------------------------------------
+  PROCEDURE promover(p_employee_id IN NUMBER,
+                     p_job_id      IN VARCHAR2,
+                     p_dept_id     IN NUMBER DEFAULT NULL) IS
+    v_sal_atual NUMBER;
+    v_min       NUMBER;
+  BEGIN
+    registrar_historico(p_employee_id);
+
+    SELECT e.salary, j.min_salary
+      INTO v_sal_atual, v_min
+      FROM hr.employees e
+      JOIN hr.jobs j ON j.job_id = p_job_id
+     WHERE e.employee_id = p_employee_id;
+
+    IF v_sal_atual < v_min THEN
+      v_sal_atual := v_min;
+    END IF;
+
+    UPDATE hr.employees
+       SET job_id        = p_job_id,
+           department_id = NVL(p_dept_id, department_id),
+           salary        = v_sal_atual
+     WHERE employee_id = p_employee_id;
+
+    gravar_log('Promocao employee ' || p_employee_id || ' para ' || p_job_id);
+    COMMIT;
+  END promover;
+
+  ----------------------------------------------------------------------------
+  PROCEDURE fechar_departamento(p_dept_id IN NUMBER) IS
+    v_qtd NUMBER;
+  BEGIN
+    SELECT COUNT(*) INTO v_qtd FROM hr.employees WHERE department_id = p_dept_id;
+
+    FOR r IN (SELECT employee_id FROM hr.employees WHERE department_id = p_dept_id) LOOP
+      registrar_historico(r.employee_id);
+
+      UPDATE hr.employees
+         SET department_id = 999,
+             manager_id    = NULL
+       WHERE employee_id = r.employee_id;
+
+      COMMIT;
+    END LOOP;
+
+    DELETE FROM hr.departments WHERE department_id = p_dept_id;
+
+    gravar_log('Departamento ' || p_dept_id || ' fechado, ' || v_qtd || ' pessoas movidas');
+    COMMIT;
+  END fechar_departamento;
+
+  ----------------------------------------------------------------------------
+  PROCEDURE processar_folha_mensal(p_mes IN VARCHAR2 DEFAULT NULL) IS
+    v_sql      VARCHAR2(4000);
+    v_dt_ref   DATE;
+    v_retorno  VARCHAR2(200);
+  BEGIN
+    g_mes_ref := NVL(p_mes, TO_CHAR(SYSDATE, 'MM/YYYY'));
+    v_dt_ref  := TO_DATE('01/' || g_mes_ref, 'DD/MM/YYYY');
+
+    IF v_dt_ref < TO_DATE('01/01/2015', 'DD/MM/YYYY') THEN
+      RAISE_APPLICATION_ERROR(-20001, 'Mes anterior a migracao do sistema');
+    END IF;
+
+    -- limpa o que ja tiver sido calculado para o mes
+    v_sql := 'DELETE FROM hr.hr_folha_mensal WHERE mes_ref = ''' || g_mes_ref || '''';
+    EXECUTE IMMEDIATE v_sql;
+
+    FOR r IN (SELECT employee_id, department_id
+                FROM hr.employees
+               WHERE department_id IS NOT NULL
+               ORDER BY department_id, employee_id) LOOP
+      BEGIN
+        calcular_salario(r.employee_id);
+        COMMIT;
+      EXCEPTION
+        WHEN OTHERS THEN
+          gravar_log('Falha no employee ' || r.employee_id || ': ' || SQLERRM);
+      END;
+    END LOOP;
+
+    MERGE INTO hr.hr_folha_resumo d
+    USING (SELECT g_mes_ref AS mes, SUM(salario_final) AS total, COUNT(*) AS qtd
+             FROM hr.hr_folha_mensal
+            WHERE mes_ref = g_mes_ref) s
+       ON (d.mes_ref = s.mes)
+     WHEN MATCHED THEN
+       UPDATE SET d.vl_total = s.total, d.qtd_funcionarios = s.qtd, d.dt_fechamento = SYSDATE
+     WHEN NOT MATCHED THEN
+       INSERT (mes_ref, vl_total, qtd_funcionarios, dt_fechamento)
+       VALUES (s.mes, s.total, s.qtd, SYSDATE);
+
+    -- envia o fechamento para o portal de beneficios
+    v_retorno := UTL_HTTP.REQUEST('https://portal.interno/api/folha?mes=' || g_mes_ref ||
+                                  '&token=8f3a-PROD-2019');
+
+    UTL_MAIL.SEND(sender     => 'folha@empresa.com.br',
+                  recipients => 'rh@empresa.com.br',
+                  subject    => 'Fechamento ' || g_mes_ref,
+                  message    => 'Total: ' || g_total_folha ||
+                                ' / Processados: ' || g_qtd_processada);
+
+    gravar_log('Folha ' || g_mes_ref || ' fechada. Total ' || g_total_folha);
+    COMMIT;
+  END processar_folha_mensal;
+
+  ----------------------------------------------------------------------------
+  PROCEDURE reajuste_anual(p_ano IN NUMBER) IS
+    v_tabela VARCHAR2(60);
+    v_sql    VARCHAR2(4000);
+    v_qtd    NUMBER := 0;
+  BEGIN
+    SELECT tabela_destino INTO v_tabela
+      FROM hr.hr_param_reajuste
+     WHERE job_id = 'CONFIG' AND ROWNUM = 1;
+
+    FOR d IN (SELECT department_id FROM hr.departments ORDER BY department_id) LOOP
+      FOR e IN (SELECT employee_id FROM hr.employees
+                 WHERE department_id = d.department_id
+                   AND tempo_de_casa(employee_id) >= 1) LOOP
+        calcular_salario(e.employee_id);
+        v_qtd := v_qtd + 1;
+      END LOOP;
+
+      COMMIT;
+    END LOOP;
+
+    v_sql := 'INSERT INTO ' || v_tabela ||
+             ' (ano, total, qtd) VALUES (' || p_ano || ', ' || g_total_folha ||
+             ', ' || v_qtd || ')';
+    EXECUTE IMMEDIATE v_sql;
+
+    gravar_log('Reajuste ' || p_ano || ' aplicado em ' || v_qtd || ' pessoas');
+    COMMIT;
+  END reajuste_anual;
+
+  ----------------------------------------------------------------------------
+  FUNCTION relatorio_folha(p_mes IN VARCHAR2) RETURN SYS_REFCURSOR IS
+    c SYS_REFCURSOR;
+  BEGIN
+    OPEN c FOR
+      SELECT e.employee_id, e.first_name, e.last_name, e.job_id,
+             d.department_name, f.salario_base, f.comissao, f.salario_final,
+             tempo_de_casa(e.employee_id) AS anos_de_casa
+        FROM hr.employees e
+        LEFT JOIN hr.departments d ON d.department_id = e.department_id
+        JOIN hr.hr_folha_mensal f ON f.employee_id = e.employee_id
+       WHERE f.mes_ref = p_mes
+         AND UPPER(e.last_name) NOT LIKE 'TESTE%'
+       ORDER BY d.department_name, e.last_name;
+
+    RETURN c;
+  END relatorio_folha;
+
+  ----------------------------------------------------------------------------
+  PROCEDURE importacao_sistema_antigo IS
+  BEGIN
+    -- desativado em 08/2011, manter por seguranca ate o fim da auditoria
+    NULL;
+  END importacao_sistema_antigo;
+
+END PKG_FOLHA_RH;
+/

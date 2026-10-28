@@ -1,0 +1,6 @@
+Sobre o Select AI Agent
+https://docs.oracle.com/pt-br/iaas/autonomous-database-serverless/doc/about-select-ai-agents.html
+
+
+Select AI and Select AI Agent Capability Matrix
+https://docs.oracle.com/en/database/oracle/oracle-database/26/saicm/index.html#SAICM-GUID-163B5E15-03DE-437B-9570-03689ED7E1A8

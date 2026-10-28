@@ -7,6 +7,11 @@ from unittest.mock import patch
 
 import numpy as np
 
+from knowledge_extractor.audio_transcriber import (
+    CHUNK_THRESHOLD_SECONDS,
+    format_timestamp,
+    get_media_duration,
+)
 from knowledge_extractor.file_normalizer import suggest_normalized_stem
 from knowledge_extractor.figures import (
     MARKER_END,
@@ -27,8 +32,17 @@ def test_format_and_extract_timestamp() -> None:
     assert format_frame_timestamp(3.1) == "00m03s"
     assert format_frame_timestamp(332.2) == "05m32s"
     assert format_frame_timestamp(1508.8) == "25m09s"
+    assert format_frame_timestamp(32951.0) == "549m11s"
     assert extract_timestamp_label(Path("frame_0001_05m32s.jpg")) == "05:32"
+    assert extract_timestamp_label(Path("frame_0001_549m11s.jpg")) == "09:09:11"
+    assert extract_timestamp_label(Path("frame_0001_60m05s.jpg")) == "01:00:05"
     assert extract_timestamp_label(Path("frame_0001.jpg")) is None
+
+    # Validação do timestamp SRT para mídias longas (HH:MM:SS,mmm)
+    assert format_timestamp(32951.25) == "09:09:11,250"
+    assert format_timestamp(45.5) == "00:00:45,500"
+    assert CHUNK_THRESHOLD_SECONDS == 3600.0
+    assert get_media_duration(Path("arquivo_inexistente_123.mp4")) == 0.0
 
 
 def test_dedupe_drops_near_identical_and_subsamples(tmp_path: Path) -> None:

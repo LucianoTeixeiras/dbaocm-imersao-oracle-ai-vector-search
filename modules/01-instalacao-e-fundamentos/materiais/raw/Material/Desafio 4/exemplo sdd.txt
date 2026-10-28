@@ -1,0 +1,89 @@
+-- 
+Você é um desenvolvedor Oracle PL/SQL sênior.
+
+Implemente exatamente a especificação abaixo.
+
+Não altere nenhuma regra de negócio.
+
+Após gerar o código:
+
+1. Explique as principais decisões.
+2. Gere os testes.
+3. Verifique se todos os critérios de aceite foram atendidos.
+
+SPEC:
+
+[cole aqui a especificação]
+
+
+-- 
+SPEC: Ajuste de salário de funcionário
+
+OBJETIVO
+Criar uma procedure PL/SQL responsável por aplicar aumento salarial
+a um funcionário da tabela HR.EMPLOYEES.
+
+NOME
+HR.AJUSTA_SALARIO
+
+ENTRADAS
+
+p_employee_id NUMBER
+Identificador do funcionário.
+
+p_percentual NUMBER
+Percentual de aumento.
+
+REGRAS DE NEGÓCIO
+
+1. O funcionário deve existir em HR.EMPLOYEES.
+
+2. O percentual deve ser maior que zero.
+
+3. O percentual máximo permitido é 20%.
+
+4. O novo salário deve ser calculado da seguinte forma:
+
+novo_salario = salario_atual * (1 + percentual / 100)
+
+5. A procedure não deve executar COMMIT.
+
+6. Se o funcionário não existir, retornar erro:
+FUNCIONARIO_NAO_ENCONTRADO
+
+7. Se o percentual for inválido, retornar erro:
+PERCENTUAL_INVALIDO
+
+8. A procedure deve atualizar apenas um funcionário.
+
+9. O código deve utilizar tratamento explícito de exceções.
+
+10. O código deve ser compatível com Oracle Database 19c ou superior.
+
+
+
+-- 
+CRITÉRIOS DE ACEITE
+
+Teste 1
+Funcionário existente e percentual de 10%.
+Resultado esperado:
+Salário aumentado em 10%.
+
+Teste 2
+Funcionário inexistente.
+Resultado esperado:
+Erro FUNCIONARIO_NAO_ENCONTRADO.
+
+Teste 3
+Percentual igual a zero.
+Resultado esperado:
+Erro PERCENTUAL_INVALIDO.
+
+Teste 4
+Percentual superior a 20%.
+Resultado esperado:
+Erro PERCENTUAL_INVALIDO.
+
+Teste 5
+Validar que a procedure não executa COMMIT.
