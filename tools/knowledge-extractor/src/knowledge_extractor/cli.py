@@ -330,8 +330,9 @@ def attach_figures_cmd(module_dir: Path, max_figures: int, gemini_model: str | N
 
 
 @cli.command("pipeline")
-@click.argument("module_dir", type=click.Path(exists=True, path_type=Path))
+@click.argument("module_dir", type=click.Path(exists=True, path_type=Path), required=False, default=None)
 @click.option("--all", "run_all_steps", is_flag=True, default=False, help="Executa todas as etapas sequencialmente em lote")
+@click.option("--all-modules", "run_all_modules", is_flag=True, default=False, help="Executa o ciclo completo em TODOS os módulos da formação em sequência")
 @click.option("--step", type=int, default=None, help="Executa uma etapa específica (1 a 5)")
 @click.option("-m", "--model-size", default="base", help="Tamanho do modelo Whisper (tiny, base, small, medium, large-v3)")
 @click.option("--gemini-model", default=None, help="Modelo Gemini para síntese de notas (padrão: env GEMINI_MODEL)")
@@ -340,8 +341,9 @@ def attach_figures_cmd(module_dir: Path, max_figures: int, gemini_model: str | N
 @click.option("-f", "--force", is_flag=True, default=False, help="Força o reprocessamento de itens já existentes")
 @click.option("--vision/--no-vision", default=True, help="Ativa (padrão) ou desativa a extração de frames de vídeo e síntese multimodal com Gemini")
 def pipeline_cmd(
-    module_dir: Path,
+    module_dir: Path | None,
     run_all_steps: bool,
+    run_all_modules: bool,
     step: int | None,
     model_size: str,
     gemini_model: str | None,
@@ -350,9 +352,37 @@ def pipeline_cmd(
     force: bool,
     vision: bool,
 ) -> None:
-    """Orquestrador do Pipeline Fim-a-Fim (Interativo ou em Lote)."""
+    """Orquestrador do Pipeline Fim-a-Fim (Interativo, Lote ou Ciclo Global)."""
+    from knowledge_extractor.pipeline import discover_modules
+
+    all_mods = discover_modules()
+    if not all_mods:
+        console.print("[red]❌ Nenhuma pasta de módulo encontrada em modules/.[/red]")
+        console.print("Gere a estrutura inicial com: [yellow]knowledge-extractor scaffold-modules[/yellow]")
+        raise SystemExit(1)
+
+    target_module = module_dir if module_dir is not None else all_mods[0]
+
+    if run_all_modules:
+        console.print(f"[bold cyan]🚀 Executando Ciclo Global em TODOS os {len(all_mods)} módulos da formação...[/bold cyan]")
+        for idx, m_dir in enumerate(all_mods, start=1):
+            console.print(f"\n[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]")
+            console.print(f"[bold green]▶ Processando Módulo {idx}/{len(all_mods)}: {m_dir.name}[/bold green]")
+            console.print(f"[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]")
+            p = ModulePipeline(
+                module_dir=m_dir,
+                model_size=model_size,
+                gemini_model=gemini_model,
+                provider=provider,
+                ollama_model=ollama_model,
+                vision=vision,
+            )
+            p.run_all(force=force)
+        console.print(Panel.fit("[bold green]✨ Ciclo Global Concluído com Sucesso em Todos os Módulos![/bold green]", border_style="green"))
+        return
+
     pipeline = ModulePipeline(
-        module_dir=module_dir,
+        module_dir=target_module,
         model_size=model_size,
         gemini_model=gemini_model,
         provider=provider,
