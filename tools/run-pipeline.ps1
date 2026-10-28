@@ -11,11 +11,16 @@
     5. Auditoria de Governanca Git (Blindagem de Midias)
 
 .PARAMETER Module
-    Caminho relativo para a pasta do modulo. Se omitido, usa o primeiro modulo
-    encontrado em modules/ (ordem alfabetica).
+    Caminho relativo para a pasta do modulo (ex: modules/01-fundamentos).
+    Se omitido, o script inicia pelo primeiro modulo e permite avancar
+    ciclo a ciclo ou executar todos em sequencia.
 
 .PARAMETER All
-    Executa todas as etapas em lote sem interrupcao.
+    Executa todas as etapas (1 a 5) em lote sem interrupcao. Se -Module nao for
+    especificado, processa TODOS os modulos da formacao em sequencia (Ciclo Global).
+
+.PARAMETER AllModules
+    Forca a execucao sequencial de todos os modulos da formacao (Ciclo Global).
 
 .PARAMETER Step
     Executa apenas uma etapa especifica (1 a 5).
@@ -40,9 +45,12 @@
     Desativa a extracao e analise multimodal dos frames de video.
 
 .EXAMPLE
-    .	oolsun-pipeline.ps1 -Module modules/01-fundamentos
-    .	oolsun-pipeline.ps1 -All
-    .	oolsun-pipeline.ps1 -Step 3 -Provider gemini
+    .	ools
+un-pipeline.ps1 -Module modules/01-fundamentos
+    .	ools
+un-pipeline.ps1 -All
+    .	ools
+un-pipeline.ps1 -Step 3 -Provider gemini
 #>
 
 [CmdletBinding()]
@@ -51,6 +59,7 @@ param(
     [string]$Module = "",
 
     [switch]$All,
+    [switch]$AllModules,
     [int]$Step,
     [switch]$Force,
     [string]$ModelSize = "base",
@@ -82,13 +91,18 @@ if (-not $uvPath) {
     exit 1
 }
 
+# Se solicitada execucao global em todos os modulos
+$RunGlobalCycle = $AllModules -or ($All -and (-not $Module) -and (-not $Step))
+
 # Modulo alvo: usa o informado ou auto-detecta o primeiro em modules/
 if (-not $Module) {
     if (Test-Path "$RepoRoot/modules") {
         $first = Get-ChildItem "$RepoRoot/modules" -Directory | Sort-Object Name | Select-Object -First 1
         if ($first) {
             $Module = "modules/$($first.Name)"
-            Write-Host "[INFO] Nenhum -Module informado. Usando o primeiro modulo: $Module" -ForegroundColor DarkGray
+            if (-not $RunGlobalCycle) {
+                Write-Host "[INFO] Nenhum -Module informado. Iniciando pelo primeiro modulo: $Module" -ForegroundColor DarkGray
+            }
         }
     }
     if (-not $Module) {
@@ -129,18 +143,24 @@ $cliArgs = @(
     "--project",
     "tools/knowledge-extractor",
     "knowledge-extractor",
-    "pipeline",
-    $Module,
-    "-m",
-    $ModelSize
+    "pipeline"
 )
+
+if ($RunGlobalCycle) {
+    Write-Host "[INFO] Disparando Ciclo Global sequencial em TODOS os modulos..." -ForegroundColor Cyan
+    $cliArgs += "--all-modules"
+} else {
+    $cliArgs += $Module
+}
+
+$cliArgs += @("-m", $ModelSize)
 
 # So repassa provedor/modelos quando informados (senao vale o .env)
 if ($Provider) { $cliArgs += @("--provider", $Provider) }
 if ($OllamaModel) { $cliArgs += @("--ollama-model", $OllamaModel) }
 if ($GeminiModel) { $cliArgs += @("--gemini-model", $GeminiModel) }
 
-if ($All) {
+if ($All -and (-not $RunGlobalCycle)) {
     $cliArgs += "--all"
 }
 

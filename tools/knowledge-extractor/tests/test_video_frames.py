@@ -135,6 +135,22 @@ def test_figures_block_and_attach_idempotent(tmp_path: Path) -> None:
     assert note.read_text(encoding="utf-8").count(MARKER_START) == 1
 
 
+def test_discover_modules_ordering(tmp_path: Path) -> None:
+    """Valida que discover_modules encontra e ordena as pastas de módulos."""
+    from knowledge_extractor.pipeline import discover_modules
+    mods_dir = tmp_path / "modules"
+    mods_dir.mkdir(parents=True)
+    (mods_dir / "02-arquitetura").mkdir()
+    (mods_dir / "01-fundamentos").mkdir()
+    (mods_dir / ".gitkeep").write_text("", encoding="utf-8") # ignora arquivos
+
+    found = discover_modules(tmp_path)
+    assert len(found) == 2
+    assert found[0].name == "01-fundamentos"
+    assert found[1].name == "02-arquitetura"
+
+
+
 def test_catalog_sync_normalization_pairs_correctly(tmp_path: Path) -> None:
     """Garante que midia-X e aula-midia-X resolvam para a mesma chave única no catálogo."""
     from knowledge_extractor.catalog_sync import CatalogSynchronizer

@@ -267,32 +267,86 @@ class ModulePipeline:
         console.print(Panel.fit("[bold green]✨ Pipeline Executado com Sucesso![/bold green]", border_style="green"))
 
 
+def discover_modules(root_dir: Path | None = None) -> list[Path]:
+    """Descobre e ordena todas as pastas de módulos existentes em modules/."""
+    from knowledge_extractor.course_config import find_repo_root, load_course_config
+
+    root = find_repo_root(root_dir)
+    modules_dir = root / "modules"
+    if not modules_dir.exists() or not modules_dir.is_dir():
+        return []
+
+    cfg = load_course_config(root)
+    # 1. Se houver módulos declarados no course.yaml, usa a ordem declarada
+    if cfg.modules:
+        declared_dirs: list[Path] = []
+        for slug in cfg.modules.keys():
+            target = modules_dir / slug
+            if target.is_dir():
+                declared_dirs.append(target)
+        if declared_dirs:
+            # Acrescenta diretórios que estejam no disco mas não declarados
+            for p in sorted(modules_dir.iterdir()):
+                if p.is_dir() and not p.name.startswith(".") and p not in declared_dirs:
+                    declared_dirs.append(p)
+            return declared_dirs
+
+    # 2. Fallback: varre e ordena por nome
+    return [p for p in sorted(modules_dir.iterdir()) if p.is_dir() and not p.name.startswith(".")]
+
+
 def run_interactive_menu(pipeline: ModulePipeline) -> None:
-    """Menu Interativo de Execução do Pipeline."""
-    module_dir = pipeline.module_dir
+    """Menu Interativo de Execução do Pipeline com navegação entre módulos e ciclo contínuo."""
+    from knowledge_extractor.course_config import load_course_config
+    cfg = load_course_config()
+    all_modules = discover_modules(pipeline.root_dir)
+
+    # Identifica o índice do módulo atual na lista global
+    def current_module_index() -> int:
+        for idx, m in enumerate(all_modules):
+            if m.resolve() == pipeline.module_dir.resolve():
+                return idx
+        return 0
 
     while True:
+        module_dir = pipeline.module_dir
         mode = pipeline.make_synthesizer().mode_label()
-        from knowledge_extractor.course_config import load_course_config
-        cfg = load_course_config()
         mod_info = cfg.get_module(module_dir.name)
         mod_display = mod_info.name if mod_info else module_dir.name
+
+        cur_idx = current_module_index()
+        total_mods = len(all_modules)
+        next_mod = all_modules[cur_idx + 1] if (cur_idx + 1 < total_mods) else None
+
         console.print("\n" + "=" * 60)
-        console.print(f"[bold cyan]🎯 PIPELINE {cfg.title.upper()} — Módulo: [green]{mod_display}[/green][/bold cyan]")
+        console.print(f"[bold cyan]🎯 PIPELINE {cfg.title.upper()}[/bold cyan]")
+        console.print(f"📦 Módulo Atual ({cur_idx + 1}/{total_mods}): [bold green]{mod_display}[/bold green] [dim]({module_dir.name})[/dim]")
+        if next_mod:
+            next_info = cfg.get_module(next_mod.name)
+            next_display = next_info.name if next_info else next_mod.name
+            console.print(f"⏭️  Próximo na Fila: [cyan]{next_display}[/cyan]")
         console.print("=" * 60)
         console.print("[bold]1.[/bold] 🏷️  Normalizar Nomes de Arquivos (De-Para & Kebab-case)")
         console.print("[bold]2.[/bold] 🎙️  Extrair Mídias e Transcrever (Whisper, Frames de Vídeo e PDFs)")
         console.print("[bold]3.[/bold] 📝 Sintetizar Notas de Estudo em [cyan]aulas/[/cyan] (Gemini Multimodal)")
         console.print("[bold]4.[/bold] 📑 Sincronizar Catálogo AVA ([cyan]portal/catalogo.md[/cyan])")
         console.print("[bold]5.[/bold] 🛡️  Auditoria de Governança Git (Blindagem de Mídias)")
-        console.print("[bold]6.[/bold] 🚀 [bold green]Executar Pipeline Fim-a-Fim Completo (1 → 5)[/bold green]")
+        console.print("[bold]6.[/bold] 🚀 [bold green]Executar Ciclo Completo deste Módulo (1 → 5)[/bold green]")
+        if next_mod:
+            console.print(f"[bold]7.[/bold] ⏭️  [bold yellow]Avançar para o Próximo Módulo[/bold yellow] ({next_mod.name})")
+        else:
+            console.print("[bold]7.[/bold] 🏁 [dim]Último módulo alcançado (todos processados)[/dim]")
+        console.print("[bold]8.[/bold] 🔄 [cyan]Executar Todos os Módulos em Sequência (Ciclo Global)[/cyan]")
+        console.print(f"[bold]9.[/bold] 📂 Alternar Módulo da Lista ({total_mods} disponíveis)")
         vision_status = "[green]Ativada (Padrão)[/green]" if pipeline.vision else "[dim]Desativada (Apenas Áudio)[/dim]"
-        console.print(f"[bold]7.[/bold] ⚙️  Modo de Síntese [dim](atual: {mode})[/dim]")
-        console.print(f"[bold]8.[/bold] 🎬 Alternar Visão Multimodal de Vídeo [dim](atual: {vision_status})[/dim]")
+        console.print(f"[bold]M.[/bold] ⚙️  Configurar Modo de Síntese [dim]({mode})[/dim]")
+        console.print(f"[bold]V.[/bold] 🎬 Alternar Visão Multimodal [dim]({vision_status})[/dim]")
         console.print("[bold]0.[/bold] 🚪 Sair")
         console.print("=" * 60)
 
-        choice = Prompt.ask("Escolha uma opção", choices=["0", "1", "2", "3", "4", "5", "6", "7", "8"], default="6")
+        choices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "m", "M", "v", "V"]
+        default_choice = "6" if not (module_dir / "aulas").glob("*.md") else ("7" if next_mod else "6")
+        choice = Prompt.ask("Escolha uma opção", choices=choices, default=default_choice).lower()
 
         if choice == "0":
             console.print("[yellow]Encerrando pipeline.[/yellow]")
@@ -309,9 +363,39 @@ def run_interactive_menu(pipeline: ModulePipeline) -> None:
             pipeline.run_step_5_governance()
         elif choice == "6":
             pipeline.run_all(force=False)
+            if next_mod:
+                console.print(f"\n[bold green]✓ Ciclo do módulo concluído![/bold green]")
+                if Confirm.ask(f"Deseja avançar para o próximo módulo ({next_mod.name})?", default=True):
+                    pipeline.module_dir = next_mod.resolve()
         elif choice == "7":
-            pipeline.choose_synthesis_mode()
+            if next_mod:
+                pipeline.module_dir = next_mod.resolve()
+                console.print(f"[green]✓ Módulo alterado para:[/green] {next_mod.name}")
+            else:
+                console.print("[yellow]ℹ Você já está no último módulo da formação.[/yellow]")
         elif choice == "8":
+            if Confirm.ask("Deseja executar o ciclo completo (1 → 5) em TODOS os módulos em sequência?", default=True):
+                for idx, m_dir in enumerate(all_modules, start=1):
+                    console.print(f"\n[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]")
+                    console.print(f"[bold green]▶ Processando Módulo {idx}/{total_mods}: {m_dir.name}[/bold green]")
+                    console.print(f"[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]")
+                    pipeline.module_dir = m_dir.resolve()
+                    pipeline.run_all(force=False)
+                console.print(Panel.fit("[bold green]✨ Ciclo Global Concluído com Sucesso em Todos os Módulos![/bold green]", border_style="green"))
+        elif choice == "9":
+            console.print("\n[bold]Módulos disponíveis:[/bold]")
+            for idx, m_dir in enumerate(all_modules, start=1):
+                marker = "👉 " if m_dir.resolve() == pipeline.module_dir.resolve() else "   "
+                m_info = cfg.get_module(m_dir.name)
+                d_name = m_info.name if m_info else m_dir.name
+                console.print(f"  {marker}[bold]{idx}.[/bold] {d_name} [dim]({m_dir.name})[/dim]")
+            sel = Prompt.ask("Selecione o número do módulo", default=str(cur_idx + 1))
+            if sel.isdigit() and 1 <= int(sel) <= len(all_modules):
+                pipeline.module_dir = all_modules[int(sel) - 1].resolve()
+                console.print(f"[green]✓ Módulo alterado para:[/green] {pipeline.module_dir.name}")
+        elif choice == "m":
+            pipeline.choose_synthesis_mode()
+        elif choice == "v":
             pipeline.vision = not pipeline.vision
             novo_status = "[bold green]ATIVADA[/bold green]" if pipeline.vision else "[bold yellow]DESATIVADA[/bold yellow]"
             console.print(f"🎬 Visão Multimodal agora está {novo_status}!")
