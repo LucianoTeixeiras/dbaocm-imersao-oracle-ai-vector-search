@@ -135,8 +135,11 @@ class ModulePipeline:
         console.print(table)
 
         if pending_media:
-            console.print(f"[bold yellow]Transcrevendo {len(pending_media)} mídia(s) com modelo '{self.model_size}'...[/bold yellow]")
-            transcriber = Transcriber(model_size=self.model_size, device="auto", language="pt")
+            from knowledge_extractor.course_config import load_course_config
+            cfg = load_course_config()
+            audio_lang = cfg.audio_language or "pt"
+            console.print(f"[bold yellow]Transcrevendo {len(pending_media)} mídia(s) com modelo '{self.model_size}' (Idioma do áudio: {audio_lang})...[/bold yellow]")
+            transcriber = Transcriber(model_size=self.model_size, device="auto", language=audio_lang)
             for media in pending_media:
                 with track("transcricao", modulo=self.module_dir.name, item=media.name) as info:
                     info["whisper"] = self.model_size

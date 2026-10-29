@@ -143,6 +143,7 @@ def test_discover_modules_ordering(tmp_path: Path) -> None:
     (mods_dir / "02-arquitetura").mkdir()
     (mods_dir / "01-fundamentos").mkdir()
     (mods_dir / ".gitkeep").write_text("", encoding="utf-8") # ignora arquivos
+    (tmp_path / "course.yaml").write_text("course:\n  id: 't'\n", encoding="utf-8")
 
     found = discover_modules(tmp_path)
     assert len(found) == 2
@@ -156,6 +157,22 @@ def test_pipeline_imports_confirm() -> None:
     assert hasattr(p, "Confirm")
     from rich.prompt import Confirm
     assert p.Confirm is Confirm
+
+
+def test_course_config_audio_language(tmp_path: Path) -> None:
+    """Valida leitura e derivação de audio_language no course.yaml."""
+    from knowledge_extractor.course_config import load_course_config
+    c_yaml = tmp_path / "course.yaml"
+    c_yaml.write_text("""
+course:
+  id: "test"
+  title: "Curso Teste"
+  language: "en-US"
+  audio_language: "en"
+""", encoding="utf-8")
+    cfg = load_course_config(tmp_path)
+    assert cfg.audio_language == "en"
+
 
 
 

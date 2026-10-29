@@ -120,9 +120,23 @@ class Transcriber:
         model_size: str = "base",
         device: str = "auto",
         compute_type: str = "default",
-        language: str = "pt",
+        language: str | None = None,
     ) -> None:
         self.model_size = model_size
+
+        # Resolução inteligente do idioma: parâmetro > WHISPER_LANGUAGE do .env > course.yaml > auto-detecção
+        if not language:
+            env_lang = os.getenv("WHISPER_LANGUAGE")
+            if env_lang:
+                language = env_lang.strip()
+            else:
+                try:
+                    from knowledge_extractor.course_config import load_course_config
+                    cfg = load_course_config()
+                    language = cfg.audio_language or "pt"
+                except Exception:
+                    language = "pt"
+
         self.language = language
 
         # Configura device
