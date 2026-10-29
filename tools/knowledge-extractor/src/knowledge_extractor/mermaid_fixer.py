@@ -18,6 +18,15 @@ FLOW_HEADER_RE = re.compile(r"^\s*(graph|flowchart)\b", re.IGNORECASE)
 SKIP_LINE_RE = re.compile(r"^\s*(style|classDef|class|linkStyle|click|end|direction|%%)\b", re.IGNORECASE)
 SIMPLE_ID_RE = re.compile(r"^[A-Za-z_][\w-]*$")
 
+# Diretiva obrigatória de acessibilidade visual para alto contraste em fundo claro
+LIGHT_THEME_INIT = (
+    "%%{init: {'theme': 'base', 'themeVariables': { "
+    "'darkMode': false, 'background': '#FFFFFF', 'mainBkg': '#FFFFFF', "
+    "'primaryColor': '#F1F5F9', 'primaryTextColor': '#0F172A', 'primaryBorderColor': '#1E3A8A', "
+    "'lineColor': '#1E3A8A', 'textColor': '#0F172A', 'clusterBkg': '#F8FAFC', 'clusterBorder': '#94A3B8' "
+    "}}}%%"
+)
+
 # Formas de nó: (abre, fecha). Formas duplas primeiro para não serem engolidas pelas simples.
 SHAPES = [
     ("((", "))"), ("([", "])"), ("[[", "]]"), ("[(", ")]"), ("{{", "}}"),
@@ -128,16 +137,23 @@ def sanitize_flowchart(body: str) -> str:
 
 
 def sanitize_markdown(markdown: str) -> tuple[str, int]:
-    """Sanitiza todos os blocos mermaid de fluxograma. Retorna (texto, nº de blocos alterados)."""
+    """Sanitiza todos os blocos mermaid de fluxograma e injeta tema claro de alto contraste. Retorna (texto, nº de blocos alterados)."""
     changed = 0
 
     def repl(m: re.Match) -> str:
         nonlocal changed
         body = m.group(2)
-        first = next((ln for ln in body.splitlines() if ln.strip() and not ln.strip().startswith("%%")), "")
+        lines = body.splitlines()
+        first = next((ln for ln in lines if ln.strip() and not ln.strip().startswith("%%")), "")
         if not FLOW_HEADER_RE.match(first):
             return m.group(0)
+
         new_body = sanitize_flowchart(body)
+
+        # Garante injeção da diretiva de acessibilidade visual (fundo branco, darkMode: false)
+        if "%%{init:" not in new_body:
+            new_body = f"{LIGHT_THEME_INIT}\n{new_body}"
+
         if new_body != body:
             changed += 1
         return m.group(1) + new_body + m.group(3)

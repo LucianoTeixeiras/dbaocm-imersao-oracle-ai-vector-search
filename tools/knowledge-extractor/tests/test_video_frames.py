@@ -174,6 +174,17 @@ course:
     assert cfg.audio_language == "en"
 
 
+def test_mermaid_fixer_injects_light_theme() -> None:
+    """Valida que o sanitizador Mermaid injeta tema claro de alto contraste (darkMode: false)."""
+    from knowledge_extractor.mermaid_fixer import sanitize_markdown
+    sample = "```mermaid\nflowchart TD\n  A --> B\n```"
+    fixed, changed = sanitize_markdown(sample)
+    assert changed == 1
+    assert "darkMode': false" in fixed
+    assert "background': '#FFFFFF'" in fixed
+
+
+
 
 
 def test_catalog_sync_normalization_pairs_correctly(tmp_path: Path) -> None:
