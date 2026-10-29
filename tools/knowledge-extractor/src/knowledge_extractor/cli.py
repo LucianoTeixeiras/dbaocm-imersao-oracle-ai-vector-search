@@ -83,13 +83,13 @@ def audit_log_cmd(search: str | None) -> None:
 @click.option("-o", "--output-dir", type=click.Path(path_type=Path), default=None, help="Diretório de saída para .txt e .srt")
 @click.option("-m", "--model-size", default="base", help="Tamanho do modelo Whisper (tiny, base, small, medium, large-v3)")
 @click.option("-d", "--device", default="auto", help="Device de execução ('cpu', 'cuda' ou 'auto')")
-@click.option("-l", "--language", default="pt", help="Idioma do áudio (ex: pt, en)")
+@click.option("-l", "--language", default=None, help="Idioma do áudio (ex: pt, en). Padrão: course.yaml ou auto-detecção.")
 def transcribe_cmd(
     input_file: Path,
     output_dir: Path | None,
     model_size: str,
     device: str,
-    language: str,
+    language: str | None,
 ) -> None:
     """Transcreve um arquivo de vídeo (.mp4, .mkv) ou áudio (.mp3, .wav)."""
     transcriber = Transcriber(model_size=model_size, device=device, language=language)
@@ -174,7 +174,10 @@ def process_module_cmd(module_dir: Path, model_size: str, force: bool) -> None:
 
     # Processa mídias pendentes
     if pending_media:
-        transcriber = Transcriber(model_size=model_size, device="auto", language="pt")
+        from knowledge_extractor.course_config import load_course_config
+        cfg = load_course_config()
+        audio_lang = cfg.audio_language or "pt"
+        transcriber = Transcriber(model_size=model_size, device="auto", language=audio_lang)
         for media in pending_media:
             transcriber.transcribe_file(media, output_dir=transcricoes_dir)
 

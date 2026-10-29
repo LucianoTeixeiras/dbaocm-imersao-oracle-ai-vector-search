@@ -32,6 +32,8 @@ class CourseConfig:
     track_role: str = "Especialista em Engenharia de Software e IA"
     description: str = "Caderno técnico e documentação avançada de engenharia."
     syllabus_ref: str = ""
+    language: str = "pt-BR"
+    audio_language: str = "pt"
     modules: dict[str, ModuleConfig] = field(default_factory=dict)
     root_dir: Path = field(default_factory=Path.cwd)
 
@@ -118,6 +120,12 @@ def load_course_config(start_dir: Path | None = None) -> CourseConfig:
                         previous_slugs=list(mod_raw.get("previous_slugs") or []),
                     )
 
+        raw_lang = raw_course.get("language", "pt-BR")
+        raw_audio_lang = raw_course.get("audio_language")
+        if not raw_audio_lang:
+            # Deriva o idioma padrão do áudio se não especificado
+            raw_audio_lang = "en" if str(raw_lang).lower().startswith("en") else "pt"
+
         return CourseConfig(
             id=raw_course.get("id", "generic-course"),
             title=raw_course.get("title", "Programa de Formação Técnica"),
@@ -125,6 +133,8 @@ def load_course_config(start_dir: Path | None = None) -> CourseConfig:
             track_role=raw_course.get("track_role", "Especialista Técnico"),
             description=raw_course.get("description", ""),
             syllabus_ref=raw_course.get("syllabus_ref", ""),
+            language=raw_lang,
+            audio_language=raw_audio_lang,
             modules=modules_map,
             root_dir=root,
         )

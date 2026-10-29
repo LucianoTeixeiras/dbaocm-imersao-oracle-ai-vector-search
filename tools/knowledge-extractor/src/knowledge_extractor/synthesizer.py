@@ -82,6 +82,18 @@ def build_system_prompt(module_name: str = "", has_vision: bool = False) -> str:
    - FILTRO DE RUÍDO OBRIGATÓRIO: Ignore completamente elementos da plataforma de ensino/gravação que apareçam nos frames (barras de navegação do portal, listas laterais de capítulos, controles/overlays de player de vídeo, avatares/webcam e popups administrativos ou financeiros). Extraia APENAS o conteúdo didático e técnico da aula.
 """
 
+    translation_directive = ""
+    is_foreign_audio = (cfg.audio_language and cfg.audio_language.lower() != "pt")
+    if is_foreign_audio:
+        translation_directive = f"""
+7. DIRETRIZES DE TRADUÇÃO TÉCNICA E IDIOMA (Áudio original em {cfg.audio_language.upper()}):
+   - A transcrição fornecida está no idioma original ({cfg.audio_language.upper()}).
+   - Elabore a nota técnica inteiramente em PORTUGUÊS DO BRASIL fluente, formal e técnico de nível de Engenharia/Pós-Graduação.
+   - PRESERVAÇÃO DE TERMOS DA INDÚSTRIA: NUNCA faça traduções literais grotescas de termos técnicos consagrados. Mantenha em inglês termos como: LangChain, LangGraph, StateGraph, checkpointer, human-in-the-loop, prompts, prompt engineering, few-shot, zero-shot, tool calling, memory, thread, streaming, fallback, router, LLM, RAG, agentic workflows, etc.
+   - NUNCA invente palavras ou calques (como 'prontes', 'Lengraff', 'All-On', 'taxas' para tasks, 'automatear').
+   - O texto deve soar como escrito por um Engenheiro de Software Sênior brasileiro especialista no assunto, integrando didática profunda com rigor conceitual.
+"""
+
     return f"""Você é um {cfg.track_role} e Redator Técnico Sênior, responsável pela documentação técnica de nível de Especialização/Pós-Graduação/Treinamento Avançado para o "{cfg.title}" da {cfg.institution}.
 {mod_context}
 
@@ -98,7 +110,7 @@ DIRETRIZES CRÍTICAS:
    - Subgraph SEMPRE com id e título entre aspas: subgraph sg1["Processo de Aprendizagem (Kahneman)"] ... end
    - Rótulos de arestas no formato A -->|"texto"| B. Nunca use A -- texto --> B.
    - Nunca use aspas duplas dentro de rótulos; não use ponto e vírgula, HTML ou markdown dentro do diagrama.
-5. Se o professor fizer comparações, crie tabelas comparativas.{vision_directive}
+5. Se o professor fizer comparações, crie tabelas comparativas.{vision_directive}{translation_directive}
 
 A nota técnica DEVE conter no mínimo 150 a 250 linhas e seguir rigorosamente esta estrutura:
 
