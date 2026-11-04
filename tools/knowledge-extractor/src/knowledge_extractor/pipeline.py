@@ -379,13 +379,15 @@ def run_interactive_menu(pipeline: ModulePipeline) -> None:
             console.print("[bold]7.[/bold] 🏁 [dim]Último módulo alcançado (todos processados)[/dim]")
         console.print("[bold]8.[/bold] 🔄 [cyan]Executar Todos os Módulos em Sequência (Ciclo Global)[/cyan]")
         console.print(f"[bold]9.[/bold] 📂 Alternar Módulo da Lista ({total_mods} disponíveis)")
+        console.print("[bold]S.[/bold] 🔪 [bold magenta]Fatiar Vídeos Longos deste Módulo (> 45 min em blocos de 35 min)[/bold magenta]")
+        console.print("[bold]J.[/bold] 📋 [bold cyan]Gerar / Visualizar Manifesto do Jira (docs/jira/manifest.json)[/bold cyan]")
         vision_status = "[green]Ativada (Padrão)[/green]" if pipeline.vision else "[dim]Desativada (Apenas Áudio)[/dim]"
         console.print(f"[bold]M.[/bold] ⚙️  Configurar Modo de Síntese [dim]({mode})[/dim]")
         console.print(f"[bold]V.[/bold] 🎬 Alternar Visão Multimodal [dim]({vision_status})[/dim]")
         console.print("[bold]0.[/bold] 🚪 Sair")
         console.print("=" * 60)
 
-        choices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "m", "M", "v", "V"]
+        choices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "s", "S", "j", "J", "m", "M", "v", "V"]
         default_choice = "6" if not (module_dir / "aulas").glob("*.md") else ("7" if next_mod else "6")
         choice = Prompt.ask("Escolha uma opção", choices=choices, default=default_choice).lower()
 
@@ -434,6 +436,24 @@ def run_interactive_menu(pipeline: ModulePipeline) -> None:
             if sel.isdigit() and 1 <= int(sel) <= len(all_modules):
                 pipeline.module_dir = all_modules[int(sel) - 1].resolve()
                 console.print(f"[green]✓ Módulo alterado para:[/green] {pipeline.module_dir.name}")
+        elif choice == "s":
+            raw_dir = pipeline.module_dir / "materiais" / "raw"
+            if not raw_dir.is_dir():
+                console.print(f"[yellow]ℹ Pasta {raw_dir} não encontrada.[/yellow]")
+            else:
+                from knowledge_extractor.video_slicer import slice_video_file
+                v_files = [f for f in raw_dir.iterdir() if f.suffix.lower() in VIDEO_EXTENSIONS and "archive" not in f.parts]
+                sliced_any = False
+                for vf in v_files:
+                    dur = get_media_duration(vf)
+                    if dur > 2700:  # > 45 minutos
+                        slice_video_file(vf, chunk_minutes=35, archive_original=True)
+                        sliced_any = True
+                if not sliced_any:
+                    console.print("[green]✓ Nenhum vídeo com mais de 45 minutos encontrado para fatiar neste módulo.[/green]")
+        elif choice == "j":
+            from knowledge_extractor.jira_mapper import generate_jira_manifest
+            generate_jira_manifest()
         elif choice == "m":
             pipeline.choose_synthesis_mode()
         elif choice == "v":
