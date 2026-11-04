@@ -19,7 +19,11 @@ from knowledge_extractor.file_normalizer import FileNormalizer
 from knowledge_extractor.metrics import track
 from knowledge_extractor.pdf_parser import extract_text_from_pdf
 from knowledge_extractor.synthesizer import LectureSynthesizer, _is_scaffold_file
-from knowledge_extractor.video_frames import extract_video_keyframes, VIDEO_EXTENSIONS
+from knowledge_extractor.video_frames import (
+    extract_video_keyframes,
+    get_media_duration,
+    VIDEO_EXTENSIONS,
+)
 
 if sys.platform == "win32":
     try:

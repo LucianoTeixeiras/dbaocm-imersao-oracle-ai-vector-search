@@ -152,11 +152,14 @@ def test_discover_modules_ordering(tmp_path: Path) -> None:
 
 
 def test_pipeline_imports_confirm() -> None:
-    """Garante que Confirm esteja importado em pipeline.py (evita NameError na opção 8/menu)."""
+    """Garante que Confirm e get_media_duration estejam importados em pipeline.py."""
     import knowledge_extractor.pipeline as p
     assert hasattr(p, "Confirm")
     from rich.prompt import Confirm
     assert p.Confirm is Confirm
+    assert hasattr(p, "get_media_duration")
+    from knowledge_extractor.video_frames import get_media_duration
+    assert p.get_media_duration is get_media_duration
 
 
 def test_course_config_audio_language(tmp_path: Path) -> None:
