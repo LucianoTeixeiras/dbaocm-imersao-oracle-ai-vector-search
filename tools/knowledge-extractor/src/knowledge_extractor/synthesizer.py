@@ -508,6 +508,40 @@ flowchart TD
 - Nota estruturada pronta para detalhamento técnico.
 """
 
+    def _collect_lab_code_context(self, module_dir: Path) -> str:
+        """Coleta trechos de código reais presentes em materiais/raw/ ou materiais/raw/Material/."""
+        raw_dir = module_dir / "materiais" / "raw"
+        if not raw_dir.is_dir():
+            return ""
+
+        code_extensions = {".py", ".sql", ".ipynb", ".sh", ".yaml", ".yml", ".json", ".js", ".ts"}
+        code_snippets: list[str] = []
+        total_chars = 0
+
+        for p in sorted(raw_dir.rglob("*")):
+            if not p.is_file() or p.name.startswith("."):
+                continue
+            if p.suffix.lower() in code_extensions and "archive" not in p.parts:
+                try:
+                    text = p.read_text(encoding="utf-8", errors="replace").strip()
+                    if text and len(text) > 20:
+                        trimmed = text[:4000] # Limite razoável por arquivo
+                        code_snippets.append(f"### Arquivo de Apoio: `{p.name}`\n```{p.suffix.lstrip('.')}\n{trimmed}\n```")
+                        total_chars += len(trimmed)
+                        if total_chars > 25000:
+                            break
+                except Exception:
+                    continue
+
+        if not code_snippets:
+            return ""
+
+        return (
+            "\n\n## CÓDIGO E SCRIPTS REAIS DE LABORATÓRIO FORNECIDOS NO MATERIAL:\n"
+            + "\n\n".join(code_snippets)
+            + "\n\nDIRETRIZ MANDATÓRIA DE CÓDIGO: Baseie seus blocos de código e comandos de terminal nas rotinas REAIS fornecidas acima, explicando cada etapa com comentários didáticos e sem inventar código fictício.\n"
+        )
+
     def process_file(
         self,
         transcript_file: Path,
@@ -542,17 +576,19 @@ flowchart TD
 
         had_valid_note = target_path.exists() and not _is_scaffold_file(target_path)
         transcript_text = transcript_file.read_text(encoding="utf-8")
+        lab_code_context = self._collect_lab_code_context(module_dir)
+        full_context_text = transcript_text + lab_code_context
         clean_title = stem.replace("-", " ").title()
 
         tag_vision = f" [Visão: {len(keyframes)} frames]" if keyframes else ""
         console.print(f"[cyan]📝 Sintetizando nota para:[/cyan] [bold]{target_filename}[/bold]{tag_vision}...")
 
         with track("sintese", modulo=module_dir.name, item=target_filename) as info:
-            info["entrada_chars"] = len(transcript_text)
+            info["entrada_chars"] = len(full_context_text)
             if keyframes:
                 info["keyframes_count"] = len(keyframes)
             content, provider = self._generate(
-                transcript_text, clean_title, module_dir.name, transcript_file.name, info, keyframes=keyframes
+                full_context_text, clean_title, module_dir.name, transcript_file.name, info, keyframes=keyframes
             )
             content, fixed = sanitize_markdown(content)
             if fixed:

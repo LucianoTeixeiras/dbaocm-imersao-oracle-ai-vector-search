@@ -134,6 +134,26 @@ class ModulePipeline:
 
         console.print(table)
 
+        # Detecção de vídeos longos (> 45 min) para oferta de fatiamento
+        video_files = [f for f in files if f.suffix.lower() in VIDEO_EXTENSIONS]
+        long_videos = []
+        for vid in video_files:
+            dur = get_media_duration(vid)
+            if dur > 2700:  # > 45 minutos
+                long_videos.append((vid, dur))
+
+        if long_videos:
+            console.print(f"\n[bold yellow]⚠️  Vídeo(s) longo(s) detectado(s) em materiais/raw/:[/bold yellow]")
+            for lv, ldur in long_videos:
+                console.print(f"  • {lv.name} ({ldur/60:.1f} min)")
+            if Confirm.ask("Deseja fatiar em blocos ágeis de 30-35 minutos antes de transcrever?", default=True):
+                from knowledge_extractor.video_slicer import slice_video_file
+                for lv, _ in long_videos:
+                    slice_video_file(lv, chunk_minutes=35, archive_original=True)
+                # Recarrega a lista de arquivos atualizada
+                files = [p for p in raw_dir.iterdir() if p.is_file() and not p.name.startswith(".")]
+                pending_media = [f for f in files if f.suffix.lower() in media_extensions and not (transcricoes_dir / f"{f.stem}.txt").exists()]
+
         if pending_media:
             from knowledge_extractor.course_config import load_course_config
             cfg = load_course_config()
@@ -213,6 +233,24 @@ class ModulePipeline:
                 force=force,
                 keyframes=keyframes,
             )
+
+        # Gera automaticamente as Issues-as-a-Prompt em labs/ e sincroniza docs/prompts/
+        from knowledge_extractor.prompt_factory import generate_task_prompt, sync_prompts_catalog
+        labs_dir = self.module_dir / "labs"
+        created_tasks = 0
+        for idx, a_file in enumerate(sorted(aulas_dir.glob("*.md")), start=1):
+            if not _is_scaffold_file(a_file):
+                t_path = generate_task_prompt(a_file, output_dir=labs_dir, task_number=idx)
+                if t_path:
+                    created_tasks += 1
+        if created_tasks:
+            console.print(f"[bold green]✓ {created_tasks} Issue-as-a-Prompt gerada(s) em {labs_dir.name}/ (padrão ta-na-lista)![/bold green]")
+            sync_prompts_catalog()
+            console.print("[dim]✓ docs/prompts/README.md sincronizado.[/dim]")
+
+        # Atualiza o manifesto físico Jira local em docs/jira/manifest.json
+        from knowledge_extractor.jira_mapper import generate_jira_manifest
+        generate_jira_manifest()
 
     def run_step_4_catalog_sync(self) -> None:
         """Etapa 4: Sincronização do portal/catalogo.md."""

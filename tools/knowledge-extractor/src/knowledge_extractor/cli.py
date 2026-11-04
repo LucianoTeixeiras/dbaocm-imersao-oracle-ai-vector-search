@@ -480,6 +480,47 @@ def scaffold_modules_cmd(dry_run: bool) -> None:
     console.print(f"[green]✔ {planned} módulo(s) {'planejado(s)' if dry_run else 'processado(s)'}[/green]")
 
 
+@cli.command("slice-video")
+@click.argument("video_file", type=click.Path(exists=True, path_type=Path))
+@click.option("-c", "--chunk-minutes", default=35, type=int, help="Tamanho máximo de cada fatia em minutos (padrão: 35)")
+@click.option("-o", "--output-dir", type=click.Path(path_type=Path), default=None, help="Diretório de saída (padrão: mesma pasta do vídeo)")
+@click.option("--archive/--no-archive", default=True, help="Move o vídeo bruto original para a subpasta archive/ (padrão: True)")
+def slice_video_cmd(video_file: Path, chunk_minutes: int, output_dir: Path | None, archive: bool) -> None:
+    """Fatia vídeos longos usando FFmpeg Stream Copy (-c copy) quase instantâneo."""
+    from knowledge_extractor.video_slicer import slice_video_file
+    slice_video_file(video_file, chunk_minutes=chunk_minutes, output_dir=output_dir, archive_original=archive)
+
+
+@cli.command("generate-tasks")
+@click.argument("module_dir", type=click.Path(exists=True, path_type=Path), required=False, default=None)
+def generate_tasks_cmd(module_dir: Path | None) -> None:
+    """Gera Issues-as-a-Prompt em labs/ e sincroniza docs/prompts/README.md."""
+    from knowledge_extractor.prompt_factory import generate_task_prompt, sync_prompts_catalog
+    from knowledge_extractor.pipeline import discover_modules
+
+    targets = [module_dir] if module_dir else discover_modules()
+    total = 0
+    for mod in targets:
+        aulas_dir = mod / "aulas"
+        labs_dir = mod / "labs"
+        if aulas_dir.is_dir():
+            for idx, a_file in enumerate(sorted(aulas_dir.glob("*.md")), start=1):
+                t_path = generate_task_prompt(a_file, output_dir=labs_dir, task_number=idx)
+                if t_path:
+                    total += 1
+    sync_prompts_catalog()
+    console.print(f"[bold green]✓ {total} Issue-as-a-Prompt gerada(s)/atualizada(s) e docs/prompts/ sincronizado![/bold green]")
+
+
+@cli.command("jira-link")
+@click.option("-k", "--project-key", required=True, help="Chave do projeto Jira (ex: AAH, AKEDU, PROJ)")
+@click.option("--dry-run", is_flag=True, default=False, help="Apenas simula a vinculação sem disparar chamadas")
+def jira_link_cmd(project_key: str, dry_run: bool) -> None:
+    """Mapeia e vincula a estrutura do curso a um projeto no Jira Cloud sob demanda."""
+    from knowledge_extractor.jira_mapper import link_jira_project
+    link_jira_project(project_key=project_key, dry_run=dry_run)
+
+
 def main() -> None:
     cli()
 

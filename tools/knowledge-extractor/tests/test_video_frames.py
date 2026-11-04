@@ -184,6 +184,27 @@ def test_mermaid_fixer_injects_light_theme() -> None:
     assert "background': '#FFFFFF'" in fixed
 
 
+def test_video_slicer_hhmmss_format() -> None:
+    """Valida conversão de segundos para HH:MM:SS no fatiador."""
+    from knowledge_extractor.video_slicer import format_seconds_to_hhmmss
+    assert format_seconds_to_hhmmss(0) == "00:00:00"
+    assert format_seconds_to_hhmmss(65) == "00:01:05"
+    assert format_seconds_to_hhmmss(3665) == "01:01:05"
+
+
+def test_prompt_factory_task_generation(tmp_path: Path) -> None:
+    """Valida geração de Issue-as-a-Prompt a partir de uma nota de aula."""
+    from knowledge_extractor.prompt_factory import generate_task_prompt
+    note = tmp_path / "aula-01-teste.md"
+    note.write_text("# Aula 01 — Teste Prático\n\n## 🎯 Objetivos de Aprendizagem\n- Criar testes\n\n```python\ndef test(): pass\n```\n", encoding="utf-8")
+    task_p = generate_task_prompt(note, output_dir=tmp_path / "labs", task_number=1)
+    assert task_p is not None and task_p.exists()
+    content = task_p.read_text(encoding="utf-8")
+    assert "TASK-01: Teste Prático" in content
+    assert "Roteiro de Implementação Guiado por Testes (TDD)" in content
+
+
+
 
 
 
