@@ -413,9 +413,9 @@ Por favor, elabore a nota estruturada completa em Markdown seguindo as diretrize
                 pass
 
         # Fallback ou execução multimodal via generate_content com retry + backoff exponencial
-        # e fallback de modelo para 503/429 (ex: gemini-2.5-flash -> gemini-3.5-flash-lite)
+        # e fallback de modelo para 503/429 (ex: gemini-2.5-flash -> gemini-3.5-flash-lite -> gemini-2.5-flash-lite)
         candidate_models = [self.gemini_model]
-        for fb_model in ("gemini-3.5-flash-lite", "gemini-2.0-flash"):
+        for fb_model in ("gemini-3.5-flash-lite", "gemini-2.5-flash-lite", "gemini-3.5-flash"):
             if fb_model not in candidate_models:
                 candidate_models.append(fb_model)
 

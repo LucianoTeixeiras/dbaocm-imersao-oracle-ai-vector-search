@@ -39,7 +39,7 @@ MARKER_START = "<!-- figuras:auto:start -->"
 MARKER_END = "<!-- figuras:auto:end -->"
 MAX_FIGURES_DEFAULT = 3
 SUMMARY_HEADING_RE = re.compile(r"^##\s+.*Resumo Executivo", re.MULTILINE)
-FALLBACK_MODELS = ("gemini-3.5-flash-lite", "gemini-2.0-flash")
+FALLBACK_MODELS = ("gemini-3.5-flash-lite", "gemini-2.5-flash-lite", "gemini-3.5-flash")
 
 
 def build_candidate_models(primary: str) -> list[str]:
