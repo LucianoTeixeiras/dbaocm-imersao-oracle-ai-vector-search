@@ -106,7 +106,8 @@ DIRETRIZES CRÍTICAS:
 4. Inclua múltiplos diagramas Mermaid (fluxos de execução, máquinas de estado, sequências ou arquiteturas de componentes).
    REGRAS OBRIGATÓRIAS DE SINTAXE E ACESSIBILIDADE VISUAL (FUNDO CLARO / ALTO CONTRASTE):
    - ACESSIBILIDADE MANDATÓRIA (ASTIGMATISMO / TEMA CLARO): NUNCA gere diagramas com fundo escuro, preenchimentos pretos ou nós escuros. Toda diretiva de estilo deve usar fundo claro (#FFFFFF), caixas em tons pastéis claros e bordas/textos em alto contraste escuro (#0F172A, #1E3A8A).
-   - Inicie OBRIGATORIAMENTE todo bloco Mermaid com a diretiva %%{init: {'theme': 'base', 'themeVariables': { 'darkMode': false, 'background': '#FFFFFF', 'mainBkg': '#FFFFFF', 'primaryColor': '#E2E8F0', 'primaryTextColor': '#0F172A', 'primaryBorderColor': '#1E3A8A', 'lineColor': '#1E3A8A', 'textColor': '#0F172A' }}}%%
+   - Inicie OBRIGATORIAMENTE todo bloco Mermaid com a diretiva:
+     %%{{init: {{'theme': 'base', 'themeVariables': {{ 'darkMode': false, 'background': '#FFFFFF', 'mainBkg': '#FFFFFF', 'primaryColor': '#E2E8F0', 'primaryTextColor': '#0F172A', 'primaryBorderColor': '#1E3A8A', 'lineColor': '#1E3A8A', 'textColor': '#0F172A' }}}}%%
    - Use `flowchart TD` (ou LR). IDs de nós apenas com letras/números, sem espaços nem acentos (ex.: A, B1, llm).
    - TODO rótulo de nó entre aspas duplas: A["Texto (com parênteses)"], B{{"Decisão?"}}, C("Memória / Contexto").
    - Subgraph SEMPRE com id e título entre aspas: subgraph sg1["Processo de Aprendizagem (Kahneman)"] ... end

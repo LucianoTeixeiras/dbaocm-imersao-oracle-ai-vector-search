@@ -207,6 +207,15 @@ def test_prompt_factory_task_generation(tmp_path: Path) -> None:
     assert "Roteiro de Implementação Guiado por Testes (TDD)" in content
 
 
+def test_build_system_prompt_does_not_raise_name_error() -> None:
+    """Garante que build_system_prompt escapa chaves do Mermaid init e não lança NameError 'init'."""
+    from knowledge_extractor.synthesizer import build_system_prompt
+    prompt = build_system_prompt(module_name="01-teste", has_vision=True)
+    assert "%%{init:" in prompt
+    assert "darkMode': false" in prompt
+
+
+
 
 
 
