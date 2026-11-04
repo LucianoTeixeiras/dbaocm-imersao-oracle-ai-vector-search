@@ -84,20 +84,24 @@ class ModulePipeline:
 
     def run_step_1_normalization(self, apply: bool = True) -> None:
         """Etapa 1: Normalização de arquivos em materiais/raw/ e transcricoes/ com auditoria De-Para."""
+        raw_dir = self.module_dir / "materiais" / "raw"
+        if not raw_dir.exists():
+            console.print(f"[dim]ℹ Módulo {self.module_dir.name} sem pasta materiais/raw/. Pulando normalização.[/dim]")
+            return
         console.print(Panel.fit("[bold cyan]Etapa 1: Normalização de Nomes e Auditoria De-Para[/bold cyan]", border_style="cyan"))
         normalizer = FileNormalizer(root_dir=self.root_dir)
         normalizer.execute_normalization(self.module_dir, dry_run=not apply)
 
     def run_step_2_extraction(self, force: bool = False) -> None:
         """Etapa 2: Extração e Transcrição (faster-whisper e PDF parser)."""
-        console.print(Panel.fit("[bold cyan]Etapa 2: Extração e Transcrição Automática (Whisper/PDF)[/bold cyan]", border_style="cyan"))
         raw_dir = self.module_dir / "materiais" / "raw"
         transcricoes_dir = self.module_dir / "materiais" / "transcricoes"
 
         if not raw_dir.exists():
-            console.print(f"[red]❌ Diretório raw não encontrado:[/red] {raw_dir}")
+            console.print(f"[dim]ℹ Módulo {self.module_dir.name} sem pasta materiais/raw/ (Skip etapa 2).[/dim]")
             return
 
+        console.print(Panel.fit("[bold cyan]Etapa 2: Extração e Transcrição Automática (Whisper/PDF)[/bold cyan]", border_style="cyan"))
         transcricoes_dir.mkdir(parents=True, exist_ok=True)
         media_extensions = {".mp4", ".mkv", ".mov", ".avi", ".webm", ".wav", ".mp3", ".m4a"}
         pdf_extensions = {".pdf"}
@@ -427,7 +431,11 @@ def run_interactive_menu(pipeline: ModulePipeline) -> None:
                     console.print(f"[bold green]▶ Processando Módulo {idx}/{total_mods}: {m_dir.name}[/bold green]")
                     console.print(f"[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]")
                     pipeline.module_dir = m_dir.resolve()
-                    pipeline.run_all(force=False)
+                    try:
+                        pipeline.run_all(force=False)
+                    except Exception as e:
+                        console.print(f"[red]❌ Erro no módulo {m_dir.name}: {e}[/red]")
+                        console.print("[yellow]Continuando para o próximo módulo da formação...[/yellow]")
                 console.print(Panel.fit("[bold green]✨ Ciclo Global Concluído com Sucesso em Todos os Módulos![/bold green]", border_style="green"))
         elif choice == "9":
             console.print("\n[bold]Módulos disponíveis:[/bold]")
