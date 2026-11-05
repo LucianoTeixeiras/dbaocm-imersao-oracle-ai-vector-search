@@ -43,6 +43,7 @@ class ModulePipeline:
         gemini_model: str | None = None,
         provider: str | None = None,
         ollama_model: str | None = None,
+        deepseek_model: str | None = None,
         vision: bool = True,
     ) -> None:
         self.module_dir = Path(module_dir).resolve()
@@ -50,6 +51,7 @@ class ModulePipeline:
         self.gemini_model = gemini_model
         self.provider = provider
         self.ollama_model = ollama_model
+        self.deepseek_model = deepseek_model
         self.vision = vision
         self.root_dir = self.find_repo_root(self.module_dir)
 
@@ -63,22 +65,29 @@ class ModulePipeline:
         return start_dir
 
     def make_synthesizer(self) -> LectureSynthesizer:
-        return LectureSynthesizer(gemini_model=self.gemini_model, ollama_model=self.ollama_model, provider=self.provider)
+        return LectureSynthesizer(
+            gemini_model=self.gemini_model,
+            ollama_model=self.ollama_model,
+            deepseek_model=self.deepseek_model,
+            provider=self.provider,
+        )
 
     def choose_synthesis_mode(self) -> None:
         """Escolha interativa: fallback automático ou provedor/modelo fixo (vale para esta sessão)."""
         current = self.make_synthesizer()
-        console.print("\n[bold]Modos:[/bold] [cyan]auto[/cyan] = Ollama → Gemini → scaffold · "
-                      "[cyan]ollama[/cyan] = só local · [cyan]gemini[/cyan] = só cloud")
-        self.provider = Prompt.ask("Provedor", choices=["auto", "ollama", "gemini"], default=current.provider)
+        console.print("\n[bold]Modos:[/bold] [cyan]auto[/cyan] = 1º Gemini → 2º DeepSeek-V3 → 3º Ollama · "
+                      "[cyan]gemini[/cyan] = só Gemini · [cyan]deepseek[/cyan] = só DeepSeek-V3 · [cyan]ollama[/cyan] = só local")
+        self.provider = Prompt.ask("Provedor", choices=["auto", "gemini", "deepseek", "ollama"], default=current.provider)
 
+        if self.provider in ("auto", "gemini"):
+            self.gemini_model = Prompt.ask("Modelo Gemini", default=current.gemini_model)
+        if self.provider in ("auto", "deepseek"):
+            self.deepseek_model = Prompt.ask("Modelo DeepSeek", default=current.deepseek_model)
         if self.provider in ("auto", "ollama"):
             installed = current._installed_ollama_models()
             if installed:
                 console.print(f"[dim]Instalados no Ollama: {', '.join(installed)}[/dim]")
             self.ollama_model = Prompt.ask("Modelo Ollama", default=current.ollama_model)
-        if self.provider in ("auto", "gemini"):
-            self.gemini_model = Prompt.ask("Modelo Gemini", default=current.gemini_model)
 
         console.print(f"[green]✓ Modo de síntese: {self.make_synthesizer().mode_label()}[/green]")
 

@@ -215,6 +215,17 @@ def test_build_system_prompt_does_not_raise_name_error() -> None:
     assert "darkMode': false" in prompt
 
 
+def test_synthesizer_mode_label_hierarchy() -> None:
+    """Valida a hierarquia de modos no sintetizador: 1º Gemini → 2º DeepSeek → 3º Ollama."""
+    from knowledge_extractor.synthesizer import LectureSynthesizer
+    s = LectureSynthesizer(provider="auto", gemini_model="gemini-3.5-flash-lite", deepseek_model="deepseek-chat")
+    label = s.mode_label()
+    assert "1º gemini-3.5-flash-lite" in label
+    assert "2º deepseek-chat" in label
+    assert "3º qwen2.5:7b-instruct" in label
+
+
+
 
 
 

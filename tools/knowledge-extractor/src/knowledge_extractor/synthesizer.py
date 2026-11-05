@@ -183,16 +183,46 @@ class LectureSynthesizer:
         ollama_model: str | None = None,
         ollama_url: str | None = None,
         provider: str | None = None,
+        deepseek_model: str | None = None,
+        deepseek_api_key: str | None = None,
+        deepseek_base_url: str | None = None,
     ) -> None:
         self.provider = (provider or os.getenv("SYNTHESIS_PROVIDER", "auto")).strip().lower()
-        if self.provider not in ("auto", "ollama", "gemini"):
-            raise ValueError(f"SYNTHESIS_PROVIDER inválido: '{self.provider}' (use auto, ollama ou gemini)")
+        if self.provider not in ("auto", "gemini", "deepseek", "ollama"):
+            raise ValueError(f"SYNTHESIS_PROVIDER inválido: '{self.provider}' (use auto, gemini, deepseek ou ollama)")
         self.api_key = api_key or os.getenv("GEMINI_API_KEY")
         self.gemini_model = gemini_model or os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
         self.ollama_model = ollama_model or os.getenv("OLLAMA_MODEL", "qwen2.5:7b-instruct")
         self.ollama_url = (ollama_url or os.getenv("OLLAMA_BASE_URL", "http://127.0.0.1:11434")).rstrip("/")
         self.ollama_num_ctx = int(os.getenv("OLLAMA_NUM_CTX", "32768"))
         self.ollama_timeout = int(os.getenv("OLLAMA_TIMEOUT_SECONDS", "300"))
+
+        # DeepSeek-V3 / OpenAI-compatible Cloud Fallback
+        self.deepseek_api_key = (
+            deepseek_api_key
+            or os.getenv("DEEPSEEK_API_KEY")
+            or os.getenv("OPENROUTER_API_KEY")
+            or os.getenv("LLM_API_KEY")
+        )
+        self.deepseek_base_url = (
+            deepseek_base_url
+            or os.getenv("DEEPSEEK_BASE_URL")
+            or (
+                "https://openrouter.ai/api/v1"
+                if os.getenv("OPENROUTER_API_KEY") and not os.getenv("DEEPSEEK_API_KEY")
+                else "https://api.deepseek.com/v1"
+            )
+        ).rstrip("/")
+        self.deepseek_model = (
+            deepseek_model
+            or os.getenv("DEEPSEEK_MODEL")
+            or (
+                "deepseek/deepseek-chat"
+                if "openrouter" in self.deepseek_base_url
+                else "deepseek-chat"
+            )
+        )
+
         self.client = None
         self._ollama_model_checked = False
         self._ollama_model_ready = False
@@ -209,7 +239,9 @@ class LectureSynthesizer:
             return f"ollama fixo ({self.ollama_model})"
         if self.provider == "gemini":
             return f"gemini fixo ({self.gemini_model})"
-        return f"auto: {self.ollama_model} → {self.gemini_model} → scaffold"
+        if self.provider == "deepseek":
+            return f"deepseek fixo ({self.deepseek_model})"
+        return f"auto: 1º {self.gemini_model} → 2º {self.deepseek_model} → 3º {self.ollama_model} → scaffold"
 
     def print_mode(self) -> None:
         console.print(f"[bold]⚙️  Modo de síntese:[/bold] {self.mode_label()}")
@@ -447,6 +479,62 @@ Por favor, elabore a nota estruturada completa em Markdown seguindo as diretrize
             raise last_exc
         raise RuntimeError("O modelo Gemini retornou uma resposta vazia.")
 
+    def synthesize_with_deepseek(
+        self,
+        transcript_text: str,
+        lesson_title: str,
+        module_name: str,
+        source_filename: str,
+    ) -> str:
+        """Chama a API compatível com OpenAI (DeepSeek-V3 / OpenRouter / 9Router) para síntese técnica."""
+        if not self.deepseek_api_key:
+            raise ValueError("DEEPSEEK_API_KEY ou OPENROUTER_API_KEY não configurada.")
+
+        console.print(f"[bold cyan]🚀 Invocando DeepSeek-V3 ({self.deepseek_model}) via {self.deepseek_base_url}...[/bold cyan]")
+        user_content = f"""Módulo: {module_name}
+Título da Aula: {lesson_title}
+Arquivo de Transcrição: {source_filename}
+
+Abaixo está a transcrição bruta da aula:
+---
+{transcript_text}
+---
+
+Por favor, elabore a apostila técnica completa em Markdown conforme as diretrizes do sistema."""
+
+        sys_prompt = build_system_prompt(module_name)
+        payload = {
+            "model": self.deepseek_model,
+            "messages": [
+                {"role": "system", "content": sys_prompt},
+                {"role": "user", "content": user_content},
+            ],
+            "temperature": 0.2,
+            "max_tokens": 8192,
+            "stream": False,
+        }
+
+        data_bytes = json.dumps(payload).encode("utf-8")
+        req = request.Request(
+            f"{self.deepseek_base_url}/chat/completions",
+            data=data_bytes,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {self.deepseek_api_key}",
+            },
+            method="POST",
+        )
+
+        with request.urlopen(req, timeout=180) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            choices = result.get("choices", [])
+            if not choices:
+                raise RuntimeError("Resposta vazia retornada pela API DeepSeek.")
+            msg = choices[0].get("message", {}).get("content", "")
+            if not msg:
+                raise RuntimeError("Conteúdo vazio retornado pelo modelo DeepSeek.")
+            return msg.strip()
+
     def generate_scaffold_note(
         self,
         transcript_text: str,
@@ -671,34 +759,10 @@ flowchart TD
         info: dict,
         keyframes: list[Path] | None = None,
     ) -> tuple[str, str]:
-        """Executa a cascata Ollama → Gemini → scaffold. Retorna (conteúdo, provider)."""
+        """Executa a cascata 1º Gemini → 2º DeepSeek-V3 → 3º Local SLM (Ollama) → 4º Scaffold."""
         args = (transcript_text, clean_title, module_name, source_filename)
 
-        # 1. Estratégia Local (Ollama) quando provider for 'auto' ou 'ollama'
-        # Quando keyframes estiver presente no modo 'auto', pula Ollama (que só suporta texto)
-        # e vai direto ao Gemini multimodal para não desperdiçar os frames extraídos.
-        has_vision = bool(keyframes)
-        if self.provider == "ollama" or (self.provider == "auto" and not has_vision):
-            if self.is_ollama_available() and self.ensure_ollama_model():
-                t0 = time.perf_counter()
-                try:
-                    content = self.synthesize_with_ollama(*args)
-                    info["ollama_s"] = f"{time.perf_counter() - t0:.0f}"
-                    console.print(f"[bold green]✓ Síntese gerada via SLM Local ({self.ollama_model})![/bold green]")
-                    return content, f"ollama:{self.ollama_model}"
-                except Exception as e:
-                    info["ollama_s"] = f"{time.perf_counter() - t0:.0f}"
-                    info["ollama_erro"] = type(e).__name__
-                    console.print(f"[yellow]⚠️ Falha no SLM Local ({e}) após {fmt_duration(time.perf_counter() - t0)}.[/yellow]")
-                    if self.provider == "ollama":
-                        console.print("[yellow]Provider restrito a 'ollama'. Gerando scaffold offline...[/yellow]")
-                        return self.generate_scaffold_note(*args), "scaffold"
-            else:
-                console.print(f"[yellow]ℹ Servidor Ollama ({self.ollama_url}) não está acessível.[/yellow]")
-        elif self.provider == "auto" and has_vision:
-            console.print("[dim]ℹ Modo 'auto' com visão ativa: priorizando Gemini multimodal.[/dim]")
-
-        # 2. Fallback Cloud (Gemini) se provider for 'auto' ou 'gemini'
+        # 1. 1ª Opção (Principal): Gemini Cloud
         if self.provider in ("auto", "gemini"):
             if self.client:
                 t0 = time.perf_counter()
@@ -710,12 +774,55 @@ flowchart TD
                 except Exception as e:
                     info["gemini_s"] = f"{time.perf_counter() - t0:.0f}"
                     info["gemini_erro"] = type(e).__name__
-                    console.print(f"[yellow]⚠️ Falha no Gemini ({e}). Gerando scaffold estruturado...[/yellow]")
-                    return self.generate_scaffold_note(*args), "scaffold"
+                    if self.provider == "gemini":
+                        console.print(f"[yellow]⚠️ Falha no Gemini ({e}). Provider restrito a 'gemini'. Gerando scaffold estruturado...[/yellow]")
+                        return self.generate_scaffold_note(*args), "scaffold"
+                    console.print(f"[yellow]⚠️ Gemini indisponível ({e}). Acionando 2ª Opção Cloud: DeepSeek-V3...[/yellow]")
             else:
-                console.print("[dim]ℹ GEMINI_API_KEY não configurada ou inválida.[/dim]")
+                if self.provider == "gemini":
+                    console.print("[dim]ℹ GEMINI_API_KEY não configurada ou inválida.[/dim]")
+                    return self.generate_scaffold_note(*args), "scaffold"
 
-        # 3. Fallback final: Scaffold
+        # 2. 2ª Opção (Fallback Cloud): DeepSeek-V3 / OpenAI-compatible
+        if self.provider in ("auto", "deepseek"):
+            if self.deepseek_api_key:
+                t0 = time.perf_counter()
+                try:
+                    content = self.synthesize_with_deepseek(*args)
+                    info["deepseek_s"] = f"{time.perf_counter() - t0:.0f}"
+                    console.print(f"[bold green]✓ Síntese gerada via DeepSeek Cloud ({self.deepseek_model})![/bold green]")
+                    return content, f"deepseek:{self.deepseek_model}"
+                except Exception as e:
+                    info["deepseek_s"] = f"{time.perf_counter() - t0:.0f}"
+                    info["deepseek_erro"] = type(e).__name__
+                    if self.provider == "deepseek":
+                        console.print(f"[yellow]⚠️ Falha no DeepSeek ({e}). Gerando scaffold estruturado...[/yellow]")
+                        return self.generate_scaffold_note(*args), "scaffold"
+                    console.print(f"[yellow]⚠️ Falha no DeepSeek ({e}). Acionando 3ª Opção Local: SLM Ollama...[/yellow]")
+            else:
+                if self.provider == "deepseek":
+                    console.print("[yellow]⚠️ DEEPSEEK_API_KEY não configurada. Gerando scaffold estruturado...[/yellow]")
+                    return self.generate_scaffold_note(*args), "scaffold"
+
+        # 3. 3ª Opção (Fallback Local): Ollama SLM
+        if self.provider in ("auto", "ollama"):
+            if self.is_ollama_available() and self.ensure_ollama_model():
+                t0 = time.perf_counter()
+                try:
+                    content = self.synthesize_with_ollama(*args)
+                    info["ollama_s"] = f"{time.perf_counter() - t0:.0f}"
+                    console.print(f"[bold green]✓ Síntese gerada via SLM Local ({self.ollama_model})![/bold green]")
+                    return content, f"ollama:{self.ollama_model}"
+                except Exception as e:
+                    info["ollama_s"] = f"{time.perf_counter() - t0:.0f}"
+                    info["ollama_erro"] = type(e).__name__
+                    console.print(f"[yellow]⚠️ Falha no SLM Local ({e}) após {fmt_duration(time.perf_counter() - t0)}.[/yellow]")
+            else:
+                if self.provider == "ollama":
+                    console.print(f"[yellow]ℹ Servidor Ollama ({self.ollama_url}) não está acessível.[/yellow]")
+                    return self.generate_scaffold_note(*args), "scaffold"
+
+        # 4. 4ª Opção: Fallback final Scaffold
         console.print("[yellow]ℹ Nenhum provedor de IA disponível. Gerando scaffold offline...[/yellow]")
         return self.generate_scaffold_note(*args), "scaffold"
 

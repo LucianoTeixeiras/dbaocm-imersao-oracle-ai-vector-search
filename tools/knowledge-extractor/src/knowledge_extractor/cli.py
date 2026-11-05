@@ -192,13 +192,28 @@ def process_module_cmd(module_dir: Path, model_size: str, force: bool) -> None:
 @click.argument("target", type=click.Path(exists=True, path_type=Path))
 @click.option("-o", "--output-dir", type=click.Path(path_type=Path), default=None, help="Diretório de saída para aulas/ (padrão: <modulo>/aulas/)")
 @click.option("-m", "--gemini-model", default=None, help="Modelo Gemini para síntese técnica (padrão: env GEMINI_MODEL)")
-@click.option("-p", "--provider", type=click.Choice(["auto", "ollama", "gemini"]), default=None, help="auto = fallback Ollama→Gemini; ollama/gemini = força um provedor (padrão: env SYNTHESIS_PROVIDER)")
+@click.option("-p", "--provider", type=click.Choice(["auto", "gemini", "deepseek", "ollama"]), default=None, help="auto = 1º Gemini → 2º DeepSeek-V3 → 3º Ollama; ou força um provedor")
+@click.option("--deepseek-model", default=None, help="Modelo DeepSeek Cloud (padrão: env DEEPSEEK_MODEL)")
 @click.option("--ollama-model", default=None, help="Modelo Ollama local (padrão: env OLLAMA_MODEL)")
 @click.option("-f", "--force", is_flag=True, default=False, help="Força a regeração mesmo se a nota já existir")
 @click.option("--vision/--no-vision", default=True, help="Ativa (padrão) ou desativa a extração e análise multimodal dos frames de vídeo com Gemini")
-def synthesize_cmd(target: Path, output_dir: Path | None, gemini_model: str | None, provider: str | None, ollama_model: str | None, force: bool, vision: bool) -> None:
+def synthesize_cmd(
+    target: Path,
+    output_dir: Path | None,
+    gemini_model: str | None,
+    provider: str | None,
+    deepseek_model: str | None,
+    ollama_model: str | None,
+    force: bool,
+    vision: bool,
+) -> None:
     """Sintetiza notas estruturadas de estudo em Markdown (aulas/) a partir de transcrições .txt."""
-    synthesizer = LectureSynthesizer(gemini_model=gemini_model, ollama_model=ollama_model, provider=provider)
+    synthesizer = LectureSynthesizer(
+        gemini_model=gemini_model,
+        deepseek_model=deepseek_model,
+        ollama_model=ollama_model,
+        provider=provider,
+    )
     synthesizer.print_mode()
 
     if target.is_file():
@@ -339,7 +354,8 @@ def attach_figures_cmd(module_dir: Path, max_figures: int, gemini_model: str | N
 @click.option("--step", type=int, default=None, help="Executa uma etapa específica (1 a 5)")
 @click.option("-m", "--model-size", default="base", help="Tamanho do modelo Whisper (tiny, base, small, medium, large-v3)")
 @click.option("--gemini-model", default=None, help="Modelo Gemini para síntese de notas (padrão: env GEMINI_MODEL)")
-@click.option("-p", "--provider", type=click.Choice(["auto", "ollama", "gemini"]), default=None, help="auto = fallback Ollama→Gemini; ollama/gemini = força um provedor (padrão: env SYNTHESIS_PROVIDER)")
+@click.option("-p", "--provider", type=click.Choice(["auto", "gemini", "deepseek", "ollama"]), default=None, help="auto = 1º Gemini → 2º DeepSeek-V3 → 3º Ollama; ou força um provedor")
+@click.option("--deepseek-model", default=None, help="Modelo DeepSeek Cloud (padrão: env DEEPSEEK_MODEL)")
 @click.option("--ollama-model", default=None, help="Modelo Ollama local (padrão: env OLLAMA_MODEL)")
 @click.option("-f", "--force", is_flag=True, default=False, help="Força o reprocessamento de itens já existentes")
 @click.option("--vision/--no-vision", default=True, help="Ativa (padrão) ou desativa a extração de frames de vídeo e síntese multimodal com Gemini")
@@ -351,6 +367,7 @@ def pipeline_cmd(
     model_size: str,
     gemini_model: str | None,
     provider: str | None,
+    deepseek_model: str | None,
     ollama_model: str | None,
     force: bool,
     vision: bool,
@@ -377,6 +394,7 @@ def pipeline_cmd(
                 model_size=model_size,
                 gemini_model=gemini_model,
                 provider=provider,
+                deepseek_model=deepseek_model,
                 ollama_model=ollama_model,
                 vision=vision,
             )
@@ -389,6 +407,7 @@ def pipeline_cmd(
         model_size=model_size,
         gemini_model=gemini_model,
         provider=provider,
+        deepseek_model=deepseek_model,
         ollama_model=ollama_model,
         vision=vision,
     )
