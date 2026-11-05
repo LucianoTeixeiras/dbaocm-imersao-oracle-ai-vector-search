@@ -188,7 +188,7 @@ class LectureSynthesizer:
         if self.provider not in ("auto", "ollama", "gemini"):
             raise ValueError(f"SYNTHESIS_PROVIDER inválido: '{self.provider}' (use auto, ollama ou gemini)")
         self.api_key = api_key or os.getenv("GEMINI_API_KEY")
-        self.gemini_model = gemini_model or os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+        self.gemini_model = gemini_model or os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
         self.ollama_model = ollama_model or os.getenv("OLLAMA_MODEL", "qwen2.5:7b-instruct")
         self.ollama_url = (ollama_url or os.getenv("OLLAMA_BASE_URL", "http://127.0.0.1:11434")).rstrip("/")
         self.ollama_num_ctx = int(os.getenv("OLLAMA_NUM_CTX", "32768"))
@@ -413,9 +413,9 @@ Por favor, elabore a nota estruturada completa em Markdown seguindo as diretrize
                 pass
 
         # Fallback ou execução multimodal via generate_content com retry + backoff exponencial
-        # e fallback de modelo para 503/429 (ex: gemini-2.5-flash -> gemini-3.5-flash-lite -> gemini-2.5-flash-lite)
+        # e fallback de modelo para 503/429 (ex: gemini-3.5-flash-lite -> gemini-3.5-flash -> gemini-2.5-flash)
         candidate_models = [self.gemini_model]
-        for fb_model in ("gemini-3.5-flash-lite", "gemini-2.5-flash-lite", "gemini-3.5-flash"):
+        for fb_model in ("gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.5-flash"):
             if fb_model not in candidate_models:
                 candidate_models.append(fb_model)
 
