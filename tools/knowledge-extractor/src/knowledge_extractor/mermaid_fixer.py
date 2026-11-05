@@ -23,7 +23,7 @@ LIGHT_THEME_INIT = (
     "%%{init: {'theme': 'base', 'themeVariables': { "
     "'darkMode': false, 'background': '#FFFFFF', 'mainBkg': '#FFFFFF', "
     "'primaryColor': '#F1F5F9', 'primaryTextColor': '#0F172A', 'primaryBorderColor': '#1E3A8A', "
-    "'lineColor': '#1E3A8A', 'textColor': '#0F172A', 'clusterBkg': '#F8FAFC', 'clusterBorder': '#94A3B8' "
+    "'lineColor': '#1E3A8A', 'textColor': '#0F172A', 'clusterBkg': '#FFFFFF', 'clusterBorder': '#1E3A8A' "
     "}}}%%"
 )
 
