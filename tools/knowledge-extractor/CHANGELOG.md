@@ -5,6 +5,9 @@ A versão do pacote (`pyproject.toml` e `__version__`) acompanha a tag `vX.Y.Z` 
 
 ## [Não publicado]
 
+### Adicionado
+- LRT-10: Ingestão de vídeos e playlists do YouTube via `yt-dlp` (`knowledge-extractor download-youtube`, opção `Y` no menu do pipeline, scripts `tools/baixar-playlist.sh` e `tools/baixar-playlist.ps1`).
+
 ### Alterado
 - `logs/` e `.cache/` (métricas e `model_health.json`) saem do pacote e vão para `KE_HOME`: por padrão a pasta com `course.yaml` mais próxima subindo do cwd, senão o cwd.
 

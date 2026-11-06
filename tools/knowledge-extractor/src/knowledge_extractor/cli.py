@@ -901,6 +901,90 @@ def jira_link_cmd(project_key: str, dry_run: bool) -> None:
     link_jira_project(project_key=project_key, dry_run=dry_run)
 
 
+@cli.command("download-youtube")
+@click.argument("url")
+@click.option(
+    "-o",
+    "--output-dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Diretório de destino (padrão: download/ ou materiais/raw/ do módulo).",
+)
+@click.option(
+    "-m",
+    "--module",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Atalho para salvar diretamente em modules/<modulo>/materiais/raw/.",
+)
+@click.option(
+    "-a",
+    "--audio",
+    is_flag=True,
+    default=False,
+    help="Baixar apenas o áudio em MP3.",
+)
+@click.option(
+    "-l",
+    "--list-only",
+    "--listar",
+    is_flag=True,
+    default=False,
+    help="Lista os vídeos da playlist sem baixar.",
+)
+@click.option(
+    "--cookies",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Caminho do arquivo cookies.txt para conteúdo restrito.",
+)
+@click.option(
+    "--max-height",
+    type=int,
+    default=1080,
+    help="Resolução vertical máxima do vídeo (padrão: 1080).",
+)
+@click.option(
+    "--flat",
+    is_flag=True,
+    default=False,
+    help="Salva arquivos diretamente na pasta de destino, sem subpastas de Canal/Playlist.",
+)
+@click.argument("extra_args", nargs=-1)
+def download_youtube_cmd(
+    url: str,
+    output_dir: Path | None,
+    module: Path | None,
+    audio: bool,
+    list_only: bool,
+    cookies: Path | None,
+    max_height: int,
+    flat: bool,
+    extra_args: tuple[str, ...],
+) -> None:
+    """Baixa vídeos ou playlists do YouTube via yt-dlp."""
+    from knowledge_extractor.youtube_downloader import download_youtube
+
+    target_dir = output_dir
+    flat_mode = flat
+    if module:
+        target_dir = module / "materiais/raw"
+        flat_mode = True
+
+    code = download_youtube(
+        url=url,
+        output_dir=target_dir,
+        audio_only=audio,
+        list_only=list_only,
+        cookies_file=cookies,
+        max_height=max_height,
+        flat_output=flat_mode,
+        extra_args=list(extra_args) if extra_args else None,
+    )
+    if code != 0:
+        sys.exit(code)
+
+
 def main() -> None:
     cli()
 

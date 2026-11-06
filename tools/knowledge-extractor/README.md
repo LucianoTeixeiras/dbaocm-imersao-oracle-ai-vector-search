@@ -141,6 +141,10 @@ Todos os comandos rodam a partir da **raiz do repositório**:
 | Sintetizar notas | `knowledge-extractor synthesize modules/<slug> [--vision\|--no-vision] [-f]` |
 | Anexar figuras WebP | `knowledge-extractor attach-figures modules/<slug> [--max-figures 3] [-f]` |
 | Corrigir Mermaid | `knowledge-extractor fix-mermaid modules/<slug> [--apply]` |
+| Fatiar vídeos longos | `knowledge-extractor slice-video <video.mp4> [-c 35]` |
+| Baixar do YouTube | `knowledge-extractor download-youtube <URL> [-m modules/<slug>] [-a] [-l]` |
+| Gerar tarefas (Issue-as-a-Prompt) | `knowledge-extractor make-prompts [modules/<slug>]` |
+| Vincular ao Jira | `knowledge-extractor jira-link -k <PROJECT_KEY> [--dry-run]` |
 | Sincronizar catálogo | `knowledge-extractor sync-catalog modules/<slug>` |
 | Pipeline completo | `knowledge-extractor pipeline modules/<slug> [--all] [--step 1-5] [--vision] [-f]` |
 | Testes unitários | `uv run --project tools/knowledge-extractor --group dev pytest tools/knowledge-extractor/tests/ -q` |

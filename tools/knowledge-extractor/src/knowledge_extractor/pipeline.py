@@ -565,6 +565,9 @@ def run_interactive_menu(pipeline: ModulePipeline) -> None:
         console.print(
             "[bold]J.[/bold] 📋 [bold cyan]Gerar / Visualizar Manifesto do Jira (docs/jira/manifest.json)[/bold cyan]"
         )
+        console.print(
+            "[bold]Y.[/bold] 📥 [bold red]Download YouTube (Playlist / Vídeo via yt-dlp)[/bold red]"
+        )
         vision_status = (
             "[green]Ativada (Padrão)[/green]"
             if pipeline.vision
@@ -594,6 +597,8 @@ def run_interactive_menu(pipeline: ModulePipeline) -> None:
             "S",
             "j",
             "J",
+            "y",
+            "Y",
             "m",
             "M",
             "v",
@@ -710,6 +715,27 @@ def run_interactive_menu(pipeline: ModulePipeline) -> None:
             from knowledge_extractor.jira_mapper import generate_jira_manifest
 
             generate_jira_manifest()
+        elif choice == "y":
+            yt_url = Prompt.ask("Informe a URL do vídeo ou playlist do YouTube").strip()
+            if yt_url:
+                audio_only = Confirm.ask("Baixar apenas o áudio (MP3)?", default=False)
+                dest_module = Confirm.ask(
+                    f"Salvar diretamente no módulo atual ({pipeline.module_dir.name}/materiais/raw)?",
+                    default=True,
+                )
+                target_dir = (
+                    (pipeline.module_dir / "materiais" / "raw")
+                    if dest_module
+                    else Path("download")
+                )
+                from knowledge_extractor.youtube_downloader import download_youtube
+
+                download_youtube(
+                    url=yt_url,
+                    output_dir=target_dir,
+                    audio_only=audio_only,
+                    flat_output=dest_module,
+                )
         elif choice == "m":
             pipeline.choose_synthesis_mode()
         elif choice == "v":

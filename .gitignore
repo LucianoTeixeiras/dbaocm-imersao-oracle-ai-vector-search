@@ -110,3 +110,9 @@ modules/**/materiais/frames/
 .clinerules/agent-kit.md
 .secrets/
 # <<< agent-kit <<<
+
+# YouTube e Midias (LRT-10)
+download/
+cookies.txt
+baixados-*.txt
+archive/
