@@ -8,7 +8,6 @@ arquivando o vídeo bruto em materiais/raw/archive/ (gitignored).
 from __future__ import annotations
 
 import re
-import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -25,7 +24,7 @@ if sys.platform == "win32":
     try:
         sys.stdout.reconfigure(encoding="utf-8")
         sys.stderr.reconfigure(encoding="utf-8")
-    except Exception:
+    except (OSError, ValueError, KeyError):
         pass
 
 console = Console(highlight=False)
@@ -35,7 +34,7 @@ DEFAULT_CHUNK_MINUTES = 35
 
 def format_seconds_to_hhmmss(seconds: float) -> str:
     """Formata segundos para HH:MM:SS."""
-    total = max(0, int(round(seconds)))
+    total = max(0, round(seconds))
     hours, remainder = divmod(total, 3600)
     minutes, secs = divmod(remainder, 60)
     return f"{hours:02d}:{minutes:02d}:{secs:02d}"
@@ -54,22 +53,28 @@ def slice_video_file(
         return []
 
     if video_path.suffix.lower() not in VIDEO_EXTENSIONS:
-        console.print(f"[yellow]⚠️ Extensão não suportada como vídeo:[/yellow] {video_path.suffix}")
+        console.print(
+            f"[yellow]⚠️ Extensão não suportada como vídeo:[/yellow] {video_path.suffix}"
+        )
         return []
 
     if not is_ffmpeg_available():
-        console.print("[red]❌ FFmpeg não encontrado no PATH. Instale o ffmpeg para fatiar vídeos.[/red]")
+        console.print(
+            "[red]❌ FFmpeg não encontrado no PATH. Instale o ffmpeg para fatiar vídeos.[/red]"
+        )
         return []
 
     duration_sec = get_media_duration(video_path)
     if duration_sec <= 0:
-        console.print(f"[red]❌ Não foi possível determinar a duração do vídeo:[/red] {video_path.name}")
+        console.print(
+            f"[red]❌ Não foi possível determinar a duração do vídeo:[/red] {video_path.name}"
+        )
         return []
 
     chunk_seconds = chunk_minutes * 60
     if duration_sec <= chunk_seconds:
         console.print(
-            f"[dim]ℹ Vídeo {video_path.name} tem {duration_sec/60:.1f} min (menor que o corte de {chunk_minutes} min). Nenhum corte necessário.[/dim]"
+            f"[dim]ℹ Vídeo {video_path.name} tem {duration_sec / 60:.1f} min (menor que o corte de {chunk_minutes} min). Nenhum corte necessário.[/dim]"
         )
         return [video_path]
 
@@ -80,9 +85,11 @@ def slice_video_file(
     clean_stem = re.sub(r"-parte-\d+$", "", video_path.stem)
     ext = video_path.suffix.lower()
 
-    num_parts = int(duration_sec // chunk_seconds) + (1 if duration_sec % chunk_seconds > 0 else 0)
+    num_parts = int(duration_sec // chunk_seconds) + (
+        1 if duration_sec % chunk_seconds > 0 else 0
+    )
     console.print(
-        f"[bold cyan]🔪 Fatiando vídeo ({duration_sec/60:.1f} min) em {num_parts} partes de até {chunk_minutes} min:[/bold cyan] {video_path.name}"
+        f"[bold cyan]🔪 Fatiando vídeo ({duration_sec / 60:.1f} min) em {num_parts} partes de até {chunk_minutes} min:[/bold cyan] {video_path.name}"
     )
 
     sliced_files: list[Path] = []
@@ -98,7 +105,7 @@ def slice_video_file(
         dur_str = format_seconds_to_hhmmss(duration_part)
 
         console.print(
-            f"  [cyan]▶ Parte {part_idx:02d}:[/cyan] {out_file.name} [dim]({start_str} -> {format_seconds_to_hhmmss(current_end)} | {duration_part/60:.1f} min)[/dim]"
+            f"  [cyan]▶ Parte {part_idx:02d}:[/cyan] {out_file.name} [dim]({start_str} -> {format_seconds_to_hhmmss(current_end)} | {duration_part / 60:.1f} min)[/dim]"
         )
 
         cmd = [
@@ -117,9 +124,18 @@ def slice_video_file(
             str(out_file),
         ]
 
-        res = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+        res = subprocess.run(
+            cmd,
+            check=False,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+        )
         if res.returncode != 0 or not out_file.exists() or out_file.stat().st_size == 0:
-            console.print(f"[red]❌ Erro ao fatiar parte {part_idx}: {res.stderr[-200:] if res.stderr else 'falha'}[/red]")
+            console.print(
+                f"[red]❌ Erro ao fatiar parte {part_idx}: {res.stderr[-200:] if res.stderr else 'falha'}[/red]"
+            )
         else:
             sliced_files.append(out_file)
 
@@ -134,9 +150,15 @@ def slice_video_file(
             if dest_archive.exists():
                 dest_archive.unlink()
             video_path.rename(dest_archive)
-            console.print(f"[green]✓ Vídeo bruto original arquivado em:[/green] {dest_archive.relative_to(target_dir.parent.parent) if target_dir.parent.parent in dest_archive.parents else dest_archive.name}")
-        except Exception as e:
-            console.print(f"[yellow]⚠️ Não foi possível mover vídeo original para archive: {e}[/yellow]")
+            console.print(
+                f"[green]✓ Vídeo bruto original arquivado em:[/green] {dest_archive.relative_to(target_dir.parent.parent) if target_dir.parent.parent in dest_archive.parents else dest_archive.name}"
+            )
+        except Exception as e:  # noqa: BLE001
+            console.print(
+                f"[yellow]⚠️ Não foi possível mover vídeo original para archive: {e}[/yellow]"
+            )
 
-    console.print(f"[bold green]✨ Fatiamento concluído com sucesso ({len(sliced_files)} partes geradas)![/bold green]")
+    console.print(
+        f"[bold green]✨ Fatiamento concluído com sucesso ({len(sliced_files)} partes geradas)![/bold green]"
+    )
     return sliced_files

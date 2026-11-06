@@ -10,7 +10,6 @@ from __future__ import annotations
 import re
 import sys
 from pathlib import Path
-from typing import Any
 
 from rich.console import Console
 
@@ -20,7 +19,7 @@ if sys.platform == "win32":
     try:
         sys.stdout.reconfigure(encoding="utf-8")
         sys.stderr.reconfigure(encoding="utf-8")
-    except Exception:
+    except (OSError, ValueError, KeyError):
         pass
 
 console = Console(highlight=False)
@@ -158,11 +157,11 @@ def sync_prompts_catalog(root_dir: Path | None = None) -> Path:
     readme_path = prompts_dir / "README.md"
 
     lines = [
-        f"# 📚 Catálogo Geral de Prompts Executáveis (Issues-as-a-Prompt)",
+        "# 📚 Catálogo Geral de Prompts Executáveis (Issues-as-a-Prompt)",
         "",
         f"> **Curso / Treinamento:** {cfg.title} — {cfg.institution}",
-        f"> **Padrão de Engenharia:** Derived from `ta-na-lista` & `agent-kit` standards",
-        f"> **Objetivo:** Catálogo vivo de especificações executáveis geradas a partir das disciplinas e labs.",
+        "> **Padrão de Engenharia:** Derived from `ta-na-lista` & `agent-kit` standards",
+        "> **Objetivo:** Catálogo vivo de especificações executáveis geradas a partir das disciplinas e labs.",
         "",
         "---",
         "",
@@ -183,17 +182,25 @@ def sync_prompts_catalog(root_dir: Path | None = None) -> Path:
                 continue
             for t_file in sorted(labs_dir.glob("task-*.md")):
                 found_tasks += 1
-                first_line = t_file.read_text(encoding="utf-8", errors="replace").splitlines()[0]
+                first_line = t_file.read_text(
+                    encoding="utf-8", errors="replace"
+                ).splitlines()[0]
                 task_title = first_line.replace("# TASK:", "").replace("#", "").strip()
                 rel_path = f"../../modules/{mod.name}/labs/{t_file.name}"
-                lines.append(f"| `{mod.name}` | [{t_file.name}]({rel_path}) | {task_title} | `labs/` |")
+                lines.append(
+                    f"| `{mod.name}` | [{t_file.name}]({rel_path}) | {task_title} | `labs/` |"
+                )
 
     if found_tasks == 0:
-        lines.append("| *Nenhuma task gerada ainda* | — | Execute o pipeline ou `generate-tasks` | — |")
+        lines.append(
+            "| *Nenhuma task gerada ainda* | — | Execute o pipeline ou `generate-tasks` | — |"
+        )
 
     lines.append("")
     lines.append("---")
-    lines.append(f"*Catálogo mantido automaticamente pela esteira knowledge-extractor v1.3.*")
+    lines.append(
+        "*Catálogo mantido automaticamente pela esteira knowledge-extractor v1.3.*"
+    )
     lines.append("")
 
     readme_path.write_text("\n".join(lines), encoding="utf-8")

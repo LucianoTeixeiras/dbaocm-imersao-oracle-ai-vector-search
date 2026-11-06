@@ -3,31 +3,47 @@
 from __future__ import annotations
 
 import csv
+import logging
 import os
 import time
+from collections.abc import Iterator
 from contextlib import contextmanager
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Iterator
+from typing import Any
 
 from rich.console import Console
 
-console = Console(highlight=False)
+from knowledge_extractor.paths import logs_dir
 
-# Padrão: tools/knowledge-extractor/logs/pipeline-metrics.csv (sobrescrevível via env METRICS_LOG)
-DEFAULT_LOG = Path(__file__).resolve().parents[2] / "logs" / "pipeline-metrics.csv"
-FIELDS = ["inicio", "fim", "duracao_s", "duracao", "status", "modulo", "atividade", "item", "detalhes"]
+console = Console(highlight=False)
+log = logging.getLogger(__name__)
+
+# Padrão: <KE_HOME>/logs/pipeline-metrics.csv — repo do curso, nunca o pacote instalado
+# (sobrescrevível via env METRICS_LOG; ver paths.ke_home).
+LOG_FILE_NAME = "pipeline-metrics.csv"
+FIELDS = [
+    "inicio",
+    "fim",
+    "duracao_s",
+    "duracao",
+    "status",
+    "modulo",
+    "atividade",
+    "item",
+    "detalhes",
+]
 
 
 def fmt_duration(seconds: float) -> str:
-    seconds = int(round(seconds))
+    seconds = round(seconds)
     h, rem = divmod(seconds, 3600)
     m, s = divmod(rem, 60)
     return f"{h}h{m:02d}m{s:02d}s" if h else f"{m}m{s:02d}s"
 
 
 def _log_path() -> Path:
-    return Path(os.getenv("METRICS_LOG") or DEFAULT_LOG)
+    return Path(os.getenv("METRICS_LOG") or (logs_dir() / LOG_FILE_NAME))
 
 
 def _append(row: dict[str, Any]) -> None:
@@ -40,12 +56,19 @@ def _append(row: dict[str, Any]) -> None:
             if new_file:
                 writer.writeheader()
             writer.writerow(row)
-    except Exception as e:  # métricas nunca devem quebrar o pipeline
+    except (
+        OSError,
+        csv.Error,
+        ValueError,
+    ) as e:  # métricas nunca devem quebrar o pipeline
+        log.warning("Não foi possível gravar métricas (%s: %s)", type(e).__name__, e)
         console.print(f"[dim]⚠️ Não foi possível gravar métricas: {e}[/dim]")
 
 
 @contextmanager
-def track(atividade: str, modulo: str = "", item: str = "", quiet: bool = False) -> Iterator[dict[str, Any]]:
+def track(
+    atividade: str, modulo: str = "", item: str = "", quiet: bool = False
+) -> Iterator[dict[str, Any]]:
     """Mede uma atividade: imprime início/fim e grava uma linha no CSV de métricas.
 
     O dict retornado aceita detalhes extras (ex.: info["provider"] = "ollama")
@@ -62,7 +85,11 @@ def track(atividade: str, modulo: str = "", item: str = "", quiet: bool = False)
     try:
         yield info
     except BaseException as e:
-        status = "interrompido" if isinstance(e, KeyboardInterrupt) else f"erro: {type(e).__name__}"
+        status = (
+            "interrompido"
+            if isinstance(e, KeyboardInterrupt)
+            else f"erro: {type(e).__name__}"
+        )
         raise
     finally:
         dur = time.perf_counter() - t0
@@ -70,15 +97,19 @@ def track(atividade: str, modulo: str = "", item: str = "", quiet: bool = False)
         status = info.pop("status", status)
         if not quiet or status != "ok":
             color = "green" if status == "ok" else "yellow"
-            console.print(f"[{color}]⏱  Fim {fim:%H:%M:%S} · {label} · {fmt_duration(dur)} ({status})[/{color}]")
-        _append({
-            "inicio": inicio.isoformat(timespec="seconds"),
-            "fim": fim.isoformat(timespec="seconds"),
-            "duracao_s": f"{dur:.1f}",
-            "duracao": fmt_duration(dur),
-            "status": status,
-            "modulo": modulo,
-            "atividade": atividade,
-            "item": item,
-            "detalhes": " ".join(f"{k}={v}" for k, v in info.items()),
-        })
+            console.print(
+                f"[{color}]⏱  Fim {fim:%H:%M:%S} · {label} · {fmt_duration(dur)} ({status})[/{color}]"
+            )
+        _append(
+            {
+                "inicio": inicio.isoformat(timespec="seconds"),
+                "fim": fim.isoformat(timespec="seconds"),
+                "duracao_s": f"{dur:.1f}",
+                "duracao": fmt_duration(dur),
+                "status": status,
+                "modulo": modulo,
+                "atividade": atividade,
+                "item": item,
+                "detalhes": " ".join(f"{k}={v}" for k, v in info.items()),
+            }
+        )

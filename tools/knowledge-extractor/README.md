@@ -103,7 +103,7 @@ uv run --project tools/knowledge-extractor knowledge-extractor pipeline modules/
 | `modules/<slug>/materiais/figuras/` | pipeline Etapa 3 | ✅ | 1–3 figuras `.webp` curadas (~40 KB) |
 | `modules/<slug>/portal/catalogo.md` | pipeline Etapa 4 | ✅ | Status das aulas no AVA |
 | `docs/logs/file-renaming-audit.*` | Etapa 1 | ✅ | Auditoria De-Para persistente |
-| `tools/knowledge-extractor/logs/pipeline-metrics.csv` | todas | ❌ | Telemetria (tempo, tokens, provider) |
+| `logs/pipeline-metrics.csv` (em `KE_HOME`, padrão: raiz do curso) | todas | ❌ | Telemetria (tempo, tokens, provider) |
 
 ---
 
@@ -180,7 +180,8 @@ Precedência de configuração: flag CLI → menu (opção 7) → `.env` → pad
 | `GEMINI_API_KEY` | — | Chave do Google AI Studio |
 | `GEMINI_MODEL` | `gemini-2.5-flash` | Modelo cloud primário |
 | `WHISPER_MODEL_SIZE` / `WHISPER_DEVICE` / `WHISPER_COMPUTE_TYPE` | `base` / `auto` / `int8` | Transcrição |
-| `METRICS_LOG` | `tools/knowledge-extractor/logs/pipeline-metrics.csv` | CSV de telemetria |
+| `KE_HOME` | pasta com `course.yaml` (subindo do cwd) ou cwd | Onde ficam `logs/` e `.cache/` |
+| `METRICS_LOG` | `<KE_HOME>/logs/pipeline-metrics.csv` | CSV de telemetria |
 
 ---
 
@@ -202,10 +203,10 @@ Precedência de configuração: flag CLI → menu (opção 7) → `.env` → pad
 
 ## ⏱️ Métricas de Processamento
 
-Cada atividade grava uma linha em `tools/knowledge-extractor/logs/pipeline-metrics.csv` (separador `;`): `inicio`, `fim`, `duracao_s`, `status` (`ok`/`scaffold`), `modulo`, `atividade` (`sintese`, `transcricao`, `figuras`, `etapa_1..5`, `pipeline_completo`), `item` e `detalhes` (ex.: `provider=gemini:gemini-2.5-flash keyframes_count=11 figuras_webp=1`).
+Cada atividade grava uma linha em `logs/pipeline-metrics.csv` (dentro de `KE_HOME`) (separador `;`): `inicio`, `fim`, `duracao_s`, `status` (`ok`/`scaffold`), `modulo`, `atividade` (`sintese`, `transcricao`, `figuras`, `etapa_1..5`, `pipeline_completo`), `item` e `detalhes` (ex.: `provider=gemini:gemini-2.5-flash keyframes_count=11 figuras_webp=1`).
 
 Análise rápida no PowerShell:
 ```powershell
-Import-Csv tools/knowledge-extractor/logs/pipeline-metrics.csv -Delimiter ';' |
+Import-Csv logs/pipeline-metrics.csv -Delimiter ';' |
   Where-Object atividade -eq 'sintese' | Format-Table inicio, duracao, status, item
 ```

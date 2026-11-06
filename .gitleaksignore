@@ -1,0 +1,4 @@
+# Falso positivo: chave FALSA de teste (sk-or-SEGREDO-123) em test_model_router.py; não é segredo real.
+eaff8a5105cbb9cb10b3145899c53449d3f9cb12:tools/knowledge-extractor/tests/test_model_router.py:generic-api-key:25
+47ee49d7fe7e712cdf479d786c11c40c29e2ccab:tools/knowledge-extractor/tests/test_model_router.py:generic-api-key:25
+b6f01801dfdfaf399c8f4e5aa3b7d8a3ea495f73:tools/knowledge-extractor/tests/test_model_router.py:generic-api-key:28

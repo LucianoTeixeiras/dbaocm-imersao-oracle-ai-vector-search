@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-import os
+import contextlib
+import logging
 import subprocess
 import sys
 from pathlib import Path
 
-import click
 from rich.console import Console
 from rich.panel import Panel
 from rich.prompt import Confirm, Prompt
@@ -17,29 +17,30 @@ from knowledge_extractor.audio_transcriber import Transcriber
 from knowledge_extractor.catalog_sync import CatalogSynchronizer
 from knowledge_extractor.file_normalizer import FileNormalizer
 from knowledge_extractor.metrics import track
+from knowledge_extractor.note_naming import note_path_for
 from knowledge_extractor.pdf_parser import extract_text_from_pdf
 from knowledge_extractor.synthesizer import LectureSynthesizer, _is_scaffold_file
 from knowledge_extractor.video_frames import (
+    VIDEO_EXTENSIONS,
     extract_video_keyframes,
     get_media_duration,
-    VIDEO_EXTENSIONS,
 )
 
 if sys.platform == "win32":
-    try:
+    # Console legado sem reconfigure (ou stream redirecionado): segue com o encoding padrão.
+    with contextlib.suppress(AttributeError, OSError, ValueError):
         sys.stdout.reconfigure(encoding="utf-8")
         sys.stderr.reconfigure(encoding="utf-8")
-    except Exception:
-        pass
 
 console = Console(highlight=False)
+log = logging.getLogger(__name__)
 
 
 class ModulePipeline:
     def __init__(
         self,
         module_dir: Path,
-        model_size: str = "base",
+        model_size: str | None = None,
         gemini_model: str | None = None,
         provider: str | None = None,
         ollama_model: str | None = None,
@@ -75,29 +76,52 @@ class ModulePipeline:
     def choose_synthesis_mode(self) -> None:
         """Escolha interativa: fallback automático ou provedor/modelo fixo (vale para esta sessão)."""
         current = self.make_synthesizer()
-        console.print("\n[bold]Modos:[/bold] [cyan]auto[/cyan] = 1º Gemini → 2º DeepSeek-V3 → 3º Ollama · "
-                      "[cyan]gemini[/cyan] = só Gemini · [cyan]deepseek[/cyan] = só DeepSeek-V3 · [cyan]ollama[/cyan] = só local")
-        self.provider = Prompt.ask("Provedor", choices=["auto", "gemini", "deepseek", "ollama"], default=current.provider)
+        console.print(
+            "\n[bold]Modos:[/bold] [cyan]auto[/cyan] = 1º Gemini → 2º DeepSeek-V3 → 3º Ollama · "
+            "[cyan]gemini[/cyan] = só Gemini · [cyan]deepseek[/cyan] = só DeepSeek-V3 · [cyan]ollama[/cyan] = só local"
+        )
+        self.provider = Prompt.ask(
+            "Provedor",
+            choices=["auto", "gemini", "deepseek", "ollama"],
+            default=current.provider,
+        )
 
         if self.provider in ("auto", "gemini"):
-            self.gemini_model = Prompt.ask("Modelo Gemini", default=current.gemini_model)
+            self.gemini_model = Prompt.ask(
+                "Modelo Gemini", default=current.gemini_model
+            )
         if self.provider in ("auto", "deepseek"):
-            self.deepseek_model = Prompt.ask("Modelo DeepSeek", default=current.deepseek_model)
+            self.deepseek_model = Prompt.ask(
+                "Modelo DeepSeek", default=current.deepseek_model
+            )
         if self.provider in ("auto", "ollama"):
             installed = current._installed_ollama_models()
             if installed:
-                console.print(f"[dim]Instalados no Ollama: {', '.join(installed)}[/dim]")
-            self.ollama_model = Prompt.ask("Modelo Ollama", default=current.ollama_model)
+                console.print(
+                    f"[dim]Instalados no Ollama: {', '.join(installed)}[/dim]"
+                )
+            self.ollama_model = Prompt.ask(
+                "Modelo Ollama", default=current.ollama_model
+            )
 
-        console.print(f"[green]✓ Modo de síntese: {self.make_synthesizer().mode_label()}[/green]")
+        console.print(
+            f"[green]✓ Modo de síntese: {self.make_synthesizer().mode_label()}[/green]"
+        )
 
     def run_step_1_normalization(self, apply: bool = True) -> None:
         """Etapa 1: Normalização de arquivos em materiais/raw/ e transcricoes/ com auditoria De-Para."""
         raw_dir = self.module_dir / "materiais" / "raw"
         if not raw_dir.exists():
-            console.print(f"[dim]ℹ Módulo {self.module_dir.name} sem pasta materiais/raw/. Pulando normalização.[/dim]")
+            console.print(
+                f"[dim]ℹ Módulo {self.module_dir.name} sem pasta materiais/raw/. Pulando normalização.[/dim]"
+            )
             return
-        console.print(Panel.fit("[bold cyan]Etapa 1: Normalização de Nomes e Auditoria De-Para[/bold cyan]", border_style="cyan"))
+        console.print(
+            Panel.fit(
+                "[bold cyan]Etapa 1: Normalização de Nomes e Auditoria De-Para[/bold cyan]",
+                border_style="cyan",
+            )
+        )
         normalizer = FileNormalizer(root_dir=self.root_dir)
         normalizer.execute_normalization(self.module_dir, dry_run=not apply)
 
@@ -107,15 +131,35 @@ class ModulePipeline:
         transcricoes_dir = self.module_dir / "materiais" / "transcricoes"
 
         if not raw_dir.exists():
-            console.print(f"[dim]ℹ Módulo {self.module_dir.name} sem pasta materiais/raw/ (Skip etapa 2).[/dim]")
+            console.print(
+                f"[dim]ℹ Módulo {self.module_dir.name} sem pasta materiais/raw/ (Skip etapa 2).[/dim]"
+            )
             return
 
-        console.print(Panel.fit("[bold cyan]Etapa 2: Extração e Transcrição Automática (Whisper/PDF)[/bold cyan]", border_style="cyan"))
+        console.print(
+            Panel.fit(
+                "[bold cyan]Etapa 2: Extração e Transcrição Automática (Whisper/PDF)[/bold cyan]",
+                border_style="cyan",
+            )
+        )
         transcricoes_dir.mkdir(parents=True, exist_ok=True)
-        media_extensions = {".mp4", ".mkv", ".mov", ".avi", ".webm", ".wav", ".mp3", ".m4a"}
+        media_extensions = {
+            ".mp4",
+            ".mkv",
+            ".mov",
+            ".avi",
+            ".webm",
+            ".wav",
+            ".mp3",
+            ".m4a",
+        }
         pdf_extensions = {".pdf"}
 
-        files = [p for p in sorted(raw_dir.iterdir()) if p.is_file() and not p.name.startswith(".")]
+        files = [
+            p
+            for p in sorted(raw_dir.iterdir())
+            if p.is_file() and not p.name.startswith(".")
+        ]
 
         pending_media: list[Path] = []
         pending_pdf: list[Path] = []
@@ -160,25 +204,47 @@ class ModulePipeline:
                 long_videos.append((vid, dur))
 
         if long_videos:
-            console.print(f"\n[bold yellow]⚠️  Vídeo(s) longo(s) detectado(s) em materiais/raw/:[/bold yellow]")
+            console.print(
+                "\n[bold yellow]⚠️  Vídeo(s) longo(s) detectado(s) em materiais/raw/:[/bold yellow]"
+            )
             for lv, ldur in long_videos:
-                console.print(f"  • {lv.name} ({ldur/60:.1f} min)")
-            if Confirm.ask("Deseja fatiar em blocos ágeis de 30-35 minutos antes de transcrever?", default=True):
+                console.print(f"  • {lv.name} ({ldur / 60:.1f} min)")
+            if Confirm.ask(
+                "Deseja fatiar em blocos ágeis de 30-35 minutos antes de transcrever?",
+                default=True,
+            ):
                 from knowledge_extractor.video_slicer import slice_video_file
+
                 for lv, _ in long_videos:
                     slice_video_file(lv, chunk_minutes=35, archive_original=True)
                 # Recarrega a lista de arquivos atualizada
-                files = [p for p in raw_dir.iterdir() if p.is_file() and not p.name.startswith(".")]
-                pending_media = [f for f in files if f.suffix.lower() in media_extensions and not (transcricoes_dir / f"{f.stem}.txt").exists()]
+                files = [
+                    p
+                    for p in raw_dir.iterdir()
+                    if p.is_file() and not p.name.startswith(".")
+                ]
+                pending_media = [
+                    f
+                    for f in files
+                    if f.suffix.lower() in media_extensions
+                    and not (transcricoes_dir / f"{f.stem}.txt").exists()
+                ]
 
         if pending_media:
-            from knowledge_extractor.course_config import load_course_config
-            cfg = load_course_config()
-            audio_lang = cfg.audio_language or "pt"
-            console.print(f"[bold yellow]Transcrevendo {len(pending_media)} mídia(s) com modelo '{self.model_size}' (Idioma do áudio: {audio_lang})...[/bold yellow]")
-            transcriber = Transcriber(model_size=self.model_size, device="auto", language=audio_lang)
+            from knowledge_extractor.whisper_config import resolve_whisper_config
+
+            wcfg = resolve_whisper_config(
+                self.model_size, None, None, None, self.module_dir
+            )
+            self.model_size = wcfg.model_size
+            console.print(
+                f"[bold yellow]Transcrevendo {len(pending_media)} mídia(s) com modelo '{wcfg.model_size}' (Idioma do áudio: {wcfg.language or 'auto'}; nota sempre em pt-BR)...[/bold yellow]"
+            )
+            transcriber = Transcriber(config=wcfg)
             for media in pending_media:
-                with track("transcricao", modulo=self.module_dir.name, item=media.name) as info:
+                with track(
+                    "transcricao", modulo=self.module_dir.name, item=media.name
+                ) as info:
                     info["whisper"] = self.model_size
                     info["tamanho_mb"] = f"{media.stat().st_size / 1_048_576:.0f}"
                     transcriber.transcribe_file(media, output_dir=transcricoes_dir)
@@ -188,35 +254,56 @@ class ModulePipeline:
             video_files = [f for f in files if f.suffix.lower() in VIDEO_EXTENSIONS]
             if video_files:
                 frames_base_dir = self.module_dir / "materiais" / "frames"
-                console.print(f"[bold cyan]🎬 Coletando frames e diagramas de {len(video_files)} vídeo(s)...[/bold cyan]")
+                console.print(
+                    f"[bold cyan]🎬 Coletando frames e diagramas de {len(video_files)} vídeo(s)...[/bold cyan]"
+                )
                 for vid in video_files:
                     fdir = frames_base_dir / vid.stem
                     extract_video_keyframes(vid, output_dir=fdir, force=force)
 
         if pending_pdf:
-            console.print(f"[bold yellow]Extraindo {len(pending_pdf)} PDF(s)...[/bold yellow]")
+            console.print(
+                f"[bold yellow]Extraindo {len(pending_pdf)} PDF(s)...[/bold yellow]"
+            )
             for pdf in pending_pdf:
                 with track("extracao_pdf", modulo=self.module_dir.name, item=pdf.name):
-                    extract_text_from_pdf(pdf, output_dir=transcricoes_dir, as_markdown=True)
+                    extract_text_from_pdf(
+                        pdf, output_dir=transcricoes_dir, as_markdown=True
+                    )
 
         if not pending_media and not pending_pdf:
-            console.print("[green]✓ Todas as mídias e PDFs já estavam transcritos e atualizados.[/green]")
+            console.print(
+                "[green]✓ Todas as mídias e PDFs já estavam transcritos e atualizados.[/green]"
+            )
 
     def run_step_3_synthesis(self, force: bool = False) -> None:
         """Etapa 3: Síntese de Notas Estruturadas em aulas/ via Gemini API."""
-        console.print(Panel.fit("[bold cyan]Etapa 3: Síntese Multimodal de Notas de Aula (Gemini API / Markdown)[/bold cyan]", border_style="cyan"))
+        console.print(
+            Panel.fit(
+                "[bold cyan]Etapa 3: Síntese Multimodal de Notas de Aula (Gemini API / Markdown)[/bold cyan]",
+                border_style="cyan",
+            )
+        )
         transcricoes_dir = self.module_dir / "materiais" / "transcricoes"
         aulas_dir = self.module_dir / "aulas"
         aulas_dir.mkdir(parents=True, exist_ok=True)
 
         if not transcricoes_dir.exists():
-            console.print(f"[yellow]ℹ Nenhuma transcrição encontrada em:[/yellow] {transcricoes_dir}")
+            console.print(
+                f"[yellow]ℹ Nenhuma transcrição encontrada em:[/yellow] {transcricoes_dir}"
+            )
             return
 
-        txt_files = sorted([f for f in transcricoes_dir.iterdir() if f.is_file() and f.suffix.lower() == ".txt" and not f.name.startswith(".")])
+        from knowledge_extractor.pdf_parser import synthesis_sources
+
+        txt_files = synthesis_sources(
+            transcricoes_dir
+        )  # .txt + .md vindos de PDF (LRT-06)
 
         if not txt_files:
-            console.print("[yellow]ℹ Nenhum arquivo .txt de transcrição encontrado para sintetizar.[/yellow]")
+            console.print(
+                "[yellow]ℹ Nenhuma transcrição (.txt) ou PDF extraído (.md) encontrado para sintetizar.[/yellow]"
+            )
             return
 
         synthesizer = self.make_synthesizer()
@@ -226,9 +313,15 @@ class ModulePipeline:
         frames_base_dir = self.module_dir / "materiais" / "frames"
 
         for txt in txt_files:
-            target_note = aulas_dir / f"{txt.stem}.md"
-            if target_note.exists() and not force and not _is_scaffold_file(target_note):
-                console.print(f"[dim]Nota já existente (Skip):[/dim] {target_note.name}")
+            target_note = note_path_for(txt, aulas_dir)
+            if (
+                target_note.exists()
+                and not force
+                and not _is_scaffold_file(target_note)
+            ):
+                console.print(
+                    f"[dim]⏭ Pulando, nota já existe: {target_note}[/dim] (use --force para regenerar)"
+                )
                 continue
 
             keyframes = None
@@ -241,7 +334,9 @@ class ModulePipeline:
                 if video_candidates:
                     target_video = video_candidates[0]
                     frames_dir = frames_base_dir / txt.stem
-                    keyframes = extract_video_keyframes(target_video, output_dir=frames_dir, force=force)
+                    keyframes = extract_video_keyframes(
+                        target_video, output_dir=frames_dir, force=force
+                    )
 
             synthesizer.process_file(
                 transcript_file=txt,
@@ -252,37 +347,57 @@ class ModulePipeline:
             )
 
         # Gera automaticamente as Issues-as-a-Prompt em labs/ e sincroniza docs/prompts/
-        from knowledge_extractor.prompt_factory import generate_task_prompt, sync_prompts_catalog
+        from knowledge_extractor.prompt_factory import (
+            generate_task_prompt,
+            sync_prompts_catalog,
+        )
+
         labs_dir = self.module_dir / "labs"
         created_tasks = 0
         for idx, a_file in enumerate(sorted(aulas_dir.glob("*.md")), start=1):
             if not _is_scaffold_file(a_file):
-                t_path = generate_task_prompt(a_file, output_dir=labs_dir, task_number=idx)
+                t_path = generate_task_prompt(
+                    a_file, output_dir=labs_dir, task_number=idx
+                )
                 if t_path:
                     created_tasks += 1
         if created_tasks:
-            console.print(f"[bold green]✓ {created_tasks} Issue-as-a-Prompt gerada(s) em {labs_dir.name}/ (padrão ta-na-lista)![/bold green]")
+            console.print(
+                f"[bold green]✓ {created_tasks} Issue-as-a-Prompt gerada(s) em {labs_dir.name}/ (padrão ta-na-lista)![/bold green]"
+            )
             sync_prompts_catalog()
             console.print("[dim]✓ docs/prompts/README.md sincronizado.[/dim]")
 
         # Atualiza o manifesto físico Jira local em docs/jira/manifest.json
         from knowledge_extractor.jira_mapper import generate_jira_manifest
+
         generate_jira_manifest()
 
     def run_step_4_catalog_sync(self) -> None:
         """Etapa 4: Sincronização do portal/catalogo.md."""
-        console.print(Panel.fit("[bold cyan]Etapa 4: Sincronização do Catálogo (portal/catalogo.md)[/bold cyan]", border_style="cyan"))
+        console.print(
+            Panel.fit(
+                "[bold cyan]Etapa 4: Sincronização do Catálogo (portal/catalogo.md)[/bold cyan]",
+                border_style="cyan",
+            )
+        )
         synchronizer = CatalogSynchronizer(root_dir=self.root_dir)
         synchronizer.sync_module_catalog(self.module_dir)
 
     def run_step_5_governance(self) -> None:
         """Etapa 5: Validação e Governança Git (Proteção de mídias e status)."""
-        console.print(Panel.fit("[bold cyan]Etapa 5: Auditoria de Governança Git & Blindagem de Mídias[/bold cyan]", border_style="cyan"))
+        console.print(
+            Panel.fit(
+                "[bold cyan]Etapa 5: Auditoria de Governança Git & Blindagem de Mídias[/bold cyan]",
+                border_style="cyan",
+            )
+        )
 
         # Executa git status para ver arquivos que seriam comitados
         try:
             res = subprocess.run(
                 ["git", "status", "--porcelain", str(self.module_dir)],
+                check=False,
                 cwd=self.root_dir,
                 capture_output=True,
                 text=True,
@@ -292,23 +407,39 @@ class ModulePipeline:
 
             # Checa se há arquivos de mídia acidentalmente rastreados
             media_exts = {".mp4", ".mkv", ".mov", ".avi", ".wav", ".mp3"}
-            leaked_media = [c for c in changes if any(c.lower().endswith(ext) for ext in media_exts)]
+            leaked_media = [
+                c for c in changes if any(c.lower().endswith(ext) for ext in media_exts)
+            ]
 
             if leaked_media:
-                console.print("[bold red]🚨 ALERTA: Foram detectados arquivos de mídia pesada não ignorados no Git:[/bold red]")
+                console.print(
+                    "[bold red]🚨 ALERTA: Foram detectados arquivos de mídia pesada não ignorados no Git:[/bold red]"
+                )
                 for lm in leaked_media:
                     console.print(f"  [red]- {lm}[/red]")
             else:
-                console.print("[bold green]✓ Blindagem Git OK:[/bold green] Nenhuma mídia pesada de vídeo/áudio está sendo rastreada pelo Git.")
+                console.print(
+                    "[bold green]✓ Blindagem Git OK:[/bold green] Nenhuma mídia pesada de vídeo/áudio está sendo rastreada pelo Git."
+                )
 
-            console.print(f"[dim]Total de alterações prontas/rastreadas neste módulo: {len(changes)} arquivo(s)[/dim]")
+            console.print(
+                f"[dim]Total de alterações prontas/rastreadas neste módulo: {len(changes)} arquivo(s)[/dim]"
+            )
 
-        except Exception as e:
-            console.print(f"[yellow]ℹ Não foi possível executar git status: {e}[/yellow]")
+        except (OSError, subprocess.SubprocessError, ValueError) as e:
+            log.warning("git status indisponível (%s: %s)", type(e).__name__, e)
+            console.print(
+                f"[yellow]ℹ Não foi possível executar git status: {e}[/yellow]"
+            )
 
     def run_all(self, force: bool = False) -> None:
         """Executa todas as etapas em sequência."""
-        console.print(Panel.fit(f"[bold magenta]🚀 Iniciando Pipeline Completo para {self.module_dir.name}[/bold magenta]", border_style="magenta"))
+        console.print(
+            Panel.fit(
+                f"[bold magenta]🚀 Iniciando Pipeline Completo para {self.module_dir.name}[/bold magenta]",
+                border_style="magenta",
+            )
+        )
         steps = [
             ("etapa_1_normalizacao", lambda: self.run_step_1_normalization(apply=True)),
             ("etapa_2_extracao", lambda: self.run_step_2_extraction(force=force)),
@@ -322,7 +453,12 @@ class ModulePipeline:
                 with track(name, modulo=mod):
                     fn()
                 console.print("")
-        console.print(Panel.fit("[bold green]✨ Pipeline Executado com Sucesso![/bold green]", border_style="green"))
+        console.print(
+            Panel.fit(
+                "[bold green]✨ Pipeline Executado com Sucesso![/bold green]",
+                border_style="green",
+            )
+        )
 
 
 def discover_modules(root_dir: Path | None = None) -> list[Path]:
@@ -338,7 +474,7 @@ def discover_modules(root_dir: Path | None = None) -> list[Path]:
     # 1. Se houver módulos declarados no course.yaml, usa a ordem declarada
     if cfg.modules:
         declared_dirs: list[Path] = []
-        for slug in cfg.modules.keys():
+        for slug in cfg.modules:
             target = modules_dir / slug
             if target.is_dir():
                 declared_dirs.append(target)
@@ -350,12 +486,17 @@ def discover_modules(root_dir: Path | None = None) -> list[Path]:
             return declared_dirs
 
     # 2. Fallback: varre e ordena por nome
-    return [p for p in sorted(modules_dir.iterdir()) if p.is_dir() and not p.name.startswith(".")]
+    return [
+        p
+        for p in sorted(modules_dir.iterdir())
+        if p.is_dir() and not p.name.startswith(".")
+    ]
 
 
 def run_interactive_menu(pipeline: ModulePipeline) -> None:
     """Menu Interativo de Execução do Pipeline com navegação entre módulos e ciclo contínuo."""
     from knowledge_extractor.course_config import load_course_config
+
     cfg = load_course_config()
     all_modules = discover_modules(pipeline.root_dir)
 
@@ -378,35 +519,94 @@ def run_interactive_menu(pipeline: ModulePipeline) -> None:
 
         console.print("\n" + "=" * 60)
         console.print(f"[bold cyan]🎯 PIPELINE {cfg.title.upper()}[/bold cyan]")
-        console.print(f"📦 Módulo Atual ({cur_idx + 1}/{total_mods}): [bold green]{mod_display}[/bold green] [dim]({module_dir.name})[/dim]")
+        console.print(
+            f"📦 Módulo Atual ({cur_idx + 1}/{total_mods}): [bold green]{mod_display}[/bold green] [dim]({module_dir.name})[/dim]"
+        )
         if next_mod:
             next_info = cfg.get_module(next_mod.name)
             next_display = next_info.name if next_info else next_mod.name
             console.print(f"⏭️  Próximo na Fila: [cyan]{next_display}[/cyan]")
         console.print("=" * 60)
-        console.print("[bold]1.[/bold] 🏷️  Normalizar Nomes de Arquivos (De-Para & Kebab-case)")
-        console.print("[bold]2.[/bold] 🎙️  Extrair Mídias e Transcrever (Whisper, Frames de Vídeo e PDFs)")
-        console.print("[bold]3.[/bold] 📝 Sintetizar Notas de Estudo em [cyan]aulas/[/cyan] (Gemini Multimodal)")
-        console.print("[bold]4.[/bold] 📑 Sincronizar Catálogo AVA ([cyan]portal/catalogo.md[/cyan])")
-        console.print("[bold]5.[/bold] 🛡️  Auditoria de Governança Git (Blindagem de Mídias)")
-        console.print("[bold]6.[/bold] 🚀 [bold green]Executar Ciclo Completo deste Módulo (1 → 5)[/bold green]")
+        console.print(
+            "[bold]1.[/bold] 🏷️  Normalizar Nomes de Arquivos (De-Para & Kebab-case)"
+        )
+        console.print(
+            "[bold]2.[/bold] 🎙️  Extrair Mídias e Transcrever (Whisper, Frames de Vídeo e PDFs)"
+        )
+        console.print(
+            "[bold]3.[/bold] 📝 Sintetizar Notas de Estudo em [cyan]aulas/[/cyan] (Gemini Multimodal)"
+        )
+        console.print(
+            "[bold]4.[/bold] 📑 Sincronizar Catálogo AVA ([cyan]portal/catalogo.md[/cyan])"
+        )
+        console.print(
+            "[bold]5.[/bold] 🛡️  Auditoria de Governança Git (Blindagem de Mídias)"
+        )
+        console.print(
+            "[bold]6.[/bold] 🚀 [bold green]Executar Ciclo Completo deste Módulo (1 → 5)[/bold green]"
+        )
         if next_mod:
-            console.print(f"[bold]7.[/bold] ⏭️  [bold yellow]Avançar para o Próximo Módulo[/bold yellow] ({next_mod.name})")
+            console.print(
+                f"[bold]7.[/bold] ⏭️  [bold yellow]Avançar para o Próximo Módulo[/bold yellow] ({next_mod.name})"
+            )
         else:
-            console.print("[bold]7.[/bold] 🏁 [dim]Último módulo alcançado (todos processados)[/dim]")
-        console.print("[bold]8.[/bold] 🔄 [cyan]Executar Todos os Módulos em Sequência (Ciclo Global)[/cyan]")
-        console.print(f"[bold]9.[/bold] 📂 Alternar Módulo da Lista ({total_mods} disponíveis)")
-        console.print("[bold]S.[/bold] 🔪 [bold magenta]Fatiar Vídeos Longos deste Módulo (> 45 min em blocos de 35 min)[/bold magenta]")
-        console.print("[bold]J.[/bold] 📋 [bold cyan]Gerar / Visualizar Manifesto do Jira (docs/jira/manifest.json)[/bold cyan]")
-        vision_status = "[green]Ativada (Padrão)[/green]" if pipeline.vision else "[dim]Desativada (Apenas Áudio)[/dim]"
-        console.print(f"[bold]M.[/bold] ⚙️  Configurar Modo de Síntese [dim]({mode})[/dim]")
-        console.print(f"[bold]V.[/bold] 🎬 Alternar Visão Multimodal [dim]({vision_status})[/dim]")
+            console.print(
+                "[bold]7.[/bold] 🏁 [dim]Último módulo alcançado (todos processados)[/dim]"
+            )
+        console.print(
+            "[bold]8.[/bold] 🔄 [cyan]Executar Todos os Módulos em Sequência (Ciclo Global)[/cyan]"
+        )
+        console.print(
+            f"[bold]9.[/bold] 📂 Alternar Módulo da Lista ({total_mods} disponíveis)"
+        )
+        console.print(
+            "[bold]S.[/bold] 🔪 [bold magenta]Fatiar Vídeos Longos deste Módulo (> 45 min em blocos de 35 min)[/bold magenta]"
+        )
+        console.print(
+            "[bold]J.[/bold] 📋 [bold cyan]Gerar / Visualizar Manifesto do Jira (docs/jira/manifest.json)[/bold cyan]"
+        )
+        vision_status = (
+            "[green]Ativada (Padrão)[/green]"
+            if pipeline.vision
+            else "[dim]Desativada (Apenas Áudio)[/dim]"
+        )
+        console.print(
+            f"[bold]M.[/bold] ⚙️  Configurar Modo de Síntese [dim]({mode})[/dim]"
+        )
+        console.print(
+            f"[bold]V.[/bold] 🎬 Alternar Visão Multimodal [dim]({vision_status})[/dim]"
+        )
         console.print("[bold]0.[/bold] 🚪 Sair")
         console.print("=" * 60)
 
-        choices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "s", "S", "j", "J", "m", "M", "v", "V"]
-        default_choice = "6" if not (module_dir / "aulas").glob("*.md") else ("7" if next_mod else "6")
-        choice = Prompt.ask("Escolha uma opção", choices=choices, default=default_choice).lower()
+        choices = [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "s",
+            "S",
+            "j",
+            "J",
+            "m",
+            "M",
+            "v",
+            "V",
+        ]
+        default_choice = (
+            "6"
+            if not (module_dir / "aulas").glob("*.md")
+            else ("7" if next_mod else "6")
+        )
+        choice = Prompt.ask(
+            "Escolha uma opção", choices=choices, default=default_choice
+        ).lower()
 
         if choice == "0":
             console.print("[yellow]Encerrando pipeline.[/yellow]")
@@ -424,46 +624,78 @@ def run_interactive_menu(pipeline: ModulePipeline) -> None:
         elif choice == "6":
             pipeline.run_all(force=False)
             if next_mod:
-                console.print(f"\n[bold green]✓ Ciclo do módulo concluído![/bold green]")
-                if Confirm.ask(f"Deseja avançar para o próximo módulo ({next_mod.name})?", default=True):
+                console.print("\n[bold green]✓ Ciclo do módulo concluído![/bold green]")
+                if Confirm.ask(
+                    f"Deseja avançar para o próximo módulo ({next_mod.name})?",
+                    default=True,
+                ):
                     pipeline.module_dir = next_mod.resolve()
         elif choice == "7":
             if next_mod:
                 pipeline.module_dir = next_mod.resolve()
                 console.print(f"[green]✓ Módulo alterado para:[/green] {next_mod.name}")
             else:
-                console.print("[yellow]ℹ Você já está no último módulo da formação.[/yellow]")
+                console.print(
+                    "[yellow]ℹ Você já está no último módulo da formação.[/yellow]"
+                )
         elif choice == "8":
-            if Confirm.ask("Deseja executar o ciclo completo (1 → 5) em TODOS os módulos em sequência?", default=True):
+            if Confirm.ask(
+                "Deseja executar o ciclo completo (1 → 5) em TODOS os módulos em sequência?",
+                default=True,
+            ):
                 for idx, m_dir in enumerate(all_modules, start=1):
-                    console.print(f"\n[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]")
-                    console.print(f"[bold green]▶ Processando Módulo {idx}/{total_mods}: {m_dir.name}[/bold green]")
-                    console.print(f"[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]")
+                    console.print(
+                        "\n[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]"
+                    )
+                    console.print(
+                        f"[bold green]▶ Processando Módulo {idx}/{total_mods}: {m_dir.name}[/bold green]"
+                    )
+                    console.print(
+                        "[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]"
+                    )
                     pipeline.module_dir = m_dir.resolve()
                     try:
                         pipeline.run_all(force=False)
-                    except Exception as e:
+                    except Exception as e:  # noqa: BLE001
                         console.print(f"[red]❌ Erro no módulo {m_dir.name}: {e}[/red]")
-                        console.print("[yellow]Continuando para o próximo módulo da formação...[/yellow]")
-                console.print(Panel.fit("[bold green]✨ Ciclo Global Concluído com Sucesso em Todos os Módulos![/bold green]", border_style="green"))
+                        console.print(
+                            "[yellow]Continuando para o próximo módulo da formação...[/yellow]"
+                        )
+                console.print(
+                    Panel.fit(
+                        "[bold green]✨ Ciclo Global Concluído com Sucesso em Todos os Módulos![/bold green]",
+                        border_style="green",
+                    )
+                )
         elif choice == "9":
             console.print("\n[bold]Módulos disponíveis:[/bold]")
             for idx, m_dir in enumerate(all_modules, start=1):
-                marker = "👉 " if m_dir.resolve() == pipeline.module_dir.resolve() else "   "
+                marker = (
+                    "👉 " if m_dir.resolve() == pipeline.module_dir.resolve() else "   "
+                )
                 m_info = cfg.get_module(m_dir.name)
                 d_name = m_info.name if m_info else m_dir.name
-                console.print(f"  {marker}[bold]{idx}.[/bold] {d_name} [dim]({m_dir.name})[/dim]")
+                console.print(
+                    f"  {marker}[bold]{idx}.[/bold] {d_name} [dim]({m_dir.name})[/dim]"
+                )
             sel = Prompt.ask("Selecione o número do módulo", default=str(cur_idx + 1))
             if sel.isdigit() and 1 <= int(sel) <= len(all_modules):
                 pipeline.module_dir = all_modules[int(sel) - 1].resolve()
-                console.print(f"[green]✓ Módulo alterado para:[/green] {pipeline.module_dir.name}")
+                console.print(
+                    f"[green]✓ Módulo alterado para:[/green] {pipeline.module_dir.name}"
+                )
         elif choice == "s":
             raw_dir = pipeline.module_dir / "materiais" / "raw"
             if not raw_dir.is_dir():
                 console.print(f"[yellow]ℹ Pasta {raw_dir} não encontrada.[/yellow]")
             else:
                 from knowledge_extractor.video_slicer import slice_video_file
-                v_files = [f for f in raw_dir.iterdir() if f.suffix.lower() in VIDEO_EXTENSIONS and "archive" not in f.parts]
+
+                v_files = [
+                    f
+                    for f in raw_dir.iterdir()
+                    if f.suffix.lower() in VIDEO_EXTENSIONS and "archive" not in f.parts
+                ]
                 sliced_any = False
                 for vf in v_files:
                     dur = get_media_duration(vf)
@@ -471,13 +703,20 @@ def run_interactive_menu(pipeline: ModulePipeline) -> None:
                         slice_video_file(vf, chunk_minutes=35, archive_original=True)
                         sliced_any = True
                 if not sliced_any:
-                    console.print("[green]✓ Nenhum vídeo com mais de 45 minutos encontrado para fatiar neste módulo.[/green]")
+                    console.print(
+                        "[green]✓ Nenhum vídeo com mais de 45 minutos encontrado para fatiar neste módulo.[/green]"
+                    )
         elif choice == "j":
             from knowledge_extractor.jira_mapper import generate_jira_manifest
+
             generate_jira_manifest()
         elif choice == "m":
             pipeline.choose_synthesis_mode()
         elif choice == "v":
             pipeline.vision = not pipeline.vision
-            novo_status = "[bold green]ATIVADA[/bold green]" if pipeline.vision else "[bold yellow]DESATIVADA[/bold yellow]"
+            novo_status = (
+                "[bold green]ATIVADA[/bold green]"
+                if pipeline.vision
+                else "[bold yellow]DESATIVADA[/bold yellow]"
+            )
             console.print(f"🎬 Visão Multimodal agora está {novo_status}!")

@@ -2,26 +2,29 @@
 
 from __future__ import annotations
 
+import contextlib
 import sys
 from pathlib import Path
+
 import click
 from rich.console import Console
+from rich.panel import Panel
 from rich.table import Table
 
 from knowledge_extractor.audio_transcriber import Transcriber
 from knowledge_extractor.catalog_sync import CatalogSynchronizer
 from knowledge_extractor.file_normalizer import FileNormalizer
 from knowledge_extractor.metrics import track
+from knowledge_extractor.note_naming import audit_notes, note_path_for
 from knowledge_extractor.pdf_parser import extract_text_from_pdf
 from knowledge_extractor.pipeline import ModulePipeline, run_interactive_menu
 from knowledge_extractor.synthesizer import LectureSynthesizer, _is_scaffold_file
 
 if sys.platform == "win32":
-    try:
+    # Console legado sem reconfigure (ou stream redirecionado): segue com o encoding padrão.
+    with contextlib.suppress(AttributeError, OSError, ValueError):
         sys.stdout.reconfigure(encoding="utf-8")
         sys.stderr.reconfigure(encoding="utf-8")
-    except Exception:
-        pass
 
 console = Console(highlight=False)
 
@@ -29,12 +32,17 @@ console = Console(highlight=False)
 @click.group()
 def cli() -> None:
     """Ferramenta de extração de conhecimento, transcrição e síntese técnica para programas de treinamento e pós-graduação."""
-    pass
 
 
 @cli.command("normalize-files")
 @click.argument("module_dir", type=click.Path(exists=True, path_type=Path))
-@click.option("--apply", "apply_changes", is_flag=True, default=False, help="Aplica as renomeações e grava no log de auditoria")
+@click.option(
+    "--apply",
+    "apply_changes",
+    is_flag=True,
+    default=False,
+    help="Aplica as renomeações e grava no log de auditoria",
+)
 def normalize_files_cmd(module_dir: Path, apply_changes: bool) -> None:
     """Normaliza nomes de arquivos em materiais/raw/ e materiais/transcricoes/ gerando log de auditoria De-Para."""
     normalizer = FileNormalizer()
@@ -42,7 +50,12 @@ def normalize_files_cmd(module_dir: Path, apply_changes: bool) -> None:
 
 
 @cli.command("audit-log")
-@click.option("-s", "--search", default=None, help="Filtra o log por termo de busca (nome antigo, novo ou módulo)")
+@click.option(
+    "-s",
+    "--search",
+    default=None,
+    help="Filtra o log por termo de busca (nome antigo, novo ou módulo)",
+)
 def audit_log_cmd(search: str | None) -> None:
     """Exibe o histórico de auditoria de arquivos renomeados (De-Para)."""
     normalizer = FileNormalizer()
@@ -55,7 +68,8 @@ def audit_log_cmd(search: str | None) -> None:
     if search:
         search_lower = search.lower()
         records = [
-            r for r in records
+            r
+            for r in records
             if search_lower in r.get("old_name", "").lower()
             or search_lower in r.get("new_name", "").lower()
             or search_lower in r.get("module", "").lower()
@@ -73,33 +87,89 @@ def audit_log_cmd(search: str | None) -> None:
     for r in records:
         ts = r.get("timestamp", "").replace("T", " ").split(".")[0]
         sha = (r.get("sha256") or "")[:8]
-        table.add_row(ts, r.get("module", "-"), r.get("old_name", "-"), r.get("new_name", "-"), r.get("type", "-"), sha)
+        table.add_row(
+            ts,
+            r.get("module", "-"),
+            r.get("old_name", "-"),
+            r.get("new_name", "-"),
+            r.get("type", "-"),
+            sha,
+        )
 
     console.print(table)
 
 
 @cli.command("transcribe")
 @click.argument("input_file", type=click.Path(exists=True, path_type=Path))
-@click.option("-o", "--output-dir", type=click.Path(path_type=Path), default=None, help="Diretório de saída para .txt e .srt")
-@click.option("-m", "--model-size", default="base", help="Tamanho do modelo Whisper (tiny, base, small, medium, large-v3)")
-@click.option("-d", "--device", default="auto", help="Device de execução ('cpu', 'cuda' ou 'auto')")
-@click.option("-l", "--language", default=None, help="Idioma do áudio (ex: pt, en). Padrão: course.yaml ou auto-detecção.")
+@click.option(
+    "-o",
+    "--output-dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Diretório de saída para .txt e .srt",
+)
+@click.option(
+    "-m",
+    "--model-size",
+    default=None,
+    help="Modelo Whisper (tiny, base, small, medium, large-v3). Padrão: WHISPER_MODEL_SIZE ou large-v3 (GPU) / small (CPU)",
+)
+@click.option(
+    "-d",
+    "--device",
+    default=None,
+    help="Device: auto, cpu ou cuda. Padrão: WHISPER_DEVICE ou auto",
+)
+@click.option(
+    "--compute-type",
+    default=None,
+    help="auto, int8, float16, float32... Padrão: WHISPER_COMPUTE_TYPE ou auto",
+)
+@click.option(
+    "-l",
+    "--language",
+    default=None,
+    help="Idioma do áudio (pt, en, es, ... ou auto). Precedência: esta opção > WHISPER_LANGUAGE > course.yaml > auto. A nota sai sempre em pt-BR.",
+)
 def transcribe_cmd(
     input_file: Path,
     output_dir: Path | None,
-    model_size: str,
-    device: str,
+    model_size: str | None,
+    device: str | None,
+    compute_type: str | None,
     language: str | None,
 ) -> None:
     """Transcreve um arquivo de vídeo (.mp4, .mkv) ou áudio (.mp3, .wav)."""
-    transcriber = Transcriber(model_size=model_size, device=device, language=language)
+    from knowledge_extractor.whisper_config import (
+        WhisperConfigError,
+        resolve_whisper_config,
+    )
+
+    try:
+        wcfg = resolve_whisper_config(
+            model_size, device, compute_type, language, Path(input_file).parent
+        )
+    except WhisperConfigError as e:
+        raise click.UsageError(str(e)) from e
+    transcriber = Transcriber(config=wcfg)
     transcriber.transcribe_file(input_file, output_dir=output_dir)
 
 
 @cli.command("extract-pdf")
 @click.argument("pdf_file", type=click.Path(exists=True, path_type=Path))
-@click.option("-o", "--output-dir", type=click.Path(path_type=Path), default=None, help="Diretório de saída para .md")
-@click.option("--as-text", is_flag=True, default=False, help="Salva como .txt simples ao invés de Markdown estruturado")
+@click.option(
+    "-o",
+    "--output-dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Diretório de saída para .md",
+)
+@click.option(
+    "--as-text",
+    is_flag=True,
+    default=False,
+    help="Salva como .txt simples ao invés de Markdown estruturado",
+)
 def extract_pdf_cmd(
     pdf_file: Path,
     output_dir: Path | None,
@@ -111,8 +181,19 @@ def extract_pdf_cmd(
 
 @cli.command("process-module")
 @click.argument("module_dir", type=click.Path(exists=True, path_type=Path))
-@click.option("-m", "--model-size", default="base", help="Tamanho do modelo Whisper (tiny, base, small, medium, large-v3)")
-@click.option("-f", "--force", is_flag=True, default=False, help="Força o reprocessamento de arquivos já extraídos")
+@click.option(
+    "-m",
+    "--model-size",
+    default=None,
+    help="Modelo Whisper (tiny, base, small, medium, large-v3). Padrão: WHISPER_MODEL_SIZE ou large-v3 (GPU) / small (CPU)",
+)
+@click.option(
+    "-f",
+    "--force",
+    is_flag=True,
+    default=False,
+    help="Força o reprocessamento de arquivos já extraídos",
+)
 def process_module_cmd(module_dir: Path, model_size: str, force: bool) -> None:
     """Processa todos os arquivos em `materiais/raw/` de um módulo e gera saídas em `materiais/transcricoes/`."""
     raw_dir = module_dir / "materiais" / "raw"
@@ -127,7 +208,9 @@ def process_module_cmd(module_dir: Path, model_size: str, force: bool) -> None:
     media_extensions = {".mp4", ".mkv", ".mov", ".avi", ".webm", ".wav", ".mp3", ".m4a"}
     pdf_extensions = {".pdf"}
 
-    all_files = [p for p in raw_dir.iterdir() if p.is_file() and not p.name.startswith(".")]
+    all_files = [
+        p for p in raw_dir.iterdir() if p.is_file() and not p.name.startswith(".")
+    ]
 
     if not all_files:
         console.print(f"[yellow]ℹ Nenhum arquivo encontrado em:[/yellow] {raw_dir}")
@@ -174,10 +257,16 @@ def process_module_cmd(module_dir: Path, model_size: str, force: bool) -> None:
 
     # Processa mídias pendentes
     if pending_media:
-        from knowledge_extractor.course_config import load_course_config
-        cfg = load_course_config()
-        audio_lang = cfg.audio_language or "pt"
-        transcriber = Transcriber(model_size=model_size, device="auto", language=audio_lang)
+        from knowledge_extractor.whisper_config import (
+            WhisperConfigError,
+            resolve_whisper_config,
+        )
+
+        try:
+            wcfg = resolve_whisper_config(model_size, None, None, None, module_dir)
+        except WhisperConfigError as e:
+            raise click.UsageError(str(e)) from e
+        transcriber = Transcriber(config=wcfg)
         for media in pending_media:
             transcriber.transcribe_file(media, output_dir=transcricoes_dir)
 
@@ -185,18 +274,53 @@ def process_module_cmd(module_dir: Path, model_size: str, force: bool) -> None:
     for pdf in pending_pdf:
         extract_text_from_pdf(pdf, output_dir=transcricoes_dir, as_markdown=True)
 
-    console.print(f"[bold green]✨ Processamento concluído com sucesso![/bold green]")
+    console.print("[bold green]✨ Processamento concluído com sucesso![/bold green]")
 
 
 @cli.command("synthesize")
 @click.argument("target", type=click.Path(exists=True, path_type=Path))
-@click.option("-o", "--output-dir", type=click.Path(path_type=Path), default=None, help="Diretório de saída para aulas/ (padrão: <modulo>/aulas/)")
-@click.option("-m", "--gemini-model", default=None, help="Modelo Gemini para síntese técnica (padrão: env GEMINI_MODEL)")
-@click.option("-p", "--provider", type=click.Choice(["auto", "gemini", "deepseek", "ollama"]), default=None, help="auto = 1º Gemini → 2º DeepSeek-V3 → 3º Ollama; ou força um provedor")
-@click.option("--deepseek-model", default=None, help="Modelo DeepSeek Cloud (padrão: env DEEPSEEK_MODEL)")
-@click.option("--ollama-model", default=None, help="Modelo Ollama local (padrão: env OLLAMA_MODEL)")
-@click.option("-f", "--force", is_flag=True, default=False, help="Força a regeração mesmo se a nota já existir")
-@click.option("--vision/--no-vision", default=True, help="Ativa (padrão) ou desativa a extração e análise multimodal dos frames de vídeo com Gemini")
+@click.option(
+    "-o",
+    "--output-dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Diretório de saída para aulas/ (padrão: <modulo>/aulas/)",
+)
+@click.option(
+    "-m",
+    "--gemini-model",
+    default=None,
+    help="Modelo Gemini para síntese técnica (padrão: env GEMINI_MODEL)",
+)
+@click.option(
+    "-p",
+    "--provider",
+    type=click.Choice(["auto", "gemini", "deepseek", "ollama"]),
+    default=None,
+    help="auto = 1º Gemini → 2º DeepSeek-V3 → 3º Ollama; ou força um provedor",
+)
+@click.option(
+    "--deepseek-model",
+    default=None,
+    help="Modelo DeepSeek Cloud (padrão: env DEEPSEEK_MODEL)",
+)
+@click.option(
+    "--ollama-model",
+    default=None,
+    help="Modelo Ollama local (padrão: env OLLAMA_MODEL)",
+)
+@click.option(
+    "-f",
+    "--force",
+    is_flag=True,
+    default=False,
+    help="Força a regeração mesmo se a nota já existir",
+)
+@click.option(
+    "--vision/--no-vision",
+    default=True,
+    help="Ativa (padrão) ou desativa a extração e análise multimodal dos frames de vídeo com Gemini",
+)
 def synthesize_cmd(
     target: Path,
     output_dir: Path | None,
@@ -207,7 +331,7 @@ def synthesize_cmd(
     force: bool,
     vision: bool,
 ) -> None:
-    """Sintetiza notas estruturadas de estudo em Markdown (aulas/) a partir de transcrições .txt."""
+    """Sintetiza notas estruturadas de estudo em Markdown (aulas/) a partir de transcrições .txt e de PDFs extraídos (.md)."""
     synthesizer = LectureSynthesizer(
         gemini_model=gemini_model,
         deepseek_model=deepseek_model,
@@ -219,48 +343,102 @@ def synthesize_cmd(
     if target.is_file():
         module_dir = target.parent.parent.parent
         out_dir = output_dir or (module_dir / "aulas")
-        target_note = out_dir / f"{target.stem}.md"
+        target_note = note_path_for(target, out_dir)
         if target_note.exists() and not force and not _is_scaffold_file(target_note):
-            console.print(f"[dim]Nota já existente (Skip):[/dim] {target_note.name}")
+            console.print(
+                f"[dim]⏭ Pulando, nota já existe: {target_note}[/dim] (use --force para regenerar)"
+            )
             return
         keyframes = None
         if vision:
-            from knowledge_extractor.video_frames import extract_video_keyframes, VIDEO_EXTENSIONS
+            from knowledge_extractor.video_frames import (
+                VIDEO_EXTENSIONS,
+                extract_video_keyframes,
+            )
+
             raw_dir = module_dir / "materiais" / "raw"
-            video_candidates = [raw_dir / f"{target.stem}{ext}" for ext in VIDEO_EXTENSIONS if (raw_dir / f"{target.stem}{ext}").exists()]
+            video_candidates = [
+                raw_dir / f"{target.stem}{ext}"
+                for ext in VIDEO_EXTENSIONS
+                if (raw_dir / f"{target.stem}{ext}").exists()
+            ]
             if video_candidates:
                 frames_dir = module_dir / "materiais" / "frames" / target.stem
-                keyframes = extract_video_keyframes(video_candidates[0], output_dir=frames_dir, force=force)
+                keyframes = extract_video_keyframes(
+                    video_candidates[0], output_dir=frames_dir, force=force
+                )
 
-        synthesizer.process_file(transcript_file=target, module_dir=module_dir, output_dir=output_dir, force=force, keyframes=keyframes)
+        synthesizer.process_file(
+            transcript_file=target,
+            module_dir=module_dir,
+            output_dir=output_dir,
+            force=force,
+            keyframes=keyframes,
+        )
     elif target.is_dir():
-        trans_dir = target / "materiais" / "transcricoes" if (target / "materiais" / "transcricoes").exists() else target
-        txt_files = sorted([f for f in trans_dir.iterdir() if f.is_file() and f.suffix.lower() == ".txt" and not f.name.startswith(".")])
+        trans_dir = (
+            target / "materiais" / "transcricoes"
+            if (target / "materiais" / "transcricoes").exists()
+            else target
+        )
+        from knowledge_extractor.pdf_parser import synthesis_sources
+
+        txt_files = synthesis_sources(trans_dir)  # .txt + .md vindos de PDF (LRT-06)
         if not txt_files:
-            console.print(f"[yellow]ℹ Nenhum arquivo .txt de transcrição encontrado em {trans_dir}[/yellow]")
+            console.print(
+                f"[yellow]ℹ Nenhum arquivo .txt de transcrição encontrado em {trans_dir}[/yellow]"
+            )
             return
 
         raw_dir = target / "materiais" / "raw"
         out_dir = output_dir or (target / "aulas")
         for txt in txt_files:
-            target_note = out_dir / f"{txt.stem}.md"
-            if target_note.exists() and not force and not _is_scaffold_file(target_note):
-                console.print(f"[dim]Nota já existente (Skip):[/dim] {target_note.name}")
+            target_note = note_path_for(txt, out_dir)
+            if (
+                target_note.exists()
+                and not force
+                and not _is_scaffold_file(target_note)
+            ):
+                console.print(
+                    f"[dim]⏭ Pulando, nota já existe: {target_note}[/dim] (use --force para regenerar)"
+                )
                 continue
             keyframes = None
             if vision and raw_dir.exists():
-                from knowledge_extractor.video_frames import extract_video_keyframes, VIDEO_EXTENSIONS
-                video_candidates = [raw_dir / f"{txt.stem}{ext}" for ext in VIDEO_EXTENSIONS if (raw_dir / f"{txt.stem}{ext}").exists()]
+                from knowledge_extractor.video_frames import (
+                    VIDEO_EXTENSIONS,
+                    extract_video_keyframes,
+                )
+
+                video_candidates = [
+                    raw_dir / f"{txt.stem}{ext}"
+                    for ext in VIDEO_EXTENSIONS
+                    if (raw_dir / f"{txt.stem}{ext}").exists()
+                ]
                 if video_candidates:
                     frames_dir = target / "materiais" / "frames" / txt.stem
-                    keyframes = extract_video_keyframes(video_candidates[0], output_dir=frames_dir, force=force)
+                    keyframes = extract_video_keyframes(
+                        video_candidates[0], output_dir=frames_dir, force=force
+                    )
 
-            synthesizer.process_file(transcript_file=txt, module_dir=target, output_dir=output_dir, force=force, keyframes=keyframes)
+            synthesizer.process_file(
+                transcript_file=txt,
+                module_dir=target,
+                output_dir=output_dir,
+                force=force,
+                keyframes=keyframes,
+            )
 
 
 @cli.command("fix-mermaid")
 @click.argument("target", type=click.Path(exists=True, path_type=Path))
-@click.option("--apply", "apply_changes", is_flag=True, default=False, help="Grava as correções (sem ela é apenas simulação)")
+@click.option(
+    "--apply",
+    "apply_changes",
+    is_flag=True,
+    default=False,
+    help="Grava as correções (sem ela é apenas simulação)",
+)
 def fix_mermaid_cmd(target: Path, apply_changes: bool) -> None:
     """Corrige a sintaxe dos diagramas Mermaid em notas .md (arquivo, pasta aulas/ ou módulo)."""
     from knowledge_extractor.mermaid_fixer import sanitize_file
@@ -276,11 +454,33 @@ def fix_mermaid_cmd(target: Path, apply_changes: bool) -> None:
         n = sanitize_file(f, dry_run=not apply_changes)
         if n:
             total += n
-            console.print(f"[cyan]🩹 {f.name}[/cyan]: {n} diagrama(s) {'corrigido(s)' if apply_changes else 'a corrigir'}")
+            console.print(
+                f"[cyan]🩹 {f.name}[/cyan]: {n} diagrama(s) {'corrigido(s)' if apply_changes else 'a corrigir'}"
+            )
     if not total:
         console.print("[green]✓ Nenhum diagrama precisando de correção.[/green]")
     elif not apply_changes:
-        console.print("[yellow]Simulação. Rode novamente com --apply para gravar.[/yellow]")
+        console.print(
+            "[yellow]Simulação. Rode novamente com --apply para gravar.[/yellow]"
+        )
+
+
+@cli.command("check-notes")
+@click.argument(
+    "module_dir", type=click.Path(exists=True, file_okay=False, path_type=Path)
+)
+def check_notes_cmd(module_dir: Path) -> None:
+    """Dry-run: lista notas com nome antigo e órfãs (não renomeia nada)."""
+    res = audit_notes(module_dir)
+    console.print(
+        f"[green]✓ {len(res['ok'])} nota(s) com nome canônico[/green]; {len(res['faltando'])} fonte(s) sem nota"
+    )
+    for old, new in res["nome_antigo"]:
+        console.print(
+            f"[yellow]↺ nome antigo:[/yellow] {old} → esperado {new} (renomeie manualmente)"
+        )
+    for name, why in res["orfas"]:
+        console.print(f"[magenta]? órfã:[/magenta] {name} ({why})")
 
 
 @cli.command("sync-catalog")
@@ -293,17 +493,37 @@ def sync_catalog_cmd(module_dir: Path) -> None:
 
 @cli.command("attach-figures")
 @click.argument("module_dir", type=click.Path(exists=True, path_type=Path))
-@click.option("--max-figures", default=3, show_default=True, help="Máximo de figuras por aula")
-@click.option("-m", "--gemini-model", default=None, help="Modelo de visão (padrão: env GEMINI_MODEL)")
-@click.option("-f", "--force", is_flag=True, default=False, help="Reavalia notas que já possuem figuras anexadas")
-def attach_figures_cmd(module_dir: Path, max_figures: int, gemini_model: str | None, force: bool) -> None:
+@click.option(
+    "--max-figures", default=3, show_default=True, help="Máximo de figuras por aula"
+)
+@click.option(
+    "-m",
+    "--gemini-model",
+    default=None,
+    help="Modelo de visão (padrão: env GEMINI_MODEL)",
+)
+@click.option(
+    "-f",
+    "--force",
+    is_flag=True,
+    default=False,
+    help="Reavalia notas que já possuem figuras anexadas",
+)
+def attach_figures_cmd(
+    module_dir: Path, max_figures: int, gemini_model: str | None, force: bool
+) -> None:
     """Seleciona frames de alto valor visual, converte para WebP em materiais/figuras/ e anexa nas notas existentes."""
     from knowledge_extractor.figures import MARKER_START
-    from knowledge_extractor.video_frames import VIDEO_EXTENSIONS, extract_video_keyframes
+    from knowledge_extractor.video_frames import (
+        VIDEO_EXTENSIONS,
+        extract_video_keyframes,
+    )
 
     synthesizer = LectureSynthesizer(gemini_model=gemini_model)
     if not synthesizer.client:
-        console.print("[red]❌ GEMINI_API_KEY não configurada — a seleção de figuras exige o modelo de visão.[/red]")
+        console.print(
+            "[red]❌ GEMINI_API_KEY não configurada — a seleção de figuras exige o modelo de visão.[/red]"
+        )
         return
 
     aulas_dir = module_dir / "aulas"
@@ -317,16 +537,33 @@ def attach_figures_cmd(module_dir: Path, max_figures: int, gemini_model: str | N
 
     total = 0
     for note in notes:
-        if not force and MARKER_START in note.read_text(encoding="utf-8", errors="replace"):
+        if not force and MARKER_START in note.read_text(
+            encoding="utf-8", errors="replace"
+        ):
             console.print(f"[dim]Figuras já anexadas (Skip):[/dim] {note.name}")
             continue
-        keyframes = sorted((frames_dir / note.stem).glob("frame_*.jpg")) if (frames_dir / note.stem).exists() else []
+        keyframes = (
+            sorted((frames_dir / note.stem).glob("frame_*.jpg"))
+            if (frames_dir / note.stem).exists()
+            else []
+        )
         if not keyframes:
-            video = next((raw_dir / f"{note.stem}{ext}" for ext in VIDEO_EXTENSIONS if (raw_dir / f"{note.stem}{ext}").exists()), None)
+            video = next(
+                (
+                    raw_dir / f"{note.stem}{ext}"
+                    for ext in VIDEO_EXTENSIONS
+                    if (raw_dir / f"{note.stem}{ext}").exists()
+                ),
+                None,
+            )
             if video is None:
-                console.print(f"[dim]Sem vídeo/frames para {note.name} — ignorado.[/dim]")
+                console.print(
+                    f"[dim]Sem vídeo/frames para {note.name} — ignorado.[/dim]"
+                )
                 continue
-            keyframes = extract_video_keyframes(video, output_dir=frames_dir / note.stem)
+            keyframes = extract_video_keyframes(
+                video, output_dir=frames_dir / note.stem
+            )
 
         if not keyframes:
             continue
@@ -344,21 +581,75 @@ def attach_figures_cmd(module_dir: Path, max_figures: int, gemini_model: str | N
             info["figuras_webp"] = count
             total += count
 
-    console.print(f"[bold green]✓ {total} figura(s) anexada(s) em {len(notes)} nota(s).[/bold green]")
+    console.print(
+        f"[bold green]✓ {total} figura(s) anexada(s) em {len(notes)} nota(s).[/bold green]"
+    )
 
 
 @cli.command("pipeline")
-@click.argument("module_dir", type=click.Path(exists=True, path_type=Path), required=False, default=None)
-@click.option("--all", "run_all_steps", is_flag=True, default=False, help="Executa todas as etapas sequencialmente em lote")
-@click.option("--all-modules", "run_all_modules", is_flag=True, default=False, help="Executa o ciclo completo em TODOS os módulos da formação em sequência")
-@click.option("--step", type=int, default=None, help="Executa uma etapa específica (1 a 5)")
-@click.option("-m", "--model-size", default="base", help="Tamanho do modelo Whisper (tiny, base, small, medium, large-v3)")
-@click.option("--gemini-model", default=None, help="Modelo Gemini para síntese de notas (padrão: env GEMINI_MODEL)")
-@click.option("-p", "--provider", type=click.Choice(["auto", "gemini", "deepseek", "ollama"]), default=None, help="auto = 1º Gemini → 2º DeepSeek-V3 → 3º Ollama; ou força um provedor")
-@click.option("--deepseek-model", default=None, help="Modelo DeepSeek Cloud (padrão: env DEEPSEEK_MODEL)")
-@click.option("--ollama-model", default=None, help="Modelo Ollama local (padrão: env OLLAMA_MODEL)")
-@click.option("-f", "--force", is_flag=True, default=False, help="Força o reprocessamento de itens já existentes")
-@click.option("--vision/--no-vision", default=True, help="Ativa (padrão) ou desativa a extração de frames de vídeo e síntese multimodal com Gemini")
+@click.argument(
+    "module_dir",
+    type=click.Path(exists=True, path_type=Path),
+    required=False,
+    default=None,
+)
+@click.option(
+    "--all",
+    "run_all_steps",
+    is_flag=True,
+    default=False,
+    help="Executa todas as etapas sequencialmente em lote",
+)
+@click.option(
+    "--all-modules",
+    "run_all_modules",
+    is_flag=True,
+    default=False,
+    help="Executa o ciclo completo em TODOS os módulos da formação em sequência",
+)
+@click.option(
+    "--step", type=int, default=None, help="Executa uma etapa específica (1 a 5)"
+)
+@click.option(
+    "-m",
+    "--model-size",
+    default=None,
+    help="Modelo Whisper (tiny, base, small, medium, large-v3). Padrão: WHISPER_MODEL_SIZE ou large-v3 (GPU) / small (CPU)",
+)
+@click.option(
+    "--gemini-model",
+    default=None,
+    help="Modelo Gemini para síntese de notas (padrão: env GEMINI_MODEL)",
+)
+@click.option(
+    "-p",
+    "--provider",
+    type=click.Choice(["auto", "gemini", "deepseek", "ollama"]),
+    default=None,
+    help="auto = 1º Gemini → 2º DeepSeek-V3 → 3º Ollama; ou força um provedor",
+)
+@click.option(
+    "--deepseek-model",
+    default=None,
+    help="Modelo DeepSeek Cloud (padrão: env DEEPSEEK_MODEL)",
+)
+@click.option(
+    "--ollama-model",
+    default=None,
+    help="Modelo Ollama local (padrão: env OLLAMA_MODEL)",
+)
+@click.option(
+    "-f",
+    "--force",
+    is_flag=True,
+    default=False,
+    help="Força o reprocessamento de itens já existentes",
+)
+@click.option(
+    "--vision/--no-vision",
+    default=True,
+    help="Ativa (padrão) ou desativa a extração de frames de vídeo e síntese multimodal com Gemini",
+)
 def pipeline_cmd(
     module_dir: Path | None,
     run_all_steps: bool,
@@ -378,17 +669,27 @@ def pipeline_cmd(
     all_mods = discover_modules()
     if not all_mods:
         console.print("[red]❌ Nenhuma pasta de módulo encontrada em modules/.[/red]")
-        console.print("Gere a estrutura inicial com: [yellow]knowledge-extractor scaffold-modules[/yellow]")
+        console.print(
+            "Gere a estrutura inicial com: [yellow]knowledge-extractor scaffold-modules[/yellow]"
+        )
         raise SystemExit(1)
 
     target_module = module_dir if module_dir is not None else all_mods[0]
 
     if run_all_modules:
-        console.print(f"[bold cyan]🚀 Executando Ciclo Global em TODOS os {len(all_mods)} módulos da formação...[/bold cyan]")
+        console.print(
+            f"[bold cyan]🚀 Executando Ciclo Global em TODOS os {len(all_mods)} módulos da formação...[/bold cyan]"
+        )
         for idx, m_dir in enumerate(all_mods, start=1):
-            console.print(f"\n[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]")
-            console.print(f"[bold green]▶ Processando Módulo {idx}/{len(all_mods)}: {m_dir.name}[/bold green]")
-            console.print(f"[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]")
+            console.print(
+                "\n[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]"
+            )
+            console.print(
+                f"[bold green]▶ Processando Módulo {idx}/{len(all_mods)}: {m_dir.name}[/bold green]"
+            )
+            console.print(
+                "[bold cyan]════════════════════════════════════════════════════════════[/bold cyan]"
+            )
             p = ModulePipeline(
                 module_dir=m_dir,
                 model_size=model_size,
@@ -399,7 +700,12 @@ def pipeline_cmd(
                 vision=vision,
             )
             p.run_all(force=force)
-        console.print(Panel.fit("[bold green]✨ Ciclo Global Concluído com Sucesso em Todos os Módulos![/bold green]", border_style="green"))
+        console.print(
+            Panel.fit(
+                "[bold green]✨ Ciclo Global Concluído com Sucesso em Todos os Módulos![/bold green]",
+                border_style="green",
+            )
+        )
         return
 
     pipeline = ModulePipeline(
@@ -432,7 +738,9 @@ def pipeline_cmd(
 
 
 @cli.command("scaffold-modules")
-@click.option("--dry-run", is_flag=True, default=False, help="Mostra o plano sem criar arquivos")
+@click.option(
+    "--dry-run", is_flag=True, default=False, help="Mostra o plano sem criar arquivos"
+)
 def scaffold_modules_cmd(dry_run: bool) -> None:
     """Cria estrutura canônica de módulos a partir do course.yaml (raiz do repositório)."""
     from knowledge_extractor.course_config import load_course_config
@@ -461,7 +769,8 @@ def scaffold_modules_cmd(dry_run: bool) -> None:
             mod_dir / "portal",
         ]
         readme = mod_dir / "README.md"
-        readme_content = f"""# Módulo {mod.id} — {mod.name}
+        readme_content = (
+            f"""# Módulo {mod.id} — {mod.name}
 
 > **Programa:** {cfg.title} — {cfg.institution}
 > **Trilha:** {cfg.track_role}
@@ -472,7 +781,9 @@ def scaffold_modules_cmd(dry_run: bool) -> None:
 
 ## Competências Desenvolvidas
 
-""" + "\n".join(f"- {c}" for c in mod.competencies) + """
+"""
+            + "\n".join(f"- {c}" for c in mod.competencies)
+            + """
 
 ## Estrutura
 
@@ -484,6 +795,7 @@ def scaffold_modules_cmd(dry_run: bool) -> None:
 | `materiais/transcricoes/` | Transcrições processadas pelo knowledge-extractor |
 | `portal/` | Catálogo de aulas (`catalogo.md`) e espelho do AVA |
 """
+        )
         status = "atualizar" if readme.exists() else "criar"
         table.add_row(f"{mod.id} — {mod.name}", slug, status)
         planned += 1
@@ -496,26 +808,60 @@ def scaffold_modules_cmd(dry_run: bool) -> None:
             readme.write_text(readme_content, encoding="utf-8")
 
     console.print(table)
-    console.print(f"[green]✔ {planned} módulo(s) {'planejado(s)' if dry_run else 'processado(s)'}[/green]")
+    console.print(
+        f"[green]✔ {planned} módulo(s) {'planejado(s)' if dry_run else 'processado(s)'}[/green]"
+    )
 
 
 @cli.command("slice-video")
 @click.argument("video_file", type=click.Path(exists=True, path_type=Path))
-@click.option("-c", "--chunk-minutes", default=35, type=int, help="Tamanho máximo de cada fatia em minutos (padrão: 35)")
-@click.option("-o", "--output-dir", type=click.Path(path_type=Path), default=None, help="Diretório de saída (padrão: mesma pasta do vídeo)")
-@click.option("--archive/--no-archive", default=True, help="Move o vídeo bruto original para a subpasta archive/ (padrão: True)")
-def slice_video_cmd(video_file: Path, chunk_minutes: int, output_dir: Path | None, archive: bool) -> None:
+@click.option(
+    "-c",
+    "--chunk-minutes",
+    default=35,
+    type=int,
+    help="Tamanho máximo de cada fatia em minutos (padrão: 35)",
+)
+@click.option(
+    "-o",
+    "--output-dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Diretório de saída (padrão: mesma pasta do vídeo)",
+)
+@click.option(
+    "--archive/--no-archive",
+    default=True,
+    help="Move o vídeo bruto original para a subpasta archive/ (padrão: True)",
+)
+def slice_video_cmd(
+    video_file: Path, chunk_minutes: int, output_dir: Path | None, archive: bool
+) -> None:
     """Fatia vídeos longos usando FFmpeg Stream Copy (-c copy) quase instantâneo."""
     from knowledge_extractor.video_slicer import slice_video_file
-    slice_video_file(video_file, chunk_minutes=chunk_minutes, output_dir=output_dir, archive_original=archive)
+
+    slice_video_file(
+        video_file,
+        chunk_minutes=chunk_minutes,
+        output_dir=output_dir,
+        archive_original=archive,
+    )
 
 
 @cli.command("generate-tasks")
-@click.argument("module_dir", type=click.Path(exists=True, path_type=Path), required=False, default=None)
+@click.argument(
+    "module_dir",
+    type=click.Path(exists=True, path_type=Path),
+    required=False,
+    default=None,
+)
 def generate_tasks_cmd(module_dir: Path | None) -> None:
     """Gera Issues-as-a-Prompt em labs/ e sincroniza docs/prompts/README.md."""
-    from knowledge_extractor.prompt_factory import generate_task_prompt, sync_prompts_catalog
     from knowledge_extractor.pipeline import discover_modules
+    from knowledge_extractor.prompt_factory import (
+        generate_task_prompt,
+        sync_prompts_catalog,
+    )
 
     targets = [module_dir] if module_dir else discover_modules()
     total = 0
@@ -524,19 +870,34 @@ def generate_tasks_cmd(module_dir: Path | None) -> None:
         labs_dir = mod / "labs"
         if aulas_dir.is_dir():
             for idx, a_file in enumerate(sorted(aulas_dir.glob("*.md")), start=1):
-                t_path = generate_task_prompt(a_file, output_dir=labs_dir, task_number=idx)
+                t_path = generate_task_prompt(
+                    a_file, output_dir=labs_dir, task_number=idx
+                )
                 if t_path:
                     total += 1
     sync_prompts_catalog()
-    console.print(f"[bold green]✓ {total} Issue-as-a-Prompt gerada(s)/atualizada(s) e docs/prompts/ sincronizado![/bold green]")
+    console.print(
+        f"[bold green]✓ {total} Issue-as-a-Prompt gerada(s)/atualizada(s) e docs/prompts/ sincronizado![/bold green]"
+    )
 
 
 @cli.command("jira-link")
-@click.option("-k", "--project-key", required=True, help="Chave do projeto Jira (ex: AAH, AKEDU, PROJ)")
-@click.option("--dry-run", is_flag=True, default=False, help="Apenas simula a vinculação sem disparar chamadas")
+@click.option(
+    "-k",
+    "--project-key",
+    required=True,
+    help="Chave do projeto Jira (ex: AAH, AKEDU, PROJ)",
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Apenas simula a vinculação sem disparar chamadas",
+)
 def jira_link_cmd(project_key: str, dry_run: bool) -> None:
     """Mapeia e vincula a estrutura do curso a um projeto no Jira Cloud sob demanda."""
     from knowledge_extractor.jira_mapper import link_jira_project
+
     link_jira_project(project_key=project_key, dry_run=dry_run)
 
 

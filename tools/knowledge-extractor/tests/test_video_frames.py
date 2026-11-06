@@ -12,7 +12,6 @@ from knowledge_extractor.audio_transcriber import (
     format_timestamp,
     get_media_duration,
 )
-from knowledge_extractor.file_normalizer import suggest_normalized_stem
 from knowledge_extractor.figures import (
     MARKER_END,
     MARKER_START,
@@ -20,6 +19,7 @@ from knowledge_extractor.figures import (
     build_figures_block,
     sanitize_slug,
 )
+from knowledge_extractor.file_normalizer import suggest_normalized_stem
 from knowledge_extractor.synthesizer import _is_scaffold_file, _is_transient_error
 from knowledge_extractor.video_frames import (
     dedupe_and_anchor,
@@ -76,11 +76,18 @@ def test_dedupe_drops_near_identical_and_subsamples(tmp_path: Path) -> None:
 def test_normalizer_does_not_prefix_doc_on_aula_pdf() -> None:
     stem = "aula-08-final-principais-frameworks-de-agentes"
     assert suggest_normalized_stem(stem, ".pdf") == stem
-    assert suggest_normalized_stem("relatorio-arquitetura", ".pdf") == "doc-relatorio-arquitetura"
+    assert (
+        suggest_normalized_stem("relatorio-arquitetura", ".pdf")
+        == "doc-relatorio-arquitetura"
+    )
 
 
 def test_transient_error_classification() -> None:
-    assert _is_transient_error(RuntimeError("503 UNAVAILABLE. This model is currently experiencing high demand."))
+    assert _is_transient_error(
+        RuntimeError(
+            "503 UNAVAILABLE. This model is currently experiencing high demand."
+        )
+    )
     assert _is_transient_error(RuntimeError("429 RESOURCE_EXHAUSTED"))
     assert not _is_transient_error(RuntimeError("400 INVALID_ARGUMENT"))
 
@@ -92,15 +99,23 @@ def test_run_pipeline_script_is_utf8_bom_and_ascii() -> None:
     if not script.exists():
         return
     raw = script.read_bytes()
-    assert raw.startswith(b"\xef\xbb\xbf"), "run-pipeline.ps1 deve começar com BOM UTF-8"
-    assert all(b < 128 for b in raw[3:]), "run-pipeline.ps1 deve conter apenas ASCII (evita corrupção ANSI)"
+    assert raw.startswith(b"\xef\xbb\xbf"), (
+        "run-pipeline.ps1 deve começar com BOM UTF-8"
+    )
+    assert all(b < 128 for b in raw[3:]), (
+        "run-pipeline.ps1 deve conter apenas ASCII (evita corrupção ANSI)"
+    )
 
 
 def test_scaffold_detection(tmp_path: Path) -> None:
     scaffold = tmp_path / "aula-01.md"
-    scaffold.write_text("# Aula 01\n\n> **Status:** 🟡 Rascunho / Em Estruturação\n", encoding="utf-8")
+    scaffold.write_text(
+        "# Aula 01\n\n> **Status:** 🟡 Rascunho / Em Estruturação\n", encoding="utf-8"
+    )
     real = tmp_path / "aula-02.md"
-    real.write_text("# Aula 02\n\n> **Status:** Concluído / Documentado\n", encoding="utf-8")
+    real.write_text(
+        "# Aula 02\n\n> **Status:** Concluído / Documentado\n", encoding="utf-8"
+    )
 
     assert _is_scaffold_file(scaffold) is True
     assert _is_scaffold_file(real) is False
@@ -108,7 +123,10 @@ def test_scaffold_detection(tmp_path: Path) -> None:
 
 
 def test_sanitize_slug() -> None:
-    assert sanitize_slug("Fluxo de Execução com Git Worktrees") == "fluxo-de-execucao-com-git-worktrees"
+    assert (
+        sanitize_slug("Fluxo de Execução com Git Worktrees")
+        == "fluxo-de-execucao-com-git-worktrees"
+    )
     assert sanitize_slug("  !!  Arquitetura & Design  ") == "arquitetura-design"
     assert sanitize_slug("   ") == "figura"
 
@@ -120,7 +138,11 @@ def test_figures_block_and_attach_idempotent(tmp_path: Path) -> None:
         encoding="utf-8",
     )
     figs = [
-        {"path": tmp_path / "frame_0001_18m26s.jpg", "slug": "fluxo-worktrees", "legenda": "Fluxo de execução com Git Worktrees"},
+        {
+            "path": tmp_path / "frame_0001_18m26s.jpg",
+            "slug": "fluxo-worktrees",
+            "legenda": "Fluxo de execução com Git Worktrees",
+        },
     ]
     block = build_figures_block("aula-01", figs)
     assert MARKER_START in block and MARKER_END in block
@@ -138,11 +160,12 @@ def test_figures_block_and_attach_idempotent(tmp_path: Path) -> None:
 def test_discover_modules_ordering(tmp_path: Path) -> None:
     """Valida que discover_modules encontra e ordena as pastas de módulos."""
     from knowledge_extractor.pipeline import discover_modules
+
     mods_dir = tmp_path / "modules"
     mods_dir.mkdir(parents=True)
     (mods_dir / "02-arquitetura").mkdir()
     (mods_dir / "01-fundamentos").mkdir()
-    (mods_dir / ".gitkeep").write_text("", encoding="utf-8") # ignora arquivos
+    (mods_dir / ".gitkeep").write_text("", encoding="utf-8")  # ignora arquivos
     (tmp_path / "course.yaml").write_text("course:\n  id: 't'\n", encoding="utf-8")
 
     found = discover_modules(tmp_path)
@@ -154,25 +177,32 @@ def test_discover_modules_ordering(tmp_path: Path) -> None:
 def test_pipeline_imports_confirm() -> None:
     """Garante que Confirm e get_media_duration estejam importados em pipeline.py."""
     import knowledge_extractor.pipeline as p
+
     assert hasattr(p, "Confirm")
     from rich.prompt import Confirm
+
     assert p.Confirm is Confirm
     assert hasattr(p, "get_media_duration")
     from knowledge_extractor.video_frames import get_media_duration
+
     assert p.get_media_duration is get_media_duration
 
 
 def test_course_config_audio_language(tmp_path: Path) -> None:
     """Valida leitura e derivação de audio_language no course.yaml."""
     from knowledge_extractor.course_config import load_course_config
+
     c_yaml = tmp_path / "course.yaml"
-    c_yaml.write_text("""
+    c_yaml.write_text(
+        """
 course:
   id: "test"
   title: "Curso Teste"
   language: "en-US"
   audio_language: "en"
-""", encoding="utf-8")
+""",
+        encoding="utf-8",
+    )
     cfg = load_course_config(tmp_path)
     assert cfg.audio_language == "en"
 
@@ -180,16 +210,18 @@ course:
 def test_mermaid_fixer_injects_light_theme() -> None:
     """Valida que o sanitizador Mermaid injeta tema claro de alto contraste (darkMode: false)."""
     from knowledge_extractor.mermaid_fixer import sanitize_markdown
+
     sample = "```mermaid\nflowchart TD\n  A --> B\n```"
     fixed, changed = sanitize_markdown(sample)
     assert changed == 1
-    assert "darkMode': false" in fixed
-    assert "background': '#FFFFFF'" in fixed
+    assert "'darkMode':false" in fixed
+    assert "'background':'#FFFFFF'" in fixed
 
 
 def test_video_slicer_hhmmss_format() -> None:
     """Valida conversão de segundos para HH:MM:SS no fatiador."""
     from knowledge_extractor.video_slicer import format_seconds_to_hhmmss
+
     assert format_seconds_to_hhmmss(0) == "00:00:00"
     assert format_seconds_to_hhmmss(65) == "00:01:05"
     assert format_seconds_to_hhmmss(3665) == "01:01:05"
@@ -198,8 +230,12 @@ def test_video_slicer_hhmmss_format() -> None:
 def test_prompt_factory_task_generation(tmp_path: Path) -> None:
     """Valida geração de Issue-as-a-Prompt a partir de uma nota de aula."""
     from knowledge_extractor.prompt_factory import generate_task_prompt
+
     note = tmp_path / "aula-01-teste.md"
-    note.write_text("# Aula 01 — Teste Prático\n\n## 🎯 Objetivos de Aprendizagem\n- Criar testes\n\n```python\ndef test(): pass\n```\n", encoding="utf-8")
+    note.write_text(
+        "# Aula 01 — Teste Prático\n\n## 🎯 Objetivos de Aprendizagem\n- Criar testes\n\n```python\ndef test(): pass\n```\n",
+        encoding="utf-8",
+    )
     task_p = generate_task_prompt(note, output_dir=tmp_path / "labs", task_number=1)
     assert task_p is not None and task_p.exists()
     content = task_p.read_text(encoding="utf-8")
@@ -210,6 +246,7 @@ def test_prompt_factory_task_generation(tmp_path: Path) -> None:
 def test_build_system_prompt_does_not_raise_name_error() -> None:
     """Garante que build_system_prompt escapa chaves do Mermaid init e não lança NameError 'init'."""
     from knowledge_extractor.synthesizer import build_system_prompt
+
     prompt = build_system_prompt(module_name="01-teste", has_vision=True)
     assert "%%{init:" in prompt
     assert "darkMode': false" in prompt
@@ -218,22 +255,22 @@ def test_build_system_prompt_does_not_raise_name_error() -> None:
 def test_synthesizer_mode_label_hierarchy() -> None:
     """Valida a hierarquia de modos no sintetizador: 1º Gemini → 2º DeepSeek → 3º Ollama."""
     from knowledge_extractor.synthesizer import LectureSynthesizer
-    s = LectureSynthesizer(provider="auto", gemini_model="gemini-3.5-flash-lite", deepseek_model="deepseek-chat")
+
+    s = LectureSynthesizer(
+        provider="auto",
+        gemini_model="gemini-3.5-flash-lite",
+        deepseek_model="deepseek-chat",
+    )
     label = s.mode_label()
     assert "1º gemini-3.5-flash-lite" in label
     assert "2º deepseek-chat" in label
     assert "3º qwen2.5:7b-instruct" in label
 
 
-
-
-
-
-
-
 def test_catalog_sync_normalization_pairs_correctly(tmp_path: Path) -> None:
     """Garante que midia-X e aula-midia-X resolvam para a mesma chave única no catálogo."""
     from knowledge_extractor.catalog_sync import CatalogSynchronizer
+
     syncer = CatalogSynchronizer()
     mod_dir = tmp_path / "01-teste"
     (mod_dir / "materiais" / "raw").mkdir(parents=True)
@@ -241,8 +278,12 @@ def test_catalog_sync_normalization_pairs_correctly(tmp_path: Path) -> None:
     (mod_dir / "aulas").mkdir(parents=True)
 
     (mod_dir / "materiais" / "raw" / "midia-aula-pratica.mp4").write_bytes(b"video")
-    (mod_dir / "materiais" / "transcricoes" / "midia-aula-pratica.txt").write_text("transcricao", encoding="utf-8")
-    (mod_dir / "aulas" / "aula-midia-aula-pratica.md").write_text("# Aula", encoding="utf-8")
+    (mod_dir / "materiais" / "transcricoes" / "midia-aula-pratica.txt").write_text(
+        "transcricao", encoding="utf-8"
+    )
+    (mod_dir / "aulas" / "aula-midia-aula-pratica.md").write_text(
+        "# Aula", encoding="utf-8"
+    )
 
     cat = syncer.sync_module_catalog(mod_dir)
     assert cat is not None and cat.exists()
@@ -252,4 +293,3 @@ def test_catalog_sync_normalization_pairs_correctly(tmp_path: Path) -> None:
     assert len(linhas_tabela) == 1
     assert "✅ Concluído" in linhas_tabela[0]
     assert "midia-aula-pratica" in linhas_tabela[0]
-

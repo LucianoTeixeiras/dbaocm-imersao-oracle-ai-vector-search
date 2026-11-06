@@ -11,9 +11,7 @@ from __future__ import annotations
 
 import json
 import os
-import re
 import sys
-import urllib.request
 from pathlib import Path
 from typing import Any
 
@@ -25,7 +23,7 @@ if sys.platform == "win32":
     try:
         sys.stdout.reconfigure(encoding="utf-8")
         sys.stderr.reconfigure(encoding="utf-8")
-    except Exception:
+    except (OSError, ValueError, KeyError):
         pass
 
 console = Console(highlight=False)
@@ -57,7 +55,9 @@ def generate_jira_manifest(root_dir: Path | None = None) -> Path:
 
             mod_info = cfg.get_module(mod.name)
             epic_name = mod_info.name if mod_info else mod.name
-            epic_summary = mod_info.summary if mod_info else f"Disciplina técnica {mod.name}"
+            epic_summary = (
+                mod_info.summary if mod_info else f"Disciplina técnica {mod.name}"
+            )
 
             epic_entry: dict[str, Any] = {
                 "sequence": epic_counter,
@@ -72,8 +72,12 @@ def generate_jira_manifest(root_dir: Path | None = None) -> Path:
             task_counter = 1
             if labs_dir.is_dir():
                 for t_file in sorted(labs_dir.glob("task-*.md")):
-                    first_line = t_file.read_text(encoding="utf-8", errors="replace").splitlines()[0]
-                    task_title = first_line.replace("# TASK:", "").replace("#", "").strip()
+                    first_line = t_file.read_text(
+                        encoding="utf-8", errors="replace"
+                    ).splitlines()[0]
+                    task_title = (
+                        first_line.replace("# TASK:", "").replace("#", "").strip()
+                    )
                     epic_entry["tasks"].append(
                         {
                             "sequence": task_counter,
@@ -88,7 +92,9 @@ def generate_jira_manifest(root_dir: Path | None = None) -> Path:
                 aulas_dir = mod / "aulas"
                 if aulas_dir.is_dir():
                     for a_file in sorted(aulas_dir.glob("*.md")):
-                        first_line = a_file.read_text(encoding="utf-8", errors="replace").splitlines()[0]
+                        first_line = a_file.read_text(
+                            encoding="utf-8", errors="replace"
+                        ).splitlines()[0]
                         aula_title = first_line.replace("#", "").strip()
                         epic_entry["tasks"].append(
                             {
@@ -102,8 +108,12 @@ def generate_jira_manifest(root_dir: Path | None = None) -> Path:
             manifest["epics"].append(epic_entry)
             epic_counter += 1
 
-    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
-    console.print(f"[green]✓ Manifesto físico Jira gerado em:[/green] {manifest_path.name} ({len(manifest['epics'])} épicos mapeados)")
+    manifest_path.write_text(
+        json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    console.print(
+        f"[green]✓ Manifesto físico Jira gerado em:[/green] {manifest_path.name} ({len(manifest['epics'])} épicos mapeados)"
+    )
     return manifest_path
 
 
@@ -124,22 +134,32 @@ def link_jira_project(
     epics = manifest.get("epics", [])
 
     console.print("\n" + "=" * 65)
-    console.print(f"[bold cyan]🎯 VINCULAÇÃO JIRA SOB DEMANDA: Projeto [{project_key}][/bold cyan]")
+    console.print(
+        f"[bold cyan]🎯 VINCULAÇÃO JIRA SOB DEMANDA: Projeto [{project_key}][/bold cyan]"
+    )
     console.print(f"📖 Formação: {cfg.title}")
     console.print(f"📦 Total de Épicos Mapeados: {len(epics)}")
     console.print("=" * 65)
 
     if dry_run:
-        console.print("[bold yellow]Modo Simulação (Dry-run) Ativado. Nenhuma chamada à API será feita.[/bold yellow]\n")
+        console.print(
+            "[bold yellow]Modo Simulação (Dry-run) Ativado. Nenhuma chamada à API será feita.[/bold yellow]\n"
+        )
 
     for epic in epics:
         console.print(f"\n[bold green]📌 ÉPICO:[/bold green] {epic['epic_title']}")
-        console.print(f"   [dim]Módulo: {epic['module_slug']} | {len(epic['tasks'])} Tarefa(s)[/dim]")
+        console.print(
+            f"   [dim]Módulo: {epic['module_slug']} | {len(epic['tasks'])} Tarefa(s)[/dim]"
+        )
         for task in epic["tasks"]:
-            console.print(f"   └── [cyan]Task:[/cyan] {task['task_title']} [dim]({task['file_ref']})[/dim]")
+            console.print(
+                f"   └── [cyan]Task:[/cyan] {task['task_title']} [dim]({task['file_ref']})[/dim]"
+            )
 
     if dry_run:
-        console.print(f"\n[yellow]Simulação finalizada. Para criar ou vincular fisicamente, execute sem --dry-run.[/yellow]")
+        console.print(
+            "\n[yellow]Simulação finalizada. Para criar ou vincular fisicamente, execute sem --dry-run.[/yellow]"
+        )
         return
 
     # Validação de credenciais do Jira (.env)
@@ -148,9 +168,17 @@ def link_jira_project(
     jira_domain = os.getenv("JIRA_DOMAIN") or os.getenv("JIRA_INSTANCE")
 
     if not (jira_token and jira_email and jira_domain):
-        console.print("\n[bold yellow]ℹ Credenciais do Jira não configuradas no ambiente (.env).[/bold yellow]")
-        console.print("Variáveis necessárias: JIRA_API_TOKEN, JIRA_USER_EMAIL, JIRA_DOMAIN.")
-        console.print(f"[green]✓ A estrutura física local permanece salva e válida em docs/jira/manifest.json para vinculação futura.[/green]")
+        console.print(
+            "\n[bold yellow]ℹ Credenciais do Jira não configuradas no ambiente (.env).[/bold yellow]"
+        )
+        console.print(
+            "Variáveis necessárias: JIRA_API_TOKEN, JIRA_USER_EMAIL, JIRA_DOMAIN."
+        )
+        console.print(
+            "[green]✓ A estrutura física local permanece salva e válida em docs/jira/manifest.json para vinculação futura.[/green]"
+        )
         return
 
-    console.print(f"\n[bold green]✓ Credenciais detectadas. Estrutura pronta para automação via REST API do Jira.[/bold green]")
+    console.print(
+        "\n[bold green]✓ Credenciais detectadas. Estrutura pronta para automação via REST API do Jira.[/bold green]"
+    )

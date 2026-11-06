@@ -2,12 +2,14 @@
 
 from __future__ import annotations
 
+import contextlib
 import hashlib
 import json
+import logging
 import re
 import sys
 import unicodedata
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -15,13 +17,13 @@ from rich.console import Console
 from rich.table import Table
 
 if sys.platform == "win32":
-    try:
+    # Console legado sem reconfigure (ou stream redirecionado): segue com o encoding padrão.
+    with contextlib.suppress(AttributeError, OSError, ValueError):
         sys.stdout.reconfigure(encoding="utf-8")
         sys.stderr.reconfigure(encoding="utf-8")
-    except Exception:
-        pass
 
 console = Console(highlight=False)
+log = logging.getLogger(__name__)
 
 DEFAULT_AUDIT_JSON = Path("docs/logs/file-renaming-audit.json")
 DEFAULT_AUDIT_MD = Path("docs/logs/file-renaming-audit.md")
@@ -42,9 +44,13 @@ KNOWN_PDF_MAPPINGS: dict[str, str] = {
 _pdf_mapping_json = Path(__file__).parent / "pdf_mappings_data.json"
 if _pdf_mapping_json.exists():
     try:
-        KNOWN_PDF_MAPPINGS.update(json.loads(_pdf_mapping_json.read_text(encoding="utf-8")))
-    except Exception:
-        pass
+        KNOWN_PDF_MAPPINGS.update(
+            json.loads(_pdf_mapping_json.read_text(encoding="utf-8"))
+        )
+    except (OSError, ValueError, TypeError) as _exc:
+        log.warning(
+            "pdf_mappings_data.json ignorado (%s: %s)", type(_exc).__name__, _exc
+        )
 
 # Mapeamentos diretos de títulos conhecidos
 KNOWN_TITLE_MAPPINGS: dict[str, str] = {
@@ -85,17 +91,33 @@ def suggest_normalized_stem(stem: str, suffix: str) -> str:
         return KNOWN_TITLE_MAPPINGS[stem]
 
     # 3. Padrão: "XX-MÓDULO YY - TÍTULO DA AULA"
-    mod_match = re.match(r"^(\d+)\s*[-_]?\s*m[oó]dulo\s*\d+\s*[-_]\s*(.+)$", stem, re.IGNORECASE)
+    mod_match = re.match(
+        r"^(\d+)\s*[-_]?\s*m[oó]dulo\s*\d+\s*[-_]\s*(.+)$", stem, re.IGNORECASE
+    )
     if mod_match:
         num = int(mod_match.group(1))
         title = mod_match.group(2)
         clean_title = slugify(title)
         # Ajustes de títulos comuns para brevidade e clareza
-        clean_title = clean_title.replace("o-que-voce-vera-durante-o-curso-como-praticar-e-nossa-comunidade", "visao-geral-pratica-e-comunidade")
-        clean_title = clean_title.replace("machine-learning-deep-learning-e-artificial-intelligence", "machine-learning-deep-learning-ai")
-        clean_title = clean_title.replace("criando-e-treinando-minha-primeira-rede-neural-para-determinar-a-categoria-de-alunos", "primeira-rede-neural-js")
-        clean_title = clean_title.replace("teachable-machine", "teachable-machine-e-visao-web")
-        clean_title = clean_title.replace("conceito-de-redes-neurais-e-como-elas-aprendem", "conceito-redes-neurais-e-como-aprendem")
+        clean_title = clean_title.replace(
+            "o-que-voce-vera-durante-o-curso-como-praticar-e-nossa-comunidade",
+            "visao-geral-pratica-e-comunidade",
+        )
+        clean_title = clean_title.replace(
+            "machine-learning-deep-learning-e-artificial-intelligence",
+            "machine-learning-deep-learning-ai",
+        )
+        clean_title = clean_title.replace(
+            "criando-e-treinando-minha-primeira-rede-neural-para-determinar-a-categoria-de-alunos",
+            "primeira-rede-neural-js",
+        )
+        clean_title = clean_title.replace(
+            "teachable-machine", "teachable-machine-e-visao-web"
+        )
+        clean_title = clean_title.replace(
+            "conceito-de-redes-neurais-e-como-elas-aprendem",
+            "conceito-redes-neurais-e-como-aprendem",
+        )
         return f"aula-{num:02d}-{clean_title}"
 
     # 4. Padrão: "XX - Título"
@@ -107,7 +129,9 @@ def suggest_normalized_stem(stem: str, suffix: str) -> str:
         return f"aula-{num:02d}-{clean_title}"
 
     # 5. Padrão: "MÓDULO XXYY - TÍTULO" (ex: MÓDULO 0101 -> aula-01-... | MÓDULO 0201 -> mod02-aula-01-...)
-    mod_prefix_match = re.match(r"^m[oó]dulo\s*(\d{2})(\d{2})\s*[-_]\s*(.+)$", stem, re.IGNORECASE)
+    mod_prefix_match = re.match(
+        r"^m[oó]dulo\s*(\d{2})(\d{2})\s*[-_]\s*(.+)$", stem, re.IGNORECASE
+    )
     if mod_prefix_match:
         mod_num = int(mod_prefix_match.group(1))
         aula_num = int(mod_prefix_match.group(2))
@@ -119,7 +143,11 @@ def suggest_normalized_stem(stem: str, suffix: str) -> str:
             return f"mod{mod_num:02d}-aula-{aula_num:02d}-{clean_title}"
 
     # 5.1 Padrão Anhanguera AVA: "MOD-XX-Ambiente[_ ]Virtual[_ ]Aprendizagem-YY"
-    ava_match = re.match(r"^(?:mod[-_]?(\d+)[-_]?)?ambiente[_\s]+virtual[_\s]+aprendizagem[-_]?(\d+)$", stem, re.IGNORECASE)
+    ava_match = re.match(
+        r"^(?:mod[-_]?(\d+)[-_]?)?ambiente[_\s]+virtual[_\s]+aprendizagem[-_]?(\d+)$",
+        stem,
+        re.IGNORECASE,
+    )
     if ava_match:
         mod_part = int(ava_match.group(1)) if ava_match.group(1) else 1
         video_num = int(ava_match.group(2))
@@ -131,9 +159,13 @@ def suggest_normalized_stem(stem: str, suffix: str) -> str:
 
     # 6. Fallback genérico
     clean = slugify(stem)
-    if suffix.lower() == ".pdf" and not (clean.startswith("apostila") or clean.startswith("doc") or clean.startswith("guia") or clean.startswith("aula")):
+    if suffix.lower() == ".pdf" and not (
+        clean.startswith(("apostila", "doc", "guia", "aula"))
+    ):
         clean = f"doc-{clean}"
-    elif suffix.lower() in {".mp4", ".mkv", ".mov"} and not (clean.startswith("aula") or clean.startswith("onboarding") or clean.startswith("setup") or clean.startswith("midia")):
+    elif suffix.lower() in {".mp4", ".mkv", ".mov"} and not (
+        clean.startswith(("aula", "onboarding", "setup", "midia"))
+    ):
         clean = f"midia-{clean}"
     return clean
 
@@ -149,14 +181,22 @@ class FileNormalizer:
         if self.audit_json_path.exists():
             try:
                 return json.loads(self.audit_json_path.read_text(encoding="utf-8"))
-            except Exception:
+            except (OSError, ValueError) as exc:
+                log.warning(
+                    "Log de auditoria %s ilegível; recomeçando (%s: %s)",
+                    self.audit_json_path,
+                    type(exc).__name__,
+                    exc,
+                )
                 return []
         return []
 
     def save_audit_log(self, records: list[dict[str, Any]]) -> None:
         """Persiste o log de auditoria em JSON e atualiza a tabela em Markdown."""
         self.audit_json_path.parent.mkdir(parents=True, exist_ok=True)
-        self.audit_json_path.write_text(json.dumps(records, indent=2, ensure_ascii=False), encoding="utf-8")
+        self.audit_json_path.write_text(
+            json.dumps(records, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
 
         # Gera o Markdown legível
         md_lines = [
@@ -164,7 +204,7 @@ class FileNormalizer:
             "",
             "> Log persistente de mapeamento de arquivos brutos, transcrições e documentos normalizados no repositório de formação técnica.",
             "",
-            f"*Última atualização: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}* | *Total de Registros: {len(records)}*",
+            f"*Última atualização: {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S UTC')}* | *Total de Registros: {len(records)}*",
             "",
             "| # | Data/Hora (UTC) | Módulo / Contexto | De (Nome Original) | Para (Nome Normalizado) | Tipo | SHA-256 (Parcial) |",
             "| :-: | :--- | :--- | :--- | :--- | :---: | :--- |",
@@ -177,7 +217,9 @@ class FileNormalizer:
             new_name = rec.get("new_name", "-")
             ftype = rec.get("type", "-")
             sha_short = (rec.get("sha256") or "")[:8]
-            md_lines.append(f"| {idx} | {ts} | `{modulo}` | `{old_name}` | **`{new_name}`** | `{ftype}` | `{sha_short}` |")
+            md_lines.append(
+                f"| {idx} | {ts} | `{modulo}` | `{old_name}` | **`{new_name}`** | `{ftype}` | `{sha_short}` |"
+            )
 
         md_lines.append("")
         self.audit_md_path.write_text("\n".join(md_lines), encoding="utf-8")
@@ -204,15 +246,19 @@ class FileNormalizer:
 
             if old_stem != new_stem:
                 # Entrada do arquivo raw
-                operations.append({
-                    "category": "raw",
-                    "module": module_dir.name,
-                    "old_path": raw_file,
-                    "new_path": raw_dir / new_name,
-                    "old_name": raw_file.name,
-                    "new_name": new_name,
-                    "type": "video" if suffix.lower() in {".mp4", ".mkv", ".mov", ".avi"} else ("pdf" if suffix.lower() == ".pdf" else "raw"),
-                })
+                operations.append(
+                    {
+                        "category": "raw",
+                        "module": module_dir.name,
+                        "old_path": raw_file,
+                        "new_path": raw_dir / new_name,
+                        "old_name": raw_file.name,
+                        "new_name": new_name,
+                        "type": "video"
+                        if suffix.lower() in {".mp4", ".mkv", ".mov", ".avi"}
+                        else ("pdf" if suffix.lower() == ".pdf" else "raw"),
+                    }
+                )
 
                 # Mapeia transcrições/extrações associadas em materiais/transcricoes
                 if trans_dir.exists():
@@ -220,15 +266,17 @@ class FileNormalizer:
                         associated = trans_dir / f"{old_stem}{ext}"
                         if associated.exists():
                             new_assoc_name = f"{new_stem}{ext}"
-                            operations.append({
-                                "category": "transcript",
-                                "module": module_dir.name,
-                                "old_path": associated,
-                                "new_path": trans_dir / new_assoc_name,
-                                "old_name": associated.name,
-                                "new_name": new_assoc_name,
-                                "type": f"transcript{ext}",
-                            })
+                            operations.append(
+                                {
+                                    "category": "transcript",
+                                    "module": module_dir.name,
+                                    "old_path": associated,
+                                    "new_path": trans_dir / new_assoc_name,
+                                    "old_name": associated.name,
+                                    "new_name": new_assoc_name,
+                                    "type": f"transcript{ext}",
+                                }
+                            )
 
         return operations
 
@@ -242,10 +290,14 @@ class FileNormalizer:
         operations = self.plan_module_normalization(module_dir)
 
         if not operations:
-            console.print(f"[yellow]ℹ Todos os arquivos em {module_dir.name} já estão normalizados.[/yellow]")
+            console.print(
+                f"[yellow]ℹ Todos os arquivos em {module_dir.name} já estão normalizados.[/yellow]"
+            )
             return []
 
-        table = Table(title=f"Normalização de Arquivos: {module_dir.name} ({'SIMULAÇÃO' if dry_run else 'APLICAÇÃO REAL'})")
+        table = Table(
+            title=f"Normalização de Arquivos: {module_dir.name} ({'SIMULAÇÃO' if dry_run else 'APLICAÇÃO REAL'})"
+        )
         table.add_column("Categoria", style="magenta")
         table.add_column("De (Nome Original)", style="cyan")
         table.add_column("Para (Normalizado)", style="bold green")
@@ -257,8 +309,12 @@ class FileNormalizer:
         console.print(table)
 
         if dry_run:
-            console.print("[bold yellow]⚠️ Modo Dry-Run (Simulação). Nenhuma alteração foi realizada em disco.[/bold yellow]")
-            console.print("[dim]Para aplicar as alterações e gerar o log de auditoria, use a flag --apply.[/dim]\n")
+            console.print(
+                "[bold yellow]⚠️ Modo Dry-Run (Simulação). Nenhuma alteração foi realizada em disco.[/bold yellow]"
+            )
+            console.print(
+                "[dim]Para aplicar as alterações e gerar o log de auditoria, use a flag --apply.[/dim]\n"
+            )
             return operations
 
         # Executa as alterações e registra auditoria
@@ -277,18 +333,23 @@ class FileNormalizer:
 
             # Se new_path já existe, verifica se é idêntico (duplicata de renomeação prévia)
             if new_path.exists():
-                if new_path.stat().st_size == size_bytes and compute_sha256(new_path) == sha256_hash:
+                if (
+                    new_path.stat().st_size == size_bytes
+                    and compute_sha256(new_path) == sha256_hash
+                ):
                     # Remove a cópia original legada duplicada
                     old_path.unlink()
                 else:
-                    console.print(f"[yellow]⚠️ Destino {new_path.name} já existe com conteúdo diferente. Ignorando renomeação.[/yellow]")
+                    console.print(
+                        f"[yellow]⚠️ Destino {new_path.name} já existe com conteúdo diferente. Ignorando renomeação.[/yellow]"
+                    )
                     continue
             else:
                 # Renomeia
                 old_path.rename(new_path)
 
             record = {
-                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "timestamp": datetime.now(UTC).isoformat(),
                 "module": op["module"],
                 "category": op["category"],
                 "old_name": op["old_name"],
@@ -301,7 +362,9 @@ class FileNormalizer:
             executed_records.append(record)
 
         self.save_audit_log(audit_records)
-        console.print(f"[bold green]✓ {len(executed_records)} arquivos renomeados com sucesso e auditados em:[/bold green]")
+        console.print(
+            f"[bold green]✓ {len(executed_records)} arquivos renomeados com sucesso e auditados em:[/bold green]"
+        )
         console.print(f"  - [blue]{self.audit_json_path}[/blue]")
         console.print(f"  - [blue]{self.audit_md_path}[/blue]")
 

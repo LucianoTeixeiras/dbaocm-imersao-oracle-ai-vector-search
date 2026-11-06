@@ -11,21 +11,26 @@ Estratégia híbrida de seleção (em uma única passada de decode):
 
 from __future__ import annotations
 
+import contextlib
+import logging
 import re
 import shutil
 import subprocess
 import sys
 from pathlib import Path
+
 from rich.console import Console
 
+from knowledge_extractor.errors import PROGRAMMING_ERRORS, describe
+
 if sys.platform == "win32":
-    try:
+    # Console legado sem reconfigure (ou stream redirecionado): segue com o encoding padrão.
+    with contextlib.suppress(AttributeError, OSError, ValueError):
         sys.stdout.reconfigure(encoding="utf-8")
         sys.stderr.reconfigure(encoding="utf-8")
-    except Exception:
-        pass
 
 console = Console(highlight=False)
+log = logging.getLogger(__name__)
 
 VIDEO_EXTENSIONS = {".mp4", ".mkv", ".mov", ".avi", ".webm"}
 _PTS_TIME_RE = re.compile(r"pts_time:([0-9.]+)")
@@ -52,13 +57,19 @@ def get_media_duration(file_path: Path) -> float:
     try:
         res = subprocess.run(cmd, capture_output=True, text=True, check=True)
         return float(res.stdout.strip())
-    except Exception:
+    except (OSError, subprocess.SubprocessError, ValueError) as exc:
+        log.warning(
+            "ffprobe não leu a duração de %s (%s: %s)",
+            file_path,
+            type(exc).__name__,
+            exc,
+        )
         return 0.0
 
 
 def format_frame_timestamp(seconds: float) -> str:
     """Formata segundos como MMmSSs (ex: 332.2 -> '05m32s' | 32951.0 -> '549m11s')."""
-    total = max(0, int(round(seconds)))
+    total = max(0, round(seconds))
     mins, secs = divmod(total, 60)
     return f"{mins:02d}m{secs:02d}s"
 
@@ -85,7 +96,12 @@ def _compute_dhash(image_path: Path):
             frame = next(container.decode(video=0))
             small = frame.reformat(width=17, height=16, format="gray").to_ndarray()
             return (small[:, 1:] > small[:, :-1]).flatten()
-    except Exception:
+    except Exception as exc:  # PyAV opcional; FFmpegError/StopIteration/ImportError: só desliga a deduplicação deste frame
+        if isinstance(exc, PROGRAMMING_ERRORS) and not isinstance(exc, ImportError):
+            raise
+        log.warning(
+            "Hash perceptual indisponível para %s (%s)", image_path.name, describe(exc)
+        )
         return None
 
 
@@ -114,10 +130,17 @@ def dedupe_and_anchor(
         if not src.exists():
             continue
         cur_hash = _compute_dhash(src)
-        if cur_hash is not None and last_hash is not None:
-            if _hamming(cur_hash, last_hash) < hamming_threshold:
-                continue
-        ts = pts_times[idx] if idx < len(pts_times) else (kept[-1][1] + 60 if kept else float(idx * 60))
+        if (
+            cur_hash is not None
+            and last_hash is not None
+            and _hamming(cur_hash, last_hash) < hamming_threshold
+        ):
+            continue
+        ts = (
+            pts_times[idx]
+            if idx < len(pts_times)
+            else (kept[-1][1] + 60 if kept else float(idx * 60))
+        )
         kept.append((src, ts))
         if cur_hash is not None:
             last_hash = cur_hash
@@ -149,7 +172,9 @@ def extract_video_keyframes(
         return []
 
     if not is_ffmpeg_available():
-        console.print("[yellow]⚠️ ffmpeg não encontrado no PATH. Extração de frames ignorada.[/yellow]")
+        console.print(
+            "[yellow]⚠️ ffmpeg não encontrado no PATH. Extração de frames ignorada.[/yellow]"
+        )
         return []
 
     output_dir = Path(output_dir).resolve()
@@ -168,8 +193,8 @@ def extract_video_keyframes(
     for old in legacy + (timestamped if force else []):
         try:
             old.unlink()
-        except Exception:
-            pass
+        except OSError as exc:
+            log.warning("Frame antigo %s não removido (%s)", old.name, exc)
 
     # Ajusta o piso temporal proporcionalmente para vídeos longos (> 1h),
     # garantindo que os frames cubram a íntegra da gravação (sem esgotar o cap nas primeiras horas).
@@ -178,7 +203,7 @@ def extract_video_keyframes(
         proportional_interval = int(duration / (max_frames * 1.5))
         if proportional_interval > min_interval_sec:
             console.print(
-                f"[dim]ℹ Vídeo longo ({format_frame_timestamp(duration)}): ajustando piso temporal de {min_interval_sec}s para {proportional_interval}s (~{proportional_interval//60} min).[/dim]"
+                f"[dim]ℹ Vídeo longo ({format_frame_timestamp(duration)}): ajustando piso temporal de {min_interval_sec}s para {proportional_interval}s (~{proportional_interval // 60} min).[/dim]"
             )
             min_interval_sec = proportional_interval
 
@@ -215,8 +240,8 @@ def extract_video_keyframes(
     try:
         result = subprocess.run(
             cmd,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
+            check=False,
+            capture_output=True,
             text=True,
             encoding="utf-8",
             errors="replace",
@@ -225,24 +250,37 @@ def extract_video_keyframes(
             cmd_legacy = [("-vsync" if c == "-fps_mode" else c) for c in cmd]
             result = subprocess.run(
                 cmd_legacy,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
+                check=False,
+                capture_output=True,
                 text=True,
                 encoding="utf-8",
                 errors="replace",
             )
         if result.returncode != 0:
-            tail = (result.stderr or "").strip().splitlines()[-1] if (result.stderr or "").strip() else "sem detalhes"
-            console.print(f"[yellow]⚠️ ffmpeg falhou na extração de frames: {tail}[/yellow]")
+            tail = (
+                (result.stderr or "").strip().splitlines()[-1]
+                if (result.stderr or "").strip()
+                else "sem detalhes"
+            )
+            console.print(
+                f"[yellow]⚠️ ffmpeg falhou na extração de frames: {tail}[/yellow]"
+            )
             return []
-        pts_times = [float(m.group(1)) for m in _PTS_TIME_RE.finditer(result.stderr or "")]
-    except Exception as e:
-        console.print(f"[yellow]⚠️ Erro ao executar ffmpeg para extração de frames: {e}[/yellow]")
+        pts_times = [
+            float(m.group(1)) for m in _PTS_TIME_RE.finditer(result.stderr or "")
+        ]
+    except (OSError, subprocess.SubprocessError, ValueError) as e:
+        log.warning("ffmpeg falhou na extração de frames (%s: %s)", type(e).__name__, e)
+        console.print(
+            f"[yellow]⚠️ Erro ao executar ffmpeg para extração de frames: {e}[/yellow]"
+        )
         return []
 
     raw_frames = sorted(output_dir.glob("_raw_*.jpg"))
     if len(raw_frames) >= raw_cap:
-        console.print("[dim]Teto bruto atingido — trecho final do vídeo pode ficar sub-representado.[/dim]")
+        console.print(
+            "[dim]Teto bruto atingido — trecho final do vídeo pode ficar sub-representado.[/dim]"
+        )
 
     kept = dedupe_and_anchor(raw_frames, pts_times, max_frames=max_frames)
 
@@ -254,14 +292,15 @@ def extract_video_keyframes(
                 dst.unlink()
             src.rename(dst)
             final.append(dst)
-        except Exception:
+        except OSError as exc:
+            log.warning("Frame %s não renomeado; mantido como está (%s)", src.name, exc)
             final.append(src)
 
     for leftover in output_dir.glob("_raw_*.jpg"):
         try:
             leftover.unlink()
-        except Exception:
-            pass
+        except OSError as exc:
+            log.warning("Temporário %s não removido (%s)", leftover.name, exc)
 
     console.print(
         f"[bold green]✓ {len(final)} keyframes distintos prontos com ancoragem [MM:SS].[/bold green]"

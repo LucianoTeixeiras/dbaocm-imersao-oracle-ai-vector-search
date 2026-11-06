@@ -11,7 +11,9 @@ Frames de código/terminal NÃO viram imagem: são melhores como blocos de códi
 
 from __future__ import annotations
 
+import contextlib
 import json
+import logging
 import re
 import shutil
 import subprocess
@@ -23,16 +25,17 @@ from typing import Any
 
 from rich.console import Console
 
+from knowledge_extractor.errors import PROGRAMMING_ERRORS, describe
 from knowledge_extractor.video_frames import extract_timestamp_label
 
 if sys.platform == "win32":
-    try:
+    # Console legado sem reconfigure (ou stream redirecionado): segue com o encoding padrão.
+    with contextlib.suppress(AttributeError, OSError, ValueError):
         sys.stdout.reconfigure(encoding="utf-8")
         sys.stderr.reconfigure(encoding="utf-8")
-    except Exception:
-        pass
 
 console = Console(highlight=False)
+log = logging.getLogger(__name__)
 
 FIGURES_DIRNAME = "figuras"
 MARKER_START = "<!-- figuras:auto:start -->"
@@ -53,8 +56,21 @@ def build_candidate_models(primary: str) -> list[str]:
 
 def _is_transient(exc: Exception) -> bool:
     txt = f"{type(exc).__name__}: {exc}".upper()
-    marks = ("503", "UNAVAILABLE", "429", "RESOURCE_EXHAUSTED", "500", "502", "504", "DEADLINE", "TIMEOUT", "OVERLOADED", "QUOTA")
+    marks = (
+        "503",
+        "UNAVAILABLE",
+        "429",
+        "RESOURCE_EXHAUSTED",
+        "500",
+        "502",
+        "504",
+        "DEADLINE",
+        "TIMEOUT",
+        "OVERLOADED",
+        "QUOTA",
+    )
     return any(m in txt for m in marks)
+
 
 SELECTION_PROMPT = """Você analisa capturas de tela de uma aula técnica gravada e escolhe QUAIS delas merecem virar figura permanente na apostila.
 
@@ -76,13 +92,17 @@ Regras: no máximo {max_figures} figuras; "frame" é o número do Frame informad
 
 def sanitize_slug(text: str, max_len: int = 40) -> str:
     """Converte texto livre em slug kebab-case ascii seguro para nome de arquivo."""
-    ascii_text = unicodedata.normalize("NFKD", text).encode("ASCII", "ignore").decode("ASCII")
+    ascii_text = (
+        unicodedata.normalize("NFKD", text).encode("ASCII", "ignore").decode("ASCII")
+    )
     ascii_text = re.sub(r"[^\w\s-]", "", ascii_text).strip().lower()
     slug = re.sub(r"[-\s_]+", "-", ascii_text).strip("-")
     return slug[:max_len].strip("-") or "figura"
 
 
-def optimize_to_webp(src: Path, dst: Path, max_width: int = 1280, quality: int = 78) -> bool:
+def optimize_to_webp(
+    src: Path, dst: Path, max_width: int = 1280, quality: int = 78
+) -> bool:
     """Converte um frame JPEG em WebP otimizado (~30-50 KB) usando ffmpeg/libwebp."""
     if not src.exists():
         return False
@@ -105,13 +125,29 @@ def optimize_to_webp(src: Path, dst: Path, max_width: int = 1280, quality: int =
         str(dst),
     ]
     try:
-        res = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+        res = subprocess.run(
+            cmd,
+            check=False,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+        )
         return res.returncode == 0 and dst.exists() and dst.stat().st_size > 0
-    except Exception:
+    except (OSError, subprocess.SubprocessError) as exc:
+        log.warning(
+            "ffmpeg falhou ao recortar %s (%s: %s)", dst.name, type(exc).__name__, exc
+        )
         return False
 
 
-def select_figures(client: Any, model: str, keyframes: list[Path], lesson_title: str, max_figures: int = MAX_FIGURES_DEFAULT) -> list[dict]:
+def select_figures(
+    client: Any,
+    model: str,
+    keyframes: list[Path],
+    lesson_title: str,
+    max_figures: int = MAX_FIGURES_DEFAULT,
+) -> list[dict]:
     """Pergunta ao VLM quais frames têm valor visual real. Retorna lista de dicts."""
     if not client or not keyframes:
         return []
@@ -127,10 +163,15 @@ def select_figures(client: Any, model: str, keyframes: list[Path], lesson_title:
         if not kf.exists():
             continue
         label = extract_timestamp_label(kf)
-        parts.append(types.Part.from_text(text=f"[Frame {i:02d}] {label or ''}".strip()))
+        parts.append(
+            types.Part.from_text(text=f"[Frame {i:02d}] {label or ''}".strip())
+        )
         try:
-            parts.append(types.Part.from_bytes(data=kf.read_bytes(), mime_type="image/jpeg"))
-        except Exception:
+            parts.append(
+                types.Part.from_bytes(data=kf.read_bytes(), mime_type="image/jpeg")
+            )
+        except OSError as exc:
+            log.warning("Frame %s ilegível; ignorado (%s)", kf.name, exc)
             continue
 
     try:
@@ -144,11 +185,18 @@ def select_figures(client: Any, model: str, keyframes: list[Path], lesson_title:
                     response = client.models.generate_content(
                         model=model_name,
                         contents=[types.Content(role="user", parts=parts)],
-                        config=types.GenerateContentConfig(response_mime_type="application/json"),
+                        config=types.GenerateContentConfig(
+                            response_mime_type="application/json"
+                        ),
                     )
                     last_exc = None
                     break
-                except Exception as exc:
+                except Exception as exc:  # erros do SDK do Gemini são variados; registrados em last_exc e logados abaixo
+                    if isinstance(exc, PROGRAMMING_ERRORS):
+                        raise
+                    log.warning(
+                        "Seleção de figuras: %s falhou (%s)", model_name, describe(exc)
+                    )
                     last_exc = exc
                     if _is_transient(exc):
                         # Sobrecarga/cota: vale insistir no mesmo modelo
@@ -157,20 +205,33 @@ def select_figures(client: Any, model: str, keyframes: list[Path], lesson_title:
                         continue
                     # Erro definitivo do modelo (404 modelo descontinuado, 400 inválido):
                     # não insiste neste modelo, passa para o próximo da cadeia.
-                    console.print(f"[dim]ℹ Modelo {model_name} indisponível ({type(exc).__name__}) — tentando contingência.[/dim]")
+                    console.print(
+                        f"[dim]ℹ Modelo {model_name} indisponível ({type(exc).__name__}) — tentando contingência.[/dim]"
+                    )
                     break
             if response is not None:
                 if model_name != model:
-                    console.print(f"[dim]ℹ Seleção de figuras via modelo de contingência ({model_name}).[/dim]")
+                    console.print(
+                        f"[dim]ℹ Seleção de figuras via modelo de contingência ({model_name}).[/dim]"
+                    )
                 break
         if response is None and last_exc is not None:
-            console.print(f"[yellow]⚠️ Nenhum modelo de visão disponível agora ({', '.join(tried)}). Detalhe: {str(last_exc)[:160]}[/yellow]")
+            console.print(
+                f"[yellow]⚠️ Nenhum modelo de visão disponível agora ({', '.join(tried)}). Detalhe: {str(last_exc)[:160]}[/yellow]"
+            )
             return []
         raw = (response.text or "").strip()
         data = json.loads(raw)
         figs = data.get("figuras", []) if isinstance(data, dict) else []
-    except Exception as e:
-        console.print(f"[yellow]⚠️ Falha ao selecionar figuras: {e}[/yellow]")
+    except (
+        ValueError,
+        AttributeError,
+        TypeError,
+    ) as e:  # JSON/forma da resposta do modelo
+        log.warning("Resposta inválida na seleção de figuras (%s)", describe(e))
+        console.print(
+            f"[yellow]⚠️ Falha ao selecionar figuras: {type(e).__name__}: {e}[/yellow]"
+        )
         return []
 
     valid: list[dict] = []

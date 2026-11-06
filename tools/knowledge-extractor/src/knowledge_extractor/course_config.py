@@ -6,11 +6,14 @@ orquestrador de pipeline e sincronizador de catálogo.
 
 from __future__ import annotations
 
+import logging
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
 import yaml
+
+log = logging.getLogger(__name__)
 
 
 @dataclass
@@ -33,7 +36,8 @@ class CourseConfig:
     description: str = "Caderno técnico e documentação avançada de engenharia."
     syllabus_ref: str = ""
     language: str = "pt-BR"
-    audio_language: str = "pt"
+    audio_language: str | None = None  # None = auto (Whisper detecta)
+    keep_terms: list[str] = field(default_factory=list)
     modules: dict[str, ModuleConfig] = field(default_factory=dict)
     root_dir: Path = field(default_factory=Path.cwd)
 
@@ -57,7 +61,10 @@ class CourseConfig:
         if target.exists() and target.is_file():
             try:
                 return target.read_text(encoding="utf-8")
-            except Exception:
+            except (OSError, UnicodeDecodeError) as exc:
+                log.warning(
+                    "Ementa %s ilegível (%s: %s)", target, type(exc).__name__, exc
+                )
                 return ""
         return ""
 
@@ -80,7 +87,9 @@ def load_course_config(start_dir: Path | None = None) -> CourseConfig:
         return CourseConfig(root_dir=root)
 
     try:
-        data: dict[str, Any] = yaml.safe_load(cfg_file.read_text(encoding="utf-8")) or {}
+        data: dict[str, Any] = (
+            yaml.safe_load(cfg_file.read_text(encoding="utf-8")) or {}
+        )
         raw_course = data.get("course", {})
 
         raw_modules = data.get("modules") or raw_course.get("modules") or {}
@@ -122,9 +131,15 @@ def load_course_config(start_dir: Path | None = None) -> CourseConfig:
 
         raw_lang = raw_course.get("language", "pt-BR")
         raw_audio_lang = raw_course.get("audio_language")
-        if not raw_audio_lang:
-            # Deriva o idioma padrão do áudio se não especificado
-            raw_audio_lang = "en" if str(raw_lang).lower().startswith("en") else "pt"
+        from knowledge_extractor.language import normalize_lang
+
+        # audio_language: 'auto'/ausente -> None (detecção real pelo Whisper)
+        raw_audio_lang = normalize_lang(raw_audio_lang)
+        keep_terms = [
+            str(t).strip()
+            for t in (raw_course.get("keep_terms") or [])
+            if str(t).strip()
+        ]
 
         return CourseConfig(
             id=raw_course.get("id", "generic-course"),
@@ -135,8 +150,16 @@ def load_course_config(start_dir: Path | None = None) -> CourseConfig:
             syllabus_ref=raw_course.get("syllabus_ref", ""),
             language=raw_lang,
             audio_language=raw_audio_lang,
+            keep_terms=keep_terms,
             modules=modules_map,
             root_dir=root,
         )
-    except Exception:
+    except (OSError, ValueError, TypeError, AttributeError, yaml.YAMLError) as exc:
+        # course.yaml malformado (ex.: lista no lugar de mapa) não deve derrubar o CLI.
+        log.warning(
+            "course.yaml inválido em %s; usando padrões (%s: %s)",
+            root,
+            type(exc).__name__,
+            exc,
+        )
         return CourseConfig(root_dir=root)
