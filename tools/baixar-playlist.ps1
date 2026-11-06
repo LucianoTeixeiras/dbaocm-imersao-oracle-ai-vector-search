@@ -69,5 +69,8 @@ if ($OutputDir) { $cliArgs += @("--output-dir", $OutputDir) }
 if ($Cookies) { $cliArgs += @("--cookies", $Cookies) }
 if ($MaxHeight -and $MaxHeight -ne 1080) { $cliArgs += @("--max-height", $MaxHeight.ToString()) }
 
+# Argumentos adicionais repassados para contornar desafios do YouTube (android/ios/web player)
+$cliArgs += @("--", "--extractor-args", "youtube:player_client=android,ios,web")
+
 Write-Host "Executando: uv $($cliArgs -join ' ')" -ForegroundColor Cyan
 & uv @cliArgs

@@ -135,6 +135,9 @@ def download_youtube(
 
     cmd = resolve_ytdlp_cmd()
 
+    # Configura cliente android/ios/web para contornar bloqueio n-sig / bot do YouTube
+    cmd.extend(["--extractor-args", "youtube:player_client=android,ios,web"])
+
     # 1. Modo Listagem
     if list_only:
         if not quiet:

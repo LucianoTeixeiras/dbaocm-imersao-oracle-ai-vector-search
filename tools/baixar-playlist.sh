@@ -128,6 +128,7 @@ fi
 
 if [[ "$MODO" == "--audio" ]]; then
   exec "${YTDLP_CMD[@]}" \
+    --extractor-args "youtube:player_client=android,ios,web" \
     ${COOKIES_ARGS[@]+"${COOKIES_ARGS[@]}"} \
     -x --audio-format mp3 \
     --embed-metadata \
@@ -139,6 +140,7 @@ fi
 
 # Download padrão: vídeo em até Full HD + melhor áudio, mesclado em MP4
 exec "${YTDLP_CMD[@]}" \
+  --extractor-args "youtube:player_client=android,ios,web" \
   ${COOKIES_ARGS[@]+"${COOKIES_ARGS[@]}"} \
   -f "bv*[height<=1080]+ba/b[height<=1080]/bv*+ba/b" \
   --merge-output-format mp4 \
