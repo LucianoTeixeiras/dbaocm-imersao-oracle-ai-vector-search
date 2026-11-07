@@ -1,0 +1,974 @@
+trabalho na área de TI vai fazer uns 10 anos mais ou menos
+eu entrei ali como suporte de TI fazendo as coisas básicas
+aí fui escalonando, cheguei a fazer minha faculdade
+comecei a brincar um pouco com programação
+mas não era uma coisa que eu gostava muito
+e na faculdade eu já via que eu podia muito bancos de dados
+mas a vida sempre foi levando com um caminho diferente
+então sempre fui para a programação
+até que uma coisa que eu gostava muito
+eu gostava muito e50 anos a trás para ler os
+alguns que eu não gostava
+conheci adbb ao CM e comecei a ingressar na carreira de bancos de dados
+no saber diferenciar datapile tem boa espécie
+para a minha toda a mesma coisa
+ali depois de um ano mais ou menos estudando ali
+acetando os estudos ali com isso que uma avalha de adbb a junha
+hoje é, todos os empresas que eu trabalho do Alcivil Lai
+Areaем de aula, mas ainda bem
+antes do Alcivil não tinha nenhuma certificação
+Eu tinha mais diploma de curso que eu ia fazendo na UDMAI, a DBLCM, eu ia fazendo curso aqui ali,
+mas a certificação zero, nada, nada.
+Porque eu decidi, quando eu via você me falando muito, né, ou a CP é o CP por legal, legal,
+vou tirar, vai ser minha, não.
+E só fazendo comentável, nas entrevistas que eu fiz, uma coisa bem legal,
+sempre que falava assim, eu estou estudando, aí isso me pergunto.
+Mas aonde você estava estudando?
+Eu faço a DBLCM, pro Sr. Guilherme, aí o entrevistador, ele fala, conheço, já vi,
+ou ele fala, cara, tem um DBLCM aqui, ele comentou sobre isso por legal,
+eu sei que o negócio é bom, sabe? Isso é uma coisa muito legal, sabe?
+Somente eu sou analista de sistemas, já estou também na área de BI.
+Eu tenho aproximadamente uns 4 anos na área de tecnologia,
+entender toda a arquitetura do Orco, sem grenagem, ele possui, foi essencial, cara.
+Usam linguagens que é praticamente o inteiro, então tu gira no relatório do tempo inteiro.
+Então, eu comecei a procurar cursos e tudo mais, e me apareceu a DBLCM,
+um anúncio me engano, foi no Facebook, e aí eu falei, eu preciso conhecer isso.
+Hoje eu trabalho com o DBLCM, não trabalho só com Orco,
+eu trabalho com vários engenhos, mas que é ele, poxa,
+e o Orco é do parque lá, é 80% ou 90% do parque de empresa,
+mas a estificação mesmo é a primeira, e foi essa da Orco aí,
+é o CPT inteiro, 80 euros. Eu trabalhava com mais que é ele,
+já sou DBA, que foi uns 4 anos e pouco, já, uns 4 anos e meio.
+E eu trabalhava com mais que é ele, não eu tenho empreito.
+E eu pegou em um momento que eu vi com mais que é ele, ele é um banco legal,
+se você usar corretamente para os propósitos que tem que ser usado,
+mas não ia me dar muito desenvolvimento de carreira, sabe,
+o pareio já era DBA, mas que era um dos dois anos e pouco.
+E aí eu decidi me ligar para a Orco, porque no Orco eu consigo ver um planejamento de carreira maior,
+mandei manda maior, acho que o nível das empresas também,
+que trabalha a Orco, não só empresas pequenos,
+embora empresas pequenas num ramo de TI gera muito dinheiro,
+mas em termos de parque, de estrutura, eu acho que ainda deixa a desejar,
+assim como o Orco é bem mais complexo, para administrar,
+para até instalar o Orco, você tem que não é simples,
+mas que é ele ser rápido de estalar ali, nenhum vai embora.
+Aí eu falei não, eu não vou ter esse títico de ficar só lendo documentação,
+então eu vou comprar um post aqui, eu pesquisaia um cheio de DBA,
+e para entrar já com algum nível na empresa, algum conhecimento.
+E aí comecei a fazer um posto, aí fiz os módulos bem rápido,
+ao modo da 1982, os dois cursos eu fiz bem rápido,
+mas não focar no insestificação ainda,
+crieu, conheceu o banho, depois que eu entrei no DBA,
+passei um mês, hoje eu estava no PagBank,
+aí surgiu uma vaga lá, de DBA, Junho,
+de Orco, peguei entrei no processo,
+como já tinha estudado um pouquinho, não estava tão cru,
+a vaga também era para a Junho, aí casou,
+aí é desde o momento que eu entrei lá,
+o momento que eu tenho experiência com Orco.
+Sejam muito bem-vindos a nossa emmerção,
+Oracle Database com o IA, quem tiver me ouvindo,
+digita a cidade de onde você está falando,
+para poder saber se o áudio está chegando legal,
+vocês estão conseguindo me ouvir bem,
+e se prepare, que realmente isso vai ser um final de semana,
+é incrível, eu vou falar para vocês,
+que se a gente vai mostrar, realmente,
+algumas coisas aqui, que talvez vocês nunca tenham visto,
+eu quero fazer algo muito interativo para entregar
+o máximo que eu puder para os participantes.
+Então, pessoal, quando eu abri algumas oportunidades,
+aqui para a gente poder conversar,
+aproveita esse momento como um aumentoria para vocês,
+aproveita esses momentos para dizer
+qual é a expectativa de vocês,
+o que vocês querem sair daqui resolvidos,
+qual é a sua expectativa para esse evento de dois dias?
+E eu vou fazer exatamente isso agora,
+pessoal, antes de começar, eu quero ouvir vocês.
+Então, aqui no Zoom, existe uma opção de levantar a mão,
+que a primeira coisa do dia,
+eu quero ouvir vocês para entender,
+o que você quer sair daqui resolvido nesses dois dias?
+E eu vou te falar,
+o que a gente já tem testado aqui,
+com certeza, vai te ajudar muito, tá?
+Então, vendo aí que tem uma galera que já tá
+aí no chat junto comigo,
+Show de Bolo, Ricardo, Bissolha, de cachoeirinho,
+o Bruno de Curitiba, o Caio de Recife,
+o Thiago de dois irmãos Rio Grande do Sul,
+Luís de São Paulo, Washington de Paulista,
+um rique de São Paulo, Luciano de Steil,
+cara muito legal, muito legal,
+pessoal, seja muito bem-vindos,
+vai ser um prazer realmente contribuir com vocês.
+Pessoal,
+eu vou dar essa oportunidade aqui pra vocês,
+vou mandar a sobressitação aqui
+para alguns participantes, tá?
+Quem quiser falar, levanta a mãozinha,
+mas eu vou trazer essa oportunidade aqui pra vocês
+pra entender o que você quer sair daqui resolvido, tá?
+E aí, em cima disso,
+a gente vai fazer um bate-papo aqui
+pra gente começar do melhor jeito possível, cara.
+Vamos direta ao ponto naquilo
+que vocês querem ver, eu vou dar um direcionamento
+pra você falar agora no período da manhã,
+no período da tarde,
+a manhã que horas que a gente vai falar
+exatamente esses temas, tá?
+Então, estou vendo aí, ó, que tem o alano,
+a idio, a gnaldo, o Bruno Rocha,
+a Barbara Godoy,
+eu quero entender realmente
+qual que é o nível de vocês
+sobre inteligência artificial
+e eu quero entender exatamente
+o que vocês querem sair daqui resolvidos
+pra que a gente consiga te ajudar o máximo, tá?
+Estou vendo que o Claudio ta inária,
+o Diogo, o Edmary Gerson,
+George Bolo, Luiz,
+o Jonathan,
+o Enrique Soares,
+John Skito, ta inária,
+Josué,
+muito bom, pessoal,
+muito elegante poder ver a nossa sala cheia aqui,
+pessoal, quem quiser falar, levanta a mãozinha,
+ta vendo que o caio aí,
+já levantou a mão,
+tudo bom, caio, bom dia,
+bom dia, pessoal,
+bom, tudo bom, meu irmão, prazer falar que o tigo o caio,
+você fala de onde o quantidade
+é ressife, que legal, caio.
+E vamos lá, meu amigo, muito bom ter você aqui,
+que era saber qual é esse expectativa
+e personal de semana,
+o que você quer sair daqui resolvido?
+Bom, eu queria basicamente entender,
+assim, se, atualmente, eu estou usando iado,
+o jeito certo, com banco de dados,
+atualmente, assim, já tem um ano e meio que eu utilizo,
+mas não sei se é do jeito certo.
+Bom, ok?
+Então, porque assim, a gente vai pegando,
+é fórums na internet,
+material,
+mas a gente, eu não sei se eu estou aplicando
+o meio correto,
+já ta me ajudando bastante,
+mas eu queria,
+assim, ela bancar mais.
+Olha, você pode ter certeza que aqui você vai ver o jeito certo,
+vou te falar que tem até alguns mitos aqui que a gente comenta,
+muitas pessoas chegam no canal e falam assim,
+no nosso canal do Youtube.
+Ah, nunca conecte o maia no banco de dados, né?
+E se fosse assim, por que que a orgulho criou um MCP?
+Um MCP oficial da orgulho pra você conectar.
+Então, é possível, sim, utilizar,
+mas tem que utilizar do jeito certo,
+é aquilo que você falou.
+E às vezes tem coisas que a gente não deveria colocar,
+por exemplo, dentro do prompt,
+tem coisas que a gente não deveria, por exemplo,
+tem que pegar uma playlist de cliente,
+com CPF, com dados sensíveis,
+e a rasta ali pra dentro de um cloud,
+cara, isso não pode fazer,
+tem outras formas de fazer isso melhor,
+dá pra você rodar ele em local,
+dá pra você criar agentes,
+tem coisa que nem sempre você vai utilizar
+e a generativa vai se utilizar e a preditiva,
+tá? Então,
+essa parte de Machine Learning,
+de Pillurn,
+cara, isso é coisa que não é de agora, né?
+Então, tem muito a evidência agora de LLM,
+de A generativa,
+mas tem várias coisas que podem ser utilizadas antes, tá?
+Então, cair, você pode ficar tranquilo, cara,
+a gente vai conseguir districhar muito bem o
+que qual o jeito certo,
+qual que é o jeito errado,
+e principalmente nele,
+qual que é o seu nível atual, tá?
+Hoje, por exemplo, você já conecta no Oracle
+utilizando MCP?
+Não, não conecta.
+Basicamente, o que eu faço?
+Eu faço análise, por exemplo,
+eu pego rapidamente um molotlog,
+joga no Cloud,
+mas tem um diagnóstico rápido para poder
+já adiantar o trabalho,
+não é?
+Faça aquele o Explan todo pelo Cloud,
+mas pelo como é que eu posso dizer,
+pelo chat,
+não conecta ainda na máquina,
+por esse receio.
+Entendi, entendi.
+Não, você pode ficar tranquilo, cara,
+você vai ver exatamente como empresas grandes aqui,
+hoje a gente tem mentorados que trabalham na B3,
+no Santander,
+no Itaú, no PagBank,
+que estão utilizando o JetSeto.
+Então, fazer exatamente os critérios,
+utilizando MCP o JetSeto,
+limitando o privilégio para os usuários,
+entendendo o que eu vou fazer com esse assistente de A.
+Então, existem todas as definições ali
+que a gente vai estar percorrendo
+para você ficar seguro de falar,
+olha, eu estou usando a melhor forma possível.
+Pode ficar tranquilo que isso vai ser
+bem possível ali, você vai visualizar claramente,
+e tiver dúvida, cara, levanta a mão,
+coloca aqui no chat,
+que a gente vai conseguir te apoiar.
+Beleza?
+Não, tranquilo, valeu.
+Vermão, bom falar que o tio, cara,
+seja bem-vindo aí na semerção, viu?
+Estamos juntos.
+E vamos lá, Luciano,
+tem cheira.
+Tudo bom, Luciano?
+Bom dia.
+Bom dia, um dia pessoal, um dia todos,
+muito claro.
+Por exemplo, falar que o tio...
+A gente fala um pouco.
+E agora, falando...
+Nete?
+Mesmo remoto, mais cara, cara.
+Verdade.
+Fica um pouquinho mais próximo, né?
+Legal.
+E você fala de onde Luciano?
+Eu falo de esteio, no Rio Grande do Sul.
+Que legal.
+E qual que o seu expectativa é, irmão,
+para essa imensão?
+Cara, como a gente trocou com
+umas mensagens durante semana, né?
+Então o oraco foi minha escola, cara.
+Eu trabalhei, comecei a trabalhar com o oraco
+em 1996.
+E de lá para cá, assim,
+eu devo...
+A minha carreira,
+eu devo tudo que eu tenho a conhecimento de oraco
+que eu aprendi.
+A minha ideia, agora,
+é ao longo dos últimos anos, né?
+Fiz algumas...
+Pós graduações com Foca Inteligência Artificial,
+veio trabalhando diariamente com
+construção de soluções, com orientáveis, né,
+com Inteligência Artificial, com IA, né?
+Foca muito ali na gestão da economia
+de Tolkien e a estrutura ali que a gente
+pode ter, né, de apoio ali,
+principalmente com Inteligência
+quasi às locais, né, com os SLMs.
+E a minha ideia, assim,
+é poder abrir mais mercado de opções,
+assim, né, mais opções de mercado
+para a prestação de serviço.
+Então, assim...
+Eu confesso que nos últimos anos,
+eu participei de um projeto muito grande
+numa consultoria com Foca em segurança
+e segurança pública do Estado Espírito Santo.
+E a voz era hora, como é assim,
+é só consumo, né?
+Não seja, a gente tinha ali
+uma estrutura de caldera
+que batia no transacional que era
+hórico do Estado inteiro,
+dos todas as delegacias,
+e isso já fazia uns dois anos, assim.
+E de lá para cá, né,
+foi o projeto com hórico, assim,
+que me remeteu ao meu início de carreira
+lá em 96.
+Mas tirando tudo isso,
+a ideia principal é isso,
+é poder estar próximo da hora com essa...
+com essa atualização, digamos,
+assim, do autônomo, com essa atualização de
+MCP, eu uso isso no meu dia a dia
+para a criação de aplicativos,
+para a construção.
+Eu construí três projetos de fim a fim
+com a ajuda de DA, de DW,
+de Postgreza,
+estrutura de Delta Lake na data bricks.
+Então, assim,
+poder ter esse contato de volta com a hora
+e o que ela tem para proporcionar, né,
+dado todo o histórico do produto
+mais agora em inteligência artificial,
+é o principal ponto que...
+né, que é a minha...
+Principal expectativa.
+Que legal, é que legal.
+Eu vou te falar que a gente vai trazer uma visão
+estratégica aqui para você, Luciano,
+de como que diversos profissionais
+que trabalham com o Oracle podem utilizar
+a inteligência artificial.
+Então, como que o cara que faz um selecto ali,
+como o cara trabalha com pele à scale
+desenvolve melhor utilizando?
+E, adentro do Oracle cometodologias,
+como que a gente pode criar esquios e agentes
+para fazer o trabalho do Oracle mais rápido
+por a performance,
+um projeto de aplicação de pete,
+particionamento, segurança...
+Como que dá para fazer isso melhor?
+Até chegar no ponto de falar assim,
+olha, vamos utilizar as novas fítios agora
+de criar os agentes dentro do banco de dados.
+E aí, a gente começa
+ir para um outro nível, né,
+porque realmente a gente consegue...
+A gente consegue aprofundar a cara de um jeito
+que a gente consegue apoiar até mesmo as áreas de negócio.
+A gente consegue falar assim, olha,
+não só fazer o trabalho de tecnologia
+mais rápido que já é bom para caramba,
+mas como que a gente consegue,
+criar uma gente ali para dar suporte,
+para responder dúvidas,
+para poder apoiar o time de vendas,
+o time de marketing, tirar dúvida do pessoal,
+então dá para fazer isso também dentro do banco de dados,
+tem muita coisa legal.
+Pode ter certeza que a gente vai trazer
+quatro práticas hoje, quatro práticas a manhã
+e a manhã, cara,
+vou te finalizar com o Apex,
+com o IAR, dentro do Oracle.
+Que porra...
+Eu vou te dizer que é uma coisa
+que é o Apex.
+Eu sempre quis trabalhar com Apex,
+mas nunca tive a oportunidade,
+nunca consegui me especializar,
+porque é sempre correndo para outros lados
+e, cara, até é uma coisa que...
+que remete nisso de carreira também.
+Que legal.
+E vou te falar aos resultados das eleições
+que o Brasil todo tava acompanando,
+tava rodando com a estrutura de Apex,
+a data com Apex.
+Então, cara, é algo que suporta porrada para caramba,
+é algo que ajuda muito e muitas vezes
+a gente mostrar melhor o nosso trabalho,
+de pô, gerar uma telinha, mostrar um sistema,
+mostrar um dashboard legal.
+Isso é em cantos olhos da área de business,
+da área de...
+Então, você pode...
+Desculpa tomar...
+Às vezes eu me empolgo e falar, mas assim...
+É para isso não.
+Ai, eu tenho que subir uma planilha,
+que é uma coisa que o cara não foge.
+Da condição do usuário,
+subir uma planilha tendo uma telinha,
+em feita, isso é em cantos, cara.
+Com certeza, cara.
+Quando você chega para um gestopo,
+um cara que não é tão técnico,
+ou para o time da área de negócio,
+mostra uma telinha,
+cara, você vai ganhar alguns pontos,
+eu acompanho a Apex,
+o Apex desde a época do HTMLDB.
+Então, sou meio suspeito para poder falar sobre isso,
+mas a gente vai ter algo muito legal amanhã,
+se prepara e que realmente a reta final
+a gente vai entregar um uoro de aplicações,
+apicos com o IAL que tem de novo.
+Seja bem-vindo, viu?
+Prazer ter você aqui com a gente, por favor, irmão.
+Estamos juntos.
+Jones, que tu? Tá na área, Jones.
+Opa, tu para quê?
+E aí, tu?
+Eu vou de bola, meu irmão.
+Prazer falar contigo, Jones.
+Para quem não te conhece,
+fala de onde costidade?
+Hoje de...
+Vila velha.
+Que legal, meu irmão.
+E vamos lá, Jones. Qual que é esse expectativa
+aí para a semversão, meu irmão?
+Ai, eu tenho muito expectativa.
+Sim, hoje eu já uso a IAL no dia a dia
+para me auxiliar as atividades, né?
+Veja que essa era muito...
+As minhas tarefas, mas eu tenho a percepção
+de que eu estou muito longe de explorar
+todo o potencial que ela pode oferecer.
+Então, eu tenho uma expectativa de conhecer
+mais sobre as possibilidades
+da IAL na minha função, principalmente a minha função,
+que eu ganhei o pão.
+E tenho também algumas dúvidas
+que eu quero entender como é que se usa
+no dia a dia.
+Por exemplo, sobre risco de conectar
+ela o banco de produção,
+é forma segura de fazer isso.
+Hoje o conecto ela em banco de laboratório,
+de teste, brinco um pouquinho ali,
+mas ainda não tive na coragem
+de conectar no banco de produção.
+E aí essa sem missão,
+desse final de semana,
+para mim vai ser principalmente útil
+para ter essa percepção
+e como usar ela,
+como que eu posso fazer isso
+de forma segura para melhorar
+minha performance profissional.
+Ah, que legal.
+Legal ou, John,
+que a gente vai fazer aqui
+estudos de caso, né?
+A gente vai trazer exatamente cenários falando.
+Olha, para essa situação,
+crie-os vários somente eleitura
+porque ele vai ser essa produção.
+Ou esses são os privilégios necessários
+para poder fazer esse tipo de atividade.
+Então, é muito bom, cara,
+a gente ter essa clareza desses princípios de segurança
+que vai fazer com que a gente consiga
+utilizar a iado jeito certo, né, cara?
+Porque não dá para a gente
+colocar um estagiário conectado em produção
+para deixar ele fazer aquele quiser, né?
+E com a iado da mesma forma.
+É entender quais são os limites,
+quais são os critérios,
+como que a gente faz isso de forma segura.
+E muitas vezes a gente acha que
+segurança está só na camada da iar.
+Não.
+Segurança são diversas camadas
+desde o acesso físico ou data center.
+Eu lembro que eu tive,
+uma vez eu atendi o Santander
+em dois data centers,
+o da Argentina e o de Campinas.
+E o data center de campinas, cara,
+um data center super estruturado.
+Eu lembro que você pegava até um carrinho de wolf
+e você passava por três, quatro portas
+da identificação até chegar na equipamento.
+Cara, isso é segurança.
+Isso é segurança do livro físico.
+Agora, tem segurança a nível de tempo personal,
+segurança a nível de banco, a nível de equeração de usuários,
+a nível de privilégios
+e tem vários recursos de segurança do oro
+que vão fazer com que a gente consiga
+fazer de forma segura, né?
+Então, cara, você pode ter certeza.
+Você vai conseguir distrinchar e entender.
+Cara, como que eu consigo
+fazer utilizado o jeito certo,
+segurança,
+e vendo o que pessoas de grandes empresas estão fazendo?
+Por exemplo, a análise de performance,
+cara, para a produção,
+das coisas menos intrusivas.
+Por que, cara, você não vai dar nem privilégio de DNA.
+Você vai dar simplesmente privilégio
+no catálogo interno,
+pelo poder ver algumas v dollars de performance
+e você vai conseguir
+já trazer sites ali,
+muitas coisas interessantes.
+Então, o legal é isso, cara.
+Vamos falar?
+Não, não, não.
+Então, então.
+E aí, a gente vai começar a ver que tem coisa
+que dá para te botar para ir a fazer
+e tem coisa que ela vai ajudar
+a muita gente no planejamento.
+Então, por que tem coisa que...
+Eu vou pedir para ir a planejar
+e fazer me ajudar a executar um tipo de atividade.
+Então, pode ter certeza que vão ter
+muitos insights aqui
+nesse final de semana, beleza?
+Seja bem-vindo, meu irmão Monten, você aqui.
+Valeu, obrigado.
+Estamos juntos.
+Gerson, tudo bom, Gerson?
+Bom dia?
+Está na área de Gerson.
+Sua câmera está fechada.
+Luís Flávio levantou a mão.
+Vou chamar mais uma pessoa que só está a pessoa.
+Para a gente já não atrasar aqui no nosso conteúdo.
+Porque agora, de manhã, se já vão ver que vai ter
+muita prática e muito amor na massa.
+Luís Flávio mandou a solicitação,
+aí está Luís Flávio.
+Você declinou a minha solicitação.
+Mas, beleza, talvez você tenha levantado a mão
+aí por engano.
+O Gerson também aparentemente não ligou aqui a câmera.
+Está tudo bem.
+E vamos lá, pessoal.
+Então, vamos começar.
+Foi muito legal a gente poder ouvir que
+tem várias pessoas aqui, cara,
+de que atuam com a hora que não com expectativas
+boas para esse evento.
+E que pode ter certeza.
+A gente vai surpreender bastante.
+Acho que faz a nossa inmersão ser tão diferente
+dos cursos tradicionais.
+É que a gente se preocupa muito e ouvi vocês.
+É que a gente sabe realmente...
+A gente consegue entender aquilo que você está buscando
+para que a gente consiga
+te apoiar e mostrar exatamente aquilo que você quer ver.
+Pessoal, quem não levantou a mão
+fique ligado.
+Porque, às vezes, você está deixando de ter uma oportunidade.
+Eu poderia fazer isso tocar em um assunto
+que você gostaria especificamente.
+Por conta desse bate-papo aqui.
+Então, quanto mais você levantar a mão
+e nos momentos interagir com a gente?
+Mas eu vou conseguir te ajudar.
+Eu vou falar que eu possa até mudar a programação
+se algumas pessoas tiverem pedindo alguma coisa
+que eu não tinha separado aqui.
+Então, a gente está em contato com mais...
+Hoje, nós temos mais de cinco mil alunos.
+A gente tem ajudado muitas pessoas a implementar
+e o potendente que participa dessa inversão aqui.
+A gente que trabalha na NASA aqui.
+Só para você ter ideia que trabalha no que mora na Europa.
+Então, a gente tem vários participantes inclusivos
+e internacionais que a gente consegue entender.
+O que eles estão fazendo, como eles estão fazendo,
+como que a gente pode instruir
+e apoiar as pessoas nessa atuação de projetos.
+Então, muitas vezes você deixando de participar
+de levantar a mão, cara, você está deixando de aprender para caramba.
+E quanto mais você perguntar,
+mais a chance desse evento atender seus expectativas.
+Se você ficar quieto com a câmera fechada
+e não perguntar nada,
+as chances de você ter um bom proveito nessa inversão
+vão ser muito menores, tá?
+Pode ter certeza.
+Então, vamos lá, pessoal.
+Sejam muito bem-vindos a inversão o Oracle Database com o A.
+Essa aqui são a lista de algumas das empresas
+que estão participando nesse final de semana aqui com a gente.
+Talvez você está vendo aqui alguma das empresas aqui
+que você trabalha, que você já trabalha.
+Então, nesse final de semana,
+a gente tem centenas de pessoas que estão querendo jogar
+esse jogo do Oracle com o A.
+A gente vai trazer para vocês muita prática,
+muita monamassa e estudos de caso.
+Primeiro dia, pessoal,
+eu vou falar muito do conceito
+de trabalhar com,
+trabalhando da forma do AI First.
+A gente vai falar um pouquinho sobre isso.
+Então, agora no período da manhã,
+a gente já vai colocar a monamassa.
+Vocês vão ver que eu vou utilizar OCI
+e a gente já vai começar a fazer algumas configurações
+que muitas pessoas aqui, muitas vezes, não sabia,
+até o próprio cara que falou que não está utilizando MCP ainda.
+A gente já vai fazer a configuração do MCP, entendeu?
+O que é rádias?
+Como que o profissional hoje consegue trabalhar
+com essa mentalidade AI First?
+E vou falar para vocês,
+o nosso modo desafio da AI
+não é nem a parte técnica, cara.
+É a parte de cultura e mentalidade.
+Porque se a pessoa não tiver uma cultura de entender
+que aí há uma ferramenta de acontabilidade,
+de responsabilidade,
+de por você ser o cara que está hoje
+um nível até mais estratégico,
+porque é muita coisa operacional
+o AI faz para você
+de conseguir passar o seu conhecimento, cara.
+Eu acredito, cara.
+Eu vou falar para vocês,
+porque muitas vezes,
+muita gente vai travar nisso.
+Eu acredito que para você sair de junho,
+para planos,
+você tem que passar tudo que você sabe,
+como o júlio promota,
+a pessoa fica num solo lugar.
+Até para você ter espaço mental
+e tempo também,
+para poder estudar coisas novas.
+Então, tem gente, cara,
+que não gosta de passar conhecimento
+e é meio que uma algema de ouro, cara.
+Que vai te manter sempre no nível abaixo
+do que você poderia,
+porque você sempre está preso
+aquela atividade que você faz hoje,
+não é que você poderia estar
+como uma evolução.
+Você quer sair de pleno e para serem?
+Ensina tudo que você sabe como pleno
+para uma outra pessoa.
+Se você quer ser um cara
+que vai ser um promovido na era da AI,
+cara,
+treino uns agentes para fazer o seu trabalho
+que você faz hoje.
+E tem gente hoje, cara,
+que ainda tem medo de passar conhecimento?
+Tem gente que está com medo de perder
+o trabalho para iar.
+E na minha visão,
+os maiores problemas do mundo hoje
+se resume a escassez, cara.
+Abundância e escassez.
+Então, tem dois tipos de pessoas
+que tem dentro do mercado hoje.
+Aquela pessoa que está vendo
+tem trabalho finito
+e que está se divertindo para caramba
+na era da AI,
+e aquela pessoa que está com medo
+de ser demitida, tá?
+Isso aqui que eu estou falando,
+pessoal, não é uma barreira técnica.
+É uma barreira de mentalidade
+e comportamento, cara.
+Que se você não tivesse a cultura
+de como trabalhar a AI,
+foi tudo o que está chegando
+para mim de demanda,
+todos os chamados que eu atendo
+todas as semanas.
+Como que eu posso fazer isso
+dez vezes mais rápido com o IA?
+Se você não tivesse a cabeça,
+eu posso fazer a melhor inerção
+do mundo mostrar todas as técnicas.
+Se você tivesse a cabeça travada
+na escassez
+e não tivesse a mentalidade de AI,
+foi você, vai ficar para trás.
+Você não vai implementar.
+Você vai ver que eu vou mostrar um monte de coisa
+e você não vai implementar.
+Então a gente vai falar muito sobre isso
+nesse primeiro dia, tá?
+O nosso almoço vai ser de 1,5 a 1,30.
+Depois do almoço,
+eu vou falar um pouco sobre
+algumas novas features do Oracle 26 AI,
+que é o SELECT AI,
+como você configura isso
+dentro do banco de dados.
+A gente vai falar sobre prómpito,
+o que é um prómpito de ruim,
+de elite prómpito,
+o que é um prómpito de bom,
+o que são skills?
+Como que a gente já pode utilizar
+skills nessa parte de SKL,
+de PLSQL,
+a gente vai falar um pouquinho
+sobre spec driving
+de development com AI,
+que vai complementar muito
+que a gente vai falar a manhã
+também sobre Apex.
+Cara, o primeiro dia,
+você já vão ver que vai explodir
+as possibilidades
+para qualquer personal que trabalha
+com banco de dados.
+Seja o desenvolvedor,
+o analista, o engenheiro de dados,
+o cientista,
+o DBA,
+cara, o personal de infraestrutura.
+Se você trabalha na empresa
+que tem Oracle,
+sua cabeça vai explodir
+agora, no primeiro dia,
+que a forma como você trabalhava
+há cinco anos atrás
+mudou totalmente.
+A forma como você está
+trabalhando em 26,
+de 2017,
+é uma forma totalmente diferente
+de como que você trabalhava
+em 2021, por exemplo.
+Tá?
+Se você não entender isso, cara,
+eu posso fazer as demonstrações
+mais bonitas do mundo.
+Você não vai ter
+a segurança, o argumento
+para poder trazer isso
+dentro da empresa que você trabalha.
+Tá?
+E aí, pessoal?
+No dia 2,
+a gente vai falar um pouco
+sobre arquitetura na era da IA.
+A gente vai falar um pouquinho
+sobre como que a gente consegue
+rodar as LLMs local,
+quando utilizar uma PI,
+qual a diferença de utilizar a PI
+ou fazer com os créditos da sua conta,
+por exemplo,
+de um cloud,
+de code,
+a gente vai mostrar
+um pouquinho sobre rague,
+que são recursos do Oracle 26AI,
+a gente vai trazer
+cenários reais
+de problemas
+que por qualquer empresa
+que utiliza Oracle tem
+sobre performance.
+Cara, vocês vão ver
+exatamente como a gente
+pode utilizar a IA
+para resolver esse tipo de problema.
+A gente vai mostrar
+uma funcionalidade nova
+que é o Select AI Agente.
+Essa funcionalidade,
+pessoal, você cria a gente
+dentro do banco de dados.
+Tá?
+Se de tempo,
+vou até mostrar uma ferramenta
+no cloud da Oracle,
+que é o Oracle Agente Factory.
+Vocês vão ver ali, cara,
+com a ferramenta incrível,
+que mesmo se você não quiser
+ficar por resolver o código
+para criar agentes,
+você pode fazer isso arrastando
+através de uma ferramenta
+que é um orquestrador de agentes.
+Vou falar bastante sobre segurança
+no segundo dia,
+porque eu não dá pra gente falar de arquitetura
+sem falar de segurança.
+Tá?
+E a gente vai fechar o dia
+com o Apex,
+que é o desenvolvimento
+de aplicações local,
+de que isso aí,
+comparado ao desenvolvimento tradicional,
+ele já é 20 vezes mais rápido.
+Agora,
+você fala de Apex, Apex Lengue,
+inteligência artificial,
+metodologia,
+cara, nem se fala.
+Você vai conseguir desenvolver
+muitas coisas interessantes
+de uma forma muito mais rápido.
+Beleza?
+E vamos lá, pessoal,
+por que focar em Oracle?
+A Oracle já há um bom tempo,
+ela está
+à frente de muitos projetos
+relacionados à inteligência artificial.
+Tá?
+Então, a Oracle está investindo
+pesado nisso,
+quando se fala de banco de dados
+é o banco de dados
+mais utilizado no mundo.
+Então, quando você pega empresas
+que são líderes de mercado,
+com certeza,
+vale muito a pena aí,
+você pensar em focar em Oracle.
+E eu acredito, gente,
+que tem muita gente
+criando muita coisa de
+há agentes e muito mais,
+só que está pegando seus dados
+e levando por uma zona insegura.
+Está pegando dados importantes
+e está colando um GPT.
+E isso, cara,
+você coloca seus dados em risco.
+Agora,
+quando você faz o processo contrário,
+você já tem um banco de dados
+Oracle seguro,
+que por lá dentro,
+você tem um database
+evoix, um SQL file,
+você tem ali um database,
+um data redaction,
+você tem um padrão de segurança
+com seus dados.
+E você consegue trazer
+a A pela trabalhar
+com essa forma segura?
+Criar agentes
+dentro do banco de dados?
+Cara,
+é uma estratégia muito melhor, tá?
+Então,
+você pode ter certeza que
+uma das principais coisas
+que a gente precisa entender
+é que você precisa de estratégias
+para conseguir
+utilizar a A do jeito certo.
+Beleza?
+Show de Bolo.
+Deixa eu só mandar o link aqui
+para o Rogério
+que ele está tentando entrar
+e ele entrou
+Show de Bolo.
+E aí, pessoal,
+eu queria fazer um combinado
+aqui com vocês
+nesse final de semana.
+Eu sei que o seu tempo
+é muito valioso.
+Sabe de domingo?
+Cara, você poderia estar
+aproveitando aí com a família.
+Mas acredito que
+é exatamente
+pelas pessoas que a gente
+ama pela nossa família
+que a gente precisa estar bem
+pregada, que a gente precisa
+estar com bom salário,
+que a gente precisa estar
+crescendo, que a gente precisa
+atualizando.
+Então, eu quero entender
+que fazer um combinado
+com vocês
+toda vez que você vê
+alguma coisa que você não sabia.
+Uma coisa que, pô,
+você sabia,
+mas não tinha visto
+como aplicar
+uma coisa que, pô,
+você
+gostou
+e que está fazendo
+o jeito melhor do que
+você faz hoje.
+Coloca sempre
+tá pago aí no chat.
+Eu queria fazer um teste
+agora com vocês, pessoal.
+Coloca aí
+tá pago no chat
+se você está
+comprometido em estar
+aqui com a gente.
+E através disso
+eu vou entender
+que o que eu estou
+falando
+está fazendo a sentida.
+E
+quanto mais vocês
+interagir
+aqui comigo?
+Mas eu vou entender, pô,
+estou indo
+para essa linha aqui
+de pele à esquerda,
+todo mundo falando
+tá pago.
+Então,
+quanto mais vocês
+interagirem,
+vai ser melhor
+para que a gente consiga
+te ajudar o máximo
+dentro desse evento, tá?
+Então, vamos fazer
+esse combinado aí.
+Tô ouvindo isso que você
+vê alguma coisa, cara.
+Que, pô, você não sabia
+que dá para você
+aplicar, que vai te ajudar,
+coloca sempre tá pago
+que eu vou entender
+que você está comprometindo.
+E o principal, né?
+Eu vou ter um feedback
+aí de vocês
+que o conteúdo está te ajudando,
+de fato.
+Beleza?
+Pessoal,
+o Enquete do Net final de semana
+e a nossa primeira
+Enquete vai acontecer
+agora, tá?
+Eu quero trazer aqui
+para vocês
+qual o seu nível
+em ia hoje, tá?
+Primeiro nível, pessoal,
+nível iniciante.
+Que que é o nível iniciante?
+Guilherme, eu já tenho
+um GPT, um cloud
+e eu fico dando
+alguns produtos ali, cara.
+Me ajude a fazer isso,
+me ajude a fazer aquilo,
+tal, tal, tal,
+e já tenho utilizado ali
+com iniciante.

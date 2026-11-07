@@ -1,0 +1,4891 @@
+1
+00:00:00,000 --> 00:00:12,000
+Caralho. Caralho. Caralho. Com bancos de dados desde 2011, com o ora com mesmo. Fiquem um ano, fora, aqui que a página torna com dd2, mas a hora quase foi quase 14 anos.
+
+2
+00:00:12,000 --> 00:00:20,000
+Cara, que legal. Acho que já tocou num ponto que achou muito importante a gente falar de ego, porque muitos pessoas não entendem o quanto que o mercado hoje está pedindo uma certificação.
+
+3
+00:00:20,000 --> 00:00:23,000
+E você é um cara de quantos anos de experiência, senhor?
+
+4
+00:00:23,000 --> 00:00:25,000
+Quanto for esse ano? Isso é a próxima vez.
+
+5
+00:00:25,000 --> 00:00:30,000
+14 anos. Você nunca tira um pouco com 9, eu me grei algumas bases.
+
+6
+00:00:30,000 --> 00:00:32,000
+Não tinha de tirar.
+
+7
+00:00:32,000 --> 00:00:36,000
+Assim, nunca existiu essa necessidade nas empresas que eu atuaí.
+
+8
+00:00:36,000 --> 00:00:45,000
+E eu fui deixando, como diz, que eu fico ficando, como diz, eu não tenho tempo, trabalhar, que eu fico aprendendo diadilha e deixei de lado.
+
+9
+00:00:45,000 --> 00:00:47,000
+Bequem em esses lados?
+
+10
+00:00:47,000 --> 00:00:51,799
+O pessoal acontece muitas vezes a gente entra no ritmo de trabalho, que é um trabalho muito
+
+11
+00:00:51,799 --> 00:00:55,359
+reativo, só fica trabalhando, trabalhando, trabalhando, trabalhando em sêndio, atendo
+
+12
+00:00:55,359 --> 00:00:59,920
+demandas, até fazer noura extras e muitas vezes o que faz a gente crescer de forma
+
+13
+00:00:59,920 --> 00:01:05,760
+consistente e manter a gente de forma ativa desse mercado, é se manter atualizado na
+
+14
+00:01:05,760 --> 00:01:09,239
+Diego e uma certificação pode ajudar bastante nisso também, não?
+
+15
+00:01:09,239 --> 00:01:10,239
+Sim, bastante.
+
+16
+00:01:10,239 --> 00:01:15,319
+Então eu vi que eu acertei era um dos pré-requisitos ali e algumas áreas, o meu público, não,
+
+17
+00:01:15,319 --> 00:01:19,640
+pensava mesmo com a sua experiência, então eu comecei a estudar por conta, em
+
+18
+00:01:19,640 --> 00:01:23,959
+esse estudando por conta, ficando em vagas em paralelo, então eu estudava um pouco
+
+19
+00:01:23,959 --> 00:01:28,400
+para a certificação, estudava para algumas entrevistas técnicas e envolvia
+
+20
+00:01:28,400 --> 00:01:32,840
+alguns ações que eu também não havia dominado, e em esse eu eu batia esse
+
+21
+00:01:32,840 --> 00:01:37,599
+barrava sempre naquele celular dos pagos, então o conteúdo é muito alto na certificação
+
+22
+00:01:37,599 --> 00:01:42,879
+e sempre batia ali, tentar estudar um pouco batia na celular, foi aí que eu encontrei
+
+23
+00:01:42,879 --> 00:01:48,439
+a DBLC, eu já tinha ouvido falar, mas eu não sabia como funcionava e nem o
+
+24
+00:01:48,439 --> 00:01:52,680
+método nem nada, era que não comentava do comigo, mas quem comentava o trabalhava
+
+25
+00:01:52,680 --> 00:01:56,799
+comigo e não era mentorar, também tem dia, tem dia.
+
+26
+00:01:56,799 --> 00:02:01,319
+Agora a gente faz uma pergunta aí, Diego, e esse lance de inteligência artificial, cara,
+
+27
+00:02:01,319 --> 00:02:03,439
+como que você estava olhando isso para dentro do mercado?
+
+28
+00:02:03,439 --> 00:02:09,039
+Você já estava mexendo com o IA para o que você fazia dentro do órico, ou ainda não?
+
+29
+00:02:09,039 --> 00:02:15,759
+Então, eu estava mexendo com IA consultiva, então eu participei da última inmersão com IA,
+
+30
+00:02:15,759 --> 00:02:21,280
+e também foi o choque de muito aprendizado, a de a realidade, o bateu de nossa, que eu
+
+31
+00:02:21,280 --> 00:02:27,599
+usava, não é nem 10% do que a IA pode fazer realmente para a gente, então até tem um
+
+32
+00:02:27,599 --> 00:02:33,479
+fato que eu comentei esses dias com pessoas da família, que no final de semana da inmersão
+
+33
+00:02:33,479 --> 00:02:39,860
+da IA, a minha filha tem uma filha de 8 anos, ela chegou pra mim e falou, pai, nos únicos
+
+34
+00:02:39,860 --> 00:02:44,520
+dias que eu não tenho aula, você vai ficar no computador de estudante, de batê-la que
+
+35
+00:02:44,520 --> 00:02:48,919
+ele aperta, assim fala assim, enfim, o papai vai, o papai vai, porque o papai precisa
+
+36
+00:02:48,919 --> 00:02:54,680
+aprender mais, o papai precisa evoluir para o papai conseguir um novo emprego, ela já
+
+37
+00:02:54,680 --> 00:03:01,759
+sabia que eu estava sempre gato, daí ela tá bom, aceitou assim e foi como em dela, e
+
+38
+00:03:01,759 --> 00:03:06,560
+aquilo deu um aperto, né, e passar o tempo muito, o Guilherme comenta, a gente precisa
+
+39
+00:03:06,560 --> 00:03:13,199
+abrir mão, alguns momentos, e é para um futuro melhor, é para o conforto para a família,
+
+40
+00:03:13,199 --> 00:03:19,240
+para dar a escola dela, dá um futuro para ela, cara, muito legal você falar sobre isso,
+
+41
+00:03:19,240 --> 00:03:24,439
+porque às vezes a gente vê o ponto que existem adultos com comportamentos de criança,
+
+42
+00:03:24,439 --> 00:03:29,960
+né, e a criança é imediatista, cara, ela vai querer ali, aquele prazer momentâneo, de
+
+43
+00:03:29,960 --> 00:03:34,879
+estar junto com o pai dela, e muitas vezes, cara, a gente precisa ter algumas decisões para
+
+44
+00:03:34,879 --> 00:03:38,520
+que a gente não passa por alguns problemas lá na frente, né, de pô, se manter muito tempo
+
+45
+00:03:38,520 --> 00:03:45,159
+desempregada, é algo que pode comprometer, diversas questões, e a gente entender que a gente
+
+46
+00:03:45,159 --> 00:03:50,360
+tem que tomar as vezes algumas decisões, que muitas vezes a gente são difíceis, para
+
+47
+00:03:50,360 --> 00:03:56,639
+que a gente consiga realmente não passar por alguns problemas e ser responsável e continuar
+
+48
+00:03:56,639 --> 00:04:02,400
+comprindo nosso papel, muito legal, muito legal, Diego, e aí vamos lá, cara, se entra na metoria
+
+49
+00:04:02,400 --> 00:04:08,039
+em busca da certificação, em busca de atualização também nessa parte de A, e aí o que aconteceu
+
+50
+00:04:08,039 --> 00:04:11,639
+aí, cara, nesse menos de dois meses, está com a gente da metoria?
+
+51
+00:04:11,639 --> 00:04:17,240
+Então, eu entrei pensando, principalmente ali na certificação, me realocar também, na
+
+52
+00:04:17,240 --> 00:04:23,600
+plataforma que está sempre voltado pro mercado, quanto antes possível, acho que o primeiro mês
+
+53
+00:04:23,600 --> 00:04:29,000
+ali que eu fiquei fora, foi aí aquele que bateu, assim, meio desespero, mas minha esposa
+
+54
+00:04:29,000 --> 00:04:33,800
+falou, não, fica tranquilo, nós temos mais aérea para encerrar, estuda, faz essas coisas
+
+55
+00:04:33,800 --> 00:04:40,199
+com calma, que vai dar tudo certo, e foi daí depois que eu encontrei a DBLCM, na primeira
+
+56
+00:04:40,199 --> 00:04:44,600
+conversa com o Guilherme, a menino mentora, que vou pegar e vamos sentar aqui, vamos direcionar
+
+57
+00:04:44,600 --> 00:04:50,600
+esse seu inquietinho, posicionar, e você vai começar a movimentar aí, porque não era, eu não tinha
+
+58
+00:04:50,600 --> 00:04:56,199
+essa encostor de movimentar o NICED, você vai compartilhar o que você está estudando, você
+
+59
+00:04:56,199 --> 00:05:01,399
+vai compartilhar o que você está aprendendo, conforme você pode fazer nas inversões, e foi
+
+60
+00:05:01,399 --> 00:05:09,399
+bem nessa, numa dessa inversão da IA, foi um domingo, não lembro qual foi o dia, eu terminei
+
+61
+00:05:09,399 --> 00:05:16,399
+de fazer um depoimento e comentei a agradecita no conteúdo, pelo sorteado, e isso já me chamou
+
+62
+00:05:16,399 --> 00:05:21,000
+o outro mentorado, eu falo, caras, eu estou buscando reabocação, nós temos duas vagas aqui
+
+63
+00:05:21,000 --> 00:05:27,199
+na equipe, e já compartilhou comigo, já iria recorrer, comecei a conversar pela hora, tenho
+
+64
+00:05:27,199 --> 00:05:33,000
+dois processos que eu estou mais avançado, mais posso para conversando, e tudo mais, na segunda
+
+65
+00:05:33,000 --> 00:05:40,199
+feira, o gerente da empresa que estou andando, me abordou no NICED, olha Diego, temos vagas aqui,
+
+66
+00:05:40,199 --> 00:05:45,399
+gostar de conversar, conversar com ele a tarde, na quarta estava fazendo a técnica, conversar com ele
+
+67
+00:05:45,399 --> 00:05:50,699
+também dos processos longos que as outras empresas estavam tendo, então em uma semana
+
+68
+00:05:50,699 --> 00:05:56,699
+eu estava sendo contratado, e inclusive agora estou ajudando eles a preencher em mais duas vagas,
+
+69
+00:05:56,699 --> 00:06:01,699
+ajudando outros profissionais, indicando colegas, indicando o pessoal da mentoria ali, para preencher
+
+70
+00:06:01,699 --> 00:06:07,199
+mais duas vagas, e o que ele era marcando, a minha ida para a empresa, para fazer uma inversão
+
+71
+00:06:07,199 --> 00:06:12,699
+e um borde presencial, cara, muito legal, eu acredito muito no poder da ambiência né cara,
+
+72
+00:06:12,699 --> 00:06:17,699
+você está normalmente de pessoas que estão em busca do nosso objetivo, o ajudam a gente a chegar
+
+73
+00:06:17,699 --> 00:06:23,699
+no nosso objetivo, então você está num grupo de pessoas que estão buscando a CP, cara, você vai atingir a CP, vai ser mais
+
+74
+00:06:23,699 --> 00:06:29,699
+fácil, você está no grupo de pessoas que estão tirando, estão se atualizando com o IAR, cara, vai ser
+
+75
+00:06:29,699 --> 00:06:35,699
+mais fácil para você aplicar a IAR no seu dia de entregar mais, você está num grupo de pessoas
+
+76
+00:06:35,699 --> 00:06:41,699
+que trabalham na área especificamente, cara, você vai conseguir atingir seu objetivo mais rápido,
+
+77
+00:06:41,699 --> 00:06:46,699
+cara, muito legal o dia, eu quero primeiro te parabénizar aí cara, pela sua aplicação, pela sua dedicação,
+
+78
+00:06:46,699 --> 00:06:54,699
+eu acredito que o Mérita é todo seu, mas a gente vê aqui simplesmente pra te dar uma metodologia e um caminho,
+
+79
+00:06:54,699 --> 00:06:58,699
+e você tem aplicado, cara, você chegou a tirar a certificação já ou ainda não?
+
+80
+00:06:58,699 --> 00:07:06,699
+ainda não, ainda não, cara, nem tirou a certificação e a metodologia, eu estou com 60% do conteúdo ali das aulas,
+
+81
+00:07:06,699 --> 00:07:15,699
+montei laboratório, tudo, é que eu estava tentando equilibrar o estudar com a certificação e aplicar nas vagas,
+
+82
+00:07:15,699 --> 00:07:21,699
+então eu tenho continuar estudando, meu foco é tirar essa certificação e não parar nisso,
+
+83
+00:07:21,699 --> 00:07:28,699
+tirar aí duas, três edificações no ano da certificação, já valeu muito a pena pelo direcionamento,
+
+84
+00:07:28,699 --> 00:07:35,699
+por eu estar realocado, voltar no mercado, até você comentou, mas só tirar a certificação seria o suficiente?
+
+85
+00:07:35,699 --> 00:07:40,699
+não, eu quero tirar a certificação para voltar para o mercado, para mostrar que eu sou capaz,
+
+86
+00:07:40,699 --> 00:07:48,699
+e muitas empresas não te dão nenhum oportunidade de mostrar sua experiência, de você conversar, passar para uma entrevista técnica,
+
+87
+00:07:48,699 --> 00:07:53,699
+que legal, você já filtrou, já cortou o óbvio no início, cara, que legal digo,
+
+88
+00:07:53,699 --> 00:07:57,699
+e a vaga que você conseguiu, é perto da sociedade presencial, remoto?
+
+89
+00:07:58,699 --> 00:08:04,699
+é longe, é remoto, só que depois você não parará, a paga é representar catarina,
+
+90
+00:08:04,699 --> 00:08:11,699
+é legal, mas é remoto, ou a ter deu setor de hospitais, mas é uma grande oportunidade,
+
+91
+00:08:11,699 --> 00:08:14,699
+focada em oraco, como se há e também?
+
+92
+00:08:14,699 --> 00:08:20,699
+que legal, e quanto você acha, cara, que a vete ajudar nesse emprego novo que você conseguiu?
+
+93
+00:08:20,699 --> 00:08:23,699
+ah, não dá pra me ver mais sem né?
+
+94
+00:08:23,699 --> 00:08:30,699
+eu acho que vai ajudar muito, eu utilizava antes, ali como consulta, mas para fundar alguma coisa,
+
+95
+00:08:30,699 --> 00:08:36,700
+a questão de parametrização, também, para consultar, mas o que eu digo, também para os profissionais,
+
+96
+00:08:36,700 --> 00:08:42,700
+que aí não faz tudo por si, se você não sou bel que está fazendo a vise pode fazer merda,
+
+97
+00:08:42,700 --> 00:08:48,700
+ficamos assim, então tem que ter um conhecimento, saber o que está te trazendo,
+
+98
+00:08:48,700 --> 00:08:53,700
+é o que eu digo para os amigos, é o Google adiantado ali, você consultar antes,
+
+99
+00:08:53,700 --> 00:08:56,700
+fazer uma resposta, mas você sabe, você que ela é confiável, não?
+
+100
+00:08:56,700 --> 00:09:03,700
+Igual, nós fizemos a inversão, a inversão foi feito com uma conexão de um usuário controlado,
+
+101
+00:09:03,700 --> 00:09:08,700
+então não é ali, dá todas as permissões, um usuário de ali,
+
+102
+00:09:08,700 --> 00:09:13,700
+então, quando criados, vamos esquios, a gente até pegou o final do assunto,
+
+103
+00:09:13,700 --> 00:09:18,700
+você estava comentando a porco, então é algo assim que tem tendo esse muito,
+
+104
+00:09:18,700 --> 00:09:27,700
+e eu já fiz algumas automações utilizando itletes, terraformes, como se aitli,
+
+105
+00:09:27,700 --> 00:09:31,700
+também para a eja, então é algo que ajuda muito.
+
+106
+00:09:31,700 --> 00:09:35,700
+Cara, que legal, Diego, muito legal, cara, poder ver a sua história na verdade,
+
+107
+00:09:35,700 --> 00:09:40,700
+a primeira vez que a gente está conversando, desde a notícia que eu fiquei sabendo que você já voltou para o mercado,
+
+108
+00:09:40,700 --> 00:09:46,700
+eu fiquei muito feliz, cara, acho que isso aqui é o que faz com que a gente consiga continuar o nosso trabalho,
+
+109
+00:09:46,700 --> 00:09:50,700
+cara, mais do que a quantidade de alunos, é a quantidade de alunos que estão tendo resultado,
+
+110
+00:09:50,700 --> 00:09:53,700
+que estão chegando no objetivo que a gente planejou,
+
+111
+00:09:53,700 --> 00:09:57,700
+e a gente é muito, tem uma sensibilidade muito grande com as pessoas que querem voltar para o mercado,
+
+112
+00:09:57,700 --> 00:10:01,700
+que passaram por um layout, cara, não é um momento fácil,
+
+113
+00:10:01,700 --> 00:10:04,700
+mas queria te parabénizar pela sua dedicação,
+
+114
+00:10:04,700 --> 00:10:09,700
+e você acredita, cara, que sozinho sem a mentoria ser conseguir ter voltado tão rápido,
+
+115
+00:10:09,700 --> 00:10:11,700
+para o mercado tão rápido, daqui a dito que não,
+
+116
+00:10:11,700 --> 00:10:17,700
+eu acho que ai ajudou muito, inclusive, para algumas vagas que me abordaram no LinkedIn,
+
+117
+00:10:17,700 --> 00:10:20,700
+não estavam nem divulgadas, não sai,
+
+118
+00:10:20,700 --> 00:10:23,700
+pra essa empresa que estou entrando, não tinha divulgado, não sai.
+
+119
+00:10:23,700 --> 00:10:26,700
+Eu mandei por rícalo pra eles há dois meses atrás,
+
+120
+00:10:26,700 --> 00:10:29,700
+mas não tinha vagas divulgadas, então,
+
+121
+00:10:29,700 --> 00:10:33,700
+são vagas em off, digamos assim, com os executadores bem direto,
+
+122
+00:10:33,700 --> 00:10:37,700
+no seu perfil, ele fica o que você está limormentando, postando,
+
+123
+00:10:37,700 --> 00:10:39,700
+o que você está postando de conteúdo, né?
+
+124
+00:10:39,700 --> 00:10:41,700
+Cara, muito bom, muito bom.
+
+125
+00:10:41,700 --> 00:10:43,700
+E Diego, vamos lá, pique a peça reta final, cara,
+
+126
+00:10:43,700 --> 00:10:45,700
+queria te agradecer,
+
+127
+00:10:45,700 --> 00:10:49,700
+e qualquer mensagem final que você poderia deixar pra pessoa que está em dúvida,
+
+128
+00:10:49,700 --> 00:10:52,700
+sob a mentoria, cara, se vale a pena ou não,
+
+129
+00:10:52,700 --> 00:10:54,700
+às vezes tem pessoas que andam pela certificação,
+
+130
+00:10:54,700 --> 00:10:56,700
+às vezes tem pessoas que querem mudar de presa,
+
+131
+00:10:56,700 --> 00:10:59,700
+às vezes tem pessoas que estão querendo voltar para o mercado,
+
+132
+00:10:59,700 --> 00:11:01,700
+às vezes estão pessoas que estão simplesmente querendo implementar
+
+133
+00:11:01,700 --> 00:11:04,700
+e a para poder entregar mais resultado ali dos projetos.
+
+134
+00:11:04,700 --> 00:11:06,700
+O que você falaria, pessoas que...
+
+135
+00:11:06,700 --> 00:11:08,700
+Nossa, só...
+
+136
+00:11:08,700 --> 00:11:10,700
+É difícil falar, né?
+
+137
+00:11:10,700 --> 00:11:12,700
+Vai, isso aqui, dando meu depoimento,
+
+138
+00:11:12,700 --> 00:11:14,700
+tenho comentado com alguns colegas,
+
+139
+00:11:14,700 --> 00:11:16,700
+com uns amigos que...
+
+140
+00:11:16,700 --> 00:11:17,700
+aí, aí, não.
+
+141
+00:11:17,700 --> 00:11:21,700
+Desculpa, a mentoria me ajudou bastante ali no direcionamento,
+
+142
+00:11:21,700 --> 00:11:23,700
+até nos conteúdos, digo pra ele,
+
+143
+00:11:23,700 --> 00:11:26,700
+se vocês olharem os conteúdos que ficam ali dentro,
+
+144
+00:11:26,700 --> 00:11:29,700
+as alas, as práticas, os simuladas,
+
+145
+00:11:29,700 --> 00:11:32,700
+aquilo ali pra mim já é algo que brilhou o olho assim, né?
+
+146
+00:11:32,700 --> 00:11:34,700
+E esse contato com o pessoal,
+
+147
+00:11:34,700 --> 00:11:36,700
+está junto com o pessoal, se ajudando,
+
+148
+00:11:36,700 --> 00:11:38,700
+se apoiando essa rede que a gente cria,
+
+149
+00:11:38,700 --> 00:11:40,700
+é algo bem gratificante,
+
+150
+00:11:40,700 --> 00:11:42,700
+se todos tendem a ganhar,
+
+151
+00:11:42,700 --> 00:11:44,700
+todos tendem a crescer com isso,
+
+152
+00:11:44,700 --> 00:11:47,700
+e é algo que eu digo que o meu arrepentido da mentoria
+
+153
+00:11:47,700 --> 00:11:48,700
+era um 30 anos,
+
+154
+00:11:48,700 --> 00:11:50,700
+porque eu não conheci.
+
+155
+00:11:50,700 --> 00:11:52,700
+Cara, é que legal.
+
+156
+00:11:52,700 --> 00:11:54,700
+Mano, agradeço a sua confiança,
+
+157
+00:11:54,700 --> 00:11:56,700
+e ficou muito feliz de, em pouco tempo,
+
+158
+00:11:56,700 --> 00:11:58,700
+aí, você já tem o resultado esperado,
+
+159
+00:11:58,700 --> 00:12:01,700
+cara, tem muito mais outros objetivos que a gente pode alcançar,
+
+160
+00:12:01,700 --> 00:12:03,700
+tanto na parte de implementação de ar,
+
+161
+00:12:03,700 --> 00:12:05,700
+na parte da certificação,
+
+162
+00:12:05,700 --> 00:12:07,700
+e entre outras certificações que têm planejada,
+
+163
+00:12:07,700 --> 00:12:09,700
+pra você da mentoria,
+
+164
+00:12:09,700 --> 00:12:11,700
+cara, conta comigo,
+
+165
+00:12:11,700 --> 00:12:13,700
+e é só o começo, cara,
+
+166
+00:12:13,700 --> 00:12:15,700
+obrigado aí, realmente, pela participação, beleza?
+
+167
+00:12:15,700 --> 00:12:17,700
+Muito obrigado aí também,
+
+168
+00:12:17,700 --> 00:12:19,700
+toda esse direcionamento ali desde o início,
+
+169
+00:12:19,700 --> 00:12:21,700
+e é um prazer estar vendo aqui,
+
+170
+00:12:21,700 --> 00:12:23,700
+ajudar outras pessoas,
+
+171
+00:12:23,700 --> 00:12:25,700
+esclarecer, tirar dúvidas,
+
+172
+00:12:25,700 --> 00:12:29,700
+e estar mostrando que realmente o método funciona,
+
+173
+00:12:29,700 --> 00:12:32,700
+que podem acreditar e confiar aqui, da certo.
+
+174
+00:12:32,700 --> 00:12:34,700
+Cara, estamos juntos, meu irmão,
+
+175
+00:12:34,700 --> 00:12:35,700
+obrigado aí pela participação,
+
+176
+00:12:35,700 --> 00:12:36,700
+um abraço.
+
+177
+00:12:36,700 --> 00:12:37,700
+Obrigado, meu abraço,
+
+178
+00:12:37,700 --> 00:12:38,700
+já trazido.
+
+179
+00:12:38,700 --> 00:12:40,700
+Eu quero trazer um convidado especial,
+
+180
+00:12:40,700 --> 00:12:42,700
+que é o Laércio,
+
+181
+00:12:42,700 --> 00:12:44,700
+pra gente poder fazer um bate-papo,
+
+182
+00:12:44,700 --> 00:12:46,700
+estou muito feliz aqui, que ele está aqui com a gente na imersão.
+
+183
+00:12:46,700 --> 00:12:48,700
+Tudo bom, Laércio? Boa tarde?
+
+184
+00:12:48,700 --> 00:12:50,700
+Boa tarde, meu irmão. Boa tarde, pessoal.
+
+185
+00:12:50,700 --> 00:12:52,700
+Espero que todos vocês tenham bem,
+
+186
+00:12:52,700 --> 00:12:54,700
+aí, coche em demersão.
+
+187
+00:12:54,700 --> 00:12:56,700
+Vamos para a próxima.
+
+188
+00:12:56,700 --> 00:12:57,700
+Um prazer está falando contigo,
+
+189
+00:12:57,700 --> 00:12:58,700
+Laércio, pra quem não te conhece,
+
+190
+00:12:58,700 --> 00:12:59,700
+você está falando de onde, cara,
+
+191
+00:12:59,700 --> 00:13:00,700
+qual a cidade?
+
+192
+00:13:00,700 --> 00:13:02,700
+São dentro do Sul, Santa Catarina.
+
+193
+00:13:02,700 --> 00:13:03,700
+Chão de bola.
+
+194
+00:13:03,700 --> 00:13:06,700
+Pessoal, o Laércio está com a gente aqui na nossa mentoria,
+
+195
+00:13:06,700 --> 00:13:08,700
+já tem um tempinho.
+
+196
+00:13:08,700 --> 00:13:10,700
+Eu quero até pedir um me deixar a mentir, né, cara?
+
+197
+00:13:10,700 --> 00:13:13,700
+A quanto tempo, Laércio, está na mentoria?
+
+198
+00:13:13,700 --> 00:13:16,700
+Eu entrei em abril de 2024.
+
+199
+00:13:16,700 --> 00:13:18,700
+Abril de 2024.
+
+200
+00:13:18,700 --> 00:13:19,700
+Legal.
+
+201
+00:13:19,700 --> 00:13:21,700
+Então, vai fazer...
+
+202
+00:13:21,700 --> 00:13:22,700
+Fez dois anos agora, né?
+
+203
+00:13:22,700 --> 00:13:24,700
+Fazendo dois anos, exatamente.
+
+204
+00:13:24,700 --> 00:13:25,700
+Que legal.
+
+205
+00:13:25,700 --> 00:13:27,700
+E vamos lá, Laércio? Qual foi seu objetivo
+
+206
+00:13:27,700 --> 00:13:29,700
+quando você entrou na nossa mentoria, cara?
+
+207
+00:13:29,700 --> 00:13:32,700
+Bom, o meu objetivo principal,
+
+208
+00:13:32,700 --> 00:13:38,700
+era agregar mais um factor,
+
+209
+00:13:38,700 --> 00:13:40,700
+mais uma novidade aí.
+
+210
+00:13:40,700 --> 00:13:42,700
+No meu currículo profissional,
+
+211
+00:13:42,700 --> 00:13:44,700
+a fim de evoluir, né?
+
+212
+00:13:44,700 --> 00:13:47,700
+Mas, como eu venho da área de infra,
+
+213
+00:13:47,700 --> 00:13:49,700
+é a área de realpdesque,
+
+214
+00:13:49,700 --> 00:13:52,700
+eu era totalmente zero em banco de dados.
+
+215
+00:13:52,700 --> 00:13:54,700
+Zero mesmo.
+
+216
+00:13:54,700 --> 00:13:56,700
+Eu não sabia nem estar lá o Oracle,
+
+217
+00:13:56,700 --> 00:13:59,700
+não... Olha, o máximo que eu conhecia
+
+218
+00:13:59,700 --> 00:14:01,700
+de Linux era trabalhar com IPT,
+
+219
+00:14:01,700 --> 00:14:02,700
+busco fazer uns files,
+
+220
+00:14:02,700 --> 00:14:05,700
+de eficiência e coisas do tipo, né?
+
+221
+00:14:05,700 --> 00:14:06,700
+Então, bem...
+
+222
+00:14:06,700 --> 00:14:08,700
+bem para a parte de infra mesmo.
+
+223
+00:14:08,700 --> 00:14:11,700
+Só que, digamos assim,
+
+224
+00:14:11,700 --> 00:14:13,700
+aquele ditado, né, o feitiço
+
+225
+00:14:13,700 --> 00:14:16,700
+virou contra o feiti ser, né?
+
+226
+00:14:16,700 --> 00:14:17,700
+Eu me apaixonei,
+
+227
+00:14:17,700 --> 00:14:19,700
+assim, eu já gostava de banco de dados,
+
+228
+00:14:19,700 --> 00:14:21,700
+mas eu não tinha aquele norte.
+
+229
+00:14:21,700 --> 00:14:23,700
+E quando eu entrei na mentoria,
+
+230
+00:14:23,700 --> 00:14:25,700
+a cabeça explodiu, né?
+
+231
+00:14:25,700 --> 00:14:28,700
+Aí acabou que...
+
+232
+00:14:28,700 --> 00:14:31,700
+acabou que eu cabei seguindo, né?
+
+233
+00:14:31,700 --> 00:14:32,700
+Nessa...
+
+234
+00:14:32,700 --> 00:14:35,700
+Nessa rota e de migração de carreira, né?
+
+235
+00:14:35,700 --> 00:14:37,700
+Então, o que...
+
+236
+00:14:37,700 --> 00:14:39,700
+A princípio era ser um plano de
+
+237
+00:14:39,700 --> 00:14:41,700
+melhorar o meu currículo,
+
+238
+00:14:41,700 --> 00:14:43,700
+de melhorar minha condição profissional,
+
+239
+00:14:43,700 --> 00:14:45,700
+acabou virando uma migração, assim,
+
+240
+00:14:45,700 --> 00:14:47,700
+em full, sem por cento.
+
+241
+00:14:47,700 --> 00:14:49,700
+Eu te ouvindo, Greg.
+
+242
+00:14:49,700 --> 00:14:50,700
+Então, bom.
+
+243
+00:14:50,700 --> 00:14:52,700
+E o caso do Laércio é um caso bem interessante
+
+244
+00:14:52,700 --> 00:14:56,700
+porque ele é um cara de tecnologia de muitos anos,
+
+245
+00:14:56,700 --> 00:14:58,700
+tinha...
+
+246
+00:14:58,700 --> 00:15:00,700
+estava tinha uma atuação direta com a parte
+
+247
+00:15:00,700 --> 00:15:01,700
+de infraestrutura, né, Laércio?
+
+248
+00:15:01,700 --> 00:15:02,700
+Exatamente.
+
+249
+00:15:02,700 --> 00:15:04,700
+E você queria fazer essa migração para banco?
+
+250
+00:15:04,700 --> 00:15:06,700
+E, normalmente, gente,
+
+251
+00:15:06,700 --> 00:15:08,700
+essa tipo de migração não é algo
+
+252
+00:15:08,700 --> 00:15:10,700
+que muitas vezes é tão simples, né?
+
+253
+00:15:10,700 --> 00:15:13,700
+Porque não dá para um cara sênio de infra voltar a seja.
+
+254
+00:15:13,700 --> 00:15:15,700
+É mais difícil também, na Laércio.
+
+255
+00:15:15,700 --> 00:15:16,700
+Total, total.
+
+256
+00:15:16,700 --> 00:15:17,700
+É uma...
+
+257
+00:15:17,700 --> 00:15:19,700
+Um 360, né?
+
+258
+00:15:19,700 --> 00:15:21,700
+É um calado de pau contra, né?
+
+259
+00:15:21,700 --> 00:15:22,700
+Legal.
+
+260
+00:15:22,700 --> 00:15:24,700
+E o que a gente botou aqui de estratégia
+
+261
+00:15:24,700 --> 00:15:26,700
+por Laércio, trajante do plano de Jamento dele?
+
+262
+00:15:26,700 --> 00:15:28,700
+Laércio, para você migrar de carreira,
+
+263
+00:15:28,700 --> 00:15:30,700
+você é legal se ter uma certificação.
+
+264
+00:15:30,700 --> 00:15:32,700
+A gente deixou isso bem claro.
+
+265
+00:15:32,700 --> 00:15:33,700
+E o plano da certificação
+
+266
+00:15:33,700 --> 00:15:34,700
+foi seguido à risca, né, Laércio?
+
+267
+00:15:34,700 --> 00:15:35,700
+Contrei.
+
+268
+00:15:35,700 --> 00:15:37,700
+Com certeza, né?
+
+269
+00:15:37,700 --> 00:15:39,700
+Então, voltando a 2024,
+
+270
+00:15:39,700 --> 00:15:41,700
+realmente...
+
+271
+00:15:41,700 --> 00:15:43,700
+o Carlos, eu lembro que na época ainda...
+
+272
+00:15:43,700 --> 00:15:45,700
+eu tenho até gravado a nossa cala,
+
+273
+00:15:45,700 --> 00:15:47,700
+onde o Carlos e uma seção
+
+274
+00:15:47,700 --> 00:15:48,700
+nos meus linkedim.
+
+275
+00:15:48,700 --> 00:15:49,700
+E foi até engraçado, né?
+
+276
+00:15:49,700 --> 00:15:51,700
+Porque o meu linkedim estava abandonado.
+
+277
+00:15:51,700 --> 00:15:53,700
+Eu não tinha nenhuma foto de perfil nele.
+
+278
+00:15:53,700 --> 00:15:55,700
+Eu acho que eu tinha duas conexões lá.
+
+279
+00:15:55,700 --> 00:15:57,700
+Então, assim, uma coisa absurda, né?
+
+280
+00:15:57,700 --> 00:15:58,700
+Então, por que?
+
+281
+00:15:58,700 --> 00:15:59,700
+Porque eu já estava...
+
+282
+00:15:59,700 --> 00:16:01,700
+Digamos naquela zona de conforto,
+
+283
+00:16:01,700 --> 00:16:03,700
+ali, de infra, já estava com, né?
+
+284
+00:16:03,700 --> 00:16:06,700
+Então, o meio que abandonou o linkedim mesmo
+
+285
+00:16:06,700 --> 00:16:09,700
+e totalmente assim, sem noção
+
+286
+00:16:09,700 --> 00:16:13,700
+de que ferramenta ele realmente seria, né?
+
+287
+00:16:13,700 --> 00:16:15,700
+E aí, Carlos e eu,
+
+288
+00:16:15,700 --> 00:16:16,700
+a gente...
+
+289
+00:16:16,700 --> 00:16:18,700
+ali em algumas coisas, o Carlos me...
+
+290
+00:16:18,700 --> 00:16:19,700
+me direcionou dentro da mentoria,
+
+291
+00:16:19,700 --> 00:16:20,700
+como seria as aulas,
+
+292
+00:16:20,700 --> 00:16:22,700
+quando estudar, enfim,
+
+293
+00:16:22,700 --> 00:16:24,700
+fazer toda aquela...
+
+294
+00:16:24,700 --> 00:16:26,700
+aquela rota de estudos, né?
+
+295
+00:16:26,700 --> 00:16:29,700
+E aí, como eu sou um cara muito...
+
+296
+00:16:29,700 --> 00:16:31,700
+eu sou um cara muito centrado,
+
+297
+00:16:31,700 --> 00:16:33,700
+eu sou muito...
+
+298
+00:16:33,700 --> 00:16:36,700
+o objetivo muito comportado.
+
+299
+00:16:36,700 --> 00:16:38,700
+Eu sempre costumo dizer que compromisso
+
+300
+00:16:38,700 --> 00:16:40,700
+assumido é compromisso
+
+301
+00:16:40,700 --> 00:16:42,700
+que deve ser efetuado, né?
+
+302
+00:16:42,700 --> 00:16:44,700
+Então, a risca
+
+303
+00:16:44,700 --> 00:16:46,700
+duas horas por dia,
+
+304
+00:16:46,700 --> 00:16:48,700
+todo dia, sem parar,
+
+305
+00:16:48,700 --> 00:16:50,700
+sabe do domingo feriado,
+
+306
+00:16:50,700 --> 00:16:52,700
+enfim,
+
+307
+00:16:52,700 --> 00:16:54,700
+sempre na plataforma estudando,
+
+308
+00:16:54,700 --> 00:16:56,700
+fazendo o lab,
+
+309
+00:16:56,700 --> 00:16:58,700
+no começo eu não postava tanto
+
+310
+00:16:58,700 --> 00:16:59,700
+no linkedim,
+
+311
+00:16:59,700 --> 00:17:01,700
+porque eu não tinha esse hábito.
+
+312
+00:17:01,700 --> 00:17:03,700
+Até porque eu não me julgava
+
+313
+00:17:03,700 --> 00:17:04,700
+tão preparado na época, né?
+
+314
+00:17:04,700 --> 00:17:05,700
+Porque eu estava realmente
+
+315
+00:17:05,700 --> 00:17:07,700
+engatinhando, né?
+
+316
+00:17:07,700 --> 00:17:08,700
+E tal, né?
+
+317
+00:17:08,700 --> 00:17:10,700
+E também na época,
+
+318
+00:17:10,700 --> 00:17:11,700
+no mesmo momento,
+
+319
+00:17:11,700 --> 00:17:12,700
+fazendo faculdade,
+
+320
+00:17:12,700 --> 00:17:13,700
+empresa,
+
+321
+00:17:13,700 --> 00:17:14,700
+a família, então,
+
+322
+00:17:14,700 --> 00:17:15,700
+sempre naquele...
+
+323
+00:17:15,700 --> 00:17:16,700
+naquele ritmo ali,
+
+324
+00:17:16,700 --> 00:17:17,700
+mas nunca,
+
+325
+00:17:17,700 --> 00:17:19,700
+nunca deixei um dia,
+
+326
+00:17:19,700 --> 00:17:21,700
+se quer, de abrir a plataforma
+
+327
+00:17:21,700 --> 00:17:22,700
+da mentoria,
+
+328
+00:17:22,700 --> 00:17:23,700
+estudar,
+
+329
+00:17:23,700 --> 00:17:24,700
+você não conseguiu entender
+
+330
+00:17:24,700 --> 00:17:26,700
+um assunto revisava,
+
+331
+00:17:26,700 --> 00:17:27,700
+não entendia,
+
+332
+00:17:27,700 --> 00:17:28,700
+colocava no grupo,
+
+333
+00:17:28,700 --> 00:17:31,700
+então, eu até brinco, né?
+
+334
+00:17:31,700 --> 00:17:33,700
+Porque, na símbolca,
+
+335
+00:17:33,700 --> 00:17:35,700
+acho que eu fiz muito barulho, né?
+
+336
+00:17:35,700 --> 00:17:37,700
+E eu acho que isso,
+
+337
+00:17:37,700 --> 00:17:38,700
+acho, não,
+
+338
+00:17:38,700 --> 00:17:40,700
+hoje é o resultado da aí.
+
+339
+00:17:40,700 --> 00:17:41,700
+Então,
+
+340
+00:17:41,700 --> 00:17:42,700
+foi muito legal,
+
+341
+00:17:42,700 --> 00:17:44,700
+aquele primeiro ano,
+
+342
+00:17:44,700 --> 00:17:45,700
+eu costumo dizer pra minha esposa,
+
+343
+00:17:45,700 --> 00:17:46,700
+assim, que hoje,
+
+344
+00:17:46,700 --> 00:17:48,700
+24 foi um ano fantástico, né?
+
+345
+00:17:48,700 --> 00:17:50,700
+Porque eu aprendi tanta coisa nova,
+
+346
+00:17:50,700 --> 00:17:51,700
+e cheguei ali,
+
+347
+00:17:51,700 --> 00:17:52,700
+final do ano,
+
+348
+00:17:52,700 --> 00:17:54,700
+e fomos pra 0, 82,
+
+349
+00:17:54,700 --> 00:17:56,700
+e consegui essa aprovação,
+
+350
+00:17:56,700 --> 00:17:57,700
+bom, né?
+
+351
+00:17:57,700 --> 00:17:58,700
+Acabei se explodiu.
+
+352
+00:17:58,700 --> 00:17:59,700
+De legal.
+
+353
+00:17:59,700 --> 00:18:01,700
+E aí na sequência, né?
+
+354
+00:18:01,700 --> 00:18:02,700
+Já na sequência,
+
+355
+00:18:02,700 --> 00:18:04,700
+eu lembro que aproximadamente
+
+356
+00:18:04,700 --> 00:18:07,700
+duas horas depois de ter sido aprovado,
+
+357
+00:18:07,700 --> 00:18:09,700
+o Carlos me chamou, né?
+
+358
+00:18:09,700 --> 00:18:11,700
+E aí, venho com o VIT,
+
+359
+00:18:11,700 --> 00:18:12,700
+entre para a mentoria,
+
+360
+00:18:12,700 --> 00:18:14,700
+comecei a compartilhar o que eu aprendi
+
+361
+00:18:14,700 --> 00:18:15,700
+com os outros mentorados,
+
+362
+00:18:15,700 --> 00:18:16,700
+e aí,
+
+363
+00:18:16,700 --> 00:18:18,700
+aí, a coisa andou
+
+364
+00:18:18,700 --> 00:18:19,700
+pra 2005,
+
+365
+00:18:19,700 --> 00:18:20,700
+e aí estamos na nossa.
+
+366
+00:18:20,700 --> 00:18:21,700
+Que legal.
+
+367
+00:18:21,700 --> 00:18:22,700
+E vamos lá,
+
+368
+00:18:22,700 --> 00:18:23,700
+a certificação aconteceu
+
+369
+00:18:23,700 --> 00:18:24,700
+no primeiro ciclo da mentoria?
+
+370
+00:18:24,700 --> 00:18:25,700
+Sim,
+
+371
+00:18:25,700 --> 00:18:26,700
+na verdade, assim, né?
+
+372
+00:18:26,700 --> 00:18:28,700
+Então, a certificação,
+
+373
+00:18:28,700 --> 00:18:30,700
+venho em 2025 agora,
+
+374
+00:18:30,700 --> 00:18:31,700
+em dezembro, né?
+
+375
+00:18:31,700 --> 00:18:33,700
+Então, entre os estudos
+
+376
+00:18:33,700 --> 00:18:34,700
+das 0, 83,
+
+377
+00:18:34,700 --> 00:18:35,700
+as aulas,
+
+378
+00:18:35,700 --> 00:18:38,700
+e todo o percurso corrido, né?
+
+379
+00:18:38,700 --> 00:18:40,700
+É algo que eu acho,
+
+380
+00:18:40,700 --> 00:18:43,700
+assim, que é muito importante a gente frizar,
+
+381
+00:18:43,700 --> 00:18:45,700
+principalmente para quem está começando
+
+382
+00:18:45,700 --> 00:18:46,700
+e quem está na área,
+
+383
+00:18:46,700 --> 00:18:48,700
+aí, que está estudando,
+
+384
+00:18:48,700 --> 00:18:50,700
+não é o estudar,
+
+385
+00:18:50,700 --> 00:18:51,700
+mas sim,
+
+386
+00:18:51,700 --> 00:18:52,700
+praticar,
+
+387
+00:18:52,700 --> 00:18:53,700
+efetuar, né?
+
+388
+00:18:53,700 --> 00:18:54,700
+Então,
+
+389
+00:18:54,700 --> 00:18:56,700
+isso me ajudou pra caramba
+
+390
+00:18:56,700 --> 00:18:57,700
+muito,
+
+391
+00:18:57,700 --> 00:18:58,700
+muito mesmo,
+
+392
+00:18:58,700 --> 00:18:59,700
+vocês não fazem ideia,
+
+393
+00:18:59,700 --> 00:19:01,700
+então, a negócio que realmente
+
+394
+00:19:01,700 --> 00:19:02,700
+funcionou também,
+
+395
+00:19:02,700 --> 00:19:04,700
+e aí,
+
+396
+00:19:04,700 --> 00:19:05,700
+venha a certificação em dezembro
+
+397
+00:19:05,700 --> 00:19:06,700
+dando passado,
+
+398
+00:19:06,700 --> 00:19:08,700
+e foi,
+
+399
+00:19:08,700 --> 00:19:09,700
+mais posão, assim,
+
+400
+00:19:09,700 --> 00:19:11,700
+foi muito gratificante,
+
+401
+00:19:11,700 --> 00:19:12,700
+pessoalmente,
+
+402
+00:19:12,700 --> 00:19:13,700
+conseguir essa certificação.
+
+403
+00:19:13,700 --> 00:19:15,700
+E como ficou a sua confiança,
+
+404
+00:19:15,700 --> 00:19:17,700
+com relação à processo seletivo,
+
+405
+00:19:17,700 --> 00:19:18,700
+usar publicado ali,
+
+406
+00:19:18,700 --> 00:19:19,700
+quer dizer,
+
+407
+00:19:19,700 --> 00:19:20,700
+como vocês têm medo de publicado ali,
+
+408
+00:19:20,700 --> 00:19:21,700
+quer dizer?
+
+409
+00:19:21,700 --> 00:19:22,700
+Como ficou essa confiança
+
+410
+00:19:22,700 --> 00:19:23,700
+depois de ser passando a certificação órico, né?
+
+411
+00:19:23,700 --> 00:19:24,700
+Bom,
+
+412
+00:19:24,700 --> 00:19:25,700
+deu pra ver que,
+
+413
+00:19:25,700 --> 00:19:26,700
+a partir de momento
+
+414
+00:19:26,700 --> 00:19:27,700
+que eu tinha certificação,
+
+415
+00:19:27,700 --> 00:19:30,700
+os olhares foram outros, né?
+
+416
+00:19:30,700 --> 00:19:31,700
+Então,
+
+417
+00:19:31,700 --> 00:19:34,700
+eu lembro que, na primeira semana de janeiro,
+
+418
+00:19:34,700 --> 00:19:35,700
+ali,
+
+419
+00:19:35,700 --> 00:19:36,700
+eu tive cinco chamadas,
+
+420
+00:19:36,700 --> 00:19:38,700
+assim, pra entrevistas, né?
+
+421
+00:19:38,700 --> 00:19:39,700
+Uma delas,
+
+422
+00:19:39,700 --> 00:19:40,700
+praticamente,
+
+423
+00:19:40,700 --> 00:19:41,700
+certa,
+
+424
+00:19:41,700 --> 00:19:42,700
+mas,
+
+425
+00:19:42,700 --> 00:19:43,700
+dependia de uma mudança de cidade.
+
+426
+00:19:43,700 --> 00:19:44,700
+Então, o que é cabônio
+
+427
+00:19:44,700 --> 00:19:47,700
+viabilizando na ocasião, né?
+
+428
+00:19:47,700 --> 00:19:48,700
+Mas, enfim,
+
+429
+00:19:48,700 --> 00:19:49,700
+continuo seguindo ali
+
+430
+00:19:49,700 --> 00:19:51,700
+a rota de estudos
+
+431
+00:19:51,700 --> 00:19:52,700
+e,
+
+432
+00:19:52,700 --> 00:19:53,700
+fazendo lábio,
+
+433
+00:19:53,700 --> 00:19:54,700
+postando,
+
+434
+00:19:54,700 --> 00:19:55,700
+duas, três vezes
+
+435
+00:19:55,700 --> 00:19:56,700
+por semana,
+
+436
+00:19:56,700 --> 00:19:57,700
+praticando,
+
+437
+00:19:57,700 --> 00:19:59,700
+colocando, né?
+
+438
+00:19:59,700 --> 00:20:00,700
+Então, assim,
+
+439
+00:20:00,700 --> 00:20:01,700
+é o compromisso mesmo,
+
+440
+00:20:01,700 --> 00:20:02,700
+foi uma estratégia que a gente
+
+441
+00:20:02,700 --> 00:20:03,700
+adotou,
+
+442
+00:20:03,700 --> 00:20:04,700
+né?
+
+443
+00:20:04,700 --> 00:20:05,700
+E,
+
+444
+00:20:05,700 --> 00:20:06,700
+de novo,
+
+445
+00:20:06,700 --> 00:20:07,700
+bato naquilo que eu falo, né?
+
+446
+00:20:07,700 --> 00:20:08,700
+Com o compromisso,
+
+447
+00:20:08,700 --> 00:20:09,700
+assumido,
+
+448
+00:20:09,700 --> 00:20:10,700
+deve ser executado, né?
+
+449
+00:20:10,700 --> 00:20:11,700
+Então,
+
+450
+00:20:11,700 --> 00:20:12,700
+a gente vai pra cima, né?
+
+451
+00:20:12,700 --> 00:20:13,700
+Muito bom.
+
+452
+00:20:13,700 --> 00:20:14,700
+E, pessoal,
+
+453
+00:20:14,700 --> 00:20:15,700
+caso do Lesson,
+
+454
+00:20:15,700 --> 00:20:17,700
+caso que ele não estava desempregado,
+
+455
+00:20:17,700 --> 00:20:18,700
+ele
+
+456
+00:20:18,700 --> 00:20:20,700
+até tinha o trabalho dele, ali,
+
+457
+00:20:20,700 --> 00:20:22,700
+de, na parte de infraestrutura
+
+458
+00:20:22,700 --> 00:20:23,700
+e muito mais,
+
+459
+00:20:23,700 --> 00:20:25,700
+de suporte, de hardware e tal,
+
+460
+00:20:25,700 --> 00:20:26,700
+ele é um cara que entregue,
+
+461
+00:20:26,700 --> 00:20:28,700
+ele participou de muitas inversões aqui,
+
+462
+00:20:28,700 --> 00:20:29,700
+e era um cara
+
+463
+00:20:29,700 --> 00:20:30,700
+que realmente precisava
+
+464
+00:20:30,700 --> 00:20:32,700
+dessa etapa de certificação,
+
+465
+00:20:32,700 --> 00:20:33,700
+de planejamento,
+
+466
+00:20:33,700 --> 00:20:34,700
+e muito mais,
+
+467
+00:20:34,700 --> 00:20:35,700
+que poderia fazer isso
+
+468
+00:20:35,700 --> 00:20:36,700
+tão melhor como possível.
+
+469
+00:20:36,700 --> 00:20:37,700
+E alguns morrentes até
+
+470
+00:20:37,700 --> 00:20:38,700
+ficou, assim, pensando,
+
+471
+00:20:38,700 --> 00:20:39,700
+era uma vaga junho,
+
+472
+00:20:39,700 --> 00:20:40,700
+uma vaga plena,
+
+473
+00:20:40,700 --> 00:20:41,700
+uma vaga sério,
+
+474
+00:20:41,700 --> 00:20:42,700
+e até fui até
+
+475
+00:20:42,700 --> 00:20:43,700
+incisivo com ele.
+
+476
+00:20:43,700 --> 00:20:44,700
+Lá,
+
+477
+00:20:44,700 --> 00:20:45,700
+é, você não é um cara junho,
+
+478
+00:20:45,700 --> 00:20:46,700
+cara?
+
+479
+00:20:46,700 --> 00:20:47,700
+Você é um cara realmente
+
+480
+00:20:47,700 --> 00:20:48,700
+de...
+
+481
+00:20:48,700 --> 00:20:49,700
+você tem uma postura.
+
+482
+00:20:49,700 --> 00:20:50,700
+E o sério não é um cara
+
+483
+00:20:50,700 --> 00:20:51,700
+que sabe todos os comandos de cabeça.
+
+484
+00:20:51,700 --> 00:20:52,700
+Quem sabe todos os comandos
+
+485
+00:20:52,700 --> 00:20:53,700
+de cabeça,
+
+486
+00:20:53,700 --> 00:20:54,700
+então, isso é a iarque,
+
+487
+00:20:54,700 --> 00:20:55,700
+geros comandos pra gente
+
+488
+00:20:55,700 --> 00:20:56,700
+que consegue validar.
+
+489
+00:20:56,700 --> 00:20:58,700
+E, depois disso, cara,
+
+490
+00:20:58,700 --> 00:20:59,700
+nesse ano,
+
+491
+00:20:59,700 --> 00:21:00,700
+eu sei que começou a vi uma
+
+492
+00:21:00,700 --> 00:21:01,700
+quantidade de entrevistas
+
+493
+00:21:01,700 --> 00:21:02,700
+que a gente não é.
+
+494
+00:21:02,700 --> 00:21:03,700
+Se eu lembro que
+
+495
+00:21:03,700 --> 00:21:04,700
+você pode ter que confirmar
+
+496
+00:21:04,700 --> 00:21:05,700
+aqui pra ser
+
+497
+00:21:05,700 --> 00:21:06,700
+mais assertivo do que eu.
+
+498
+00:21:06,700 --> 00:21:07,700
+Hoje,
+
+499
+00:21:07,700 --> 00:21:08,700
+janeiro em fevereiro,
+
+500
+00:21:08,700 --> 00:21:09,700
+você estava fazendo muito
+
+501
+00:21:09,700 --> 00:21:10,700
+vezes por semana,
+
+502
+00:21:10,700 --> 00:21:11,700
+foram cinco ou seis no meio,
+
+503
+00:21:11,700 --> 00:21:12,700
+foi?
+
+504
+00:21:12,700 --> 00:21:13,700
+Sim,
+
+505
+00:21:13,700 --> 00:21:14,700
+exatamente.
+
+506
+00:21:14,700 --> 00:21:15,700
+Janeiro e fevereiro,
+
+507
+00:21:15,700 --> 00:21:16,700
+sim,
+
+508
+00:21:16,700 --> 00:21:17,700
+foi uma coisa...
+
+509
+00:21:17,700 --> 00:21:18,700
+fala do normal, né?
+
+510
+00:21:18,700 --> 00:21:19,700
+Depois março ali,
+
+511
+00:21:19,700 --> 00:21:20,700
+parece que deu uma camada,
+
+512
+00:21:20,700 --> 00:21:21,700
+e tal.
+
+513
+00:21:21,700 --> 00:21:22,700
+Aí,
+
+514
+00:21:22,700 --> 00:21:23,700
+aquela coisa, né,
+
+515
+00:21:23,700 --> 00:21:24,700
+do...
+
+516
+00:21:24,700 --> 00:21:25,700
+as espiculações,
+
+517
+00:21:25,700 --> 00:21:27,700
+e aí a estratégia, né?
+
+518
+00:21:27,700 --> 00:21:28,700
+Mas
+
+519
+00:21:28,700 --> 00:21:29,700
+o janeiro e fevereiro
+
+520
+00:21:29,700 --> 00:21:30,700
+foi uma loucura, né?
+
+521
+00:21:30,700 --> 00:21:31,700
+Então,
+
+522
+00:21:31,700 --> 00:21:32,700
+foi assim,
+
+523
+00:21:32,700 --> 00:21:33,700
+confeira o sim,
+
+524
+00:21:33,700 --> 00:21:34,700
+foi...
+
+525
+00:21:34,700 --> 00:21:35,700
+fora,
+
+526
+00:21:35,700 --> 00:21:36,700
+fora os chamados de meio e tal,
+
+527
+00:21:36,700 --> 00:21:37,700
+e tudo o que...
+
+528
+00:21:37,700 --> 00:21:38,700
+que eu acontecia, né?
+
+529
+00:21:38,700 --> 00:21:39,700
+Inclusive, eu tive uma
+
+530
+00:21:39,700 --> 00:21:40,700
+chamada pra uma outra,
+
+531
+00:21:40,700 --> 00:21:41,700
+nesse meu período aí.
+
+532
+00:21:41,700 --> 00:21:43,700
+E deixa eu te perguntar,
+
+533
+00:21:43,700 --> 00:21:44,700
+como que foi passar
+
+534
+00:21:44,700 --> 00:21:46,700
+por tantas entrevistas assim, cara?
+
+535
+00:21:46,700 --> 00:21:47,700
+Se aprender,
+
+536
+00:21:47,700 --> 00:21:48,700
+fazendo tantas entrevistas,
+
+537
+00:21:48,700 --> 00:21:49,700
+acho que é mais de 10, né?
+
+538
+00:21:49,700 --> 00:21:50,700
+Sim,
+
+539
+00:21:50,700 --> 00:21:51,700
+sem foram...
+
+540
+00:21:51,700 --> 00:21:52,700
+Foram vários sim.
+
+541
+00:21:52,700 --> 00:21:53,700
+E...
+
+542
+00:21:53,700 --> 00:21:54,700
+Olha,
+
+543
+00:21:54,700 --> 00:21:55,700
+eu...
+
+544
+00:21:55,700 --> 00:21:56,700
+vou dizer que...
+
+545
+00:21:56,700 --> 00:21:57,700
+da primeira,
+
+546
+00:21:57,700 --> 00:21:58,700
+até a última,
+
+547
+00:21:58,700 --> 00:21:59,700
+eu apanhei bastante,
+
+548
+00:21:59,700 --> 00:22:01,700
+no bom sentido, né?
+
+549
+00:22:01,700 --> 00:22:02,700
+A gente sempre tem que olhar
+
+550
+00:22:02,700 --> 00:22:03,700
+as coisas claro,
+
+551
+00:22:03,700 --> 00:22:04,700
+positivo,
+
+552
+00:22:04,700 --> 00:22:06,700
+foi realmente assim,
+
+553
+00:22:06,700 --> 00:22:07,700
+na primeira, eu saí
+
+554
+00:22:07,700 --> 00:22:08,700
+bem chateado,
+
+555
+00:22:08,700 --> 00:22:09,700
+porque eu realmente
+
+556
+00:22:09,700 --> 00:22:10,700
+eu vi que, né?
+
+557
+00:22:10,700 --> 00:22:11,700
+Devosismo,
+
+558
+00:22:11,700 --> 00:22:12,700
+aquilo acabou,
+
+559
+00:22:12,700 --> 00:22:13,700
+me atrapalhando.
+
+560
+00:22:13,700 --> 00:22:14,700
+Aí, na segunda,
+
+561
+00:22:14,700 --> 00:22:15,700
+já foi melhorando,
+
+562
+00:22:15,700 --> 00:22:16,700
+na terceira,
+
+563
+00:22:16,700 --> 00:22:17,700
+você já começa a ficar
+
+564
+00:22:17,700 --> 00:22:18,700
+mais...
+
+565
+00:22:18,700 --> 00:22:19,700
+eu não vou dizer
+
+566
+00:22:19,700 --> 00:22:20,700
+casca-grossa,
+
+567
+00:22:20,700 --> 00:22:22,700
+mas você começa a entender
+
+568
+00:22:22,700 --> 00:22:24,700
+que na entrevista
+
+569
+00:22:24,700 --> 00:22:26,700
+não é só a condição
+
+570
+00:22:26,700 --> 00:22:27,700
+técnica que vale.
+
+571
+00:22:27,700 --> 00:22:28,700
+É a tua postura.
+
+572
+00:22:28,700 --> 00:22:30,700
+Então,
+
+573
+00:22:30,700 --> 00:22:31,700
+eu percebi isso,
+
+574
+00:22:31,700 --> 00:22:32,700
+pois a terceira entrevista,
+
+575
+00:22:32,700 --> 00:22:33,700
+então,
+
+576
+00:22:33,700 --> 00:22:34,700
+aquilo começou a me mudar,
+
+577
+00:22:34,700 --> 00:22:36,700
+começou a realmente
+
+578
+00:22:36,700 --> 00:22:38,700
+fazer...
+
+579
+00:22:38,700 --> 00:22:40,700
+fazer sentido,
+
+580
+00:22:40,700 --> 00:22:41,700
+o que o recrutador
+
+581
+00:22:41,700 --> 00:22:42,700
+perguntava,
+
+582
+00:22:42,700 --> 00:22:43,700
+o que a equipe técnica
+
+583
+00:22:43,700 --> 00:22:44,700
+perguntava,
+
+584
+00:22:44,700 --> 00:22:45,700
+e como eu iria
+
+585
+00:22:45,700 --> 00:22:46,700
+reagir...
+
+586
+00:22:46,700 --> 00:22:47,700
+com a resposta, né?
+
+587
+00:22:47,700 --> 00:22:48,700
+Essa resposta
+
+588
+00:22:48,700 --> 00:22:49,700
+ia ter...
+
+589
+00:22:49,700 --> 00:22:50,700
+fazer sentido
+
+590
+00:22:50,700 --> 00:22:51,700
+e, se a minha resposta
+
+591
+00:22:51,700 --> 00:22:52,700
+depois, né?
+
+592
+00:22:52,700 --> 00:22:53,700
+Aqui.
+
+593
+00:22:53,700 --> 00:22:54,700
+A minha maneira
+
+594
+00:22:54,700 --> 00:22:55,700
+de raciocinar
+
+595
+00:22:55,700 --> 00:22:56,700
+para entregar isso.
+
+596
+00:22:57,700 --> 00:22:58,700
+É legal.
+
+597
+00:22:58,700 --> 00:22:59,700
+E aí, conta aí, cara.
+
+598
+00:22:59,700 --> 00:23:00,700
+O que aconteceu agora
+
+599
+00:23:00,700 --> 00:23:01,700
+nesse mês,
+
+600
+00:23:01,700 --> 00:23:02,700
+particularmente,
+
+601
+00:23:02,700 --> 00:23:03,700
+se semana, né?
+
+602
+00:23:03,700 --> 00:23:04,700
+Praticamente.
+
+603
+00:23:04,700 --> 00:23:05,700
+Então, pessoal,
+
+604
+00:23:05,700 --> 00:23:06,700
+essa semana foi a semana
+
+605
+00:23:06,700 --> 00:23:07,700
+mais intensa para mim
+
+606
+00:23:07,700 --> 00:23:08,700
+dos últimos
+
+607
+00:23:08,700 --> 00:23:10,700
+dois anos, aí.
+
+608
+00:23:10,700 --> 00:23:11,700
+Eu estava conversando
+
+609
+00:23:11,700 --> 00:23:12,700
+agora há pouco
+
+610
+00:23:12,700 --> 00:23:13,700
+o Beck, porque ele já
+
+611
+00:23:13,700 --> 00:23:14,700
+me deu o King
+
+612
+00:23:14,700 --> 00:23:15,700
+na terça-feira,
+
+613
+00:23:15,700 --> 00:23:16,700
+a gente lava
+
+614
+00:23:16,700 --> 00:23:17,700
+conversando.
+
+615
+00:23:17,700 --> 00:23:19,700
+Então, é assim, pessoal.
+
+616
+00:23:19,700 --> 00:23:20,700
+Mais ou menos
+
+617
+00:23:20,700 --> 00:23:22,700
+umas três semanas atrás
+
+618
+00:23:22,700 --> 00:23:24,700
+surgiu uma vaga
+
+619
+00:23:24,700 --> 00:23:25,700
+pela Estefaninha
+
+620
+00:23:25,700 --> 00:23:26,700
+para a Sânior
+
+621
+00:23:26,700 --> 00:23:28,700
+e, ó, a princípio
+
+622
+00:23:28,700 --> 00:23:31,700
+não me candidatei, né?
+
+623
+00:23:31,700 --> 00:23:32,700
+Acabei
+
+624
+00:23:32,700 --> 00:23:33,700
+mantendo aquele ciclo
+
+625
+00:23:33,700 --> 00:23:34,700
+de postagem
+
+626
+00:23:34,700 --> 00:23:35,700
+e tal.
+
+627
+00:23:35,700 --> 00:23:36,700
+Eu estava me candidatando
+
+628
+00:23:36,700 --> 00:23:38,700
+para uma diploma, né?
+
+629
+00:23:38,700 --> 00:23:39,700
+Beleza.
+
+630
+00:23:39,700 --> 00:23:40,700
+Com forma de gente
+
+631
+00:23:40,700 --> 00:23:41,700
+tinha até conversado
+
+632
+00:23:41,700 --> 00:23:42,700
+alguns dias antes, né?
+
+633
+00:23:42,700 --> 00:23:43,700
+Guilherme, você falou,
+
+634
+00:23:43,700 --> 00:23:44,700
+não.
+
+635
+00:23:44,700 --> 00:23:45,700
+Junior, não.
+
+636
+00:23:45,700 --> 00:23:46,700
+Seja até aqui,
+
+637
+00:23:46,700 --> 00:23:47,700
+segui para algo
+
+638
+00:23:47,700 --> 00:23:48,700
+melhor.
+
+639
+00:23:48,700 --> 00:23:50,700
+E foi o que eu fiz.
+
+640
+00:23:50,700 --> 00:23:51,700
+E, então,
+
+641
+00:23:51,700 --> 00:23:52,700
+na última...
+
+642
+00:23:52,700 --> 00:23:53,700
+Na...
+
+643
+00:23:53,700 --> 00:23:54,700
+Na última
+
+644
+00:23:54,700 --> 00:23:55,700
+duas semanas,
+
+645
+00:23:55,700 --> 00:23:56,700
+houve uma indicação
+
+646
+00:23:56,700 --> 00:23:57,700
+do Carlos,
+
+647
+00:23:57,700 --> 00:23:58,700
+aqui da Dementoria,
+
+648
+00:23:58,700 --> 00:24:00,700
+e o Carlos, né?
+
+649
+00:24:00,700 --> 00:24:01,700
+Foi...
+
+650
+00:24:01,700 --> 00:24:02,700
+foi procurado
+
+651
+00:24:02,700 --> 00:24:03,700
+lá em de alguém
+
+652
+00:24:03,700 --> 00:24:04,700
+e ele apontou para mim.
+
+653
+00:24:04,700 --> 00:24:05,700
+Eu não estava
+
+654
+00:24:05,700 --> 00:24:06,700
+candidatado
+
+655
+00:24:06,700 --> 00:24:07,700
+a esta vaga
+
+656
+00:24:07,700 --> 00:24:08,700
+especificamente.
+
+657
+00:24:08,700 --> 00:24:09,700
+Mas,
+
+658
+00:24:09,700 --> 00:24:11,700
+aí o que aconteceu?
+
+659
+00:24:11,700 --> 00:24:12,700
+Os recrutadores
+
+660
+00:24:12,700 --> 00:24:13,700
+não entraram em contato
+
+661
+00:24:13,700 --> 00:24:14,700
+comigo.
+
+662
+00:24:14,700 --> 00:24:15,700
+Eles primeiro foram
+
+663
+00:24:15,700 --> 00:24:16,700
+lá no meu linkadinho
+
+664
+00:24:16,700 --> 00:24:17,700
+e cara fizeram
+
+665
+00:24:17,700 --> 00:24:18,700
+pente fino ali
+
+666
+00:24:18,700 --> 00:24:19,700
+no meu linkadinho.
+
+667
+00:24:19,700 --> 00:24:20,700
+Assim,
+
+668
+00:24:20,700 --> 00:24:21,700
+varreram,
+
+669
+00:24:21,700 --> 00:24:22,700
+literalmente,
+
+670
+00:24:22,700 --> 00:24:23,700
+tudo que eu estava fazendo
+
+671
+00:24:23,700 --> 00:24:24,700
+os últimos tempos, né?
+
+672
+00:24:24,700 --> 00:24:25,700
+Então,
+
+673
+00:24:25,700 --> 00:24:26,700
+desde...
+
+674
+00:24:26,700 --> 00:24:27,700
+desde de dezembro
+
+675
+00:24:27,700 --> 00:24:28,700
+até agora, eu fiz
+
+676
+00:24:28,700 --> 00:24:29,700
+muita coisa.
+
+677
+00:24:29,700 --> 00:24:30,700
+Então, como eu falei,
+
+678
+00:24:30,700 --> 00:24:31,700
+toda semana, ali,
+
+679
+00:24:31,700 --> 00:24:32,700
+persistência,
+
+680
+00:24:32,700 --> 00:24:33,700
+fazendo,
+
+681
+00:24:33,700 --> 00:24:34,700
+praticando,
+
+682
+00:24:34,700 --> 00:24:35,700
+e tudo mais, né?
+
+683
+00:24:35,700 --> 00:24:36,700
+E...
+
+684
+00:24:36,700 --> 00:24:37,700
+E eu comecei a ver que
+
+685
+00:24:37,700 --> 00:24:38,700
+meu linkadinho
+
+686
+00:24:38,700 --> 00:24:39,700
+começou a ter alguns acessos.
+
+687
+00:24:39,700 --> 00:24:40,700
+Ah,
+
+688
+00:24:40,700 --> 00:24:41,700
+recrutador,
+
+689
+00:24:41,700 --> 00:24:42,700
+não sei da onde,
+
+690
+00:24:42,700 --> 00:24:43,700
+tá olhando,
+
+691
+00:24:43,700 --> 00:24:44,700
+recrutador,
+
+692
+00:24:44,700 --> 00:24:45,700
+não sei da onde.
+
+693
+00:24:45,700 --> 00:24:46,700
+Veja,
+
+694
+00:24:46,700 --> 00:24:47,700
+repente,
+
+695
+00:24:47,700 --> 00:24:48,700
+o pessoal
+
+696
+00:24:48,700 --> 00:24:49,700
+quer marcar uma entrevista
+
+697
+00:24:49,700 --> 00:24:50,700
+comigo.
+
+698
+00:24:50,700 --> 00:24:51,700
+Beleza.
+
+699
+00:24:51,700 --> 00:24:52,700
+E aí, semana passada.
+
+700
+00:24:52,700 --> 00:24:53,700
+Aliás,
+
+701
+00:24:53,700 --> 00:24:54,700
+perdão,
+
+702
+00:24:54,700 --> 00:24:55,700
+começo dessa semana,
+
+703
+00:24:55,700 --> 00:24:56,700
+na segunda-feira,
+
+704
+00:24:56,700 --> 00:24:57,700
+uma recrutadora
+
+705
+00:24:57,700 --> 00:24:58,700
+da Estefanini
+
+706
+00:24:58,700 --> 00:24:59,700
+entrou em contato comigo.
+
+707
+00:24:59,700 --> 00:25:00,700
+Ela falou,
+
+708
+00:25:00,700 --> 00:25:01,700
+tudo bom,
+
+709
+00:25:01,700 --> 00:25:02,700
+aqui,
+
+710
+00:25:02,700 --> 00:25:03,700
+da Estefanini,
+
+711
+00:25:03,700 --> 00:25:04,700
+e tal.
+
+712
+00:25:04,700 --> 00:25:05,700
+A gente quer conversar com você.
+
+713
+00:25:05,700 --> 00:25:06,700
+Não foi legal?
+
+714
+00:25:06,700 --> 00:25:07,700
+Vamos lá.
+
+715
+00:25:07,700 --> 00:25:08,700
+A gente tem uma
+
+716
+00:25:08,700 --> 00:25:10,700
+vada aqui de DBA Seniors
+
+717
+00:25:10,700 --> 00:25:11,700
+e a gente andou analisando
+
+718
+00:25:11,700 --> 00:25:12,700
+teu currículo
+
+719
+00:25:12,700 --> 00:25:14,700
+e o teu linkadinho
+
+720
+00:25:14,700 --> 00:25:15,700
+me envia teu currículo, né?
+
+721
+00:25:15,700 --> 00:25:16,700
+Enfim,
+
+722
+00:25:16,700 --> 00:25:17,700
+eu mandei lá
+
+723
+00:25:17,700 --> 00:25:18,700
+com o currículo,
+
+724
+00:25:18,700 --> 00:25:19,700
+né?
+
+725
+00:25:19,700 --> 00:25:20,700
+Alguns dias antes, né?
+
+726
+00:25:20,700 --> 00:25:21,700
+Acabei cortando aqui,
+
+727
+00:25:21,700 --> 00:25:22,700
+a história,
+
+728
+00:25:22,700 --> 00:25:23,700
+mas alguns dias antes,
+
+729
+00:25:23,700 --> 00:25:24,700
+a alguém de Estefanini,
+
+730
+00:25:24,700 --> 00:25:25,700
+também,
+
+731
+00:25:25,700 --> 00:25:26,700
+me chamou o linkadinho
+
+732
+00:25:26,700 --> 00:25:27,700
+de um meu currículo.
+
+733
+00:25:27,700 --> 00:25:28,700
+E aí,
+
+734
+00:25:28,700 --> 00:25:29,700
+foi toda essa,
+
+735
+00:25:29,700 --> 00:25:30,700
+essa questão.
+
+736
+00:25:30,700 --> 00:25:31,700
+Então,
+
+737
+00:25:31,700 --> 00:25:32,700
+aí, na segunda-feira,
+
+738
+00:25:32,700 --> 00:25:33,700
+mesmo,
+
+739
+00:25:33,700 --> 00:25:34,700
+na mesma segunda-feira,
+
+740
+00:25:34,700 --> 00:25:35,700
+já me chamaram
+
+741
+00:25:35,700 --> 00:25:37,700
+pra efetuar uma entrevista.
+
+742
+00:25:37,700 --> 00:25:38,700
+Eu pensei,
+
+743
+00:25:38,700 --> 00:25:39,700
+uma entrevista,
+
+744
+00:25:39,700 --> 00:25:40,700
+que vai redar,
+
+745
+00:25:40,700 --> 00:25:41,700
+ou aquele negócio,
+
+746
+00:25:41,700 --> 00:25:42,700
+de você se conhecer,
+
+747
+00:25:42,700 --> 00:25:43,700
+e aí,
+
+748
+00:25:43,700 --> 00:25:44,700
+eu cair de paraquedas
+
+749
+00:25:44,700 --> 00:25:46,700
+numa entrevista técnica.
+
+750
+00:25:46,700 --> 00:25:48,700
+Aonde é que tava lá
+
+751
+00:25:48,700 --> 00:25:49,700
+o DLC,
+
+752
+00:25:49,700 --> 00:25:50,700
+era ali da Estefanini,
+
+753
+00:25:50,700 --> 00:25:52,700
+do grupo Metro,
+
+754
+00:25:52,700 --> 00:25:54,700
+e eu cheguei, né?
+
+755
+00:25:54,700 --> 00:25:55,700
+Pra conversar,
+
+756
+00:25:55,700 --> 00:25:57,700
+pra gente se conhecer,
+
+757
+00:25:57,700 --> 00:25:58,700
+e aí,
+
+758
+00:25:58,700 --> 00:26:00,700
+eu rolou a entrevista.
+
+759
+00:26:00,700 --> 00:26:02,700
+E o pessoal da técnica,
+
+760
+00:26:02,700 --> 00:26:03,700
+lá,
+
+761
+00:26:03,700 --> 00:26:04,700
+me apertou, né?
+
+762
+00:26:04,700 --> 00:26:05,700
+Comprou conceito,
+
+763
+00:26:05,700 --> 00:26:06,700
+qual que seria,
+
+764
+00:26:06,700 --> 00:26:07,700
+como é,
+
+765
+00:26:07,700 --> 00:26:08,700
+reagir e tal.
+
+766
+00:26:08,700 --> 00:26:10,700
+E aí, eu deixei muito claro, né?
+
+767
+00:26:10,700 --> 00:26:11,700
+Que,
+
+768
+00:26:11,700 --> 00:26:13,700
+a minha experiência
+
+769
+00:26:13,700 --> 00:26:14,700
+com bancos,
+
+770
+00:26:14,700 --> 00:26:15,700
+ela, em ambientes menores,
+
+771
+00:26:15,700 --> 00:26:16,700
+mas,
+
+772
+00:26:16,700 --> 00:26:17,700
+que eu tava buscando
+
+773
+00:26:17,700 --> 00:26:18,700
+essas certificações,
+
+774
+00:26:18,700 --> 00:26:19,700
+aliás, que eu já tinha,
+
+775
+00:26:19,700 --> 00:26:20,700
+com que estava certificações,
+
+776
+00:26:20,700 --> 00:26:21,700
+passei toda,
+
+777
+00:26:21,700 --> 00:26:22,700
+toda a minha história,
+
+778
+00:26:22,700 --> 00:26:23,700
+toda a minha trajetória ali
+
+779
+00:26:23,700 --> 00:26:24,700
+pra eles,
+
+780
+00:26:24,700 --> 00:26:25,700
+e cara,
+
+781
+00:26:25,700 --> 00:26:26,700
+a entrevista,
+
+782
+00:26:26,700 --> 00:26:27,700
+foi punk.
+
+783
+00:26:27,700 --> 00:26:28,700
+A entrevista,
+
+784
+00:26:28,700 --> 00:26:29,700
+foi,
+
+785
+00:26:29,700 --> 00:26:30,700
+mas eu consegui
+
+786
+00:26:30,700 --> 00:26:31,700
+atingir as expectativas,
+
+787
+00:26:31,700 --> 00:26:32,700
+mas,
+
+788
+00:26:32,700 --> 00:26:33,700
+uma coisa de,
+
+789
+00:26:33,700 --> 00:26:34,700
+de finalizar,
+
+790
+00:26:34,700 --> 00:26:36,700
+é algo que,
+
+791
+00:26:36,700 --> 00:26:38,700
+que eu lembrei muito do Guilherme,
+
+792
+00:26:38,700 --> 00:26:39,700
+depois da entrevista.
+
+793
+00:26:39,700 --> 00:26:42,700
+Eles vídeo no meu corrigo,
+
+794
+00:26:42,700 --> 00:26:43,700
+que eu montei um sumo
+
+795
+00:26:43,700 --> 00:26:44,700
+ador do ex-adata.
+
+796
+00:26:44,700 --> 00:26:45,700
+E aí,
+
+797
+00:26:45,700 --> 00:26:46,700
+esse foi um dos pontos,
+
+798
+00:26:46,700 --> 00:26:47,700
+né?
+
+799
+00:26:47,700 --> 00:26:49,700
+Eu falei pra eles,
+
+800
+00:26:49,700 --> 00:26:50,700
+só montei o sumo ador.
+
+801
+00:26:50,700 --> 00:26:51,700
+Realmente, eu não,
+
+802
+00:26:51,700 --> 00:26:52,700
+nunca eu perim.
+
+803
+00:26:52,700 --> 00:26:53,700
+Tá, como é que se montou?
+
+804
+00:26:53,700 --> 00:26:54,700
+Na onde que vem?
+
+805
+00:26:54,700 --> 00:26:55,700
+Assim,
+
+806
+00:26:55,700 --> 00:26:56,700
+então, eu fui,
+
+807
+00:26:56,700 --> 00:26:57,700
+né?
+
+808
+00:26:57,700 --> 00:26:58,700
+Eu fui falando,
+
+809
+00:26:58,700 --> 00:26:59,700
+como é que eu fui fazendo,
+
+810
+00:26:59,700 --> 00:27:00,700
+quais foram os problemas
+
+811
+00:27:00,700 --> 00:27:01,700
+da arquitetura,
+
+812
+00:27:01,700 --> 00:27:02,700
+porque não deu paladade ao 19C.
+
+813
+00:27:02,700 --> 00:27:03,700
+Então,
+
+814
+00:27:03,700 --> 00:27:04,700
+realmente, eu mostrei,
+
+815
+00:27:04,700 --> 00:27:05,700
+ali,
+
+816
+00:27:05,700 --> 00:27:06,700
+num contexto de toda,
+
+817
+00:27:06,700 --> 00:27:08,700
+toda a situação,
+
+818
+00:27:08,700 --> 00:27:09,700
+e aonde,
+
+819
+00:27:09,700 --> 00:27:10,700
+foi a minha solução pra fazer,
+
+820
+00:27:10,700 --> 00:27:11,700
+e funcionar.
+
+821
+00:27:11,700 --> 00:27:12,700
+Legal.
+
+822
+00:27:12,700 --> 00:27:13,700
+O que que aprendi com isso?
+
+823
+00:27:13,700 --> 00:27:14,700
+É,
+
+824
+00:27:14,700 --> 00:27:15,700
+se desafiem,
+
+825
+00:27:15,700 --> 00:27:16,700
+se desafiem.
+
+826
+00:27:16,700 --> 00:27:18,700
+Se você tem um desafio,
+
+827
+00:27:18,700 --> 00:27:20,700
+quando o Guilherme me chamou,
+
+828
+00:27:20,700 --> 00:27:21,700
+você me chamou na Guilherme,
+
+829
+00:27:21,700 --> 00:27:22,700
+no passado,
+
+830
+00:27:22,700 --> 00:27:23,700
+foi ali,
+
+831
+00:27:23,700 --> 00:27:24,700
+meados de agosto, né?
+
+832
+00:27:24,700 --> 00:27:25,700
+Eu,
+
+833
+00:27:25,700 --> 00:27:26,700
+inclusive, eu tinha uma,
+
+834
+00:27:26,700 --> 00:27:27,700
+uma semana antes,
+
+835
+00:27:27,700 --> 00:27:28,700
+eu tinha viagem marcada pro Goob,
+
+836
+00:27:28,700 --> 00:27:29,700
+ali,
+
+837
+00:27:29,700 --> 00:27:30,700
+Cosvald,
+
+838
+00:27:30,700 --> 00:27:31,700
+o Carlos,
+
+839
+00:27:31,700 --> 00:27:32,700
+então, eu falei que vem,
+
+840
+00:27:32,700 --> 00:27:33,700
+eu vou começar a simulador,
+
+841
+00:27:33,700 --> 00:27:34,700
+e você me desafiu.
+
+842
+00:27:34,700 --> 00:27:35,700
+Eu falei, eu vou fazer.
+
+843
+00:27:35,700 --> 00:27:36,700
+Foram dois,
+
+844
+00:27:36,700 --> 00:27:37,700
+três meses,
+
+845
+00:27:37,700 --> 00:27:38,700
+ali, até que a gente conseguiu
+
+846
+00:27:38,700 --> 00:27:39,700
+concluir,
+
+847
+00:27:39,700 --> 00:27:40,700
+dificuldade maior foi
+
+848
+00:27:40,700 --> 00:27:41,700
+na questão de arquitetura,
+
+849
+00:27:41,700 --> 00:27:42,700
+mas conseguimos concluir.
+
+850
+00:27:42,700 --> 00:27:43,700
+E aí,
+
+851
+00:27:43,700 --> 00:27:44,700
+foi, eu acho,
+
+852
+00:27:44,700 --> 00:27:45,700
+minha maior missão,
+
+853
+00:27:45,700 --> 00:27:46,700
+que é,
+
+854
+00:27:46,700 --> 00:27:47,700
+cara, se desafie,
+
+855
+00:27:47,700 --> 00:27:49,700
+posta no link de
+
+856
+00:27:49,700 --> 00:27:50,700
+em,
+
+857
+00:27:50,700 --> 00:27:51,700
+se você tomar um desafio,
+
+858
+00:27:51,700 --> 00:27:52,700
+cara, abraça,
+
+859
+00:27:52,700 --> 00:27:53,700
+vai pra cima,
+
+860
+00:27:53,700 --> 00:27:54,700
+faz,
+
+861
+00:27:54,700 --> 00:27:55,700
+não deu certo,
+
+862
+00:27:55,700 --> 00:27:56,700
+tenta de outro jeito,
+
+863
+00:27:56,700 --> 00:27:57,700
+escudo, vai pra cima.
+
+864
+00:27:57,700 --> 00:27:58,700
+E,
+
+865
+00:27:58,700 --> 00:27:59,700
+esse foi um dos pontos
+
+866
+00:27:59,700 --> 00:28:01,700
+que o pessoal lá gostou de mim,
+
+867
+00:28:01,700 --> 00:28:03,700
+o próprio DBA,
+
+868
+00:28:03,700 --> 00:28:04,700
+ela falou, né?
+
+869
+00:28:04,700 --> 00:28:05,700
+Ele disse,
+
+870
+00:28:05,700 --> 00:28:06,700
+olha, eu gostei muito
+
+871
+00:28:06,700 --> 00:28:07,700
+de você.
+
+872
+00:28:07,700 --> 00:28:08,700
+Você não,
+
+873
+00:28:08,700 --> 00:28:09,700
+talvez você não tenha
+
+874
+00:28:09,700 --> 00:28:10,700
+assim aquela,
+
+875
+00:28:10,700 --> 00:28:11,700
+toda aquela
+
+876
+00:28:11,700 --> 00:28:12,700
+experiência de
+
+877
+00:28:12,700 --> 00:28:13,700
+bagagem como DBA,
+
+878
+00:28:13,700 --> 00:28:15,700
+mas você tem postura,
+
+879
+00:28:15,700 --> 00:28:16,700
+né?
+
+880
+00:28:16,700 --> 00:28:17,700
+Então,
+
+881
+00:28:17,700 --> 00:28:18,700
+aí foi um ponto muito forte.
+
+882
+00:28:18,700 --> 00:28:19,700
+Aí,
+
+883
+00:28:19,700 --> 00:28:20,700
+ele fez outras perguntas
+
+884
+00:28:20,700 --> 00:28:21,700
+de irmão,
+
+885
+00:28:21,700 --> 00:28:22,700
+o que que acontece
+
+886
+00:28:22,700 --> 00:28:23,700
+quando faço isso?
+
+887
+00:28:23,700 --> 00:28:24,700
+Ah,
+
+888
+00:28:24,700 --> 00:28:25,700
+quando você faz um alter
+
+889
+00:28:25,700 --> 00:28:26,700
+da tabéis open-reset logs,
+
+890
+00:28:26,700 --> 00:28:27,700
+o que que vai acontecer
+
+891
+00:28:27,700 --> 00:28:28,700
+no banco?
+
+892
+00:28:28,700 --> 00:28:29,700
+Aí,
+
+893
+00:28:29,700 --> 00:28:30,700
+vai mudar a encarnação do banco.
+
+894
+00:28:30,700 --> 00:28:31,700
+Então, já vamos ter uma
+
+895
+00:28:31,700 --> 00:28:32,700
+alteração,
+
+896
+00:28:32,700 --> 00:28:33,700
+então,
+
+897
+00:28:33,700 --> 00:28:34,700
+são perguntas ali que realmente
+
+898
+00:28:34,700 --> 00:28:35,700
+exigindo
+
+899
+00:28:35,700 --> 00:28:36,700
+da questão de contexto,
+
+900
+00:28:36,700 --> 00:28:37,700
+você sabe o que
+
+901
+00:28:37,700 --> 00:28:38,700
+você tá falando?
+
+902
+00:28:38,700 --> 00:28:39,700
+E beleza,
+
+903
+00:28:39,700 --> 00:28:40,700
+aí, fechou a entrevista,
+
+904
+00:28:40,700 --> 00:28:41,700
+aí, no Doir H,
+
+905
+00:28:41,700 --> 00:28:42,700
+agradeceu.
+
+906
+00:28:42,700 --> 00:28:43,700
+E ficou por isso.
+
+907
+00:28:43,700 --> 00:28:44,700
+Na terça-feira,
+
+908
+00:28:44,700 --> 00:28:45,700
+Beck, com isso,
+
+909
+00:28:45,700 --> 00:28:46,700
+me chamar, né?
+
+910
+00:28:46,700 --> 00:28:47,700
+A gente trocou uma ideia, né?
+
+911
+00:28:47,700 --> 00:28:48,700
+Conversando.
+
+912
+00:28:48,700 --> 00:28:49,700
+E aí, ele falou,
+
+913
+00:28:49,700 --> 00:28:50,700
+aí, como é que tá as coisas?
+
+914
+00:28:50,700 --> 00:28:51,700
+Eu falei, olha,
+
+915
+00:28:51,700 --> 00:28:52,700
+isso é uma entrevista
+
+916
+00:28:52,700 --> 00:28:53,700
+onde,
+
+917
+00:28:53,700 --> 00:28:54,700
+não sei o que que deu,
+
+918
+00:28:54,700 --> 00:28:55,700
+parece que o resultado
+
+919
+00:28:55,700 --> 00:28:56,700
+foi satisfatório,
+
+920
+00:28:56,700 --> 00:28:57,700
+a entrevista foi
+
+921
+00:28:57,700 --> 00:28:58,700
+punk,
+
+922
+00:28:58,700 --> 00:28:59,700
+eu sei, até com um pouco de
+
+923
+00:28:59,700 --> 00:29:00,700
+dor de cabeça,
+
+924
+00:29:00,700 --> 00:29:01,700
+da entrevista,
+
+925
+00:29:01,700 --> 00:29:02,700
+pelo nervosismo e
+
+926
+00:29:02,700 --> 00:29:03,700
+tudo mais.
+
+927
+00:29:03,700 --> 00:29:04,700
+E,
+
+928
+00:29:04,700 --> 00:29:05,700
+vida que segue, né?
+
+929
+00:29:05,700 --> 00:29:06,700
+Continei meu trabalho,
+
+930
+00:29:06,700 --> 00:29:07,700
+as minhas coisas,
+
+931
+00:29:07,700 --> 00:29:08,700
+quarta-feira de
+
+932
+00:29:08,700 --> 00:29:09,700
+quarta-feira,
+
+933
+00:29:09,700 --> 00:29:10,700
+as nove horas da manhã,
+
+934
+00:29:10,700 --> 00:29:12,700
+a menina do arrega-meixão
+
+935
+00:29:12,700 --> 00:29:13,700
+a de novo.
+
+936
+00:29:13,700 --> 00:29:14,700
+Florel Lers,
+
+937
+00:29:14,700 --> 00:29:17,700
+o pessoal cliente, né?
+
+938
+00:29:17,700 --> 00:29:18,700
+Destei fonini que é conversar
+
+939
+00:29:18,700 --> 00:29:19,700
+com você agora.
+
+940
+00:29:19,700 --> 00:29:20,700
+Outra entrevista foi.
+
+941
+00:29:20,700 --> 00:29:21,700
+Então, vamos para,
+
+942
+00:29:21,700 --> 00:29:22,700
+vamos para cima.
+
+943
+00:29:22,700 --> 00:29:23,700
+Aí, a gente dá uma
+
+944
+00:29:23,700 --> 00:29:24,700
+entrevista,
+
+945
+00:29:24,700 --> 00:29:26,700
+a gente entrou lá,
+
+946
+00:29:26,700 --> 00:29:28,700
+conversamos e
+
+947
+00:29:28,700 --> 00:29:30,700
+pásmin, me aprovaram.
+
+948
+00:29:30,700 --> 00:29:31,700
+Então, a minha primeira
+
+949
+00:29:31,700 --> 00:29:32,700
+vaga, cara,
+
+950
+00:29:32,700 --> 00:29:34,700
+minha primeira vaga de DBA,
+
+951
+00:29:34,700 --> 00:29:36,700
+era DBA Senior,
+
+952
+00:29:36,700 --> 00:29:38,700
+nem eu não acreditei, cara.
+
+953
+00:29:38,700 --> 00:29:39,700
+Nem eu não acreditei.
+
+954
+00:29:39,700 --> 00:29:40,700
+Eu me emocionei
+
+955
+00:29:40,700 --> 00:29:42,700
+do topo, até me emocionando agora,
+
+956
+00:29:42,700 --> 00:29:43,700
+que foi muito forte,
+
+957
+00:29:43,700 --> 00:29:44,700
+foi muito legal.
+
+958
+00:29:44,700 --> 00:29:46,700
+Então, é algo assim que,
+
+959
+00:29:46,700 --> 00:29:47,700
+que eu falo assim para
+
+960
+00:29:47,700 --> 00:29:48,700
+todo mundo, cara,
+
+961
+00:29:48,700 --> 00:29:49,700
+se desafia,
+
+962
+00:29:49,700 --> 00:29:50,700
+vai para cima,
+
+963
+00:29:50,700 --> 00:29:51,700
+foco,
+
+964
+00:29:51,700 --> 00:29:53,700
+muito foco,
+
+965
+00:29:53,700 --> 00:29:54,700
+cara,
+
+966
+00:29:54,700 --> 00:29:55,700
+consegue,
+
+967
+00:29:55,700 --> 00:29:56,700
+consegue.
+
+968
+00:29:56,700 --> 00:29:57,700
+Eu consegui,
+
+969
+00:29:57,700 --> 00:29:58,700
+e o que eu puder
+
+970
+00:29:58,700 --> 00:29:59,700
+passar para a galera aí,
+
+971
+00:29:59,700 --> 00:30:00,700
+que a gente puder
+
+972
+00:30:00,700 --> 00:30:01,700
+ajudar,
+
+973
+00:30:01,700 --> 00:30:02,700
+estamos juntos.
+
+974
+00:30:02,700 --> 00:30:03,700
+E, mais uma vez,
+
+975
+00:30:03,700 --> 00:30:04,700
+Guilherme,
+
+976
+00:30:04,700 --> 00:30:06,700
+obrigado por me desafiar.
+
+977
+00:30:06,700 --> 00:30:07,700
+E, mais uma vez,
+
+978
+00:30:07,700 --> 00:30:08,700
+sobre a galera,
+
+979
+00:30:08,700 --> 00:30:09,700
+por eu acreditar em mim.
+
+980
+00:30:09,700 --> 00:30:10,700
+Laércio,
+
+981
+00:30:10,700 --> 00:30:11,700
+eu que tenho que
+
+982
+00:30:11,700 --> 00:30:12,700
+agradecer a sua confiança, cara.
+
+983
+00:30:12,700 --> 00:30:14,700
+Não é qualquer um que
+
+984
+00:30:14,700 --> 00:30:15,700
+pago uma mentoria
+
+985
+00:30:15,700 --> 00:30:16,700
+para um cara que você conheceu
+
+986
+00:30:16,700 --> 00:30:17,700
+na internet.
+
+987
+00:30:17,700 --> 00:30:18,700
+E, cara,
+
+988
+00:30:18,700 --> 00:30:19,700
+a sua postura,
+
+989
+00:30:19,700 --> 00:30:20,700
+como eu sempre te falei
+
+990
+00:30:20,700 --> 00:30:21,700
+nos videobacks
+
+991
+00:30:21,700 --> 00:30:22,700
+dos nossos bate-papos, né, cara.
+
+992
+00:30:22,700 --> 00:30:23,700
+Não,
+
+993
+00:30:23,700 --> 00:30:24,700
+é uma postura realmente
+
+994
+00:30:24,700 --> 00:30:25,700
+de prosinais seniors.
+
+995
+00:30:25,700 --> 00:30:26,700
+E, cara,
+
+996
+00:30:26,700 --> 00:30:27,700
+a gente que agradece,
+
+997
+00:30:27,700 --> 00:30:29,700
+acho que esse bate-papa aqui, cara.
+
+998
+00:30:29,700 --> 00:30:31,700
+Você não tem ideia que
+
+999
+00:30:31,700 --> 00:30:32,700
+melhor do que
+
+1000
+00:30:32,700 --> 00:30:34,700
+ter tantos alunos
+
+1001
+00:30:34,700 --> 00:30:35,700
+é ter casos de sucesso
+
+1002
+00:30:35,700 --> 00:30:37,700
+como ser o cara de pessoas
+
+1003
+00:30:37,700 --> 00:30:38,700
+que superaram,
+
+1004
+00:30:38,700 --> 00:30:39,700
+que persistiram,
+
+1005
+00:30:39,700 --> 00:30:40,700
+que tiver a paciência,
+
+1006
+00:30:40,700 --> 00:30:41,700
+cara,
+
+1007
+00:30:41,700 --> 00:30:42,700
+de durante um bom tempo ali,
+
+1008
+00:30:42,700 --> 00:30:43,700
+se preparar
+
+1009
+00:30:43,700 --> 00:30:44,700
+para uma certificação,
+
+1010
+00:30:44,700 --> 00:30:45,700
+passar,
+
+1011
+00:30:45,700 --> 00:30:46,700
+de fazer uma si,
+
+1012
+00:30:46,700 --> 00:30:47,700
+por cinco trevistas
+
+1013
+00:30:47,700 --> 00:30:48,700
+no mês,
+
+1014
+00:30:48,700 --> 00:30:49,700
+de passar
+
+1015
+00:30:49,700 --> 00:30:50,700
+para uma jornada ali,
+
+1016
+00:30:50,700 --> 00:30:51,700
+cara,
+
+1017
+00:30:51,700 --> 00:30:52,700
+de várias entrevistas
+
+1018
+00:30:52,700 --> 00:30:53,700
+para conseguir atingir
+
+1019
+00:30:53,700 --> 00:30:54,700
+o objetivo.
+
+1020
+00:30:54,700 --> 00:30:55,700
+E, cara,
+
+1021
+00:30:55,700 --> 00:30:56,700
+acho que poucas
+
+1022
+00:30:56,700 --> 00:30:57,700
+pessoas estão dispostas
+
+1023
+00:30:57,700 --> 00:30:58,700
+a passar por esse processo,
+
+1024
+00:30:58,700 --> 00:30:59,700
+apagar o preço,
+
+1025
+00:30:59,700 --> 00:31:00,700
+para chegar no lugar onde
+
+1026
+00:31:00,700 --> 00:31:01,700
+elas querem chegar.
+
+1027
+00:31:01,700 --> 00:31:03,700
+E, cara,
+
+1028
+00:31:03,700 --> 00:31:04,700
+em muitos momentos,
+
+1029
+00:31:04,700 --> 00:31:05,700
+eu sei que você estava
+
+1030
+00:31:05,700 --> 00:31:06,700
+ali um pouco ansioso,
+
+1031
+00:31:06,700 --> 00:31:08,700
+um pouco as vezes desalimado,
+
+1032
+00:31:08,700 --> 00:31:10,700
+o pessoal está conseguindo
+
+1033
+00:31:10,700 --> 00:31:11,700
+eu, não, cara,
+
+1034
+00:31:11,700 --> 00:31:12,700
+o que tem de errado?
+
+1035
+00:31:12,700 --> 00:31:13,700
+Quantas conversas
+
+1036
+00:31:13,700 --> 00:31:14,700
+a gente já não teve assim,
+
+1037
+00:31:14,700 --> 00:31:15,700
+deixa eu chegar
+
+1038
+00:31:15,700 --> 00:31:16,700
+para você e falar,
+
+1039
+00:31:16,700 --> 00:31:17,700
+alércio,
+
+1040
+00:31:17,700 --> 00:31:18,700
+paciência,
+
+1041
+00:31:18,700 --> 00:31:19,700
+cara, você está no caminho certo,
+
+1042
+00:31:19,700 --> 00:31:20,700
+cara,
+
+1043
+00:31:20,700 --> 00:31:21,700
+as vezes o que a gente precisa,
+
+1044
+00:31:21,700 --> 00:31:22,700
+simplesmente alguém para ti,
+
+1045
+00:31:22,700 --> 00:31:23,700
+a calmar naquele momento,
+
+1046
+00:31:23,700 --> 00:31:25,700
+para trocar uma ideia,
+
+1047
+00:31:25,700 --> 00:31:26,700
+para evoluir.
+
+1048
+00:31:26,700 --> 00:31:27,700
+E, cara,
+
+1049
+00:31:27,700 --> 00:31:28,700
+de verdade,
+
+1050
+00:31:28,700 --> 00:31:29,700
+é esse tipo de história
+
+1051
+00:31:29,700 --> 00:31:30,700
+que eu fico até arrepeado aqui, cara,
+
+1052
+00:31:30,700 --> 00:31:32,700
+é o que me motiva
+
+1053
+00:31:32,700 --> 00:31:34,700
+a fazer esse trabalho todos os dias,
+
+1054
+00:31:34,700 --> 00:31:35,700
+é a gente sentar
+
+1055
+00:31:35,700 --> 00:31:37,700
+um planejamento aí, cara,
+
+1056
+00:31:37,700 --> 00:31:38,700
+e falar, eu quero migrar
+
+1057
+00:31:38,700 --> 00:31:39,700
+para área de banco,
+
+1058
+00:31:39,700 --> 00:31:40,700
+quero sair da parte de hardware
+
+1059
+00:31:40,700 --> 00:31:41,700
+e infraestrutura,
+
+1060
+00:31:41,700 --> 00:31:42,700
+eu quero ir para uma área
+
+1061
+00:31:42,700 --> 00:31:43,700
+mais relevante,
+
+1062
+00:31:43,700 --> 00:31:45,700
+é a gente ver que a nossa
+
+1063
+00:31:45,700 --> 00:31:46,700
+metodologia
+
+1064
+00:31:46,700 --> 00:31:47,700
+funciona,
+
+1065
+00:31:47,700 --> 00:31:48,700
+funcionou,
+
+1066
+00:31:48,700 --> 00:31:49,700
+e que, por hoje,
+
+1067
+00:31:49,700 --> 00:31:50,700
+você está numa grande empresa
+
+1068
+00:31:50,700 --> 00:31:51,700
+dentro de um grande projeto,
+
+1069
+00:31:51,700 --> 00:31:53,700
+e que, pô,
+
+1070
+00:31:53,700 --> 00:31:54,700
+parabéns, cara,
+
+1071
+00:31:54,700 --> 00:31:55,700
+o mérito é todo o seu,
+
+1072
+00:31:55,700 --> 00:31:56,700
+mas eu fico feliz
+
+1073
+00:31:56,700 --> 00:31:57,700
+de alguma forma
+
+1074
+00:31:57,700 --> 00:31:58,700
+poder contribuir com o tipo, cara.
+
+1075
+00:31:58,700 --> 00:31:59,700
+Se eu ajudei
+
+1076
+00:31:59,700 --> 00:32:01,700
+10% de isso aí, cara,
+
+1077
+00:32:01,700 --> 00:32:02,700
+você pode ter esse treso que eu sou muito grato,
+
+1078
+00:32:02,700 --> 00:32:03,700
+aí,
+
+1079
+00:32:03,700 --> 00:32:04,700
+de ter sua confiança,
+
+1080
+00:32:04,700 --> 00:32:06,700
+da gente poder te ajudar.
+
+1081
+00:32:06,700 --> 00:32:07,700
+E lá é, é, se,
+
+1082
+00:32:07,700 --> 00:32:08,700
+uma pergunta,
+
+1083
+00:32:08,700 --> 00:32:09,700
+entrou com o salário de senio,
+
+1084
+00:32:09,700 --> 00:32:10,700
+ou mesmo, cara,
+
+1085
+00:32:10,700 --> 00:32:11,700
+acima de 10.000, você falou
+
+1086
+00:32:11,700 --> 00:32:12,700
+ao valor do salário,
+
+1087
+00:32:12,700 --> 00:32:13,700
+acima de 10.000 ou não?
+
+1088
+00:32:13,700 --> 00:32:14,700
+Sim.
+
+1089
+00:32:14,700 --> 00:32:15,700
+Que legal, cara, parabéns,
+
+1090
+00:32:15,700 --> 00:32:16,700
+meu irmão.
+
+1091
+00:32:16,700 --> 00:32:17,700
+Eu fico muito feliz, cara,
+
+1092
+00:32:17,700 --> 00:32:18,700
+aí,
+
+1093
+00:32:18,700 --> 00:32:20,700
+em saber disso.
+
+1094
+00:32:20,700 --> 00:32:21,700
+Que, pô,
+
+1095
+00:32:21,700 --> 00:32:22,700
+você merece
+
+1096
+00:32:22,700 --> 00:32:23,700
+crescer demais,
+
+1097
+00:32:23,700 --> 00:32:24,700
+você vai crescer muito
+
+1098
+00:32:24,700 --> 00:32:25,700
+lá dentro,
+
+1099
+00:32:25,700 --> 00:32:26,700
+e suprova, cara,
+
+1100
+00:32:26,700 --> 00:32:27,700
+resultados muito atípicos,
+
+1101
+00:32:27,700 --> 00:32:28,700
+aqui dentro da metodologia,
+
+1102
+00:32:28,700 --> 00:32:30,700
+a gente consiga no vague 30 dias,
+
+1103
+00:32:30,700 --> 00:32:32,700
+a gente consiga no primeira vaga de
+
+1104
+00:32:32,700 --> 00:32:33,700
+DBA como senio,
+
+1105
+00:32:33,700 --> 00:32:35,700
+a gente tirando certificação
+
+1106
+00:32:35,700 --> 00:32:36,700
+em dois meses,
+
+1107
+00:32:36,700 --> 00:32:37,700
+cara, de verdade,
+
+1108
+00:32:37,700 --> 00:32:38,700
+eu fico
+
+1109
+00:32:38,700 --> 00:32:40,700
+emocionado para caramba de
+
+1110
+00:32:40,700 --> 00:32:42,700
+de ver que a gente tenha ajudado
+
+1111
+00:32:42,700 --> 00:32:43,700
+pessoas do truado enquanto,
+
+1112
+00:32:43,700 --> 00:32:44,700
+a gente todos os meses
+
+1113
+00:32:44,700 --> 00:32:45,700
+tiver casos,
+
+1114
+00:32:45,700 --> 00:32:46,700
+igual do laércio, cara.
+
+1115
+00:32:46,700 --> 00:32:48,700
+Eu vou estar aqui fazendo
+
+1116
+00:32:48,700 --> 00:32:49,700
+live todas as semanas, gravando
+
+1117
+00:32:49,700 --> 00:32:50,700
+vídeo,
+
+1118
+00:32:50,700 --> 00:32:52,700
+responder o comendário de rei,
+
+1119
+00:32:52,700 --> 00:32:53,700
+porque no final, cara,
+
+1120
+00:32:53,700 --> 00:32:54,700
+vale a pena,
+
+1121
+00:32:54,700 --> 00:32:55,700
+porque no final a gente vê que
+
+1122
+00:32:55,700 --> 00:32:56,700
+o trabalho,
+
+1123
+00:32:56,700 --> 00:32:57,700
+ele está mudando a vida
+
+1124
+00:32:57,700 --> 00:32:58,700
+com muitas pessoas
+
+1125
+00:32:58,700 --> 00:32:59,700
+que igual estou vendo aqui
+
+1126
+00:32:59,700 --> 00:33:00,700
+laércio,
+
+1127
+00:33:00,700 --> 00:33:01,700
+o Beck,
+
+1128
+00:33:01,700 --> 00:33:02,700
+o Ronaldo,
+
+1129
+00:33:02,700 --> 00:33:03,700
+o Rogerio,
+
+1130
+00:33:03,700 --> 00:33:04,700
+e vários muitos outros
+
+1131
+00:33:04,700 --> 00:33:05,700
+que estão dentro da metodologia
+
+1132
+00:33:05,700 --> 00:33:06,700
+que estão passando pela metodologia
+
+1133
+00:33:06,700 --> 00:33:07,700
+durante esse processo.
+
+1134
+00:33:07,700 --> 00:33:08,700
+Cara,
+
+1135
+00:33:08,700 --> 00:33:09,700
+parabéns,
+
+1136
+00:33:09,700 --> 00:33:11,700
+conta sempre comigo,
+
+1137
+00:33:11,700 --> 00:33:12,700
+eu vou falar agora,
+
+1138
+00:33:12,700 --> 00:33:13,700
+só está começando uma nova jornada,
+
+1139
+00:33:13,700 --> 00:33:15,700
+a gente, cara,
+
+1140
+00:33:15,700 --> 00:33:17,700
+se consolidar como senio,
+
+1141
+00:33:17,700 --> 00:33:18,700
+a gente trazer
+
+1142
+00:33:18,700 --> 00:33:19,700
+encaixar a inteligência artificial,
+
+1143
+00:33:19,700 --> 00:33:20,700
+legal saber que aquele
+
+1144
+00:33:20,700 --> 00:33:22,700
+lábio de ex-adata ali, cara,
+
+1145
+00:33:22,700 --> 00:33:23,700
+teria frutos para você conseguir
+
+1146
+00:33:23,700 --> 00:33:24,700
+uma vaga de senio,
+
+1147
+00:33:24,700 --> 00:33:25,700
+você aceitar desafios,
+
+1148
+00:33:25,700 --> 00:33:26,700
+e cara,
+
+1149
+00:33:26,700 --> 00:33:27,700
+uma coisinha ali,
+
+1150
+00:33:27,700 --> 00:33:28,700
+dentro da metodologia,
+
+1151
+00:33:28,700 --> 00:33:29,700
+às vezes, pode mudar o jogo
+
+1152
+00:33:29,700 --> 00:33:30,700
+dentro de uma entrevista,
+
+1153
+00:33:30,700 --> 00:33:31,700
+técnica que pode ser muito útil
+
+1154
+00:33:31,700 --> 00:33:32,700
+dentro de um projeto,
+
+1155
+00:33:32,700 --> 00:33:34,700
+pode trazer muito a relevância
+
+1156
+00:33:34,700 --> 00:33:35,700
+profissional.
+
+1157
+00:33:35,700 --> 00:33:36,700
+Então,
+
+1158
+00:33:36,700 --> 00:33:37,700
+agradeço muito a sua confiança,
+
+1159
+00:33:37,700 --> 00:33:38,700
+e o que você trairia
+
+1160
+00:33:38,700 --> 00:33:39,700
+de mensagem, laércio,
+
+1161
+00:33:39,700 --> 00:33:41,700
+para quem está a dúvida
+
+1162
+00:33:41,700 --> 00:33:42,700
+sobre a entramamento orionão, cara,
+
+1163
+00:33:42,700 --> 00:33:43,700
+alguém que está assim,
+
+1164
+00:33:43,700 --> 00:33:44,700
+pô,
+
+1165
+00:33:44,700 --> 00:33:45,700
+será que essa metodologia
+
+1166
+00:33:45,700 --> 00:33:46,700
+funciona,
+
+1167
+00:33:46,700 --> 00:33:47,700
+será que vale a pena,
+
+1168
+00:33:47,700 --> 00:33:48,700
+a mesma coisa, o que você trairia,
+
+1169
+00:33:48,700 --> 00:33:49,700
+pode compartilhar aqui
+
+1170
+00:33:49,700 --> 00:33:50,700
+da sua experiência, cara.
+
+1171
+00:33:50,700 --> 00:33:52,700
+Então, pessoal,
+
+1172
+00:33:52,700 --> 00:33:55,700
+o que eu falo mesmo,
+
+1173
+00:33:55,700 --> 00:33:56,700
+de coração,
+
+1174
+00:33:56,700 --> 00:33:58,700
+que essa metodologia,
+
+1175
+00:33:58,700 --> 00:34:01,700
+ela é um grande grupo de amigos,
+
+1176
+00:34:01,700 --> 00:34:03,700
+e pessoas que realmente
+
+1177
+00:34:03,700 --> 00:34:04,700
+querem crescer,
+
+1178
+00:34:04,700 --> 00:34:05,700
+elas se ajudam.
+
+1179
+00:34:05,700 --> 00:34:07,700
+Então, o meu,
+
+1180
+00:34:07,700 --> 00:34:08,699
+o meu maior,
+
+1181
+00:34:08,699 --> 00:34:09,699
+assim,
+
+1182
+00:34:09,699 --> 00:34:10,699
+que eu achei, assim,
+
+1183
+00:34:10,699 --> 00:34:11,699
+fantástico,
+
+1184
+00:34:11,699 --> 00:34:12,699
+quando eu entrei,
+
+1185
+00:34:12,699 --> 00:34:13,699
+na primeira,
+
+1186
+00:34:13,699 --> 00:34:14,699
+na nossa primeira cala,
+
+1187
+00:34:14,699 --> 00:34:15,699
+aquela calquinha, senão,
+
+1188
+00:34:15,699 --> 00:34:16,699
+a primeira cala que eu participei,
+
+1189
+00:34:16,699 --> 00:34:18,699
+eu nunca vou esquecer,
+
+1190
+00:34:18,699 --> 00:34:19,699
+eu você mesmo me perguntou,
+
+1191
+00:34:19,699 --> 00:34:20,699
+e aí,
+
+1192
+00:34:20,699 --> 00:34:21,699
+quem que você está achando,
+
+1193
+00:34:21,699 --> 00:34:22,699
+eu falei,
+
+1194
+00:34:22,699 --> 00:34:24,699
+eu encontrei o grupo que eu queria,
+
+1195
+00:34:24,699 --> 00:34:26,699
+então, a partida ali,
+
+1196
+00:34:26,699 --> 00:34:28,699
+calama,
+
+1197
+00:34:28,699 --> 00:34:29,699
+eu tinha,
+
+1198
+00:34:29,699 --> 00:34:31,699
+se eu tinha alguma dúvida,
+
+1199
+00:34:31,699 --> 00:34:32,699
+colocava no grupo,
+
+1200
+00:34:32,699 --> 00:34:33,699
+a galera respondia,
+
+1201
+00:34:33,699 --> 00:34:35,699
+se as vezes você
+
+1202
+00:34:35,699 --> 00:34:36,699
+soltava alguma dúvida
+
+1203
+00:34:36,699 --> 00:34:37,699
+no grupo,
+
+1204
+00:34:37,699 --> 00:34:38,699
+depois, você mesmo
+
+1205
+00:34:38,699 --> 00:34:39,699
+entendia que você tinha feito errado
+
+1206
+00:34:39,699 --> 00:34:40,699
+e a laire pagava um mensagem,
+
+1207
+00:34:40,699 --> 00:34:42,699
+alguém de alguém atrás de mim,
+
+1208
+00:34:42,699 --> 00:34:43,699
+ou eu não vi que você colocou
+
+1209
+00:34:43,699 --> 00:34:44,699
+no grupo,
+
+1210
+00:34:44,699 --> 00:34:45,699
+porque quem pagou?
+
+1211
+00:34:45,699 --> 00:34:46,699
+Não, o que que aconteceu?
+
+1212
+00:34:46,699 --> 00:34:47,699
+Não, é assim,
+
+1213
+00:34:47,699 --> 00:34:48,699
+sabe?
+
+1214
+00:34:48,699 --> 00:34:50,699
+Então, a mensagem que eu digo,
+
+1215
+00:34:50,699 --> 00:34:51,699
+é assim,
+
+1216
+00:34:51,699 --> 00:34:53,699
+essa metodologia maravilhosa,
+
+1217
+00:34:53,699 --> 00:34:54,699
+eu cresci de mais,
+
+1218
+00:34:54,699 --> 00:34:55,699
+de mais, de mais,
+
+1219
+00:34:55,699 --> 00:34:56,699
+nesse,
+
+1220
+00:34:56,699 --> 00:34:57,699
+desses dois anos,
+
+1221
+00:34:57,699 --> 00:34:58,699
+né?
+
+1222
+00:34:58,699 --> 00:34:59,699
+É...
+
+1223
+00:34:59,699 --> 00:35:00,699
+É...

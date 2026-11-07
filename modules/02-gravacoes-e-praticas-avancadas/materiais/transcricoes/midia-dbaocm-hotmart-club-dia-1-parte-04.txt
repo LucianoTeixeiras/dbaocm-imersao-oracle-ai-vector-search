@@ -1,0 +1,297 @@
+preparação para a gente fazer o nosso desafio 1. Então, como vocês viram, o desafio 1, ele
+envolve várias práticas, tá? Então, esse é o nosso objetivo. Entender que a primeira prática
+é criar o banco, a segunda prática é configurar o SQL, configurar o Cloud Code, o VS Code,
+criar conta gratuita, criar o autônomo para depois de conseguir fazer a prática. E vocês vão
+ver que as coisas vão se encaixar perfeitamente. Eu vou liberar aqui para vocês, pessoal. O
+script aqui no chat do desafio 1. Show de bola. O nome do database é irmerçamo, tránsula
+o turbo, tránsula 26, é exatamente sério, exatamente isso. Muito bom. E o que a gente vai
+fazer? Estou liberando aqui para vocês no chat o prompt que são os scripts, basicamente,
+do primeiro desafio, tá? Alessandro, a instalação do SQL está exatamente nesse TXT que eu
+acabei de mandar. Lá em cima você tem exatamente os quatro links que eu abri aqui, da Cloud,
+do VS Code, do SQL e do GitHub Schema.gr, do GitHub oficial da Oracle, que tem o Schema.gr. Verifica
+se você está fazendo alguma coisa ali de deixar algum espaço, se tem letras e números, se está
+começando com uma letra e se não estourou o limite de 30 caracteres massa, tá? Talvez tem algum erro
+de digitação aí. Eu criei aqui, exatamente isso no nome foi, imensam o outubro 26 AI, aqui onde eu erro
+não. Pode testar com outra nome, você é problema nenhum, não? Sem problema nenhum. Show de bola. O meu
+outro está provisando aqui. Show de bola. Pessoal, baixem esse script de TXT que eu coloquei aí no
+chat, por quê? Os scripts que eu compartilhar aqui na manhã, eu não vou ficar falando ele de novo a
+tarde, tá? Então baixem e salvem e o pessoal do VIP vai ter esse material consolidado depois,
+sem problema, tá? Mas baixem aí para depois no período da tarde, se não ficar com o
+script da manhã, tá? Eu não vou ficar voltando nos desafios. Então pega aqui exatamente o TXT, salva
+na sua máquina e executa exatamente como a gente está mostrando aqui, beleza?
+Pessoal, antes de a gente ir agora para a próxima prática, então quem não baixou ainda o
+VSCode, baixo VSCode, quem não baixou a SQL, baixo SQL, que eu vou mostrar aqui como vocês podem
+fazer tudo isso aqui na prática, tá? Eu vou dar uma palestra aqui agora que a gente vai falar um
+pouquinho sobre MCP e eu já quero tocar nesse assunto porque na pesquisa que eu fiz agora cedo,
+mais de 80% das pessoas aqui da immersão, falaram que não sabiam, não utilizavam MCP com órgão,
+tá? E eu vou mostrar exatamente o que é esse MCP aqui antes da gente configurar. Então a gente vai
+entender o conceito e a gente vai aplicar esse conceito na prática. MCP, pessoal, é o model context protocol,
+ele foi lançado em novembro de 2024 pela Antiópica. Ele é definido como um SBC para aplicações
+de dia. Então essa analogia é o seguinte, eu consigo plugar uma ia, um divinai, um groque, um cloud,
+dentro do óro quadrata-beijo, dentro do meu produto, tá? E aí já vem aqueles mitos, né?
+Nunca conecte uma ia no seu banco de dados, eu não gosto de generalizar, normalmente quando a pessoa
+generaliza, ela não está sendo inteligente, tá? Eu não gosto de generalizar nada na minha vida.
+Eu invito muitas palavras nunca e sempre, tá? Então o exercício aí para pessoas que querem
+dispor sua opinião e a forma de pensar. Cara, nunca é muito tâmpica, sempre é muita coisa, tá?
+Então nunca conecte uma ia no banco de dados, não é bem dessa forma. Existem diversos cenários,
+sim, que você pode conectar, inclusive, em produção, só que com critérios, com padrões de segurança,
+com usuários com as permissões corretas, fazendo o jeito certa. E muitas vezes a ignorância,
+a falta de conhecimento faz as pessoas generalizar, para nunca, sempre, nunca conecte uma ia no seu
+banco de dados e muito mais. Cá, isso é falta de conhecimento, tá? O MCP foi lançado em novembro de
+2024 pela Anthropic, tá? Então, é um conceito que a hora colocou ano passado em 2025, mas lançado
+pela Anthropic foi de 2004. Pessoal, eu estou falando de coisas muito novas, tá? E é bem normal, talvez você
+não está utilizando a NEMCP com o Oracle, tá? É a forma de você conectar a ia de forma segura, tá?
+Porque se você não tiver o MCP, o que que vai acontecer? Se você vai querer conectar lá no
+Linux e pedir para passar o usuário semia, para a ia ficar conectando? Cara, é uma forma totalmente
+insegura. Se você faz com MCP, do jeito que eu vou mostrar aqui para vocês, você vai pegar uma
+conexão segura com o OLED, com a chave, com arquivo.zip ali, com senha. Vai colocar essa senha criptografada,
+vai criar um arquivo de ceia aqui dentro da sua máquina, utilizar um SQL CL, e ele vai chamar
+aquela conexão que está salva sem ficar passando sem a ia pedir nas informações, tá? Então,
+vocês vão ver que a forma mais segura que tem é a forma oficial da Oracle, e eu já vou entrar
+na uma sinta aqui que nas outras imersões eu nem falei, tá? Ah, Guilherme, mas dá para eu criar o meu
+MCP? Dá, tá? Inclusive dá para você fazer isso, mas eu acho que muitos casos, se você nem
+testou ainda, igual a 80%, mais 80% das pessoas que estão aqui não têm ainda testado ainda, é você
+querer reinventar a roda. Cara, primeiro teste o que que tem aqui, para depois você querer fazer um
+negócio avançado. Então, se você tá estudando algo a você não domina, cara, você tem que ter
+uma humildade de primeiro repetir aquilo que você tá vendo alguém fazendo, testar o jeito simples,
+testar o negócio que já tá pronto, para depois você querer ir para essa linha, tá? Dá para você,
+cara, construir MCP em Python, por exemplo, é do jeito que você customizava, fazendo algumas
+questões ali, um jeito específico, tá? Mas recomendo que você utiliza o oficial da Oracle,
+tá? E muito cuidado, cara, eu utilizar MCP, que não são oficiais das ferramentas,
+tá? Às vezes você pode pegar um MCP, cara, que tá fazendo besteira, que tem alguma brecha de
+segurança. Então, da Oracle, cara, ele tá muito bem testado, às vezes você vai criar o MCP que
+fica inferior ao que a Oracle tem e você vai ter problema. Então, teste, cara, porque a Oracle
+normalmente ela faz coisas no nível em padrão global, o nível de segurança alto, a engenheria da Oracle
+que fez isso, já tá totalmente suportado e homologado pelo Oracle database, é muito mais, tá?
+E aí o MCP é uma interface única para padronizar interações com bugodidados, arquivos, aplicações
+de negócios, ferramentas de desorimento, etc. E a simplificação esconde a complexidade de implementação
+do servidor, tá? Component do MCP, o host, o client, o servidor e a RLN, tá? E o que
+tá acontecendo, pessoal? No mercado, assim, tá? A gente tem visto o quanto que os produtos em
+si, todos eles estão plugando MCPs nos produtos. A SAP, a Microsoft, a Oracle, você pega o navegador
+Google Chrome ali, você tem um MCP que pode conectar ali, por exemplo, para ir a poder gerenciar
+o seu browser. Cara, a gente tem visto que tem que ser uma tendência muito forte de mercado. E a
+Oracle tá acompanhando essa tendência. É uma tendência natural, como que a gente conecta
+ai de forma segura os nossos produtos? Então, a Oracle colocou o MCP server dentro do autônomo
+da Tabase, dentro da Oracle Cloud, dentro da Cloud Specífica, do Oracle da Tabase, do
+Golden Gate, Firefox. Então, você vai ver que é uma tendência natural. E você vai ter a LLN,
+o MCP Client, o MCP Server, conectado aos produtos. E o que vai acontecer? Essa LLN,
+aqui como eu falei que ele para vocês, pessoal, você consegue conectar um GPT ali da vida,
+o modelo de dados ali, por exemplo, do GPT, tem o Luna, o Sol, o Astra, cara, você pode pegar
+e escolher esses modelos, pelo falar diretamente com o autônomo, o Oracle da Tabase, com a Cloud,
+com o Golden Gate e com outros produtos, tá? Então, esse é o potencial da gente conseguir
+utilizar o MCP Server. No isso, vocês lembrem que temos que colocar no Network, cara,
+o Oracle não é coloquei nada, basicamente eu segui a configuração padrão ali, e não
+precisa fazer nenhum tipo de customização ali, não, tá? E aí, pessoal, eu já estou trazendo esse
+aqui para vocês de servidores MCPs do Oracle AI da Tabase, tá? Primeiro servidor,
+o SQL CL, o que a gente vai instalar daqui a uns minutos. Um servidor MCP local via SDIO,
+que roda na máquina do usuário, fácil de configurar e que pode estar funcionando em poucos
+minutos, está incluindo no SQL Developer para o SQL. Então, a forma mais simples de você implementar
+o MCP é na sua máquina. Se você, hoje, por exemplo, está utilizando o SQL Developer para conectar
+no Oracle, você pode conectar agora via SQL CL ou até mesmo via VS Code, que eu vou mostrar
+aqui como que a gente faz essa configuração, tá? Dessa forma, a sua máquina já consegue conectar
+um opus 5.5, por exemplo, uma LLM da Cloud diretamente com o banco de dados. E aí, ao invés de você
+ficar lá no chat, pedindo informação sem contexto, você está conectado diretamente no banco,
+ele consegue ler as tabelas, consegue verificar para você e conseguir te dar uma consulta, um SQL,
+exatamente de como está os seus dados, tá? Oracle Rest Data Services, tá? Um servidor MCP remoto via
+streaming, DHTPS, pronto para ambientes corporativos integrados com o sistema de iniciamento de identidade
+preferido do cliente, tá? Então, você pode utilizar o Oracle Rest, isso é muito utilizado quando a gente
+fala de Oracle Apex também, tá? E você pode via Rest ali, conseguir fazer um streaming DHTPS, tá? É
+uma outra forma de usar MCP. Inclusive, tem até alguns, é, alguns mentorados aqui que estão em
+os gredes empresas, que eles têm um central de agentes, onde na hora de conectar os agentes,
+no Oracle Data Services e nas LLMs, eles falam via Rest via streaming DHTPS, tá? Então dá para você
+fazer dessa forma também. Outra forma é o OCI Mendeigente MCP serve, então, dentro da Oracle Cloud,
+você tem uma opção ali de MCP, que caso o seu banco esteja na nuvem, sua aplicação esteja na nuvem,
+você consegue criar um MCP dentro da OCI e pedir para ele conectar dentro do seu AI database,
+seja um AXData, seja um autônomo, seja o tipo de serviço que você tem lá executando na sua tendência ali
+na nuvem, tá? Então, essas são três formas de você implementar MCP dentro do Oracle, a gente vai fazer
+essa forma. Agilherme, eu quero aprofundar nessa, tá? A gente tem estudando a nossa mentoria,
+eu seria impossível, pessoal, em dois dias eu consegui aprofundar tudo que a gente tem aqui, tá? Mas
+quem é da mentoria, pessoal, já temos aulas, inclusive, falando de outros cenários lá,
+especificamente, de MCP, tá? Mas a gente vai focar aqui, agora, pera da manhã, vai se que ele se
+ele, principalmente sendo que 80 e poucos por cento aqui não, não usaram MCP ainda, cara, vamos começar
+pelo, pelo mais simples e pelo mais básico aqui, para depois te evoluir para casos mais avançados, tá?
+Show de bola, suporte ao MCP Server no Oracle SQL. Agora, o Oracle possui a integração com o MCP Server,
+que é o Model Context Protocol, então, a partir da versão SQL 25.2, tem esse recurso que foi
+lançado em júrio de 2025, tá? Mais de um ano atrás, que você pode executar operações, criar
+relatórios, rodar consultas no Oracle Database usando a linguagem natural, por meio de interações com o
+IAN. E as conexões com banco de dados são gerenciadas com segurança utilizando conexões nomeadas
+que estão no SQL Server, tá? Como que funciona esse MCP, tá? Executa no modo MPSP Server,
+ferramentas nas ferramentas, liste Connection, que você consegue listar conexões, você fala
+assim, quais são as conexões salvas aqui no meu SQL Server, ele vai listar para vocês? Connectar
+ou disconnectar, você pode falar assim, o Connect no banco, tal, através dessa conexão salva, ele vai
+para você. RUN SQL, você consegue executar um comando SQL, faça um select para me retornar ali,
+o salário, quem tem o nosso salário ali dos funcionários, ele consegue fazer isso. E o RUN SQL, que
+executa comandos específicos do SQL, tá? Funciona com qualquer Oracle Database suportada, 19, 21, 23 AI,
+on-premises, hyperscares e até mesmo um laptop. Então, como falei, se você não conseguiu criar
+o SQL e você tem ali a sua VM do Oracle 19C, você vai conseguir fazer exatamente o desafio 1 utilizando
+que eu tô mostrando aqui, no on-premises, na sua VM, vai pedir para ele conectar no 19C, vai criar
+conexão e vai conseguir fazer essa configuração funcionar. Beleza? Alguma dúvida, pessoal, até agora, sem dúvidas,
+pessoal, não tendo dúvidas, a gente vai para a prática, hein? Meu banco ainda tá provisionando,
+quero mostrar aqui para vocês já algumas configurações que a gente vai precisar fazer. O Rogério não
+funciona no 12C, vamos lá Rogério? Ponto importante, o 12C, cara, é uma versão que não tem mais o suporte da Oracle, tá? Mas, se você conseguir
+conectar no SQL, em um banco 12C, ele vai conseguir também fazer a conexão do MCP provavelmente, tá?
+Então, a Oracle não fica testando coisa nova em produtos continuados, né? Então, a funciona no 10, funciona no 11, cara,
+provavelmente vai funcionar assim, tá? Já tira garanto o que ia, se não é uma pergunta nova. Ó, o Cloud Casadei
+conectei MCP no 12C, que legal, cara, deu certo. Estou com a dificuldade para localizar o Github e o esquema de
+exemplos da Oracle, o Rogério Borges, vamos lá meu amigo? Vamos mostrar aqui? Então, esse é o link, tá, que tá dentro do
+TXT que eu liberei, alí no chat, vou liberar de novo o TXT do desafio 1. Aqui nesse TXT, deixou até mostrar aqui para vocês,
+estou compartilhando minha tela toda, tá pessoal? Vocês estão vendo minha tela toda? Aqui, ó, quem estiver vendo minha tela toda digita assim no chat?
+Show. Github esquema HR, você vai abrir esse link e vai baixar esse zip aqui, ó, Source Code, vai clicar nesse link e vai baixar, basicamente isso, tá? Mas eu nem fiz a prática ainda não, tá, Rogério?
+Então, espero a gente fazer aqui para a gente poder executar juntos. O que que a gente vai executar aqui agora? Eu vou abrir o meu terminal, eu vou mostrar para vocês algumas formas da gente utilizar o Cloud Code, tá?
+Eu vou utilizar aqui no meu terminal, então, se você seguiu a live de pré-requisito, você vai ter o Cloud Code instalado, você vai ter aquele plano ali de 20 dólares, de 100 reais, aproximadamente, e você vai estar dentro do seu Cloud Code, tá?
+Guilherme, estou com dificuldade aqui no que você mostrou, cara, eu liberei na live de pré-requisitos, eu liberei exatamente o tutorial de instalação do Cloud Code, tá?
+Então, aqui você tem uma documentação da Undrop de como que você pode iniciar o Cloud Code, ó, no MacOS, você vai fazer exatamente essa linha de comando,
+no Windows PowerShell, você vai fazer exatamente essa linha de comando, no Windows MD, você vai fazer exatamente essa linha de comando.
+Para confirmar essa instalação, está confirmando, você vai rodar o Cloud menos verso, vamos fazer isso aqui na minha tela? Cloud 2.132, que é o Cloud Code, tá? Então, o meu está instalado, tá, mano?
+Então, primeiro você vai ter que rodar esse comando para depois conseguir fazer isso, para rodar a primeira sessão, você vai entrar dentro do projeto, vai clicar em Cloud.
+E depois você pode fazer algumas perguntas aí para ver se ele está respondendo o Cloud Code.
+Beleza?
+Estou liberando aqui também esse link aqui para vocês.
+Show de bola.
+Pessoal, não adianta eu chegar sozinho no final, não esse objetivo. O objetivo é, como a gente pode chegar com uma número de pessoas nos desafios, um, dois, três, quatro, cinco, até oito?
+Se lá no oito, cara, a maioria tiver conseguindo executar aí sim essa inmersão, faz sentido. Se eu chegar sozinho, cara, nada faz sentido, o objetivo é que vocês executem, é que vocês tejam preparados, que vocês entendo no objeto de trabalhar.
+Beleza? Show de bola.
+Agora, eu vou ensinar para vocês como você pode utilizar o Cloud Code para ele configurar sua máquina melhor.
+O que eu vou fazer aqui para vocês? Vocês vão baixar aqui a versão do SQL, download.
+Você vai clicar aqui, vai baixar a versão 26.3.
+E aí você vai fazer duas alternativas, pessoal.
+Se você não tem um SQL instalado ainda, você vai falar assim, está ali o SQL que está na pasta.
+Aí você vai botar a pasta que você fez o download aqui na minha barra download.
+E com o arquivo, então, você vai pegar o Cloud Code para configurar a sua máquina.
+Uma das coisas que o Cloud Code pode fazer, cara, ele pode revisar suas configurações, ele pode organizar os seus arquivos, cara, ele pode fazer código para você, ele pode fazer coisa para caramba.
+Então você vai pegar o Cloud Code para estar lá o SQL na sua máquina. Se eu fazer o download, vai pedir para ele estar lá.
+E já vou te falar uma coisa que muita gente vai travar.
+Se você tiver no Windows ali ou no Mac, ele vai dar um monte de pósso você for rodar manualmente.
+Ele vai falar assim, pô, galera, tá pedindo a versão do Java SDK no seu quê? Tá dando erro disso aqui e tal.
+Se você fizer com o Cloud Code, sendo seu assistente para fazer isso para você.
+Se deu algum erro, ele vai falar o erro que tá dando e vai te dar até algumas opções de como resolver esse erro.
+Ah, deu erro porque o Java no seu quê não tá instalado. Ah, está ali o Java para mim, então.
+E aí ele pode conversar com vocês, às vezes, pedir para você baixar alguma coisa ou você pode falar para ele baixar alguma coisa e ele executar para você pegar.
+Então, pessoal, agora a próxima etapa, a próxima prática que eu quero que você faça é a instalação do SQL CL, tá?
+Eu vou fazer uma enquete aqui agora que é o seguinte.
+Você tem o SQL instalado na sua máquina?
+Pessoal, se prepara aqui no período da tarde, eu já vou falar, normalmente o período da manhã tem a sala tá cheia, né?
+Period da tarde, a galera começa a desistir.
+Quem não vê de tarde, cara, até do vípica, porque é uma coisa que você assistiu em um replay de uma live gravada.
+Outra coisa você tá aqui ao vivo, a gente tá tendo uma mentoria junta e que tá executando juntos, quem travou vai ser destravado.
+A gente tá aqui nesse, nessa imensão junta, quem perdeu, perdeu, perdeu o período da tarde, perdeu a manhã, cara, vai perder a melhor parte.
+Porque a gente vai subir muita barra aqui, tá? Subir a barra pra cara.
+Acabei de colocar em catch a id, quem, se você tem um SQL, você é instalado na sua máquina.
+Ó um Henrique, caraca, que loucura! Henrique, se prepara, você vai se assustar pra caramba com as coisas que dá pra fazer, tá?
+Se prepara e que você vai ser algo muito desruptivo, de fato, com as possibilidades do que pode ser feito.
+Não peguei aonde chega esse comando aí, que usava o Cloud.
+Vamos lá, Renaldo, você tá querendo instalar o SQL ou não?
+Primeiro, o Cloud está lá, você vai entrar o Cloud e vai entrar dentro do terminal.
+Aqui dentro do terminal, a gente vai pedir pro SQL, instalar o, pro Cloud Code, instalar o SQL.
+Então você vai pedir no chat aqui do Cloud, instale o SQL que está na pasta download com um arquivo tal.
+Onde abre o terminal no Cloud, que não peguei?
+Tá aqui nessa documentação, cara, que eu mandei, ó.
+O Cool Start.
+Então você vai instalar o Cloud Code na sua máquina.
+Depois, se está o Cloud Code, você vai instalar, você vai pegar o terminal e vai colocar Cloud.
+Se você digitar Cloud no seu terminal e não abrir o Cloud Code, isso quer dizer que o Cloud Code não está instalado.
+Se você está com o Cloud instalado, ele vai funcionar.
+Demora muito pra instalar o Cloud Code, pra mim está travado, não pode achar algum tempo.
+Olha, Ricardo, pra mim aqui foi muito rápido, ele depende muito da sua máquina, muito mais.
+Eu vou te falar que eu não tenho muita experiência com Windows, tá?
+Tem, sei lá, mais de 15 anos que eu não mexo em ambientes Windows, mas normalmente não demora não, cara.
+Que é dito coisa de 5, 10 minutos aí, deve estar lá no máximo, tá?
+Fiz a instalação, vele só, dá um subiu no terminal por um problema.
+Estalando resolver nas dependências sozinhas, o Cloudinho é muito bom, é muito bom, é demais.
+E legal, cara.
+Esqueles que ele está lá, tudo feito na máquina, tudo feito pelo Cloud Show.
+Set up Cloud Code, sucessful, salad, instalação completada, show de bola.
+Uma dica muito legal também, pessoal, é falar o seguinte, ó.
+Se você fez a assinatura do Cloud, você pode vir aqui Cloud.ai, aí.
+E aqui dentro, você vai tirar um print do seu terminal,
+vai arrastar que o print vai falar assim, olha, estou instalando o Cloud Code, está dando erro.
+Conseguem me ajudar a resolver esse problema.
+Então, você vai utilizar o Cloud.ai para te ajudar a resolver o problema de instalação.
+Pessoal, agora acabou todas as histórias tristes, hein.
+Você vai utilizar o Cloud.ai, que é o Cloud Chat aqui, para te ajudar a instalar o Cloud Code.
+Se tiver dando qualquer tipo de erro, o próprio Cloud vai te ajudar nisso.
+E, Lá, eu consegui instalar o Cloud Code, ele tem que funcionar dentro do seu terminal, tá?
+E aí, vai fazer a coisa funcionando.
+Depois você está com o Cloud instalado, você vai instalar aqui o SQL CL, tá?
+Exatamente com essa linha, está ali o SQL CL, na pasta download, no arquivital.
+Beleza? Inclusive, eu vou até colocar aqui, ó, o própete de como que eu estou fazendo.
+O Evert, uma versão fria do Cloud funciona. Evert, eu falei isso na live de pré-requisitos, não funciona, cara.
+Com a versão fria, você não consegue utilizar o Cloud Code, não.
+No Windows Cloud, é, vamos lá.
+Consegue instalar pelo poeixão, mas também ter que adicionar o caminho nas variáveis de ambiente, pefe do Windows.
+Legal Rodrigo, muito bom.
+Muito bom por acrescentar, eu frederic.
+Está tudo protestalado, é isso que ele é atualizado pelo Cloud, muito bom.
+O Tiago, estou instalando o Cloud Code.
+Por favor, mande novo arquivo, pois eu cair, terminei perdendo aqui, de baixar.
+Tranquilo, manda aqui agora.
+Só salvar aqui essa nova versão, estou colocando aqui no chat.
+Ó, o Ricardo Bissolio, o Cloud Code suce fundo de estalação completada, muito bom.
+Tenho que comprar pelo celular o Cloud por causa do ID fiscal do Brasil, que não tem no site.
+É, eu nunca passei por essa questão aí, não, cara.
+Sempre comprei pelo notebook.
+Para quem estiver com problemas de pefe no Mac, está lá, só exportar.
+Pessoal, quem tiver com o erro na estalação do Cloud Code faz exatamente isso.
+Ó, estou tentando rodar aqui no terminal, já fiz isso e não estou conseguindo.
+Coloca aqui no Cloud.AI, e pede para ele poder te ajudar.
+Você vai ver que ele vai te dar todo auxílio de seu seu assistente para reconhecer o seu erro dentro de seu sistema personal.
+Estou no lino que está dando erro, pergunta aqui pro Cloud.
+Todo o mundo está dando erro nas variáveis, pergunta aqui no Cloud por que não está abrindo.
+Todo o Mac está dando erro. Coloca aqui.
+Então, isso aqui, cara, já vai eliminar todos os seus problemas, tá?
+Ó, que legal, pessoal, 59% já estalou a SQL na máquina.
+Muito bom.
+Cloudinho é bravo, só exportar, muito bom.
+Podemos seguir, pessoal, estou vendo que a maioria aqui já estalou a SQL, tá?
+Então, a gente vai seguir.
+Vamos seguir aqui com as práticas que vem muita coisa interessante.
+Agora, o que nós vamos fazer?
+Eu já estou com a minha conta na hora que eu fiz, está criada.
+Eu criei o meu autônomo da tabez, vamos até ver se terminou aqui o meu.
+Meu tava lento para caramba.
+O meu ainda está provisionando, nem terminou ainda.
+E está tudo bem, tá, pessoal?
+Quero fazer aqui mundo real mesmo, tá?
+Ah, Guilherme, está demorando.
+O meu está demorando aqui também, já deve ter uns 20 minutos já que está rolando aqui e não acabou ainda não.
+Então, vamos deixar aqui esse cara rodando.
+E o que eu quero trazer aqui para vocês?
+Criação da conta gratuita, instalação do VS Code,
+instalação do SQL, depois do VS Code e o GitHub Schema HR.
+Vamos criar um projeto padrão.
+Como eu recomendo criar uma pasta e missão.
+E aí dentro dessa pasta, Luís Carlos, é onde você vai estar fazendo ali com o Cloud Code, tá?
+Basicamente isso.
+Show de bola.
+Agora, vamos lá.
+Olha, acabou de terminar aqui, tá disponível.
+O que eu vou fazer, pessoal?
+Eu vou dar a sequência aqui.
+Eu vou criar esse aqui manualmente, tá?
+Mas quem tiver com dificuldade de rodar esses scripts?
+Você pode inclusive pedir para o Cloud de fazer essa criação aqui para você.
+Mas eu vou mostrar aqui como que a gente pode fazer.
+Você pode fazer o manual pedir para o Cloud de fazer.
+Eu vou fazer o seguinte agora, de missão ao tubro.
+Eu vou entrar aqui no meu banco que ele foi provisonado.
+Em Database Actions, na verdade Database Connection,
+eu vou fazer o download da minha Wallet.
+Quando eu vou fazer a minha Wallet, basicamente, é um arquivo, que é uma carteira
+que ele está trazendo todas as informações para conectar no meu banco de forma segura, tá?
+Vou utilizar exatamente essa mesma senha aqui do Zohar HR, tá?
+E vou pedir para ele fazer o download.
+A partir desse momento, pessoal, eu tenho essa Wallet na minha pasta download salvada aqui na minha máquina.
+Agora, a gente vai começar com o VS Code, que eu visualve o Studio Code da Microsoft.
+Você deve estar lá ali também, tá?
+Você vai ver que é uma ferramenta incrível.
+E olha que legal.
+A Microsoft tem aqui dentro do VS Code uma aba de instanções.
+E a Oracle disponibilizou uma extensão do SQL Developer, dentro do VS Code.
+Que que é essa extensão?
+É uma experiência de dentro do VS Code, você ter a cara do SQL Developer.
+E aqui dentro, se você tem o SQL instalado na sua máquina, ele vai habilitar o MCP Server para você, tá?
+Basicamente isso.
+Você vai vir aqui, clicar em instanções, SQL Developer vai clicar aqui em Instal.
+Quando você faz isso, vai aparecer esse banco de dados aqui, e você vai ter aqui a sua lista de conexões, tá?
+Sem erro, sem muito mistério.
+Agora, alguma dúvida até agora, pessoal, tranquilo?

@@ -1,0 +1,1191 @@
+1
+00:00:00,000 --> 00:00:08,380
+Tranquilo? Você vai estar lá o VSCode, vai estar lá a extensão do SQL Developer dentro do VSCode,
+
+2
+00:00:08,380 --> 00:00:18,190
+vai clicar aqui agora dentro do SQL Developer dentro do VSCode. Agora vou fazer o seguinte,
+
+3
+00:00:18,190 --> 00:00:26,329
+vou criar uma nova conexão, vou clicar aqui nesse mais, Connection Name, Emmerção, traço,
+
+4
+00:00:26,329 --> 00:00:34,390
+Outubro, traço, beat 6 AI. Tipo de conexão Cloud Wallet, que é a conexão bem segura,
+
+5
+00:00:34,390 --> 00:00:49,670
+vou escolher aqui agora o arquivo, que é o meu Wallet.zip. E aqui, user name, padrão do
+
+6
+00:00:49,670 --> 00:00:56,789
+autônomo zooladmin, e aqui eu vou colocar a minha senha padrão, e vou salvar, sem
+
+7
+00:00:56,789 --> 00:01:06,030
+clicar em testar. Teste passou com sucesso, vou clicar em salvar. Que que aconteceu quando eu
+
+8
+00:01:06,030 --> 00:01:13,959
+fiz essa configuração? Eu venho aqui dentro do meu Cloud Code e vou fazer a seguinte pergunta,
+
+9
+00:01:13,959 --> 00:01:38,379
+me dei a lista de conexões salvas no SQL Excel. Ao caio César e tapar algo, que legal meu irmão,
+
+10
+00:01:38,980 --> 00:01:44,819
+que legal que você está enxergando o valor aí cara, obrigada aí pelo Feedback, viu? Olha o
+
+11
+00:01:44,819 --> 00:01:51,359
+que que aconteceu pessoal, ele criou a minha conexão, que é com o usuário admin, autônomos
+
+12
+00:01:51,359 --> 00:02:01,900
+database na região de São Paulo, utilizando essa string aqui do Rai, tá? Nesse momento, eu não
+
+13
+00:02:01,900 --> 00:02:06,140
+preciso mais ficar passando os usuários sem adinar, cara. Eu posso chegar aqui e fazer o seguinte,
+
+14
+00:02:06,140 --> 00:02:18,460
+ó, conecte no banco, inmersão, traço, outubro, traço, 26 reais. Cara, eu tenho uma conexão segura,
+
+15
+00:02:18,460 --> 00:02:25,659
+criptografada, eu não estou, cara, passando os usuários sem adquipraia, cara, não façam isso,
+
+16
+00:02:25,659 --> 00:02:30,860
+estou conectado a inmersão como admin, é autônomos database na região de São Paulo,
+
+17
+00:02:30,860 --> 00:02:41,539
+doce aí, tal, tal, tal. O que você quer fazer nesse banco? E a partir desse momento, eu vou dar
+
+18
+00:02:41,539 --> 00:02:47,379
+esse prompt aqui pra ele, ó, eu poderia criar esse mamal, poderia, eu poderia vir aqui, abrir um SQL
+
+19
+00:02:47,379 --> 00:02:55,340
+Plus, abrir ali, um SQL Developer e, por favor, fazer um crente, o user, outer user e tal, poderia, tá?
+
+20
+00:02:55,819 --> 00:03:03,740
+Ah, Glamy, como vou passar a senha? Eu vou fazer do meu, manualmente. Show de bola, aqui é um laboratório,
+
+21
+00:03:03,740 --> 00:03:08,419
+só quero te mostrar o que é possível, tá? Aqui eu estou falando o seguinte, ó, connecte no meu
+
+22
+00:03:08,419 --> 00:03:12,819
+banco, outubro, faça a criação do usuário e agarre conforme os scripts abaixo, tu pedi pra ele rodar um
+
+23
+00:03:12,819 --> 00:03:22,620
+script, tá? E a partir desse momento, a gente consegue fazer a criação do usuário de exemplos do
+
+24
+00:03:22,620 --> 00:04:11,120
+primeiro desafio. Pessoal, quem tiver dúvida, podem colocando, tá? O usuário agarre foi criado na
+
+25
+00:04:11,120 --> 00:04:17,600
+em, no banco, chamada Emerson Outubo 26 reais, com todos os comandos do seu script sem erro,
+
+26
+00:04:17,600 --> 00:04:24,560
+conferindo adicionado de dados, depois está assim, open, tbspdfo, privilégios, role, privilégio do
+
+27
+00:04:24,560 --> 00:04:32,480
+objeto. Pessoal, o MCP, ele dá exatamente essa possibilidade de você não só pesquisar e fazer
+
+28
+00:04:32,480 --> 00:04:39,160
+uma pergunta, ele executa pra você, cara, eu estou fazendo alguns scripts, criação de usuário,
+
+29
+00:04:39,160 --> 00:04:45,399
+ninguém essa usuário ainda e tal, ele vai criar esse cara, beleza? Ele criou pra mim, esses comandos
+
+30
+00:04:45,399 --> 00:04:51,000
+são o ddl que o orco o grava na hora, então não precisa de comente. Ainda não existe uma conexão
+
+31
+00:04:51,000 --> 00:04:57,279
+sóva da esquerda pra usuário agarre no banco, posso criar um muconômico com a gsqz, não vou nem
+
+32
+00:04:57,279 --> 00:05:02,360
+criar esse cara aqui nesse momento não, eu quero fazer nesse sentido, vou manter.
+
+33
+00:05:02,920 --> 00:05:10,779
+Essa forma, tá? Agora o que eu vou fazer pessoal? Baixei do GitHub, o esquema de exemplo da
+
+34
+00:05:10,779 --> 00:05:16,180
+orco, posso fazer esse manual? Posso, cara. Ele é me to segurando de fazer comaiar, faz manual,
+
+35
+00:05:16,180 --> 00:05:20,939
+pô? Tá tudo bem, você vê que a criação do usuário aqui foi super rápido, ele me deu um resumo,
+
+36
+00:05:20,939 --> 00:05:26,259
+foi exatamente meu assistente, meu estagiário aqui rodando. Baixei o GitHub, quero que faça
+
+37
+00:05:26,259 --> 00:05:33,459
+a criação dos objetos do esquema.gr zipe na pasta download, se então dê aqui o zipe, tá?
+
+38
+00:05:34,660 --> 00:05:39,939
+Falei exatamente qual que é o arquivo, e aqui os scripts que devem ser executados, ele vai
+
+39
+00:05:39,939 --> 00:05:45,660
+descompactar e vai que fazer exatamente a criação desses scripts. Então eu vou pedir agora para
+
+40
+00:05:45,660 --> 00:06:00,050
+ele popular o esquema.gr com as tabelas de exemplo. Vamos ver o que ele vai fazer? Tá extraindo
+
+41
+00:06:00,610 --> 00:06:34,899
+o zipe, vou rodar os scripts como a de mim com o curr de esquema.gr para que os objetos se
+
+42
+00:06:34,899 --> 00:06:41,180
+já criaram no esquema.gr. E aí vem algumas questões até conceituais, tá pessoal? Ah, Guilherme, o que esse
+
+43
+00:06:41,180 --> 00:06:48,259
+curr de esquema? Que que é um esquema? Se você não entende os conceitos, cara, você vai ter dificuldade,
+
+44
+00:06:48,259 --> 00:06:55,500
+tá? O curr de esquema, exatamente esse curr manda aqui, ó. Altercesso é um curr de esquema
+
+45
+00:06:55,500 --> 00:06:59,740
+igual a gr. E para falar assim, eu quero que vocês recrutem esses scripts, mas como se
+
+46
+00:06:59,740 --> 00:07:04,779
+tivessem dentro daquele esquema tal, tá? Então você precisa ainda ter os conceitos, cara.
+
+47
+00:07:04,779 --> 00:07:09,379
+A carga dos dados terminou, eu tô conferindo o senhor Virus, a execução assim que me abriu
+
+48
+00:07:09,379 --> 00:07:14,259
+a acessão, sem ocorrer de esquema, então todos os certos falharam apontando para o adimim,
+
+49
+00:07:14,259 --> 00:07:18,699
+e nada foi inserido. Vou confirmar isso e rodar novamente incluindo o altercesso, dentro do
+
+50
+00:07:18,699 --> 00:07:24,139
+próprio script. Todos os desences da sede comandos falharam então nada foi gravado em lugar
+
+51
+00:07:24,139 --> 00:07:36,259
+de errado, rodando a carga de novo. E vou falar o seguinte, o pedipelho é ajustar esse prôptil
+
+52
+00:07:36,259 --> 00:07:54,379
+ainda para mim. Ajuste o prôptil abaixo para que dá a próxima vez, não der erro. Inclusive,
+
+53
+00:07:54,379 --> 00:07:58,019
+pedipelho é ajustar esse prôptil aqui, para ele já passar essa informação um pouco mais completa
+
+54
+00:07:58,019 --> 00:08:07,129
+e fazer o prôptil melhor. Ainda estou travado na conta da orca, não está passando.
+
+55
+00:08:07,129 --> 00:08:13,850
+Jesus é, como eu falei, não fica travado. Pega o seu laboratório do orca 19c lá que
+
+56
+00:08:13,850 --> 00:08:20,209
+a gente mostrou na live de pré-requisitos e faz lá. Cri a conexão ali no VSCode apontando
+
+57
+00:08:20,209 --> 00:08:25,290
+para o seu banco da sua VM, está sem problema nenhum, o problema é o grande ponto que
+
+58
+00:08:25,290 --> 00:08:41,350
+é focar na solução. Como eu baixo mesmo, a carteira que você mostrou? Luciano, vamos lá.
+
+59
+00:08:41,350 --> 00:08:57,500
+O prôptil ajustado para a próxima vez. Se eu tivesse feito do esquema da conexão HR, não aconteceria
+
+60
+00:08:57,500 --> 00:09:09,940
+esse erro. Eu vou botar aqui o próprio de completo. Conecte do Banco Tauso, arata vazio, origem,
+
+61
+00:09:09,940 --> 00:09:21,940
+extraia, executa, arregra, validação final, considere que o laboratório estudo e me desespostas,
+
+62
+00:09:21,940 --> 00:09:26,860
+coloque as consultas dos nomes das tabelas em Mayusco. É, na verdade, até aqui, aqui embaixo
+
+63
+00:09:26,860 --> 00:09:34,299
+é o desafio final. Então, exatamente esse prôptil aqui. Então, gente, eu poderia ter
+
+64
+00:09:34,299 --> 00:09:39,179
+o executado com o usuário HR logado ou com o usuário de mim. Quase o horário de mim,
+
+65
+00:09:39,179 --> 00:09:46,649
+eu tenho que fazer desse jeito com o HR, provavelmente com o bom optilado a teria da do céu, tá?
+
+66
+00:09:46,649 --> 00:09:51,009
+Alá, o esquema HR está completo, a primeira tentativa falhou na carga e não gravou nada
+
+67
+00:09:51,009 --> 00:10:04,870
+segundo os seres equipos rodaram sem erros. Todos os objetos estão válidos, tal, e me deu
+
+68
+00:10:04,870 --> 00:10:14,919
+prôptil ajustado. Como eu baixa a carteira que você mostrou, vamos lá, você vai vir aqui na
+
+69
+00:10:14,919 --> 00:10:20,360
+página inicial da Oracle Cloud, você vai vir em menu, Oracle AI da Tabase, você vai clicar em
+
+70
+00:10:20,360 --> 00:10:31,350
+autônomoze AI da Tabase, você vai vir aqui a Emersão Outubro 26 AI, e aqui você vai em
+
+71
+00:10:31,350 --> 00:10:40,379
+da Tabase Connection, aqui ó, aqui você vai clicar em Download Wallet, e aqui você vai botar
+
+72
+00:10:40,379 --> 00:10:47,940
+exatamente aquela senha que tem aqui ó, vamos usar sempre essa senha aqui padrão, o elcome,
+
+73
+00:10:47,940 --> 00:10:55,460
+e aí você clica em Download e ele vai baixar a Wallet, tá? Basicamente isso.
+
+74
+00:10:55,460 --> 00:11:05,059
+Estou a fazer a configuração da conexão do banco com SQL, via SQL, SQL, SQL, SQL só tem uma
+
+75
+00:11:05,059 --> 00:11:12,220
+conexão salva, show de bola, consegui instalar o SQL, mas perdi o que precisa ser realizado
+
+76
+00:11:12,220 --> 00:11:24,590
+após. Você vai seguir o Scriptica, depois você estalou o SQL, você vai estalar o SQL, depois
+
+77
+00:11:24,590 --> 00:11:32,549
+que você estalou o SQL, você vai configurar o SQL developer, dentro do SQL, aqui na aba de
+
+78
+00:11:32,549 --> 00:11:37,789
+extensões, você vai estalar essa extensão, você vai clicar aqui na extensão e vai criar uma nova
+
+79
+00:11:37,789 --> 00:11:42,950
+conexão, vai colocar o nome da conexão, que é aquele banco lá no Autônomo, então você vai
+
+80
+00:11:42,950 --> 00:11:50,110
+colocar aqui o nome, da conexão, conexão Cloud Wallet, vai ser selecionar o arquivo.zip,
+
+81
+00:11:50,110 --> 00:11:56,389
+que você baixou lá da nuvem, lá da Cloud da Órgica, você vai colocar o usuário admin, e a senha
+
+82
+00:11:56,389 --> 00:12:00,389
+você vai colocar exatamente a mesma senha que a gente está utilizando aqui, o elcome, um, dois,
+
+83
+00:12:00,389 --> 00:12:07,230
+três, quatro, oito nove, total, clicar em testar, clicar em salvar a partir desse momento, a sua senha
+
+84
+00:12:07,230 --> 00:12:20,379
+está salva. Depois disso, você vai seguir exatamente o Script, vai baixar o schema GR, vai pedir
+
+85
+00:12:20,379 --> 00:12:27,659
+para ele criar o usuário para você, vai listar a conexão, e vai pedir para ele carregar a fazer
+
+86
+00:12:27,659 --> 00:12:35,049
+uma carga no schema GR, basicamente isso. Pessoal, a gente está vendo que a AI passou de simplesmente
+
+87
+00:12:35,049 --> 00:12:44,570
+responder uma pergunta, utilizar como pesquisa, e aí até executando pela gente. Isso é a possibilidade
+
+88
+00:12:44,570 --> 00:12:50,610
+de você utilizar o MCP, e dá para fazer isso através de uma conexão segura, dá para se fazer isso
+
+89
+00:12:50,610 --> 00:12:56,730
+através de um usuário somente leitura. Agora você precisa entender o que você quer fazer, como fazer
+
+90
+00:12:56,730 --> 00:13:05,049
+essa melhor forma. E ainda tem um plan mode para quem quiser revisar a ação antes do Cloud
+
+91
+00:13:05,049 --> 00:13:10,250
+de executar. Exatamente. Estou com o problema de cicunização de relógio ainda, meu computador está
+
+92
+00:13:10,250 --> 00:13:17,129
+uma carroça, estou acompanhando aqui, está pago, muito bom. Depois de baixar o OLED, travei o que fazer.
+
+93
+00:13:17,529 --> 00:13:27,169
+Acabei de repetir aqui, então Tiago, você precisa baixar o VS Code, instalar a extensão
+
+94
+00:13:27,169 --> 00:13:34,889
+da SQL Developer, criar a conexão nova a partir da OLED que foi baixada lá, fazer a criação do usuário,
+
+95
+00:13:34,889 --> 00:13:44,580
+e depois da criação do usuário fazer a carga do schema GR. Pessoal, por isso que eu falei para
+
+96
+00:13:44,580 --> 00:13:49,379
+comprar o VIP, Tiago, seu nome engano você é aumentorado, pode ficar tranquilo, você tem a
+
+97
+00:13:49,379 --> 00:13:54,659
+gravação depois, então você pode ver e ver, não vou ficar travado nisso aqui não. Já foi aqui,
+
+98
+00:13:54,659 --> 00:14:02,340
+meu obrigado. No final, ele mostra o usuário GR criado e deixa a acessão aberta com o ritmo
+
+99
+00:14:02,340 --> 00:14:10,460
+GR. O próprio time orientou, está certo, sim. Agnado, no período da tarde vai ter 10 minutinhos para o café,
+
+100
+00:14:10,460 --> 00:14:14,139
+e vai sim, por volta das 16 horas a gente vai ter um momento de café.
+
+101
+00:14:14,139 --> 00:14:21,059
+O que cardobiço ali, está pago, sim, estou aumentorado, obrigado, o show de bola Tiago, conta
+
+102
+00:14:21,059 --> 00:14:30,440
+com a gente, tem que ter o horário desindo café, a tarde é mais puxada do que a de uma aí,
+
+103
+00:14:30,440 --> 00:14:43,139
+pode ficar tranquilo. Pessoal, estamos prontos para a prática, então alguma dúvida?
+
+104
+00:14:43,139 --> 00:14:47,139
+Estou aqui para repreender dúvida, conseguimos fazer essa conexão e configurar o Oracle
+
+105
+00:14:47,139 --> 00:14:53,799
+de 19ª prêmio, se é consequente, vai fazer da mesma forma que está o Eduardo. Você vai
+
+106
+00:14:53,799 --> 00:15:01,039
+clicar aqui no maizinho, vai colocar o nome da conexão, só que aqui você vai fazer uma conexão
+
+107
+00:15:01,039 --> 00:15:08,440
+basic, o VITNS, então aqui você vai colocar o Rochinei, o nome do IP da sua VM, vai botar
+
+108
+00:15:08,440 --> 00:15:16,840
+a porta, o nome do serviço, e aqui você vai botar o usuário CIS, com a rola aqui talvez de CIS
+
+109
+00:15:16,840 --> 00:15:21,480
+variar, dependendo de como você criou ali, e assim vai pedir para testar, cara. Só que
+
+110
+00:15:21,480 --> 00:15:25,559
+ao invés de você utilizar a conexão Cloud Wallet, quer dar o tom, você vai utilizar a conexão
+
+111
+00:15:25,559 --> 00:15:33,600
+basic, tá? Basicamente isso. Beleza, perfeito, está pago, show de bola Eduardo, muito bom
+
+112
+00:15:33,600 --> 00:15:47,980
+irmão, muito bom. Pessoal, mais alguma dúvida? Eu posso já botar o desafio 1 aqui para a gente,
+
+113
+00:15:47,980 --> 00:15:55,220
+vai finalizar agora o desafio 1 do período da manhã. O desafio 1 é o seguinte, pessoal, nós
+
+114
+00:15:55,220 --> 00:16:03,570
+temos ali o esquema GR com várias tabelas como vocês viram, o que eu vou fazer? Eu vou pedir
+
+115
+00:16:05,090 --> 00:16:15,600
+para ir a fazer as consultas S que ele para mim, em linguagem natural. Considero um laboratório de
+
+116
+00:16:15,600 --> 00:16:22,480
+estudos, eu vou dar contexto para ele com esquema GR e me desrespostas das questões abaixo.
+
+117
+00:16:22,480 --> 00:16:28,039
+Coloque as consultas com o nome das tabelas em maiúsculos, prefixando esquema GR, e eu quero
+
+118
+00:16:28,039 --> 00:16:32,840
+que você liste os funcionários seus departamentos, e eu explico a descreva uma consulta que retorna o
+
+119
+00:16:32,840 --> 00:16:37,240
+nome do funcionário, departamento que ele trabalha, o nome do gerente, e encontrar funcionários com
+
+120
+00:16:37,240 --> 00:16:41,360
+salários acima da MED, descreva uma consulta para alistar funcionários que hoje o salário seja
+
+121
+00:16:41,360 --> 00:16:45,960
+maior do que a MED de salários de todos os funcionários, mostra o histórico dos trabalhos
+
+122
+00:16:45,960 --> 00:16:50,279
+dos funcionários, conte quanto funcionários existe por região. O que é legal do que a gente está
+
+123
+00:16:50,279 --> 00:16:56,799
+vendo aqui, pessoal? Eu estou pegando o banco igual, alguém falou aqui no chat, um banco 12, um banco
+
+124
+00:16:56,799 --> 00:17:06,279
+19, e já estou conectado o VMCP para IA conseguir fazer uma consulta à esquela em linguagem natural
+
+125
+00:17:06,279 --> 00:17:12,480
+para mim, e vou falar que tipo de problema que você resolve para isso, pessoal da área financeira
+
+126
+00:17:12,480 --> 00:17:17,200
+que quer consultar dados que estão dentro de um banco relacional, você pode criar um usuário somente
+
+127
+00:17:17,200 --> 00:17:23,359
+leitura, configurar um MCPL para eles, só com esse usuário somente leitura ela consegue conversar
+
+128
+00:17:23,359 --> 00:17:29,829
+a linguagem natural e fazer os selects que ela quer, cara se já começa a resolver problema,
+
+129
+00:17:29,829 --> 00:17:34,829
+cara, as pessoas que não conhecimento técnico conhece querem para fazer um código,
+
+130
+00:17:35,109 --> 00:17:43,029
+começa a fazer a linguagem natural, isso aqui inclusive tem uma feature do Oracle 26 AI, a partir do 23 AI,
+
+131
+00:17:44,309 --> 00:17:53,069
+que ele faz o select AI, o selecto linguagem natural, então tem esse recurso nativo dentro do Oracle 26 AI
+
+132
+00:17:53,069 --> 00:18:00,789
+que eu vou mostrar na parte da tarde, e você pode fazer VMCP na versão 12, na versão 19 muito mais, uma das
+
+133
+00:18:00,789 --> 00:18:05,269
+grandes travas das pessoas que chegam aqui, pessoal, e falar o seguinte, a Guilherme não vou participar da
+
+134
+00:18:05,269 --> 00:18:10,390
+imensão não, porque eu não estou na versão 26 AI, nem precisa, cara, você pode estar na versão 19,
+
+135
+00:18:10,390 --> 00:18:15,869
+então utilizando a IApo, e conectar um MCPL, pessoal, quem entendeu que eu estou falando aqui já
+
+136
+00:18:15,869 --> 00:18:22,069
+coloquei tapago, cara, quem tinha essa dúvida e coloquei tapago, não sabia disso aqui,
+
+137
+00:18:22,069 --> 00:18:29,119
+tá sabendo agora, não sabia que dava para fazer no Oracle 12, tapago, conectando ao banco e
+
+138
+00:18:29,119 --> 00:18:35,400
+realizando as consultas pelo cloud, tapago, minha conexão não aparece para o cloud, John,
+
+139
+00:18:35,400 --> 00:18:44,200
+revisa se o MCPL, se o SQL se ele está configurado, tá, e verifica se a conexão dentro do VS Code
+
+140
+00:18:44,200 --> 00:18:51,039
+foi salva, se ela está listada aqui nas conexões ela vai aparecer dentro do VS Code, tá,
+
+141
+00:18:51,039 --> 00:18:56,559
+então você vê que apareceu aqui, a imersão ou tudo, quando eu me perguntei lá pro cloud,
+
+142
+00:18:56,559 --> 00:19:04,839
+listas conexões do SQL CL já apareceu lá para mim, tá, quando o Oracle cria essas queries,
+
+143
+00:19:04,839 --> 00:19:11,250
+ele leva em consideração o custo também, então Luis, a gente vai falar isso um pouquinho
+
+144
+00:19:11,250 --> 00:19:18,890
+à manhã, cara, porque a gente pode considerar, até para ele reescrever a QR para mim, mostrando
+
+145
+00:19:18,890 --> 00:19:23,769
+cenários de atimização, a gente pode pedir, preve a analisar a plano de execução para considerar
+
+146
+00:19:23,769 --> 00:19:29,170
+o custo, para analisar a melhor performance, já explicar antes que é uma query que provavelmente
+
+147
+00:19:29,170 --> 00:19:34,529
+vai envolver tabelas gigantes, e já pedir para analisar o custo, dá para a gente fazer dessa forma também,
+
+148
+00:19:34,529 --> 00:19:40,650
+tá, Luis Carlos, inclusive a análise de performance, o Rogério Borges, o tapago, o Sergio, o tapago,
+
+149
+00:19:40,650 --> 00:19:46,930
+o Caio, o tapago, o Pedro Silva, o tapago, Luís Flávio, o tapago, Lucas Paulinho, o tapago, o Newton César,
+
+150
+00:19:46,930 --> 00:19:53,650
+Diana Teixeira, já era, véi, tapago, que legal, esquiere se ele, ok, veja se ele está
+
+151
+00:19:53,650 --> 00:20:00,450
+aqui, já encontrei o que faltava, a Wallet existe, a conexão sóva com o nome de AIA, criada
+
+152
+00:20:00,450 --> 00:20:08,250
+pela extensão do Vensico, legal, agora estou testando a conexão com o banco, por essa conexão
+
+153
+00:20:08,250 --> 00:20:13,769
+só, vou usar o logado, versão do banco, e se usar a QR, existe, a conexão pela Wallet pode levar
+
+154
+00:20:13,849 --> 00:20:19,569
+alguns segundos, os estimos resultavam assim que terminaram, Géerson, tapago, Luís, tá mais que
+
+155
+00:20:19,569 --> 00:20:28,779
+pago, Caio, Tuler, tapago, Eduardo Friaz, tapago, esquiere se ele com problema de P, cara, entender
+
+156
+00:20:28,779 --> 00:20:47,180
+qual que é o IP, se o IP tá errado ou não, pessoal, agora eu vou rodar de jeito diferente, outra
+
+157
+00:20:47,180 --> 00:20:57,730
+extensão que eu estalei aqui, novesse code, foi o cloud, cloud code, forvesse code,
+
+158
+00:20:58,970 --> 00:21:05,009
+tá, o que que é esse cara, da própria cantorópico.com, então baixa o oficial, você vê que tem vários
+
+159
+00:21:05,009 --> 00:21:17,519
+aqui que não são oficiais, exatamente esse carinho aqui que eu tenho, olha que eu consigo verificar
+
+160
+00:21:17,519 --> 00:21:23,119
+que eu estou utilizando 3% da minha janela de 4 horas de consumo de tokens, meus tokens semanais aqui
+
+161
+00:21:23,119 --> 00:21:32,299
+eu estou consumindo 5%, eu consigo vir aqui no search ao menos de criar uma nova acessão, isso aqui,
+
+162
+00:21:32,299 --> 00:21:40,019
+pessoal, é exatamente o mesmo jeito que eu estou conectado a elevia terminal, só que eu estou
+
+163
+00:21:40,019 --> 00:21:46,859
+dentro do vs code, talvez da extensão do cloud code, eu consigo falar assim, me liste as
+
+164
+00:21:46,859 --> 00:22:07,890
+conexões salvas do SQL, se ele, olha, já listou as conexões em versão outubro, conecte no banco em
+
+165
+00:22:07,890 --> 00:22:15,440
+versão tal, e agora eu vou pedir pra ele criar essas consultas pra mim aqui em linguagem natural,
+
+166
+00:22:15,440 --> 00:22:32,250
+conectei, o que você quer fazer nele, aqui eu acho que ele fica bem organizado do vs code, eu consigo
+
+167
+00:22:32,250 --> 00:22:41,460
+ter os blocos aqui, clicar, expandir, pdple, mostrar pro completo, ele fica bem organizado,
+
+168
+00:22:41,460 --> 00:22:48,420
+aquele mostro, SQL, serial, run, SQL, que é exatamente a funcionalidade que o MCP faz,
+
+169
+00:22:51,890 --> 00:22:57,369
+escrevi as 4 consultas e rodei todas na inmersão onde o esquema gare existe, todas funcionaram,
+
+170
+00:22:57,369 --> 00:23:03,089
+funcionaram seus departamentos, funcionaram-os com o salário acima da média, histórico de
+
+171
+00:23:03,089 --> 00:23:09,170
+trabalhos, funcionaram-os por região, eu poderia pedir simplesmente na instrução falar assim,
+
+172
+00:23:09,170 --> 00:23:13,730
+olha, eu quero que se só escreva as consultas, eu que vou validar não executinado no banco, só
+
+173
+00:23:13,730 --> 00:23:20,329
+crias consultas, ele vai conseguir criar as consultas pra mim, ao que já executi as consultas e
+
+174
+00:23:20,329 --> 00:23:26,410
+executi, show de bola, e aí pessoal, nosso papel aqui é testar, né, chegar aqui, copiar
+
+175
+00:23:26,410 --> 00:23:41,059
+consulta 1, vim aqui no banco, clicar aqui, inmersão, utubro, clicar aqui nessa conexão nova,
+
+176
+00:23:41,059 --> 00:23:50,730
+bem aqui, e executar, olha, funcionou, validar, se está certo, se é isso mesmo que eu queria,
+
+177
+00:23:50,809 --> 00:24:01,400
+cara, está aqui, 77 linhas selecionados, pessoal, quem está entendendo aí o jogo digita aí tapado,
+
+178
+00:24:01,400 --> 00:24:16,619
+cara, de verdade, quem está entendendo aí o jogo digita tapado, ainda mais pra uma sala onde mais
+
+179
+00:24:16,619 --> 00:24:25,900
+80% das pessoas não tinham utilizado o MCP da Oracle, cara, se já estão utilizando MCP, agora imagina
+
+180
+00:24:25,900 --> 00:24:31,099
+a quantidade de problemas que você consegue resolver com isso, cara, vocês vão ver agora de tática,
+
+181
+00:24:31,099 --> 00:24:51,829
+pra escrever uma procedura, uma trigger, uma peca de muito bom, agora pessoal, eu queria trazer
+
+182
+00:24:51,829 --> 00:24:57,829
+pra vocês um ponto importante, é um importante quanto você está aqui no final de semana estudando,
+
+183
+00:24:59,430 --> 00:25:05,750
+é você mostrar pra sua rede profissional que você está estudando, e pra você ter o certificado,
+
+184
+00:25:05,910 --> 00:25:13,990
+tira um prente da tela, da sua tela, mostra aqui o desafio, explica, faz um poste agora
+
+185
+00:25:13,990 --> 00:25:22,789
+lá no seu link edim, então assim, desafio 1 da Emmerção Oracle Database com o IA, onde eu configurei o
+
+186
+00:25:22,789 --> 00:25:33,670
+VSC, o MCP Server, utilizando o VSCode, e estou conseguindo fazer consultas sql linguagem natural,
+
+187
+00:25:34,630 --> 00:25:44,869
+inclusive na versão 12 ou 19, utilizando MCP Server, isso possibilita quebrar uma barreira técnica
+
+188
+00:25:44,869 --> 00:25:49,910
+de quem não sabe construir uma query de noques, quem não sabe construir queries avançados, de quem
+
+189
+00:25:49,910 --> 00:25:55,029
+já sabe construir queries escrever mais rápido, de pessoas da área de negócio conseguiria fazer consultas
+
+190
+00:25:55,029 --> 00:26:01,269
+no banco de dados, cara, explica isso, sabe por quê, cara, seu chefe estando lá no seu link edim,
+
+191
+00:26:01,750 --> 00:26:08,950
+ele vai ver assim, caramba, o fulano está estudando algumas coisas aqui, que resolve problemas que a
+
+192
+00:26:08,950 --> 00:26:17,940
+gente tem aqui, e aí, cara, você vai começar a ver, o quanto tão importante quanto se dá no
+
+193
+00:26:17,940 --> 00:26:21,859
+sábado do mesmo, é mostrar o que você está aprendendo, o que você sabe é que está aqui,
+
+194
+00:26:23,779 --> 00:26:29,140
+e aí quando você entra nesse nível de aplicação, cara, você vai jogar o jogo da galera que está
+
+195
+00:26:29,140 --> 00:26:33,940
+surfando na área da IATA, sendo promovido, está crescendo, cara, está gerando valor, está resolvendo
+
+196
+00:26:33,940 --> 00:26:41,220
+buxa, tá, e eu quero criar um movimento, pessoal, quero que se você executou já o desafio 1 aqui agora,
+
+197
+00:26:41,220 --> 00:26:46,099
+igual eu fiz, tira um printe da sua tela, você pode executar no 19, cena que está na sua VM,
+
+198
+00:26:46,099 --> 00:26:53,140
+ou na oortónomos da tabese, tira um printe da sua tela, coloca lá no grupo, desafio 1, concluído,
+
+199
+00:26:53,859 --> 00:26:58,980
+no grupo do WhatsApp agora, você vai tirar um printe da tela e vai colocar, desafio 1, concluído,
+
+200
+00:26:59,779 --> 00:27:07,160
+porque quem não está aqui ao vivo, cara, vai ver que está perdendo, vai ficar maluco, caramba,
+
+201
+00:27:07,160 --> 00:27:11,799
+está todo mundo conseguindo fazer o desafio, só o que não, e vou falar, quem comprou VIP que não
+
+202
+00:27:11,799 --> 00:27:18,839
+tiver aqui ao vivo, cara, tem gente que vai travar, vai ter dificuldade, tem gente, cara, que vai ter dúvidas
+
+203
+00:27:18,839 --> 00:27:24,440
+e que vai precisar conversar com alguém, que vai precisar rever, e que, pô, não vai ter esse suporte que
+
+204
+00:27:24,440 --> 00:27:29,880
+a gente está tendo aqui para poder destravar, pessoal, esses 10 notícias aqui no tomo, agora eu queria abrir,
+
+205
+00:27:29,880 --> 00:27:35,559
+vocês são de mentoria aqui para vocês, cara, o que você achou do que a gente está mostrando,
+
+206
+00:27:35,559 --> 00:27:41,240
+qual é a sua dúvida, onde você está travado, qual é a sua dificuldade, levanta aí a mão,
+
+207
+00:27:41,240 --> 00:27:52,230
+eu quero te destravar, o que ainda bloquei é lista de pes liberados do banco, quando o IP estiver liberado,
+
+208
+00:27:52,230 --> 00:28:02,410
+o banco voltar para ver, só me dizer hot, é, tem que ver o aleçando su seu banco, ele está provisionado,
+
+209
+00:28:02,410 --> 00:28:09,049
+se ele está ainda provisionando lá, ele não vai conseguir conectar mesmo não, tá? Olha que legal,
+
+210
+00:28:09,049 --> 00:28:15,210
+pessoal, o Enrique desafiu um concluído, que legal, Enrique, parabéns, meu irmão, muito legal aí ver
+
+211
+00:28:15,210 --> 00:28:23,980
+que você está aplicando, que está colocando a mão na massa, choi de bola, pessoal, vamos publicá-la
+
+212
+00:28:23,980 --> 00:28:31,339
+nos grupos, então quem fez os desafios, o desafio um, tira um printe da tela, coloca-la no grupo,
+
+213
+00:28:31,339 --> 00:28:40,950
+aleçando, tem alguma coisa que você está fazendo errado aí, meu irmão, só se quiser, inclusive,
+
+214
+00:28:40,950 --> 00:28:47,190
+levantar a mão aí, compartilhar a tela, eu posso tentar te ajudar, tá? Mas não tem lista de
+
+215
+00:28:47,190 --> 00:28:54,869
+pebloqueada nunca, que eu fiz aqui, é conectar diretamente no banco ali, tá? Show de bola,
+
+216
+00:28:54,950 --> 00:29:08,259
+Nilsson desafiu um concluído, muito bom a Newton, show de bola, mandei a solicitação aí, tá,
+
+217
+00:29:08,259 --> 00:29:14,740
+Alessandro? Rodrigo Salis também conseguiu muito legal, o Rogério Carvalho desafiu, pessoal,
+
+218
+00:29:14,740 --> 00:29:22,660
+coloca-la no grupo do WhatsApp, tira um printe da tela e coloca-la desafiu um feito, desafiu um tapago,
+
+219
+00:29:22,660 --> 00:29:40,410
+coloca-la? E aí, Alessandro, bom dia, meu irmão, tudo bom? Bom dia, Gremm, tudo bem,
+
+220
+00:29:40,410 --> 00:29:47,509
+graças a Deus do você, como que eu compartilhar a tela aqui? Tem uma opção aí de cheira aí,
+
+221
+00:29:47,509 --> 00:30:04,180
+cara, uma opção lá embaixo, configurações, participante, vídeo, só ir mais quadros. Show de
+
+222
+00:30:04,180 --> 00:30:11,539
+bola é do friasa, desafio um feito, o tapago, muito bom, é do, mandou bem demais, meu irmão,
+
+223
+00:30:15,049 --> 00:30:29,079
+conseguiu compartilhar aí? Sim, vamos lá, me mostrei, cara, você criou o Autônios?
+
+224
+00:30:30,279 --> 00:30:33,799
+Lá, teu VS aqui, tá vendo aí, rodinhos comando aqui, olha aí.
+
+225
+00:30:33,799 --> 00:30:42,710
+Ah, mas que comando que você rodou, cara? Pra ele listar o banco ali,
+
+226
+00:30:42,710 --> 00:30:46,549
+no VS com o dirido, ele me deu essa respira. Ah, me mostrei o comando primeiro,
+
+227
+00:30:47,910 --> 00:30:59,109
+não tô vendo não. Lista as conexões salvas, o que que ele retornou de conexão salva?
+
+228
+00:30:59,109 --> 00:31:03,109
+Tá vendo que a tela do... Não, beleza, volta lá, beleza?
+
+229
+00:31:05,109 --> 00:31:07,990
+Agora vou aqui no VS code ou aqui no terminal?
+
+230
+00:31:07,990 --> 00:31:12,789
+Então, deixa eu ver o final, volta lá, calma aí, cara, calma aí, você já passou três telas a
+
+231
+00:31:12,789 --> 00:31:16,789
+mesmo tempo e eu tô tentando ler o VS code, tá? Pronto.
+
+232
+00:31:16,789 --> 00:31:32,980
+Desse aí, listas conexões salvas, vamos ver se ele listou. Desse. Então, com MMGR show e
+
+233
+00:31:32,980 --> 00:31:36,819
+immersion, você botou um comando aqui, cara, maluca, ele não entendeu o que você tá pedindo
+
+234
+00:31:36,819 --> 00:31:42,180
+por fazer. Ah, é, ele que gerou pra mim no Shell, no Power Shell.
+
+235
+00:31:42,180 --> 00:31:45,779
+Cara, você não tem que gerar nada de Power Shell, não, aqui você vai conversar
+
+236
+00:31:45,779 --> 00:31:51,700
+a linguagem, você vai falar agora. Connect no banco tal, mas ele conectou ainda, mesmo assim,
+
+237
+00:31:51,700 --> 00:31:55,220
+aqui no VS code, agora adigir isso, conecte.
+
+238
+00:31:55,220 --> 00:31:59,380
+Não, tá conectado, detalhes da... Só olha a tela, detalhes da conexão.
+
+239
+00:31:59,619 --> 00:32:03,220
+É um autônomo está nociar e beleza, tá tudo certo, conectou.
+
+240
+00:32:03,220 --> 00:32:03,940
+Tá.
+
+241
+00:32:03,940 --> 00:32:06,259
+É onde que tá dando erro de P?
+
+242
+00:32:06,259 --> 00:32:11,779
+Então, agora aqui, então, quando eu perço para executar esse...
+
+243
+00:32:11,779 --> 00:32:14,579
+Connect no banco e a missão aqui, tá vendo?
+
+244
+00:32:14,579 --> 00:32:16,500
+Até o Outer session...
+
+245
+00:32:16,500 --> 00:32:21,900
+Não, você não vai fazer até o Outer session, não, eu fiz só até o Grante.
+
+246
+00:32:21,900 --> 00:32:23,099
+Só até o?
+
+247
+00:32:23,099 --> 00:32:25,099
+Até o Grante.
+
+248
+00:32:25,980 --> 00:32:27,180
+Grante, aqui, né?
+
+249
+00:32:27,180 --> 00:32:29,180
+Você botou nome errado ali, tá?
+
+250
+00:32:30,140 --> 00:32:34,380
+É, aqui, você não teve que botar a hora que deu o banco, é 26 aí, né?
+
+251
+00:32:34,380 --> 00:32:35,579
+É, tá.
+
+252
+00:32:35,579 --> 00:32:39,819
+Então, deu, coloquei, aí é 26, dá, deu invertir, equipa, pode ir, eu não vai precisar lá.
+
+253
+00:32:39,819 --> 00:32:43,529
+Copia agora, sem ir?
+
+254
+00:32:43,529 --> 00:32:44,970
+Só isso, vou ter aqui.
+
+255
+00:32:44,970 --> 00:32:48,859
+Isso aí?
+
+256
+00:32:48,859 --> 00:32:50,700
+Boa por VS code.
+
+257
+00:32:50,700 --> 00:33:05,589
+Colo aí.
+
+258
+00:33:05,589 --> 00:33:09,990
+Uma coisa que eu tenho de observação é que você não salvou a cena, SQL-C.
+
+259
+00:33:09,990 --> 00:33:14,069
+Na hora de criar a cena aqui no VS code, você não salvou ela.
+
+260
+00:33:14,069 --> 00:33:15,029
+Não tem de...
+
+261
+00:33:15,190 --> 00:33:18,950
+E é isso que tá reclamando, a cena do admi não está sóbando a conexão.
+
+262
+00:33:18,950 --> 00:33:24,150
+Então, volta lá, cara, deleta aquela conexão e crie-la de novo.
+
+263
+00:33:24,150 --> 00:33:29,900
+Você vai clicar aqui no databasezinho ali, ó, isso.
+
+264
+00:33:29,900 --> 00:33:33,819
+Você vai minimizar essa conexão aí.
+
+265
+00:33:33,819 --> 00:33:34,940
+Eu deletaria...
+
+266
+00:33:34,940 --> 00:33:40,059
+Ou, tenta editar ela e salvar a cena.
+
+267
+00:33:40,059 --> 00:33:42,700
+O problema é que você...
+
+268
+00:33:42,700 --> 00:33:46,779
+Você tá conectado nela, você vai ter que desfechar a conexão dela.
+
+269
+00:33:46,779 --> 00:33:53,720
+Vai ter que desconectar.
+
+270
+00:33:53,720 --> 00:33:57,000
+Você vai ter que colocar a cena aí e habilitar a caixinha ali de salvar a cena.
+
+271
+00:33:57,000 --> 00:33:59,400
+Fou detalhe, cara.
+
+272
+00:33:59,400 --> 00:34:00,920
+Só não, tinh.
+
+273
+00:34:00,920 --> 00:34:02,200
+Vindo lá agora.
+
+274
+00:34:02,200 --> 00:34:03,480
+Tá, o que você quer?
+
+275
+00:34:03,480 --> 00:34:04,680
+Vindo até o caso.
+
+276
+00:34:04,680 --> 00:34:06,839
+Tá, eu vou te mando no PIX lá.
+
+277
+00:34:06,839 --> 00:34:08,039
+Aqui desver a cena.
+
+278
+00:34:08,039 --> 00:34:09,400
+Pode usar, pode usar.
+
+279
+00:34:11,400 --> 00:34:12,519
+Coloca a cena lá.
+
+280
+00:34:12,519 --> 00:34:15,840
+Me perdi.
+
+281
+00:34:15,840 --> 00:34:20,440
+Um, um, um, um, três, quatro.
+
+282
+00:34:20,440 --> 00:34:28,010
+Deixa eu achar a cena aqui, que eu odeia a cena com o que é o outro.
+
+283
+00:34:28,010 --> 00:34:34,250
+Tá aí.
+
+284
+00:34:34,250 --> 00:34:38,250
+Não entendi o que você tá fazendo aí, cara.
+
+285
+00:34:38,250 --> 00:34:40,250
+Não tá com...
+
+286
+00:34:40,250 --> 00:34:41,449
+Peraí, fica.
+
+287
+00:34:41,449 --> 00:34:42,650
+Coloca a cena.
+
+288
+00:34:42,650 --> 00:34:44,650
+Coloca a cena aqui, que eu cabei de...
+
+289
+00:34:44,650 --> 00:34:46,170
+Não, cara, vamos lá.
+
+290
+00:34:46,170 --> 00:34:48,170
+Cadê o...
+
+291
+00:34:48,170 --> 00:34:49,170
+E...
+
+292
+00:34:49,170 --> 00:34:50,170
+Aqui...
+
+293
+00:34:50,170 --> 00:34:51,170
+Controciê.
+
+294
+00:34:51,170 --> 00:34:53,170
+Ah, você criou uma cena diferente do roteiro que eu mandei.
+
+295
+00:34:53,170 --> 00:34:54,170
+Isso, deixa.
+
+296
+00:34:54,170 --> 00:34:56,409
+Alessado, minha observação para você, tá?
+
+297
+00:34:56,409 --> 00:35:00,570
+A gente começou de amanhã se já tava fazendo as coisas que eu nem tinha mostrado ainda, cara.
+
+298
+00:35:00,570 --> 00:35:01,570
+Uh-huh.

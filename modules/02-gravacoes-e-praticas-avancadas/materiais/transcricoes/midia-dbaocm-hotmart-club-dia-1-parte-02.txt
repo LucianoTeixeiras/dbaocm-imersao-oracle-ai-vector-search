@@ -1,0 +1,483 @@
+antes, uma e a ali da vida no dia a dia, tá? Segundo, intermediário, eu uso mais do que
+eu maiar o dia a dia, Guilherme, eu tenho o GPT pra fazer isso, eu tenho o Cloud pra fazer isso,
+eu tenho o Geminar pra fazer isso, eu tenho o Github e Copa, eu te pra fazer isso, e além disso,
+eu já tenho começado a criar algumas skills, cara, já sei o que é meu skills, já estou
+conseguindo automatizar muito assim de ter vários assistentes de ano no meu dia a dia, você tá
+no nível intermediário, terceiro, é o nível avançado, o que é o nível avançado, pessoal,
+Guilherme, eu já estou criando agentes, cara, eu já tenho agentes aqui, que atenda em chamado
+pra mim, eu já tenho agentes aqui, que, por, resolve os incidentes, traz o root caos e faz uma análise
+ali pra mim, hoje eu já estou utilizando raga, eu tenho uma base de conhecimento ali para os meus
+agentes, então eu já estou no nível aqui, cara, aqui, estou conseguindo realmente acelerar, cara,
+o nível avançado, aí você conseguir fazer ou supervisionar um time de agentes, tá, olha quem
+graçado, 13% aqui estão no nível, 12% estão no nível avançado, a grande maioria das pessoas que
+estão aqui estão no nível iniciante, cara, tá, e se preparem, pessoal, porque mesmo você que está
+avançado, talvez você vai ver formas de fazer e diferente do que você faz hoje, você vai ver que
+você é avançado, mas não no mundo órgão, talvez, com outras textas, outros bancos de dados, com outras
+tecnologias, e aqui você vai ver como que você faz as coisas avançadas dentro do órgão, com prática,
+com na massa, com estudos de caso aqui, do mundo real, tá, então estou vendo aqui, 53% está no
+nível iniciante, 33% está no nível intermediário, 13% estão no nível avançado, pessoal, tem algumas pessoas ainda
+que não terminaram de votar, se vocês puderem participar, quanto mais você interagir, cara, mais eu vou
+ajudar, tá, então pode ter certeza que essa interação aqui vai ser bom pra todo mundo, tá,
+show de bola, pessoal, agora vamos lá, o que eu quero trazer aqui pra vocês, pra gente conseguir
+realmente acelerar aquilo que a gente está propondo aqui para esse final de semana, eu quero trazer
+aqui pra vocês uma perspectiva de como que a AIA vai impactar hoje dentro de cada uma das empresas, tá,
+fazem um, pessoal, cada funcionário tem um assistente de A que o ajuda a trabalhar melhor e mais rápido,
+que que é isso, você trabalhar utilizando o assistente de A, eu considero duas coisas pra você
+trabalhar com o assistente de A, a primeira coisa é você utilizar MCP, eu já quero fazer uma pergunta
+mais uma enquete aqui pra vocês, tá, a pergunta vai ser o seguinte, você utiliza MCP no Oracle
+da Beise, sim, ou não, e eu quero entender quem das pessoas que estão aqui estão na fase 1 ou nem estão
+na fase 1, estão na fase 0, olha que engraçado 90% não utiliza MCP, isso pode ter certeza que 90% já vai
+sair daqui no nível diferente agora no período da manhã, tá, agora no período da manhã se já vão ter
+uma outra visão sobre o que é a fase 1, tá, que legal, 84% não utiliza MCP no Oracle, então são dois pontos
+aqui que eu gosto de trazer pra fase 1, primeiro eu utilizar MCP, além do MCP, tem um outro ponto também que a gente
+precisa falar, que são as skills, você utiliza skills no Oracle da Beise, então vamos rolar mais uma enquete aí na tela,
+que eu quero entender de vocês, se você já utiliza um skills ou se você tá simplesmente vai becodando ou conversando
+com a AI, legal 83% também não utiliza skills, que que eu quero trazer pra vocês, se você não utiliza MCP e você não
+utiliza skills, você tá utilizando a AI como Google estendendo, você tá utilizando ela de um jeito muito
+inferior ao que você deveria, e aí já vem até algumas questões que muitas pessoas me perguntam,
+se você não utiliza MCP e não utiliza skills para o que você faz, cara, eu vou falar pra vocês, hoje dentro da
+DBLC, mas a gente tem mais de 500 skills, pra diversas áreas da empresa, tá, só skills relacionadas aqui, a
+da DBLC tem mais de 140, do nosso time técnico, tá, fora os skills de marketing, de vendas, de
+administração, de contratos, de financeiro, e muito mais, então 80%, 84% aqui, não utiliza nem skills no
+Oracle da DBLC, olha que interessante, então já dá pra ver que essa é imensão, cara, vai ajudar a gente
+a dar uma baramba aqui, e você que já utiliza skills, talvez eu vou mostrar algumas skills aqui, que você não tinha
+pensado ainda, que você não tinha testado dessa forma, que você não sabia que com isso que eu dá pra
+verificar isso, por exemplo, porque você nunca vai ter uma AI especialista, se você não é uma especialista, e pra
+muitos casos aqui, por exemplo, estou 20 anos trabalhando com o Oracle, trabalha com o Oracle desde 2006, pra muitos
+casos pessoal, vocês precisam ter a experiência pra conseguir entender que isso pode ser um skill, que isso
+pode ser feito dessa forma, de como que a coisa é feita da melhor forma, tá, então, muitas pessoas vão ficar
+perdidas porque não tem a vivência, e aí o legal mesmo você que sabe criar skills, sabe que é que é uma
+skill, você vai ter a minha experiência, a minha vivência de 20 anos, tá, então você pode ter certeza aqui,
+quando você mais estudo de caso você tem, mas você vai conseguir gerar de resultado nessa fase 1, beleza? Fechamos aqui em
+KETT, 80% não utiliza skills e 20% utiliza as skills, show de bola, fase 2 pessoal, equipes humano a gente, quando a gente vai pra
+fazer 2, a gente para de utilizar só LLN, e a gente começa a utilizar AI com seus dados, a gente começa a
+fazer busca semântica, a gente começa a utilizar Hagin, a gente começa a utilizar Vector Search, e aí você começa a
+criar agentes, e o que são os agentes, são colegas digitais, depois que eu já fiz uma atividade com o
+assistente de A, eu começo a treinar para que esse assistente vira um agente, e aí quando esse assistente vira um agente, eu
+consigo ter colegas digitais, e hoje já tem empresas, por exemplo, que consideram uma equipe, os humanos mais
+agentes, inclusive os agentes estão dando lucro não, se o custo dos agentes estão dando retorno, sobre a
+quantidade de horas trabalhadas, a quantidade de horas economizadas, o intergavo que está sendo feita e
+muito mais, então hoje os agentes estão caindo dentro do centro de custo das empresas, então você começa a ter
+colegas digitais, assumindo tarefas específicas sobre orientação humana, quando a gente entra nessa fase de
+agentes, a gente precisa ter algo validado, e você não vai ter algo validado se você não fez um bom
+assistente antes, se você não executou junto e testou cada etapa do que ele pronta, te está fazendo do que
+ele está fazendo, então um erro muito grande que eu já vou trazer aqui para vocês, o cara que quer criar o super agente
+autônomo, só que ele não sabe nem fazer um próprio direito, ele não sabe nem o que ele quer direto, definiu
+os processos direito, e vou te falar um dos mares desafios da ira hoje, não é a parte técnica, a parte técnica
+que é relativamente fácil, é a parte estratégica, a parte definição de processos e de entender o problema que
+a gente quer resolver, porque tem muita gente que quer utilizar a ira para mudar a cor do botão, cara, não vai funcionar
+apoi, se você chega para seu chefe falando assim que você quer usar a ira para melhorar a sua vida, cara,
+muitas vezes ele não vai nem querer isso, a você está falando que está usando a ira, porque tem um negócio que
+está muito lento e vai ficar 10 vezes mais rápido, opar, se você me falar que você está utilizando a ira
+porque hoje o sistema está muito lento, está dando uma fila lá na hora do pagamento, na emissão de nota
+fiscal, e que vai ficar muito mais rápido e vai eliminar esse problema e se gargalo, opa, cara, você tem que
+ter um problema real que você quer resolver, e hoje com tecnologia, as pessoas que evoluem que crecem
+na área de tecnologia, só as pessoas que entendem por que ela está desenvolvendo aquele código, cara, quantas
+vezes você já não vê um programador que está fazendo o código que ele não tem nem ideia do que ele está
+fazendo, cara, ele sabe nem para o que serve aquilo, é o cara que está totalmente noviés técnico,
+agora eu vou falar para vocês, pessoal, esse cara ele está morrendo, cara, se você não entendeu o problema
+e o impacto daquilo que você faz, cara, eu vou te falar, você vai ficar um cara obsoleto dando esse
+mercado, então hoje a IATA subindo a barra para caramba, eu conversei com um, fiz até um podcast
+ano passado, com um gestor lá na Oracle, que é o Boixá, e aí nesse bate-papo com ele eu falei,
+você acredita que o Júnior está fazendo papel de pleno, e que o pleno está fazendo papel de senion na era
+da IATA, e ele me falou o seguinte, Guilherme, eu acredito que vai mais do que isso, eu acredito que
+está todo mundo na mesma régua, cara, o Júnior pode fazer um trabalho melhor do que o Júnior, e o senior pode
+pegar e criar algumas IATA para fazer o trabalho de Júnior também, muito mais rápido, então está muito numa visão
+estratégica de você entender o conceito, e vou falar mais para vocês, tirar certificações, vai ser
+fundamental, porque você está no nível de conhecimento, nível de raciocínio, que quando você
+está sem tirar certificação e está só focado em executar o trabalho e ficar pagando incêndio
+no seu trabalho dia a toda, você para de pensar, cara, você começa em burrecer, e vou falar
+um bastidor aqui para vocês, eu pedi de demissão da Oracle em 2020, eu estava com a sensação que eu estava
+ficando burro, cara, eu estava seis anos fazendo a mesma coisa, eu precisava desaficar, porque essa
+rotina de execução do trabalho começa a te burrecer, cara, se você não tivesse desafianos
+estudando coisas as novas, tirando certificação, você começa a se burrecer, você para no
+tempo, cara, e hoje quem parar no tempo aí faz muito melhor esse trabalho, cara, de repetição,
+e vou falar para vocês, hoje eu já cria algumas skills aqui para fazer o trabalho que eu fazia de
+hexadata, por exemplo, da Oracle, chegando desde o ponto de planejamento de invir de
+mede, de validação, de preenchimento das coisas, tem a que faz isso, você tem uma skill que faz isso,
+até a parte de execução, porra, eu estou fazendo um deploy de uma nova máquina, você tem uma skill
+que você faz isso, porra, você pode transformar esses que não a gente, ao invés de mandar um humano fazer
+isso, você pode pedir para o maiar conectar lá numa máquina vazia, uma máquina nova e fazer
+o deployment, porra, você pode botar a iapa tendeu chamado para você, você pode botar a iapa
+tendeu esse dente, porra, galera, quem não jogar esse jogo, cara, vai ficar para trás, tá? Então
+aqui faz de um, estou falando de um humano trabalhando com o dado de internet, com a iapa, com a ielilêmica,
+são dados de internet, na fase 2 estou falando de usar iapa com seus dados, cara, a gente já começa a
+um outro jogo, para quando chega na fase 3, você tá liberando um time de agentes, ai a gente
+vai jogar um outro jogo totalmente diferente, você é um cara mais estratégico coordenando
+o time de agentes que executam processos de negócios, fluxos de trabalho, consultando os humanos
+quando necessário, e já vou falar para vocês qual vai ser o nosso papel para 2017, treinar
+ai, revisar o que aiata fazendo, aprovar o que aiata fazendo, são uma das principais tarefas que
+a gente tem hoje, se você não entendeu que esse é o novo trabalho e você quer ficar
+executando as coisas na mão ainda, provavelmente você vai ficar obsoleta dentro desse mercado,
+você vai ficar para trás, e eu quero trazer essa perspectiva, pessoal, não é para te colocar
+é porque esse movimento tá acontecendo, cara, a gente tem vários mentorados por que foram
+saíram no leof, leof natin, leof na IBM, leof na Oracle, leof dentro de grandes empresas,
+porque o jogo mudou, cara, se você ficar só naquela rotina de trabalho do dia a dia,
+você vai morrer, se você não entender que o jeito de trabalhar,
+qualquer profissional que trabalha atrás de um computador de uma tela,
+ele tá sendo impactado drasticamente pela AI, o trabalho dele não vai ser do mesmo jeito,
+você vai ficar obsoleta, então é uma questão também de posicionamento,
+porque se você se posiciona dessa forma dentro da empresa como cara AI first,
+criando skills, criando agentes, conectando a MCPs, e vou falar para vocês,
+talvez você vai ter que vender a ideia da empresa que você trabalha,
+muitas vezes você vai ter que chegar lá da empresa que você trabalha,
+e vai ter que montar uma apresentação para o seu chefe, você vai falar chefe,
+queria marcar um horário contigo que a gente tem esse problema aqui,
+ou essa questão aqui que toda semana a gente está gastando 80 horas para fazer isso,
+a nossa equipe está gastando 80 horas para fazer isso aqui com tantas pessoas,
+e eu queria te mostrar como a gente pode fazer isso aqui com 4 vezes menos tempo,
+ao invés de 80 horas a gente consegue fazer em 16, em 8 horas,
+cara duvido seu chefe não vai te dar uma oportunidade de fazer uma apresentação,
+e aí você vai fazer uma apresentação igual a te mostrar aqui dos desafios,
+e você vai demonstrar para ele o como que esse trabalho pode ser feito de um jeito muito mais eficiente,
+os gestores e as empresas só vão adotar em duas situações,
+para resolver um problema ou para poder ter uma oportunidade de fazer algo melhor e mais rápido,
+aí pode ser utilizada para dor ou oportunidade,
+existe uma oportunidade de fazer isso melhor, show de bola,
+existe esse problema aqui cara que ninguém resolve,
+e que está impactando para caramba, inclusive no faturamento, um problema.
+Se você é hoje, e vou falar um segredo aqui para vocês,
+tira novamente mais do que vitamina C,
+porque quando o cara está com dor de cabeça mesmo,
+é algo que tem uma percepção de valor muito alto,
+eu lembro que teve um projeto,
+inclusive até um parceiro meu aqui da Orca,
+que trabalhou comigo lá o Caio, que está aqui na área,
+eu lembro que teve um projeto que ele vai estar lembrando a situação
+de um grande cliente de banco,
+que teve uma aquisição ali de uns 10 ou 11 ex-adatas,
+e aí no grupo do nosso time, quando eu surrola um monte de reclamação,
+nossa que bucha, eu tô fora desse projeto, não sei o quê,
+e aí eu cheguei para o nosso gestor na época e falei,
+olha, com certeza vai ser um desafio muito grande esse projeto,
+mas tô disposto a assumir esse projeto caso você acredite que eu posso contribuir.
+Então, onde existe um problema, existe uma oportunidade,
+enquanto umas pessoas podem reclamar,
+você pode arrumar uma posição, cara, que você vai se destacar,
+e vou te falar do tempo que eu estava dando a Orca
+quando formou o projeto de ex-adata virtualizado ali da América Latina,
+um projeto muito grande,
+e fiquei um ano e meio dentro desse projeto,
+deu problema pra caramba,
+mas é aquilo, você pode entender o problema de duas formas,
+com o corpo meio cheio, com o meio vazio,
+aprendi coisa pra caramba,
+conversi com engenharia pra caramba,
+vi muita coisa que eu não sabia,
+e sai de lá mais forte, tá?
+Então, cara, se você gostar de receber problema,
+se você for um cara que é focado em resolver problema,
+você vai surfar de braçada nessa era da IA, tá?
+O Alano botou aqui, ó, esse é o ponto,
+não basta dizer que o uso da IA é vantajoso,
+tem que demonstrar em casos práticos reais do dia a dia das empresas.
+Exatamente isso, Alano,
+e se a gente não fizer esse alinhamento aqui agora, cara,
+não adianta nada a parte técnica que eu vou mostrar durante esses dois dias,
+não adianta nada desafio um, desafio dois, desafio três,
+tem muita gente que sabe executar tecnicamente,
+só que não sabe associar com o problema na hora certa, cara.
+E esse mapeamento de problema, resolução,
+é o que tá faltando, né?
+Seja um cara que consegue lincar o problema,
+com IA, com a gente, com uma técnica,
+com o recurso do Oracle,
+quando você começa a fazer isso, cara,
+seus resultados vão explodir, cara.
+Ô, Rogério Carvalho aí, já falou, tá pago?
+Cara, que legal!
+Que legal!
+Bom saber que você já pegou, cara,
+isso aqui que a gente tá falando é o uoro,
+porque tem muita gente aqui,
+pessoal, que não sabe nem o que é um MCP,
+como o Connecton MCP no Oracle ainda, cara.
+E se é a parte técnica,
+só que se você não conseguir entender
+o MCP pode ser utilizado para resolver o monte de problema,
+cara, não tem como.
+O Rogério Borges aí também, tá pago?
+Por isso que eu falo, a parte técnica da IA,
+é o mais fácil, a IA vai fazer para a gente monte de coisa aqui.
+O grande ponto é você entender como que você resolve os problemas,
+como que você linca e seus problemas,
+como que você faz isso do jeito certo,
+com segurança e muito mais.
+O Renaldo Fish, bela sacada,
+dira além de fazer a coisa toda funcionar,
+visualizar novas estratégias após os agentes.
+É isso, Renaldo, muito bom, irmão.
+Então, assim, muitas vezes só fazer funcionar carnol suficiente.
+Você não vai entender como lincar aquilo,
+aquela discussão que está rolando ali no almoço,
+que está rolando no café, que está rolando naquela reunião,
+que está rolando naquela tréide de meio.
+E aí que você pode trazer uma demonstração de como fazer isso
+de forma segura de ponta a ponta com metodologia, tá?
+Muito bom, pessoal, então eu fazia um humano com assistente,
+fase 2, equipes humano, a gente faz 3,
+uma liderança humana operação por agentes.
+Eu vou mostrar aqui para vocês, pessoal,
+até cenários da fase 3, tá?
+Amanhã se prepara e que a barra vai subir para caramba.
+Como que você pode criar agentes, por exemplo,
+atender o chamado, para atender um incidente e muito mais.
+Vocês vão visualizar, inclusive, essa fase.
+E o grande ponto, pessoal, como tem muita gente aqui
+que não está usando nem MCP no Oracle ainda?
+Provavelmente, vocês não estão nem na fase 1 aqui.
+Quase 90% aqui, não está nem na fase 1.
+Quanto mais na fase 2?
+Muito menos na fase 3.
+E vou falar, o pior é o cara que quer ir para a fase 3,
+direto, sem passar pela fase 1 e a fase 2.
+Eu vou fazer a analogia que é o seguinte.
+É mesmo a coisa do cara que queria fazer o treine a dieta
+do Arno Schozenegger, só que ele está no primeiro mês de academia.
+A chance dele passar mal esse machucar são gigantes.
+Se ele for querer pegar um peso que ele não está acostumado
+em ter uma evolução progressiva,
+ele vai lesionar, cara, o ombro, ele vai não achar o capo.
+Tenta pegar um peso maior do que o seu corpo está treinado
+sem uma progressão.
+Cara, você vai se machucar.
+Agora, tenta se alimentar como um físico autorista
+se você começou a treinar essa semana.
+Você vai passar mal, cara.
+E aí, eu já vou trazer para vocês aquelas notícias
+ali do linkadinho.
+Eu participo de alguns grupos, cara.
+Eu tenho pensado até a série.
+Eu vou falar um baixo do aqui que está no meio de segura, tá?
+Eu tenho pensado em sair de todos os grupos gratuitos que eu tenho, cara.
+Porque é um grupo, cara, só de história triste, cara.
+É um grupo muito vitimista, cara.
+Agora, quando a gente tem um evento igual a esse aqui,
+que o cara é mentorado, que pagou 10 mil para participar e está aqui,
+ou ele pagou o ingresso para estar aqui,
+a gente está no outro nível de comprometimento com as pessoas.
+Não é a galera da história triste.
+E vou falar para vocês.
+Eu quero até fazer esse alinhamento aqui também para esse final de semana.
+Se durante os desafios você for o cara que fica dando desculpa
+e que é o cara da história triste,
+cara, fecha aqui, vai para praia, vai assistir o Netflix,
+vai fazer outra coisa.
+Eu quero preservar que esse grupo,
+aqui é essa imersão com centenas de pessoas,
+seja um grupo de pessoas que pensam na solução, cara.
+Que gostam de resolver o problema,
+que tem uma cabeça diferente de pensar e que está surfando na era da IA.
+Porque, cara, você ameira das pessoas com o que você anda.
+Aguilhar mesmo, mas esse é o papo de colte.
+Às vezes, o papo de colte que você critica é o que você mais precisa ouvir, cara.
+Porque se você está no grupo de pessoas que só reclama da vida,
+esse ambiente ele é tóxico, cara.
+Você vai dar que a pouco está reclamando a vida.
+Se você está num grupo de pessoas que ganham 50 mil,
+você vai estar ganhando 50 mil daqui a pouco.
+Se você está num grupo de pessoas que estão tirando certificação,
+a CP é certificação de A,
+você vai estar tirando certificação, a CP é certificação de A.
+A gente é muito influenciado, cara, pelo ambiente.
+Teve o ano que eu corria a São Silvestre como meu pai.
+E vou te falar.
+Se eu tiver sozinho, por exemplo, naquele percurso,
+fora o contexto da São Silvestre, eu teria desistido.
+Eu vi senhor de 80 anos correndo, cara.
+Na subida ali da bigadeira ali no final, cara.
+Eu estava cansado, já era, 15 quilômetros, mano.
+Se você não está no ambiente,
+aí você vê, cara, o cara fantasiado de mica e correndo,
+você vê uma criança correndo, você vê o cara com cabera de roda,
+correndo, você vê o cara que está carregando o filho
+nas costas correndo, você vê a senhora,
+você vê gente mais novo, gente mais velho,
+gente com limitações com dificuldades,
+gente sem braço, sem perna.
+Você fala assim, cara, não tem que dar desculpa.
+O meu problema não existe, cara.
+A gente tem que problema muito maior fazendo coisa que eu não estou fazendo, mano.
+Ah, Guilherme, mas esse é o papo de Colte.
+Pense, cara.
+Ambiente interfere.
+Ambiente interfere muito, cara.
+Então, pessoal, se o nosso semana não vamos ser
+o grupo da história triste.
+Aqui, a gente vai falar o problema e a gente vai falar a solução.
+E se você não tira achando a solução, eu vou te ajudar.
+Mas você precisa primeiro saber perguntar e saber pedir ajuda.
+Pessoal, a quantidade, hoje eu tenho mais de 800 mentorados.
+A quantidade de pessoas que não sabe fazer uma pergunta é um absurdo.
+O cara fala assim no grupo da mentoria.
+Não consegui fazer.
+Deu erro aqui.
+Cara, eu não consigo ajudar esse cara.
+Agora, se o cara chegar e falar assim, olha.
+Deu erro aqui, tira um print da tela.
+Alguém já viu esse erro aqui?
+Olha o que que é acontecer.
+Cara, consegue explicar o problema, pô.
+Agora, você se fala assim.
+Não consegui, porque eu não queria contar.
+Você está dando desculpa, cara.
+Se você quer, cara, você acorda mais cedo.
+Se você quer, você vai até mais tarde.
+Então, muito cuidado você ser do cara do grupo do MMI.
+Esse tipo de mentalidade, esse tipo de proximão, cara.
+Vai ficar morrendo no mercado.
+Vai entrar no layout e não vai conseguir voltar, cara.
+Se a gente não tiver com essa cabeça aqui alinhada, pessoal,
+o final do semana não vai rolar.
+As 8 práticas não vão rolar.
+E vou falar isso por quê?
+Não adianta só o que ele é me ter chegado no final exercutando as 8 práticas.
+Se eu chegar lá no final aqui sozinho,
+cara, não faz sentido.
+E eu estou aqui para fazer o máximo de pessoas conseguirem
+aplicar estudos de caso de como que resolvem problemas reais
+das empresas utilizando iacos ou oracodataves.
+E vocês vão ver que a cada desafio,
+eu vou estar junto com vocês
+liderando pelo exemplo.
+Não adianta eu só falar para vocês fazerem.
+Eu vou fazer junto com vocês.
+Ninguém respeita quem só fala, pô.
+As pessoas respeitam quem faz.
+E eu estou aqui para fazer junto com vocês.
+Não vai ter desculpa.
+Aguilherme, não fiz instalação do oraco com ontem.
+Fica tranquilo, a gente vai fazer aqui, já faz junto.
+Aguilherme, criei com, não consegui criar conta noceia
+e não sei o que e tal.
+Cara, o grupo aqui está para te ajudar, a gente vai te ajudar, a gente vai criar juntos.
+Eu faço questão de, no isso aqui,
+começar a fazer criar um autônomo da tabéis ali junto, mostrar minha tela,
+fazer junto, quem tem a gravação do VIP, pô,
+vai conseguir ver o replay depois.
+Então, eu fiz e saviso na live de quem está feira,
+que é muito importante você ter a gravação por conta disso.
+E a gente vai executar aqui juntos, tá?
+E a gente só vai passar para um desafio pronto
+quando a maioria tiver feito.
+A maioria conseguiu, vamos embora, vamos acelerar.
+Que é na dinanta, cara, eu ficar tocando conteúdo aqui
+e ninguém está conseguindo fazer e está muito difícil, tá?
+Mas não dá pra gente ficar também naquele papo vitimista
+de que pra mim é mais difícil.
+Ah, não consegui, então parei.
+Não fiz nem um desafio porque eu não consegui criar conta.
+Não existe essa desculpa aqui entre a gente, tá?
+Nilto, tá pago, aleçando, tá pago.
+Caio cesta, tá pago.
+Ricardo Bissolho, Virgilho, Reinaldo, Pedro Silva.
+Já repeou mudando a cabeça e nem entrou nas ferramentas ainda.
+E Reinaldo, exatamente isso, cara.
+Começa pela cabeça.
+E vou te falar, cara.
+Eu tô me segurando pra não sair dos grupos gratuitos que eu participo, cara.
+São pessoas muito vitimistas.
+Se a pessoa, cara, o nosso último lote aqui pra assistir ao Virgilho tá 97 reais.
+Se o cara não paga 97 reais que é o preço de uma pizza
+pra ficar dois dias estudando, estudos de caso de órgão com iaco com pessoas de grandes empresas,
+esse cara não tá no mesmo nível de comprometimento que eu, cara.
+E quando você vê que é aquele grupo gratuito, é só os cara reclamando da vida, cara.
+Então eu gosto de me alimentar, cara, de pessoas que porra.
+Só bem a barra, de pessoas que estão tendo mais resultado que eu,
+eu me expiro nessas pessoas.
+Então já começa, cara, realmente na forma de pensar.
+Ó, Roger, infelizmente convive com pessoas profissional que tem uma mente muito pequena.
+Cara, às vezes até o lugar de mudar de empresa.
+Eu vou te falar, sair de muitas empresas e por conta disso, tá?
+Se, cara, se você tá no lugar que você vai ver que um ambiente não vai mudar,
+muda de ambiente, cara. Busca ambientes melhores.
+Você pode ter certeza que estar subindo a sua barra,
+se preparar para estar ambientes melhores também vale muito a pena, tá?
+E eu estou me virando pelo avesso pra sair desse ambiente tóxico,
+estou buscando ambiente como este que você está planando muito bom.
+Melhor imersão que já fiz até hoje, que legal, Ivan.
+Conta com a gente, meu irmão.
+Tá pagando isso aí, man, precisando nos melhorar sempre.
+Pessoal, estamos aliado, vamos pra cima que vem muita monamassa.
+Já tentei usar AI e não funcionou, tá?
+Você não tá sozinho, muita gente já tentou usar AI e se frustrar no começo.
+A tecnologia evolui todos os dias, o que não funcionava ontem e hoje,
+hoje já 10 vezes mais poderoso.
+O segredo não é só ferramenta saber da o próprio certo e entender o contexto e aplicar na prática.
+E a gente vai mostrar, exemplos, reais de como fazer do jeito certo e na prática.
+Minha jornada com o Oracle pessoal, 20 anos de experiência na área de TI,
+comecei em 2006, atuei grandes empresas no Brasil fora do Brasil,
+trabalhou em 6 anos dentro da Oracle.
+Viu evolução do Oracle 9E, de internet, da IG, de grid, 12C, de cloud.
+O 26A e agora com a 3G artificial, que pra mim,
+é a maior evolução de todas, tá?
+Tem gente que vai falar assim, apô, mas é uma bulha.
+Eu não vou nem entrar muito nesse assunto, tá?
+Eu quero ser bem.
+Vou resumir a forma como eu penso.
+Eu foco aquilo que tá dentro do meu controle.
+Ah, mas essa bulha vai estourar porque os caras estão investindo muito
+e não estão tendo lucro no seu queitau, tau, tau, tau, tau, tau, tau, tau.
+Ela se estourar a bulha.
+Eu vou rodar a minha LLM local na minha máquina.
+Eu tenho o GPU aqui.
+Vou botar um olhano, avô sendo sinalia a LLM que eu quiser pra rodar local.
+E vou continuar usando iacar.
+Se a bulha estourar, eu vou focar na solução, cara.
+Eu vou focar o que tá no meu controle.
+Eu vou parar a utilizar a API da cloud e vou rodar local,
+que meus testes já estão entregando coisa incrível,
+menos pagona de qualidade.
+Se você tem um agente meio montado, um pronto de bem feito,
+mas que o bem feito, cara, vai rodar perfeito.
+Então, é uma bulha ou não é?
+Cara, já ouvi essa história de diversos vezes.
+Eu estou com 40 anos hoje.
+Já ouvi essa história muitas vezes na minha vida.
+Vou focar naquilo que tá dentro do meu controle.
+Pra mim, e a generativa é uma realidade.
+Não tem como voltar atrás.
+Não tem como a gente desver o que tá dando pra fazer.
+E não tem volta.
+Talvez algumas empresas possam ter algum tipo de prejuízo
+por conta dos seus investimentos.
+Talvez sim.
+Talvez sim, mas isso não vai regredir de um jeito que acabou iaar.
+Ninguém vai poder utilizar, não acredito que isso vai acontecer.
+E no pior dos casos, eu vou ruso aí a local aqui na minha máquina,
+que funciona pra caramba e que tá tudo certo.
+Concentro de cênio de verdade mudou, tá, pessoal?
+Antes, se tinha que ter 10 anos de experiência na minha época em 2006,
+quando eu entrei, o cara que tinha 10 anos pra cima pra poder ser um cênio, tá?
+Hoje, tem gente se tornando cênio em 3 anos.
+Temos vários casos de metorados nós, que conseguiram ver a cênio em 3 anos.
+E vou te falar hoje, acredito que um cara de um ano, que trabalha com o oraco,
+às vezes ele consegue fazer coisas que o cênio não tá sabendo fazer, tá?
+Então, esse é um ponto, cara, que a gente precisa entender
+que a velocidade tá muito rápida.
+E que muito trabalho operacional que a gente fazia, hoje é iaar, faz pra gente.
+E que muita gente tá muito para as revisando, testando e validando aquilo que iaar, tá?
+Tá? Porque ser iaar e first muda tudo.
+E a first é, basicamente, uma mentalidade e cultura diferente.
+Não é só ferramenta.
+É entender que o iaagé, o motor das empresas modernas, quem tem de sair na frente,
+é entender tudo que tá chegando pra mim.
+Como que eu consigo botar uma esquil, um agente, um prompt, um assistente,
+conectar a VMCP, pra fazer isso mais rápido e melhor?
+E a first é, basicamente, isso.
+Porra, eu reviso uma procedura aqui, uma peca de de 3 mil linhas.
+Só que porra, eu demoro muito tempo e tenho coisa que eu tô pegando e não tô vendo,
+porque tem muito código, tô deixando pra trás.
+Quando você treina bem o maiar pra fazer isso,
+você vai ver que ela vai revisar até melhor do que você.
+Porque chega o momento, cara, quando código ele é muito grande,
+quando análise de um arquivo ele é muito grande.
+A sua capacidade, cara, ela trava, a sua memória não vai decorar 3 mil linhas, cara.
+Tá tudo bem, mas qual ia tem tecnologia pra que isso aconteça?
+Então, o objetivo de ser iaar e forja primeiro, fazer melhor, subia a barra.
+Coisas que o team esquece, que você treinam um cara junho,
+o cara se treinam 10 vezes, passa a mesma coisa pra ele e vai lá e faz errado.
+Se você passar pra uma gente, ele vai errar menos.
+Se você passar isso pra uma skill, vai ver as que vai errar menos.
+Então, essa é a primeira coisa do AI Air Flush.
+Segunda coisa do AI Air Flush.

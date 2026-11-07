@@ -1,0 +1,298 @@
+Tranquilo? Você vai estar lá o VSCode, vai estar lá a extensão do SQL Developer dentro do VSCode,
+vai clicar aqui agora dentro do SQL Developer dentro do VSCode. Agora vou fazer o seguinte,
+vou criar uma nova conexão, vou clicar aqui nesse mais, Connection Name, Emmerção, traço,
+Outubro, traço, beat 6 AI. Tipo de conexão Cloud Wallet, que é a conexão bem segura,
+vou escolher aqui agora o arquivo, que é o meu Wallet.zip. E aqui, user name, padrão do
+autônomo zooladmin, e aqui eu vou colocar a minha senha padrão, e vou salvar, sem
+clicar em testar. Teste passou com sucesso, vou clicar em salvar. Que que aconteceu quando eu
+fiz essa configuração? Eu venho aqui dentro do meu Cloud Code e vou fazer a seguinte pergunta,
+me dei a lista de conexões salvas no SQL Excel. Ao caio César e tapar algo, que legal meu irmão,
+que legal que você está enxergando o valor aí cara, obrigada aí pelo Feedback, viu? Olha o
+que que aconteceu pessoal, ele criou a minha conexão, que é com o usuário admin, autônomos
+database na região de São Paulo, utilizando essa string aqui do Rai, tá? Nesse momento, eu não
+preciso mais ficar passando os usuários sem adinar, cara. Eu posso chegar aqui e fazer o seguinte,
+ó, conecte no banco, inmersão, traço, outubro, traço, 26 reais. Cara, eu tenho uma conexão segura,
+criptografada, eu não estou, cara, passando os usuários sem adquipraia, cara, não façam isso,
+estou conectado a inmersão como admin, é autônomos database na região de São Paulo,
+doce aí, tal, tal, tal. O que você quer fazer nesse banco? E a partir desse momento, eu vou dar
+esse prompt aqui pra ele, ó, eu poderia criar esse mamal, poderia, eu poderia vir aqui, abrir um SQL
+Plus, abrir ali, um SQL Developer e, por favor, fazer um crente, o user, outer user e tal, poderia, tá?
+Ah, Glamy, como vou passar a senha? Eu vou fazer do meu, manualmente. Show de bola, aqui é um laboratório,
+só quero te mostrar o que é possível, tá? Aqui eu estou falando o seguinte, ó, connecte no meu
+banco, outubro, faça a criação do usuário e agarre conforme os scripts abaixo, tu pedi pra ele rodar um
+script, tá? E a partir desse momento, a gente consegue fazer a criação do usuário de exemplos do
+primeiro desafio. Pessoal, quem tiver dúvida, podem colocando, tá? O usuário agarre foi criado na
+em, no banco, chamada Emerson Outubo 26 reais, com todos os comandos do seu script sem erro,
+conferindo adicionado de dados, depois está assim, open, tbspdfo, privilégios, role, privilégio do
+objeto. Pessoal, o MCP, ele dá exatamente essa possibilidade de você não só pesquisar e fazer
+uma pergunta, ele executa pra você, cara, eu estou fazendo alguns scripts, criação de usuário,
+ninguém essa usuário ainda e tal, ele vai criar esse cara, beleza? Ele criou pra mim, esses comandos
+são o ddl que o orco o grava na hora, então não precisa de comente. Ainda não existe uma conexão
+sóva da esquerda pra usuário agarre no banco, posso criar um muconômico com a gsqz, não vou nem
+criar esse cara aqui nesse momento não, eu quero fazer nesse sentido, vou manter.
+Essa forma, tá? Agora o que eu vou fazer pessoal? Baixei do GitHub, o esquema de exemplo da
+orco, posso fazer esse manual? Posso, cara. Ele é me to segurando de fazer comaiar, faz manual,
+pô? Tá tudo bem, você vê que a criação do usuário aqui foi super rápido, ele me deu um resumo,
+foi exatamente meu assistente, meu estagiário aqui rodando. Baixei o GitHub, quero que faça
+a criação dos objetos do esquema.gr zipe na pasta download, se então dê aqui o zipe, tá?
+Falei exatamente qual que é o arquivo, e aqui os scripts que devem ser executados, ele vai
+descompactar e vai que fazer exatamente a criação desses scripts. Então eu vou pedir agora para
+ele popular o esquema.gr com as tabelas de exemplo. Vamos ver o que ele vai fazer? Tá extraindo
+o zipe, vou rodar os scripts como a de mim com o curr de esquema.gr para que os objetos se
+já criaram no esquema.gr. E aí vem algumas questões até conceituais, tá pessoal? Ah, Guilherme, o que esse
+curr de esquema? Que que é um esquema? Se você não entende os conceitos, cara, você vai ter dificuldade,
+tá? O curr de esquema, exatamente esse curr manda aqui, ó. Altercesso é um curr de esquema
+igual a gr. E para falar assim, eu quero que vocês recrutem esses scripts, mas como se
+tivessem dentro daquele esquema tal, tá? Então você precisa ainda ter os conceitos, cara.
+A carga dos dados terminou, eu tô conferindo o senhor Virus, a execução assim que me abriu
+a acessão, sem ocorrer de esquema, então todos os certos falharam apontando para o adimim,
+e nada foi inserido. Vou confirmar isso e rodar novamente incluindo o altercesso, dentro do
+próprio script. Todos os desences da sede comandos falharam então nada foi gravado em lugar
+de errado, rodando a carga de novo. E vou falar o seguinte, o pedipelho é ajustar esse prôptil
+ainda para mim. Ajuste o prôptil abaixo para que dá a próxima vez, não der erro. Inclusive,
+pedipelho é ajustar esse prôptil aqui, para ele já passar essa informação um pouco mais completa
+e fazer o prôptil melhor. Ainda estou travado na conta da orca, não está passando.
+Jesus é, como eu falei, não fica travado. Pega o seu laboratório do orca 19c lá que
+a gente mostrou na live de pré-requisitos e faz lá. Cri a conexão ali no VSCode apontando
+para o seu banco da sua VM, está sem problema nenhum, o problema é o grande ponto que
+é focar na solução. Como eu baixo mesmo, a carteira que você mostrou? Luciano, vamos lá.
+O prôptil ajustado para a próxima vez. Se eu tivesse feito do esquema da conexão HR, não aconteceria
+esse erro. Eu vou botar aqui o próprio de completo. Conecte do Banco Tauso, arata vazio, origem,
+extraia, executa, arregra, validação final, considere que o laboratório estudo e me desespostas,
+coloque as consultas dos nomes das tabelas em Mayusco. É, na verdade, até aqui, aqui embaixo
+é o desafio final. Então, exatamente esse prôptil aqui. Então, gente, eu poderia ter
+o executado com o usuário HR logado ou com o usuário de mim. Quase o horário de mim,
+eu tenho que fazer desse jeito com o HR, provavelmente com o bom optilado a teria da do céu, tá?
+Alá, o esquema HR está completo, a primeira tentativa falhou na carga e não gravou nada
+segundo os seres equipos rodaram sem erros. Todos os objetos estão válidos, tal, e me deu
+prôptil ajustado. Como eu baixa a carteira que você mostrou, vamos lá, você vai vir aqui na
+página inicial da Oracle Cloud, você vai vir em menu, Oracle AI da Tabase, você vai clicar em
+autônomoze AI da Tabase, você vai vir aqui a Emersão Outubro 26 AI, e aqui você vai em
+da Tabase Connection, aqui ó, aqui você vai clicar em Download Wallet, e aqui você vai botar
+exatamente aquela senha que tem aqui ó, vamos usar sempre essa senha aqui padrão, o elcome,
+e aí você clica em Download e ele vai baixar a Wallet, tá? Basicamente isso.
+Estou a fazer a configuração da conexão do banco com SQL, via SQL, SQL, SQL, SQL só tem uma
+conexão salva, show de bola, consegui instalar o SQL, mas perdi o que precisa ser realizado
+após. Você vai seguir o Scriptica, depois você estalou o SQL, você vai estalar o SQL, depois
+que você estalou o SQL, você vai configurar o SQL developer, dentro do SQL, aqui na aba de
+extensões, você vai estalar essa extensão, você vai clicar aqui na extensão e vai criar uma nova
+conexão, vai colocar o nome da conexão, que é aquele banco lá no Autônomo, então você vai
+colocar aqui o nome, da conexão, conexão Cloud Wallet, vai ser selecionar o arquivo.zip,
+que você baixou lá da nuvem, lá da Cloud da Órgica, você vai colocar o usuário admin, e a senha
+você vai colocar exatamente a mesma senha que a gente está utilizando aqui, o elcome, um, dois,
+três, quatro, oito nove, total, clicar em testar, clicar em salvar a partir desse momento, a sua senha
+está salva. Depois disso, você vai seguir exatamente o Script, vai baixar o schema GR, vai pedir
+para ele criar o usuário para você, vai listar a conexão, e vai pedir para ele carregar a fazer
+uma carga no schema GR, basicamente isso. Pessoal, a gente está vendo que a AI passou de simplesmente
+responder uma pergunta, utilizar como pesquisa, e aí até executando pela gente. Isso é a possibilidade
+de você utilizar o MCP, e dá para fazer isso através de uma conexão segura, dá para se fazer isso
+através de um usuário somente leitura. Agora você precisa entender o que você quer fazer, como fazer
+essa melhor forma. E ainda tem um plan mode para quem quiser revisar a ação antes do Cloud
+de executar. Exatamente. Estou com o problema de cicunização de relógio ainda, meu computador está
+uma carroça, estou acompanhando aqui, está pago, muito bom. Depois de baixar o OLED, travei o que fazer.
+Acabei de repetir aqui, então Tiago, você precisa baixar o VS Code, instalar a extensão
+da SQL Developer, criar a conexão nova a partir da OLED que foi baixada lá, fazer a criação do usuário,
+e depois da criação do usuário fazer a carga do schema GR. Pessoal, por isso que eu falei para
+comprar o VIP, Tiago, seu nome engano você é aumentorado, pode ficar tranquilo, você tem a
+gravação depois, então você pode ver e ver, não vou ficar travado nisso aqui não. Já foi aqui,
+meu obrigado. No final, ele mostra o usuário GR criado e deixa a acessão aberta com o ritmo
+GR. O próprio time orientou, está certo, sim. Agnado, no período da tarde vai ter 10 minutinhos para o café,
+e vai sim, por volta das 16 horas a gente vai ter um momento de café.
+O que cardobiço ali, está pago, sim, estou aumentorado, obrigado, o show de bola Tiago, conta
+com a gente, tem que ter o horário desindo café, a tarde é mais puxada do que a de uma aí,
+pode ficar tranquilo. Pessoal, estamos prontos para a prática, então alguma dúvida?
+Estou aqui para repreender dúvida, conseguimos fazer essa conexão e configurar o Oracle
+de 19ª prêmio, se é consequente, vai fazer da mesma forma que está o Eduardo. Você vai
+clicar aqui no maizinho, vai colocar o nome da conexão, só que aqui você vai fazer uma conexão
+basic, o VITNS, então aqui você vai colocar o Rochinei, o nome do IP da sua VM, vai botar
+a porta, o nome do serviço, e aqui você vai botar o usuário CIS, com a rola aqui talvez de CIS
+variar, dependendo de como você criou ali, e assim vai pedir para testar, cara. Só que
+ao invés de você utilizar a conexão Cloud Wallet, quer dar o tom, você vai utilizar a conexão
+basic, tá? Basicamente isso. Beleza, perfeito, está pago, show de bola Eduardo, muito bom
+irmão, muito bom. Pessoal, mais alguma dúvida? Eu posso já botar o desafio 1 aqui para a gente,
+vai finalizar agora o desafio 1 do período da manhã. O desafio 1 é o seguinte, pessoal, nós
+temos ali o esquema GR com várias tabelas como vocês viram, o que eu vou fazer? Eu vou pedir
+para ir a fazer as consultas S que ele para mim, em linguagem natural. Considero um laboratório de
+estudos, eu vou dar contexto para ele com esquema GR e me desrespostas das questões abaixo.
+Coloque as consultas com o nome das tabelas em maiúsculos, prefixando esquema GR, e eu quero
+que você liste os funcionários seus departamentos, e eu explico a descreva uma consulta que retorna o
+nome do funcionário, departamento que ele trabalha, o nome do gerente, e encontrar funcionários com
+salários acima da MED, descreva uma consulta para alistar funcionários que hoje o salário seja
+maior do que a MED de salários de todos os funcionários, mostra o histórico dos trabalhos
+dos funcionários, conte quanto funcionários existe por região. O que é legal do que a gente está
+vendo aqui, pessoal? Eu estou pegando o banco igual, alguém falou aqui no chat, um banco 12, um banco
+19, e já estou conectado o VMCP para IA conseguir fazer uma consulta à esquela em linguagem natural
+para mim, e vou falar que tipo de problema que você resolve para isso, pessoal da área financeira
+que quer consultar dados que estão dentro de um banco relacional, você pode criar um usuário somente
+leitura, configurar um MCPL para eles, só com esse usuário somente leitura ela consegue conversar
+a linguagem natural e fazer os selects que ela quer, cara se já começa a resolver problema,
+cara, as pessoas que não conhecimento técnico conhece querem para fazer um código,
+começa a fazer a linguagem natural, isso aqui inclusive tem uma feature do Oracle 26 AI, a partir do 23 AI,
+que ele faz o select AI, o selecto linguagem natural, então tem esse recurso nativo dentro do Oracle 26 AI
+que eu vou mostrar na parte da tarde, e você pode fazer VMCP na versão 12, na versão 19 muito mais, uma das
+grandes travas das pessoas que chegam aqui, pessoal, e falar o seguinte, a Guilherme não vou participar da
+imensão não, porque eu não estou na versão 26 AI, nem precisa, cara, você pode estar na versão 19,
+então utilizando a IApo, e conectar um MCPL, pessoal, quem entendeu que eu estou falando aqui já
+coloquei tapago, cara, quem tinha essa dúvida e coloquei tapago, não sabia disso aqui,
+tá sabendo agora, não sabia que dava para fazer no Oracle 12, tapago, conectando ao banco e
+realizando as consultas pelo cloud, tapago, minha conexão não aparece para o cloud, John,
+revisa se o MCPL, se o SQL se ele está configurado, tá, e verifica se a conexão dentro do VS Code
+foi salva, se ela está listada aqui nas conexões ela vai aparecer dentro do VS Code, tá,
+então você vê que apareceu aqui, a imersão ou tudo, quando eu me perguntei lá pro cloud,
+listas conexões do SQL CL já apareceu lá para mim, tá, quando o Oracle cria essas queries,
+ele leva em consideração o custo também, então Luis, a gente vai falar isso um pouquinho
+à manhã, cara, porque a gente pode considerar, até para ele reescrever a QR para mim, mostrando
+cenários de atimização, a gente pode pedir, preve a analisar a plano de execução para considerar
+o custo, para analisar a melhor performance, já explicar antes que é uma query que provavelmente
+vai envolver tabelas gigantes, e já pedir para analisar o custo, dá para a gente fazer dessa forma também,
+tá, Luis Carlos, inclusive a análise de performance, o Rogério Borges, o tapago, o Sergio, o tapago,
+o Caio, o tapago, o Pedro Silva, o tapago, Luís Flávio, o tapago, Lucas Paulinho, o tapago, o Newton César,
+Diana Teixeira, já era, véi, tapago, que legal, esquiere se ele, ok, veja se ele está
+aqui, já encontrei o que faltava, a Wallet existe, a conexão sóva com o nome de AIA, criada
+pela extensão do Vensico, legal, agora estou testando a conexão com o banco, por essa conexão
+só, vou usar o logado, versão do banco, e se usar a QR, existe, a conexão pela Wallet pode levar
+alguns segundos, os estimos resultavam assim que terminaram, Géerson, tapago, Luís, tá mais que
+pago, Caio, Tuler, tapago, Eduardo Friaz, tapago, esquiere se ele com problema de P, cara, entender
+qual que é o IP, se o IP tá errado ou não, pessoal, agora eu vou rodar de jeito diferente, outra
+extensão que eu estalei aqui, novesse code, foi o cloud, cloud code, forvesse code,
+tá, o que que é esse cara, da própria cantorópico.com, então baixa o oficial, você vê que tem vários
+aqui que não são oficiais, exatamente esse carinho aqui que eu tenho, olha que eu consigo verificar
+que eu estou utilizando 3% da minha janela de 4 horas de consumo de tokens, meus tokens semanais aqui
+eu estou consumindo 5%, eu consigo vir aqui no search ao menos de criar uma nova acessão, isso aqui,
+pessoal, é exatamente o mesmo jeito que eu estou conectado a elevia terminal, só que eu estou
+dentro do vs code, talvez da extensão do cloud code, eu consigo falar assim, me liste as
+conexões salvas do SQL, se ele, olha, já listou as conexões em versão outubro, conecte no banco em
+versão tal, e agora eu vou pedir pra ele criar essas consultas pra mim aqui em linguagem natural,
+conectei, o que você quer fazer nele, aqui eu acho que ele fica bem organizado do vs code, eu consigo
+ter os blocos aqui, clicar, expandir, pdple, mostrar pro completo, ele fica bem organizado,
+aquele mostro, SQL, serial, run, SQL, que é exatamente a funcionalidade que o MCP faz,
+escrevi as 4 consultas e rodei todas na inmersão onde o esquema gare existe, todas funcionaram,
+funcionaram seus departamentos, funcionaram-os com o salário acima da média, histórico de
+trabalhos, funcionaram-os por região, eu poderia pedir simplesmente na instrução falar assim,
+olha, eu quero que se só escreva as consultas, eu que vou validar não executinado no banco, só
+crias consultas, ele vai conseguir criar as consultas pra mim, ao que já executi as consultas e
+executi, show de bola, e aí pessoal, nosso papel aqui é testar, né, chegar aqui, copiar
+consulta 1, vim aqui no banco, clicar aqui, inmersão, utubro, clicar aqui nessa conexão nova,
+bem aqui, e executar, olha, funcionou, validar, se está certo, se é isso mesmo que eu queria,
+cara, está aqui, 77 linhas selecionados, pessoal, quem está entendendo aí o jogo digita aí tapado,
+cara, de verdade, quem está entendendo aí o jogo digita tapado, ainda mais pra uma sala onde mais
+80% das pessoas não tinham utilizado o MCP da Oracle, cara, se já estão utilizando MCP, agora imagina
+a quantidade de problemas que você consegue resolver com isso, cara, vocês vão ver agora de tática,
+pra escrever uma procedura, uma trigger, uma peca de muito bom, agora pessoal, eu queria trazer
+pra vocês um ponto importante, é um importante quanto você está aqui no final de semana estudando,
+é você mostrar pra sua rede profissional que você está estudando, e pra você ter o certificado,
+tira um prente da tela, da sua tela, mostra aqui o desafio, explica, faz um poste agora
+lá no seu link edim, então assim, desafio 1 da Emmerção Oracle Database com o IA, onde eu configurei o
+VSC, o MCP Server, utilizando o VSCode, e estou conseguindo fazer consultas sql linguagem natural,
+inclusive na versão 12 ou 19, utilizando MCP Server, isso possibilita quebrar uma barreira técnica
+de quem não sabe construir uma query de noques, quem não sabe construir queries avançados, de quem
+já sabe construir queries escrever mais rápido, de pessoas da área de negócio conseguiria fazer consultas
+no banco de dados, cara, explica isso, sabe por quê, cara, seu chefe estando lá no seu link edim,
+ele vai ver assim, caramba, o fulano está estudando algumas coisas aqui, que resolve problemas que a
+gente tem aqui, e aí, cara, você vai começar a ver, o quanto tão importante quanto se dá no
+sábado do mesmo, é mostrar o que você está aprendendo, o que você sabe é que está aqui,
+e aí quando você entra nesse nível de aplicação, cara, você vai jogar o jogo da galera que está
+surfando na área da IATA, sendo promovido, está crescendo, cara, está gerando valor, está resolvendo
+buxa, tá, e eu quero criar um movimento, pessoal, quero que se você executou já o desafio 1 aqui agora,
+igual eu fiz, tira um printe da sua tela, você pode executar no 19, cena que está na sua VM,
+ou na oortónomos da tabese, tira um printe da sua tela, coloca lá no grupo, desafio 1, concluído,
+no grupo do WhatsApp agora, você vai tirar um printe da tela e vai colocar, desafio 1, concluído,
+porque quem não está aqui ao vivo, cara, vai ver que está perdendo, vai ficar maluco, caramba,
+está todo mundo conseguindo fazer o desafio, só o que não, e vou falar, quem comprou VIP que não
+tiver aqui ao vivo, cara, tem gente que vai travar, vai ter dificuldade, tem gente, cara, que vai ter dúvidas
+e que vai precisar conversar com alguém, que vai precisar rever, e que, pô, não vai ter esse suporte que
+a gente está tendo aqui para poder destravar, pessoal, esses 10 notícias aqui no tomo, agora eu queria abrir,
+vocês são de mentoria aqui para vocês, cara, o que você achou do que a gente está mostrando,
+qual é a sua dúvida, onde você está travado, qual é a sua dificuldade, levanta aí a mão,
+eu quero te destravar, o que ainda bloquei é lista de pes liberados do banco, quando o IP estiver liberado,
+o banco voltar para ver, só me dizer hot, é, tem que ver o aleçando su seu banco, ele está provisionado,
+se ele está ainda provisionando lá, ele não vai conseguir conectar mesmo não, tá? Olha que legal,
+pessoal, o Enrique desafiu um concluído, que legal, Enrique, parabéns, meu irmão, muito legal aí ver
+que você está aplicando, que está colocando a mão na massa, choi de bola, pessoal, vamos publicá-la
+nos grupos, então quem fez os desafios, o desafio um, tira um printe da tela, coloca-la no grupo,
+aleçando, tem alguma coisa que você está fazendo errado aí, meu irmão, só se quiser, inclusive,
+levantar a mão aí, compartilhar a tela, eu posso tentar te ajudar, tá? Mas não tem lista de
+pebloqueada nunca, que eu fiz aqui, é conectar diretamente no banco ali, tá? Show de bola,
+Nilsson desafiu um concluído, muito bom a Newton, show de bola, mandei a solicitação aí, tá,
+Alessandro? Rodrigo Salis também conseguiu muito legal, o Rogério Carvalho desafiu, pessoal,
+coloca-la no grupo do WhatsApp, tira um printe da tela e coloca-la desafiu um feito, desafiu um tapago,
+coloca-la? E aí, Alessandro, bom dia, meu irmão, tudo bom? Bom dia, Gremm, tudo bem,
+graças a Deus do você, como que eu compartilhar a tela aqui? Tem uma opção aí de cheira aí,
+cara, uma opção lá embaixo, configurações, participante, vídeo, só ir mais quadros. Show de
+bola é do friasa, desafio um feito, o tapago, muito bom, é do, mandou bem demais, meu irmão,
+conseguiu compartilhar aí? Sim, vamos lá, me mostrei, cara, você criou o Autônios?
+Lá, teu VS aqui, tá vendo aí, rodinhos comando aqui, olha aí.
+Ah, mas que comando que você rodou, cara? Pra ele listar o banco ali,
+no VS com o dirido, ele me deu essa respira. Ah, me mostrei o comando primeiro,
+não tô vendo não. Lista as conexões salvas, o que que ele retornou de conexão salva?
+Tá vendo que a tela do... Não, beleza, volta lá, beleza?
+Agora vou aqui no VS code ou aqui no terminal?
+Então, deixa eu ver o final, volta lá, calma aí, cara, calma aí, você já passou três telas a
+mesmo tempo e eu tô tentando ler o VS code, tá? Pronto.
+Desse aí, listas conexões salvas, vamos ver se ele listou. Desse. Então, com MMGR show e
+immersion, você botou um comando aqui, cara, maluca, ele não entendeu o que você tá pedindo
+por fazer. Ah, é, ele que gerou pra mim no Shell, no Power Shell.
+Cara, você não tem que gerar nada de Power Shell, não, aqui você vai conversar
+a linguagem, você vai falar agora. Connect no banco tal, mas ele conectou ainda, mesmo assim,
+aqui no VS code, agora adigir isso, conecte.
+Não, tá conectado, detalhes da... Só olha a tela, detalhes da conexão.
+É um autônomo está nociar e beleza, tá tudo certo, conectou.
+Tá.
+É onde que tá dando erro de P?
+Então, agora aqui, então, quando eu perço para executar esse...
+Connect no banco e a missão aqui, tá vendo?
+Até o Outer session...
+Não, você não vai fazer até o Outer session, não, eu fiz só até o Grante.
+Só até o?
+Até o Grante.
+Grante, aqui, né?
+Você botou nome errado ali, tá?
+É, aqui, você não teve que botar a hora que deu o banco, é 26 aí, né?
+É, tá.
+Então, deu, coloquei, aí é 26, dá, deu invertir, equipa, pode ir, eu não vai precisar lá.
+Copia agora, sem ir?
+Só isso, vou ter aqui.
+Isso aí?
+Boa por VS code.
+Colo aí.
+Uma coisa que eu tenho de observação é que você não salvou a cena, SQL-C.
+Na hora de criar a cena aqui no VS code, você não salvou ela.
+Não tem de...
+E é isso que tá reclamando, a cena do admi não está sóbando a conexão.
+Então, volta lá, cara, deleta aquela conexão e crie-la de novo.
+Você vai clicar aqui no databasezinho ali, ó, isso.
+Você vai minimizar essa conexão aí.
+Eu deletaria...
+Ou, tenta editar ela e salvar a cena.
+O problema é que você...
+Você tá conectado nela, você vai ter que desfechar a conexão dela.
+Vai ter que desconectar.
+Você vai ter que colocar a cena aí e habilitar a caixinha ali de salvar a cena.
+Fou detalhe, cara.
+Só não, tinh.
+Vindo lá agora.
+Tá, o que você quer?
+Vindo até o caso.
+Tá, eu vou te mando no PIX lá.
+Aqui desver a cena.
+Pode usar, pode usar.
+Coloca a cena lá.
+Me perdi.
+Um, um, um, um, três, quatro.
+Deixa eu achar a cena aqui, que eu odeia a cena com o que é o outro.
+Tá aí.
+Não entendi o que você tá fazendo aí, cara.
+Não tá com...
+Peraí, fica.
+Coloca a cena.
+Coloca a cena aqui, que eu cabei de...
+Não, cara, vamos lá.
+Cadê o...
+E...
+Aqui...
+Controciê.
+Ah, você criou uma cena diferente do roteiro que eu mandei.
+Isso, deixa.
+Alessado, minha observação para você, tá?
+A gente começou de amanhã se já tava fazendo as coisas que eu nem tinha mostrado ainda, cara.
+Uh-huh.

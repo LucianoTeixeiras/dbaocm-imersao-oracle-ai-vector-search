@@ -1,0 +1,2467 @@
+1
+00:00:00,000 --> 00:00:08,000
+fazer mais rápido. Então, aí não vai substituir, cara. Você vai perder o trabalho para quem usei a maior do que você.
+
+2
+00:00:08,000 --> 00:00:14,000
+Então, você vai ter um grande produtividade mais resultado em menos tempo e quem domina aí a vira a referência da todo time.
+
+3
+00:00:14,000 --> 00:00:27,000
+Agora, se tornar um profissional da X, é o objetivo. Rápido, estratégico e indispensável. Então, essa mentalidade que a gente precisa ter na hora de pensar em AI first.
+
+4
+00:00:27,000 --> 00:00:39,000
+Beleza? O Luciano, um ambiente inossivo, toca-se o sugo à sua energia. Foge desse tipo de lugar. Tá pago. Muito bom, Luciano. Preciso reiniciar o que você já volta.
+
+5
+00:00:39,000 --> 00:00:45,000
+Show de bola. Muito bom. Muito bom.
+
+6
+00:00:45,000 --> 00:00:54,000
+Pessoal, essa frase aqui, eu estou falando desde o ano passado e eu quero trazer para vocês aqui para a semerção novamente.
+
+7
+00:00:54,000 --> 00:01:01,000
+Profissionais de AI que não utilizam AI serão extintos. Eu estou batendo nessa tecla.
+
+8
+00:01:02,000 --> 00:01:13,340
+Às vezes, chega até alguns haters ali no balinquedin por conta disso. Eu acredito que a transformação que a gente está passando dentro do nosso mercado,
+
+9
+00:01:13,340 --> 00:01:23,340
+está sendo impulsionada por a estratégia da AI que envolve diversas camadas, infraestrutura, redução de times. É uma visão estratégica, cara.
+
+10
+00:01:23,340 --> 00:01:31,340
+Aí, a gente vai falar por uma dimissão da hora que foi porque eles investirem em data center, que no final, a infraestrutura de AI.
+
+11
+00:01:31,340 --> 00:01:41,340
+Então, naturalmente, as empresas vão investir mais em tokens e infraestrutura e menos em pessoas para muitas coisas operacionais, cara.
+
+12
+00:01:41,340 --> 00:01:51,340
+E que hoje o personal precisa ser reinventada, que o operacional AI faz melhor para ele e que ele precisa ser muito mais tático e muito mais estratégico.
+
+13
+00:01:51,340 --> 00:01:58,230
+E que a barra subiu, cara? Literalmente. Agora, eu vou falar mais para vocês.
+
+14
+00:01:58,230 --> 00:02:05,230
+Se você trabalha como um amador, você já cometiu seus erros ali dentro de seu trabalho.
+
+15
+00:02:05,230 --> 00:02:09,229
+Se você trabalha como uma donera da AI, você vai errar mais rápido.
+
+16
+00:02:09,229 --> 00:02:19,580
+Sabe por quê? Tem empresas, cara, que trabalho como empresas amadoras. É o cara que vai aplicar um patch em produção sem testa antes de uma logação.
+
+17
+00:02:19,580 --> 00:02:24,580
+Esse cara vai errar mais rápido e depois vai querer botar a culpa na AI, cara.
+
+18
+00:02:24,580 --> 00:02:29,580
+Só que o problema na AI, cara, o problema é de processo, o problema de governância, cara.
+
+19
+00:02:29,580 --> 00:02:34,979
+Só que tem gente que não está entendendo isso ainda, cara.
+
+20
+00:02:34,979 --> 00:02:41,979
+Se você trabalha numa empresa que trabalha como um amador, sai fora daí, cara, um bem detox, que a gente já está falando sobre isso.
+
+21
+00:02:42,979 --> 00:02:45,979
+Se, por exemplo, eu vou falar para vocês aqui, tá?
+
+22
+00:02:45,979 --> 00:02:51,389
+Eu não atendo a empresa que não tem suporte ativo da Orca.
+
+23
+00:02:51,389 --> 00:02:57,389
+Porque para mim, uma empresa que trabalha em suporte ativo da Orca é a empresa que trabalha como um amador.
+
+24
+00:02:57,389 --> 00:03:06,150
+Como que eu vou ter um software em produção? Se eu não posso abrir o chamado, cara, por fornecedor.
+
+25
+00:03:06,150 --> 00:03:09,150
+Cara, não tem como, cara. Não tem como.
+
+26
+00:03:10,150 --> 00:03:16,150
+E vou falar, eu escolho trabalhar em presas que jogam o jogo de presas profissionais.
+
+27
+00:03:16,150 --> 00:03:23,150
+Eu gosto de trabalhar com empresas que têm um ex-adata de desenvolvimento, um ex-adata de dem... uma homologação ex-adata de produção.
+
+28
+00:03:23,150 --> 00:03:27,150
+Ah, Guilherme, mas o que você está falando é muito fora da realidade.
+
+29
+00:03:29,810 --> 00:03:32,810
+Cara, vocês escolham a mente de ser que é trabalhar, cara.
+
+30
+00:03:32,810 --> 00:03:37,810
+Eu planejei a minha carreira para poder ter...
+
+31
+00:03:37,810 --> 00:03:42,810
+A posição de escolher pedir demissão da Orca, uma empresa de bacudidade do mundo.
+
+32
+00:03:42,810 --> 00:03:44,810
+Depende da sua estratégica.
+
+33
+00:03:44,810 --> 00:03:48,810
+Aí, vocês escolhem. Você quer desficar no deixar a vida e me levar?
+
+34
+00:03:48,810 --> 00:03:51,810
+Se você quer viver no alício do país das maravilhas?
+
+35
+00:03:51,810 --> 00:03:56,919
+Se você não sabe qual caminho seguir, qual que é caminho serve?
+
+36
+00:03:56,919 --> 00:04:00,919
+Cara, às vezes qual que é caminho serve a ganhar pouca, trabalhar muito e ficar virando no noite?
+
+37
+00:04:00,919 --> 00:04:03,919
+Você tem que se posicionar, cara.
+
+38
+00:04:03,919 --> 00:04:08,919
+E assume o protagonismo da sua carreira, entenda que tudo está no seu controle, cara.
+
+39
+00:04:08,919 --> 00:04:11,919
+Se você está ganhando pouco, a culpa é sua.
+
+40
+00:04:11,919 --> 00:04:14,919
+Se o fuller não ganha bem, né? Porque ele é aquele dinho, não, cara.
+
+41
+00:04:14,919 --> 00:04:18,920
+Porque ele construiu isso. Porque ele tem coisa que ele fez que você não fez, porra.
+
+42
+00:04:18,920 --> 00:04:23,920
+E, muitas vezes, não é nem técnica, é coisa de relacionamento, é questão onde porra.
+
+43
+00:04:23,920 --> 00:04:27,920
+Se comunicar melhor, soft skills estratégias e muito mais.
+
+44
+00:04:27,920 --> 00:04:32,920
+Tá? Então, muito cuidado com isso, pessoal. Quem não utilize aí, cara, vai ficar para trás.
+
+45
+00:04:32,920 --> 00:04:34,920
+E a gente já está vendo esse movimento, né?
+
+46
+00:04:34,920 --> 00:04:39,920
+A hora que eu demitim na imagem 30 mil pessoas, com e meia seis horas da manhã,
+
+47
+00:04:39,920 --> 00:04:45,920
+a que cento de demite 11 mil personais e avisa só permanece quem é a prender a inteligência artificial,
+
+48
+00:04:45,920 --> 00:04:49,920
+uma hora de off da história da Amazou, aí que demite 16 mil funcionários,
+
+49
+00:04:49,920 --> 00:04:56,920
+um boom da pandemia ali, antes de divulcar resultados.
+
+50
+00:04:56,920 --> 00:04:59,920
+E, do outro lado, a gente vê coisas incríveis.
+
+51
+00:04:59,920 --> 00:05:05,920
+Deminar e resolver o problema de 139 times de humanos não conseguiram em competição.
+
+52
+00:05:05,920 --> 00:05:09,920
+A guerra pela IAL, salários milionários da meta para atraitar lentos.
+
+53
+00:05:09,920 --> 00:05:14,920
+Tá? A gente tem visto aí, salários até de 300 milhões em quatro anos.
+
+54
+00:05:14,920 --> 00:05:19,920
+Então, tudo que você vai ver aqui, personais de diversas áreas,
+
+55
+00:05:19,920 --> 00:05:22,920
+que todos eles estão utilizando a Iá já, tá?
+
+56
+00:05:22,920 --> 00:05:25,920
+Então, o gerente que não utilize aí, cara, vai ficar para fora.
+
+57
+00:05:25,920 --> 00:05:27,920
+O gerente que não utilize aí, vai ficar para fora.
+
+58
+00:05:27,920 --> 00:05:30,920
+O dovedor que não utiliza aí, o cientista de dados, o analista de dados.
+
+59
+00:05:30,920 --> 00:05:33,920
+E hoje tem pessoas que trabalham na área de IA,
+
+60
+00:05:33,920 --> 00:05:36,920
+que é o cara que vai estar ali no cor da coisa,
+
+61
+00:05:36,920 --> 00:05:40,920
+por ter às vezes criando ali essa parte de segurança das LLMs,
+
+62
+00:05:40,920 --> 00:05:44,920
+promovendo o criano ambiente ali de criação de agentes e muito mais.
+
+63
+00:05:44,920 --> 00:05:48,920
+Mas as outras áreas também vão ser apoiadas por isso, tá?
+
+64
+00:05:48,920 --> 00:05:53,920
+E a gente tem visto, salários aí de 200, 300, 400 mil dólares por ano,
+
+65
+00:05:53,920 --> 00:05:58,920
+fora ações bons de assinatura e outros benefícios, tá?
+
+66
+00:05:58,920 --> 00:06:02,920
+Então, que pode, muitas vezes, triplicar a compensação total,
+
+67
+00:06:02,920 --> 00:06:06,920
+chegando aí até salários de 900 mil dólares por ano,
+
+68
+00:06:06,920 --> 00:06:08,920
+um milhão de dólares por ano, tá?
+
+69
+00:06:08,920 --> 00:06:10,920
+Então, isso é bem possível.
+
+70
+00:06:10,920 --> 00:06:12,920
+A gente tem visto quanto o mercado tá aquecido.
+
+71
+00:06:12,920 --> 00:06:16,920
+Então, se eu é ver um lado, a galera da história triste,
+
+72
+00:06:16,920 --> 00:06:19,920
+com medo, não estuda, não faz com ser feito,
+
+73
+00:06:19,920 --> 00:06:21,920
+tá com aquela mentalidade de escassez,
+
+74
+00:06:21,920 --> 00:06:24,920
+ou a galera que tá se divertindo,
+
+75
+00:06:24,920 --> 00:06:26,920
+que tá entendendo que tem muita oportunidade,
+
+76
+00:06:26,920 --> 00:06:29,920
+que tá por vendo que seu trabalho tá muito mais interessante do que antes,
+
+77
+00:06:29,920 --> 00:06:31,920
+tem coisa que se era chato pra caramba,
+
+78
+00:06:31,920 --> 00:06:33,920
+você pode botar IA pra fazer,
+
+79
+00:06:33,920 --> 00:06:36,920
+se que você é um cara muito mais tática e estratégico do que o operacional,
+
+80
+00:06:36,920 --> 00:06:37,920
+então, tem outro lado.
+
+81
+00:06:37,920 --> 00:06:39,920
+E eu acredito muito nessa frase.
+
+82
+00:06:39,920 --> 00:06:42,920
+Foi um cara que, inclusive, eu fiz mentoria com ele,
+
+83
+00:06:42,920 --> 00:06:43,920
+em 2022.
+
+84
+00:06:43,920 --> 00:06:46,920
+Eu paguei 50 mil pra fazer uma mentoria de 6 meses,
+
+85
+00:06:46,920 --> 00:06:48,920
+com Flavio Augusto,
+
+86
+00:06:48,920 --> 00:06:50,920
+inclusive, grande parte desse evento aqui,
+
+87
+00:06:50,920 --> 00:06:53,920
+ele só acontece por conta dessas mentorias que eu tenho investido
+
+88
+00:06:53,920 --> 00:06:55,920
+e ele fala que estabilidade não existe.
+
+89
+00:06:55,920 --> 00:06:57,920
+O Flavio Augusto tinha o time de futebol nos Estados Unidos,
+
+90
+00:06:57,920 --> 00:06:59,920
+contratou o KK pra jogar no time dele,
+
+91
+00:06:59,920 --> 00:07:01,920
+a fundador da WhatsApp, tá?
+
+92
+00:07:01,920 --> 00:07:03,920
+E ele fala muito que estabilidade não existe.
+
+93
+00:07:03,920 --> 00:07:05,920
+E eu acredito exatamente nuzca.
+
+94
+00:07:05,920 --> 00:07:07,920
+Ou você tá crescendo,
+
+95
+00:07:07,920 --> 00:07:10,920
+ou você tá colocando sua carreira em nuzca.
+
+96
+00:07:10,920 --> 00:07:12,920
+Tá? Muito cuidado.
+
+97
+00:07:12,920 --> 00:07:15,920
+A Guilherme, esse ano não vou estudar,
+
+98
+00:07:15,920 --> 00:07:17,920
+não, eu vou só me manter aqui
+
+99
+00:07:17,920 --> 00:07:19,920
+pra, quando que vem, eu vejo que eu faço.
+
+100
+00:07:19,920 --> 00:07:21,920
+Isto estabilidade não existe.
+
+101
+00:07:21,920 --> 00:07:24,920
+Se você não tá fazendo uma pós-graduação, cara,
+
+102
+00:07:24,920 --> 00:07:27,920
+um treinamento, uma mentoria,
+
+103
+00:07:27,920 --> 00:07:29,920
+cara, você vai ficar pra trás.
+
+104
+00:07:29,920 --> 00:07:32,920
+Porque tem muita coisa nova acontecendo, cara.
+
+105
+00:07:32,920 --> 00:07:34,920
+E o que a gente vai mostrar aqui pra vocês
+
+106
+00:07:34,920 --> 00:07:36,920
+são estudos de caso do mundo real.
+
+107
+00:07:36,920 --> 00:07:39,920
+Agora, pessoal, vamos falar um pouquinho sobre uma visão estratégica
+
+108
+00:07:39,920 --> 00:07:42,920
+do que está acontecendo, tá?
+
+109
+00:07:43,920 --> 00:07:45,920
+A evolução da inteligência artificial
+
+110
+00:07:45,920 --> 00:07:48,920
+deixou apenas de ser uma geração de conteúdo,
+
+111
+00:07:48,920 --> 00:07:50,920
+começou com a ira generativa, né,
+
+112
+00:07:50,920 --> 00:07:52,920
+que escreve um e-mail pra você,
+
+113
+00:07:52,920 --> 00:07:56,920
+e passou a ser uma execução autônoma de tarifas complexas.
+
+114
+00:07:56,920 --> 00:07:57,920
+Tá?
+
+115
+00:07:57,920 --> 00:07:59,920
+E eu quero trazer isso aqui pra vocês
+
+116
+00:07:59,920 --> 00:08:02,920
+em quatro fases da era da IA.
+
+117
+00:08:02,920 --> 00:08:04,920
+Aí, a préditiva, gente,
+
+118
+00:08:04,920 --> 00:08:07,920
+isso é que é coisa de 1970, tá?
+
+119
+00:08:07,920 --> 00:08:10,920
+Então, você apreendezado com os dados
+
+120
+00:08:10,920 --> 00:08:12,920
+pra prever os resultados.
+
+121
+00:08:12,920 --> 00:08:14,920
+Cara, machine learning,
+
+122
+00:08:14,920 --> 00:08:16,920
+da deep learning, cara,
+
+123
+00:08:16,920 --> 00:08:18,920
+não são conceitos novos,
+
+124
+00:08:18,920 --> 00:08:21,920
+e são coisas que existiam muito tempo.
+
+125
+00:08:21,920 --> 00:08:23,920
+E pra muitas coisas, você tá tentando fazer
+
+126
+00:08:23,920 --> 00:08:25,920
+via IA, gente, que é generativa,
+
+127
+00:08:25,920 --> 00:08:28,920
+você poderia utilizar a préditiva, tá?
+
+128
+00:08:28,920 --> 00:08:32,919
+Então, muito cuidado de você não entender
+
+129
+00:08:32,919 --> 00:08:34,919
+o tipo de IA que você vai utilizar
+
+130
+00:08:34,919 --> 00:08:36,919
+pra aquilo que você quer fazer.
+
+131
+00:08:36,919 --> 00:08:38,919
+Guilherme, quero analisar os dados.
+
+132
+00:08:38,919 --> 00:08:41,919
+O cara vai colocar dentro do GPT,
+
+133
+00:08:41,919 --> 00:08:43,919
+dentro do cláudica,
+
+134
+00:08:43,919 --> 00:08:44,919
+no chat lá,
+
+135
+00:08:44,919 --> 00:08:46,919
+e não sabe que as informações vão ficar lá
+
+136
+00:08:46,919 --> 00:08:47,919
+há por cinco anos.
+
+137
+00:08:47,919 --> 00:08:49,919
+E às vezes, você informou dado de CPF,
+
+138
+00:08:49,919 --> 00:08:51,919
+dados de PLGPD que não deveriam estar lá
+
+139
+00:08:51,919 --> 00:08:52,919
+se colocou lá.
+
+140
+00:08:52,919 --> 00:08:54,919
+Então, às vezes você tá tentando
+
+141
+00:08:54,919 --> 00:08:55,919
+tratar com a generativa,
+
+142
+00:08:55,919 --> 00:08:57,919
+coisa se deveria estar com a préditiva,
+
+143
+00:08:57,919 --> 00:09:01,919
+apreendezado com dados para prever resultados.
+
+144
+00:09:01,919 --> 00:09:03,919
+Cara, muitas vezes você tá utilizando
+
+145
+00:09:03,919 --> 00:09:05,919
+a IA do jeito errado, cara.
+
+146
+00:09:05,919 --> 00:09:11,360
+Então, muito cuidado que você tá querendo matar
+
+147
+00:09:11,360 --> 00:09:14,360
+uma mosca com o tiro de canhão
+
+148
+00:09:14,360 --> 00:09:16,360
+e não utilizando a melhor forma
+
+149
+00:09:16,360 --> 00:09:18,360
+para aquilo que você precisa.
+
+150
+00:09:18,360 --> 00:09:19,360
+Tá?
+
+151
+00:09:19,360 --> 00:09:21,360
+Então, já começa aí, cara.
+
+152
+00:09:21,360 --> 00:09:24,360
+Da gente começar a entender quais são os tipos
+
+153
+00:09:24,360 --> 00:09:26,360
+de IA que existem
+
+154
+00:09:26,360 --> 00:09:28,360
+e como que a gente consegue utilizar
+
+155
+00:09:28,360 --> 00:09:31,360
+a IA adequada porque a gente precisa, tá?
+
+156
+00:09:31,360 --> 00:09:34,360
+E aí surgiu aí a generativa, né?
+
+157
+00:09:34,360 --> 00:09:37,360
+Vamos botar aí, 2022, OpenI.
+
+158
+00:09:37,360 --> 00:09:39,360
+Muita gente copia atrás,
+
+159
+00:09:39,360 --> 00:09:42,360
+agora a IA generativa consegue fazer a criação
+
+160
+00:09:42,360 --> 00:09:44,360
+de conteúdo em múltiplos formatos,
+
+161
+00:09:44,360 --> 00:09:46,360
+texto, código, multimodal
+
+162
+00:09:46,360 --> 00:09:48,360
+e que tá evoluindo para caramba
+
+163
+00:09:48,360 --> 00:09:52,360
+e que dá para fazer muita coisa, tá?
+
+164
+00:09:52,360 --> 00:09:55,360
+Depois, a gente já começou a ver a agêntica
+
+165
+00:09:55,360 --> 00:09:58,360
+que aí você já tem a parte de MCPS
+
+166
+00:09:58,360 --> 00:10:00,360
+já consegue conectar a IA generativa
+
+167
+00:10:00,360 --> 00:10:02,360
+dentro dos produtos.
+
+168
+00:10:02,360 --> 00:10:05,360
+Você consegue, como fazer um rag
+
+169
+00:10:05,360 --> 00:10:08,360
+e é o retrível agúmete-generation
+
+170
+00:10:08,360 --> 00:10:11,360
+que você consegue planejar, decidir, agir,
+
+171
+00:10:11,360 --> 00:10:13,360
+usar ferramentas, integrar ferramentas,
+
+172
+00:10:13,360 --> 00:10:15,360
+executar e muito mais.
+
+173
+00:10:15,360 --> 00:10:18,360
+Então veio aí a agêntica aí nos últimos anos.
+
+174
+00:10:18,360 --> 00:10:21,360
+Posso considerar, já falam muito forte, tá?
+
+175
+00:10:21,360 --> 00:10:23,360
+Somente a movimentação da Oracle
+
+176
+00:10:23,360 --> 00:10:25,360
+que eu acompanho por perto.
+
+177
+00:10:25,360 --> 00:10:28,360
+Ano passado ela liberou MCP, tá?
+
+178
+00:10:28,360 --> 00:10:31,360
+Oficial, que aí já te dá essa possibilidade
+
+179
+00:10:31,360 --> 00:10:32,360
+de IA agêntica.
+
+180
+00:10:32,360 --> 00:10:36,360
+Quando a Oracle trouxe o Oracle 2623AI
+
+181
+00:10:36,360 --> 00:10:38,360
+ver a parte de Vector Search
+
+182
+00:10:38,360 --> 00:10:41,360
+já te dá capacidade de conseguir
+
+183
+00:10:41,360 --> 00:10:43,360
+construir agentes, de rague,
+
+184
+00:10:43,360 --> 00:10:45,360
+de dar suporte para agentes de IA.
+
+185
+00:10:45,360 --> 00:10:47,360
+Então vamos botar ali que
+
+186
+00:10:47,360 --> 00:10:49,360
+em 2022 foi a generativa.
+
+187
+00:10:49,360 --> 00:10:53,360
+Vamos botar aqui 24, 25.
+
+188
+00:10:53,360 --> 00:10:55,360
+A gente já começou a ter ferramentas
+
+189
+00:10:55,360 --> 00:10:57,360
+muito mais próximas para poder utilizar IA
+
+190
+00:10:57,360 --> 00:10:59,360
+de uma forma agêntica, tá?
+
+191
+00:10:59,360 --> 00:11:01,360
+E nesse ano a gente tem falado muito
+
+192
+00:11:01,360 --> 00:11:03,360
+sobre IA e Harness,
+
+193
+00:11:03,360 --> 00:11:06,360
+orquestração de múltiplos agentes
+
+194
+00:11:06,360 --> 00:11:08,360
+e sistemas, tá?
+
+195
+00:11:08,360 --> 00:11:10,360
+A manhã eu vou mostrar a ferramenta
+
+196
+00:11:10,360 --> 00:11:11,360
+que é o EGT Factor,
+
+197
+00:11:11,360 --> 00:11:13,360
+que é a ferramenta de orquestração
+
+198
+00:11:13,360 --> 00:11:15,360
+de múltiplos agentes e sistemas.
+
+199
+00:11:15,360 --> 00:11:19,360
+Vocês vão ver como a gente consegue conectar isso, tá?
+
+200
+00:11:19,360 --> 00:11:22,360
+Pessoal, se fosse aprofundar
+
+201
+00:11:22,360 --> 00:11:24,360
+sobre cada uma delas,
+
+202
+00:11:24,360 --> 00:11:26,360
+eu poderia passar dois dias,
+
+203
+00:11:26,360 --> 00:11:27,360
+só falando da preditiva,
+
+204
+00:11:27,360 --> 00:11:28,360
+dois dias falam só da generativa,
+
+205
+00:11:28,360 --> 00:11:30,360
+dois dias falam só da gêntica
+
+206
+00:11:30,360 --> 00:11:32,360
+e dois dias falam só de Harness.
+
+207
+00:11:32,360 --> 00:11:34,360
+Mas eu quero trazer para vocês
+
+208
+00:11:34,360 --> 00:11:36,360
+uma visão estratégica
+
+209
+00:11:36,360 --> 00:11:38,360
+do que é a inteligência artificial?
+
+210
+00:11:38,360 --> 00:11:41,360
+De quais são os níveis da inteligência artificial?
+
+211
+00:11:41,360 --> 00:11:44,360
+E hoje a gente vai falar bastante sobre Harness,
+
+212
+00:11:44,360 --> 00:11:46,360
+sobre como coordenar múltiplos agentes,
+
+213
+00:11:46,360 --> 00:11:48,360
+como construir um Harness,
+
+214
+00:11:48,360 --> 00:11:52,360
+tudo que envolve a parte de IA
+
+215
+00:11:52,360 --> 00:11:56,360
+do quanto que o Harness é importante, tá?
+
+216
+00:11:56,360 --> 00:11:59,360
+Você pô, entender que a IA não é só a LLM, cara?
+
+217
+00:11:59,360 --> 00:12:00,360
+Às vezes é uma PI,
+
+218
+00:12:00,360 --> 00:12:02,360
+às vezes é um dado,
+
+219
+00:12:02,360 --> 00:12:04,360
+é uma integração de sistemas,
+
+220
+00:12:04,360 --> 00:12:06,360
+execução de alternar limites,
+
+221
+00:12:06,360 --> 00:12:09,360
+coordenar múltiplos agentes, tá?
+
+222
+00:12:09,360 --> 00:12:11,360
+Então o Harness sentiu a falar um pouquinho
+
+223
+00:12:11,360 --> 00:12:14,360
+bastante sobre isso no dia de hoje, também.
+
+224
+00:12:14,360 --> 00:12:16,360
+Beleza?
+
+225
+00:12:16,360 --> 00:12:21,090
+Só um ponto importante aqui, ó?
+
+226
+00:12:21,090 --> 00:12:24,090
+Isso aqui eu comecei com um produtimino
+
+227
+00:12:24,090 --> 00:12:25,090
+de ajuda a hora quando o passado
+
+228
+00:12:25,090 --> 00:12:27,090
+e ele me falou, Guilherme.
+
+229
+00:12:27,090 --> 00:12:29,090
+time de desenvolvimento da hora
+
+230
+00:12:29,090 --> 00:12:31,090
+quando ninguém mais ressufa esse código manualmente, cara.
+
+231
+00:12:31,090 --> 00:12:33,090
+Isso acabou.
+
+232
+00:12:33,090 --> 00:12:36,090
+Ninguém mais executa código manual aqui.
+
+233
+00:12:36,090 --> 00:12:39,090
+Então isso tá acontecendo dentro do nosso mercado.
+
+234
+00:12:39,090 --> 00:12:41,090
+Resolver tíquites no gira.
+
+235
+00:12:41,090 --> 00:12:45,090
+Aí uma gente conecta no sistema de tíquites,
+
+236
+00:12:45,090 --> 00:12:46,090
+ler uma solicitação,
+
+237
+00:12:46,090 --> 00:12:48,090
+interpreta o problema relatado
+
+238
+00:12:48,090 --> 00:12:50,090
+abre o código para afetar a correção,
+
+239
+00:12:50,090 --> 00:12:53,090
+usa inteligência artificial para gerar um código corrigido
+
+240
+00:12:53,090 --> 00:12:55,090
+e submete para testes,
+
+241
+00:12:55,090 --> 00:12:57,090
+atualiza o gira alterando o status
+
+242
+00:12:57,090 --> 00:12:59,090
+e colocando o código em reveal.
+
+243
+00:12:59,090 --> 00:13:01,090
+Isso tá acontecendo.
+
+244
+00:13:01,090 --> 00:13:04,090
+O problema é que muitas vezes você não está conseguindo
+
+245
+00:13:04,090 --> 00:13:06,090
+entender a estratégia
+
+246
+00:13:06,090 --> 00:13:08,090
+e os problemas que você quer resolver
+
+247
+00:13:08,090 --> 00:13:10,090
+para fazer isso aqui funciona, cara.
+
+248
+00:13:10,090 --> 00:13:12,090
+E a gente vai fazer exatamente se exercice
+
+249
+00:13:12,090 --> 00:13:14,090
+durante esses dois dias
+
+250
+00:13:14,090 --> 00:13:17,090
+de como que a gente pode chegar nesse nível, tá?
+
+251
+00:13:17,090 --> 00:13:22,090
+Para a gente começar a entrar nesse mundo,
+
+252
+00:13:22,090 --> 00:13:24,090
+a gente precisa entender o que é o LLN,
+
+253
+00:13:24,090 --> 00:13:25,090
+o LL-LengageModel,
+
+254
+00:13:25,090 --> 00:13:28,090
+que é no modelo de linguagem treinado com bilhões de palavras.
+
+255
+00:13:28,090 --> 00:13:31,090
+Ele entende e gera texto humano confluídas.
+
+256
+00:13:31,090 --> 00:13:34,090
+ejemplo,這種 do GPTCL de Gemina e Lemma,
+
+257
+00:13:34,090 --> 00:13:36,090
+então é exemplo você digita ali,
+
+258
+00:13:36,090 --> 00:13:38,090
+explico que enquore, call on LLN 28M,
+
+259
+00:13:38,090 --> 00:13:42,090
+vu como si fosse um professor, tá?
+
+260
+00:13:44,090 --> 00:13:45,090
+Ó aquele legal Luciano,
+
+261
+00:13:45,090 --> 00:13:46,090
+used o MCP do Gira diariamente.
+
+262
+00:13:46,090 --> 00:13:48,090
+Isso não tem preço o ganho que eu ganho
+
+263
+00:13:48,090 --> 00:13:50,090
+com a gestão dos meus projetos,
+
+264
+00:13:50,090 --> 00:13:53,090
+uso o que é a chamada de testes que asปrump de
+
+265
+00:13:53,090 --> 00:14:00,490
+a prompt, ou seja, uma texta que nos gira, que é acionável, muito legal, o Luciano, muito legal,
+
+266
+00:14:00,490 --> 00:14:06,210
+aí você compartilha na ilha que se já tem feita aí, com essa parte do gira. O Alessandro
+
+267
+00:14:06,210 --> 00:14:12,409
+Ortiz levantou a mão, está querendo falar aí, Alessandro, mandei a solicitação aí,
+
+268
+00:14:12,409 --> 00:14:19,899
+tá? Alguma dúvida? Abaixou a mão.
+
+269
+00:14:20,299 --> 00:14:25,039
+Pessoal, só vamos tomar cuidado aqui de levantar a mão realmente quando, quando eu
+
+270
+00:14:25,039 --> 00:14:28,480
+fizer sentido, porque muitas vezes eu vou dar a prioridade para quem tiver levantar a
+
+271
+00:14:28,480 --> 00:14:38,240
+mão, tá? Só para a gente poder ser bem acertiva aí com vocês. Beleza. O que aí não vai
+
+272
+00:14:38,240 --> 00:14:44,490
+fazer por você? Isso aqui é muito importante, tá, pessoal? Porque muita gente tem falado,
+
+273
+00:14:44,490 --> 00:14:47,190
+o que que dá pra fazer com aia, o que que dá pra fazer com aia, o que que dá pra fazer
+
+274
+00:14:47,190 --> 00:14:52,490
+com aia? Mas o que que não dá pra fazer com aia? O que que aia não faz? Primeiro, aia
+
+275
+00:14:52,490 --> 00:14:57,529
+não entende problemas como gente. Resolver conflito conversar com pessoas ali atives isso a 100%
+
+276
+00:14:57,529 --> 00:15:05,129
+humano. Inclusive eu acredito que agora, na era daia, a gente vai ter um papel muito mais forte
+
+277
+00:15:05,129 --> 00:15:12,730
+de conversar com pessoas, cara. A parte comportamental de soft skills, de comunicação, isso tá mais
+
+278
+00:15:12,730 --> 00:15:18,850
+evidente que na era daia, tá? E focado em entender problemas, identificar problemas e resolver
+
+279
+00:15:18,850 --> 00:15:24,009
+problemas, tá? Aia não substituia a prática, então você precisa executar, cara, você precisa
+
+280
+00:15:24,009 --> 00:15:30,129
+testar, aprender, praticar, errar, melhorar, isso é importante. E aia não faz a estratégia,
+
+281
+00:15:30,129 --> 00:15:35,850
+só você entende o contexto, os objetivos, os detalhes do negócio. Então aia aia é poderosa,
+
+282
+00:15:35,850 --> 00:15:42,490
+mas quem faz diferença é quem sabe usar, ajustar e aplicar no mundo real?
+
+283
+00:15:43,490 --> 00:15:51,019
+E agora quero trazer uma reflexão. Antes disso, eu só quero trazer essa pirema do aprendizado,
+
+284
+00:15:51,019 --> 00:15:56,460
+porque se você não entendesse aqui, cara, você vai sair dessa imensão sem tirar o melhor
+
+285
+00:15:56,460 --> 00:16:06,059
+proveito e pode sair daqui até reclamando, tá? Injustamente. Porque gente, só vai emitir o certificado
+
+286
+00:16:06,059 --> 00:16:14,700
+que quem fizer os desafios práticos. Quem comprou VIP, beleza? Vocês vão conseguir
+
+287
+00:16:14,700 --> 00:16:18,820
+me ter certificado depois, tá tudo certo. Mas quem comprou ingressos para estar aqui ao vivo,
+
+288
+00:16:18,820 --> 00:16:23,659
+você vai ter que praticar. Então recomendo que a cada desafio, pessoal, tire um print,
+
+289
+00:16:23,659 --> 00:16:28,980
+publique no link edim, desafio, um feito, resolver o problema tal desse jeito, fazendo
+
+290
+00:16:28,980 --> 00:16:34,700
+dessa forma e muito mais. E a gente precisa entender a pirema do aprendizado, porque? Eu tenho
+
+291
+00:16:34,700 --> 00:16:41,700
+um livro aqui atrás, que é o livro do Steve Jobs. Não é porque o livro do Steve Jobs,
+
+292
+00:16:41,700 --> 00:16:46,700
+que eu sei fazer tudo que ele sabe, que eu tenho todo o conhecimento do Steve Jobs. É muito
+
+293
+00:16:46,700 --> 00:16:52,700
+diferente, tá? Então quando você ler, cara, você absorbe 10% de una informação. Segundo,
+
+294
+00:16:52,700 --> 00:16:59,700
+quando você escuta, para que talvez você está aqui, escutou várias coisas legais do que
+
+295
+00:16:59,700 --> 00:17:12,089
+que a gente está falando, tá? E só que você pega 20% daquele que eu estou falando pela. Tá?
+
+296
+00:17:12,089 --> 00:17:18,089
+Talvez você vai ver os equitados práticos e vai resolver 30%. E se você veio ouvir a minha
+
+297
+00:17:18,089 --> 00:17:23,089
+explicação, talvez você vai absorver a metade. Essa metade de cima da pirema é chamado
+
+298
+00:17:23,089 --> 00:17:30,089
+de aprendizado passivo. Se você está estudando de uma forma passiva, você absorve
+
+299
+00:17:30,089 --> 00:17:35,089
+mais uma metade daquele que estou falando. Então isso serve, cara, para você ler esse final de
+
+300
+00:17:35,089 --> 00:17:39,089
+semana. Talvez esse final de semana aqui, cara, você vai falar, se eu não vou executar
+
+301
+00:17:39,089 --> 00:17:43,089
+não, porque eu não tenho a conta na cloud, cara, crie o laboratório local. A gente não é
+
+302
+00:17:43,089 --> 00:17:47,089
+a galera da história triste, a gente não é a galera da desculpinha, porque a galera da
+
+303
+00:17:47,089 --> 00:17:51,089
+desculpinha, cara, está sendo denetida. Quem é o cara que fica hoje dentro do mercado,
+
+304
+00:17:51,089 --> 00:17:54,089
+o cara que pensa na solução? Ah, deu problema nisso, cara, já tentou fazer
+
+305
+00:17:54,089 --> 00:17:59,089
+dessa forma? Ah, não consegui fazer esse jeito, já consegui fazer do outro jeito. Essa é a
+
+306
+00:17:59,089 --> 00:18:04,089
+metade que está ficando. Essa é a metade AI First, quem não
+
+307
+00:18:04,089 --> 00:18:08,089
+tivesse a forma de pensar, cara, está rodando, está desficando desempregado e não
+
+308
+00:18:08,089 --> 00:18:13,089
+consegue voltar, tá? De verdade. Então, aprendizado passivo, parte
+
+309
+00:18:13,089 --> 00:18:17,089
+cima da pirema. Aprendizado ativo, quando você discute com outras
+
+310
+00:18:17,089 --> 00:18:22,089
+pessoas, a galera que levanta a mão, cara. A galera que conversa, a galera que coloca
+
+311
+00:18:22,089 --> 00:18:27,089
+aqui no chat, estou vendo que está a galera incrível aqui, experiente, pô, colocando
+
+312
+00:18:27,089 --> 00:18:34,089
+esse ano, o Alessandro, o Luis Flávio, o Ivan, cara, tem uma galera que o
+
+313
+00:18:34,089 --> 00:18:40,089
+reinaldo, o Alano, cara, essa galera que está discutindo, comentando,
+
+314
+00:18:40,089 --> 00:18:47,089
+interagindo, conversa, pergunta, repete, relata, recorda, debate,
+
+315
+00:18:47,089 --> 00:18:52,089
+é a galera que está evoluindo, está aprendizado ativo. 80%, quando a gente
+
+316
+00:18:52,089 --> 00:18:57,089
+está fazendo, cara. Se eu fizer e você fizer junto comigo, você vai ver
+
+317
+00:18:57,089 --> 00:19:02,089
+que coisa se achava na hora de executar a deuê, cara. E é onde que
+
+318
+00:19:02,089 --> 00:19:06,089
+vinha aprendizado, quando você erra? Eu estou lendo o livro agora que é a
+
+319
+00:19:06,089 --> 00:19:11,089
+biografia do Elon Musk. Ele, com uma cultura, cara, é de incentivar
+
+320
+00:19:11,089 --> 00:19:15,089
+explodir foguete, cara, perizerrar em cada vez mais rápido e aprenderem
+
+321
+00:19:15,089 --> 00:19:20,089
+mais rápido. Então, o objetivo dessa inação aqui, pessoal, é explodir
+
+322
+00:19:20,089 --> 00:19:25,089
+mais rápido, cara. É você entender que quanto mais rápido você
+
+323
+00:19:25,089 --> 00:19:28,089
+erra, mais rápido você vai aprender, e você só vai errar se você
+
+324
+00:19:28,089 --> 00:19:33,089
+fizer, cara. Só erra quem está dentro do campo, cara. Só erra quem
+
+325
+00:19:33,089 --> 00:19:38,559
+tenta. E tem gente que vai falar assim, mas eu tirei uma certificação e
+
+326
+00:19:38,559 --> 00:19:43,559
+reprovei. Parabéns, cara. 90% das pessoas nem tentam fazer uma
+
+327
+00:19:43,559 --> 00:19:47,559
+prova de certificação. Parabéns por ter falhado. Eu já reprovei
+
+328
+00:19:47,559 --> 00:19:52,559
+isso. E vou falar, aprendi para caramba. Passando e não passando.
+
+329
+00:19:52,559 --> 00:19:56,559
+E curtindo a jornada de estudo, de um aprendizado, de um objetivo
+
+330
+00:19:56,559 --> 00:20:02,559
+ou usado, tá? Pense nisso. 80% é quem faz. 90%
+
+331
+00:20:02,559 --> 00:20:05,559
+quando você ensina para outras pessoas. Vocês podem ter certeza
+
+332
+00:20:05,559 --> 00:20:09,559
+quem mais aprendi com essa inmersão aqui sou eu. O fato de eu
+
+333
+00:20:09,559 --> 00:20:13,559
+estar estudando esse material e estar passando aqui para vocês,
+
+334
+00:20:13,559 --> 00:20:16,559
+de estar testando, de estar conversando toda semana com pessoas que
+
+335
+00:20:16,559 --> 00:20:18,559
+aparelham grandes empresas, ajudando a resolver, fazendo
+
+336
+00:20:18,559 --> 00:20:23,559
+consultoria para algumas empresas. Cara. Eu que sou que mais aprendo.
+
+337
+00:20:23,559 --> 00:20:26,559
+E depois passando esse conteúdo para vocês, eu passei a semana
+
+338
+00:20:26,559 --> 00:20:30,559
+toda, cara. Revisando, montando os lives para poder passar
+
+339
+00:20:30,559 --> 00:20:34,559
+algo importante aqui para vocês. Alguém está pagando, já estou
+
+340
+00:20:34,559 --> 00:20:38,559
+criando um ambiente aqui, está lá no Cloud. É isso, meu irmão. É isso.
+
+341
+00:20:38,559 --> 00:20:41,559
+O pessoal, quem entendeu aqui essa pirâmide aqui, cara?
+
+342
+00:20:41,559 --> 00:20:46,559
+Eu vou falar para vocês. 80% das pessoas não
+
+343
+00:20:46,559 --> 00:20:49,559
+fazer, se eu não falar esse slide aqui, elas não vão ter
+
+344
+00:20:49,559 --> 00:20:52,559
+resultado, porque não entender isso aqui. Elas vão querer
+
+345
+00:20:52,559 --> 00:20:55,559
+ficar só na aprendizado passivo. E acha que a vida está
+
+346
+00:20:55,559 --> 00:20:58,559
+resolvida na aprendizado passivo e quando chegar lá no campo de
+
+347
+00:20:58,559 --> 00:21:02,559
+batalha, cara, vai travar, mano. Não vai conseguir evoluir,
+
+348
+00:21:02,559 --> 00:21:04,559
+não vai conseguir fazer, porque não testou, não colocou
+
+349
+00:21:04,559 --> 00:21:09,559
+num sujo amor de gráxica. Na dieta você querer, cara, aprender
+
+350
+00:21:09,559 --> 00:21:12,559
+a surfar, só no manual a destrução, cara. Você vai ter que
+
+351
+00:21:12,559 --> 00:21:16,559
+cair na água, tá? Pensa nisso. Pensa nisso que isso vai
+
+352
+00:21:16,559 --> 00:21:20,559
+mudar a sua forma de pensar. Alcarcesa, tapago, Ricardo, tapago,
+
+353
+00:21:20,559 --> 00:21:25,559
+Rogério, o sérgio, o Newton. Show de bola.
+
+354
+00:21:25,559 --> 00:21:29,559
+Lucas, para criar uma conta na hora com o Cloud
+
+355
+00:21:29,559 --> 00:21:33,559
+de fritia, é necessário ir meio corporativo? Não Lucas, não é.
+
+356
+00:21:33,559 --> 00:21:39,559
+Mas eu vou te falar que normalmente é uma conta por
+
+357
+00:21:39,559 --> 00:21:42,559
+pessoa, então a hora com o dev limitar ali para o seu CPF,
+
+358
+00:21:42,559 --> 00:21:45,559
+pelos seus dados pessoais, tá? Mas eu, por exemplo,
+
+359
+00:21:45,559 --> 00:21:48,559
+a minha conta na OCI, ela é bem antiga e foi com o
+
+360
+00:21:48,559 --> 00:21:52,559
+meio e meio do GME, meio pessoal, tá? Basicamente isso.
+
+361
+00:21:52,559 --> 00:21:57,029
+Show de bola, o sérgio vigínio, a FISA agora é individual,
+
+362
+00:21:57,029 --> 00:22:02,029
+muito bom, é isso aí. E eu quero deixar uma reflexão
+
+363
+00:22:02,029 --> 00:22:06,029
+pessoal, antes da gente ir para a prática aqui? Quantos
+
+364
+00:22:06,029 --> 00:22:11,279
+agentes de avas você tem hoje? Quero que você pense? Não
+
+365
+00:22:11,279 --> 00:22:16,559
+preciso falar aqui. Para a hora com aqui nós temos mais de
+
+366
+00:22:16,559 --> 00:22:21,559
+140 hoje. Quantos agentes de avas tem na sua empresa?
+
+367
+00:22:21,559 --> 00:22:24,559
+Isso é um ponto para pensar, caro, se você tá numa empresa
+
+368
+00:22:24,559 --> 00:22:31,660
+que tal jogando esse jogo, tá? Então basicamente
+
+369
+00:22:31,660 --> 00:22:41,279
+são perguntas que vão fazer você refletir. Beleza?
+
+370
+00:22:41,279 --> 00:22:46,279
+Pessoal, esse aqui foi a nossa introdução dessa
+
+371
+00:22:46,279 --> 00:22:53,279
+imersão, se prepare porque agora a barra vai subir
+
+372
+00:22:53,279 --> 00:22:58,279
+demais, tá? E para a gente continuar aqui no nosso
+
+373
+00:22:58,279 --> 00:23:04,279
+patipapo, eu quero trazer aqui para vocês agora
+
+374
+00:23:04,279 --> 00:23:07,279
+a continuidade de tudo que a gente estava falando ali
+
+375
+00:23:07,279 --> 00:23:10,279
+na live de prerrequisitos. Agora a gente já vai
+
+376
+00:23:10,279 --> 00:23:14,279
+começar aí para a prática, tá? E para a gente
+
+377
+00:23:14,279 --> 00:23:18,279
+começar aqui na nossa prática, deixa eu compartilhar aqui
+
+378
+00:23:18,279 --> 00:23:33,279
+minha tela com vocês, deixa eu só compartilhar a
+
+379
+00:23:33,279 --> 00:23:39,619
+tela certa, achei. Então você vai vir aqui, clau
+
+380
+00:23:39,619 --> 00:23:43,619
+de .oracle.com, depois que você criou o seu
+
+381
+00:23:43,619 --> 00:23:47,619
+usuário lá gratuito dentro da Oracle Cloud, tá?
+
+382
+00:23:47,619 --> 00:23:52,250
+Aqui você vai ter o account name que você coloca
+
+383
+00:23:52,250 --> 00:23:57,740
+ali no momento da criação, você vai clicar inext,
+
+384
+00:23:57,740 --> 00:24:00,740
+aqui eu vou entrar com IdentifyDomainDefault,
+
+385
+00:24:00,740 --> 00:24:05,059
+e aqui ele vai pedir uma autenticação, tá?
+
+386
+00:24:05,059 --> 00:24:10,299
+Eu utilizo o meu celular para autenticar, então
+
+387
+00:24:10,299 --> 00:24:20,480
+estou fazendo exatamente isso aqui agora, estou aprovando
+
+388
+00:24:20,480 --> 00:24:24,819
+aqui, aprovado aqui no celular, estou fazendo a minha
+
+389
+00:24:24,819 --> 00:24:29,460
+autenticação dentro da Oracle Cloud, vai ter gente
+
+390
+00:24:29,460 --> 00:24:32,460
+que vai falar, Guilherme, não consegui criar
+
+391
+00:24:32,460 --> 00:24:36,460
+a conta aí, não se há, cara, estou travado.
+
+392
+00:24:36,460 --> 00:24:38,460
+Lembra que eu passei na live de prerrequisitos?
+
+393
+00:24:38,460 --> 00:24:41,460
+Eu falei que se você não consegui criar a conta,
+
+394
+00:24:41,460 --> 00:24:43,460
+você vai fazer uma instalação de um laboratório
+
+395
+00:24:43,460 --> 00:24:46,460
+do Oracle 19C e passei o tutorial, então você
+
+396
+00:24:46,460 --> 00:24:48,460
+vai utilizar o seu banco normal, tá? Você vai ver que
+
+397
+00:24:48,460 --> 00:24:50,460
+vai dar certa aqui o que a gente vai falar.
+
+398
+00:24:50,460 --> 00:24:52,460
+A gente vai mostrar aqui para vocês. Então
+
+399
+00:24:52,460 --> 00:24:55,460
+vou vir aqui, pessoal, no meu menu, veja que
+
+400
+00:24:55,460 --> 00:24:57,460
+minha conta é gratuita, tá?
+
+401
+00:24:57,460 --> 00:24:59,460
+Vou clicar aqui nesse menu, eu vou criar
+
+402
+00:24:59,460 --> 00:25:02,460
+aí, clicar em Oracle, AI da Tabase,
+
+403
+00:25:02,460 --> 00:25:09,240
+e vou clicar em Autónomos AI da Tabase.
+
+404
+00:25:09,240 --> 00:25:13,240
+Aqui ele vai suportar até duas, dois bancos de dados,
+
+405
+00:25:13,240 --> 00:25:17,240
+tá? Eu vou criar aqui dois bancos,
+
+406
+00:25:17,240 --> 00:25:19,240
+eu vou criar o segundo banco agora que vai ser
+
+407
+00:25:19,240 --> 00:25:22,240
+a Emmerção, Outubro, traço 26 AI.
+
+408
+00:25:22,240 --> 00:25:27,240
+Emmerção, traço Outubro, traço 26 AI.
+
+409
+00:25:27,240 --> 00:25:30,240
+Então a gente vai utilizar um Autónomos da Tabase
+
+410
+00:25:30,240 --> 00:25:33,240
+para utilizar o Oracle com a inteligência artificial, tá?
+
+411
+00:25:33,240 --> 00:25:35,240
+E vocês vão ver que a gente vai começar
+
+412
+00:25:35,240 --> 00:25:36,240
+a introduzir os conceitos.
+
+413
+00:25:36,240 --> 00:25:38,240
+A gente vai falar o conceito, a gente vai mostrar
+
+414
+00:25:38,240 --> 00:25:40,240
+na prática. A gente vai mostrar o conceito
+
+415
+00:25:40,240 --> 00:25:42,240
+e vai mostrar na prática, tá?
+
+416
+00:25:42,240 --> 00:25:45,240
+Eu vou criar esse banco aqui, pessoal,
+
+417
+00:25:45,240 --> 00:25:48,240
+como um transaction processo.
+
+418
+00:25:48,240 --> 00:25:52,240
+Always free, versão 26 AI.
+
+419
+00:25:52,240 --> 00:26:00,690
+E aqui, eu vou colocar uma senha
+
+420
+00:26:01,690 --> 00:26:07,950
+padrão, tá? Você vai colocar
+
+421
+00:26:07,950 --> 00:26:08,950
+sua senha aqui de criação,
+
+422
+00:26:08,950 --> 00:26:10,950
+você vai utilizar essa senha para a conexão.
+
+423
+00:26:10,950 --> 00:26:12,950
+Não vou colocar e-mail
+
+424
+00:26:12,950 --> 00:26:14,950
+para poder notificar, beleza?
+
+425
+00:26:14,950 --> 00:26:16,950
+Não vou selecionar a opção das avançadas
+
+426
+00:26:16,950 --> 00:26:18,950
+e vou clicar em Create.
+
+427
+00:26:18,950 --> 00:26:20,950
+Pessoal, essa é a primeira tapa
+
+428
+00:26:20,950 --> 00:26:22,950
+que a gente vai fazer agora.
+
+429
+00:26:22,950 --> 00:26:25,950
+Eu vou repetir aqui para quem não pegou, tá?
+
+430
+00:26:25,950 --> 00:26:27,950
+Guilherme, não tenho conta no CIA.
+
+431
+00:26:27,950 --> 00:26:29,950
+E você vai utilizar o seu laboratório
+
+432
+00:26:29,950 --> 00:26:31,950
+que você criou numa máquina virtual
+
+433
+00:26:31,950 --> 00:26:34,950
+em 19C que ele vai funcionar, tá?
+
+434
+00:26:34,950 --> 00:26:36,950
+Guilherme, estou com a minha conta no CIA.
+
+435
+00:26:36,950 --> 00:26:38,950
+E como que eu faço? Você vai clicar aqui no menu.
+
+436
+00:26:38,950 --> 00:26:41,950
+Você vai clicar aqui em Oracle e a edata-beise.
+
+437
+00:26:41,950 --> 00:26:43,950
+Vai clicar aqui em Autónomos e AI da tabesa.
+
+438
+00:26:43,950 --> 00:26:45,950
+Aqui, você vai clicar na opção de Create.
+
+439
+00:26:45,950 --> 00:26:47,950
+Autónomos e AI da tabesa.
+
+440
+00:26:47,950 --> 00:26:51,950
+E você vai criar o Imerção, traço o túbrio, traço o 26 AI.
+
+441
+00:26:51,950 --> 00:26:53,950
+Basicamente isso.
+
+442
+00:26:53,950 --> 00:26:57,519
+O que legal?
+
+443
+00:26:57,519 --> 00:27:00,519
+Alessandro, Claudio, OK. Autónomos da tabesa, OK.
+
+444
+00:27:00,519 --> 00:27:02,519
+E você vai se conectar no Autónomos.
+
+445
+00:27:02,519 --> 00:27:04,519
+Muito bom, parabéns aí.
+
+446
+00:27:04,519 --> 00:27:06,519
+Serge o vigínio, conseguia.
+
+447
+00:27:06,519 --> 00:27:07,519
+Acabei de autenticar.
+
+448
+00:27:07,519 --> 00:27:10,519
+Ao CIA, tem umas frescuras para criar contas.
+
+449
+00:27:10,519 --> 00:27:12,519
+Sim, cara. Às vezes a gente já viu
+
+450
+00:27:12,519 --> 00:27:14,519
+muitas pessoas com essas dificuldades ali
+
+451
+00:27:14,519 --> 00:27:16,519
+de criar às vezes mais de uma conta,
+
+452
+00:27:16,519 --> 00:27:18,519
+às vezes dar uma travada, tá?
+
+453
+00:27:18,519 --> 00:27:21,519
+Tapago e valeu pagar o VIP.
+
+454
+00:27:21,519 --> 00:27:25,519
+Infelizmente, não vou conseguir participar de toda a Imerção.
+
+455
+00:27:25,519 --> 00:27:27,519
+Show de bola.
+
+456
+00:27:27,519 --> 00:27:29,519
+Tive que criar uma conta novamente
+
+457
+00:27:29,519 --> 00:27:31,519
+pois fiquei muito tempo sem usar.
+
+458
+00:27:31,519 --> 00:27:34,519
+Só acho que não criei como transaction process.
+
+459
+00:27:34,519 --> 00:27:36,519
+Alessandro, por isso que é interessante, cara.
+
+460
+00:27:36,519 --> 00:27:38,519
+A gente fazia junto e entendeu?
+
+461
+00:27:38,519 --> 00:27:40,519
+Porque se você for fazer
+
+462
+00:27:40,519 --> 00:27:42,519
+sem a nossa instrução, cara,
+
+463
+00:27:42,519 --> 00:27:45,519
+às vezes você vai fazer um ambiente diferente
+
+464
+00:27:45,519 --> 00:27:47,519
+e não vai se atentar para esses detalhes.
+
+465
+00:27:47,519 --> 00:27:49,519
+Então, pessoal, aprendizado aqui.
+
+466
+00:27:49,519 --> 00:27:52,519
+Esperem e eu mostrar para depois vocês fazerem.
+
+467
+00:27:52,519 --> 00:27:55,519
+Não tentem fazer antes, tá?
+
+468
+00:27:55,519 --> 00:27:57,519
+É muito legal aí você
+
+469
+00:27:57,519 --> 00:28:00,519
+primeiro vê o jeito que a gente está fazendo
+
+470
+00:28:00,519 --> 00:28:03,519
+até para você não ter nenhum tipo de problema lá na frente, tá?
+
+471
+00:28:03,519 --> 00:28:09,519
+Pessoal, quem aí está conseguindo chegar aqui
+
+472
+00:28:09,519 --> 00:28:15,170
+essa tela, alguma dúvida?
+
+473
+00:28:15,170 --> 00:28:17,170
+Com relação à cicronização de relógio na minha conta
+
+474
+00:28:17,170 --> 00:28:19,170
+está dando essa mensagem.
+
+475
+00:28:19,170 --> 00:28:22,170
+Luis, acho que não vai ter problema nenhum, cara.
+
+476
+00:28:22,170 --> 00:28:26,759
+Sem problema nenhum.
+
+477
+00:28:26,759 --> 00:28:28,759
+Talvez ter uma questão ali de fuzorário,
+
+478
+00:28:28,759 --> 00:28:31,759
+dependendo da região que você decidiu usar, tá?
+
+479
+00:28:31,759 --> 00:28:33,759
+Um Henrique levantou a mão?
+
+480
+00:28:33,759 --> 00:28:35,759
+Pessoal, eu já vou começar a abrir momentos aqui
+
+481
+00:28:35,759 --> 00:28:37,759
+para a gente poder interagitar.
+
+482
+00:28:37,759 --> 00:28:39,759
+Eu não quero que seja uma palestrinha.
+
+483
+00:28:39,759 --> 00:28:41,759
+Se for uma palestrinha, cara, vai ser ruim.
+
+484
+00:28:41,759 --> 00:28:43,759
+Se a gente estiver fazendo juntos,
+
+485
+00:28:43,759 --> 00:28:45,759
+igual estou fazendo aqui compartilhando minha tela,
+
+486
+00:28:45,759 --> 00:28:48,759
+abrir no junto com vocês executando vai ser muito melhor, tá?
+
+487
+00:28:48,759 --> 00:28:51,759
+É um Henrique levantou aí a mão?
+
+488
+00:28:51,759 --> 00:28:55,759
+Vou convidar aqui o Henrique para a gente poder falar.
+
+489
+00:28:55,759 --> 00:28:58,759
+Mandei a solicitação aí, tá Henrique?
+
+490
+00:28:59,759 --> 00:29:02,759
+Vamos ver se você consegue falar.
+
+491
+00:29:02,759 --> 00:29:11,000
+Mandei a solicitação aí para você.
+
+492
+00:29:11,000 --> 00:29:16,940
+Já estamos começando a primeira prática da manhã, tá, pessoal?
+
+493
+00:29:16,940 --> 00:29:18,940
+Isso aqui já vai fazer parte do desafio 1.
+
+494
+00:29:18,940 --> 00:29:21,940
+O desafio 1 consiste em várias práticas, tá?
+
+495
+00:29:21,940 --> 00:29:31,720
+Mandei a solicitação aí Henrique.
+
+496
+00:29:31,720 --> 00:29:33,720
+Se você quer fazer alguma pergunta,
+
+497
+00:29:33,720 --> 00:29:36,720
+é só desmutar aí o áudio, você consegue falar.
+
+498
+00:29:36,720 --> 00:29:47,710
+Sem dúvida?
+
+499
+00:29:47,710 --> 00:29:48,710
+Beleza.
+
+500
+00:29:48,710 --> 00:30:00,339
+Vou desabilitar aqui, então.
+
+501
+00:30:00,339 --> 00:30:02,339
+Eu altero o nome do banco que recebi
+
+502
+00:30:02,339 --> 00:30:05,339
+pelo nome imersão ou tubro.
+
+503
+00:30:05,339 --> 00:30:09,339
+Sérgio, eu acredito que não dá para mudar, tá?
+
+504
+00:30:09,339 --> 00:30:12,339
+Dá para você deletar e criar de novo, tá?
+
+505
+00:30:12,339 --> 00:30:15,339
+E normalmente quando você crie uma conta gratuita,
+
+506
+00:30:15,339 --> 00:30:17,339
+você não vem com o banco criado, não.
+
+507
+00:30:17,339 --> 00:30:18,339
+Você vem invasito.
+
+508
+00:30:18,339 --> 00:30:20,339
+A vez você criou algum alí de teste,
+
+509
+00:30:20,339 --> 00:30:23,339
+mas pode criar um segundo que ele suporta até 2, tá?
+
+510
+00:30:23,339 --> 00:30:27,460
+O Alexandre, o Alexandre um processo
+
+511
+00:30:27,460 --> 00:30:47,859
+e colocar assim e crieitem, ok, exatamente isso.
+
+512
+00:30:47,859 --> 00:30:49,859
+Pessoal, vamos colocar aqui a primeira enquete?
+
+513
+00:30:49,859 --> 00:30:52,859
+Na verdade, eu queria até botar a interação aí no chat.
+
+514
+00:30:52,859 --> 00:30:56,069
+É o Luis.
+
+515
+00:30:56,069 --> 00:30:58,069
+Queria uma conta nova na hora.
+
+516
+00:30:58,069 --> 00:31:00,069
+Luis, se você já tem alguma conta,
+
+517
+00:31:00,069 --> 00:31:02,069
+utiliza que você já tenha, tá?
+
+518
+00:31:02,069 --> 00:31:04,069
+Porque eu acho que ir para criar duas, normalmente,
+
+519
+00:31:04,069 --> 00:31:05,069
+dá erro mesmo.
+
+520
+00:31:05,069 --> 00:31:06,069
+Mas se você não tem ainda,
+
+521
+00:31:06,069 --> 00:31:07,069
+está tentando criar uma nova,
+
+522
+00:31:07,069 --> 00:31:08,069
+está dando erro, cara.
+
+523
+00:31:08,069 --> 00:31:12,069
+Faz na sua máquina mesmo que dá para você fazer, tá?
+
+524
+00:31:12,069 --> 00:31:15,069
+Então, aquele está provisionando, pessoal.
+
+525
+00:31:15,069 --> 00:31:18,069
+Pessoal, quem já conseguiu iniciar
+
+526
+00:31:18,069 --> 00:31:21,069
+que a criação provisionamento do autônomo digita assim,
+
+527
+00:31:21,069 --> 00:31:22,069
+aí no chat.
+
+528
+00:31:22,069 --> 00:31:28,779
+Show de bola.
+
+529
+00:31:28,779 --> 00:31:31,779
+Já tem uma galera aí que está andando ver.
+
+530
+00:31:31,779 --> 00:31:32,779
+Muito bom.
+
+531
+00:31:32,779 --> 00:31:34,779
+Estou provisionando, show de bola.
+
+532
+00:31:34,779 --> 00:31:36,779
+O meu também está provisionando, tá, pessoal?
+
+533
+00:31:36,779 --> 00:31:38,779
+Ao marcar o Esfri é sete dias,
+
+534
+00:31:38,779 --> 00:31:41,779
+mas posso rodar depois via doque, é isso?
+
+535
+00:31:41,779 --> 00:31:42,779
+Luciaro, vamos lá.
+
+536
+00:31:42,779 --> 00:31:45,779
+O Esfri é sempre gratuito, tá?
+
+537
+00:31:45,779 --> 00:31:48,779
+O Esfri não é sete dias, não, tá?
+
+538
+00:31:48,779 --> 00:31:51,779
+O Esfri, cara, o que que acontece?
+
+539
+00:31:51,779 --> 00:31:54,779
+Se você deixar ela lá e não tiver fazendo nada,
+
+540
+00:31:54,779 --> 00:31:56,779
+às vezes ele vai baixar esse banco,
+
+541
+00:31:56,779 --> 00:31:59,779
+porque não está tendo um tipo de movimentação, tá?
+
+542
+00:31:59,779 --> 00:32:02,779
+Mas, cara, a arquitetura do autônomo
+
+543
+00:32:02,779 --> 00:32:04,779
+é totalmente diferente do doque, tá?
+
+544
+00:32:04,779 --> 00:32:06,779
+Então, o autônomo da tabese,
+
+545
+00:32:06,779 --> 00:32:09,779
+o autônomo da tabese,
+
+546
+00:32:09,779 --> 00:32:11,779
+ele não é uma arquitetura de contêneo,
+
+547
+00:32:11,779 --> 00:32:13,779
+uma arquitetura multitena de que tem internamente,
+
+548
+00:32:13,779 --> 00:32:16,779
+que é um contêneo dentro do banco de dados, tá?
+
+549
+00:32:16,779 --> 00:32:18,779
+Estou com o banco local,
+
+550
+00:32:18,779 --> 00:32:19,779
+estou criando na minha conta.
+
+551
+00:32:19,779 --> 00:32:21,779
+Warren,
+
+552
+00:32:21,779 --> 00:32:23,779
+exatamente o que eu te falei,
+
+553
+00:32:23,779 --> 00:32:24,779
+essa mensagem,
+
+554
+00:32:24,779 --> 00:32:27,779
+se você não tem nenhuma atividade dentro de sete dias consecutivos,
+
+555
+00:32:27,779 --> 00:32:29,779
+ele para sua banco de dados,
+
+556
+00:32:29,779 --> 00:32:31,779
+tá? Mas suas dados vão ser preservados,
+
+557
+00:32:31,779 --> 00:32:34,779
+você vai vir aqui e vai subir ele novamente, tá?
+
+558
+00:32:34,779 --> 00:32:37,700
+Show de bola.
+
+559
+00:32:37,700 --> 00:32:44,339
+Muito bom, pessoal, vamos continuar aqui, então,
+
+560
+00:32:44,339 --> 00:32:46,339
+como eu vi que está provisando aqui,
+
+561
+00:32:46,339 --> 00:32:49,339
+agora está evoluindo já na criação do autônomo,
+
+562
+00:32:49,339 --> 00:32:53,339
+vamos seguir adiante, tá?
+
+563
+00:32:53,339 --> 00:32:56,339
+E o que eu quero trazer aqui para vocês agora?
+
+564
+00:32:56,339 --> 00:33:00,549
+A gente vai utilizar algumas ferramentas
+
+565
+00:33:00,549 --> 00:33:03,549
+para o nosso primeiro desafio.
+
+566
+00:33:03,549 --> 00:33:06,549
+A primeira ferramenta só revisando, né?
+
+567
+00:33:06,549 --> 00:33:08,549
+É o Oracle Cloud Fritier,
+
+568
+00:33:08,549 --> 00:33:10,549
+que eu liberei na live para requisitos,
+
+569
+00:33:10,549 --> 00:33:12,549
+quem não criou, quem está com dificuldade,
+
+570
+00:33:12,549 --> 00:33:13,549
+fica tranquila,
+
+571
+00:33:13,549 --> 00:33:15,549
+está dando erro aqui na cloud,
+
+572
+00:33:15,549 --> 00:33:16,549
+está travado, cara,
+
+573
+00:33:16,549 --> 00:33:18,549
+usa o local sem problema nenhum.
+
+574
+00:33:18,549 --> 00:33:21,549
+Outra ferramenta que te vai utilizar o VS Code,
+
+575
+00:33:21,549 --> 00:33:23,549
+o VS Code, pessoal,
+
+576
+00:33:23,549 --> 00:33:24,549
+pra quem não sabe,
+
+577
+00:33:24,549 --> 00:33:26,549
+é uma ferramenta da Microsoft,
+
+578
+00:33:26,549 --> 00:33:29,549
+que é legratuita muito utilizada
+
+579
+00:33:29,549 --> 00:33:31,549
+por desenvolvedores.
+
+580
+00:33:31,549 --> 00:33:34,549
+E através do VS Code,
+
+581
+00:33:34,549 --> 00:33:36,549
+você pode conectar via MCP,
+
+582
+00:33:36,549 --> 00:33:39,549
+e ele tem um interface bem legal para a gente utilizar
+
+583
+00:33:39,549 --> 00:33:41,549
+aquela parte de conexão do MCP
+
+584
+00:33:41,549 --> 00:33:44,549
+dentro do Oracle Database, tá?
+
+585
+00:33:44,549 --> 00:33:47,549
+Então, vocês vão ver aqui que vai ser bem interessante.
+
+586
+00:33:47,549 --> 00:33:49,549
+Eu quero que você baixe de acordo com a versão
+
+587
+00:33:49,549 --> 00:33:51,549
+que você tem aí.
+
+588
+00:33:51,549 --> 00:33:52,549
+Aliás, me utilizo Windows,
+
+589
+00:33:52,549 --> 00:33:53,549
+baixe Windows,
+
+590
+00:33:53,549 --> 00:33:54,549
+me utilizo Mac,
+
+591
+00:33:54,549 --> 00:33:56,549
+baixe para o MacOS,
+
+592
+00:33:56,549 --> 00:33:57,549
+utiliza Linux,
+
+593
+00:33:57,549 --> 00:33:59,549
+utiliza baixo aqui para Linux, tá?
+
+594
+00:33:59,549 --> 00:34:02,549
+Então, baixe aí agora a versão do VS Code.
+
+595
+00:34:02,549 --> 00:34:04,549
+O SQL CL,
+
+596
+00:34:04,549 --> 00:34:06,549
+é uma ferramenta da Oracle,
+
+597
+00:34:06,549 --> 00:34:10,550
+que ele habilita o MCP server na sua máquina, tá?
+
+598
+00:34:10,550 --> 00:34:12,550
+O SQL CL,
+
+599
+00:34:12,550 --> 00:34:14,550
+é uma SQL Plus mais poderoso,
+
+600
+00:34:14,550 --> 00:34:18,550
+é um interface que você pode utilizar via Linux comando, tá?
+
+601
+00:34:18,550 --> 00:34:19,550
+Mas esse cara,
+
+602
+00:34:19,550 --> 00:34:21,550
+que é o cara que vai ser responsável
+
+603
+00:34:21,550 --> 00:34:25,550
+por a gente conectar o Cloud Code
+
+604
+00:34:25,550 --> 00:34:27,550
+no Oracle Database diretamente, tá?
+
+605
+00:34:27,550 --> 00:34:29,550
+Ele que habilita o MCP,
+
+606
+00:34:29,550 --> 00:34:30,550
+e eu vou fazer uma palestra agora,
+
+607
+00:34:30,550 --> 00:34:33,550
+eu vou te mostrar para te falar um pouquinho sobre o que é o MCP.
+
+608
+00:34:33,550 --> 00:34:39,550
+Então, é algo também que eu quero que vocês baixem o download do SQL CL, tá?
+
+609
+00:34:39,550 --> 00:34:41,550
+E depois disso,
+
+610
+00:34:42,550 --> 00:34:44,550
+a gente vai utilizar,
+
+611
+00:34:44,550 --> 00:34:48,550
+a gente vai fazer a instalação do esquema de exemplos da Oracle,
+
+612
+00:34:48,550 --> 00:34:51,550
+que é o sample esquemas,
+
+613
+00:34:51,550 --> 00:34:52,550
+que é o esquema AR,
+
+614
+00:34:52,550 --> 00:34:53,550
+ali de exemplos da Oracle,
+
+615
+00:34:53,550 --> 00:34:56,550
+dentro desse banco de dados autónomos que a gente está criando, tá?
+
+616
+00:34:56,550 --> 00:34:58,550
+Essa vai ser a sequência aqui,
+
+617
+00:34:58,550 --> 00:35:00,550
+de preparação para a gente fazer...

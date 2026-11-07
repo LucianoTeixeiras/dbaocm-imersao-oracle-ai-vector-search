@@ -126,8 +126,13 @@ DIRETRIZES CRÍTICAS:
 4. Inclua múltiplos diagramas Mermaid (fluxos de execução, máquinas de estado, sequências ou arquiteturas de componentes).
    REGRAS OBRIGATÓRIAS DE SINTAXE E ACESSIBILIDADE VISUAL (FUNDO CLARO / ALTO CONTRASTE):
    - ACESSIBILIDADE MANDATÓRIA (ASTIGMATISMO / TEMA CLARO): NUNCA gere diagramas com fundo escuro, preenchimentos escuros ou texto claro. Paleta: {mermaid_palette}. Subgraphs devem ter fundo branco (#FFFFFF) e borda azul escuro (#1E3A8A).
-   - Inicie OBRIGATORIAMENTE todo bloco Mermaid com a diretiva:
-     %%{{init: {{'theme': 'base', 'themeVariables': {{ 'darkMode': false, 'background': '#FFFFFF', 'mainBkg': '#FFFFFF', 'primaryColor': '#F1F5F9', 'primaryTextColor': '#0F172A', 'primaryBorderColor': '#1E3A8A', 'lineColor': '#1E3A8A', 'textColor': '#0F172A', 'clusterBkg': '#FFFFFF', 'clusterBorder': '#1E3A8A' }}}}%%
+   - DELIMITAÇÃO MANDATÓRIA DE BLOCOS MERMAID: TODO diagrama DEVE ser aberto obrigatoriamente com ```mermaid na primeira linha e fechado com ``` na última linha. NUNCA omita a abertura ```mermaid. NUNCA aninhe Mermaid dentro de outro bloco de código.
+   - Todo bloco Mermaid DEVE conter a diretiva de inicialização de tema claro logo após a abertura:
+```mermaid
+%%{{init: {{'theme': 'base', 'themeVariables': {{ 'darkMode': false, 'background': '#FFFFFF', 'mainBkg': '#FFFFFF', 'primaryColor': '#F1F5F9', 'primaryTextColor': '#0F172A', 'primaryBorderColor': '#1E3A8A', 'lineColor': '#1E3A8A', 'textColor': '#0F172A', 'clusterBkg': '#FFFFFF', 'clusterBorder': '#1E3A8A' }}}}%%
+flowchart TD
+    A["Início"] --> B["Fim"]
+```
    - PROIBIÇÃO ABSOLUTA DE DIAGRAMAS ASCII OU TEXTO MONOESPAÇADO: NUNCA crie diagramas com caracteres de desenho de caixa (+---+, ┌───┐, |). TODO e qualquer diagrama ou fluxo arquitetural DEVE ser OBRIGATORIAMENTE um bloco renderizável Mermaid válido (```mermaid ... ```).
    - Qualquer tipo Mermaid é permitido (flowchart, sequenceDiagram, classDiagram, stateDiagram-v2, erDiagram, gantt, pie, mindmap, timeline, journey, gitGraph); prefira flowchart para arquiteturas.
    - Use `flowchart TD` (ou LR). IDs de nós apenas com letras/números, sem espaços nem acentos (ex.: A, B1, llm).

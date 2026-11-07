@@ -1,0 +1,1249 @@
+Se desafim, é só acho que é a minha maior mensagem, se desafim, quando eu faço as minhas aulas, eu cobre da galera.
+Paz o Lab posta um link de engalera, faz que dá a resultado, que realmente é espetacular.
+E a mentoria é isso aí.
+Essa mentoria, acho que é a melhor coisa que me aconteceu na minha vida profissional,
+Descutiágome indicou, eu tenho que agradecer muito que foi o Thiago que me trouxe pra cá, eu não conhecia.
+E o Thiago também é um cara que está voando.
+Então, porque o Thiago é um amigo meu, cara, amigos vão te direcionar pro lugar certo.
+E o Thiago me colocou aqui na mentoria, cara, estou eu e daqui, cara.
+É só pra cima, é só voando.
+É só o começo.
+É só o começo.
+Exace.
+Conta com a gente, meu irmão, é só o começo literalmente, toma a disposição pra te ajudar.
+E bora se consolidar aqui como sênio, com mais desafios, com mais projetos, que vem muita coisa boa, cara.
+Parabéns, que feliz demais, cara.
+Essa semana com essa sua notícia, e qualquer coisa a gente continua falando da mentoria, beleza?
+Estamos juntos, estamos juntos ao trazer o que eu puder ajudar também, por favor.
+Estou à disposição, né?
+E vamos lá, é daqui pra mais, é só pra cima, só pra cima.
+É isso aí, irmão, estamos juntos, obrigado.
+Valeu, valeu.
+Pessoal, é incrível, né?
+A gente poder contar um pouquinho dessas histórias e esses bastidores de pessoas contando muito resultado, cara.
+Fala, Gian, boa tarde, tudo bem?
+Boa tarde, Carlos, tudo bem em contigo.
+Tudo joia.
+Primeiramente, Gian, gostaria de te agradecer a sua participação aqui nesse bate-papo.
+E a ideia é que a gente compartilha um pouco da sua trajetória, além de ser um reconhecimento, né?
+Pelo ser os seus resultados alcançados, e como a mentoria ali pode contribuir, né, para atingir esse objetivo.
+E, Gian, primeiramente, com a trajetiva, você se apresentasse, né?
+De dizer quem que é o Gian, quantos anos você tem, de onde você fala, qual é a sua experiência ali com o banco?
+Legal, obrigado aí.
+Então, eu tenho 29 anos trabalho com banco de dados cinco anos, mais ou menos.
+Resido em Maravilha, Santa Catarina, também, nesse caso, me me odeio recentemente, inclusive.
+Então, então, um pouquinho conturbada aqui na nos últimos dias.
+Mas em relação a banco de dados, cinco anos comecei trabalhando com Firebird, depois comecei a ter contato com outras tecnologias,
+como Postgres e o Oracle em si, né?
+Então, fiquei aí em um tempo de desempregar agora nos últimos meses, e é isso aí.
+E, Gian, como é que você conheceu a DEBALC?
+Eu conheci através do LinkedIn YouTube, na verdade, né?
+Foi um meio que se mutando ali.
+Teve um período ali no último emprego que eu comecei a ter contato com o Oracle,
+aí tive que pesquisar algumas coisas ali para estar aprendendo no pré-execução das rotinas diárias, né?
+E aí, acabei encontrando o pessoal da DEBALC, Melique, já aparecia de vez em quando,
+mas nunca tinha, tipo, nas recomendações do YouTube, principalmente.
+Mas eu nunca tinha aí do atrás para aprender a respeito de Oracle, né?
+Então, na partida ali que eu tive conhecimento, foi uns dois anos atrás, três anos atrás, mais ou menos.
+E naquele tempo você, você ainda não participava da mentoria, você só tinha algum produto da DEBALC?
+Não, naquele tempo, nada.
+Eu fui, eu fui adquirir isso no final de 2023, foi ali por setembro, outubro, mais ou menos.
+Eu tinha adquirido o curso ali.
+Legal. E antes de você ir entrar para a parte da mentoria, o que você estava tentando ali para fazer,
+para se recolocar no mercado, tudo mais?
+Naquele período ainda foi uma questão de atender as demandas diárias que eu ainda estava...
+Quando eu, quando eu adquiri o curso, eu ainda estava empregada.
+Então, foi para atender as demandas diárias ali do meu emprego,
+mas também, já com o intuito, porque daí eu percebi, eu vou trabalhar com Oracle,
+vai ser algo melhor do que com a tecnologia que eu trabalhava anteriormente.
+Aí eu pensei, vou querer seguir nessa área.
+Então, comprei os cursos, aí depois acabei vendo que tem a parte da mentoria também,
+então eu comecei a falar com vocês ali, né?
+Legal. Então, você já tinha os cursos ali, que você já estava fazendo,
+exatamente para se aprimorar junto com a parte de banco de dados do Oracle,
+e depois você entrou para a mentoria.
+E isso mesmo.
+Legal. E no tempo que você ficou ali desempregado
+que você comentou que você saiu,
+o que você estava fazendo ali para tentar voltar para o mercado quanto antes?
+Qual era a suas estratégias que você estava tendo?
+No momento inicial, ali, quando eu saí, eu peguei uns dois meses para ficar só estudando.
+Não me apliquei em vaga, não busquei nada, mas fiquei apenas estudando
+para ter noção do que a Oracle aprender a boa parte da questão do banco de dados em si, né?
+E para ter uma noção, né?
+Aí depois eu comecei a me aplicar em vaga também nesse sentido,
+mas daí, tipo, estava bem conturbado, bem difícil na verdade,
+não tipo, aí eu vi os requisitos das vaga,
+mas eu ainda não estou bem preparado, né?
+Mas meio que por julho, ali, eu tinha começado a fazer esse procedimento
+continuando estudando e mais me aplicando para vaga, né?
+Entendi, então você chegou ali no momento que você estava estudando
+mas que, de certa forma, ainda não estava gerando nenhum tipo de resultado
+e você percebeu que às vezes sem estratégia, sem um apoio, ali,
+para te ajudar nisso, o objetivo estava ficando um pouco mais distante.
+E pareceu, né? Eu estava tendo uma certa dificuldade mesmo.
+E o que que te levou a procurar a mentoria assim de fato,
+é que foi aquele choque que você for preciso de ajuda,
+do jeito que está, talvez eu não vou alcançar e vai demorar,
+que como é que você percebeu isso?
+Teve, sino me engano, foi uma imersão do final de julho
+ou agosto agora, começo de agosto ali,
+que daí eu estava participando e daí teve uma fala do Guilherme,
+inclusive, que me pegou bastante sobre a questão de você estar junto
+com outras pessoas ali.
+E daí eu chamei ele para conversar e acabei
+de entrar na mentoria por causa disso, né?
+Por causa de uma das imersãoes que eu tinha participado.
+Isso foi por, acho que se eu me engano, a gente foi por volta de agosto, né?
+Que a gente...
+Por aí?
+Se conversou ali, que a gente começou a fazer o sua cor de planejamento,
+definia ali os objetivos que no carro era te colocar o quanto antes, né?
+Por um mercado.
+E também ali estudava a parte da certificação, né?
+Traçando a parte de estratégias, as partes técnicas
+e parte comportamental, foi isso aí, mais ou menos, né?
+Que a gente conversou em agosto de 24, né?
+Isso foi exatamente isso, né?
+E a gente traçou ali meio que uma meta de certificação,
+só que daí como eu estava desempregado, né?
+A parte financeira foi ficando um pouco mais apertada
+e fica difícil pra mim focar especificamente na certificação.
+Então, continuo estudando,
+foi fazendo todas as aulas simulados,
+fui participando das imersões que tinha nesse período ali
+e daí foi agora, em dezembro, que eu fui conseguir uma entrevista
+e passei na pravaga, né?
+Bacana já aí, de fato a gente percebeu, né?
+Que você estava ali ocorrendo atrás, era um desejo se relocar o quanto antes,
+o quanto que você, de fato, seguiu ali a metodologia que foi passada
+de fazer postes, fazer laboratório,
+participar das imersões, deixar o link a dia atraente,
+se aplicar em vagas e a gente, de fato, percebeu isso
+que você estava seguindo ali a risca, né?
+No sentido de fazer para acontecer, né?
+Então, isso foi um mérito seu também, né?
+A gente tinha a poder te ajudar e você acreditar de certa forma
+que vai dar certo, né?
+E precisava dar certo que você estava também precisando.
+Até que nesse que falou a situação financeira ali,
+não estava no melhor momento, né?
+Mas você entendeu que era um investimento, né?
+Um investimento na sua carreira,
+até para te colocar de volta o quanto antes do mercado, né?
+Então, a gente percebemos isso e é bem legal ver que você conseguiu chegar lá
+e a gente poder estar aqui nesse momento também,
+compartilhando o mostrando ali com o pessoal,
+que é possível também, né?
+Até era em situações ali que, você,
+depente de não estar no momento legal,
+mas ter a paciência e investir,
+que investimento em educação nunca demais, né?
+E começou a gerar os frutos, né?
+Então, isso é bem bacana.
+E outro ponto que você comentou ali,
+que você até fez um bate-papo conglierm, né?
+Essa questão de você poder estar num grupo ali de pessoas,
+buscando os objetivos semelhantes,
+compartilhando a jornada,
+compartilhando a experiência.
+Algo também ajuda muito, né?
+Você está ali junto com um pessoal
+também engajado nesse sentido, né?
+De crescimento, um ambiente ali propício para isso, né?
+Isso também, acho que fez muita diferença para você.
+Sim, exatamente.
+Isso contribui bastante,
+porque tem diversas histórias ali que o pessoal vai compartilhando
+e sempre em algum dos detalhes você vai se encaixando.
+Tipo, o um está com um problema financeiro,
+o outro não tem muito tempo devido a rotina,
+são diversas situações que a pessoa compartilha
+e sempre você se encaixa em algum deles.
+Dicas de estudos, o pessoal vai comentando também.
+Ah, tu tem uma dúvida ali em determinada situação.
+Você está travado em alguma coisa,
+o pessoal é sempre muito bem atencioso nesse sentido, né?
+Então qualquer dificuldade que você vai ter,
+sempre vai ter alguém para te apoiar, né?
+Sim, e é exatamente isso, né?
+Nosso desafio aqui é ajudar todo mundo
+da melhor forma possível,
+desde ali que a pessoa teve essa,
+esse objetivo claro, né?
+Que a gente comentou ali,
+quando a gente fez as calls de planejamento,
+que de fato, ali, e é precisado um esforço também,
+tanto na parte de estudo, né?
+Que é fundamental você trabalhar ali,
+tanto com a parte da hard-skill,
+que é o que você também estava precisando,
+você queria aprimorar.
+A parte estratégica, né?
+Como é que eu faço ali para tentar
+entrar com o mercado quanto antes?
+O que eu preciso fazer?
+Como eu devo me posicionar?
+Como eu devo tratar as situações?
+E também parte do comportamento, né?
+Acho que o comportamental querendo não,
+as vezes o pessoal não dá uma atenção necessária,
+mas é algo que a gente sabe que,
+no dia a dia,
+é sempre visto o primeiro, né?
+É o relacionamento, né?
+E isso às vezes diz muito, né?
+De como você,
+às vezes, como você vai lidar com as situações,
+se você consegue alcançar um objetivo,
+através de comportamento.
+E isso, você também entende ali que te ajudou,
+de repente, falei na sua trajetória,
+como é que você vê isso?
+Sim, em relação com o comportamento
+principalmente é a questão de você fazer as publicações
+no LinkedIn, né?
+Então, tipo, trouxe bastante visibilidade, né?
+Aquela época, lá no passado,
+quando a gente teve a cala ali no meu LinkedIn,
+acho que eu não tinha 300, 400 conexões, né?
+E aí, a partir daquele momento,
+ali, uma das dicas que você foi me passando,
+seria vai adicionando pessoas,
+principalmente, da área que você busca, né?
+Então, foi algo que eu fui fazendo
+nos primeiros meses, principalmente,
+bem ativamente.
+Então, eu consegui chegar mais de 1.000 conexões
+já logo em 2 meses, isso não engano.
+E inclusive, participando das mentorias,
+das mentorias, das aulas e das imersões,
+realizando as publicações,
+isso trouxe bastante visibilidade para o perfil.
+Então, contribuiu bastante essa parte, né?
+Para me ajudar no...
+Não vem prego, né?
+E você percebeu que é exatamente
+um processo de construção, né?
+É todo dia, ali, fazendo um pouquinho,
+todo dia, fazendo um pouquinho para as coisas
+e começar a tomar forma, né?
+E gerar um resultado esperado, né?
+Porque, exatamente, eu que a gente quer
+no final das contas, né?
+Tem um esforço ali, uma linkadinho,
+estuda bastante, faz bastante laboratório,
+e uma coisa que a gente sempre fala também, né?
+É preciso prática, né?
+Acho que você é um bom exemplo disso
+que a gente vê que você praticava bastante,
+bastante, bastante ali até...
+de forma, talvez exaustiva ali, para ficar bom, né?
+E mostrava isso muito bem, né?
+Quando você colocava ali no linkadinho, né?
+A gente mostrava até o seu linkadinho ali
+para outros mentorados,
+que o pessoal pode ter um ador,
+e da ali, como é que eu me posiciono bem?
+Como é que eu consigo colocar bem?
+A gente fala, pô, o gelião é um cara ali
+que consegue colocar isso muito bem,
+e é uma boa referência, né?
+Então...
+Exatamente.
+Eu sempre busquei nas publicações
+fazer bem explicadinho, tipo,
+para, de fato, mostrei que eu aprendi
+no caso, podendo fazer...
+explicando o que eu entendi do conteúdo, né?
+Então, isso foi um diferencial legal ali
+que...
+que...
+eu penso que foi muito positivo.
+E o linkadinho, acho que ajudou bastante
+também nessa questão de estratégia, né?
+Porque...
+A gente fala, né?
+As pessoas não conhecem o gelo,
+o mercado não conhece o gelo,
+normalmente quem te conhece,
+a quem trabalhou com você,
+ou quem está muito mais próximo,
+mas quem não te conhece a única forma de você
+provar ali, né, que você tem um conhecimento,
+que você domina alguma coisa,
+que você é um cara bem capacitado, né?
+Que você consegue ali
+estar uma vaga,
+é o que?
+Mostrando, né?
+Mostrando...
+Exatamente.
+Você fez isso aí muito bem, né?
+Eu acho que...
+Um dos pontos ali que, com certeza,
+te ajudou muito também, né?
+É mostrar o que você sabe.
+Não adianta ser bom, né?
+Mas ninguém sabe que você é bom, né?
+E a gente sabe que o mercado
+de tecnologia ele é concorrido.
+E isso vai passar na frente,
+só vai levar a vaga a que for melhor,
+aquele que sabe mostrar,
+que sabe se vender, né?
+E isso foi bem bacana.
+Então, gerou um resultado, né?
+Eu acho que...
+Você começou a notar os primeiros resultados
+quando assim, você falou assim,
+opa, agora as coisas estão começando
+a ficar um pouco diferente.
+Olha, ali em novembro,
+pra dezembro mais ou menos,
+teve, também, eu teve uma imersão,
+eu não lembro qual que foi,
+exatamente, eu acho que foi dar um uttenante.
+Ali dele, eu comecei a fazer...
+Eu comecei que...
+Eu percebi que teve uma virada de chave ali
+por causa que, no linkedinho,
+eu tava ativamente adicionando pessoas da área.
+E a partir daí,
+começou a vir mais convites
+pra adicionar.
+Então, tipo, as pessoas foram andando
+convite pra me adicionar na rede, né?
+Então, o número acabou aumentando
+muito mais depois disso, né?
+E principalmente, agora,
+que daí, agora,
+agora, eu tô trabalhando, né?
+O p está vindo, tipo, por dia,
+é fácil ali, quatro, cinco convites
+pra adicionar na rede,
+de forma passiva, né?
+Eu não tô mais indo atrás,
+as pessoas estão chegando até aqui
+porque estão vendo...
+meu perfil, eu tô a vez lá
+nas primeiras páginas.
+Acana.
+E, ali antes de você,
+pela aventoria,
+qual era o seu sentimento?
+Você tinha emoção que ela poderia te ajudar tanto?
+Como é que tava a sua vida ali antes de
+adotar as metodologias,
+de estúdio e tudo mais?
+Então,
+antes da aventoria,
+eu sempre acreditei que,
+eu posso fazer tudo sozinho.
+E daí, assim,
+aqueles dois primeiros meses,
+que beleza eu tava com,
+fazendo os cursos da DBLCM e tal,
+mas eu...
+eu percebi que eu tava sem...
+Não, não exatamente sem rumo,
+mas faltava alguma coisa.
+Então, a partir do momento que eu tive
+aquela conversa com Guilherme também,
+sobre...
+que eu participei da immersão, digo, né?
+Percebi, bairro.
+Acho que alguma coisa,
+eu tenho que fazer diferente aqui,
+daí eu resolvi entrar na aventoria por causa disso.
+Um, um.
+E a gente sabe que,
+depois acho que ficar até mais perceptível,
+que é muito mais difícil você fazer sozinho, né?
+Quando você tá ali,
+por conta própria,
+na sua conta e risco,
+no sentido de você ter que saber
+o que tem que estudar,
+sem nenhum direcionamento,
+sem nada ali,
+sem pessoas ao redor,
+para poder,
+de repente, contribuir com seu crescimento,
+fazer da melhor forma possível,
+com certeza, eu acho que...
+Vai...
+Você pode até chegar no resultado,
+só que talvez ali,
+um espaço de tempo muito maior,
+do que você gostaria, né?
+Exatamente.
+E...
+E já...
+E agora, você...
+Como é que aconteceu essa sua vaga
+aí que você agora está hoje, né?
+Você...
+Está novamente,
+está empregado,
+conta um pouquinho,
+aí, como é que aconteceu?
+Os bastidores...
+É, então...
+Eu...
+ali, eu rodando o linkadinho com...
+diariamente, né?
+Vê procurando vagas,
+assim,
+foi ali no começo de dezembro.
+Aí...
+recebi uma notificação
+enquanto eu estava ali no linkadinho com ele aberto,
+da vaga ali,
+para a analista de bancos de dados,
+na foto.
+E...
+E daí, eu falei,
+já...
+Olhe os requisitos a vaga
+e já mandei a inscrição, né?
+Aí, foi uns dois ou três dias,
+mais ou menos,
+eu recebi um retorno,
+falando que eu fui escolhido
+para uma entrevista,
+o pessoal tinha analisado uma perfil, né?
+E daí, a gente...
+agendou-se em entrevista
+para dois dias a frente, né?
+Nisso,
+conversei com o pessoal,
+foi uma...
+uma terça-tarde,
+isso não me engano,
+e...
+foi uma conversa bem tranquila,
+o pessoal, né,
+super...
+receptivo,
+e depois disso,
+não deu uma semana depois,
+eles me deram o retorno
+que eu havia sido aprovado para a vaga, né?
+É certo.
+E...
+principalmente,
+eu acho quando você estava ali
+da...
+fazendo a entrevista, né?
+A parte ali,
+provavelmente,
+comportamental,
+seu funcionamento,
+com certeza,
+também disse muito, né?
+Na hora que você
+teve ali a oportunidade de falar
+quem também é o Giana,
+e a sua parte...
+ou seu conhecimento,
+sua experiência,
+e tudo mais.
+E aí, você notou também,
+que essa parte também
+da mentoria,
+essas dinâmicas que a gente faz,
+é...
+nas calls, né?
+Deixe...
+abrir ali,
+conversar,
+te ajuda também,
+nesse sentido,
+de você também,
+e para o mais preparado?
+Sim, ajuda com certeza,
+porque...
+essas...
+essas dinâmicas
+você está ali,
+abrindo a câmera,
+conversando com pessoas
+que talvez você não conhece,
+eu ve muito pouco,
+no seu dia a dia,
+isso contribui bastante
+para você,
+às vezes,
+tirar um pouco da timidez.
+Eu particularmente,
+em um tempo atrás,
+eu tinha muita dificuldade de
+falar com pessoas,
+frente a frente,
+ou no macau,
+assim, por...
+por...
+por vídeo chamada.
+E...
+então, isso foi...
+isso me levou muito
+mais tranquilidade
+na hora da entrevista,
+para conversar com as pessoas,
+foi...
+tipo...
+muito mais...
+eu não tive nervosismo,
+obviamente,
+um pouco sempre tem
+a questão de ansiedade,
+tudo mais,
+mas foi uma conversa
+muito tranquila,
+que fluiu muito bem,
+então...
+vale muito a pena,
+essas...
+as causas da mentoria,
+para a gente,
+também praticar
+esse tipo de conversa
+com as outras pessoas, né?
+E...
+o tempo de fato ali
+levou para você
+alcançar esse novo emprego,
+tempo ali mais ou menos,
+que é um...
+entre a inscrição
+da vaga,
+ou entre...
+entre a...
+ou...
+o período que você entrou,
+o período que você entrou na mentoria,
+e quando você conseguiu se realocar,
+assim,
+foi de...
+de agosto a dezembro,
+mais ou menos,
+final de agosto,
+a dezembro,
+então, foi...
+quatro meses,
+né?
+É, basicamente,
+quatro meses, né?
+Ura, hein.
+Então, de fato ali,
+na hora que você entrou,
+começou, de fato,
+a seguir,
+do planejamento,
+né?
+As coisas começaram
+a resultar,
+ganhou um emprego
+já no dia no novo,
+emprego no novo.
+A gente...
+de Natal ali,
+a gente...
+exatamente.
+E antes disso,
+obviamente, eu tinha participado
+de outras entrevistas ali,
+não lembro agora o número,
+mas foram várias ali,
+entrevistas,
+que, felizmente,
+não passei naquelas,
+mas também foram entrevistas
+que...
+que eu já fui conseguindo
+por causa da visibilidade
+que eu vinha tendo, né?
+Legal.
+E hoje, ja,
+como é que você se sente ali,
+entre os objetivos alcançados,
+aumentou a expectativa,
+você viu que você
+pode muito mais além,
+como é que você se vê hoje?
+Com certeza, não.
+É expectativo,
+agora está bem mais alta.
+Eu...
+o meu principal objetivo,
+quando a gente conversou lá,
+no começo,
+é que eu falei,
+exatamente,
+voltar para o mercado,
+então, esse...
+Essa foi uma grande vitória,
+eu consegui, né,
+voltar,
+estou trabalhando agora,
+estou bem feliz,
+e agora,
+vou me restavelhecer,
+financeiramente,
+para conseguir fazer a primeira prova
+da certificação,
+quanto antes, né?
+Legal.
+Isso aí, ja,
+não pode parar, né?
+Sempre fala, né?
+Quem está dentro da tecnologia,
+ele é um aprendizado continuo, né?
+Exatamente.
+Se tiver toda essa experiência,
+agora, entendeu,
+que é...
+é necessário, né?
+Essa atualização constante,
+continuar estudando,
+você viu que ainda tem muito caminho,
+ainda,
+e dá para crescer,
+tem muito...
+que estudar ali,
+para funcionar,
+um cênior,
+exatamente,
+mas já sabe, né?
+Já entendeu, ali.
+Como você pode alcançar isso,
+isso é bem legal, né?
+ter essa mentalidade, né?
+Que exatamente,
+o que a gente falou,
+é que a gente não é importante, né?
+Trum mudar o comportamento,
+entender que,
+depende de você,
+ver aí,
+para alcançar os objetivos,
+também, né?
+E ja,
+qual é a mensagem ali
+que você gostaria de deixar
+para as pessoas que se veem,
+às vezes,
+nessa mesma situação que você estava,
+se vale a pena estudar,
+a se vale,
+a pena pagar mentoria,
+o que você gostaria de deixar
+e de recado?
+Olha aí, eu particularmente,
+acho que vale muito a pena.
+Não há nada que a gente
+faça sozinho
+que, em grupo,
+não seja muito melhor.
+Em relação aos estudos,
+você vai sempre ter
+visões diferentes,
+você talvez pode estar travado
+alguma coisa
+e outra pessoa talvez passou
+pelas mesmas,
+a situação que você,
+ele vai te dar alguma dica
+de como sair.
+Então,
+a parte mentalia vale
+muito a pena seguir,
+se possível,
+também,
+participar das versões,
+eu,
+nos últimos vezes,
+busquei participar
+do máximo de versões possíveis,
+não participei de todos,
+mas,
+acho que eu consegui sempre
+ter muito a pena,
+foi muito aprendizado mesmo,
+e,
+também,
+quem está na situação parecida,
+de buscar o emprego,
+atualiza o link de em fica,
+fazendo publicações
+do que você sabe,
+do que você está aprendendo,
+vale muito a pena que um dia,
+a pessoa vai conseguir
+voltar no mercado trabalho.
+Com certeza, a mentoria ajuda muito,
+nessa questão de otimizar tempo,
+de endereçar,
+né?
+No caminho certo,
+ali para você não perder,
+o time,
+a gente vai perder as coisas
+da coisa,
+a deixar correr muito tempo,
+e isso é bacana, né?
+A gente vai falar,
+tem um grupo ali,
+de apoio, né?
+poder levantar a mão,
+tem alguém,
+para poder ajudar,
+ou passar algum direcionamento,
+com certeza,
+ali,
+é um baita benefício,
+e fora que nem aqui na BBLC,
+a gente tem as imersões, né?
+Para todo mundo,
+ali,
+que é da mentoria,
+você mesmo,
+foi um cara ali que,
+fez boa parte,
+né?
+A gente sempre fala,
+para ficar bom,
+precisa repetir, né?
+E a gente leva esse mantra, né?
+Pessoal,
+precisa repetir,
+precisa repetir.
+É verdade.
+Porque isso vai te dar segurança, né?
+A gente sabe que vai dar segurança
+e vai fazer você ficar bom, né?
+É verdade, né?
+Isso é bem bacana, ja.
+E nós aqui do time da BBLC,
+ficamos muito felizes, né?
+Com, de fato,
+com seus resultados,
+queremos que você vá muito mais longe,
+e você é mais um caso ali, né?
+Que comprouva que funciona, né?
+A nossa metodologia,
+de jeito que a gente trabalha,
+de jeito que a gente leva.
+Então, também,
+é mérito seu, né?
+Por fazer o que a gente pede,
+e o seguir,
+acreditar, né,
+acima de tudo.
+Eu acho que é importante.
+Às vezes, a pessoa fica meio sético, né?
+Fala boa,
+mas contra intuitivo,
+e a gente fala,
+só faz, né?
+Faz lá,
+espera as coisas acontecer,
+porque na hora certa,
+vai ser bom,
+vai dar certo, né?
+Então,
+o seu aprova disso,
+levou a sério,
+entendeu ali,
+que precisava mudar,
+às vezes, a gente precisa mudar o nosso comportamento,
+mesmo que a gente,
+às vezes, não queira, né?
+E às vezes, pode ser um fator que trava gente, né?
+O jeito que a gente lida com as coisas, né?
+Então, aqui,
+da metodologia,
+a gente tem essa,
+a gente tem essa liberdade, né?
+De conversar,
+chamar ali,
+vão fazer um bate-papo,
+a gente passa algumas orientações,
+então,
+é bem bacana.
+Então, já,
+mais uma vez,
+obrigado aí,
+por esse bate-papo,
+conti conosco,
+porque é só o começo, né?
+E que venham,
+também,
+novas vitórias,
+aí, que é o DBLC,
+ele possa contribuir com elas, tá bom?
+Claro,
+Chote, bola,
+muito obrigado aí, caros.
+Valeu, já,
+obrigado,
+tchau, tchau.
+Bom,
+seja muito bem-vindo,
+a mais um vídeo aqui,
+de estudo de caso,
+da DBLC,
+a gente convido aqui,
+pessoas que participam
+das nossas mentorias,
+que estão tendo resultado
+para a gente poder conversar,
+entender como está a sela jornada
+dentro da mentoria,
+e compartilhar algumas experiências
+de quem realmente
+está conseguindo chegar lá
+com alguns objetivos,
+e hoje eu vou ter o prazer aqui
+de chamar o Beck en Bauer,
+para a gente poder fazer esse bate-papo,
+contando porquido,
+o que ele tem feito aí,
+da mentoria,
+tudo bom, Beck?
+Tudo bem?
+Que ideia?
+Prazer está falando com o tio Green,
+espero poder colaborar aí.
+Chote, bola,
+o prazer é todo mesmo, meu irmão.
+E vamos lá, Beck,
+de você fala de onde?
+Qual a cidade?
+Fala aqui do Rio de Janeiro,
+somora da Dijuca.
+É isso.
+Que legal.
+Tenho o capital.
+Chote, bola.
+E vamos lá, Beck?
+Qual foi o objetivo aí de você
+ter entrado dentro da mentoria, cara?
+Como que você me conheceu aí, cara, no início?
+Era engraçado, né?
+Porque eu já tinha visto
+com um vídeo da DBA-CM,
+eu já estava estudando
+em sozinho, sem metodologia,
+nenhuma, só ter a estudar.
+E eu vira a primeira vez do seu vídeo
+e não entrei nele.
+Eu não sei porque exatamente,
+eu não curti assim.
+Não me atraiu.
+E depois da segunda vez,
+não, cara.
+Ele está falando,
+ele está faz sentido de que está falando.
+E eu resolvi entrar.
+E aí, cara, sem poxa,
+a DBA-CM ajudou,
+absolutamente porque, com método que vocês
+utilizam para poder fazer os treinamentos
+e tudo mais,
+mudou assim a chave do que eu estava fazendo,
+me deu morte.
+E eu consegui me direcionar para poder,
+eu chegue onde eu estou agora.
+Foi muito importante.
+E legal, meu irmão.
+E vamos lá.
+O seu treinamento,
+você estava trabalhando na área de tecnologia ou não?
+Eu tinha acabado de sair de uma empresa,
+um pouco tempo,
+eu estava trabalhando,
+já era a função da área de tecnologia,
+mas não trabalhava com uma variedade.
+Eu vim de uma outra formação
+e não trabalhava com isso.
+Então, eu estava trabalhando no momento.
+Perfeito.
+E aí, cara?
+Então, seu objetivo foi entrar para, de fato,
+voltar para o mercado.
+Meu objetivo foi voltar para o mercado
+e ir para a área de curiosidades,
+que, enfim, quando eu saí,
+eu não sabia exatamente o que eu deveria fazer.
+Então, conversar com alguns amigos
+para mim é um referência,
+assim, de pessoas que tinham atendido
+uns objetivos,
+e todos falam,
+mas mesmo quando eu para mim,
+para o Beck,
+vai para a área de bom.
+Você tem um perfil de isso,
+vai para a área de bom.
+Aí, enfim,
+eu via essas pessoas
+e comecei a procurar,
+daí surgiu,
+a parceria cada pé ao cedo.
+Show de bola.
+E aí, Beck,
+dentro da mentoria,
+o que a gente setou algumas estratégias
+aí, alguns objetivos para você,
+e você realmente viu
+quanto quer importante
+tirar uma certificação, né, cara?
+Então, o que você considera aí, cara,
+é que a certificação
+é ajudar-o aí,
+nessa sua busca para voltar para o mercado?
+Cara, a certificação foi,
+a certificação não tira,
+ele foi decisivo, assim,
+para isso,
+porque, realmente, eu não,
+eu saio do zero,
+eu não conhecia nada de
+possibilidade,
+nem de órgão,
+então,
+seguindo a metadeira de aberta,
+sem estudando pressificações,
+era um mundo se abriu, assim,
+aquele mundo que, para mim,
+era uma caixa apreta,
+que eu ouviu
+desreviagem,
+conversando,
+e eu não entendia
+e passei a entender,
+aquilo me diz um feliz,
+porque já era um sonho
+antigo meu,
+conhecia esse universo.
+E, cara,
+ajudar a abertar
+todas as altas dos professores,
+a sua mentoria foi
+decisiva, assim, para mim.
+E legal.
+É, eu considero, cara,
+que a certificação,
+ela tem dois pontos positivos,
+primeiro,
+a questão de conhecimento
+pessoal,
+de segurança,
+pessoal,
+que impacta muito.
+E, depois,
+a questão externa, né,
+de você ser visto,
+pelo mercado, como um cara
+certificado,
+tem um diferencial dentro de um
+processo seletivo.
+Voltando aqui no primeiro ponto,
+cara, o que você acredita
+que você evoluiu
+com relação à sua confiança
+sobre banco de dados,
+depois que você estudou
+para uma prova de certificação, cara.
+Ah, eu vou muito,
+ah, eu vou muito,
+realmente,
+eu não sabia
+como fazer,
+e
+afestina as alas,
+aprendi a como fazer,
+estudando a certificação,
+aí você começa a se sentir, realmente,
+muito mais seguro,
+porque você vai repetir um 16,
+vai praticando,
+então, assim,
+foi decisivo, assim,
+eu admito a nossa...
+Eu sou de extrema confiança,
+mas com a mentoria,
+e com a certificação,
+eu mirro muito em cima,
+então, me ajudou decisivamente.
+Acho que é legal,
+também, que foi com você,
+foi uma pessoa que seguiu a risca
+nossa metodologia,
+você falou que,
+praticando, né?
+Então, na diante,
+você estudou para a certificação,
+também,
+só lendo,
+só na teoria, né?
+Então, o que te dá aquela confiança,
+é realmente,
+você estudou para a certificação,
+fazendo laboratórios,
+pegando cada tópico,
+simbolando o mundo real,
+e isso contribui bastante,
+também, né, Beck,
+para que a gente consiga,
+entendeu o que está fazendo,
+não só passar numa prova, né?
+Não sem dúvida,
+ou mais que você,
+talvez não ler exatamente,
+do comando,
+você tem que dar,
+você,
+se a pessoa falar
+sobre o determinado assunto,
+você sabe do que ela está falando,
+e o mais legal você aprende a como
+pesquisar aquilo,
+como você procurar,
+e se desenvolver e fazer o que a pessoa
+está pedindo para você.
+Isso foi muito importante.
+Que legal, meu irmão.
+E vamos lá, Beck?
+Aí, eu vou no indo aí, cara,
+você botou com o objetivo
+tirar o ACP,
+com a certificação hoje de administração de banco de dados.
+Como que foi essa jornada aí de estudos, cara?
+Você fez duas provas, cara?
+Eu vou falar aqui,
+muitos profissores,
+que trabalham com o banco de dados orgos,
+não tem essa certificação.
+Foi quanto tempo,
+mais ou menos, de estudo, cara,
+para você conseguir,
+dos chegar nessa certificação?
+Olha, foi mais ou menos
+com uma de dois meses,
+para pegar o CFN,
+uma de dois meses,
+a primeira, como era um assunto novo,
+eu acabei demorando mais,
+um pouco mais,
+que normalmente as pessoas
+possam demorar,
+então, ali, eu demorei um pouquinho mais,
+porque eu aprendendo o assunto novo.
+Quando eu fui fazer a segunda prova,
+como eu já tinha,
+eu conheci um pouco mais do universo,
+os gargões,
+de tudo,
+já foi dentro do tempo,
+mais ou menos,
+de um dos normal,
+né?
+Devam em seis meses.
+Mas acho que no total,
+para tirar o CFN,
+foi, eu acho que leva isso.
+No meu caso,
+eu levou ano mais ou menos um ano
+e dois meses mais ou menos,
+para eu conseguir.
+Legal.
+E eu lembro que você chegou
+até renovar a mentoria,
+mesmo não estando
+trabalhando na área ainda, né?
+Mas se tinha passado na primeira prova
+quando você fez a renovação, né?
+Olha, ele é meu,
+acho que eu não.
+Acho que já tinha feito a primeira prova,
+já tinha feito a primeira prova,
+assim,
+eu não estava trabalhando ainda,
+mas eu confei muito,
+porque eu sabia que aquilo era o caminho,
+eu chutava com você dizia,
+eu tentava seguir,
+ou mais que,
+a pergisa,
+você precisa mudar muita forma de pensar,
+você precisa adaptar um pouco,
+é aquilo, né?
+Você é um profissional que já trabalhou com isso,
+eu tenho que confiar no que você fala,
+entendeu?
+Se você está falando uma coisa,
+você está falando tudo bem.
+Então, eu preciso acreditar na colher,
+também.
+Então, eu acreditava,
+e mesmo eu não ainda não estou trabalhando,
+eu fiz a renovação da aventoria,
+para poder continuar praticando,
+e seguindo aquilo ali que a gente estava
+determinado a fazer.
+Legal.
+E eu lembro, cara,
+que você tinha algumas questões ali
+de insegurança, com as questões,
+até meio comportamentais,
+para até pegar quando o seu pé.
+E o quanto que isso foi importante,
+cara, até alguém ali,
+para poder estar te cobrando,
+para te ajudar a definir um plano,
+de falar o que faltava,
+te dar esse feedback.
+Cara, você acredita que sozinho,
+você conseguiu ter passado
+nessa certificação?
+Olha, eu não teria conseguido,
+sozinho, não teria dado,
+senha, o apoio,
+da diversidade,
+o seu apoio,
+como você fala,
+o truco,
+você trocada,
+como você gostou de usar essa explicação,
+eu não teria o povo,
+mas aquilo também,
+ninguém se aspectou,
+eu tenho que falar,
+que eu fui humilde,
+para reconhecer,
+que você sabia mais de que eu.
+E isso é uma equate de questões,
+às vezes.
+Preciso desenvolver um pouco,
+a humildade,
+uma é a questão de você,
+se rebaixar,
+é você saber reconhecer
+que outra pessoa,
+pode ter alguma coisa
+para contribuir,
+com o que você quer.
+Você não quer uma coisa,
+então, óbola,
+aquela outra pessoa sabe o caminho,
+para chegar ali,
+então, bolsa,
+aquela pessoa,
+procure seja humilde,
+partir,
+que faça o que ela está pedindo,
+enfim,
+aí, o que vai acontecer
+da consequência?
+Cara, muito bom isso,
+porque acredito que,
+quem não é humilde,
+cara, quem fala que,
+o cara que é arrogante
+fala que eu já sei tudo, né?
+Ele deixa de aprender
+um monte de coisas, né?
+Deixa de chegar em objetivos
+que muitas vezes,
+ele não,
+ele chegaria,
+às vezes, em menos tempo,
+enfim,
+por não ter essa humildade, cara,
+e parabéns,
+quero reconhecer aqui,
+até mesmo,
+nesse bate-papo, cara,
+o quanto que você for
+humilde de acreditar,
+de atrás,
+de realmente,
+buscar,
+a fazer aquilo que precisava ser feito,
+e ouvir esses feedbacks, né?
+Cara,
+porque muitas pessoas desistem.
+Às vezes,
+escuta uma coisa que não é o que ela gostaria,
+e vai lá e desiste,
+já não vou renovar a mentoria,
+você vai fora,
+e isso acontece bastante.
+E aí, vamos lá, Beck,
+você conseguiu passar
+na primeira prova da CP,
+na segunda prova da CP,
+e aí depois disso, cara,
+sentiu mais confiante
+pra começar realmente
+de se aplicar em vagas
+e ir pra cima do mercado?
+Sim,
+quando eu tirei meu CP,
+assim,
+é perfil de cada um, né?
+Tem pessoas que já tenho
+aquele conhecimento,
+e com uma certificação
+já baixo,
+mas com o que eu não tinha
+trabalhado no mercado pra mim,
+era muito importante,
+tem o CP pra que eu te peça
+essa confiança,
+e aí depois que eu tirei a CP,
+eu fui pra cima e cara,
+foi muito pouco tempo,
+depois que eu comecei a procurar,
+eu consegui.
+Eu acho que depois que eu tirei a CP,
+eu sei,
+dois meses depois,
+eu já estava empregado.
+Então, eu tô muito importante.
+Que legal, cara,
+você tirou a certificação
+a CP foi em que mês, cara?
+Foi em dezembro,
+no iníciozinho de dezembro,
+de dezembro,
+em cinco,
+e agora já em fevereiro,
+já estou trabalhando, já.
+Show de bola, cara.
+E aí, então,
+foram basicamente dois meses,
+a nele fevereiro,
+e como que foi esse processo,
+aí depois, cara,
+conseguiu,
+de fato, ser chamado
+pra mais entrevistas,
+depois de você ter uma certificação
+a CP no Currículo?
+Sim,
+mudou um pouco,
+mudou um pouco,
+sim, eu percebi isso,
+estava sendo mais chamado,
+estava tanto pouco,
+mais oportunidades,
+e aí eu ia pros intervistas,
+assim, o que eu tinha,
+para o era a minha principal,
+lá, na verdade,
+de muita diferença.
+Era...

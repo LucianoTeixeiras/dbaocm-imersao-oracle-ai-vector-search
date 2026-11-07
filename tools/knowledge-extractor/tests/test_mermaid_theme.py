@@ -132,3 +132,39 @@ def test_non_mermaid_blocks_untouched() -> None:
 def test_prompt_uses_palette_constants() -> None:
     s = mt.prompt_snippet()
     assert mt.TEXT in s and mt.SURFACE in s and mt.LINE in s
+
+
+def test_recover_orphan_unfenced_mermaid() -> None:
+    """Garante que diagramas gerados sem a fence ```mermaid de abertura sejam encapsulados e sanitizados."""
+    raw = (
+        "# Título\n\n"
+        "%%{init: {'theme': 'base'}}%%\n"
+        "flowchart TD\n"
+        '    A["Início"] --> B["Fim"]\n'
+        "```\n\n"
+        "Texto seguinte."
+    )
+    fixed, changed = sanitize_markdown(raw)
+    assert changed >= 1
+    assert "```mermaid\n" in fixed
+    assert fixed.count("```mermaid") == 1
+    assert fixed.count("```\n\nTexto seguinte.") == 1
+    assert mt.BG in fixed
+
+
+def test_recover_generic_code_block_with_mermaid() -> None:
+    """Garante que blocos de código genéricos ``` sem linguagem contendo Mermaid sejam convertidos para ```mermaid."""
+    raw = "```\nflowchart LR\n    A --> B\n```\n"
+    fixed, changed = sanitize_markdown(raw)
+    assert changed >= 1
+    assert "```mermaid\n" in fixed
+    assert mt.BG in fixed
+
+
+def test_recover_nested_mermaid_inside_markdown_block() -> None:
+    """Garante que ```mermaid aninhado dentro de ```markdown seja desaninhado."""
+    raw = "```markdown\n# Exemplo\n\n```mermaid\nflowchart TD\n    A --> B\n```\n"
+    fixed, changed = sanitize_markdown(raw)
+    assert changed >= 1
+    assert "```markdown\n" in fixed
+    assert "```mermaid\n" in fixed

@@ -260,9 +260,156 @@ def _first_decl(body: str) -> str:
     return ""
 
 
+MERMAID_TYPES = (
+    "flowchart",
+    "graph",
+    "sequencediagram",
+    "classdiagram",
+    "statediagram",
+    "statediagram-v2",
+    "erdiagram",
+    "gantt",
+    "pie",
+    "mindmap",
+    "timeline",
+    "journey",
+    "gitgraph",
+    "c4context",
+    "c4container",
+    "c4component",
+)
+
+
+def _is_mermaid_decl(line: str) -> bool:
+    tokens = line.strip().split()
+    if not tokens:
+        return False
+    first = tokens[0].lower()
+    return first in MERMAID_TYPES
+
+
+def recover_unfenced_and_generic_mermaid(text: str) -> tuple[str, int]:
+    """Detecta e encapsula diagramas Mermaid que foram gerados sem fence ```mermaid,
+    em blocos genéricos de código sem linguagem (```) ou aninhados dentro de outros blocos.
+    """
+    lines = text.splitlines(keepends=True)
+    out: list[str] = []
+    in_code_fence = False
+    fence_tag = ""
+    recovered = 0
+    i = 0
+    n = len(lines)
+
+    while i < n:
+        line = lines[i]
+        sline = line.strip()
+
+        # 1. Verifica abertura/fechamento de fence existente
+        if sline.startswith("```"):
+            if not in_code_fence:
+                in_code_fence = True
+                fence_tag = sline[3:].strip().lower()
+
+                # Se for bloco sem linguagem (```) ou bloco texto/md genérico
+                if fence_tag in ("", "text", "txt", "markdown", "md"):
+                    is_mermaid = False
+                    for j in range(i + 1, min(i + 9, n)):
+                        sj = lines[j].strip()
+                        if not sj or sj.startswith(("%%", "---")):
+                            continue
+                        if _is_mermaid_decl(sj):
+                            is_mermaid = True
+                        break
+
+                    if is_mermaid:
+                        out.append("```mermaid\n")
+                        fence_tag = "mermaid"
+                        recovered += 1
+                        i += 1
+                        continue
+
+                out.append(line)
+                i += 1
+                continue
+            else:
+                in_code_fence = False
+                fence_tag = ""
+                out.append(line)
+                i += 1
+                continue
+
+        # 2. Se estamos dentro de um code fence NÃO-mermaid e encontramos ```mermaid dentro dele
+        if (
+            in_code_fence
+            and fence_tag not in ("mermaid", "")
+            and sline.startswith("```mermaid")
+        ):
+            out.append("```\n")
+            out.append("```mermaid\n")
+            fence_tag = "mermaid"
+            recovered += 1
+            i += 1
+            continue
+
+        # 3. Se NÃO estamos dentro de code fence: procura diagrama órfão
+        if not in_code_fence:
+            is_start = False
+            if sline.startswith(("%%{init:", "%%{initialize:")):
+                for j in range(i + 1, min(i + 9, n)):
+                    sj = lines[j].strip()
+                    if not sj or sj.startswith(("%%", "---")):
+                        continue
+                    if _is_mermaid_decl(sj):
+                        is_start = True
+                    break
+            elif _is_mermaid_decl(sline):
+                is_start = True
+
+            if is_start:
+                found_close = False
+                close_idx = -1
+                for j in range(i, n):
+                    sj = lines[j].strip()
+                    if sj.startswith("```"):
+                        found_close = True
+                        close_idx = j
+                        break
+                    if j > i and sj.startswith(("# ", "## ", "### ")):
+                        close_idx = j
+                        break
+
+                if found_close:
+                    out.append("```mermaid\n")
+                    recovered += 1
+                    in_code_fence = True
+                    out.append(line)
+                    i += 1
+                    continue
+                elif close_idx > i:
+                    out.append("```mermaid\n")
+                    recovered += 1
+                    for k in range(i, close_idx):
+                        out.append(lines[k])
+                    out.append("```\n")
+                    i = close_idx
+                    continue
+
+        out.append(line)
+        i += 1
+
+    if in_code_fence and fence_tag == "mermaid":
+        out.append("```\n")
+
+    return "".join(out), recovered
+
+
 def sanitize_markdown(markdown: str) -> tuple[str, int]:
-    """Sanitiza todos os blocos mermaid de fluxograma e injeta tema claro de alto contraste. Retorna (texto, nº de blocos alterados)."""
-    changed = 0
+    """Sanitiza todos os blocos mermaid de fluxograma e injeta tema claro de alto contraste.
+    Detecta e recupera automaticamente diagramas órfãos ou sem fence.
+    Retorna (texto, nº de blocos alterados).
+    """
+    normalized_markdown, pre_recovered = recover_unfenced_and_generic_mermaid(markdown)
+    changed = pre_recovered
 
     def repl(m: re.Match) -> str:
         nonlocal changed
@@ -284,7 +431,7 @@ def sanitize_markdown(markdown: str) -> tuple[str, int]:
             changed += 1
         return m.group(1) + new_body + m.group(3)
 
-    return FENCE_RE.sub(repl, markdown), changed
+    return FENCE_RE.sub(repl, normalized_markdown), changed
 
 
 def sanitize_file(path: Path, dry_run: bool = False) -> int:

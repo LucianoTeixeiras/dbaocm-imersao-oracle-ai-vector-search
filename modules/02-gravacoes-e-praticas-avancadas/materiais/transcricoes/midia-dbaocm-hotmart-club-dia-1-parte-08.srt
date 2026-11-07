@@ -1,0 +1,4995 @@
+1
+00:00:00,050 --> 00:00:08,050
+Se desafim, é só acho que é a minha maior mensagem, se desafim, quando eu faço as minhas aulas, eu cobre da galera.
+
+2
+00:00:08,050 --> 00:00:16,050
+Paz o Lab posta um link de engalera, faz que dá a resultado, que realmente é espetacular.
+
+3
+00:00:16,050 --> 00:00:18,050
+E a mentoria é isso aí.
+
+4
+00:00:18,050 --> 00:00:25,050
+Essa mentoria, acho que é a melhor coisa que me aconteceu na minha vida profissional,
+
+5
+00:00:25,050 --> 00:00:31,050
+Descutiágome indicou, eu tenho que agradecer muito que foi o Thiago que me trouxe pra cá, eu não conhecia.
+
+6
+00:00:31,050 --> 00:00:34,049
+E o Thiago também é um cara que está voando.
+
+7
+00:00:34,049 --> 00:00:40,049
+Então, porque o Thiago é um amigo meu, cara, amigos vão te direcionar pro lugar certo.
+
+8
+00:00:40,049 --> 00:00:45,049
+E o Thiago me colocou aqui na mentoria, cara, estou eu e daqui, cara.
+
+9
+00:00:45,049 --> 00:00:48,049
+É só pra cima, é só voando.
+
+10
+00:00:48,049 --> 00:00:49,049
+É só o começo.
+
+11
+00:00:49,049 --> 00:00:50,049
+É só o começo.
+
+12
+00:00:50,049 --> 00:00:51,049
+Exace.
+
+13
+00:00:51,049 --> 00:00:56,049
+Conta com a gente, meu irmão, é só o começo literalmente, toma a disposição pra te ajudar.
+
+14
+00:00:56,049 --> 00:01:02,049
+E bora se consolidar aqui como sênio, com mais desafios, com mais projetos, que vem muita coisa boa, cara.
+
+15
+00:01:02,049 --> 00:01:04,049
+Parabéns, que feliz demais, cara.
+
+16
+00:01:04,049 --> 00:01:11,049
+Essa semana com essa sua notícia, e qualquer coisa a gente continua falando da mentoria, beleza?
+
+17
+00:01:11,049 --> 00:01:16,049
+Estamos juntos, estamos juntos ao trazer o que eu puder ajudar também, por favor.
+
+18
+00:01:16,049 --> 00:01:18,049
+Estou à disposição, né?
+
+19
+00:01:18,049 --> 00:01:23,049
+E vamos lá, é daqui pra mais, é só pra cima, só pra cima.
+
+20
+00:01:23,049 --> 00:01:25,049
+É isso aí, irmão, estamos juntos, obrigado.
+
+21
+00:01:25,049 --> 00:01:26,049
+Valeu, valeu.
+
+22
+00:01:26,049 --> 00:01:29,049
+Pessoal, é incrível, né?
+
+23
+00:01:29,049 --> 00:01:36,049
+A gente poder contar um pouquinho dessas histórias e esses bastidores de pessoas contando muito resultado, cara.
+
+24
+00:01:36,049 --> 00:01:39,049
+Fala, Gian, boa tarde, tudo bem?
+
+25
+00:01:39,049 --> 00:01:41,049
+Boa tarde, Carlos, tudo bem em contigo.
+
+26
+00:01:41,049 --> 00:01:42,049
+Tudo joia.
+
+27
+00:01:43,049 --> 00:01:47,049
+Primeiramente, Gian, gostaria de te agradecer a sua participação aqui nesse bate-papo.
+
+28
+00:01:47,049 --> 00:01:52,049
+E a ideia é que a gente compartilha um pouco da sua trajetória, além de ser um reconhecimento, né?
+
+29
+00:01:52,049 --> 00:01:58,049
+Pelo ser os seus resultados alcançados, e como a mentoria ali pode contribuir, né, para atingir esse objetivo.
+
+30
+00:01:58,049 --> 00:02:02,049
+E, Gian, primeiramente, com a trajetiva, você se apresentasse, né?
+
+31
+00:02:02,049 --> 00:02:09,050
+De dizer quem que é o Gian, quantos anos você tem, de onde você fala, qual é a sua experiência ali com o banco?
+
+32
+00:02:10,050 --> 00:02:12,050
+Legal, obrigado aí.
+
+33
+00:02:12,050 --> 00:02:20,050
+Então, eu tenho 29 anos trabalho com banco de dados cinco anos, mais ou menos.
+
+34
+00:02:20,050 --> 00:02:26,050
+Resido em Maravilha, Santa Catarina, também, nesse caso, me me odeio recentemente, inclusive.
+
+35
+00:02:26,050 --> 00:02:30,050
+Então, então, um pouquinho conturbada aqui na nos últimos dias.
+
+36
+00:02:30,050 --> 00:02:38,050
+Mas em relação a banco de dados, cinco anos comecei trabalhando com Firebird, depois comecei a ter contato com outras tecnologias,
+
+37
+00:02:38,050 --> 00:02:41,050
+como Postgres e o Oracle em si, né?
+
+38
+00:02:41,050 --> 00:02:47,050
+Então, fiquei aí em um tempo de desempregar agora nos últimos meses, e é isso aí.
+
+39
+00:02:47,050 --> 00:02:50,050
+E, Gian, como é que você conheceu a DEBALC?
+
+40
+00:02:50,050 --> 00:02:55,050
+Eu conheci através do LinkedIn YouTube, na verdade, né?
+
+41
+00:02:55,050 --> 00:02:57,050
+Foi um meio que se mutando ali.
+
+42
+00:02:57,050 --> 00:03:02,050
+Teve um período ali no último emprego que eu comecei a ter contato com o Oracle,
+
+43
+00:03:02,050 --> 00:03:09,050
+aí tive que pesquisar algumas coisas ali para estar aprendendo no pré-execução das rotinas diárias, né?
+
+44
+00:03:09,050 --> 00:03:16,050
+E aí, acabei encontrando o pessoal da DEBALC, Melique, já aparecia de vez em quando,
+
+45
+00:03:16,050 --> 00:03:19,050
+mas nunca tinha, tipo, nas recomendações do YouTube, principalmente.
+
+46
+00:03:19,050 --> 00:03:24,050
+Mas eu nunca tinha aí do atrás para aprender a respeito de Oracle, né?
+
+47
+00:03:24,050 --> 00:03:30,050
+Então, na partida ali que eu tive conhecimento, foi uns dois anos atrás, três anos atrás, mais ou menos.
+
+48
+00:03:30,050 --> 00:03:36,050
+E naquele tempo você, você ainda não participava da mentoria, você só tinha algum produto da DEBALC?
+
+49
+00:03:36,050 --> 00:03:39,050
+Não, naquele tempo, nada.
+
+50
+00:03:39,050 --> 00:03:45,050
+Eu fui, eu fui adquirir isso no final de 2023, foi ali por setembro, outubro, mais ou menos.
+
+51
+00:03:45,050 --> 00:03:48,050
+Eu tinha adquirido o curso ali.
+
+52
+00:03:48,050 --> 00:03:54,050
+Legal. E antes de você ir entrar para a parte da mentoria, o que você estava tentando ali para fazer,
+
+53
+00:03:54,050 --> 00:03:57,050
+para se recolocar no mercado, tudo mais?
+
+54
+00:03:57,050 --> 00:04:04,050
+Naquele período ainda foi uma questão de atender as demandas diárias que eu ainda estava...
+
+55
+00:04:04,050 --> 00:04:08,050
+Quando eu, quando eu adquiri o curso, eu ainda estava empregada.
+
+56
+00:04:08,050 --> 00:04:14,050
+Então, foi para atender as demandas diárias ali do meu emprego,
+
+57
+00:04:14,050 --> 00:04:19,050
+mas também, já com o intuito, porque daí eu percebi, eu vou trabalhar com Oracle,
+
+58
+00:04:19,050 --> 00:04:22,050
+vai ser algo melhor do que com a tecnologia que eu trabalhava anteriormente.
+
+59
+00:04:22,050 --> 00:04:25,050
+Aí eu pensei, vou querer seguir nessa área.
+
+60
+00:04:25,050 --> 00:04:33,050
+Então, comprei os cursos, aí depois acabei vendo que tem a parte da mentoria também,
+
+61
+00:04:33,050 --> 00:04:36,050
+então eu comecei a falar com vocês ali, né?
+
+62
+00:04:36,050 --> 00:04:40,050
+Legal. Então, você já tinha os cursos ali, que você já estava fazendo,
+
+63
+00:04:40,050 --> 00:04:44,050
+exatamente para se aprimorar junto com a parte de banco de dados do Oracle,
+
+64
+00:04:44,050 --> 00:04:47,050
+e depois você entrou para a mentoria.
+
+65
+00:04:47,050 --> 00:04:48,050
+E isso mesmo.
+
+66
+00:04:48,050 --> 00:04:51,050
+Legal. E no tempo que você ficou ali desempregado
+
+67
+00:04:51,050 --> 00:04:53,050
+que você comentou que você saiu,
+
+68
+00:04:53,050 --> 00:04:57,050
+o que você estava fazendo ali para tentar voltar para o mercado quanto antes?
+
+69
+00:04:57,050 --> 00:05:00,050
+Qual era a suas estratégias que você estava tendo?
+
+70
+00:05:00,050 --> 00:05:05,050
+No momento inicial, ali, quando eu saí, eu peguei uns dois meses para ficar só estudando.
+
+71
+00:05:05,050 --> 00:05:12,050
+Não me apliquei em vaga, não busquei nada, mas fiquei apenas estudando
+
+72
+00:05:12,050 --> 00:05:19,050
+para ter noção do que a Oracle aprender a boa parte da questão do banco de dados em si, né?
+
+73
+00:05:19,050 --> 00:05:21,050
+E para ter uma noção, né?
+
+74
+00:05:21,050 --> 00:05:25,050
+Aí depois eu comecei a me aplicar em vaga também nesse sentido,
+
+75
+00:05:25,050 --> 00:05:31,050
+mas daí, tipo, estava bem conturbado, bem difícil na verdade,
+
+76
+00:05:31,050 --> 00:05:35,050
+não tipo, aí eu vi os requisitos das vaga,
+
+77
+00:05:35,050 --> 00:05:38,050
+mas eu ainda não estou bem preparado, né?
+
+78
+00:05:38,050 --> 00:05:43,050
+Mas meio que por julho, ali, eu tinha começado a fazer esse procedimento
+
+79
+00:05:43,050 --> 00:05:46,050
+continuando estudando e mais me aplicando para vaga, né?
+
+80
+00:05:46,050 --> 00:05:49,050
+Entendi, então você chegou ali no momento que você estava estudando
+
+81
+00:05:49,050 --> 00:05:53,050
+mas que, de certa forma, ainda não estava gerando nenhum tipo de resultado
+
+82
+00:05:53,050 --> 00:05:57,050
+e você percebeu que às vezes sem estratégia, sem um apoio, ali,
+
+83
+00:05:57,050 --> 00:06:01,050
+para te ajudar nisso, o objetivo estava ficando um pouco mais distante.
+
+84
+00:06:01,050 --> 00:06:05,050
+E pareceu, né? Eu estava tendo uma certa dificuldade mesmo.
+
+85
+00:06:05,050 --> 00:06:11,050
+E o que que te levou a procurar a mentoria assim de fato,
+
+86
+00:06:11,050 --> 00:06:15,050
+é que foi aquele choque que você for preciso de ajuda,
+
+87
+00:06:15,050 --> 00:06:19,050
+do jeito que está, talvez eu não vou alcançar e vai demorar,
+
+88
+00:06:19,050 --> 00:06:21,050
+que como é que você percebeu isso?
+
+89
+00:06:21,050 --> 00:06:26,050
+Teve, sino me engano, foi uma imersão do final de julho
+
+90
+00:06:26,050 --> 00:06:30,050
+ou agosto agora, começo de agosto ali,
+
+91
+00:06:30,050 --> 00:06:34,050
+que daí eu estava participando e daí teve uma fala do Guilherme,
+
+92
+00:06:34,050 --> 00:06:38,050
+inclusive, que me pegou bastante sobre a questão de você estar junto
+
+93
+00:06:38,050 --> 00:06:40,050
+com outras pessoas ali.
+
+94
+00:06:40,050 --> 00:06:45,050
+E daí eu chamei ele para conversar e acabei
+
+95
+00:06:45,050 --> 00:06:49,050
+de entrar na mentoria por causa disso, né?
+
+96
+00:06:49,050 --> 00:06:51,050
+Por causa de uma das imersãoes que eu tinha participado.
+
+97
+00:06:51,050 --> 00:06:54,050
+Isso foi por, acho que se eu me engano, a gente foi por volta de agosto, né?
+
+98
+00:06:54,050 --> 00:06:55,050
+Que a gente...
+
+99
+00:06:55,050 --> 00:06:56,050
+Por aí?
+
+100
+00:06:56,050 --> 00:06:59,050
+Se conversou ali, que a gente começou a fazer o sua cor de planejamento,
+
+101
+00:06:59,050 --> 00:07:04,050
+definia ali os objetivos que no carro era te colocar o quanto antes, né?
+
+102
+00:07:04,050 --> 00:07:05,050
+Por um mercado.
+
+103
+00:07:05,050 --> 00:07:08,050
+E também ali estudava a parte da certificação, né?
+
+104
+00:07:08,050 --> 00:07:11,050
+Traçando a parte de estratégias, as partes técnicas
+
+105
+00:07:11,050 --> 00:07:13,050
+e parte comportamental, foi isso aí, mais ou menos, né?
+
+106
+00:07:13,050 --> 00:07:16,050
+Que a gente conversou em agosto de 24, né?
+
+107
+00:07:16,050 --> 00:07:18,050
+Isso foi exatamente isso, né?
+
+108
+00:07:18,050 --> 00:07:21,050
+E a gente traçou ali meio que uma meta de certificação,
+
+109
+00:07:21,050 --> 00:07:24,050
+só que daí como eu estava desempregado, né?
+
+110
+00:07:24,050 --> 00:07:27,050
+A parte financeira foi ficando um pouco mais apertada
+
+111
+00:07:27,050 --> 00:07:31,050
+e fica difícil pra mim focar especificamente na certificação.
+
+112
+00:07:31,050 --> 00:07:33,050
+Então, continuo estudando,
+
+113
+00:07:33,050 --> 00:07:36,050
+foi fazendo todas as aulas simulados,
+
+114
+00:07:36,050 --> 00:07:40,050
+fui participando das imersões que tinha nesse período ali
+
+115
+00:07:40,050 --> 00:07:46,050
+e daí foi agora, em dezembro, que eu fui conseguir uma entrevista
+
+116
+00:07:46,050 --> 00:07:49,050
+e passei na pravaga, né?
+
+117
+00:07:49,050 --> 00:07:51,050
+Bacana já aí, de fato a gente percebeu, né?
+
+118
+00:07:51,050 --> 00:07:56,050
+Que você estava ali ocorrendo atrás, era um desejo se relocar o quanto antes,
+
+119
+00:07:56,050 --> 00:08:00,050
+o quanto que você, de fato, seguiu ali a metodologia que foi passada
+
+120
+00:08:00,050 --> 00:08:04,050
+de fazer postes, fazer laboratório,
+
+121
+00:08:04,050 --> 00:08:08,050
+participar das imersões, deixar o link a dia atraente,
+
+122
+00:08:08,050 --> 00:08:11,050
+se aplicar em vagas e a gente, de fato, percebeu isso
+
+123
+00:08:11,050 --> 00:08:13,050
+que você estava seguindo ali a risca, né?
+
+124
+00:08:13,050 --> 00:08:16,050
+No sentido de fazer para acontecer, né?
+
+125
+00:08:16,050 --> 00:08:19,050
+Então, isso foi um mérito seu também, né?
+
+126
+00:08:19,050 --> 00:08:22,050
+A gente tinha a poder te ajudar e você acreditar de certa forma
+
+127
+00:08:22,050 --> 00:08:23,050
+que vai dar certo, né?
+
+128
+00:08:23,050 --> 00:08:26,050
+E precisava dar certo que você estava também precisando.
+
+129
+00:08:26,050 --> 00:08:29,050
+Até que nesse que falou a situação financeira ali,
+
+130
+00:08:29,050 --> 00:08:31,050
+não estava no melhor momento, né?
+
+131
+00:08:31,050 --> 00:08:34,049
+Mas você entendeu que era um investimento, né?
+
+132
+00:08:34,049 --> 00:08:36,049
+Um investimento na sua carreira,
+
+133
+00:08:36,049 --> 00:08:39,049
+até para te colocar de volta o quanto antes do mercado, né?
+
+134
+00:08:39,049 --> 00:08:44,049
+Então, a gente percebemos isso e é bem legal ver que você conseguiu chegar lá
+
+135
+00:08:44,049 --> 00:08:46,049
+e a gente poder estar aqui nesse momento também,
+
+136
+00:08:46,049 --> 00:08:49,049
+compartilhando o mostrando ali com o pessoal,
+
+137
+00:08:49,049 --> 00:08:51,049
+que é possível também, né?
+
+138
+00:08:51,049 --> 00:08:53,049
+Até era em situações ali que, você,
+
+139
+00:08:53,049 --> 00:08:55,049
+depente de não estar no momento legal,
+
+140
+00:08:55,049 --> 00:08:58,049
+mas ter a paciência e investir,
+
+141
+00:08:58,049 --> 00:09:00,049
+que investimento em educação nunca demais, né?
+
+142
+00:09:00,049 --> 00:09:02,049
+E começou a gerar os frutos, né?
+
+143
+00:09:02,049 --> 00:09:04,049
+Então, isso é bem bacana.
+
+144
+00:09:04,049 --> 00:09:06,049
+E outro ponto que você comentou ali,
+
+145
+00:09:06,049 --> 00:09:09,049
+que você até fez um bate-papo conglierm, né?
+
+146
+00:09:09,049 --> 00:09:12,049
+Essa questão de você poder estar num grupo ali de pessoas,
+
+147
+00:09:12,049 --> 00:09:14,049
+buscando os objetivos semelhantes,
+
+148
+00:09:14,049 --> 00:09:15,049
+compartilhando a jornada,
+
+149
+00:09:15,049 --> 00:09:17,049
+compartilhando a experiência.
+
+150
+00:09:17,049 --> 00:09:20,049
+Algo também ajuda muito, né?
+
+151
+00:09:20,049 --> 00:09:22,049
+Você está ali junto com um pessoal
+
+152
+00:09:22,049 --> 00:09:24,049
+também engajado nesse sentido, né?
+
+153
+00:09:24,049 --> 00:09:27,049
+De crescimento, um ambiente ali propício para isso, né?
+
+154
+00:09:27,049 --> 00:09:30,049
+Isso também, acho que fez muita diferença para você.
+
+155
+00:09:30,049 --> 00:09:31,049
+Sim, exatamente.
+
+156
+00:09:31,049 --> 00:09:32,049
+Isso contribui bastante,
+
+157
+00:09:32,049 --> 00:09:36,049
+porque tem diversas histórias ali que o pessoal vai compartilhando
+
+158
+00:09:36,049 --> 00:09:39,049
+e sempre em algum dos detalhes você vai se encaixando.
+
+159
+00:09:39,049 --> 00:09:42,049
+Tipo, o um está com um problema financeiro,
+
+160
+00:09:42,049 --> 00:09:45,049
+o outro não tem muito tempo devido a rotina,
+
+161
+00:09:45,049 --> 00:09:49,049
+são diversas situações que a pessoa compartilha
+
+162
+00:09:49,049 --> 00:09:51,049
+e sempre você se encaixa em algum deles.
+
+163
+00:09:51,049 --> 00:09:54,049
+Dicas de estudos, o pessoal vai comentando também.
+
+164
+00:09:54,049 --> 00:09:57,049
+Ah, tu tem uma dúvida ali em determinada situação.
+
+165
+00:09:57,049 --> 00:09:59,049
+Você está travado em alguma coisa,
+
+166
+00:09:59,049 --> 00:10:02,049
+o pessoal é sempre muito bem atencioso nesse sentido, né?
+
+167
+00:10:02,049 --> 00:10:05,049
+Então qualquer dificuldade que você vai ter,
+
+168
+00:10:05,049 --> 00:10:07,049
+sempre vai ter alguém para te apoiar, né?
+
+169
+00:10:07,049 --> 00:10:09,049
+Sim, e é exatamente isso, né?
+
+170
+00:10:09,049 --> 00:10:11,049
+Nosso desafio aqui é ajudar todo mundo
+
+171
+00:10:11,049 --> 00:10:12,049
+da melhor forma possível,
+
+172
+00:10:12,049 --> 00:10:14,049
+desde ali que a pessoa teve essa,
+
+173
+00:10:14,049 --> 00:10:16,049
+esse objetivo claro, né?
+
+174
+00:10:16,049 --> 00:10:17,049
+Que a gente comentou ali,
+
+175
+00:10:17,049 --> 00:10:19,049
+quando a gente fez as calls de planejamento,
+
+176
+00:10:19,049 --> 00:10:22,049
+que de fato, ali, e é precisado um esforço também,
+
+177
+00:10:22,049 --> 00:10:24,049
+tanto na parte de estudo, né?
+
+178
+00:10:24,049 --> 00:10:27,049
+Que é fundamental você trabalhar ali,
+
+179
+00:10:27,049 --> 00:10:29,049
+tanto com a parte da hard-skill,
+
+180
+00:10:29,049 --> 00:10:31,049
+que é o que você também estava precisando,
+
+181
+00:10:31,049 --> 00:10:32,049
+você queria aprimorar.
+
+182
+00:10:32,049 --> 00:10:33,049
+A parte estratégica, né?
+
+183
+00:10:33,049 --> 00:10:35,049
+Como é que eu faço ali para tentar
+
+184
+00:10:35,049 --> 00:10:36,049
+entrar com o mercado quanto antes?
+
+185
+00:10:36,049 --> 00:10:37,049
+O que eu preciso fazer?
+
+186
+00:10:37,049 --> 00:10:39,049
+Como eu devo me posicionar?
+
+187
+00:10:39,049 --> 00:10:41,049
+Como eu devo tratar as situações?
+
+188
+00:10:41,049 --> 00:10:43,049
+E também parte do comportamento, né?
+
+189
+00:10:43,049 --> 00:10:45,049
+Acho que o comportamental querendo não,
+
+190
+00:10:45,049 --> 00:10:49,049
+as vezes o pessoal não dá uma atenção necessária,
+
+191
+00:10:49,049 --> 00:10:51,049
+mas é algo que a gente sabe que,
+
+192
+00:10:51,049 --> 00:10:52,049
+no dia a dia,
+
+193
+00:10:52,049 --> 00:10:54,049
+é sempre visto o primeiro, né?
+
+194
+00:10:54,049 --> 00:10:56,049
+É o relacionamento, né?
+
+195
+00:10:56,049 --> 00:10:58,049
+E isso às vezes diz muito, né?
+
+196
+00:10:58,049 --> 00:10:59,049
+De como você,
+
+197
+00:10:59,049 --> 00:11:01,049
+às vezes, como você vai lidar com as situações,
+
+198
+00:11:01,049 --> 00:11:04,049
+se você consegue alcançar um objetivo,
+
+199
+00:11:04,049 --> 00:11:06,049
+através de comportamento.
+
+200
+00:11:06,049 --> 00:11:09,049
+E isso, você também entende ali que te ajudou,
+
+201
+00:11:09,049 --> 00:11:11,049
+de repente, falei na sua trajetória,
+
+202
+00:11:11,049 --> 00:11:12,049
+como é que você vê isso?
+
+203
+00:11:12,049 --> 00:11:14,049
+Sim, em relação com o comportamento
+
+204
+00:11:14,049 --> 00:11:18,049
+principalmente é a questão de você fazer as publicações
+
+205
+00:11:18,049 --> 00:11:19,049
+no LinkedIn, né?
+
+206
+00:11:19,049 --> 00:11:22,049
+Então, tipo, trouxe bastante visibilidade, né?
+
+207
+00:11:22,049 --> 00:11:24,049
+Aquela época, lá no passado,
+
+208
+00:11:24,049 --> 00:11:26,049
+quando a gente teve a cala ali no meu LinkedIn,
+
+209
+00:11:26,049 --> 00:11:28,049
+acho que eu não tinha 300, 400 conexões, né?
+
+210
+00:11:28,049 --> 00:11:30,049
+E aí, a partir daquele momento,
+
+211
+00:11:30,049 --> 00:11:33,049
+ali, uma das dicas que você foi me passando,
+
+212
+00:11:33,049 --> 00:11:36,049
+seria vai adicionando pessoas,
+
+213
+00:11:36,049 --> 00:11:38,049
+principalmente, da área que você busca, né?
+
+214
+00:11:38,049 --> 00:11:41,049
+Então, foi algo que eu fui fazendo
+
+215
+00:11:41,049 --> 00:11:44,049
+nos primeiros meses, principalmente,
+
+216
+00:11:44,049 --> 00:11:45,049
+bem ativamente.
+
+217
+00:11:45,049 --> 00:11:48,049
+Então, eu consegui chegar mais de 1.000 conexões
+
+218
+00:11:48,049 --> 00:11:50,049
+já logo em 2 meses, isso não engano.
+
+219
+00:11:50,049 --> 00:11:54,049
+E inclusive, participando das mentorias,
+
+220
+00:11:54,049 --> 00:11:57,049
+das mentorias, das aulas e das imersões,
+
+221
+00:11:57,049 --> 00:11:59,049
+realizando as publicações,
+
+222
+00:11:59,049 --> 00:12:01,049
+isso trouxe bastante visibilidade para o perfil.
+
+223
+00:12:01,049 --> 00:12:04,049
+Então, contribuiu bastante essa parte, né?
+
+224
+00:12:04,049 --> 00:12:07,049
+Para me ajudar no...
+
+225
+00:12:07,049 --> 00:12:10,049
+Não vem prego, né?
+
+226
+00:12:10,049 --> 00:12:12,049
+E você percebeu que é exatamente
+
+227
+00:12:12,049 --> 00:12:14,049
+um processo de construção, né?
+
+228
+00:12:14,049 --> 00:12:16,049
+É todo dia, ali, fazendo um pouquinho,
+
+229
+00:12:16,049 --> 00:12:18,049
+todo dia, fazendo um pouquinho para as coisas
+
+230
+00:12:18,049 --> 00:12:20,049
+e começar a tomar forma, né?
+
+231
+00:12:20,049 --> 00:12:22,049
+E gerar um resultado esperado, né?
+
+232
+00:12:22,049 --> 00:12:24,049
+Porque, exatamente, eu que a gente quer
+
+233
+00:12:24,049 --> 00:12:25,049
+no final das contas, né?
+
+234
+00:12:25,049 --> 00:12:27,049
+Tem um esforço ali, uma linkadinho,
+
+235
+00:12:27,049 --> 00:12:30,049
+estuda bastante, faz bastante laboratório,
+
+236
+00:12:30,049 --> 00:12:32,049
+e uma coisa que a gente sempre fala também, né?
+
+237
+00:12:32,049 --> 00:12:33,049
+É preciso prática, né?
+
+238
+00:12:33,049 --> 00:12:35,049
+Acho que você é um bom exemplo disso
+
+239
+00:12:35,049 --> 00:12:37,049
+que a gente vê que você praticava bastante,
+
+240
+00:12:37,049 --> 00:12:39,049
+bastante, bastante ali até...
+
+241
+00:12:39,049 --> 00:12:42,049
+de forma, talvez exaustiva ali, para ficar bom, né?
+
+242
+00:12:42,049 --> 00:12:44,049
+E mostrava isso muito bem, né?
+
+243
+00:12:44,049 --> 00:12:46,049
+Quando você colocava ali no linkadinho, né?
+
+244
+00:12:46,049 --> 00:12:47,049
+A gente mostrava até o seu linkadinho ali
+
+245
+00:12:47,049 --> 00:12:48,049
+para outros mentorados,
+
+246
+00:12:48,049 --> 00:12:49,049
+que o pessoal pode ter um ador,
+
+247
+00:12:49,049 --> 00:12:51,049
+e da ali, como é que eu me posiciono bem?
+
+248
+00:12:51,049 --> 00:12:53,049
+Como é que eu consigo colocar bem?
+
+249
+00:12:53,049 --> 00:12:55,049
+A gente fala, pô, o gelião é um cara ali
+
+250
+00:12:55,049 --> 00:12:57,049
+que consegue colocar isso muito bem,
+
+251
+00:12:57,049 --> 00:12:58,049
+e é uma boa referência, né?
+
+252
+00:12:58,049 --> 00:12:59,049
+Então...
+
+253
+00:12:59,049 --> 00:13:00,049
+Exatamente.
+
+254
+00:13:00,049 --> 00:13:01,049
+Eu sempre busquei nas publicações
+
+255
+00:13:01,049 --> 00:13:03,049
+fazer bem explicadinho, tipo,
+
+256
+00:13:03,049 --> 00:13:08,049
+para, de fato, mostrei que eu aprendi
+
+257
+00:13:08,049 --> 00:13:11,049
+no caso, podendo fazer...
+
+258
+00:13:11,049 --> 00:13:14,049
+explicando o que eu entendi do conteúdo, né?
+
+259
+00:13:14,049 --> 00:13:17,049
+Então, isso foi um diferencial legal ali
+
+260
+00:13:17,049 --> 00:13:18,049
+que...
+
+261
+00:13:18,049 --> 00:13:19,049
+que...
+
+262
+00:13:19,049 --> 00:13:21,049
+eu penso que foi muito positivo.
+
+263
+00:13:21,049 --> 00:13:23,049
+E o linkadinho, acho que ajudou bastante
+
+264
+00:13:23,049 --> 00:13:25,049
+também nessa questão de estratégia, né?
+
+265
+00:13:25,049 --> 00:13:26,049
+Porque...
+
+266
+00:13:26,049 --> 00:13:27,049
+A gente fala, né?
+
+267
+00:13:27,049 --> 00:13:28,049
+As pessoas não conhecem o gelo,
+
+268
+00:13:28,049 --> 00:13:29,049
+o mercado não conhece o gelo,
+
+269
+00:13:29,049 --> 00:13:30,049
+normalmente quem te conhece,
+
+270
+00:13:30,049 --> 00:13:31,049
+a quem trabalhou com você,
+
+271
+00:13:31,049 --> 00:13:33,049
+ou quem está muito mais próximo,
+
+272
+00:13:33,049 --> 00:13:37,049
+mas quem não te conhece a única forma de você
+
+273
+00:13:37,049 --> 00:13:40,049
+provar ali, né, que você tem um conhecimento,
+
+274
+00:13:40,049 --> 00:13:41,049
+que você domina alguma coisa,
+
+275
+00:13:41,049 --> 00:13:43,049
+que você é um cara bem capacitado, né?
+
+276
+00:13:43,049 --> 00:13:45,049
+Que você consegue ali
+
+277
+00:13:45,049 --> 00:13:47,049
+estar uma vaga,
+
+278
+00:13:47,049 --> 00:13:48,049
+é o que?
+
+279
+00:13:48,049 --> 00:13:49,049
+Mostrando, né?
+
+280
+00:13:49,049 --> 00:13:50,049
+Mostrando...
+
+281
+00:13:50,049 --> 00:13:51,049
+Exatamente.
+
+282
+00:13:51,049 --> 00:13:53,049
+Você fez isso aí muito bem, né?
+
+283
+00:13:53,049 --> 00:13:54,049
+Eu acho que...
+
+284
+00:13:54,049 --> 00:13:56,049
+Um dos pontos ali que, com certeza,
+
+285
+00:13:56,049 --> 00:13:57,049
+te ajudou muito também, né?
+
+286
+00:13:57,049 --> 00:13:59,049
+É mostrar o que você sabe.
+
+287
+00:13:59,049 --> 00:14:01,049
+Não adianta ser bom, né?
+
+288
+00:14:01,049 --> 00:14:03,049
+Mas ninguém sabe que você é bom, né?
+
+289
+00:14:03,049 --> 00:14:04,049
+E a gente sabe que o mercado
+
+290
+00:14:04,049 --> 00:14:06,049
+de tecnologia ele é concorrido.
+
+291
+00:14:06,049 --> 00:14:07,549
+E isso vai passar na frente,
+
+292
+00:14:07,549 --> 00:14:09,549
+só vai levar a vaga a que for melhor,
+
+293
+00:14:09,549 --> 00:14:10,549
+aquele que sabe mostrar,
+
+294
+00:14:10,549 --> 00:14:12,049
+que sabe se vender, né?
+
+295
+00:14:12,049 --> 00:14:14,049
+E isso foi bem bacana.
+
+296
+00:14:14,049 --> 00:14:16,049
+Então, gerou um resultado, né?
+
+297
+00:14:16,049 --> 00:14:17,049
+Eu acho que...
+
+298
+00:14:17,049 --> 00:14:19,049
+Você começou a notar os primeiros resultados
+
+299
+00:14:19,049 --> 00:14:20,049
+quando assim, você falou assim,
+
+300
+00:14:20,049 --> 00:14:22,049
+opa, agora as coisas estão começando
+
+301
+00:14:22,049 --> 00:14:23,049
+a ficar um pouco diferente.
+
+302
+00:14:23,049 --> 00:14:25,049
+Olha, ali em novembro,
+
+303
+00:14:25,049 --> 00:14:27,049
+pra dezembro mais ou menos,
+
+304
+00:14:27,049 --> 00:14:29,049
+teve, também, eu teve uma imersão,
+
+305
+00:14:29,049 --> 00:14:30,049
+eu não lembro qual que foi,
+
+306
+00:14:30,049 --> 00:14:32,049
+exatamente, eu acho que foi dar um uttenante.
+
+307
+00:14:32,049 --> 00:14:34,049
+Ali dele, eu comecei a fazer...
+
+308
+00:14:34,049 --> 00:14:36,049
+Eu comecei que...
+
+309
+00:14:36,049 --> 00:14:38,049
+Eu percebi que teve uma virada de chave ali
+
+310
+00:14:38,049 --> 00:14:40,049
+por causa que, no linkedinho,
+
+311
+00:14:40,049 --> 00:14:42,049
+eu tava ativamente adicionando pessoas da área.
+
+312
+00:14:42,049 --> 00:14:43,049
+E a partir daí,
+
+313
+00:14:43,049 --> 00:14:45,049
+começou a vir mais convites
+
+314
+00:14:45,049 --> 00:14:47,049
+pra adicionar.
+
+315
+00:14:47,049 --> 00:14:49,049
+Então, tipo, as pessoas foram andando
+
+316
+00:14:49,049 --> 00:14:52,049
+convite pra me adicionar na rede, né?
+
+317
+00:14:52,049 --> 00:14:55,049
+Então, o número acabou aumentando
+
+318
+00:14:55,049 --> 00:14:57,049
+muito mais depois disso, né?
+
+319
+00:14:57,049 --> 00:14:59,049
+E principalmente, agora,
+
+320
+00:14:59,049 --> 00:15:00,049
+que daí, agora,
+
+321
+00:15:00,049 --> 00:15:02,049
+agora, eu tô trabalhando, né?
+
+322
+00:15:02,049 --> 00:15:04,049
+O p está vindo, tipo, por dia,
+
+323
+00:15:04,049 --> 00:15:06,049
+é fácil ali, quatro, cinco convites
+
+324
+00:15:06,049 --> 00:15:08,049
+pra adicionar na rede,
+
+325
+00:15:08,049 --> 00:15:09,049
+de forma passiva, né?
+
+326
+00:15:09,049 --> 00:15:10,049
+Eu não tô mais indo atrás,
+
+327
+00:15:10,049 --> 00:15:12,049
+as pessoas estão chegando até aqui
+
+328
+00:15:12,049 --> 00:15:14,049
+porque estão vendo...
+
+329
+00:15:14,049 --> 00:15:15,049
+meu perfil, eu tô a vez lá
+
+330
+00:15:15,049 --> 00:15:17,049
+nas primeiras páginas.
+
+331
+00:15:17,049 --> 00:15:18,049
+Acana.
+
+332
+00:15:18,049 --> 00:15:20,049
+E, ali antes de você,
+
+333
+00:15:20,049 --> 00:15:21,049
+pela aventoria,
+
+334
+00:15:21,049 --> 00:15:22,049
+qual era o seu sentimento?
+
+335
+00:15:22,049 --> 00:15:24,049
+Você tinha emoção que ela poderia te ajudar tanto?
+
+336
+00:15:24,049 --> 00:15:26,049
+Como é que tava a sua vida ali antes de
+
+337
+00:15:26,049 --> 00:15:28,049
+adotar as metodologias,
+
+338
+00:15:28,049 --> 00:15:30,049
+de estúdio e tudo mais?
+
+339
+00:15:30,049 --> 00:15:31,049
+Então,
+
+340
+00:15:31,049 --> 00:15:33,049
+antes da aventoria,
+
+341
+00:15:33,049 --> 00:15:35,049
+eu sempre acreditei que,
+
+342
+00:15:35,049 --> 00:15:37,049
+eu posso fazer tudo sozinho.
+
+343
+00:15:37,049 --> 00:15:39,049
+E daí, assim,
+
+344
+00:15:39,049 --> 00:15:40,049
+aqueles dois primeiros meses,
+
+345
+00:15:40,049 --> 00:15:41,049
+que beleza eu tava com,
+
+346
+00:15:41,049 --> 00:15:43,049
+fazendo os cursos da DBLCM e tal,
+
+347
+00:15:43,049 --> 00:15:45,049
+mas eu...
+
+348
+00:15:45,049 --> 00:15:48,049
+eu percebi que eu tava sem...
+
+349
+00:15:48,049 --> 00:15:50,049
+Não, não exatamente sem rumo,
+
+350
+00:15:50,049 --> 00:15:52,049
+mas faltava alguma coisa.
+
+351
+00:15:52,049 --> 00:15:54,049
+Então, a partir do momento que eu tive
+
+352
+00:15:54,049 --> 00:15:56,049
+aquela conversa com Guilherme também,
+
+353
+00:15:56,049 --> 00:15:57,049
+sobre...
+
+354
+00:15:57,049 --> 00:16:00,049
+que eu participei da immersão, digo, né?
+
+355
+00:16:00,049 --> 00:16:01,049
+Percebi, bairro.
+
+356
+00:16:01,049 --> 00:16:02,049
+Acho que alguma coisa,
+
+357
+00:16:02,049 --> 00:16:03,049
+eu tenho que fazer diferente aqui,
+
+358
+00:16:03,049 --> 00:16:06,049
+daí eu resolvi entrar na aventoria por causa disso.
+
+359
+00:16:06,049 --> 00:16:07,049
+Um, um.
+
+360
+00:16:07,049 --> 00:16:08,049
+E a gente sabe que,
+
+361
+00:16:08,049 --> 00:16:10,049
+depois acho que ficar até mais perceptível,
+
+362
+00:16:10,049 --> 00:16:13,049
+que é muito mais difícil você fazer sozinho, né?
+
+363
+00:16:13,049 --> 00:16:14,049
+Quando você tá ali,
+
+364
+00:16:14,049 --> 00:16:15,049
+por conta própria,
+
+365
+00:16:15,049 --> 00:16:16,049
+na sua conta e risco,
+
+366
+00:16:16,049 --> 00:16:17,049
+no sentido de você ter que saber
+
+367
+00:16:17,049 --> 00:16:18,049
+o que tem que estudar,
+
+368
+00:16:18,049 --> 00:16:20,049
+sem nenhum direcionamento,
+
+369
+00:16:20,049 --> 00:16:21,049
+sem nada ali,
+
+370
+00:16:21,049 --> 00:16:22,049
+sem pessoas ao redor,
+
+371
+00:16:22,049 --> 00:16:23,049
+para poder,
+
+372
+00:16:23,049 --> 00:16:25,049
+de repente, contribuir com seu crescimento,
+
+373
+00:16:25,049 --> 00:16:27,049
+fazer da melhor forma possível,
+
+374
+00:16:27,049 --> 00:16:29,049
+com certeza, eu acho que...
+
+375
+00:16:29,049 --> 00:16:30,049
+Vai...
+
+376
+00:16:30,049 --> 00:16:31,049
+Você pode até chegar no resultado,
+
+377
+00:16:31,049 --> 00:16:32,049
+só que talvez ali,
+
+378
+00:16:32,049 --> 00:16:34,049
+um espaço de tempo muito maior,
+
+379
+00:16:34,049 --> 00:16:36,049
+do que você gostaria, né?
+
+380
+00:16:36,049 --> 00:16:37,049
+Exatamente.
+
+381
+00:16:37,049 --> 00:16:38,049
+E...
+
+382
+00:16:38,049 --> 00:16:39,049
+E já...
+
+383
+00:16:39,049 --> 00:16:40,049
+E agora, você...
+
+384
+00:16:40,049 --> 00:16:42,049
+Como é que aconteceu essa sua vaga
+
+385
+00:16:42,049 --> 00:16:43,049
+aí que você agora está hoje, né?
+
+386
+00:16:43,049 --> 00:16:44,049
+Você...
+
+387
+00:16:44,049 --> 00:16:45,049
+Está novamente,
+
+388
+00:16:45,049 --> 00:16:46,049
+está empregado,
+
+389
+00:16:46,049 --> 00:16:47,049
+conta um pouquinho,
+
+390
+00:16:47,049 --> 00:16:48,049
+aí, como é que aconteceu?
+
+391
+00:16:48,049 --> 00:16:49,049
+Os bastidores...
+
+392
+00:16:49,049 --> 00:16:50,049
+É, então...
+
+393
+00:16:50,049 --> 00:16:51,049
+Eu...
+
+394
+00:16:51,049 --> 00:16:53,049
+ali, eu rodando o linkadinho com...
+
+395
+00:16:53,049 --> 00:16:54,049
+diariamente, né?
+
+396
+00:16:54,049 --> 00:16:55,049
+Vê procurando vagas,
+
+397
+00:16:55,049 --> 00:16:56,049
+assim,
+
+398
+00:16:56,049 --> 00:16:58,049
+foi ali no começo de dezembro.
+
+399
+00:16:58,049 --> 00:16:59,049
+Aí...
+
+400
+00:16:59,049 --> 00:17:01,049
+recebi uma notificação
+
+401
+00:17:01,049 --> 00:17:03,049
+enquanto eu estava ali no linkadinho com ele aberto,
+
+402
+00:17:03,049 --> 00:17:04,049
+da vaga ali,
+
+403
+00:17:04,049 --> 00:17:06,049
+para a analista de bancos de dados,
+
+404
+00:17:06,049 --> 00:17:07,049
+na foto.
+
+405
+00:17:07,049 --> 00:17:08,049
+E...
+
+406
+00:17:08,049 --> 00:17:09,049
+E daí, eu falei,
+
+407
+00:17:09,049 --> 00:17:10,049
+já...
+
+408
+00:17:10,049 --> 00:17:11,049
+Olhe os requisitos a vaga
+
+409
+00:17:11,049 --> 00:17:12,049
+e já mandei a inscrição, né?
+
+410
+00:17:12,049 --> 00:17:14,049
+Aí, foi uns dois ou três dias,
+
+411
+00:17:14,049 --> 00:17:15,049
+mais ou menos,
+
+412
+00:17:15,049 --> 00:17:17,049
+eu recebi um retorno,
+
+413
+00:17:17,049 --> 00:17:19,049
+falando que eu fui escolhido
+
+414
+00:17:19,049 --> 00:17:20,049
+para uma entrevista,
+
+415
+00:17:20,049 --> 00:17:21,049
+o pessoal tinha analisado uma perfil, né?
+
+416
+00:17:21,049 --> 00:17:22,049
+E daí, a gente...
+
+417
+00:17:22,049 --> 00:17:24,049
+agendou-se em entrevista
+
+418
+00:17:24,049 --> 00:17:27,049
+para dois dias a frente, né?
+
+419
+00:17:28,049 --> 00:17:29,049
+Nisso,
+
+420
+00:17:29,049 --> 00:17:30,049
+conversei com o pessoal,
+
+421
+00:17:30,049 --> 00:17:31,049
+foi uma...
+
+422
+00:17:31,049 --> 00:17:32,049
+uma terça-tarde,
+
+423
+00:17:32,049 --> 00:17:33,049
+isso não me engano,
+
+424
+00:17:33,049 --> 00:17:34,049
+e...
+
+425
+00:17:34,049 --> 00:17:36,049
+foi uma conversa bem tranquila,
+
+426
+00:17:36,049 --> 00:17:38,049
+o pessoal, né,
+
+427
+00:17:38,049 --> 00:17:39,049
+super...
+
+428
+00:17:39,049 --> 00:17:40,049
+receptivo,
+
+429
+00:17:40,049 --> 00:17:42,049
+e depois disso,
+
+430
+00:17:42,049 --> 00:17:44,049
+não deu uma semana depois,
+
+431
+00:17:44,049 --> 00:17:45,049
+eles me deram o retorno
+
+432
+00:17:45,049 --> 00:17:47,049
+que eu havia sido aprovado para a vaga, né?
+
+433
+00:17:47,049 --> 00:17:48,049
+É certo.
+
+434
+00:17:48,049 --> 00:17:49,049
+E...
+
+435
+00:17:49,049 --> 00:17:50,049
+principalmente,
+
+436
+00:17:50,049 --> 00:17:51,049
+eu acho quando você estava ali
+
+437
+00:17:51,049 --> 00:17:52,049
+da...
+
+438
+00:17:52,049 --> 00:17:53,049
+fazendo a entrevista, né?
+
+439
+00:17:53,049 --> 00:17:54,049
+A parte ali,
+
+440
+00:17:54,049 --> 00:17:55,049
+provavelmente,
+
+441
+00:17:55,049 --> 00:17:56,049
+comportamental,
+
+442
+00:17:56,049 --> 00:17:57,049
+seu funcionamento,
+
+443
+00:17:57,049 --> 00:17:58,049
+com certeza,
+
+444
+00:17:58,049 --> 00:17:59,049
+também disse muito, né?
+
+445
+00:17:59,049 --> 00:18:00,049
+Na hora que você
+
+446
+00:18:00,049 --> 00:18:02,049
+teve ali a oportunidade de falar
+
+447
+00:18:02,049 --> 00:18:03,049
+quem também é o Giana,
+
+448
+00:18:03,049 --> 00:18:04,049
+e a sua parte...
+
+449
+00:18:04,049 --> 00:18:06,049
+ou seu conhecimento,
+
+450
+00:18:06,049 --> 00:18:07,049
+sua experiência,
+
+451
+00:18:07,049 --> 00:18:08,049
+e tudo mais.
+
+452
+00:18:08,049 --> 00:18:09,049
+E aí, você notou também,
+
+453
+00:18:09,049 --> 00:18:10,049
+que essa parte também
+
+454
+00:18:10,049 --> 00:18:11,049
+da mentoria,
+
+455
+00:18:11,049 --> 00:18:12,049
+essas dinâmicas que a gente faz,
+
+456
+00:18:12,049 --> 00:18:13,049
+é...
+
+457
+00:18:13,049 --> 00:18:14,049
+nas calls, né?
+
+458
+00:18:14,049 --> 00:18:15,049
+Deixe...
+
+459
+00:18:15,049 --> 00:18:16,049
+abrir ali,
+
+460
+00:18:16,049 --> 00:18:17,049
+conversar,
+
+461
+00:18:17,049 --> 00:18:18,049
+te ajuda também,
+
+462
+00:18:18,049 --> 00:18:19,049
+nesse sentido,
+
+463
+00:18:19,049 --> 00:18:20,049
+de você também,
+
+464
+00:18:20,049 --> 00:18:21,049
+e para o mais preparado?
+
+465
+00:18:21,049 --> 00:18:22,049
+Sim, ajuda com certeza,
+
+466
+00:18:22,049 --> 00:18:23,049
+porque...
+
+467
+00:18:23,049 --> 00:18:24,049
+essas...
+
+468
+00:18:24,049 --> 00:18:25,049
+essas dinâmicas
+
+469
+00:18:25,049 --> 00:18:26,049
+você está ali,
+
+470
+00:18:26,049 --> 00:18:27,049
+abrindo a câmera,
+
+471
+00:18:27,049 --> 00:18:28,049
+conversando com pessoas
+
+472
+00:18:28,049 --> 00:18:29,049
+que talvez você não conhece,
+
+473
+00:18:29,049 --> 00:18:30,049
+eu ve muito pouco,
+
+474
+00:18:30,049 --> 00:18:31,049
+no seu dia a dia,
+
+475
+00:18:31,049 --> 00:18:33,049
+isso contribui bastante
+
+476
+00:18:33,049 --> 00:18:34,049
+para você,
+
+477
+00:18:34,049 --> 00:18:35,049
+às vezes,
+
+478
+00:18:35,049 --> 00:18:37,049
+tirar um pouco da timidez.
+
+479
+00:18:37,049 --> 00:18:38,049
+Eu particularmente,
+
+480
+00:18:38,049 --> 00:18:39,049
+em um tempo atrás,
+
+481
+00:18:39,049 --> 00:18:40,049
+eu tinha muita dificuldade de
+
+482
+00:18:40,049 --> 00:18:41,049
+falar com pessoas,
+
+483
+00:18:41,049 --> 00:18:42,049
+frente a frente,
+
+484
+00:18:42,049 --> 00:18:43,049
+ou no macau,
+
+485
+00:18:43,049 --> 00:18:44,049
+assim, por...
+
+486
+00:18:44,049 --> 00:18:45,049
+por...
+
+487
+00:18:45,049 --> 00:18:46,049
+por vídeo chamada.
+
+488
+00:18:46,049 --> 00:18:47,049
+E...
+
+489
+00:18:47,049 --> 00:18:49,049
+então, isso foi...
+
+490
+00:18:49,049 --> 00:18:50,049
+isso me levou muito
+
+491
+00:18:50,049 --> 00:18:51,049
+mais tranquilidade
+
+492
+00:18:51,049 --> 00:18:52,049
+na hora da entrevista,
+
+493
+00:18:52,049 --> 00:18:54,049
+para conversar com as pessoas,
+
+494
+00:18:54,049 --> 00:18:55,049
+foi...
+
+495
+00:18:55,049 --> 00:18:56,049
+tipo...
+
+496
+00:18:56,049 --> 00:18:57,049
+muito mais...
+
+497
+00:18:57,049 --> 00:18:58,049
+eu não tive nervosismo,
+
+498
+00:18:58,049 --> 00:18:59,049
+obviamente,
+
+499
+00:18:59,049 --> 00:19:00,049
+um pouco sempre tem
+
+500
+00:19:00,049 --> 00:19:01,049
+a questão de ansiedade,
+
+501
+00:19:01,049 --> 00:19:02,049
+tudo mais,
+
+502
+00:19:02,049 --> 00:19:03,049
+mas foi uma conversa
+
+503
+00:19:03,049 --> 00:19:04,049
+muito tranquila,
+
+504
+00:19:04,049 --> 00:19:05,049
+que fluiu muito bem,
+
+505
+00:19:05,049 --> 00:19:06,049
+então...
+
+506
+00:19:06,049 --> 00:19:08,049
+vale muito a pena,
+
+507
+00:19:08,049 --> 00:19:09,049
+essas...
+
+508
+00:19:09,049 --> 00:19:10,049
+as causas da mentoria,
+
+509
+00:19:10,049 --> 00:19:11,049
+para a gente,
+
+510
+00:19:11,049 --> 00:19:12,049
+também praticar
+
+511
+00:19:12,049 --> 00:19:13,049
+esse tipo de conversa
+
+512
+00:19:13,049 --> 00:19:14,049
+com as outras pessoas, né?
+
+513
+00:19:14,049 --> 00:19:15,049
+E...
+
+514
+00:19:15,049 --> 00:19:17,049
+o tempo de fato ali
+
+515
+00:19:17,049 --> 00:19:18,049
+levou para você
+
+516
+00:19:18,049 --> 00:19:20,049
+alcançar esse novo emprego,
+
+517
+00:19:20,049 --> 00:19:21,049
+tempo ali mais ou menos,
+
+518
+00:19:21,049 --> 00:19:22,049
+que é um...
+
+519
+00:19:22,049 --> 00:19:23,049
+entre a inscrição
+
+520
+00:19:23,049 --> 00:19:24,049
+da vaga,
+
+521
+00:19:24,049 --> 00:19:25,049
+ou entre...
+
+522
+00:19:25,049 --> 00:19:26,049
+entre a...
+
+523
+00:19:26,049 --> 00:19:27,049
+ou...
+
+524
+00:19:27,049 --> 00:19:28,049
+o período que você entrou,
+
+525
+00:19:28,049 --> 00:19:29,049
+o período que você entrou na mentoria,
+
+526
+00:19:29,049 --> 00:19:30,049
+e quando você conseguiu se realocar,
+
+527
+00:19:30,049 --> 00:19:31,049
+assim,
+
+528
+00:19:31,049 --> 00:19:32,049
+foi de...
+
+529
+00:19:32,049 --> 00:19:33,049
+de agosto a dezembro,
+
+530
+00:19:33,049 --> 00:19:34,049
+mais ou menos,
+
+531
+00:19:34,049 --> 00:19:35,049
+final de agosto,
+
+532
+00:19:35,049 --> 00:19:36,049
+a dezembro,
+
+533
+00:19:36,049 --> 00:19:37,049
+então, foi...
+
+534
+00:19:37,049 --> 00:19:38,049
+quatro meses,
+
+535
+00:19:38,049 --> 00:19:39,049
+né?
+
+536
+00:19:39,049 --> 00:19:40,049
+É, basicamente,
+
+537
+00:19:40,049 --> 00:19:41,049
+quatro meses, né?
+
+538
+00:19:41,049 --> 00:19:42,049
+Ura, hein.
+
+539
+00:19:42,049 --> 00:19:43,049
+Então, de fato ali,
+
+540
+00:19:43,049 --> 00:19:44,049
+na hora que você entrou,
+
+541
+00:19:44,049 --> 00:19:45,049
+começou, de fato,
+
+542
+00:19:45,049 --> 00:19:46,049
+a seguir,
+
+543
+00:19:46,049 --> 00:19:47,049
+do planejamento,
+
+544
+00:19:47,049 --> 00:19:48,049
+né?
+
+545
+00:19:48,049 --> 00:19:49,049
+As coisas começaram
+
+546
+00:19:49,049 --> 00:19:50,049
+a resultar,
+
+547
+00:19:50,049 --> 00:19:51,049
+ganhou um emprego
+
+548
+00:19:51,049 --> 00:19:52,049
+já no dia no novo,
+
+549
+00:19:52,049 --> 00:19:53,049
+emprego no novo.
+
+550
+00:19:53,049 --> 00:19:54,049
+A gente...
+
+551
+00:19:54,049 --> 00:19:55,049
+de Natal ali,
+
+552
+00:19:55,049 --> 00:19:56,049
+a gente...
+
+553
+00:19:56,049 --> 00:19:57,049
+exatamente.
+
+554
+00:19:57,049 --> 00:19:58,049
+E antes disso,
+
+555
+00:19:58,049 --> 00:19:59,049
+obviamente, eu tinha participado
+
+556
+00:19:59,049 --> 00:20:01,049
+de outras entrevistas ali,
+
+557
+00:20:01,049 --> 00:20:02,049
+não lembro agora o número,
+
+558
+00:20:02,049 --> 00:20:03,049
+mas foram várias ali,
+
+559
+00:20:03,049 --> 00:20:04,049
+entrevistas,
+
+560
+00:20:04,049 --> 00:20:05,049
+que, felizmente,
+
+561
+00:20:05,049 --> 00:20:06,049
+não passei naquelas,
+
+562
+00:20:06,049 --> 00:20:08,049
+mas também foram entrevistas
+
+563
+00:20:08,049 --> 00:20:09,049
+que...
+
+564
+00:20:09,049 --> 00:20:11,049
+que eu já fui conseguindo
+
+565
+00:20:11,049 --> 00:20:12,049
+por causa da visibilidade
+
+566
+00:20:12,049 --> 00:20:13,049
+que eu vinha tendo, né?
+
+567
+00:20:13,049 --> 00:20:14,049
+Legal.
+
+568
+00:20:14,049 --> 00:20:15,049
+E hoje, ja,
+
+569
+00:20:15,049 --> 00:20:16,049
+como é que você se sente ali,
+
+570
+00:20:16,049 --> 00:20:19,049
+entre os objetivos alcançados,
+
+571
+00:20:19,049 --> 00:20:21,049
+aumentou a expectativa,
+
+572
+00:20:21,049 --> 00:20:22,049
+você viu que você
+
+573
+00:20:22,049 --> 00:20:23,049
+pode muito mais além,
+
+574
+00:20:23,049 --> 00:20:25,049
+como é que você se vê hoje?
+
+575
+00:20:25,049 --> 00:20:26,049
+Com certeza, não.
+
+576
+00:20:26,049 --> 00:20:27,049
+É expectativo,
+
+577
+00:20:27,049 --> 00:20:28,049
+agora está bem mais alta.
+
+578
+00:20:28,049 --> 00:20:29,049
+Eu...
+
+579
+00:20:29,049 --> 00:20:30,049
+o meu principal objetivo,
+
+580
+00:20:30,049 --> 00:20:31,049
+quando a gente conversou lá,
+
+581
+00:20:31,049 --> 00:20:32,049
+no começo,
+
+582
+00:20:32,049 --> 00:20:33,049
+é que eu falei,
+
+583
+00:20:33,049 --> 00:20:34,049
+exatamente,
+
+584
+00:20:34,049 --> 00:20:35,049
+voltar para o mercado,
+
+585
+00:20:35,049 --> 00:20:36,049
+então, esse...
+
+586
+00:20:36,049 --> 00:20:37,049
+Essa foi uma grande vitória,
+
+587
+00:20:37,049 --> 00:20:38,049
+eu consegui, né,
+
+588
+00:20:38,049 --> 00:20:39,049
+voltar,
+
+589
+00:20:39,049 --> 00:20:40,049
+estou trabalhando agora,
+
+590
+00:20:40,049 --> 00:20:41,049
+estou bem feliz,
+
+591
+00:20:41,049 --> 00:20:42,049
+e agora,
+
+592
+00:20:42,049 --> 00:20:43,049
+vou me restavelhecer,
+
+593
+00:20:43,049 --> 00:20:44,049
+financeiramente,
+
+594
+00:20:44,049 --> 00:20:45,049
+para conseguir fazer a primeira prova
+
+595
+00:20:45,049 --> 00:20:46,049
+da certificação,
+
+596
+00:20:46,049 --> 00:20:47,049
+quanto antes, né?
+
+597
+00:20:47,049 --> 00:20:48,049
+Legal.
+
+598
+00:20:48,049 --> 00:20:49,049
+Isso aí, ja,
+
+599
+00:20:49,049 --> 00:20:50,049
+não pode parar, né?
+
+600
+00:20:50,049 --> 00:20:51,049
+Sempre fala, né?
+
+601
+00:20:51,049 --> 00:20:52,049
+Quem está dentro da tecnologia,
+
+602
+00:20:52,049 --> 00:20:54,049
+ele é um aprendizado continuo, né?
+
+603
+00:20:54,049 --> 00:20:55,049
+Exatamente.
+
+604
+00:20:55,049 --> 00:20:56,049
+Se tiver toda essa experiência,
+
+605
+00:20:56,049 --> 00:20:57,049
+agora, entendeu,
+
+606
+00:20:57,049 --> 00:20:58,049
+que é...
+
+607
+00:20:58,049 --> 00:20:59,049
+é necessário, né?
+
+608
+00:20:59,049 --> 00:21:01,049
+Essa atualização constante,
+
+609
+00:21:01,049 --> 00:21:02,049
+continuar estudando,
+
+610
+00:21:02,049 --> 00:21:04,049
+você viu que ainda tem muito caminho,
+
+611
+00:21:04,049 --> 00:21:05,049
+ainda,
+
+612
+00:21:05,049 --> 00:21:06,049
+e dá para crescer,
+
+613
+00:21:06,049 --> 00:21:07,049
+tem muito...
+
+614
+00:21:07,049 --> 00:21:08,049
+que estudar ali,
+
+615
+00:21:08,049 --> 00:21:09,049
+para funcionar,
+
+616
+00:21:09,049 --> 00:21:10,049
+um cênior,
+
+617
+00:21:10,049 --> 00:21:11,049
+exatamente,
+
+618
+00:21:11,049 --> 00:21:12,049
+mas já sabe, né?
+
+619
+00:21:12,049 --> 00:21:13,049
+Já entendeu, ali.
+
+620
+00:21:13,049 --> 00:21:14,049
+Como você pode alcançar isso,
+
+621
+00:21:14,049 --> 00:21:16,049
+isso é bem legal, né?
+
+622
+00:21:16,049 --> 00:21:17,049
+ter essa mentalidade, né?
+
+623
+00:21:17,049 --> 00:21:18,049
+Que exatamente,
+
+624
+00:21:18,049 --> 00:21:19,049
+o que a gente falou,
+
+625
+00:21:19,049 --> 00:21:20,049
+é que a gente não é importante, né?
+
+626
+00:21:20,049 --> 00:21:21,049
+Trum mudar o comportamento,
+
+627
+00:21:21,049 --> 00:21:22,049
+entender que,
+
+628
+00:21:22,049 --> 00:21:23,049
+depende de você,
+
+629
+00:21:23,049 --> 00:21:24,049
+ver aí,
+
+630
+00:21:24,049 --> 00:21:25,049
+para alcançar os objetivos,
+
+631
+00:21:25,049 --> 00:21:26,049
+também, né?
+
+632
+00:21:26,049 --> 00:21:27,049
+E ja,
+
+633
+00:21:27,049 --> 00:21:28,049
+qual é a mensagem ali
+
+634
+00:21:28,049 --> 00:21:30,049
+que você gostaria de deixar
+
+635
+00:21:30,049 --> 00:21:31,049
+para as pessoas que se veem,
+
+636
+00:21:31,049 --> 00:21:32,049
+às vezes,
+
+637
+00:21:32,049 --> 00:21:33,049
+nessa mesma situação que você estava,
+
+638
+00:21:33,049 --> 00:21:35,049
+se vale a pena estudar,
+
+639
+00:21:35,049 --> 00:21:36,049
+a se vale,
+
+640
+00:21:36,049 --> 00:21:37,049
+a pena pagar mentoria,
+
+641
+00:21:37,049 --> 00:21:39,049
+o que você gostaria de deixar
+
+642
+00:21:39,049 --> 00:21:40,049
+e de recado?
+
+643
+00:21:40,049 --> 00:21:41,049
+Olha aí, eu particularmente,
+
+644
+00:21:41,049 --> 00:21:42,049
+acho que vale muito a pena.
+
+645
+00:21:42,049 --> 00:21:44,049
+Não há nada que a gente
+
+646
+00:21:44,049 --> 00:21:46,049
+faça sozinho
+
+647
+00:21:46,049 --> 00:21:47,049
+que, em grupo,
+
+648
+00:21:47,049 --> 00:21:48,049
+não seja muito melhor.
+
+649
+00:21:48,049 --> 00:21:50,049
+Em relação aos estudos,
+
+650
+00:21:50,049 --> 00:21:51,049
+você vai sempre ter
+
+651
+00:21:51,049 --> 00:21:53,049
+visões diferentes,
+
+652
+00:21:53,049 --> 00:21:54,049
+você talvez pode estar travado
+
+653
+00:21:54,049 --> 00:21:55,049
+alguma coisa
+
+654
+00:21:55,049 --> 00:21:56,049
+e outra pessoa talvez passou
+
+655
+00:21:56,049 --> 00:21:57,049
+pelas mesmas,
+
+656
+00:21:57,049 --> 00:21:58,049
+a situação que você,
+
+657
+00:21:58,049 --> 00:21:59,049
+ele vai te dar alguma dica
+
+658
+00:21:59,049 --> 00:22:00,049
+de como sair.
+
+659
+00:22:00,049 --> 00:22:02,049
+Então,
+
+660
+00:22:02,049 --> 00:22:03,049
+a parte mentalia vale
+
+661
+00:22:03,049 --> 00:22:05,049
+muito a pena seguir,
+
+662
+00:22:05,049 --> 00:22:06,049
+se possível,
+
+663
+00:22:06,049 --> 00:22:07,049
+também,
+
+664
+00:22:07,049 --> 00:22:08,049
+participar das versões,
+
+665
+00:22:08,049 --> 00:22:09,049
+eu,
+
+666
+00:22:09,049 --> 00:22:11,049
+nos últimos vezes,
+
+667
+00:22:11,049 --> 00:22:12,049
+busquei participar
+
+668
+00:22:12,049 --> 00:22:13,049
+do máximo de versões possíveis,
+
+669
+00:22:13,049 --> 00:22:14,049
+não participei de todos,
+
+670
+00:22:14,049 --> 00:22:15,049
+mas,
+
+671
+00:22:15,049 --> 00:22:17,049
+acho que eu consegui sempre
+
+672
+00:22:17,049 --> 00:22:18,049
+ter muito a pena,
+
+673
+00:22:18,049 --> 00:22:19,049
+foi muito aprendizado mesmo,
+
+674
+00:22:19,049 --> 00:22:20,049
+e,
+
+675
+00:22:20,049 --> 00:22:21,049
+também,
+
+676
+00:22:21,049 --> 00:22:25,049
+quem está na situação parecida,
+
+677
+00:22:25,049 --> 00:22:27,049
+de buscar o emprego,
+
+678
+00:22:27,049 --> 00:22:29,049
+atualiza o link de em fica,
+
+679
+00:22:29,049 --> 00:22:30,049
+fazendo publicações
+
+680
+00:22:30,049 --> 00:22:31,049
+do que você sabe,
+
+681
+00:22:31,049 --> 00:22:32,049
+do que você está aprendendo,
+
+682
+00:22:32,049 --> 00:22:34,049
+vale muito a pena que um dia,
+
+683
+00:22:34,049 --> 00:22:35,049
+a pessoa vai conseguir
+
+684
+00:22:35,049 --> 00:22:36,049
+voltar no mercado trabalho.
+
+685
+00:22:36,049 --> 00:22:38,049
+Com certeza, a mentoria ajuda muito,
+
+686
+00:22:38,049 --> 00:22:41,049
+nessa questão de otimizar tempo,
+
+687
+00:22:41,049 --> 00:22:42,049
+de endereçar,
+
+688
+00:22:42,049 --> 00:22:43,049
+né?
+
+689
+00:22:43,049 --> 00:22:44,049
+No caminho certo,
+
+690
+00:22:44,049 --> 00:22:45,049
+ali para você não perder,
+
+691
+00:22:45,049 --> 00:22:46,049
+o time,
+
+692
+00:22:46,049 --> 00:22:48,049
+a gente vai perder as coisas
+
+693
+00:22:48,049 --> 00:22:49,049
+da coisa,
+
+694
+00:22:49,049 --> 00:22:50,049
+a deixar correr muito tempo,
+
+695
+00:22:50,049 --> 00:22:52,049
+e isso é bacana, né?
+
+696
+00:22:52,049 --> 00:22:53,049
+A gente vai falar,
+
+697
+00:22:53,049 --> 00:22:54,049
+tem um grupo ali,
+
+698
+00:22:54,049 --> 00:22:55,049
+de apoio, né?
+
+699
+00:22:55,049 --> 00:22:56,049
+poder levantar a mão,
+
+700
+00:22:56,049 --> 00:22:57,049
+tem alguém,
+
+701
+00:22:57,049 --> 00:22:58,049
+para poder ajudar,
+
+702
+00:22:58,049 --> 00:23:00,049
+ou passar algum direcionamento,
+
+703
+00:23:00,049 --> 00:23:01,049
+com certeza,
+
+704
+00:23:01,049 --> 00:23:02,049
+ali,
+
+705
+00:23:02,049 --> 00:23:03,049
+é um baita benefício,
+
+706
+00:23:03,049 --> 00:23:05,049
+e fora que nem aqui na BBLC,
+
+707
+00:23:05,049 --> 00:23:07,049
+a gente tem as imersões, né?
+
+708
+00:23:07,049 --> 00:23:08,049
+Para todo mundo,
+
+709
+00:23:08,049 --> 00:23:09,049
+ali,
+
+710
+00:23:09,049 --> 00:23:10,049
+que é da mentoria,
+
+711
+00:23:10,049 --> 00:23:11,049
+você mesmo,
+
+712
+00:23:11,049 --> 00:23:12,049
+foi um cara ali que,
+
+713
+00:23:12,049 --> 00:23:13,049
+fez boa parte,
+
+714
+00:23:13,049 --> 00:23:14,049
+né?
+
+715
+00:23:14,049 --> 00:23:15,049
+A gente sempre fala,
+
+716
+00:23:15,049 --> 00:23:16,049
+para ficar bom,
+
+717
+00:23:16,049 --> 00:23:17,049
+precisa repetir, né?
+
+718
+00:23:17,049 --> 00:23:19,049
+E a gente leva esse mantra, né?
+
+719
+00:23:19,049 --> 00:23:20,049
+Pessoal,
+
+720
+00:23:20,049 --> 00:23:21,049
+precisa repetir,
+
+721
+00:23:21,049 --> 00:23:22,049
+precisa repetir.
+
+722
+00:23:22,049 --> 00:23:23,049
+É verdade.
+
+723
+00:23:23,049 --> 00:23:24,049
+Porque isso vai te dar segurança, né?
+
+724
+00:23:24,049 --> 00:23:25,049
+A gente sabe que vai dar segurança
+
+725
+00:23:25,049 --> 00:23:27,049
+e vai fazer você ficar bom, né?
+
+726
+00:23:27,049 --> 00:23:28,049
+É verdade, né?
+
+727
+00:23:28,049 --> 00:23:30,049
+Isso é bem bacana, ja.
+
+728
+00:23:30,049 --> 00:23:32,049
+E nós aqui do time da BBLC,
+
+729
+00:23:32,049 --> 00:23:33,049
+ficamos muito felizes, né?
+
+730
+00:23:33,049 --> 00:23:34,049
+Com, de fato,
+
+731
+00:23:34,049 --> 00:23:35,049
+com seus resultados,
+
+732
+00:23:35,049 --> 00:23:37,049
+queremos que você vá muito mais longe,
+
+733
+00:23:37,049 --> 00:23:39,049
+e você é mais um caso ali, né?
+
+734
+00:23:39,049 --> 00:23:41,049
+Que comprouva que funciona, né?
+
+735
+00:23:41,049 --> 00:23:42,049
+A nossa metodologia,
+
+736
+00:23:42,049 --> 00:23:44,049
+de jeito que a gente trabalha,
+
+737
+00:23:44,049 --> 00:23:46,049
+de jeito que a gente leva.
+
+738
+00:23:46,049 --> 00:23:47,049
+Então, também,
+
+739
+00:23:47,049 --> 00:23:48,049
+é mérito seu, né?
+
+740
+00:23:48,049 --> 00:23:50,049
+Por fazer o que a gente pede,
+
+741
+00:23:50,049 --> 00:23:51,049
+e o seguir,
+
+742
+00:23:51,049 --> 00:23:52,049
+acreditar, né,
+
+743
+00:23:52,049 --> 00:23:53,049
+acima de tudo.
+
+744
+00:23:53,049 --> 00:23:54,049
+Eu acho que é importante.
+
+745
+00:23:54,049 --> 00:23:56,049
+Às vezes, a pessoa fica meio sético, né?
+
+746
+00:23:56,049 --> 00:23:57,049
+Fala boa,
+
+747
+00:23:57,049 --> 00:23:58,049
+mas contra intuitivo,
+
+748
+00:23:58,049 --> 00:23:59,049
+e a gente fala,
+
+749
+00:23:59,049 --> 00:24:00,049
+só faz, né?
+
+750
+00:24:00,049 --> 00:24:01,049
+Faz lá,
+
+751
+00:24:01,049 --> 00:24:02,049
+espera as coisas acontecer,
+
+752
+00:24:02,049 --> 00:24:04,049
+porque na hora certa,
+
+753
+00:24:04,049 --> 00:24:06,049
+vai ser bom,
+
+754
+00:24:06,049 --> 00:24:07,049
+vai dar certo, né?
+
+755
+00:24:07,049 --> 00:24:08,049
+Então,
+
+756
+00:24:08,049 --> 00:24:09,049
+o seu aprova disso,
+
+757
+00:24:09,049 --> 00:24:10,049
+levou a sério,
+
+758
+00:24:10,049 --> 00:24:11,049
+entendeu ali,
+
+759
+00:24:11,049 --> 00:24:12,049
+que precisava mudar,
+
+760
+00:24:12,049 --> 00:24:14,049
+às vezes, a gente precisa mudar o nosso comportamento,
+
+761
+00:24:14,049 --> 00:24:15,049
+mesmo que a gente,
+
+762
+00:24:15,049 --> 00:24:16,049
+às vezes, não queira, né?
+
+763
+00:24:16,049 --> 00:24:18,049
+E às vezes, pode ser um fator que trava gente, né?
+
+764
+00:24:18,049 --> 00:24:20,049
+O jeito que a gente lida com as coisas, né?
+
+765
+00:24:20,049 --> 00:24:21,049
+Então, aqui,
+
+766
+00:24:21,049 --> 00:24:22,049
+da metodologia,
+
+767
+00:24:22,049 --> 00:24:23,049
+a gente tem essa,
+
+768
+00:24:23,049 --> 00:24:24,049
+a gente tem essa liberdade, né?
+
+769
+00:24:24,049 --> 00:24:25,049
+De conversar,
+
+770
+00:24:25,049 --> 00:24:26,049
+chamar ali,
+
+771
+00:24:26,049 --> 00:24:27,049
+vão fazer um bate-papo,
+
+772
+00:24:27,049 --> 00:24:28,049
+a gente passa algumas orientações,
+
+773
+00:24:28,049 --> 00:24:29,049
+então,
+
+774
+00:24:29,049 --> 00:24:31,049
+é bem bacana.
+
+775
+00:24:31,049 --> 00:24:32,049
+Então, já,
+
+776
+00:24:32,049 --> 00:24:33,049
+mais uma vez,
+
+777
+00:24:33,049 --> 00:24:34,049
+obrigado aí,
+
+778
+00:24:34,049 --> 00:24:35,049
+por esse bate-papo,
+
+779
+00:24:35,049 --> 00:24:36,049
+conti conosco,
+
+780
+00:24:36,049 --> 00:24:37,049
+porque é só o começo, né?
+
+781
+00:24:37,049 --> 00:24:38,049
+E que venham,
+
+782
+00:24:38,049 --> 00:24:39,049
+também,
+
+783
+00:24:39,049 --> 00:24:40,049
+novas vitórias,
+
+784
+00:24:40,049 --> 00:24:41,049
+aí, que é o DBLC,
+
+785
+00:24:41,049 --> 00:24:43,049
+ele possa contribuir com elas, tá bom?
+
+786
+00:24:43,049 --> 00:24:44,049
+Claro,
+
+787
+00:24:44,049 --> 00:24:45,049
+Chote, bola,
+
+788
+00:24:45,049 --> 00:24:46,049
+muito obrigado aí, caros.
+
+789
+00:24:46,049 --> 00:24:47,049
+Valeu, já,
+
+790
+00:24:47,049 --> 00:24:48,049
+obrigado,
+
+791
+00:24:48,049 --> 00:24:49,049
+tchau, tchau.
+
+792
+00:24:49,049 --> 00:24:50,049
+Bom,
+
+793
+00:24:50,049 --> 00:24:53,650
+seja muito bem-vindo,
+
+794
+00:24:53,650 --> 00:24:54,650
+a mais um vídeo aqui,
+
+795
+00:24:54,650 --> 00:24:55,650
+de estudo de caso,
+
+796
+00:24:55,650 --> 00:24:56,650
+da DBLC,
+
+797
+00:24:56,650 --> 00:24:58,650
+a gente convido aqui,
+
+798
+00:24:58,650 --> 00:24:59,650
+pessoas que participam
+
+799
+00:24:59,650 --> 00:25:01,650
+das nossas mentorias,
+
+800
+00:25:01,650 --> 00:25:02,650
+que estão tendo resultado
+
+801
+00:25:02,650 --> 00:25:03,650
+para a gente poder conversar,
+
+802
+00:25:03,650 --> 00:25:05,650
+entender como está a sela jornada
+
+803
+00:25:05,650 --> 00:25:06,650
+dentro da mentoria,
+
+804
+00:25:06,650 --> 00:25:08,650
+e compartilhar algumas experiências
+
+805
+00:25:08,650 --> 00:25:09,650
+de quem realmente
+
+806
+00:25:09,650 --> 00:25:10,650
+está conseguindo chegar lá
+
+807
+00:25:10,650 --> 00:25:11,650
+com alguns objetivos,
+
+808
+00:25:11,650 --> 00:25:13,650
+e hoje eu vou ter o prazer aqui
+
+809
+00:25:13,650 --> 00:25:14,650
+de chamar o Beck en Bauer,
+
+810
+00:25:14,650 --> 00:25:16,650
+para a gente poder fazer esse bate-papo,
+
+811
+00:25:16,650 --> 00:25:18,650
+contando porquido,
+
+812
+00:25:18,650 --> 00:25:19,650
+o que ele tem feito aí,
+
+813
+00:25:19,650 --> 00:25:20,650
+da mentoria,
+
+814
+00:25:20,650 --> 00:25:21,650
+tudo bom, Beck?
+
+815
+00:25:21,650 --> 00:25:22,650
+Tudo bem?
+
+816
+00:25:22,650 --> 00:25:23,650
+Que ideia?
+
+817
+00:25:23,650 --> 00:25:24,650
+Prazer está falando com o tio Green,
+
+818
+00:25:24,650 --> 00:25:25,650
+espero poder colaborar aí.
+
+819
+00:25:25,650 --> 00:25:26,650
+Chote, bola,
+
+820
+00:25:26,650 --> 00:25:28,650
+o prazer é todo mesmo, meu irmão.
+
+821
+00:25:28,650 --> 00:25:29,650
+E vamos lá, Beck,
+
+822
+00:25:29,650 --> 00:25:30,650
+de você fala de onde?
+
+823
+00:25:30,650 --> 00:25:31,650
+Qual a cidade?
+
+824
+00:25:31,650 --> 00:25:32,650
+Fala aqui do Rio de Janeiro,
+
+825
+00:25:32,650 --> 00:25:34,650
+somora da Dijuca.
+
+826
+00:25:34,650 --> 00:25:35,650
+É isso.
+
+827
+00:25:35,650 --> 00:25:36,650
+Que legal.
+
+828
+00:25:36,650 --> 00:25:37,650
+Tenho o capital.
+
+829
+00:25:37,650 --> 00:25:38,650
+Chote, bola.
+
+830
+00:25:38,650 --> 00:25:39,650
+E vamos lá, Beck?
+
+831
+00:25:39,650 --> 00:25:41,650
+Qual foi o objetivo aí de você
+
+832
+00:25:41,650 --> 00:25:43,650
+ter entrado dentro da mentoria, cara?
+
+833
+00:25:43,650 --> 00:25:45,650
+Como que você me conheceu aí, cara, no início?
+
+834
+00:25:45,650 --> 00:25:47,650
+Era engraçado, né?
+
+835
+00:25:47,650 --> 00:25:49,650
+Porque eu já tinha visto
+
+836
+00:25:49,650 --> 00:25:51,650
+com um vídeo da DBA-CM,
+
+837
+00:25:51,650 --> 00:25:53,650
+eu já estava estudando
+
+838
+00:25:53,650 --> 00:25:55,650
+em sozinho, sem metodologia,
+
+839
+00:25:55,650 --> 00:25:57,650
+nenhuma, só ter a estudar.
+
+840
+00:25:57,650 --> 00:25:59,650
+E eu vira a primeira vez do seu vídeo
+
+841
+00:25:59,650 --> 00:26:00,650
+e não entrei nele.
+
+842
+00:26:00,650 --> 00:26:02,650
+Eu não sei porque exatamente,
+
+843
+00:26:02,650 --> 00:26:03,650
+eu não curti assim.
+
+844
+00:26:03,650 --> 00:26:05,650
+Não me atraiu.
+
+845
+00:26:05,650 --> 00:26:06,650
+E depois da segunda vez,
+
+846
+00:26:06,650 --> 00:26:07,650
+não, cara.
+
+847
+00:26:07,650 --> 00:26:08,650
+Ele está falando,
+
+848
+00:26:08,650 --> 00:26:10,650
+ele está faz sentido de que está falando.
+
+849
+00:26:10,650 --> 00:26:13,650
+E eu resolvi entrar.
+
+850
+00:26:13,650 --> 00:26:15,650
+E aí, cara, sem poxa,
+
+851
+00:26:15,650 --> 00:26:17,650
+a DBA-CM ajudou,
+
+852
+00:26:17,650 --> 00:26:20,650
+absolutamente porque, com método que vocês
+
+853
+00:26:20,650 --> 00:26:23,650
+utilizam para poder fazer os treinamentos
+
+854
+00:26:23,650 --> 00:26:24,650
+e tudo mais,
+
+855
+00:26:24,650 --> 00:26:27,650
+mudou assim a chave do que eu estava fazendo,
+
+856
+00:26:27,650 --> 00:26:28,650
+me deu morte.
+
+857
+00:26:28,650 --> 00:26:30,650
+E eu consegui me direcionar para poder,
+
+858
+00:26:30,650 --> 00:26:31,650
+eu chegue onde eu estou agora.
+
+859
+00:26:31,650 --> 00:26:33,650
+Foi muito importante.
+
+860
+00:26:33,650 --> 00:26:34,650
+E legal, meu irmão.
+
+861
+00:26:34,650 --> 00:26:35,650
+E vamos lá.
+
+862
+00:26:35,650 --> 00:26:36,650
+O seu treinamento,
+
+863
+00:26:36,650 --> 00:26:38,650
+você estava trabalhando na área de tecnologia ou não?
+
+864
+00:26:38,650 --> 00:26:41,650
+Eu tinha acabado de sair de uma empresa,
+
+865
+00:26:41,650 --> 00:26:42,650
+um pouco tempo,
+
+866
+00:26:42,650 --> 00:26:44,650
+eu estava trabalhando,
+
+867
+00:26:44,650 --> 00:26:47,650
+já era a função da área de tecnologia,
+
+868
+00:26:47,650 --> 00:26:49,650
+mas não trabalhava com uma variedade.
+
+869
+00:26:49,650 --> 00:26:51,650
+Eu vim de uma outra formação
+
+870
+00:26:51,650 --> 00:26:53,650
+e não trabalhava com isso.
+
+871
+00:26:53,650 --> 00:26:55,650
+Então, eu estava trabalhando no momento.
+
+872
+00:26:55,650 --> 00:26:56,650
+Perfeito.
+
+873
+00:26:56,650 --> 00:26:57,650
+E aí, cara?
+
+874
+00:26:57,650 --> 00:26:59,650
+Então, seu objetivo foi entrar para, de fato,
+
+875
+00:26:59,650 --> 00:27:01,650
+voltar para o mercado.
+
+876
+00:27:01,650 --> 00:27:03,650
+Meu objetivo foi voltar para o mercado
+
+877
+00:27:03,650 --> 00:27:05,650
+e ir para a área de curiosidades,
+
+878
+00:27:05,650 --> 00:27:07,650
+que, enfim, quando eu saí,
+
+879
+00:27:07,650 --> 00:27:10,650
+eu não sabia exatamente o que eu deveria fazer.
+
+880
+00:27:10,650 --> 00:27:12,650
+Então, conversar com alguns amigos
+
+881
+00:27:12,650 --> 00:27:13,650
+para mim é um referência,
+
+882
+00:27:13,650 --> 00:27:15,650
+assim, de pessoas que tinham atendido
+
+883
+00:27:15,650 --> 00:27:16,650
+uns objetivos,
+
+884
+00:27:16,650 --> 00:27:17,650
+e todos falam,
+
+885
+00:27:17,650 --> 00:27:18,650
+mas mesmo quando eu para mim,
+
+886
+00:27:18,650 --> 00:27:19,650
+para o Beck,
+
+887
+00:27:19,650 --> 00:27:20,650
+vai para a área de bom.
+
+888
+00:27:20,650 --> 00:27:21,650
+Você tem um perfil de isso,
+
+889
+00:27:21,650 --> 00:27:22,650
+vai para a área de bom.
+
+890
+00:27:22,650 --> 00:27:23,650
+Aí, enfim,
+
+891
+00:27:23,650 --> 00:27:25,650
+eu via essas pessoas
+
+892
+00:27:25,650 --> 00:27:26,650
+e comecei a procurar,
+
+893
+00:27:26,650 --> 00:27:27,650
+daí surgiu,
+
+894
+00:27:27,650 --> 00:27:29,650
+a parceria cada pé ao cedo.
+
+895
+00:27:29,650 --> 00:27:30,650
+Show de bola.
+
+896
+00:27:30,650 --> 00:27:31,650
+E aí, Beck,
+
+897
+00:27:31,650 --> 00:27:32,650
+dentro da mentoria,
+
+898
+00:27:32,650 --> 00:27:34,650
+o que a gente setou algumas estratégias
+
+899
+00:27:34,650 --> 00:27:36,650
+aí, alguns objetivos para você,
+
+900
+00:27:36,650 --> 00:27:38,650
+e você realmente viu
+
+901
+00:27:38,650 --> 00:27:39,650
+quanto quer importante
+
+902
+00:27:39,650 --> 00:27:41,650
+tirar uma certificação, né, cara?
+
+903
+00:27:41,650 --> 00:27:43,650
+Então, o que você considera aí, cara,
+
+904
+00:27:43,650 --> 00:27:44,650
+é que a certificação
+
+905
+00:27:44,650 --> 00:27:45,650
+é ajudar-o aí,
+
+906
+00:27:45,650 --> 00:27:48,650
+nessa sua busca para voltar para o mercado?
+
+907
+00:27:48,650 --> 00:27:50,650
+Cara, a certificação foi,
+
+908
+00:27:50,650 --> 00:27:52,650
+a certificação não tira,
+
+909
+00:27:52,650 --> 00:27:53,650
+ele foi decisivo, assim,
+
+910
+00:27:53,650 --> 00:27:54,650
+para isso,
+
+911
+00:27:54,650 --> 00:27:55,650
+porque, realmente, eu não,
+
+912
+00:27:55,650 --> 00:27:56,650
+eu saio do zero,
+
+913
+00:27:56,650 --> 00:27:58,650
+eu não conhecia nada de
+
+914
+00:27:58,650 --> 00:27:59,650
+possibilidade,
+
+915
+00:27:59,650 --> 00:28:00,650
+nem de órgão,
+
+916
+00:28:00,650 --> 00:28:01,650
+então,
+
+917
+00:28:01,650 --> 00:28:02,650
+seguindo a metadeira de aberta,
+
+918
+00:28:02,650 --> 00:28:04,650
+sem estudando pressificações,
+
+919
+00:28:04,650 --> 00:28:06,650
+era um mundo se abriu, assim,
+
+920
+00:28:06,650 --> 00:28:07,650
+aquele mundo que, para mim,
+
+921
+00:28:07,650 --> 00:28:08,650
+era uma caixa apreta,
+
+922
+00:28:08,650 --> 00:28:09,650
+que eu ouviu
+
+923
+00:28:09,650 --> 00:28:10,650
+desreviagem,
+
+924
+00:28:10,650 --> 00:28:11,650
+conversando,
+
+925
+00:28:11,650 --> 00:28:12,650
+e eu não entendia
+
+926
+00:28:12,650 --> 00:28:13,650
+e passei a entender,
+
+927
+00:28:13,650 --> 00:28:14,650
+aquilo me diz um feliz,
+
+928
+00:28:14,650 --> 00:28:16,650
+porque já era um sonho
+
+929
+00:28:16,650 --> 00:28:17,650
+antigo meu,
+
+930
+00:28:17,650 --> 00:28:18,650
+conhecia esse universo.
+
+931
+00:28:18,650 --> 00:28:19,650
+E, cara,
+
+932
+00:28:19,650 --> 00:28:20,650
+ajudar a abertar
+
+933
+00:28:20,650 --> 00:28:22,650
+todas as altas dos professores,
+
+934
+00:28:22,650 --> 00:28:23,650
+a sua mentoria foi
+
+935
+00:28:23,650 --> 00:28:25,650
+decisiva, assim, para mim.
+
+936
+00:28:25,650 --> 00:28:26,650
+E legal.
+
+937
+00:28:26,650 --> 00:28:27,650
+É, eu considero, cara,
+
+938
+00:28:27,650 --> 00:28:28,650
+que a certificação,
+
+939
+00:28:28,650 --> 00:28:29,650
+ela tem dois pontos positivos,
+
+940
+00:28:29,650 --> 00:28:30,650
+primeiro,
+
+941
+00:28:30,650 --> 00:28:32,650
+a questão de conhecimento
+
+942
+00:28:32,650 --> 00:28:33,650
+pessoal,
+
+943
+00:28:33,650 --> 00:28:34,650
+de segurança,
+
+944
+00:28:34,650 --> 00:28:35,650
+pessoal,
+
+945
+00:28:35,650 --> 00:28:36,650
+que impacta muito.
+
+946
+00:28:36,650 --> 00:28:37,650
+E, depois,
+
+947
+00:28:37,650 --> 00:28:38,650
+a questão externa, né,
+
+948
+00:28:38,650 --> 00:28:39,650
+de você ser visto,
+
+949
+00:28:39,650 --> 00:28:40,650
+pelo mercado, como um cara
+
+950
+00:28:40,650 --> 00:28:41,650
+certificado,
+
+951
+00:28:41,650 --> 00:28:42,650
+tem um diferencial dentro de um
+
+952
+00:28:42,650 --> 00:28:43,650
+processo seletivo.
+
+953
+00:28:43,650 --> 00:28:45,650
+Voltando aqui no primeiro ponto,
+
+954
+00:28:45,650 --> 00:28:46,650
+cara, o que você acredita
+
+955
+00:28:46,650 --> 00:28:49,650
+que você evoluiu
+
+956
+00:28:49,650 --> 00:28:50,650
+com relação à sua confiança
+
+957
+00:28:50,650 --> 00:28:51,650
+sobre banco de dados,
+
+958
+00:28:51,650 --> 00:28:52,650
+depois que você estudou
+
+959
+00:28:52,650 --> 00:28:54,650
+para uma prova de certificação, cara.
+
+960
+00:28:54,650 --> 00:28:55,650
+Ah, eu vou muito,
+
+961
+00:28:55,650 --> 00:28:56,650
+ah, eu vou muito,
+
+962
+00:28:56,650 --> 00:28:57,650
+realmente,
+
+963
+00:28:57,650 --> 00:28:58,650
+eu não sabia
+
+964
+00:28:58,650 --> 00:28:59,650
+como fazer,
+
+965
+00:28:59,650 --> 00:29:00,650
+e
+
+966
+00:29:00,650 --> 00:29:02,650
+afestina as alas,
+
+967
+00:29:02,650 --> 00:29:03,650
+aprendi a como fazer,
+
+968
+00:29:03,650 --> 00:29:04,650
+estudando a certificação,
+
+969
+00:29:04,650 --> 00:29:06,650
+aí você começa a se sentir, realmente,
+
+970
+00:29:06,650 --> 00:29:07,650
+muito mais seguro,
+
+971
+00:29:07,650 --> 00:29:09,650
+porque você vai repetir um 16,
+
+972
+00:29:09,650 --> 00:29:10,650
+vai praticando,
+
+973
+00:29:10,650 --> 00:29:11,650
+então, assim,
+
+974
+00:29:11,650 --> 00:29:12,650
+foi decisivo, assim,
+
+975
+00:29:12,650 --> 00:29:14,650
+eu admito a nossa...
+
+976
+00:29:14,650 --> 00:29:15,650
+Eu sou de extrema confiança,
+
+977
+00:29:15,650 --> 00:29:17,650
+mas com a mentoria,
+
+978
+00:29:17,650 --> 00:29:18,650
+e com a certificação,
+
+979
+00:29:18,650 --> 00:29:20,650
+eu mirro muito em cima,
+
+980
+00:29:20,650 --> 00:29:22,650
+então, me ajudou decisivamente.
+
+981
+00:29:22,650 --> 00:29:23,650
+Acho que é legal,
+
+982
+00:29:23,650 --> 00:29:24,650
+também, que foi com você,
+
+983
+00:29:24,650 --> 00:29:26,650
+foi uma pessoa que seguiu a risca
+
+984
+00:29:26,650 --> 00:29:28,650
+nossa metodologia,
+
+985
+00:29:28,650 --> 00:29:29,650
+você falou que,
+
+986
+00:29:29,650 --> 00:29:30,650
+praticando, né?
+
+987
+00:29:30,650 --> 00:29:31,650
+Então, na diante,
+
+988
+00:29:31,650 --> 00:29:32,650
+você estudou para a certificação,
+
+989
+00:29:32,650 --> 00:29:33,650
+também,
+
+990
+00:29:33,650 --> 00:29:34,650
+só lendo,
+
+991
+00:29:34,650 --> 00:29:35,650
+só na teoria, né?
+
+992
+00:29:35,650 --> 00:29:36,650
+Então, o que te dá aquela confiança,
+
+993
+00:29:36,650 --> 00:29:37,650
+é realmente,
+
+994
+00:29:37,650 --> 00:29:38,650
+você estudou para a certificação,
+
+995
+00:29:38,650 --> 00:29:39,650
+fazendo laboratórios,
+
+996
+00:29:39,650 --> 00:29:40,650
+pegando cada tópico,
+
+997
+00:29:40,650 --> 00:29:41,650
+simbolando o mundo real,
+
+998
+00:29:41,650 --> 00:29:43,650
+e isso contribui bastante,
+
+999
+00:29:43,650 --> 00:29:44,650
+também, né, Beck,
+
+1000
+00:29:44,650 --> 00:29:45,650
+para que a gente consiga,
+
+1001
+00:29:45,650 --> 00:29:47,650
+entendeu o que está fazendo,
+
+1002
+00:29:47,650 --> 00:29:48,650
+não só passar numa prova, né?
+
+1003
+00:29:48,650 --> 00:29:49,650
+Não sem dúvida,
+
+1004
+00:29:49,650 --> 00:29:50,650
+ou mais que você,
+
+1005
+00:29:50,650 --> 00:29:52,650
+talvez não ler exatamente,
+
+1006
+00:29:52,650 --> 00:29:53,650
+do comando,
+
+1007
+00:29:53,650 --> 00:29:54,650
+você tem que dar,
+
+1008
+00:29:55,650 --> 00:29:56,650
+você,
+
+1009
+00:29:56,650 --> 00:29:57,650
+se a pessoa falar
+
+1010
+00:29:57,650 --> 00:29:58,650
+sobre o determinado assunto,
+
+1011
+00:29:58,650 --> 00:29:59,650
+você sabe do que ela está falando,
+
+1012
+00:29:59,650 --> 00:30:01,650
+e o mais legal você aprende a como
+
+1013
+00:30:01,650 --> 00:30:02,650
+pesquisar aquilo,
+
+1014
+00:30:02,650 --> 00:30:04,650
+como você procurar,
+
+1015
+00:30:04,650 --> 00:30:06,650
+e se desenvolver e fazer o que a pessoa
+
+1016
+00:30:06,650 --> 00:30:07,650
+está pedindo para você.
+
+1017
+00:30:07,650 --> 00:30:09,650
+Isso foi muito importante.
+
+1018
+00:30:09,650 --> 00:30:10,650
+Que legal, meu irmão.
+
+1019
+00:30:10,650 --> 00:30:11,650
+E vamos lá, Beck?
+
+1020
+00:30:11,650 --> 00:30:13,650
+Aí, eu vou no indo aí, cara,
+
+1021
+00:30:13,650 --> 00:30:14,650
+você botou com o objetivo
+
+1022
+00:30:14,650 --> 00:30:15,650
+tirar o ACP,
+
+1023
+00:30:15,650 --> 00:30:17,650
+com a certificação hoje de administração de banco de dados.
+
+1024
+00:30:17,650 --> 00:30:20,650
+Como que foi essa jornada aí de estudos, cara?
+
+1025
+00:30:20,650 --> 00:30:22,650
+Você fez duas provas, cara?
+
+1026
+00:30:22,650 --> 00:30:23,650
+Eu vou falar aqui,
+
+1027
+00:30:23,650 --> 00:30:24,650
+muitos profissores,
+
+1028
+00:30:24,650 --> 00:30:26,650
+que trabalham com o banco de dados orgos,
+
+1029
+00:30:26,650 --> 00:30:27,650
+não tem essa certificação.
+
+1030
+00:30:27,650 --> 00:30:29,650
+Foi quanto tempo,
+
+1031
+00:30:29,650 --> 00:30:30,650
+mais ou menos, de estudo, cara,
+
+1032
+00:30:30,650 --> 00:30:31,650
+para você conseguir,
+
+1033
+00:30:31,650 --> 00:30:33,650
+dos chegar nessa certificação?
+
+1034
+00:30:33,650 --> 00:30:35,650
+Olha, foi mais ou menos
+
+1035
+00:30:35,650 --> 00:30:37,650
+com uma de dois meses,
+
+1036
+00:30:37,650 --> 00:30:38,650
+para pegar o CFN,
+
+1037
+00:30:38,650 --> 00:30:39,650
+uma de dois meses,
+
+1038
+00:30:39,650 --> 00:30:41,650
+a primeira, como era um assunto novo,
+
+1039
+00:30:41,650 --> 00:30:42,650
+eu acabei demorando mais,
+
+1040
+00:30:42,650 --> 00:30:43,650
+um pouco mais,
+
+1041
+00:30:43,650 --> 00:30:45,650
+que normalmente as pessoas
+
+1042
+00:30:45,650 --> 00:30:46,650
+possam demorar,
+
+1043
+00:30:46,650 --> 00:30:47,650
+então, ali, eu demorei um pouquinho mais,
+
+1044
+00:30:47,650 --> 00:30:49,650
+porque eu aprendendo o assunto novo.
+
+1045
+00:30:49,650 --> 00:30:51,650
+Quando eu fui fazer a segunda prova,
+
+1046
+00:30:51,650 --> 00:30:52,650
+como eu já tinha,
+
+1047
+00:30:52,650 --> 00:30:53,650
+eu conheci um pouco mais do universo,
+
+1048
+00:30:53,650 --> 00:30:54,650
+os gargões,
+
+1049
+00:30:54,650 --> 00:30:55,650
+de tudo,
+
+1050
+00:30:55,650 --> 00:30:56,650
+já foi dentro do tempo,
+
+1051
+00:30:56,650 --> 00:30:57,650
+mais ou menos,
+
+1052
+00:30:57,650 --> 00:30:58,650
+de um dos normal,
+
+1053
+00:30:58,650 --> 00:30:59,650
+né?
+
+1054
+00:30:59,650 --> 00:31:00,650
+Devam em seis meses.
+
+1055
+00:31:00,650 --> 00:31:01,650
+Mas acho que no total,
+
+1056
+00:31:01,650 --> 00:31:02,650
+para tirar o CFN,
+
+1057
+00:31:02,650 --> 00:31:04,650
+foi, eu acho que leva isso.
+
+1058
+00:31:04,650 --> 00:31:05,650
+No meu caso,
+
+1059
+00:31:05,650 --> 00:31:06,650
+eu levou ano mais ou menos um ano
+
+1060
+00:31:06,650 --> 00:31:07,650
+e dois meses mais ou menos,
+
+1061
+00:31:07,650 --> 00:31:08,650
+para eu conseguir.
+
+1062
+00:31:08,650 --> 00:31:09,650
+Legal.
+
+1063
+00:31:09,650 --> 00:31:11,650
+E eu lembro que você chegou
+
+1064
+00:31:11,650 --> 00:31:12,650
+até renovar a mentoria,
+
+1065
+00:31:12,650 --> 00:31:13,650
+mesmo não estando
+
+1066
+00:31:13,650 --> 00:31:15,650
+trabalhando na área ainda, né?
+
+1067
+00:31:15,650 --> 00:31:16,650
+Mas se tinha passado na primeira prova
+
+1068
+00:31:16,650 --> 00:31:18,650
+quando você fez a renovação, né?
+
+1069
+00:31:18,650 --> 00:31:19,650
+Olha, ele é meu,
+
+1070
+00:31:19,650 --> 00:31:20,650
+acho que eu não.
+
+1071
+00:31:21,650 --> 00:31:23,650
+Acho que já tinha feito a primeira prova,
+
+1072
+00:31:23,650 --> 00:31:24,650
+já tinha feito a primeira prova,
+
+1073
+00:31:24,650 --> 00:31:25,650
+assim,
+
+1074
+00:31:25,650 --> 00:31:26,650
+eu não estava trabalhando ainda,
+
+1075
+00:31:26,650 --> 00:31:28,650
+mas eu confei muito,
+
+1076
+00:31:28,650 --> 00:31:30,650
+porque eu sabia que aquilo era o caminho,
+
+1077
+00:31:30,650 --> 00:31:31,650
+eu chutava com você dizia,
+
+1078
+00:31:31,650 --> 00:31:32,650
+eu tentava seguir,
+
+1079
+00:31:32,650 --> 00:31:33,650
+ou mais que,
+
+1080
+00:31:33,650 --> 00:31:34,650
+a pergisa,
+
+1081
+00:31:34,650 --> 00:31:36,650
+você precisa mudar muita forma de pensar,
+
+1082
+00:31:36,650 --> 00:31:38,650
+você precisa adaptar um pouco,
+
+1083
+00:31:38,650 --> 00:31:39,650
+é aquilo, né?
+
+1084
+00:31:39,650 --> 00:31:41,650
+Você é um profissional que já trabalhou com isso,
+
+1085
+00:31:41,650 --> 00:31:42,650
+eu tenho que confiar no que você fala,
+
+1086
+00:31:42,650 --> 00:31:43,650
+entendeu?
+
+1087
+00:31:43,650 --> 00:31:44,650
+Se você está falando uma coisa,
+
+1088
+00:31:44,650 --> 00:31:45,650
+você está falando tudo bem.
+
+1089
+00:31:45,650 --> 00:31:46,650
+Então, eu preciso acreditar na colher,
+
+1090
+00:31:46,650 --> 00:31:47,650
+também.
+
+1091
+00:31:47,650 --> 00:31:48,650
+Então, eu acreditava,
+
+1092
+00:31:48,650 --> 00:31:50,650
+e mesmo eu não ainda não estou trabalhando,
+
+1093
+00:31:50,650 --> 00:31:52,650
+eu fiz a renovação da aventoria,
+
+1094
+00:31:52,650 --> 00:31:54,650
+para poder continuar praticando,
+
+1095
+00:31:54,650 --> 00:31:56,650
+e seguindo aquilo ali que a gente estava
+
+1096
+00:31:56,650 --> 00:31:57,650
+determinado a fazer.
+
+1097
+00:31:57,650 --> 00:31:58,650
+Legal.
+
+1098
+00:31:58,650 --> 00:31:59,650
+E eu lembro, cara,
+
+1099
+00:31:59,650 --> 00:32:00,650
+que você tinha algumas questões ali
+
+1100
+00:32:00,650 --> 00:32:01,650
+de insegurança, com as questões,
+
+1101
+00:32:01,650 --> 00:32:03,650
+até meio comportamentais,
+
+1102
+00:32:03,650 --> 00:32:04,650
+para até pegar quando o seu pé.
+
+1103
+00:32:04,650 --> 00:32:06,650
+E o quanto que isso foi importante,
+
+1104
+00:32:06,650 --> 00:32:07,650
+cara, até alguém ali,
+
+1105
+00:32:07,650 --> 00:32:08,650
+para poder estar te cobrando,
+
+1106
+00:32:08,650 --> 00:32:10,650
+para te ajudar a definir um plano,
+
+1107
+00:32:10,650 --> 00:32:11,650
+de falar o que faltava,
+
+1108
+00:32:11,650 --> 00:32:12,650
+te dar esse feedback.
+
+1109
+00:32:12,650 --> 00:32:13,650
+Cara, você acredita que sozinho,
+
+1110
+00:32:13,650 --> 00:32:15,650
+você conseguiu ter passado
+
+1111
+00:32:15,650 --> 00:32:16,650
+nessa certificação?
+
+1112
+00:32:16,650 --> 00:32:17,650
+Olha, eu não teria conseguido,
+
+1113
+00:32:17,650 --> 00:32:18,650
+sozinho, não teria dado,
+
+1114
+00:32:18,650 --> 00:32:19,650
+senha, o apoio,
+
+1115
+00:32:19,650 --> 00:32:20,650
+da diversidade,
+
+1116
+00:32:20,650 --> 00:32:21,650
+o seu apoio,
+
+1117
+00:32:21,650 --> 00:32:22,650
+como você fala,
+
+1118
+00:32:22,650 --> 00:32:23,650
+o truco,
+
+1119
+00:32:23,650 --> 00:32:24,650
+você trocada,
+
+1120
+00:32:24,650 --> 00:32:26,650
+como você gostou de usar essa explicação,
+
+1121
+00:32:26,650 --> 00:32:27,650
+eu não teria o povo,
+
+1122
+00:32:27,650 --> 00:32:28,650
+mas aquilo também,
+
+1123
+00:32:28,650 --> 00:32:29,650
+ninguém se aspectou,
+
+1124
+00:32:29,650 --> 00:32:30,650
+eu tenho que falar,
+
+1125
+00:32:30,650 --> 00:32:31,650
+que eu fui humilde,
+
+1126
+00:32:31,650 --> 00:32:32,650
+para reconhecer,
+
+1127
+00:32:32,650 --> 00:32:33,650
+que você sabia mais de que eu.
+
+1128
+00:32:33,650 --> 00:32:35,650
+E isso é uma equate de questões,
+
+1129
+00:32:35,650 --> 00:32:36,650
+às vezes.
+
+1130
+00:32:36,650 --> 00:32:38,650
+Preciso desenvolver um pouco,
+
+1131
+00:32:38,650 --> 00:32:39,650
+a humildade,
+
+1132
+00:32:39,650 --> 00:32:41,650
+uma é a questão de você,
+
+1133
+00:32:41,650 --> 00:32:42,650
+se rebaixar,
+
+1134
+00:32:42,650 --> 00:32:44,650
+é você saber reconhecer
+
+1135
+00:32:44,650 --> 00:32:45,650
+que outra pessoa,
+
+1136
+00:32:45,650 --> 00:32:48,650
+pode ter alguma coisa
+
+1137
+00:32:48,650 --> 00:32:49,650
+para contribuir,
+
+1138
+00:32:49,650 --> 00:32:50,650
+com o que você quer.
+
+1139
+00:32:50,650 --> 00:32:51,650
+Você não quer uma coisa,
+
+1140
+00:32:51,650 --> 00:32:52,650
+então, óbola,
+
+1141
+00:32:52,650 --> 00:32:53,650
+aquela outra pessoa sabe o caminho,
+
+1142
+00:32:53,650 --> 00:32:54,650
+para chegar ali,
+
+1143
+00:32:54,650 --> 00:32:55,650
+então, bolsa,
+
+1144
+00:32:55,650 --> 00:32:56,650
+aquela pessoa,
+
+1145
+00:32:56,650 --> 00:32:57,650
+procure seja humilde,
+
+1146
+00:32:57,650 --> 00:32:58,650
+partir,
+
+1147
+00:32:58,650 --> 00:32:59,650
+que faça o que ela está pedindo,
+
+1148
+00:32:59,650 --> 00:33:00,650
+enfim,
+
+1149
+00:33:00,650 --> 00:33:02,650
+aí, o que vai acontecer
+
+1150
+00:33:02,650 --> 00:33:03,650
+da consequência?
+
+1151
+00:33:03,650 --> 00:33:04,650
+Cara, muito bom isso,
+
+1152
+00:33:04,650 --> 00:33:05,650
+porque acredito que,
+
+1153
+00:33:05,650 --> 00:33:06,650
+quem não é humilde,
+
+1154
+00:33:06,650 --> 00:33:07,650
+cara, quem fala que,
+
+1155
+00:33:07,650 --> 00:33:08,650
+o cara que é arrogante
+
+1156
+00:33:08,650 --> 00:33:10,650
+fala que eu já sei tudo, né?
+
+1157
+00:33:10,650 --> 00:33:11,650
+Ele deixa de aprender
+
+1158
+00:33:11,650 --> 00:33:12,650
+um monte de coisas, né?
+
+1159
+00:33:12,650 --> 00:33:13,650
+Deixa de chegar em objetivos
+
+1160
+00:33:13,650 --> 00:33:14,650
+que muitas vezes,
+
+1161
+00:33:14,650 --> 00:33:15,650
+ele não,
+
+1162
+00:33:15,650 --> 00:33:16,650
+ele chegaria,
+
+1163
+00:33:16,650 --> 00:33:17,650
+às vezes, em menos tempo,
+
+1164
+00:33:17,650 --> 00:33:18,650
+enfim,
+
+1165
+00:33:18,650 --> 00:33:19,650
+por não ter essa humildade, cara,
+
+1166
+00:33:19,650 --> 00:33:20,650
+e parabéns,
+
+1167
+00:33:20,650 --> 00:33:21,650
+quero reconhecer aqui,
+
+1168
+00:33:21,650 --> 00:33:22,650
+até mesmo,
+
+1169
+00:33:22,650 --> 00:33:24,650
+nesse bate-papo, cara,
+
+1170
+00:33:24,650 --> 00:33:25,650
+o quanto que você for
+
+1171
+00:33:25,650 --> 00:33:26,650
+humilde de acreditar,
+
+1172
+00:33:26,650 --> 00:33:27,650
+de atrás,
+
+1173
+00:33:27,650 --> 00:33:28,650
+de realmente,
+
+1174
+00:33:28,650 --> 00:33:29,650
+buscar,
+
+1175
+00:33:29,650 --> 00:33:31,650
+a fazer aquilo que precisava ser feito,
+
+1176
+00:33:31,650 --> 00:33:32,650
+e ouvir esses feedbacks, né?
+
+1177
+00:33:32,650 --> 00:33:33,650
+Cara,
+
+1178
+00:33:33,650 --> 00:33:34,650
+porque muitas pessoas desistem.
+
+1179
+00:33:34,650 --> 00:33:35,650
+Às vezes,
+
+1180
+00:33:35,650 --> 00:33:37,650
+escuta uma coisa que não é o que ela gostaria,
+
+1181
+00:33:37,650 --> 00:33:38,650
+e vai lá e desiste,
+
+1182
+00:33:38,650 --> 00:33:39,650
+já não vou renovar a mentoria,
+
+1183
+00:33:39,650 --> 00:33:40,650
+você vai fora,
+
+1184
+00:33:40,650 --> 00:33:42,650
+e isso acontece bastante.
+
+1185
+00:33:42,650 --> 00:33:43,650
+E aí, vamos lá, Beck,
+
+1186
+00:33:43,650 --> 00:33:44,650
+você conseguiu passar
+
+1187
+00:33:44,650 --> 00:33:45,650
+na primeira prova da CP,
+
+1188
+00:33:45,650 --> 00:33:46,650
+na segunda prova da CP,
+
+1189
+00:33:46,650 --> 00:33:48,650
+e aí depois disso, cara,
+
+1190
+00:33:48,650 --> 00:33:49,650
+sentiu mais confiante
+
+1191
+00:33:49,650 --> 00:33:50,650
+pra começar realmente
+
+1192
+00:33:50,650 --> 00:33:51,650
+de se aplicar em vagas
+
+1193
+00:33:51,650 --> 00:33:52,650
+e ir pra cima do mercado?
+
+1194
+00:33:52,650 --> 00:33:53,650
+Sim,
+
+1195
+00:33:53,650 --> 00:33:54,650
+quando eu tirei meu CP,
+
+1196
+00:33:54,650 --> 00:33:55,650
+assim,
+
+1197
+00:33:55,650 --> 00:33:57,650
+é perfil de cada um, né?
+
+1198
+00:33:57,650 --> 00:33:58,650
+Tem pessoas que já tenho
+
+1199
+00:33:58,650 --> 00:33:59,650
+aquele conhecimento,
+
+1200
+00:33:59,650 --> 00:34:01,650
+e com uma certificação
+
+1201
+00:34:01,650 --> 00:34:02,650
+já baixo,
+
+1202
+00:34:02,650 --> 00:34:03,650
+mas com o que eu não tinha
+
+1203
+00:34:03,650 --> 00:34:04,650
+trabalhado no mercado pra mim,
+
+1204
+00:34:04,650 --> 00:34:05,650
+era muito importante,
+
+1205
+00:34:05,650 --> 00:34:06,650
+tem o CP pra que eu te peça
+
+1206
+00:34:06,650 --> 00:34:07,650
+essa confiança,
+
+1207
+00:34:07,650 --> 00:34:08,650
+e aí depois que eu tirei a CP,
+
+1208
+00:34:08,650 --> 00:34:09,650
+eu fui pra cima e cara,
+
+1209
+00:34:09,650 --> 00:34:11,650
+foi muito pouco tempo,
+
+1210
+00:34:11,650 --> 00:34:12,650
+depois que eu comecei a procurar,
+
+1211
+00:34:12,650 --> 00:34:13,650
+eu consegui.
+
+1212
+00:34:13,650 --> 00:34:15,650
+Eu acho que depois que eu tirei a CP,
+
+1213
+00:34:15,650 --> 00:34:16,650
+eu sei,
+
+1214
+00:34:16,650 --> 00:34:17,650
+dois meses depois,
+
+1215
+00:34:17,650 --> 00:34:19,650
+eu já estava empregado.
+
+1216
+00:34:19,650 --> 00:34:21,650
+Então, eu tô muito importante.
+
+1217
+00:34:21,650 --> 00:34:22,650
+Que legal, cara,
+
+1218
+00:34:22,650 --> 00:34:23,650
+você tirou a certificação
+
+1219
+00:34:23,650 --> 00:34:24,650
+a CP foi em que mês, cara?
+
+1220
+00:34:24,650 --> 00:34:25,650
+Foi em dezembro,
+
+1221
+00:34:25,650 --> 00:34:27,650
+no iníciozinho de dezembro,
+
+1222
+00:34:27,650 --> 00:34:29,650
+de dezembro,
+
+1223
+00:34:29,650 --> 00:34:30,650
+em cinco,
+
+1224
+00:34:30,650 --> 00:34:32,650
+e agora já em fevereiro,
+
+1225
+00:34:32,650 --> 00:34:34,650
+já estou trabalhando, já.
+
+1226
+00:34:34,650 --> 00:34:35,650
+Show de bola, cara.
+
+1227
+00:34:35,650 --> 00:34:37,650
+E aí, então,
+
+1228
+00:34:37,650 --> 00:34:38,650
+foram basicamente dois meses,
+
+1229
+00:34:38,650 --> 00:34:39,650
+a nele fevereiro,
+
+1230
+00:34:39,650 --> 00:34:40,650
+e como que foi esse processo,
+
+1231
+00:34:40,650 --> 00:34:41,650
+aí depois, cara,
+
+1232
+00:34:41,650 --> 00:34:42,650
+conseguiu,
+
+1233
+00:34:42,650 --> 00:34:43,650
+de fato, ser chamado
+
+1234
+00:34:43,650 --> 00:34:44,650
+pra mais entrevistas,
+
+1235
+00:34:44,650 --> 00:34:45,650
+depois de você ter uma certificação
+
+1236
+00:34:45,650 --> 00:34:46,650
+a CP no Currículo?
+
+1237
+00:34:46,650 --> 00:34:47,650
+Sim,
+
+1238
+00:34:47,650 --> 00:34:48,650
+mudou um pouco,
+
+1239
+00:34:48,650 --> 00:34:49,650
+mudou um pouco,
+
+1240
+00:34:49,650 --> 00:34:50,650
+sim, eu percebi isso,
+
+1241
+00:34:50,650 --> 00:34:51,650
+estava sendo mais chamado,
+
+1242
+00:34:51,650 --> 00:34:52,650
+estava tanto pouco,
+
+1243
+00:34:52,650 --> 00:34:53,650
+mais oportunidades,
+
+1244
+00:34:53,650 --> 00:34:55,650
+e aí eu ia pros intervistas,
+
+1245
+00:34:55,650 --> 00:34:56,650
+assim, o que eu tinha,
+
+1246
+00:34:56,650 --> 00:34:57,650
+para o era a minha principal,
+
+1247
+00:34:57,650 --> 00:34:58,650
+lá, na verdade,
+
+1248
+00:34:58,650 --> 00:34:59,650
+de muita diferença.
+
+1249
+00:34:59,650 --> 00:35:00,650
+Era...
