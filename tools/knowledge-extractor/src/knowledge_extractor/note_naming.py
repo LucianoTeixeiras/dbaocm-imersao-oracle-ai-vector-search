@@ -19,8 +19,41 @@ SOURCE_SUFFIXES = {".txt", ".md", ".pdf", ".srt"}
 
 def note_filename_for(source: Path | str) -> str:
     stem = Path(source).stem.strip()
-    if stem.startswith(("aula-", "mod")):
+    # Se já tem prefixo canônico (aula-, modXX-, podcast-, video-, doc-, apostila-, guia-)
+    if stem.startswith(
+        (
+            "aula-",
+            "mod",
+            "podcast-",
+            "video-",
+            "doc-",
+            "apostila-",
+            "guia-",
+            "onboarding-",
+            "setup-",
+        )
+    ):
         return f"{slugify(stem)}.md"
+
+    # Se começa com midia-modXX ou midia-podcast, limpa o midia- e usa o canônico
+    m_midia_mod = re.match(
+        r"^midia[-_]mod(\d{2})[-_]aula[-_](\d{2})[-_](.+)$", stem, re.IGNORECASE
+    )
+    if m_midia_mod:
+        m_num = int(m_midia_mod.group(1))
+        a_num = int(m_midia_mod.group(2))
+        return f"mod{m_num:02d}-aula-{a_num:02d}-{slugify(m_midia_mod.group(3))}.md"
+
+    m_midia_pod = re.match(
+        r"^midia[-_]podcast[-_](?:(\d{2,4})[-_])?(.+)$", stem, re.IGNORECASE
+    )
+    if m_midia_pod:
+        p_num = m_midia_pod.group(1)
+        p_title = slugify(m_midia_pod.group(2))
+        if p_num:
+            return f"podcast-{int(p_num):02d}-{p_title}.md"
+        return f"podcast-{p_title}.md"
+
     m = re.match(r"^(\d+)[-_ ]*(.+)$", stem)
     if m:
         return f"aula-{int(m.group(1)):02d}-{slugify(m.group(2))}.md"

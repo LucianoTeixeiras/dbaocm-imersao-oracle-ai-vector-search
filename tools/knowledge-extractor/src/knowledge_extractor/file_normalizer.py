@@ -82,6 +82,44 @@ def slugify(text: str) -> str:
 
 def suggest_normalized_stem(stem: str, suffix: str) -> str:
     """Gera sugestão padronizada de nome (stem sem extensão) a partir do padrão institucional."""
+    # 0. Limpeza de prefixos redundantes e idempotência de re-normalização
+    # Ex: midia-mod02-aula-01-titulo -> mod02-aula-01-titulo
+    midia_mod_match = re.match(
+        r"^midia[-_]mod(\d{2})[-_]aula[-_](\d{2})[-_](.+)$", stem, re.IGNORECASE
+    )
+    if midia_mod_match:
+        m_num = int(midia_mod_match.group(1))
+        a_num = int(midia_mod_match.group(2))
+        clean_title = slugify(midia_mod_match.group(3))
+        return f"mod{m_num:02d}-aula-{a_num:02d}-{clean_title}"
+
+    # Ex: midia-podcast-titulo -> podcast-titulo
+    midia_pod_match = re.match(
+        r"^midia[-_]podcast[-_](?:(\d{2,4})[-_])?(.+)$", stem, re.IGNORECASE
+    )
+    if midia_pod_match:
+        p_num = midia_pod_match.group(1)
+        p_title = slugify(midia_pod_match.group(2))
+        if p_num:
+            return f"podcast-{int(p_num):02d}-{p_title}"
+        return f"podcast-{p_title}"
+
+    # Já normalizado: modXX-aula-YY-titulo
+    already_mod_match = re.match(
+        r"^mod(\d{2})[-_]aula[-_](\d{2})[-_](.+)$", stem, re.IGNORECASE
+    )
+    if already_mod_match:
+        m_num = int(already_mod_match.group(1))
+        a_num = int(already_mod_match.group(2))
+        clean_title = slugify(already_mod_match.group(3))
+        return f"mod{m_num:02d}-aula-{a_num:02d}-{clean_title}"
+
+    # Já normalizado: aula-YY-titulo
+    already_aula_match = re.match(r"^aula[-_](\d{2})[-_](.+)$", stem, re.IGNORECASE)
+    if already_aula_match:
+        a_num = int(already_aula_match.group(1))
+        return f"aula-{a_num:02d}-{slugify(already_aula_match.group(2))}"
+
     # 1. Checagem em mapeamentos diretos de PDF/UUID
     if stem in KNOWN_PDF_MAPPINGS:
         return KNOWN_PDF_MAPPINGS[stem]
@@ -98,7 +136,6 @@ def suggest_normalized_stem(stem: str, suffix: str) -> str:
         num = int(mod_match.group(1))
         title = mod_match.group(2)
         clean_title = slugify(title)
-        # Ajustes de títulos comuns para brevidade e clareza
         clean_title = clean_title.replace(
             "o-que-voce-vera-durante-o-curso-como-praticar-e-nossa-comunidade",
             "visao-geral-pratica-e-comunidade",
@@ -128,7 +165,7 @@ def suggest_normalized_stem(stem: str, suffix: str) -> str:
         clean_title = slugify(title)
         return f"aula-{num:02d}-{clean_title}"
 
-    # 5. Padrão: "MÓDULO XXYY - TÍTULO" (ex: MÓDULO 0101 -> aula-01-... | MÓDULO 0201 -> mod02-aula-01-...)
+    # 5. Padrão: "MÓDULO XXYY - TÍTULO" (ex: MÓDULO 0101 -> mod01-aula-01-... | MÓDULO 0201 -> mod02-aula-01-...)
     mod_prefix_match = re.match(
         r"^m[oó]dulo\s*(\d{2})(\d{2})\s*[-_]\s*(.+)$", stem, re.IGNORECASE
     )
@@ -137,10 +174,7 @@ def suggest_normalized_stem(stem: str, suffix: str) -> str:
         aula_num = int(mod_prefix_match.group(2))
         title = mod_prefix_match.group(3)
         clean_title = slugify(title)
-        if mod_num == 1:
-            return f"aula-{aula_num:02d}-{clean_title}"
-        else:
-            return f"mod{mod_num:02d}-aula-{aula_num:02d}-{clean_title}"
+        return f"mod{mod_num:02d}-aula-{aula_num:02d}-{clean_title}"
 
     # 5.1 Padrão Anhanguera AVA: "MOD-XX-Ambiente[_ ]Virtual[_ ]Aprendizagem-YY"
     ava_match = re.match(
@@ -157,6 +191,19 @@ def suggest_normalized_stem(stem: str, suffix: str) -> str:
     if re.match(r"^mod[-_]?\d*[-_]?apresentacao$", stem, re.IGNORECASE):
         return "video-00-apresentacao"
 
+    # 5.3 Padrão Podcast
+    podcast_match = re.match(
+        r"^(?:midia[-_])?podcast\s*[-_]?\s*(?:(\d{2,4})\s*[-_]\s*)?(.+)$",
+        stem,
+        re.IGNORECASE,
+    )
+    if podcast_match:
+        p_num = podcast_match.group(1)
+        p_title = slugify(podcast_match.group(2))
+        if p_num:
+            return f"podcast-{int(p_num):02d}-{p_title}"
+        return f"podcast-{p_title}"
+
     # 6. Fallback genérico
     clean = slugify(stem)
     if suffix.lower() == ".pdf" and not (
@@ -164,7 +211,9 @@ def suggest_normalized_stem(stem: str, suffix: str) -> str:
     ):
         clean = f"doc-{clean}"
     elif suffix.lower() in {".mp4", ".mkv", ".mov"} and not (
-        clean.startswith(("aula", "onboarding", "setup", "midia"))
+        clean.startswith(
+            ("aula", "mod", "podcast", "video", "onboarding", "setup", "midia")
+        )
     ):
         clean = f"midia-{clean}"
     return clean

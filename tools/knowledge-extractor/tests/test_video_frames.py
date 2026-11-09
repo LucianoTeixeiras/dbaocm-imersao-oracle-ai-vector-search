@@ -82,6 +82,36 @@ def test_normalizer_does_not_prefix_doc_on_aula_pdf() -> None:
     )
 
 
+def test_normalizer_idempotence_and_module_symmetry() -> None:
+    """Garante que a normalização é idempotente e simétrica em todos os submódulos."""
+    # Módulo 0101 e Módulo 0201 geram padrão simétrico modXX-aula-YY
+    assert (
+        suggest_normalized_stem("MÓDULO 0101 - INTRODUÇÃO", ".mp4")
+        == "mod01-aula-01-introducao"
+    )
+    assert (
+        suggest_normalized_stem("MÓDULO 0201 - LANGCHAIN", ".mp4")
+        == "mod02-aula-01-langchain"
+    )
+
+    # Re-normalização de arquivo já normalizado não altera nem adiciona midia-
+    assert (
+        suggest_normalized_stem("mod02-aula-01-langchain", ".mp4")
+        == "mod02-aula-01-langchain"
+    )
+    assert suggest_normalized_stem("aula-01-panorama", ".mp4") == "aula-01-panorama"
+
+    # Limpeza de midia- redundante
+    assert (
+        suggest_normalized_stem("midia-mod02-aula-01-langchain", ".mp4")
+        == "mod02-aula-01-langchain"
+    )
+    assert (
+        suggest_normalized_stem("midia-podcast-ia-na-programacao", ".mp4")
+        == "podcast-ia-na-programacao"
+    )
+
+
 def test_transient_error_classification() -> None:
     assert _is_transient_error(
         RuntimeError(

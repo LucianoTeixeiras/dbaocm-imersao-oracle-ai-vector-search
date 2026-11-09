@@ -20,6 +20,10 @@ from knowledge_extractor.synthesizer import LectureSynthesizer
         ("midia-aula-pratica.txt", "aula-midia-aula-pratica.md"),
         ("aula-02-rag.txt", "aula-02-rag.md"),
         ("mod02-aula-01-x.md", "mod02-aula-01-x.md"),
+        ("midia-mod02-aula-01-intro.mp4", "mod02-aula-01-intro.md"),
+        ("midia-podcast-ia-na-programacao.mp4", "podcast-ia-na-programacao.md"),
+        ("podcast-01-ia-programacao.mp4", "podcast-01-ia-programacao.md"),
+        ("video-00-apresentacao.mp4", "video-00-apresentacao.md"),
     ],
 )
 def test_canonical_names(src: str, expected: str) -> None:
