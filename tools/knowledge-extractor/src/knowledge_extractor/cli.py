@@ -741,11 +741,19 @@ def pipeline_cmd(
 @click.option(
     "--dry-run", is_flag=True, default=False, help="Mostra o plano sem criar arquivos"
 )
-def scaffold_modules_cmd(dry_run: bool) -> None:
-    """Cria estrutura canônica de módulos a partir do course.yaml (raiz do repositório)."""
+@click.option(
+    "-c",
+    "--course",
+    "course_target",
+    default=None,
+    help="Sub-curso específico (ex: courses/01-python-starter) em repositórios multi-curso",
+)
+def scaffold_modules_cmd(dry_run: bool, course_target: str | None = None) -> None:
+    """Cria estrutura canônica de módulos a partir do course.yaml (raiz do repositório ou sub-curso)."""
     from knowledge_extractor.course_config import load_course_config
 
-    cfg = load_course_config()
+    start_dir = Path(course_target).resolve() if course_target else None
+    cfg = load_course_config(start_dir)
     repo_root = cfg.root_dir
     modules_root = repo_root / "modules"
 

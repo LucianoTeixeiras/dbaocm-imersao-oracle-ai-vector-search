@@ -462,42 +462,74 @@ class ModulePipeline:
 
 
 def discover_modules(root_dir: Path | None = None) -> list[Path]:
-    """Descobre e ordena todas as pastas de módulos existentes em modules/."""
+    """Descobre e ordena todas as pastas de módulos em modules/ ou courses/*/modules/."""
     from knowledge_extractor.course_config import find_repo_root, load_course_config
 
     root = find_repo_root(root_dir)
     modules_dir = root / "modules"
-    if not modules_dir.exists() or not modules_dir.is_dir():
-        return []
+    courses_dir = root / "courses"
 
-    cfg = load_course_config(root)
-    # 1. Se houver módulos declarados no course.yaml, usa a ordem declarada
-    if cfg.modules:
-        declared_dirs: list[Path] = []
-        for slug in cfg.modules:
-            target = modules_dir / slug
-            if target.is_dir():
-                declared_dirs.append(target)
-        if declared_dirs:
-            # Acrescenta diretórios que estejam no disco mas não declarados
-            for p in sorted(modules_dir.iterdir()):
-                if p.is_dir() and not p.name.startswith(".") and p not in declared_dirs:
-                    declared_dirs.append(p)
-            return declared_dirs
+    # 1. Estrutura mono-curso clássica (modules/ direto na raiz do repositório ou sub-curso)
+    if modules_dir.exists() and modules_dir.is_dir():
+        cfg = load_course_config(root)
+        if cfg.modules:
+            declared_dirs: list[Path] = []
+            for slug in cfg.modules:
+                target = modules_dir / slug
+                if target.is_dir():
+                    declared_dirs.append(target)
+            if declared_dirs:
+                for p in sorted(modules_dir.iterdir()):
+                    if (
+                        p.is_dir()
+                        and not p.name.startswith(".")
+                        and p not in declared_dirs
+                    ):
+                        declared_dirs.append(p)
+                return declared_dirs
 
-    # 2. Fallback: varre e ordena por nome
-    return [
-        p
-        for p in sorted(modules_dir.iterdir())
-        if p.is_dir() and not p.name.startswith(".")
-    ]
+        return [
+            p
+            for p in sorted(modules_dir.iterdir())
+            if p.is_dir() and not p.name.startswith(".")
+        ]
+
+    # 2. Estrutura multi-curso (courses/<slug>/modules/<slug>)
+    if courses_dir.exists() and courses_dir.is_dir():
+        found_modules: list[Path] = []
+        for course_path in sorted(courses_dir.iterdir()):
+            if course_path.is_dir() and not course_path.name.startswith("."):
+                sub_mod_dir = course_path / "modules"
+                if sub_mod_dir.is_dir():
+                    sub_cfg = load_course_config(course_path)
+                    if sub_cfg.modules:
+                        declared: list[Path] = []
+                        for slug in sub_cfg.modules:
+                            target = sub_mod_dir / slug
+                            if target.is_dir():
+                                declared.append(target)
+                        for p in sorted(sub_mod_dir.iterdir()):
+                            if (
+                                p.is_dir()
+                                and not p.name.startswith(".")
+                                and p not in declared
+                            ):
+                                declared.append(p)
+                        found_modules.extend(declared)
+                    else:
+                        for p in sorted(sub_mod_dir.iterdir()):
+                            if p.is_dir() and not p.name.startswith("."):
+                                found_modules.append(p)
+        return found_modules
+
+    return []
 
 
 def run_interactive_menu(pipeline: ModulePipeline) -> None:
     """Menu Interativo de Execução do Pipeline com navegação entre módulos e ciclo contínuo."""
     from knowledge_extractor.course_config import load_course_config
 
-    cfg = load_course_config()
+    cfg = load_course_config(pipeline.module_dir)
     all_modules = discover_modules(pipeline.root_dir)
 
     # Identifica o índice do módulo atual na lista global

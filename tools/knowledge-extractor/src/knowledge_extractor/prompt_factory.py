@@ -171,25 +171,26 @@ def sync_prompts_catalog(root_dir: Path | None = None) -> Path:
         "| :--- | :--- | :--- | :--- |",
     ]
 
-    modules_dir = root / "modules"
+    import os
+
+    from knowledge_extractor.pipeline import discover_modules
+
     found_tasks = 0
-    if modules_dir.is_dir():
-        for mod in sorted(modules_dir.iterdir()):
-            if not mod.is_dir() or mod.name.startswith("."):
-                continue
-            labs_dir = mod / "labs"
-            if not labs_dir.is_dir():
-                continue
-            for t_file in sorted(labs_dir.glob("task-*.md")):
-                found_tasks += 1
-                first_line = t_file.read_text(
-                    encoding="utf-8", errors="replace"
-                ).splitlines()[0]
-                task_title = first_line.replace("# TASK:", "").replace("#", "").strip()
-                rel_path = f"../../modules/{mod.name}/labs/{t_file.name}"
-                lines.append(
-                    f"| `{mod.name}` | [{t_file.name}]({rel_path}) | {task_title} | `labs/` |"
-                )
+    all_mods = discover_modules(root)
+    for mod in all_mods:
+        labs_dir = mod / "labs"
+        if not labs_dir.is_dir():
+            continue
+        for t_file in sorted(labs_dir.glob("task-*.md")):
+            found_tasks += 1
+            first_line = t_file.read_text(
+                encoding="utf-8", errors="replace"
+            ).splitlines()[0]
+            task_title = first_line.replace("# TASK:", "").replace("#", "").strip()
+            rel_path = os.path.relpath(t_file, prompts_dir).replace("\\", "/")
+            lines.append(
+                f"| `{mod.name}` | [{t_file.name}]({rel_path}) | {task_title} | `labs/` |"
+            )
 
     if found_tasks == 0:
         lines.append(

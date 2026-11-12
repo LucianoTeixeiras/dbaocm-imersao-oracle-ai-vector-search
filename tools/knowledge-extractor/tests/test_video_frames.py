@@ -204,6 +204,29 @@ def test_discover_modules_ordering(tmp_path: Path) -> None:
     assert found[1].name == "02-arquitetura"
 
 
+def test_discover_modules_multi_course(tmp_path: Path) -> None:
+    """Valida que discover_modules suporta repositórios multi-curso com courses/*/modules/*."""
+    from knowledge_extractor.pipeline import discover_modules
+
+    courses_dir = tmp_path / "courses"
+    courses_dir.mkdir(parents=True)
+
+    c1 = courses_dir / "01-python-starter"
+    c1_mods = c1 / "modules"
+    c1_mods.mkdir(parents=True)
+    (c1_mods / "01-sintaxe").mkdir()
+    (c1_mods / "02-funcoes").mkdir()
+
+    c2 = courses_dir / "02-pandas-dados"
+    c2_mods = c2 / "modules"
+    c2_mods.mkdir(parents=True)
+    (c2_mods / "01-dataframes").mkdir()
+
+    found = discover_modules(tmp_path)
+    assert len(found) == 3
+    assert [m.name for m in found] == ["01-sintaxe", "02-funcoes", "01-dataframes"]
+
+
 def test_pipeline_imports_confirm() -> None:
     """Garante que Confirm e get_media_duration estejam importados em pipeline.py."""
     import knowledge_extractor.pipeline as p
